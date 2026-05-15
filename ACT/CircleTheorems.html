@@ -1,0 +1,1630 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Circle Theorems</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to ACT exam questions on circle theorems.">
+
+  <meta name="keywords"
+    content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, ACT, 
+  American College Testing, Algebra, Geometry, circle, locus, point, equidistant (equal distance), radius, diameter, chord, 
+  secant, tangent, circle theorems, arc, sector, segment, semicircle, length of arc, area of sector, area of segment, minor sector, 
+  major sector, minor arc, major arc, minor segment, major segment, radius, circumference, area, perimeter, 
+  point of contact, center, point of tangency, quadrilateral, cyclic quadrilateral, complementary angles, 
+  supplementary angles, tangent to circle, sectorial angle, pie chart, circle graph, right angle, interior angle, 
+  exterior angle, vertex, vertices, angle at center, central angle, intercepted arc, angle at circumference, inscribed angle">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Circle Theorems</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on Circle Theorems. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any these resources were helpful in your passing the
+        Mathematics papers of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <div class="w3-row-padding">
+        <h5>Length of Arc, Area of Sector, Area of Circle, Circumference of Circle</h5>
+        <p>
+          Except stated otherwise, use:
+          <br><br>
+          $
+          d = diameter \\[3ex]
+          r = radius \\[3ex]
+          L = arc\:\:length \\[3ex]
+          A = area\;\;of\;\;sector \\[3ex]
+          \theta = central\:\:angle \\[3ex]
+          \pi = \dfrac{22}{7} \\[5ex]
+          RAD = radians \\[3ex]
+          ^\circ = DEG = degrees \\[7ex]
+
+          \underline{\theta\;\;in\;\;DEG} \\[3ex]
+          L = \dfrac{2\pi r\theta}{360} \\[5ex]
+          \theta = \dfrac{180L}{\pi r} \\[5ex]
+          r = \dfrac{180L}{\pi \theta} \\[5ex]
+          A = \dfrac{\pi r^2\theta}{360} \\[5ex]
+          \theta = \dfrac{360A}{\pi r^2} \\[5ex]
+          r = \dfrac{360A}{\pi\theta} \\[7ex]
+
+          \underline{\theta\;\;in\;\;RAD} \\[3ex]
+          L = r\theta \\[5ex]
+          \theta = \dfrac{L}{r} \\[5ex]
+          r = \dfrac{L}{\theta} \\[5ex]
+          A = \dfrac{r^2\theta}{2} \\[5ex]
+          \theta = \dfrac{2A}{r^2} \\[5ex]
+          r = \sqrt{\dfrac{2A}{\theta}} \\[7ex]
+
+          Circumference\:\:of\:\:a\:\:circle = 2\pi r = \pi d \\[3ex]
+          L = \dfrac{2A}{r} \\[5ex]
+          r = \dfrac{2A}{L} \\[5ex]
+          A = \dfrac{Lr}{2}
+          $
+        </p>
+      </div>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <div class="w3-row-padding">
+        <h5>Circle Theorems</h5>
+        <p>
+          (1.) The angle in a semicircle is a right angle (an angle of 90&deg;).
+          <br><br>
+          (2.) Angles in the same segment of a circle are equal. <br>
+          OR <br>
+          Angles subtended by a chord of a circle in the same segment of the circle are equal.
+          <br><br>
+          (3.) The angle which an arc of a circle subtends at the center is twice the angle which the same
+          arc of the circle subtends at the circumference. <br>
+          OR <br>
+          The measure of any angle inscribed in a circle is half the measure of the intercepted arc.
+          <br><br>
+          (4.) The sum of the interior opposite angles of a cyclic quadrilateral is 180&deg; <br>
+          OR <br>
+          The interior opposite angles of a cyclic quadrilateral are supplementary
+          <br><br>
+          (5.) The exterior angle of a cyclic quadrilateral is equal to the interior opposite angle.
+          <br><br>
+          (6.) The radius of a circle is perpendicular to the tangent of the circle at the point of contact. <br>
+          This implies that the angle between the radius of a circle and the tangent to the circle at the point of
+          contact is 90&deg;
+          <br><br>
+          (7.) <b>Intersecting Tangents Theorem</b> or <b>Intersecting Tangent-Tangent Theorem</b> <u>and</u>
+          <b>Angle of Intersecting Tangents Theorem</b> <br>
+          If two tangents are drawn from the same external point: <br>
+          (a.) the two tangents are equal in length <br>
+          (b.) the line joining the external point and the centre of the circle bisects the angle formed by the two
+          tangents. <br>
+          (c.) the line joining the external point and the centre of the circle bisects the angle formed by the two
+          radii.
+          <br><br>
+          (8.) <b>Alternate Segment Theorem</b> <br>
+          The angle between a tangent to a circle and a chord drawn from the point of contact, is equal to the angle in
+          the alternate segment.
+          <br><br>
+          (9.) If a line drawn from the center of the circle bisects a chord, then: <br>
+          (a.) it bisects its arc (the angle opposite the chord) <u>and</u> <br>
+          (b.) it is perpendicular to the chord.
+          <br><br>
+          (10.) If a line drawn from the center of the circle is perpendicular to a chord, then: <br>
+          (a.) it bisects the chord <u>and</u> <br>
+          (b.) it bisects its arc (the angle opposite the chord).
+          <br><br>
+          (11.) <b>Intersecting Chords Theorem</b> <br>
+          When two chords intersect, the product of the lengths of the segments of one chord is equal to the product of
+          the
+          lengths of the segments of the other chord.
+          <br><br>
+          (12.) <b>Angle of Intersecting Chords Theorem</b> <br>
+          The angle formed when two chords intersect is equal to half the sum of the intercepted arcs.
+          <br><br>
+          (13.) <b>Intersecting Secants Theorem</b> or <b>Intersecting Secant-Secant Theorem</b> <br>
+          In the intersection of two secants from the same exterior point: <br>
+          the product: of the distance between the first point and the external point <u>and</u> the distance between
+          the second point and the external point <b>for the first secant</b> is equal to
+          the product of the distance between the first point and the external point <u>and</u> the distance between the
+          second point and the external point <b>for the second secant</b>.
+          <br>
+          Alternatively, we can state it as: If two secant segments are drawn to a circle from an exterior point, then
+          the product of the measures of one secant segment and its external segment is equal to the product of the
+          measures of the other secant segment and its external segment.
+          <br><br>
+          (14.) <b>Angle of Intersecting Secants (Inside the Circle) Theorem</b> <br>
+          The angle formed when two secants intersect inside a circle is equal to half the sum of the intercepted arcs.
+          <br><br>
+          (15.) <b>Angle of Intersecting Secants (Outside the Circle) Theorem</b> <br>
+          The angle formed when two secants intersect outside a circle is equal to half the difference of the
+          intercepted arcs.
+          <br><br>
+          (16.) <b>Intersecting Secant-Tangent Theorem</b> or <b>Intersecting Tangent-Secant Theorem</b> <br>
+          In the intersection of a secant and a tangent from the same external point: <br>
+          the product of the distance between the first point and the external point <u>and</u> the distance between the
+          second point and the external point <b>for the secant</b> is equal to
+          the square of the distance between the point of contant and the external point <b>for the tangent.</b>
+          <br><br>
+          (17.) <b>Angle of Intersecting Secant-Tangent Theorem</b> <br>
+          The angle formed when a secant and a tangent intersect outside a circle is equal to half the difference of the
+          intercepted arcs.
+        </p>
+      </div>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) The circle below has its center at <i>O</i>, and points <i>A</i> and <i>B</i> lie on the circle. <br>
+          The length of $\overline{AO}$ is 4 inches, and arc $\overset{\huge\frown}{AB}$ measures 112&deg; <br>
+          What is the measure of &angle;ABO?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          $
+          F.\;\; 17^\circ \\[3ex]
+          G.\;\; 34^\circ \\[3ex]
+          H.\;\; 45^\circ \\[3ex]
+          J.\;\; 56^\circ \\[3ex]
+          K.\;\; 68^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT1">
+            <br>
+            <img src="images/CircleTheorems/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            Intercepted arc = angle at center (central angle)
+            <br><br>
+            $
+            \angle AOB = \overset{\huge\frown}{AB} = 112^\circ \\[5ex]
+            \underline{\triangle AOB} \\[3ex]
+            \angle ABO = \angle BAO = p ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle AOB \\[3ex]
+            \angle ABO + \angle BAO + \angle AOB = 180^\circ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle OAB \\[3ex]
+            \implies \\[3ex]
+            p + p + 112 = 180 \\[3ex]
+            2p = 180 - 112 \\[3ex]
+            2p = 68 \\[3ex]
+            p = \dfrac{68}{2} \\[5ex]
+            p = 34 \\[3ex]
+            \therefore \angle ABO = \angle BAO = 34^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) In the figure below, $\overline{AC}$ is a diameter of the circle, <i>B</i> is a point on the circle, and
+          $\overline{AB} \cong \overline{BC}$ <br>
+          What is the degree measure of $\angle ABC$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number2.png" alt="Number 2">
+          <br><br>
+          $
+          A.\;\; 45^\circ \\[3ex]
+          B.\;\; 60^\circ \\[3ex]
+          C.\;\; 75^\circ \\[3ex]
+          D.\;\; 90^\circ \\[3ex]
+          E.\;\; \text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT2">
+            <br>
+            $
+            \angle ABC = 90^\circ...\text{Angle in a semicircle}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) In the figure shown below, <i>C</i>, <i>M</i>, and <i>N</i> lie on the circle whose center is <i>O</i>,
+          and
+          $\angle MON$ is a right angle. <br>
+          What is the sum of the measures of $\angle CMO$ and $\angle CNO$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number3.png" alt="Number 3">
+          <br><br>
+          $
+          F.\;\; 90^\circ \\[3ex]
+          G.\;\; 67.5^\circ \\[3ex]
+          H.\;\; 60^\circ \\[3ex]
+          J.\;\; 45^\circ \\[3ex]
+          K.\;\; 22.5^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT3">
+            <br>
+            <img src="images/CircleTheorems/Answers/Number3.png" alt="Number 3">
+            <br><br>
+            $
+            Center:\;\;O \\[3ex]
+            \angle \;\;at\;\;center = 90^\circ \\[3ex]
+            Let: \\[3ex]
+            \angle MCN = \psi \\[3ex]
+            \angle CMN = \theta \\[3ex]
+            \angle CNM = \phi \\[3ex]
+            \angle OMN = x \\[3ex]
+            \angle ONM = y \\[3ex]
+            90 = 2 * \psi ...\angle \;\;at\;\;center = 2 * \angle\;\;at\;\;circumference \\[3ex]
+            2\psi = 90 \\[3ex]
+            \psi = \dfrac{90}{2} \\[5ex]
+            \psi = 45^\circ \\[3ex]
+            Construction:\;\;Draw\;\;a\;\;chord\;\;to\;\;join\;\;M\;\;to\;\;N \\[5ex]
+            \underline{\triangle OMN} \\[3ex]
+            x = y ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle OMN \\[3ex]
+            Because\;\;of\;\;same\;\;radii...OM = ON \\[3ex]
+            \implies \\[3ex]
+            90 + x + y = 180 ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle OMN \\[3ex]
+            90 + x + x = 180 \\[3ex]
+            90 + 2x = 180 \\[3ex]
+            2x = 180 - 90 \\[3ex]
+            2x = 90 \\[3ex]
+            x = \dfrac{90}{2} \\[5ex]
+            x = 45 \\[3ex]
+            x = y = 45^\circ \\[5ex]
+            \underline{\triangle CMN} \\[3ex]
+            \psi + \theta + x + y + \phi = 180 ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle CMN \\[3ex]
+            45 + \theta + 45 + 45 + \phi = 180 \\[3ex]
+            135 + \theta + \phi = 180 \\[3ex]
+            \theta + \phi = 180 - 135 \\[3ex]
+            \theta + \phi = 45^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) A circle with center <i>C</i> is shown below. <br>
+          Points <i>W</i>, <i>X</i>, <i>Y</i>, and <i>Z</i> lie on the circle. <br>
+          The measure of $\angle WCY$ is $100^\circ$, the measure of $\angle XCZ$ is $80^\circ$, and the measure of
+          $\angle WCZ$
+          is
+          $150^\circ$ <br>
+          What is the measure of $\angle XCY$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number4.png" alt="Number 4">
+          <br><br>
+          $
+          A.\;\; 20^\circ \\[3ex]
+          B.\;\; 25^\circ \\[3ex]
+          C.\;\; 30^\circ \\[3ex]
+          D.\;\; 40^\circ \\[3ex]
+          E.\;\; 50^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT4">
+            <br>
+            The ACT is a timed test. <br>
+            It is important to do this question within a minute. Remember what I wrote earlier <br>
+            So, the faster approach for me is to use alphabets rather than angles <br>
+            This is what I mean
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number4.png" alt="Number 4">
+            <br><br>
+            $
+            Let: \\[3ex]
+            \angle WCX = m \\[3ex]
+            \angle XCY = n \\[3ex]
+            \angle YCZ = p \\[3ex]
+            Based\;\;on\;\;the\;\;question\;\;and\;\;modified\;\;diagram: \\[3ex]
+            m + n = 100 ...eqn.(1) \\[3ex]
+            n + p = 80...eqn.(2) \\[3ex]
+            m + n + p = 150 ...eqn.(3) \\[3ex]
+            Substitute\;\;eqn.(1)\;\;into\;\;eqn.(3) \implies \\[3ex]
+            100 + p = 150 \\[3ex]
+            p = 150 - 100 \\[3ex]
+            p = 50 ...eqn.(4) \\[3ex]
+            Substitute\;\;eqn.(4)\;\;into\;\;eqn.(2) \implies \\[3ex]
+            n + 50 = 80 \\[3ex]
+            n = 80 - 50 \\[3ex]
+            n = 30 \\[3ex]
+            \therefore \angle XCY = 30^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Points <i>A</i> and <i>B</i> lie on the circle below, where central angle $\angle ACB$ measures
+          $110^\circ$ <br>
+          What is the measure of $\angle ABC$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          $
+          F.\;\; 35^\circ \\[3ex]
+          G.\;\; 40^\circ \\[3ex]
+          H.\;\; 45^\circ \\[3ex]
+          J.\;\; 55^\circ \\[3ex]
+          K.\;\; \text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT5">
+            <br>
+            $
+            \underline{\triangle CAB} \\[3ex]
+            \angle BAC = \angle ABC = p ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle CAB \\[3ex]
+            \angle BAC + \angle ABC + \angle BCA = 180^\circ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle CAB \\[3ex]
+            p + p + 110 = 180 \\[3ex]
+            2p + 110 = 180 \\[3ex]
+            2p = 180 - 110 \\[3ex]
+            2p = 70 \\[3ex]
+            p = \dfrac{70}{2} \\[5ex]
+            p = 35 \\[3ex]
+            \therefore \angle ABC = 35^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) In the figure below, <i>A</i>. <i>B</i>, <i>C</i>, and <i>D</i> lie on the circle centered at <i>O</i>
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number6.png" alt="Number 6">
+          <br><br>
+          Which of the following does NOT appear in the figure? <br>
+          <b>A.</b> Acute triangle <br>
+          <b>B.</b> Equilateral triangle <br>
+          <b>C.</b> Isosceles triangle <br>
+          <b>D.</b> Right triangle <br>
+          <b>E.</b> Scalene triangle
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT6">
+            <br>
+            Let us analyze the options <br><br>
+            $
+            \angle AOB = 60^\circ...implies\;\;an\;\;acute\;\;\triangle \\[3ex]
+            $
+            An acute triangle is a triangle that has three angles less than $90^\circ$ <br>
+            Option A appears in the figure
+            <br><br>
+            $
+            \underline{\triangle AOB} \\[3ex]
+            OA = OB ...same\;\;radii \\[3ex]
+            \implies \triangle AOB\;\;is\;\;an\;\;isosceles\;\;\triangle \\[3ex]
+            \angle OBA = \angle OAB ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle AOB \\[3ex]
+            $
+            Option C appears in the figure
+            <br><br>
+            $
+            \angle OBA + \angle OAB + \angle AOB = 180^\circ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle ABC \\[3ex]
+            Let\;\;\angle OBA = \angle OAB = p \\[3ex]
+            \angle AOB = 60^\circ \\[5ex]
+            \underline{\triangle AOB} \\[3ex]
+            p + p + 60 = 180 \\[3ex]
+            2p = 180 - 60 \\[3ex]
+            2p = 120 \\[3ex]
+            p = \dfrac{120}{2} \\[5ex]
+            p = 60 \\[3ex]
+            \therefore \angle OBA = \angle OAB = 60^\circ \\[3ex]
+            $
+            Each angle in $\triangle AOB = 60^\circ$ <br>
+            This implies that $\triangle AOB$ is an equilateral triangle. <br>
+            Option B appears in the figure '
+            <br><br>
+            $
+            \underline{\triangle COD} \\[3ex]
+            \angle COD = 90^\circ ...implies\;\;a\;\;right\;\;\triangle \\[3ex]
+            $
+            A right triangle is a triangle that has one angle of $90^\circ$ and two angles less than $90^\circ$
+            Option D appears in the figure <br><br>
+            The only remaining option is Option E
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) In the figure below, lines <i>l</i> and <i>m</i> are tangent to the circle at points <i>B</i> and
+          <i>D</i>, respectively. <br>
+          Points <i>A</i> and <i>C</i> are on the circle. <br>
+          The measure of $\angle ABC$ is $95^\circ$ and the measure of $\angle BCD$ is $85^\circ$
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number7.png" alt="Number 7">
+          <br><br>
+          The lines in which of the following pairs of lines are necessarily parallel?
+          <br><br>
+          $
+          I.\;\; l\;\;and\;\;m \\[3ex]
+          II.\;\; \overleftrightarrow{AB} \;\;and\;\; \overleftrightarrow{DC} \\[3ex]
+          III.\;\; \overleftrightarrow{AD} \;\;and\;\; \overleftrightarrow{BC} \\[3ex]
+          F.\;\; I\;\;only \\[3ex]
+          G.\;\; II\;\;only \\[3ex]
+          H.\;\; III\;\;only \\[3ex]
+          J.\;\; I\;\;and\;\;II\;\;only \\[3ex]
+          K.\;\; I,\;\;II,\;\;and\;\;III \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT7">
+            <br>
+            $
+            l\;\;and\;\;m\;\;are\;\;not\;\;parallel \\[3ex]
+            Eliminate\;\;Option\;I \\[5ex]
+            \underline{Cyclic\;\;Quadrilateral\;ABCD} \\[3ex]
+            \angle A + \angle C = 180^\circ \\[3ex]
+            ...interior\;\;opposite\;\;\angle s\;\;of\;\;a\;\;cyclic\;\;quad\;\;are\;\;supplementary \\[3ex]
+            \angle A + 85 = 180 \\[3ex]
+            \angle A = 180 - 85 \\[3ex]
+            \angle A = 95^\circ \\[3ex]
+            Also: \\[3ex]
+            \angle B + \angle D = 180^\circ \\[3ex]
+            ...interior\;\;opposite\;\;\angle s\;\;of\;\;a\;\;cyclic\;\;quad\;\;are\;\;supplementary \\[3ex]
+            95 + \angle D = 180 \\[3ex]
+            \angle D = 180 - 95 \\[3ex]
+            \angle D = 85^\circ \\[3ex]
+            Try\;\;Option\;II \\[3ex]
+            $
+            <img src="images/CircleTheorems/Answers/Number7-1st.png" alt="Number 7-1st">
+            <br><br>
+            $
+            If\;\;\overleftrightarrow{AB} \;||\; \overleftrightarrow{DC} \\[3ex]
+            e = 85^\circ ...corresponding\;\;\angle s\;\;are\;\;congruent \\[3ex]
+            But: \\[3ex]
+            e + 95^\circ = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            e = 180 - 95 \\[3ex]
+            e = 85^\circ \\[3ex]
+            85^\circ = 85^\circ \\[3ex]
+            \implies that\;\; \overleftrightarrow{AB} \;||\; \overleftrightarrow{DC} \\[3ex]
+            Try\;\;Option\;III \\[3ex]
+            $
+            <img src="images/CircleTheorems/Answers/Number7-2nd.png" alt="Number 7-2nd">
+            <br><br>
+            $
+            If\;\;\overleftrightarrow{AD} \;||\; \overleftrightarrow{BC} \\[3ex]
+            f = 95^\circ ...corresponding\;\;\angle s\;\;are\;\;congruent \\[3ex]
+            But: \\[3ex]
+            f + 95^\circ = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            f = 180 - 95 \\[3ex]
+            f = 85^\circ \\[3ex]
+            95^\circ \ne 85^\circ \\[3ex]
+            \implies that\;\; \overleftrightarrow{AD} \;\not||\; \overleftrightarrow{BC} \\[3ex]
+            Eliminate\;\;Option\;III \\[3ex]
+            Correct\;\;Option:\;\;II\;\;only
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) A circle, 2 chords, and some lengths, in centimeters, are shown in the figure below, which is not drawn
+          to scale. <br>
+          What is the value of <em>x</em>?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number8.png" alt="Number 8">
+          <br><br>
+          (Note: When two chords intersect, the product of the lengths of the segments of one chord equals the product
+          of the
+          lengths of the segments of the other chord.)
+          <br><br>
+          $
+          A.\;\; 10 \\[3ex]
+          B.\;\; 13.5 \\[3ex]
+          C.\;\; 14 \\[3ex]
+          D.\;\; 17.5 \\[3ex]
+          E.\;\; 19 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT8">
+            <br>
+            $
+            2 * x = 7 * 5 ...Intersecting\;\;Chords\;\;Theorem \\[3ex]
+            x = \dfrac{7 * 5}{2} \\[5ex]
+            x = \dfrac{35}{2} \\[5ex]
+            x = 17.5
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) In the figure below, the circle with center <i>O</i> has a radius of 7 inches and the measure of
+          $\overset{\huge\frown}{AB}$ is 80&deg; <br>
+          What is the measure of $\angle BAO$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number9.png" alt="Number 9">
+          <br><br>
+          $
+          F.\;\; 30^\circ \\[3ex]
+          G.\;\; 40^\circ \\[3ex]
+          H.\;\; 50^\circ \\[3ex]
+          J.\;\; 60^\circ \\[3ex]
+          K.\;\; 80^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT9">
+            <br>
+            Construction: Join the radius from point <i>O</i> to point <i>B</i>
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number9.png" alt="Number 9">
+            <br><br>
+            Intercepted arc = angle at center (central angle)
+            <br><br>
+            $
+            \angle AOB = \overset{\huge\frown}{AB} = 80^\circ \\[5ex]
+            \underline{\triangle OAB} \\[3ex]
+            \angle BAO = \angle ABO = p ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle OAB \\[3ex]
+            \angle BAO + \angle ABO + \angle AOB = 180^\circ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle OAB \\[3ex]
+            \implies \\[3ex]
+            p + p + 80 = 180 \\[3ex]
+            2p = 180 - 80 \\[3ex]
+            2p = 100 \\[3ex]
+            p = \dfrac{100}{2} \\[5ex]
+            p = 50 \\[3ex]
+            \therefore \angle BAO = \angle ABO = 50^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Right triangle $\triangle ABC$ is inscribed in a circle with center <i>M</i>, as shown below, and
+          <i>C</i> can
+          be any point on the circle other than <i>A</i> or <i>B</i> <br>
+          Which of the following is the most direct explanation of why $\triangle MCA$ is isosceles?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number10.png" alt="Number 10">
+          <br><br>
+          <b>F.</b> 2 sides are radii of the circle <br>
+          <b>G.</b> Side-angle-side congruence <br>
+          <b>H.</b> Angle-side-angle congruence <br>
+          <b>J.</b> Angle-angle-angle similarity <br>
+          <b>K.</b> The Pythagorean theorem
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT10">
+            <br>
+            Construction: Draw the radius from center: M to circumference: C
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number10.png" alt="Number 10">
+            <br><br>
+            Because MC and MA are radii (same length): <br>
+            $\angle MCA = \angle MAC$...base angles of isosceles $\triangle MCA$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) In the figure below, line <i>q</i> is parallel to line <i>r</i>, <i>C</i> is the center of the circle.
+          <br>
+          $\overline{AE}$ and $\overline{BD}$ both go through <i>C</i>, <i>q</i> is tangent to the circle at <i>B</i>,
+          <i>F</i>
+          lies on $\overleftrightarrow{AD}$, and the measure of $\angle FAC$ is $145^\circ$ <br>
+          What is the measure of $\angle BCE$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          $
+          F.\;\; 145^\circ \\[3ex]
+          G.\;\; 90^\circ \\[3ex]
+          H.\;\; 65^\circ \\[3ex]
+          J.\;\; 55^\circ \\[3ex]
+          K.\;\; 35^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT11">
+            <br>
+            <img src="images/CircleTheorems/Answers/Number11.png" alt="Number 11">
+            <br><br>
+            $
+            \theta = 145^\circ...interior\;\;alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            \angle BEC + \theta = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            \angle BEC + 145 = 180 \\[3ex]
+            \angle BEC = 180 - 145 \\[3ex]
+            \angle BEC = 35^\circ \\[3ex]
+            \angle CBE = 90^\circ \\[3ex]
+            ...radius\;CB\;\perp\;tangent\;qBE\;\;at\;\;point\;\;of\;\;contact\;B \\[5ex]
+            \underline{\triangle CBE} \\[3ex]
+            \angle BCE + \angle BEC + \angle CBE = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle CBE \\[3ex]
+            \angle BCE + 35 + 90 = 180 \\[3ex]
+            \angle BCE + 125 = 180 \\[3ex]
+            \angle BCE = 180 - 125 \\[3ex]
+            \angle BCE = 55^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) The circle shown below has a radius of 10 meters, and the length of chord $\overline{AB}$ is
+          16 meters. <br>
+          If <i>O</i> marks the center of the circle, what is the length of $\overline{OC}$ ?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number12.png" alt="Number 12">
+          <br><br>
+          $
+          A.\;\; 2\sqrt{3} \\[3ex]
+          B.\;\; 6 \\[3ex]
+          C.\;\; 12 \\[3ex]
+          D.\;\; 4\sqrt{21} \\[3ex]
+          E.\;\; 36 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT12">
+            <br>
+            <b>Construction:</b> Draw the radius from Point O to POint A
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number12.png" alt="Number 12">
+            <br><br>
+            $
+            |AC| = |CB| = \dfrac{|AB|}{2} \\[5ex]
+            ...line\;OA\;\;\perp\;\;to\;\;chord\;AB;\;\;bisects\;\;the\;\;chord \\[3ex]
+            |AC| = \dfrac{16}{2} = 8\;cm \\[5ex]
+            |OA| = 10\;cm ...radius \\[5ex]
+            \underline{Right\;\triangle\;\;OCA} \\[3ex]
+            |OC|^2 + |AC|^2 = |OA|^2 ...Pythagorean\;\;theorem \\[3ex]
+            |OC|^2 + 8^2 = 10^2 \\[3ex]
+            |OC|^2 + 64 = 100 \\[3ex]
+            |OC|^2 = 100 - 64 \\[3ex]
+            |OC|^2 = 36 \\[3ex]
+            |OC| = \sqrt{36} \\[3ex]
+            |OC| = 6\;cm
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) In the circle shown below, <i>M</i> is the center and lies on $\overline{RU}$ and $\overline{ST}$ <br>
+          Which of the following statements is NOT true?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number13.png" alt="Number 13">
+          <br><br>
+          $
+          F.\;\; \angle TUM \;\;measures\;\;65^\circ \\[3ex]
+          G.\;\; \overline{TU}\;\;is\;\;parallel\;\;to\;\;\overline{RS} \\[3ex]
+          H.\;\; \overset{\Huge\frown}{TXU}\;\;measures\;\;50^\circ \\[3ex]
+          J.\;\; \overline{RM} \cong \overline{TM} \\[3ex]
+          K.\;\; \overline{RS} \cong \overline{SM} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT13">
+            <br>
+            Let us analyze the options
+            <br><br>
+            $
+            \angle TMU = 50^\circ ...vertical \angle s\;\;are\;\;equal \\[5ex]
+            \underline{\triangle MTU} \\[3ex]
+            \angle UTM = \angle TUM = p ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle MTU \\[3ex]
+            \angle UTM + \angle TUM + \angle TMU = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle MTU \\[3ex]
+            p + p + 50 = 180 \\[3ex]
+            2p + 50 = 180 \\[3ex]
+            2p = 180 - 50 \\[3ex]
+            2p = 130 \\[3ex]
+            p = \dfrac{130}{2} \\[5ex]
+            p = 65 \\[3ex]
+            \therefore \angle UTM = \angle TUM = 65^\circ \\[3ex]
+            Option\;\;F\;\;is\;\;true \\[5ex]
+            \underline{\triangle MRS} \\[3ex]
+            \angle SRM = \angle RSM = k ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle MRS \\[3ex]
+            \angle SRM + \angle RSM + \angle RMS = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle MRS \\[3ex]
+            k + k + 50 = 180 \\[3ex]
+            2k + 50 = 180 \\[3ex]
+            2k = 180 - 50 \\[3ex]
+            2k = 130 \\[3ex]
+            k = \dfrac{130}{2} \\[5ex]
+            k = 65 \\[3ex]
+            \therefore \angle SRM = \angle RSM = 65^\circ \\[3ex]
+            \angle SRM = \angle SRU = 65^\circ ...diagram \\[3ex]
+            \angle TUM = \angle TUR = 65^\circ ...diagram \\[3ex]
+            Because: \\[3ex]
+            \angle SRU = \angle TUR = 65^\circ ...alternate \angle s\;\;are\;\;equal \\[3ex]
+            \implies \;\;that\;\; \overline{RS} \;\;||\;\; \overline{TU} \\[3ex]
+            Option\;\;G\;\;is\;\;true \\[3ex]
+            \overset{\Huge\frown}{TXU} = 50^\circ ...vertical \angle s\;\;are\;\;equal \\[3ex]
+            ...also\;\;\angle\;\;subtended\;\;by\;\;arc\;TXU \\[3ex]
+            Option\;\;H\;\;is\;\;true \\[3ex]
+            \overline{RM} = \overline{TM} ...same\;\;radii\;\;from\;\;center\;M \\[3ex]
+            Option\;\;J\;\;is\;\;true \\[3ex]
+            For\;\;the\;\;remaining\;\; Option\;\;K \\[3ex]
+            \overline{RM} = \overline{SM} ...same\;\;radii\;\;from\;\;center\;M \\[3ex]
+            \implies\;\; \triangle RMS\;\;is\;\;an\;\;isosceles\;\;\triangle \\[3ex]
+            However: \\[3ex]
+            \overline{RS} \ncong \overline{SM} \\[3ex]
+            $
+            Because $\triangle RMS$ is not an equilateral triangle <br>
+            An equilateral triangle must have each of the three angles as $60^\circ$ in order for all sides to be
+            congruent <br><br>
+            $
+            Option\;\;K\;\;is\;\;NOT\;\;true
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Radius $\overline{OA}$ of the circle shown below is perpendicular to $\overline{AP}$ <br>
+          The circle intersects $\overline{OP}$ at <i>B.</i> <br>
+          The length of $\overline{AP}$ is 12 centimeters, and the measure of &angle;<i>APO</i> is 20&deg;. <br>
+          Which of the following values is closest to the length, in centimeters, of $\overline{BP}$ ?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number14.png" alt="Number 14">
+          <br><br>
+          (Note: $\sin 20^\circ \approx 0.342$, $\cos 20^\circ \approx 0.940$, and $\tan 20^\circ \approx 0.364$)
+          <br><br>
+          $
+          A.\;\; 2.1 \\[3ex]
+          B.\;\; 4.4 \\[3ex]
+          C.\;\; 6.9 \\[3ex]
+          D.\;\; 7.6 \\[3ex]
+          E.\;\; 8.4 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT14">
+            <br>
+            $
+            SOHCAHTOA \\[3ex]
+            \tan 20 = \dfrac{\overline{OA}}{\overline{AP}} \\[5ex]
+            0.364 = \dfrac{\overline{OA}}{12} \\[5ex]
+            \overline{OA} = 12 * 0.364 \\[3ex]
+            \overline{OA} = 4.368 \\[3ex]
+            \overline{OB} = \overline{OA} = 4.368\;cm ...radius \\[3ex]
+            \cos 20 = \dfrac{\overline{AP}}{\overline{OP}} \\[5ex]
+            0.940 = \dfrac{12}{\overline{OP}} \\[5ex]
+            0.94 * \overline{OP} = 12 \\[3ex]
+            \overline{OP} = \dfrac{12}{0.94} \\[5ex]
+            \overline{OP} = 12.76595745 \\[3ex]
+            \overline{OP} = \overline{OB} + \overline{BP} ...diagram \\[3ex]
+            \overline{OB} + \overline{BP} = \overline{OP} \\[3ex]
+            4.368 + \overline{BP} = 12.76595745 \\[3ex]
+            \overline{BP} = 12.76595745 - 4.368 \\[3ex]
+            \overline{BP} = 8.397957447 \\[3ex]
+            \overline{BP} \approx 8.4\;cm
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) In the circle shown below, chords $\overline{TR}$ and $\overline{QS}$ intersect at <i>P</i>, which is
+          the
+          center of the circle, and the measure of $\angle PST$ is $30^\circ$ <br>
+          What is the degree measure of minor arc $\overset{\huge\frown}{RS}$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number15.png" alt="Number 15">
+          <br><br>
+          $
+          F.\;\; 30^\circ \\[3ex]
+          G.\;\; 45^\circ \\[3ex]
+          H.\;\; 60^\circ \\[3ex]
+          J.\;\; 90^\circ \\[3ex]
+          K.\;\; \text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT15">
+            <br>
+            $
+            First\;\;Approach:\;\;Recommmended\;\;for\;\;ACT \\[5ex]
+            \underline{\triangle PST} \\[3ex]
+            \angle PST = \angle PTS = 30^\circ ...base\;\;\angle s\;\;of\;\;isosceles\;\;\triangle PST \\[3ex]
+            \overset{\huge\frown}{RS} = \angle PST + \angle PTS \\[3ex]
+            ...exterior\;\;\angle\;\;a\;\;\triangle = sum\;\;of\;\;the\;\;two\;\;interior\;\;opposite\;\;\angle s\\[3ex]
+            \overset{\huge\frown}{RS} = 30 + 30 \\[3ex]
+            \overset{\huge\frown}{RS} = 60^\circ \\[3ex]
+            OR \\[3ex]
+            Second\;\;Approach: \\[3ex]
+            \angle PST + \angle PTS + \angle TPS = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle PST \\[3ex]
+            30 + 30 + \angle TPS = 180 \\[3ex]
+            60 + \angle TPS = 180 \\[3ex]
+            \angle TPS = 180 - 60 \\[3ex]
+            \angle TPS = 120^\circ \\[3ex]
+            \angle TPS + \overset{\huge\frown}{RS} = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            120 + \overset{\huge\frown}{RS} = 180 \\[3ex]
+            \overset{\huge\frown}{RS} = 180 - 120 \\[3ex]
+            \overset{\huge\frown}{RS} = 60^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) Graphed in the standard (<i>x, y</i>) coordinate plane below is line <i>l</i> and the circle with
+          equation $(x - 2)^2 + y^2 = 1$. <br>
+          Line <i>l</i> passes through <i>O</i>(0, 0) and is tangent to the circle at <i>A</i>, and <i>B</i> is the
+          center of the
+          circle. <br>
+          What is the measure of $\angle AOB$?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number16.png" alt="Number 16">
+          <br><br>
+          $
+          F.\;\; 15^\circ \\[3ex]
+          G.\;\; 22.5^\circ \\[3ex]
+          H.\;\; 30^\circ \\[3ex]
+          J.\;\; 45^\circ \\[3ex]
+          K.\;\; 60^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT16">
+            <br>
+            $
+            \underline{Equation\;\;of\;a\;\;circle\;\;with\;\;center\;(h, k)} \\[3ex]
+            (x - k)^2 + (y - k)^2 = r^2 \\[3ex]
+            Compare\;\;with \\[3ex]
+            (x - 2)^2 + y^2 = 1 \\[3ex]
+            \implies \\[3ex]
+            (x - 2)^2 + (y - 0)^2 = 1^2 \\[3ex]
+            center = (h, k) = (2, 0) \\[3ex]
+            radius = r = 1\;unit \\[3ex]
+            r = |AB| = 1\;unit ...diagram \\[3ex]
+            |OB| = distance\;\;between\;\;O(0, 0)\;\;and\;\;B(2, 0) \\[3ex]
+            |OB| = \sqrt{(2 - 0)^2 + (0 - 0)^2}... Distance\;\;Formula \\[3ex]
+            |OB| = \sqrt{2^2 + 0} \\[3ex]
+            |OB| = \sqrt{4} \\[3ex]
+            |OB| = 2\;units \\[3ex]
+            \dfrac{\sin \angle AOB}{|AB|} = \dfrac{\sin \angle OAB}{|OB|}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \angle AOB}{1} = \dfrac{\sin 90}{2} \\[5ex]
+            \sin \angle AOB = \dfrac{1}{2} \\[5ex]
+            \angle AOB = \sin^{-1}\left(\dfrac{1}{2}\right) \\[5ex]
+            \angle AOB = 30^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) The measure of any angle inscribed in a circle is $\dfrac{1}{2}$ the measure of the intercepted arc.
+          <br>
+          Points <i>A</i>, <i>B</i>, and <i>C</i> are on the circle shown below. <br>
+          What is the measure of &angle;ABC?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number17.png" alt="Number 17">
+          <br><br>
+          $
+          A.\;\; 40^\circ \\[3ex]
+          B.\;\; 60^\circ \\[3ex]
+          C.\;\; 80^\circ \\[3ex]
+          D.\;\; 140^\circ \\[3ex]
+          E.\;\; 160^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT17">
+            <br>
+            Construction: Join the chord from point A to point C
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number17.png" alt="Number 17">
+            <br><br>
+            $
+            190 = 2 * \angle BAC ...intercepted\;\;arc = 2 * inscribed\;\;\angle \\[3ex]
+            2 * \angle BAC = 190 \\[3ex]
+            \angle BAC = \dfrac{190}{2} \\[5ex]
+            \angle BAC = 95^\circ \\[3ex]
+            90 = 2 * \angle BCA ...intercepted\;\;arc = 2 * inscribed\;\;\angle \\[3ex]
+            2 * \angle BCA = 90 \\[3ex]
+            \angle BCA = \dfrac{90}{2} \\[5ex]
+            \angle BCA = 45^\circ \\[5ex]
+            \underline{\triangle BAC} \\[3ex]
+            \angle ABC + \angle BAC + \angle BCA = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle BAC \\[3ex]
+            \angle ABC + 95 + 45 = 180 \\[3ex]
+            \angle ABC + 140 = 180 \\[3ex]
+            \angle ABC = 180 - 140 \\[3ex]
+            \angle ABC = 40^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) The circle shown below has diameter $\overline{AD}$, and points <i>B</i> and <i>C</i> lie on the circle.
+          <br>
+          The measure of $\angle CAD$ is $30^\circ$, and the measure of minor arc $\overset{\huge\frown}{CD}$ is
+          $60^\circ$ <br>
+          What is the measure of minor arc $\overset{\huge\frown}{AC}$
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number19.png" alt="Number 19">
+          <br><br>
+          $
+          F.\;\; 75^\circ \\[3ex]
+          G.\;\; 90^\circ \\[3ex]
+          H.\;\; 105^\circ \\[3ex]
+          J.\;\; 120^\circ \\[3ex]
+          K.\;\; 150^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT19">
+            <br>
+            <img src="images/CircleTheorems/Answers/Number19.png" alt="Number 19">
+            <br><br>
+            $
+            \overline{AD}\;\;is\;\;a\;\;diameter \\[3ex]
+            \angle ACD = 90^\circ...\angle \;\;in\;\;a\;\;semicircle \\[5ex]
+            \underline{\triangle ACD} \\[3ex]
+            \angle ADC + \angle ACD + \angle CAD = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle ACD \\[3ex]
+            \angle ADC + 90 + 30 = 180 \\[3ex]
+            \angle ADC + 120 = 180 \\[3ex]
+            \angle ADC = 180 - 120 \\[3ex]
+            \angle ADC = 60^\circ \\[3ex]
+            \overset{\huge\frown}{AC} = 2 * \angle ADC ... intercepted\;\;arc = 2 * inscribed\;\;\angle \\[3ex]
+            \overset{\huge\frown}{AC} = 2 * 60 \\[3ex]
+            \overset{\huge\frown}{AC} = 120^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/CircleTheorems.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) From point <i>A</i> outside a circle and in the same plane as the circle, 2 rays are drawn tangent to
+          the
+          circle with the points of tangency labeled <i>B</i> and <i>C</i>, respectively. <br>
+          Segment $\overline{BC}$ is then drawn to form $\triangle ABC$ <br>
+          If $\angle A$ measures $70^\circ$, what is the measure of $\angle ABC$?
+          <br><br>
+          $
+          F.\;\; 70^\circ \\[3ex]
+          G.\;\; 55^\circ \\[3ex]
+          H.\;\; 40^\circ \\[3ex]
+          J.\;\; 35^\circ \\[3ex]
+          K.\;\; \text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT21">
+            <br>
+            Let us draw the diagram for this question
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number21.png" alt="Number 21">
+            <br><br>
+            AB = AC ...the two tangents: AB and AC, drawn from the same external point:A are equal in length <br><br>
+            $
+            \implies \triangle ABC\;\;is\;\;an\;\;isosceles\;\;triangle \\[5ex]
+            \underline{\triangle ABC} \\[3ex]
+            \angle ABC + \angle ACB + \angle BAC = 180^\circ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle ABC \\[3ex]
+            Let\;\; \angle ABC = \angle ACB = p \\[3ex]
+            \angle BAC = \angle A = 70^\circ \\[3ex]
+            \implies \\[3ex]
+            p + p + 70 = 180 \\[3ex]
+            2p = 180 - 70 \\[3ex]
+            2p = 110 \\[3ex]
+            p = \dfrac{110}{2} \\[5ex]
+            p = 55 \\[3ex]
+            \therefore \angle ABC = 55^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) Inscribed in the circle below is regular hexagon <i>ABCDEF</i> with some diagonals shown. <br>
+          What is the measure of &angle;<i>CAD</i>?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          $
+          F.\;\; 27^\circ \\[3ex]
+          G.\;\; 30^\circ \\[3ex]
+          H.\;\; 37.5^\circ \\[3ex]
+          J.\;\; 40^\circ \\[3ex]
+          K.\;\; 60^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT23">
+            <br>
+            $
+            |AD|\;\;is\;\;a\;\;diameter \\[3ex]
+            \implies \\[3ex]
+            \angle ACD = 90^\circ ...\angle\;\;in\;\;a\;\;semicircle \\[3ex]
+            Sum\;\;of\;\;the\;\;interior\;\;\angle s\;\;of\;\;a\;\;regular\;\;polygon \\[3ex]
+            = 180(n - 2) \\[3ex]
+            For\;\;a\;\;regular\;\;hexagon:\;\;n = 6 \;\;(6\;\;sides) \\[3ex]
+            Sum\;\;of\;\;the\;\;interior\;\;\angle s\;\;of\;\;a\;\;regular\;\;hexagon \\[3ex]
+            = 180(6 - 2) \\[3ex]
+            = 180(4) \\[3ex]
+            = 720^\circ \\[3ex]
+            Each\;\;interior\;\;\angle\;\;of\;\;a\;\;regular\;\;hexagon \\[3ex]
+            = \dfrac{Sum}{n} \\[5ex]
+            = \dfrac{720}{6} \\[5ex]
+            = 120^\circ \\[3ex]
+            \implies \\[3ex]
+            \angle A = \angle B = \angle C = \angle D = \angle E = \angle F = 120^\circ \\[5ex]
+            \underline{Cyclic\;\;Quadrilateral\;\;ABCD} \\[3ex]
+            \angle ABC = \angle B = 120^\circ ...diagram \\[3ex]
+            \angle ABC + \angle CDA = 180^\circ \\[3ex]
+            ...interior\;\;opposite\;\;\angle s\;\;of\;\;a\;\;cyclic\;\;quad\;\;are\;\;supplementary \\[3ex]
+            120 + \angle CDA = 180 \\[3ex]
+            \angle CDA = 180 - 120 \\[3ex]
+            \angle CDA = 60^\circ \\[5ex]
+            \underline{\triangle ACD} \\[3ex]
+            \angle CAD + \angle CDA + \angle ACD = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle ACD \\[3ex]
+            \angle CAD + 60 + 90 = 180 \\[3ex]
+            \angle CAD + 150 = 180 \\[3ex]
+            \angle CAD = 180 - 150 \\[3ex]
+            \angle CAD = 30^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) Regular hexagon <i>ABCDEF</i> is inscribed in a circle, as shown below. <br>
+          If the length of radius $\overline{OD}$ is 15 centimeters, how long is $\overline{AB}$, in centimeters?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number25.png" alt="Number 25">
+          <br><br>
+          $
+          A.\;\; 15 \\[3ex]
+          B.\;\; 18 \\[3ex]
+          C.\;\; 30 \\[3ex]
+          D.\;\; 5\pi \\[3ex]
+          E.\;\; \dfrac{225\pi}{6} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT25">
+            <br>
+            <b>Construction:</b> Join the chord from Point B to Point E
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number25.png" alt="Number 25">
+            <br><br>
+            $
+            Sum\;\;of\;\;the\;\;interior\;\;\angle s\;\;of\;\;a\;\;regular\;\;polygon \\[3ex]
+            = 180(n - 2) \\[3ex]
+            For\;\;a\;\;regular\;\;hexagon:\;\;n = 6 \;\;(6\;\;sides) \\[3ex]
+            Sum\;\;of\;\;the\;\;interior\;\;\angle s\;\;of\;\;a\;\;regular\;\;hexagon \\[3ex]
+            = 180(6 - 2) \\[3ex]
+            = 180(4) \\[3ex]
+            = 720^\circ \\[3ex]
+            Each\;\;interior\;\;\angle\;\;of\;\;a\;\;regular\;\;hexagon \\[3ex]
+            = \dfrac{Sum}{n} \\[5ex]
+            = \dfrac{720}{6} \\[5ex]
+            = 120^\circ \\[3ex]
+            \implies \\[3ex]
+            \angle A = \angle B = \angle C = \angle D = \angle E = \angle F = 120^\circ \\[3ex]
+            \underline{Cyclic\;\;Quadrilateral\;\;EBCD} \\[3ex]
+            \angle BCD = \angle C = 120^\circ ...diagram \\[3ex]
+            \angle BED + \angle BCD = 180^\circ \\[3ex]
+            ...interior\;\;opposite\;\;\angle s\;\;of\;\;a\;\;cyclic\;\;quad\;\;are\;\;supplementary \\[3ex]
+            \angle BED + 120 = 180 \\[3ex]
+            \angle BED = 180 - 120 \\[3ex]
+            \angle BED = 60^\circ \\[3ex]
+            \underline{\triangle OED} \\[3ex]
+            \angle OED = \angle BED = 60^\circ ... diagram \\[3ex]
+            \angle OED = \angle ODE = 60^\circ ...base\;\;\angle s\;\;of\;\;isosceles\;\; \triangle OED \\[3ex]
+            \implies \\[3ex]
+            |OE| = |OD| = 15\;cm ... isosceles\;\; \triangle OED \\[3ex]
+            \angle EOD + \angle OED + \angle ODE = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle OED \\[3ex]
+            \angle EOD + 60 + 60 = 180 \\[3ex]
+            \angle EOD + 120 = 180 \\[3ex]
+            \angle EOD = 180 - 120 \\[3ex]
+            \angle EOD = 60^\circ \\[3ex]
+            \implies \\[3ex]
+            \triangle OED \;\;is\;\;an\;\;equilateral\;\;\triangle \\[3ex]
+            \angle EOD = \angle OED = \angle ODE = 60^\circ \\[3ex]
+            Similarly: \\[3ex]
+            |OD| = |OE| = |ED| = 15\;cm ...equilateral\;\; \triangle OED \\[3ex]
+            \implies \\[3ex]
+            |AB| = |ED| = 15\;cm ...regular\;\;hexagon
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) Points <i>A, B, D</i>, and <i>E</i> lie on the circle shown below. <br>
+          Secants $\overleftrightarrow{AC}$ and $\overleftrightarrow{CE}$ intersect at <i>C</i>. <br>
+          The chords $overline{AB}$ and $\overline{DE}$ are congruent. <br>
+          Minor arc $\overset{\huge\frown}{AE}$ measures 106&deg; <br>
+          Minor arc $\overset{\huge\frown}{BD}$ measures 64&deg; <br>
+          What is the measure of minor arc $\overset{\huge\frown}{DE}$ ?
+          <br><br>
+          <img src="images/CircleTheorems/Questions/Number27.png" alt="Number 27">
+          <br><br>
+          $
+          F.\;\; 42^\circ \\[3ex]
+          G.\;\; 84^\circ \\[3ex]
+          H.\;\; 85^\circ \\[3ex]
+          J.\;\; 90^\circ \\[3ex]
+          K.\;\; 95^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT27">
+            <br>
+            Let us represent the information in the circle <br>
+            <u>Construction:</u> <br>
+            (a.) Let <i>O</i> be the center of the circle. <br>
+            (b.) Indicate the central angles corresponding to the minor arcs. <br>
+            (c.) Indicate the congruent lines (chords)
+            <br><br>
+            <img src="images/CircleTheorems/Answers/Number27.png" alt="Number 27">
+            <br><br>
+            $
+            \underline{\triangle AOE} \\[3ex]
+            \angle OAE = \angle OEA = p ...base\;\;\angle s\;\;of\;\;isosceles\;\; \triangle AOE \\[3ex]
+            \angle OAE + \angle OEA + \angle AOE = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle AOE \\[3ex]
+            p + p + 106 = 180 \\[3ex]
+            2p = 180 - 106 \\[3ex]
+            2p = 74 \\[3ex]
+            p = \dfrac{74}{2} \\[5ex]
+            p = 37 \\[3ex]
+            \therefore \angle OAE = \angle OEA = 37^\circ \\[3ex]
+            \angle ACE = \dfrac{\overset{\huge\frown}{AE} - \overset{\huge\frown}{BD}}{2} ...
+            Angle\;\;of\;\;Intersecting\;\;Chords\;\;Theorem \\[5ex]
+            \implies \\[3ex]
+            \angle ACE = \dfrac{\angle AOE - \angle BOD}{2} \\[5ex]
+            \angle ACE = \dfrac{106 - 64}{2} \\[5ex]
+            \angle ACE = \dfrac{42}{2} \\[5ex]
+            \angle ACE = 21^\circ \\[3ex]
+            \underline{\triangle ACE} \\[3ex]
+            |AB| \cong |DE| ...given \\[3ex]
+            \implies \\[3ex]
+            \angle CAE = \angle CEA = k \\[3ex]
+            \angle CAE + \angle CEA + \angle ACE = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle ACE \\[3ex]
+            k + k + 21 = 180 \\[3ex]
+            2k = 180 - 21 \\[3ex]
+            2k = 159 \\[3ex]
+            k = \dfrac{159}{2} \\[5ex]
+            k = 79.5 \\[3ex]
+            \therefore \angle CAE = \angle CEA = 79.5^\circ \\[3ex]
+            \angle OEA + \angle OED = \angle CEA ...diagram \\[3ex]
+            37 + \angle OED = 79.5 \\[3ex]
+            \angle OED = 79.5 - 37 \\[3ex]
+            \angle OED = 42.5^\circ \\[3ex]
+            \underline{\triangle EOD} \\[3ex]
+            \angle OED = \angle ODE = 42.5^\circ ...base\;\;\angle s\;\;of\;\;isosceles\;\; \triangle EOD \\[3ex]
+            \angle OED + \angle ODE + \angle EOD = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;\triangle EOD \\[3ex]
+            42.5 + 42.5 + \angle EOD = 180 \\[3ex]
+            85 + \angle EOD = 180 \\[3ex]
+            \angle EOD = 180 - 85 \\[3ex]
+            \angle EOD = 95^\circ \\[3ex]
+            \implies \\[3ex]
+            \overset{\huge\frown}{DE} = \angle EOD = 85^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionCT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionCT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionCT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionCT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionCT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionCT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,831 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Vectors</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage has the solutions to Mathematics exam questions on vectors.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, 
+  Arithmetic, Algebra, Mathematics, geometry, coordinate geometry, arrow, quantity, magnitude, absolute value, modulus, 
+  length, size, direction, vector, vector quantity, scalar, scalar quantity, distance, line, point, 
+  coordinates, x-coordinate, y-coordinate, initial point, head, terminal point, tail, origin, component form, 
+  horizontal component, vertical component, angle brackets, resultant, compass bearing, matrix, brackets, 
+  row, row vector, column, column vector, position vector, displacement vector, unit vector, 
+  component unit vectors, line vector, free vector, direction cosines, scalar product, dot product, vector product, 
+  cross product, direction ratios">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Vectors</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to Mathematics questions on Vectors. <br>
+        If you find these resources valuable and helpful in your learning of Mathematics, please consider making a
+        donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Symbols and Formulas</h2>
+      <p>
+        (1.) A(<i>x</i>, <i>y</i>) <br>
+        Point: A <br>
+        (): parenthesis <br>
+        <i>x</i> = <i>x</i>-coordinate <br>
+        <i>y</i> = <i>y</i>-coordinate
+        <br><br>
+        (2.) <b>A</b>$\langle x, y \rangle$ <br>
+        Vector: <b>A</b> <br>
+        $\langle \rangle$: angle brackets <br>
+        <i>x</i> = horizontal component <br>
+        <i>y</i> = vertical component
+        <br><br>
+        (3.) Given a vector: $\overrightarrow{AB}$ <br><br>
+        $
+        \overrightarrow{AB} = \vec{B} - \vec{A} \\[3ex]
+        first\;\;vector = \vec{A} = \langle A_x, A_y \rangle \\[3ex]
+        second\;\;vector = \vec{B} = \langle B_x, B_y \rangle \\[3ex]
+        \overrightarrow{AB} = \langle B_x - A_x, B_y - A_y \rangle \\[3ex]
+        \overrightarrow{AB} = -\overrightarrow{BA} \\[5ex]
+        $
+
+        (4.) Given a vector: $\overrightarrow{BA}$ <br><br>
+        $
+        \overrightarrow{BA} = \vec{A} - \vec{B} \\[3ex]
+        first\;\;vector = \vec{B} = \langle B_x, B_y \rangle \\[3ex]
+        second\;\;vector = \vec{A} = \langle A_x, A_y \rangle \\[3ex]
+        \overrightarrow{BA} = \langle A_x - B_x, A_y - B_y \rangle \\[3ex]
+        \overrightarrow{BA} = -\overrightarrow{AB} \\[5ex]
+        $
+
+        (5.) Given several vectors: <br>
+        Notice the colors and the pattern <br><br>
+        $
+        (a.)\;\; \overrightarrow{AB} = -\overrightarrow{BA} \\[3ex]
+        (b.)\;\; \overrightarrow{CD} = -\overrightarrow{DC} \\[3ex]
+        (c.)\;\; \overrightarrow{A\color{red}{K}} + \overrightarrow{\color{red}{K}C} = \overrightarrow{AC} \\[3ex]
+        (d.)\;\; \overrightarrow{U\color{red}{K}} + \overrightarrow{\color{red}{K}S} = \overrightarrow{US} \\[3ex]
+        (e.)\;\; \overrightarrow{M\color{red}{P}} + \overrightarrow{\color{red}{P}C} + \overrightarrow{\color{red}{C}D}
+        =
+        \overrightarrow{MD} \\[5ex]
+        $
+
+        (6.) Given two position vectors: $\overrightarrow{OE}$ and $\overrightarrow{OF}$ <br><br>
+        $
+        \overrightarrow{EF} = \overrightarrow{EO} + \overrightarrow{OF} \\[3ex]
+        \overrightarrow{EF} = -\overrightarrow{OE} + \overrightarrow{OF} \\[5ex]
+        $
+
+        (7.) Given the magnitude of two vectors say: $|A|$ and $|B|$ and the angle between the vectors say $\theta$, the
+        magnitude of the resultant vector say |R| is given by the Cosine Law for Vectors: <br>
+        Provided the Triangle Inequality holds:
+        <br><br>
+        $
+        |A| - |B| \lt |R| \lt |A| + |B| \\[5ex]
+        |R|^2 = |A|^2 + |B|^2 + 2 |A| |B| \cos\theta \\[5ex]
+        $
+        (Please <b>NOTE:</b> <i>The Cosine Law for Vectors is different from the Cosine Law for Triangles</i>)
+        <br><br>
+        (8.) Given vectors in component form OR unit vectors: <br>
+        Say for a two-dimensional vector <b>A</b>: <br><br>
+        $
+        \boldsymbol{A}\langle x, y \rangle = x\boldsymbol{i} + y\boldsymbol{j} \\[3ex]
+        $
+        Say for a three-dimensional vector <b>C</b>: <br><br>
+        $
+        \boldsymbol{C}\langle x, y, z \rangle = x\boldsymbol{i} + y\boldsymbol{j} + z\boldsymbol{k} \\[3ex]
+        $
+        <b>Sum</b> and <b>Difference</b> of Vectors <br>
+        Assume we have two two-dimensional vectors: <b>C</b> and <b>D</b>: <br><br>
+        $
+        \boldsymbol{C}\langle c_1, c_2 \rangle = c_1\boldsymbol{i} + c_2\boldsymbol{j} \\[3ex]
+        \boldsymbol{D}\langle d_1, d_2 \rangle = d_1\boldsymbol{i} + d_2\boldsymbol{j} \\[5ex]
+        \underline{Sum} \\[3ex]
+        \vec{C} + \vec{D} \\[3ex]
+        = \langle c_1 + d_1, c_2 + d_2 \rangle \\[3ex]
+        = (c_1 + d_1)\boldsymbol{i} + (c_2 + d_2)\boldsymbol{j} \\[5ex]
+        \underline{Difference} \\[3ex]
+        \vec{C} - \vec{D} \\[3ex]
+        = \langle c_1 - d_1, c_2 - d_2 \rangle \\[3ex]
+        = (c_1 - d_1)\boldsymbol{i} + (c_2 - d_2)\boldsymbol{j} \\[5ex]
+        $
+        Assume we have two three-dimensional vectors: <b>C</b> and <b>D</b>: <br><br>
+        $
+        \boldsymbol{C}\langle c_1, c_2, c_3 \rangle = c_1\boldsymbol{i} + c_2\boldsymbol{j} + c_3\boldsymbol{k} \\[3ex]
+        \boldsymbol{D}\langle d_1, d_2, d_3 \rangle = d_1\boldsymbol{i} + d_2\boldsymbol{j} + d_3\boldsymbol{j} \\[5ex]
+        \underline{Sum} \\[3ex]
+        \vec{C} + \vec{D} \\[3ex]
+        = \langle c_1 + d_1, c_2 + d_2, c_3 + d_3 \rangle \\[3ex]
+        = (c_1 + d_1)\boldsymbol{i} + (c_2 + d_2)\boldsymbol{j} + (c_3 + d_3)\boldsymbol{k} \\[5ex]
+        \underline{Difference} \\[3ex]
+        \vec{C} - \vec{D} \\[3ex]
+        = \langle c_1 - d_1, c_2 - d_2, c_3 - d_3 \rangle \\[3ex]
+        = (c_1 - d_1)\boldsymbol{i} + (c_2 - d_2)\boldsymbol{j} + (c_3 - d_3)\boldsymbol{k} \\[5ex]
+        $
+        (9.) A displacement vector say $\overrightarrow{OA}$ beginning from the origin, <i>O</i> and ending at the point
+        <i>A</i> is the position vector, $\overrightarrow{A}$
+        <br><br>
+        (10.) <b>Section Formula</b> <br>
+        Given two points say <i>A</i> and <i>B</i> with position vectors: $\overrightarrow{A}$ and $\overrightarrow{B}$
+        respectively, if a point say <i>C</i> divides the line segment |AC| in the ratio: <i>m</i>:<i>n</i>, then the
+        position vector of <i>C</i> is given by:
+        $
+        \overrightarrow{C} = \dfrac{m\overrightarrow{B} + n\overrightarrow{A}}{m + n} \\[5ex]
+        $
+        (11.) <b>Collinearity of Points using Vectors</b> <br>
+        Given two vectors say: $\overrightarrow{A}$ and $\overrightarrow{B}$ and a scalar say <i>k</i>:
+        <br><br>
+        $
+        Say: \overrightarrow{A} = \langle a_1, a_2 \rangle \\[5ex]
+        \overrightarrow{B} = \langle b_1, b_2 \rangle \\[5ex]
+        $
+        (a.) <b>Scalar Multiple Method</b> <br>
+        The two vectors are collinear if one is a scalar multiple of the other. <br>
+        (<i>This concept also demonstrates the <b>linear dependency</b> of two vectors.</i>) <br>
+        OR <br>
+        The two vectors are collinear if the ratio of their corresponding components are equal.
+        <br><br>
+        $
+        \overrightarrow{A} = k \cdot \overrightarrow{B} \\[5ex]
+        OR \\[3ex]
+        \dfrac{a_1}{b_1} = \dfrac{a_2}{b_2} \\[6ex]
+        $
+        (b.) <b>Method of Determinants</b> <br>
+        Two vectors are collinear if their determinant is zero.
+        <br><br>
+        $
+        \begin{vmatrix}
+        a_1 & a_2 \\[4ex]
+        b_1 & b_2
+        \end{vmatrix} = a_1b_2 - b_1a_2 = 0 \\[7ex]
+        $
+        (c.) <b>Dot Product Angle Between the Vectors</b> <br>
+        If the dot product angle between the two vectors is 0&deg; or 180&deg;, then the two vectors are
+        collinear.
+        <br><br>
+        $
+        \overrightarrow{A} \cdot \overrightarrow{B} = |\overrightarrow{A}| |\overrightarrow{B}| \cos \theta \\[3ex]
+        where \\[3ex]
+        \theta = \text{dot product angle between the two vectors} \\[5ex]
+        $
+        (12.) <b>Parallelism of Vectors</b> <br>
+        Given two vectors, say $\overrightarrow{A}$ and $\overrightarrow{B}$: <br>
+        Assume a scalar, say <i>k</i> <br>
+        We can determine if the two vectors are parallel using any of these approaches.
+        <br><br>
+        (a.) <b>Direction Vectors</b> <br>
+        Direction vectors indicate the orientation of a line. <br>
+        Parallel lines have proportional direction vectors. <br>
+        Two vectors are parallel if they lie on lines with equations that differ only by a scalar multiple.
+        <br><br>
+        (b.) <b>Dot Product</b> <br>
+        Given the direction of the vectors, the dot product is:
+        $
+        A \cdot B = |A| \cdot |B| \cdot \cos\theta \\[3ex]
+        $
+        where &theta; is the angle between the vectors. <br>
+        If &theta; = 0&deg; or &theta; = 180&deg;, the vectors are parallel.
+        <br><br>
+        (c.) <b>Scalar Multiples</b> <br>
+        Vectors $\overrightarrow{A}$ and $\overrightarrow{B}$ are parallel if $\overrightarrow{B} = k \cdot
+        \overrightarrow{A}$ <br>
+        Also: <br>
+        If $A = (a_1, a_2, a_3, ...)$ and $B = (b_1, b_2, b_3, ...)$: <br>
+        the vectors are parallel if the ratio of the corresponding components are equal
+        <br><br>
+        $
+        \dfrac{b_1}{a_1} = \dfrac{b_2}{a_2} = \dfrac{b_3}{a_3} = k \\[5ex]
+        $
+        If both vectors are zero vectors, they are considered parallel. <br>
+        If one vector is a zero vector and the other is not, they are not parallel. <br>
+        If any calculation of ratios result in undefined values (e.g., dividing by zero), the vectors are not parallel.
+        <br><br>
+        (d.) <b>Cross Product (for 3D vectors)</b> <br>
+        Two vectors are parallel if the cross product: $A \times B$ is zero. <br>
+        The cross product measures the area of the parallelogram spanned by the two vectors. <br>
+        An area of zero units means that the vectors lie along the same or parallel lines.
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) <b>Proportional Segments Theorem for Diagonals in a Quadrilateral</b> <br>
+        In a quadrilateral, the line segment joining two points that divide opposite sides proportionally or at specific
+        ratios from a common vertex is parallel to and proportional to the diagonal that does not connect to the vertex.
+        <br><br>
+        (2.)
+
+
+
+
+
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) MNPQ is a parallelogram and R is the intersection point of the diagonals MP and NQ. <br>
+          Let $\overrightarrow{u} = \overrightarrow{MQ}$ and $\overrightarrow{v} = \overrightarrow{MN}$. <br>
+          Match the following expressions to their equivalents in terms of $\overrightarrow{u}$ and
+          $\overrightarrow{v}$.
+          <br><br>
+          <img src="images/Vectors/Questions/Number1.png" alt="Number1">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV1')">Show/Hide Answer</button>
+          <div class="result" id="solutionV1">
+            <br>
+            $
+            (1st.) \\[3ex]
+            \overrightarrow{PQ} + \overrightarrow{QN} \\[3ex]
+            = \overrightarrow{PN} \\[3ex]
+            = -\overrightarrow{NP} \\[3ex]
+            = -\overrightarrow{MQ} ...\text{opposite sides of a parallelogram are conguent} \\[3ex]
+            = -\overrightarrow{u} ...\text{Option A.} \\[5ex]
+            (2nd.) \\[3ex]
+            \overrightarrow{MR} + \overrightarrow{RQ} \\[3ex]
+            = \overrightarrow{MQ} \\[3ex]
+            = \overrightarrow{u}...\text{Option G.} \\[5ex]
+            (3rd.) \\[3ex]
+            \overrightarrow{MN} + \overrightarrow{NP} + \overrightarrow{QM} \\[3ex]
+            = \overrightarrow{MP} + \overrightarrow{QM} \\[3ex]
+            = \overrightarrow{QM} + \overrightarrow{MP}...\text{Commutative Property} \\[3ex]
+            = \overrightarrow{QP} \\[3ex]
+            = \overrightarrow{MN} ...\text{opposite sides of a parallelogram are conguent} \\[3ex]
+            = \overrightarrow{v}...\text{Option E.}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV2')">Show/Hide Answer</button>
+          <div class="result" id="solutionV2">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV3')">Show/Hide Answer</button>
+          <div class="result" id="solutionV3">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV4')">Show/Hide Answer</button>
+          <div class="result" id="solutionV4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV5')">Show/Hide Answer</button>
+          <div class="result" id="solutionV5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV6')">Show/Hide Answer</button>
+          <div class="result" id="solutionV6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV7')">Show/Hide Answer</button>
+          <div class="result" id="solutionV7">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV8')">Show/Hide Answer</button>
+          <div class="result" id="solutionV8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV9')">Show/Hide Answer</button>
+          <div class="result" id="solutionV9">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV10')">Show/Hide Answer</button>
+          <div class="result" id="solutionV10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV11')">Show/Hide Answer</button>
+          <div class="result" id="solutionV11">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV12')">Show/Hide Answer</button>
+          <div class="result" id="solutionV12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV13')">Show/Hide Answer</button>
+          <div class="result" id="solutionV13">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV14')">Show/Hide Answer</button>
+          <div class="result" id="solutionV14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV15')">Show/Hide Answer</button>
+          <div class="result" id="solutionV15">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV16')">Show/Hide Answer</button>
+          <div class="result" id="solutionV16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV17')">Show/Hide Answer</button>
+          <div class="result" id="solutionV17">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV18')">Show/Hide Answer</button>
+          <div class="result" id="solutionV18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV19')">Show/Hide Answer</button>
+          <div class="result" id="solutionV19">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV20')">Show/Hide Answer</button>
+          <div class="result" id="solutionV20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/GCSE/Vectors.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV21')">Show/Hide Answer</button>
+          <div class="result" id="solutionV21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV22')">Show/Hide Answer</button>
+          <div class="result" id="solutionV22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV23')">Show/Hide Answer</button>
+          <div class="result" id="solutionV23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV24')">Show/Hide Answer</button>
+          <div class="result" id="solutionV24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV25')">Show/Hide Answer</button>
+          <div class="result" id="solutionV25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV26')">Show/Hide Answer</button>
+          <div class="result" id="solutionV26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV27')">Show/Hide Answer</button>
+          <div class="result" id="solutionV27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV28')">Show/Hide Answer</button>
+          <div class="result" id="solutionV28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV29')">Show/Hide Answer</button>
+          <div class="result" id="solutionV29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionV30')">Show/Hide Answer</button>
+          <div class="result" id="solutionV30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Transformations</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on transformations.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, 
+  Arithmetic, Algebra, Mathematics, algebra, geometry, transformations, algebra transformations, translations, shifts, reflections, stretches, 
+              compressions, functions, function family, parent functions, child functions, toolbox functions, identity
+              functions, linear functions, quadratic functions, squaring functions, cubic functions, cubing functions, 
+              positive square root functions, cube root functions, absolute value functions, reciprocal functions, 
+              exponential functions, logarithmic functions, trigonometric functions, Samdom's pneumonic, horizontal 
+              shift, HOSH, horizontal reflection, HORE, horizontal stretch, HOST, horizontal compression, HOCO, vertical 
+              compression, VECO, vertical stretch, VEST, vertical reflection, VERE, vertical shift, VESH, vertical, 
+              horizontal,  isometry, translations, reflections, rotations, dilations, glide reflections, preimage, image, rigid transformations, 
+        congruence transformations, similarity transformations, line of reflection, line symmetry, mirror symmetry, line of symmetry, 
+        reflectional symmetry, mirror line, translation rule, translation vector, rotational symmetry, transformation matrix, 
+        matrix of transformation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#algebraTransformations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Algebra
+        Transformations</a>
+      <a href="#geometryTransformations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Geometry
+        Transformations</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Algebra Transformations and Geometry Transformations</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Algebra Transformations and Geometry
+        Transformations. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Algebra Transformations -->
+    <div class="w3-container w3-padding-32" id="algebraTransformations">
+      <h2>Algebra Transformations: Notable Notes and Formulas</h2>
+      <p>
+        <b>SAMDOM FOR PEACE Pneumonic for the Transformation of Functions</b> <br>
+        <b>HOSH</b>: Horizontal Shift <br>
+        <b>HORE</b>: Horizontal Reflection <br>
+        <b>HOST</b>: Horizontal Stretch <br>
+        <b>HOCO</b>: Horizontal Compression <br>
+        <b>VECO</b>: Vertical Compression <br>
+        <b>VEST</b>: Vertical Stretch <br>
+        <b>VERE</b>: Vertical Reflection <br>
+        <b>VESH</b>: Vertical Shift
+        <br><br>
+        $
+        y = f(x) ...Parent\;\;Function \\[3ex]
+        k = number \\[5ex]
+        (I.)\;\; y = f(x) + k ...VESH\;\;k\;\;units\;\;up \\[5ex]
+        (II.)\;\; y = f(x) - k ...VESH\;\;k\;\;units\;\;down \\[5ex]
+        (III.)\;\; y = f(x + k) ...HOSH\;\;k\;\;units\;\;left
+        ...\text{coordinates translated }\;\;k\;\;\text{units to the right} \\[5ex]
+        (IV.)\;\; y = f(x - k) ...HOSH\;\;k\;\;units\;\;right
+        ...\text{coordinates translated }\;\;k\;\;\text{units to the left} \\[5ex]
+        (V.)\;\; y = -f(x) ... VERE \\[5ex]
+        (VI.)\;\; y = f(-x) ... HORE \\[5ex]
+        (VII.)\;\; y = kf(x) \;\;\;where\;\;\; k \gt 1 ...VEST\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;y-coordinate\;\;by\;\;k \\[5ex]
+        (VIII.)\;\; y = kf(x) \;\;\;where\;\;\; 0 \lt k \lt 1 ...VECO\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;y-coordinate\;\;by\;\;k \\[5ex]
+        (IX.)\;\; y = f(kx) \;\;\;where\;\;\; 0 \lt k \lt 1 ...HOST\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;x-coordinate\;\;by\;\;\dfrac{1}{k} \\[5ex]
+        (X.)\;\; y = f(kx) \;\;\;where\;\;\; k \gt 1 ...HOCO\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;x-coordinate\;\;by\;\;\dfrac{1}{k}
+        $
+      </p>
+    </div>
+    <!-- End Algebra Transformations -->
+
+    <!-- Geometry Transformations -->
+    <div class="w3-container w3-padding-32" id="geometryTransformations">
+      <h2>Geometry Transformations: Notable Notes and Formulas</h2>
+      <p>
+        <b>Translation (Sliding or Gliding)</b> <br>
+        For any point, (x<sub>1</sub>, y<sub>1</sub>); <br>
+        A translation vector of &LT;x, y&GT; is the same as the translation rule of (x<sub>1</sub> + x, y<sub>1</sub>+y)
+        <br>
+        Say: <br>
+        preimage = (x<sub>1</sub>, y<sub>1</sub>), <br>
+        translation vector = &LT;x, y&GT;, <br>
+        image = (x<sub>2</sub>, y<sub>2</sub>);
+        <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> + x <br>
+        y<sub>2</sub> = y<sub>1</sub> + y
+        <br><br>
+        Translated <b>left</b> or <b>right:</b> <br>
+        only the x-coordinate changes <br>
+        the y-coordinate remains
+        <br><br>
+        Translated <b>up</b> or <b>down:</b> <br>
+        only the y-coordinate changes <br>
+        the x-coordinate remains
+        <br><br>
+        translated <i>x units</i> left: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> &minus; x <br>
+        y<sub>2</sub> = y<sub>1</sub>
+        <br><br>
+        translated <i>x units</i> right: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> + x <br>
+        y<sub>2</sub> = y<sub>1</sub>
+        <br><br>
+        translated <i>y units</i> up: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> <br>
+        y<sub>2</sub> = y<sub>1</sub> + y
+        <br><br>
+        translated <i>y units</i> down: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> <br>
+        y<sub>2</sub> = y<sub>1</sub> &minus; y
+        <br><br>
+        <b>Reflection (Flipping)</b> <br>
+        On the x-axis, y-values are zero. <br>
+        Reflecting across the x-axis: <br>
+        y-coordinate changes, x-coordinate remains.
+        <br><br>
+
+        On the y-axis, x-values are zero. <br>
+        Reflecting across the y-axis: <br>
+        x-coordinate changes, y-coordinate remains.
+        <br><br>
+        Reflecting across the origin: <br>
+        both the x-coordinate and the y-coordinate changes.
+        <br><br>
+        Reflecting across the line: x = k (k is a constant): <br>
+        the x-coordinate changes, y-coordinate remains.
+        <br><br>
+        Reflecting across the line: y = k (k is a constant) <br>
+        the y-coordinate changes, x-coordinate remains.
+        <br><br>
+        Reflecting across the line: y = x: <br>
+        both the x-coordinate and the y-coordinate changes.
+        <br><br>
+        For any point, (x, y); <br>
+        Reflection across the x-axis gives (x, &minus;y) <br>
+        Reflection across the y-axis gives (&minus;x, y) <br>
+        Reflection across the origin gives (&minus;x, &minus;y) <br>
+        Reflection across the line: y = x gives (y, x) <br>
+        Reflection across the line: y = k (k is a constant) gives (x, 2k &minus; y) <br>
+        Reflection across the line: x = k (k is a constant) gives (2k &minus; x, y)
+        <br><br>
+        <b>Rotation (Turning)</b> <br>
+        A preimage is rotated about the <i>center of rotation</i> through an <i>angle of rotation</i>. <br>
+        If the preimage is rotated in a counterclockwise direction, the angle of rotation is positive. <br>
+        If the preimage is rotated in a clockwise direction, the angle of rotation is negative.
+        <br><br>
+
+        Given: <br>
+        the preimage (x, y), <br>
+        the center of rotation as the origin (0, 0), <br>
+        an angle of rotation, &theta;; <br>
+        the image would be $(x', y')$ <br>
+        where:
+        <br><br>
+        $
+        x' = x\cos\theta - y\sin\theta \\[3ex]
+        y' = y\cos\theta + x\sin\theta \\[3ex]
+        $
+        For <b>counterclockwise rotations</b>, use the <b>positive value</b> of &theta; <br>
+        For <b>clockwise rotations</b>, use the <b>negative value</b> of &theta;
+        <br><br>
+
+        Given: <br>
+        the preimage (x<sub>1</sub>, y<sub>1</sub>), <br>
+        the center of rotation as any point (x, y), <br>
+        an angle of rotation, &theta;; <br>
+        the image would be $(x_1', y_1')$ <br>
+        where:
+        <br><br>
+        $
+        x_1' = [\cos\theta(x_1 - x) - \sin\theta(y_1 - y)] + x \\[3ex]
+        y_1' = [\cos\theta(y_1 - y) + \sin\theta(x_1 - x)] + y
+        $
+      </p>
+    </div>
+    <!-- End Geometry Transformations -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Point (5, &minus;1), which is graphed in the standard (<i>x, y</i>) coordinate plane below, will be
+          reflected across the <i>x</i>-axis. <br>
+          What will be the coordinates of the image of <i>P</i>?
+          <br><br>
+          <img src="images/Transformations/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          $
+          F.\;\; (-5, -1) \\[3ex]
+          G.\;\; (-5, 1) \\[3ex]
+          H.\;\; (-1, 5) \\[3ex]
+          J.\;\; (5, -1) \\[3ex]
+          K.\;\; (5, 1) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionT1">
+            <br>
+            Reflected across the <i>x</i>-axis is Vertical Reflection <br>
+            This implies that only the <i>y</i>-coordinate changes (by multiplying by &minus;1). <br>
+            The <i>x</i>-coordinate does not change.
+            <br><br>
+            $
+            (5, -1) \hspace{1em} \underrightarrow{VERE} \hspace{1em} (5, -1 \cdot 1) \\[3ex]
+            \hspace{7em} \rightarrow (5, 1)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) In order to obtain the graph of a new function, <i>g</i>(<i>t</i>), the graph of <i>f</i>(<i>t</i>) is
+          translated 2 units to the right and then reflected over the x-axis. <br>
+          The point (1, 90) on the graph of <i>f</i>(<i>t</i>) corresponds to what point on the graph of
+          <i>g</i>(<i>t</i>)?
+          <br><br>
+          $
+          F.\;\; (3, -90) \\[3ex]
+          G.\;\; (-3, 90) \\[3ex]
+          H.\;\; (-1, -90) \\[3ex]
+          J.\;\; (-1, 90) \\[3ex]
+          K.\;\; (90, 3) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionT2">
+            <br>
+            $
+            \underline{\text{translated 2 units to the right}} \\[3ex]
+            (1, 90) \rightarrow (1 + 2, 90) \\[3ex]
+            \hspace{3em} \rightarrow (3, 90) \\[3ex]
+            \underline{\text{reflected over the x-axis}} \\[3ex]
+            \text{Reflected over the x-axis is Vertical Reflection: VERE} \\[3ex]
+            (3, 90) \rightarrow (3, -90)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+
+
+          <button class="solutions" onclick="solutions('solutionT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionT3">
+            <br>
+
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionT4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+
+          <button class="solutions" onclick="solutions('solutionT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionT5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionT6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <button class="solutions" onclick="solutions('solutionT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionT7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionT8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionT9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionT10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionT11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionT12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionT13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionT14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionT15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionT16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionT17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionT18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionT19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionT20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/VectorsScalars.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionT21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionT22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionT23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionT24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionT25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionT26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionT27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionT28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionT30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

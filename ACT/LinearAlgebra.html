@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Linear Algebra</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on linear algebra.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, 
+  Arithmetic, Algebra, linear systems, linear equations, matrix, consistent, inconsistent, independent, dependent, 
+  consistent-independent, consistent-dependent, rows, columns, elements, variables, matrices, determinants, substitution, graph, elimination, 
+  Cramer's rule, row reduction, Guassian elimination, Guass-Jordan method, matrix inverse, consistent, inconsistent, dependent, independent, 
+  solutions, element, member, row, column, order, size, dimension, row matrix, row vector, column matrix, column vector, zero matrix, null matrix, 
+  rectangular matrix, square matrix, diagonal matrix, scalar matrix, identity matrix, unit matrix, triangular matrix, transpose, symmetric matrix, 
+  skew symmetric matrix, minor, cofactor, determinant, augmented matrix, row echelon matrix, rank, pivot, reduced row echelon matrix, 
+  adjoint, inverse, cramer's rule, row operations, row reduction, guass-jordan method, guassian elimination method, triangular method, 
+  matrix inverse method, cryptology, singular, non-invertible, non-singular, invertible, linear transformation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Linear Algebra</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Linear Algebra. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Last semester, each of the 4 students listed below took 6 classes worth 1 credit each. <br>
+          In the 1st matrix, the row corresponding to each student gives the counts of the letter grades earned by that
+          student. <br>
+          The second matrix gives the point value of each letter grade.
+          <br><br>
+          <img src="images/LinearAlgebra/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          The grade point average of each student is the total number of grade points earned by that student divided by
+          that student's total number of class credits. <br>
+          To the nearest 0.01, what is Ann's grade point average?
+          <br><br>
+          $
+          A.\;\; 1.92 \\[3ex]
+          B.\;\; 2.00 \\[3ex]
+          C.\;\; 3.00 \\[3ex]
+          D.\;\; 3.83 \\[3ex]
+          E.\;\; 4.00 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA1')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA1">
+            <br>
+            <img src="images/LinearAlgebra/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            $
+            \underline{Ann} \\[3ex]
+            Grade\;\;Point\;\;Average = \dfrac{\Sigma Number\;\;of\;\;Grade\;\;Points}{\Sigma
+            Number\;\;of\;\;class\;\;credits} \\[5ex]
+            = \dfrac{1(5) + 3(4) + 2(3) + 0(2) + 0(0)}{6(1)} \\[5ex]
+            = \dfrac{5 + 12 + 6}{6} \\[5ex]
+            = \dfrac{23}{6} \\[5ex]
+            = 3.833333333 \\[3ex]
+            \approx 3.83...to\;\;the\;\;nearest\;\;0.01 \\[3ex]
+            $
+            <i>
+              <b>Student:</b> We were given the grades for 5 classes <br>
+              But you used the number of credits for 6 classes <br>
+              May you please explain? <br>
+              <b>Teacher:</b> Nice observation. <br>
+              The question specified 6 classes of 1 credit each. <br>
+              We have to use what the question gave us. <br>
+              Besides, if you decide to divide by 5(1), the answer is not listed in the option. <br>
+              Be it as it may, we have to use what we are given.
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <button class="solutions" onclick="solutions('solutionLA2')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA2">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The cost of 2 notebooks and a package of pencils is <span>$</span>7.00 <br>
+          The cost of 3 notebooks and 2 packages of pencils is <span>$</span>11.00 <br>
+          What is the cost of 1 notebook and 1 package of pencils?
+          <br><br>
+          $
+          F.\;\; \$1.00 \\[3ex]
+          G.\;\; \$3.00 \\[3ex]
+          H.\;\; \$4.00 \\[3ex]
+          J.\;\; \$4.40 \\[3ex]
+          K.\;\; \$4.66 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA3')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA3">
+            <br>
+            Let: <br>
+            The cost of 1 notebook = <i>n</i> <br>
+            The cost of 1 package of pencils = <i>p</i>
+            <br><br>
+            $
+            2n + p = 7 ...eqn.(1) \\[3ex]
+            3n + 2p = 11 ...eqn.(2) \\[5ex]
+            \underline{\text{Elimination by Subtraction Method}} \\[3ex]
+            2 \cdot eqn.(1) \implies \\[3ex]
+            2(2n + p) = 2(7) \\[3ex]
+            \implies 4n + 2p = 14 ...eqn.(3) \\[3ex]
+            eqn.(3) - eqn.(2) \implies \\[3ex]
+            (4n - 3n) + (2p - 2p) = 14 - 11 \\[3ex]
+            \implies n = 3 \\[5ex]
+            \underline{\text{Substitution Method}} \\[3ex]
+            \text{Substitute n = 3 into eqn.(1)} \\[3ex]
+            2(3) + p = 7 \\[3ex]
+            6 + p = 7 \\[3ex]
+            p = 7 - 6 \\[3ex]
+            p = 1 \\[5ex]
+            \underline{\text{Cost of 1 notebook and 1 package of pencils}} \\[3ex]
+            n + p \\[3ex]
+            3 + 1 \\[3ex]
+            \$4.00
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) Matrix <i>A</i> has dimensions 3 &times; 2, and matrix <i>B</i> has dimensions 2 &times; 3. <br>
+          One of the following matrices is the matrix product <i>AB</i>. <br>
+          Which one?
+          <br><br>
+          $
+          F.\:\: \begin{bmatrix}
+          290
+          \end{bmatrix} \\[5ex]
+          G.\:\: \begin{bmatrix}
+          105 & 90 \\[2ex]
+          0 & 0
+          \end{bmatrix} \\[7ex]
+          H.\:\: \begin{bmatrix}
+          9 & 3 & 0 \\[2ex]
+          1 & 7 & 5
+          \end{bmatrix} \\[7ex]
+          J.\:\: \begin{bmatrix}
+          9 & 0 \\[2ex]
+          8 & 0 \\[2ex]
+          5 & 2
+          \end{bmatrix} \\[10ex]
+          K.\:\: \begin{bmatrix}
+          81 & 27 & 0 \\[2ex]
+          72 & 24 & 0 \\[2ex]
+          47 & 29 & 10
+          \end{bmatrix} \\[10ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA4')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA4">
+            <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 33%;">Order of Matrix <i>A</i></th>
+                <th style="width: 33%;">Order of Matrix <i>B</i></th>
+                <th style="width: 34%;">Order of Matrix <i>AB</i></th>
+              </tr>
+              <tr>
+                <td>$\color{purple}{3} \times \color{darkblue}{2}$</td>
+                <td>$\color{darkblue}{2} \times \color{purple}{3}$</td>
+                <td>$\color{purple}{3} \times \color{purple}{3}$</td>
+              </tr>
+            </table>
+            <br>
+            The 3 &times; 3 matrix is the matrix in Option <i>K</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Which of the following matrices is equal to
+          $
+          5\begin{bmatrix}
+          1 & 2 \\[2ex]
+          3 & 4
+          \end{bmatrix}
+          $
+          <br><br>
+          $
+          A.\:\: \begin{bmatrix}
+          5 & 2 \\[2ex]
+          3 & 4
+          \end{bmatrix} \\[5ex]
+          B.\:\: \begin{bmatrix}
+          5 & 2 \\[2ex]
+          3 & 20
+          \end{bmatrix} \\[5ex]
+          C.\:\: \begin{bmatrix}
+          1 & 10 \\[2ex]
+          15 & 4
+          \end{bmatrix} \\[5ex]
+          D.\:\: \begin{bmatrix}
+          6 & 7 \\[2ex]
+          8 & 9
+          \end{bmatrix} \\[5ex]
+          E.\:\: \begin{bmatrix}
+          5 & 10 \\[2ex]
+          15 & 20
+          \end{bmatrix} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA5')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA5')">Calculator Solution</button>
+          <div class="result" id="solutionLA5">
+            <br>
+            Because of the timed ACT test, you do not need to complete the question. <br>
+            One of the options typically stand out as the answer after few computations.
+            <br><br>
+            <i>
+              Samuel, what do you mean?
+              This is what I mean.
+            </i>
+            <br><br>
+            $
+            5(1) = 5 \\[3ex]
+            5(2) = 10 \\[3ex]
+            STOP \\[3ex]
+            $
+            The correct answer is Option <b>E.</b>
+            <br><br>
+            $
+            5\begin{bmatrix}
+            1 & 2 \\[2ex]
+            3 & 4
+            \end{bmatrix} =
+
+            \begin{bmatrix}
+            5(1) & 5(2) \\[2ex]
+            5(3) & 5(4)
+            \end{bmatrix} =
+
+            \begin{bmatrix}
+            5 & 10 \\[2ex]
+            15 & 20
+            \end{bmatrix}
+            $
+          </div>
+          <div class="result" id="solutionCLA5">
+            <br>
+            <img src="images/LinearAlgebra/Answers/Calculator5.png" alt="Calculator 5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) Given matrices <i>A</i> and <i>B</i> such that $A = \begin{bmatrix}
+          -7 & 2 & 4 \\[2ex]
+          -1 & 0 & -3
+          \end{bmatrix}$ and $B - A = \begin{bmatrix}
+          6 & 7 & 4 \\[2ex]
+          1 & -1 & -4
+          \end{bmatrix}$, what is matrix <i>B</i>?
+          <br><br>
+          $
+          A.\;\; \begin{bmatrix}
+          -13 & -5 & 0 \\[2ex]
+          -2 & 1 & 1
+          \end{bmatrix} \\[5ex]
+          B.\;\; \begin{bmatrix}
+          -1 & 9 & -8 \\[2ex]
+          0 & 1 & -7
+          \end{bmatrix} \\[5ex]
+          C.\;\; \begin{bmatrix}
+          -1 & 9 & 8 \\[2ex]
+          0 & -1 & -7
+          \end{bmatrix} \\[5ex]
+          D.\;\; \begin{bmatrix}
+          13 & 5 & 0 \\[2ex]
+          2 & -1 & -7
+          \end{bmatrix} \\[5ex]
+          E.\;\; \begin{bmatrix}
+          13 & 9 & 8 \\[2ex]
+          2 & 1 & 7
+          \end{bmatrix} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA6')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA6')">Calculator Solution</button>
+          <div class="result" id="solutionLA6">
+            <br>
+            $
+            B - A = difference \\[3ex]
+            B = difference + A \\[3ex]
+            = \begin{bmatrix}
+            6 & 7 & 4 \\[2ex]
+            1 & -1 & -4
+            \end{bmatrix} + \begin{bmatrix}
+            -7 & 2 & 4 \\[2ex]
+            -1 & 0 & -3
+            \end{bmatrix} \\[5ex]
+            = \begin{bmatrix}
+            6 + -7 & 7 + 2 & 4 + 4 \\[2ex]
+            1 + -1 & -1 + 0 & -4 + -3
+            \end{bmatrix} \\[5ex]
+            = \begin{bmatrix}
+            -1 & 9 & 8 \\[2ex]
+            0 & -1 & -7
+            \end{bmatrix}
+            $
+          </div>
+          <div class="result" id="solutionCLA6">
+            <br>
+            <img src="images/LinearAlgebra/Answers/Calculator6.png" alt="Calculator 6">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Which of the following matrices is equal to
+          $
+          4\begin{bmatrix}
+          -2 & 6 \\[2ex]
+          0 & -3
+          \end{bmatrix}
+          $
+          <br><br>
+          $
+          A.\:\: \begin{bmatrix}
+          -8 & 12
+          \end{bmatrix} \\[5ex]
+          B.\:\: \begin{bmatrix}
+          16 \\[2ex]
+          -12
+          \end{bmatrix} \\[5ex]
+          C.\:\: \begin{bmatrix}
+          2 & 10 \\[2ex]
+          4 & 1
+          \end{bmatrix} \\[5ex]
+          D.\:\: \begin{bmatrix}
+          -\dfrac{1}{2} & \dfrac{3}{2} \\[5ex]
+          0 & -\dfrac{3}{4}
+          \end{bmatrix} \\[8ex]
+          E.\:\: \begin{bmatrix}
+          -8 & 24 \\[2ex]
+          0 & -12
+          \end{bmatrix} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA7')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA7')">Calculator Solution</button>
+          <div class="result" id="solutionLA7">
+            <br>
+            Because of the timed ACT test, you do not need to complete the question. <br>
+            One of the options typically stand out as the answer after few computations.
+            <br><br>
+            <i>
+              Samuel, what do you mean?
+              This is what I mean.
+            </i>
+            <br><br>
+            $
+            4(-2) = -8 \\[3ex]
+            4(6) = 24 \\[3ex]
+            STOP \\[3ex]
+            $
+            The correct answer is Option <b>E.</b>
+            <br><br>
+            $
+            4\begin{bmatrix}
+            -2 & 6 \\[2ex]
+            0 & -3
+            \end{bmatrix} =
+
+            \begin{bmatrix}
+            4(-2) & 4(6) \\[2ex]
+            4(0) & 4(-3)
+            \end{bmatrix} =
+
+            \begin{bmatrix}
+            -8 & 24 \\[2ex]
+            0 & -12
+            \end{bmatrix}
+            $
+          </div>
+          <div class="result" id="solutionCLA7">
+            <br>
+            <img src="images/LinearAlgebra/Answers/Calculator7.png" alt="Calculator 7">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Matrices <i>A</i> and <i>B</i> are given below.
+          <br><br>
+          $
+          A = \begin{bmatrix}
+          2 & -6 \\[2ex]
+          -3 & 8
+          \end{bmatrix} \hspace{5em}
+          B = \begin{bmatrix}
+          -8 & 5 \\[2ex]
+          3 & 4
+          \end{bmatrix}
+          $
+          <br><br>
+          Which of the following matrices is <i>A</i> &minus; <i>B</i>?
+          <br><br>
+          $
+          F.\:\: \begin{bmatrix}
+          -10 & 11 \\[2ex]
+          6 & -4
+          \end{bmatrix} \\[5ex]
+          G.\:\: \begin{bmatrix}
+          -6 & 0 \\[2ex]
+          -1 & 12
+          \end{bmatrix} \\[5ex]
+          H.\:\: \begin{bmatrix}
+          -6 & -1 \\[2ex]
+          0 & 12
+          \end{bmatrix} \\[5ex]
+          J.\:\: \begin{bmatrix}
+          10 & -6 \\[2ex]
+          -11 & 4
+          \end{bmatrix} \\[5ex]
+          K.\:\: \begin{bmatrix}
+          10 & -11 \\[2ex]
+          -6 & 4
+          \end{bmatrix} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA9')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA9')">Calculator Solution</button>
+          <div class="result" id="solutionLA9">
+            <br>
+            Because of the timed ACT test, you do not need to complete the question. <br>
+            One of the options typically stand out as the answer after few computations.
+            <br><br>
+            <i>
+              Samuel, what do you mean?
+              This is what I mean.
+            </i>
+            <br><br>
+            $
+            2 - (-8) = 2 + 8 = 10 \\[3ex]
+            -6 - 5 = -11 \\[3ex]
+            STOP \\[3ex]
+            $
+            The correct answer is Option <b>K.</b>
+            <br><br>
+            $
+            A - B \\[3ex]
+            = \begin{bmatrix}
+            2 & -6 \\[2ex]
+            -3 & 8
+            \end{bmatrix} -
+            \begin{bmatrix}
+            -8 & 5 \\[2ex]
+            3 & 4
+            \end{bmatrix} \\[8ex]
+            = \begin{bmatrix}
+            2 - (-8) & -6 - 5 \\[2ex]
+            -3 - 3 & 8 - 4
+            \end{bmatrix} \\[8ex]
+            = \begin{bmatrix}
+            2 + 8 & -11 \\[2ex]
+            -6 & 4
+            \end{bmatrix} \\[8ex]
+            = \begin{bmatrix}
+            10 & -11 \\[2ex]
+            -6 & 4
+            \end{bmatrix}
+            $
+          </div>
+          <div class="result" id="solutionCLA9">
+            <br>
+            <img src="images/LinearAlgebra/Answers/Calculator9.png" alt="Calculator 9">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) A lawn-and-garden store sells 2 types of grass seed: shade and sun. <br>
+          The numbers of bags sold on Friday and Saturday last week are given in matrix A; the selling price per bag and
+          the profit per bag are given in matrix B. <br>
+          Price and profit are in dollars. <br>
+          What is the total profit for the sale of the 2 types of grass seed sold on Friday and Saturday?
+          <br><br>
+          <img src="images/LinearAlgebra/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          $
+          A.\;\; \$ 65.00 \\[3ex]
+          B.\;\; \$ 97.50 \\[3ex]
+          C.\;\; \$102.50 \\[3ex]
+          D.\;\; \$110.50 \\[3ex]
+          E.\;\; \$208.00 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA11')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA11">
+            <br>
+            $
+            \underline{\text{Profit}} \\[3ex]
+            Friday:\;\; 12(1.70) + 25(1.50) = \$57.90 \\[3ex]
+            Saturday:\;\; 13(1.70) + 15(1.50) = \$44.60 \\[3ex]
+            \text{Total Profit} = 57.90 + 44.60 = \$102.50
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA12')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) What is the value of <i>z</i> in the solution to the system of equations below?
+          <br><br>
+          $
+          2x + y - z = 0 \\[3ex]
+          x - 3y + z = 18 \\[3ex]
+          x + y = 1 \\[5ex]
+          A.\;\; -3 \\[3ex]
+          B.\;\; 1\dfrac{1}{2} \\[5ex]
+          C.\;\; 4 \\[3ex]
+          D.\;\; 5 \\[3ex]
+          E.\;\; 19 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA13')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA13')">Calculator Solution</button>
+          <div class="result" id="solutionLA13">
+            <br>
+            $
+            2x + y - z = 0 ...eqn.(1) \\[3ex]
+            x - 3y + z = 18 ...eqn.(2) \\[3ex]
+            x + y = 1 ...eqn.(3) \\[5ex]
+            \underline{\text{Elimination Method}} \\[3ex]
+            eqn.(2) - eqn.(3) \rightarrow \\[3ex]
+            x - 3y + z - (x + y) = 18 - 1 \\[3ex]
+            x - 3y + z - x - y = 17 \\[3ex]
+            -4y + z = 17 ...eqn.(4) \\[3ex]
+            2 \cdot eqn.(2) \rightarrow \\[3ex]
+            2(x - 3y + z) = 2(18) \\[3ex]
+            2x - 6y + 2z = 36 ...eqn.(5) \\[3ex]
+            eqn.(1) - eqn.(2) \rightarrow \\[3ex]
+            2x + y - z - (2x - 6y + 2z) = 0 - 36 \\[3ex]
+            2x + y - z - 2x + 6y - 2z = -36 \\[3ex]
+            7y - 3z = -36 ...eqn.(6) \\[3ex]
+            7 \cdot eqn.(4) + 4 \cdot eqn.(6) \rightarrow \\[3ex]
+            7(-4y + z) + 4(7y - 3z) = 7(17) + 4(-36) \\[3ex]
+            -28y + 7z + 28y - 12z = 119 - 144 \\[3ex]
+            -5z = -25 \\[3ex]
+            z = \dfrac{-25}{-5} \\[5ex]
+            z = 5
+            $
+          </div>
+          <div class="result" id="solutionCLA13">
+            <br>
+            $
+            2x + y - z = 0 \\[3ex]
+            x - 3y + z = 18 \\[3ex]
+            x + y + 0z = 1 \\[3ex]
+            \text{Matrix of Coefficients} \cdot \text{Matrix of Variables} = \text{Matrix of Constants} \\[5ex]
+            \underline{\text{Cramer's Rule (Method of Determinants)}} \\[3ex]
+            \begin{bmatrix}
+            2 & 1 & -1 \\[2ex]
+            1 & -3 & 1 \\[2ex]
+            1 & 1 & 0
+            \end{bmatrix}\begin{bmatrix}
+            x \\[2ex]
+            y \\[2ex]
+            z
+            \end{bmatrix} = \begin{bmatrix}
+            0 \\[2ex]
+            18 \\[2ex]
+            1
+            \end{bmatrix} \\[12ex]
+            z = \dfrac{\begin{vmatrix}
+            2 & 1 & 0 \\[3ex]
+            1 & -3 & 18 \\[3ex]
+            1 & 1 & 1
+            \end{vmatrix}}{\begin{vmatrix}
+            2 & 1 & -1 \\[3ex]
+            1 & -3 & 1 \\[3ex]
+            1 & 1 & 0
+            \end{vmatrix}}
+            $
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator13.png" alt="Calculator 13">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionLA15')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA16')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionLA17')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA18')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionLA19')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA20')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/LinearAlgebra.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionLA21')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA22')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Integral Calculus</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage has the solutions to the WASSCE Further Mathematics questions on integral calculus.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  Further Mathematics, WASSCE, West African Senior School Certificate Examination, calculus, integral calculus, 
+  integration by algebraic substitution, integration by trigonometric substitution, integration by hyperbolic substitution, 
+  integration of products, integration by parts, integration by partial fractions, integral, definite integral, indefinite integral, 
+  functions, power rule, explicit function, implicit function, exponential functions, logarithmic functions, trigonometric functions, 
+  special integrals, financial mathematics, mathematics of finance, numerical integration, improper integrals, 
+  integration tables, reduction formulas, probability, areas, fundamental theorem of calculus, volumes, simpson's rule, 
+  trapezoidal rule, approximate errors, limits, infinite limits of integration, present value, perpetuity, 
+  derivative, antiderivative, area between curves, volume of solid of revolution, integration calculators, 
+  integral calculus calculators">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#applications" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Applications</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Integral Calculus</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to the WASSCE Further Mathematics past questions on Integral Calculus. <br>
+        The TI-84 Plus CE shall be used for applicable questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable and helpful in your passing the Further Mathematics test of the WASSCE,
+        please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <!-- Standard Integrals of Exponents -->
+      <h2>Standard Integrals of Exponents</h2>
+      <p>
+        $
+        \text{a, b, n are positive constants} \\[3ex]
+        (1.)\:\: \displaystyle\int ax^n dx = \dfrac{ax^{n + 1}}{n + 1} + C \\[7ex]
+        (2.)\:\: \displaystyle\int (ax \pm b)^n dx = \dfrac{(ax \pm b)^{n + 1}}{a(n + 1)} + C \\[7ex]
+        (3.)\:\: \displaystyle\int (-ax \pm b)^n dx = -\dfrac{(ax \pm b)^{n + 1}}{a(n + 1)} + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Exponents -->
+
+      <!-- Standard Integrals of Exponential Functions -->
+      <h2>Standard Integrals of Exponential Functions</h2>
+      <p>
+        $
+        \text{a, b, k, n are positive constants} \\[3ex]
+        (1.)\:\: \displaystyle\int a^x dx = \dfrac{a^x}{\ln a} + C \\[7ex]
+        (2.)\:\: \displaystyle\int e^x dx = e^x + C \\[7ex]
+        (3.)\:\: \displaystyle\int e^{kx} dx = \dfrac{e^{kx}}{k} + C \\[7ex]
+        (4.)\:\: \displaystyle\int e^{-kx} dx = \dfrac{-e^{-kx}}{k} + C \\[7ex]
+        (5.)\:\: \displaystyle\int e^{ax \pm b} dx = \dfrac{e^{ax \pm b}}{n} + C \\[7ex]
+        (6.)\:\: \displaystyle\int k^{ax \pm b} dx = \dfrac{k^{ax \pm b}}{a\ln k} + C \\[7ex]
+        (7.)\:\: \displaystyle\int xe^{ax} dx = \dfrac{e^{ax}(ax - 1)}{a^2} + C \\[7ex]
+        (8.)\:\: \displaystyle\int x^ne^{ax} dx = \dfrac{x^ne^{ax}}{a} - \dfrac{n}{a}\displaystyle\int x^{n - 1}e^{ax}
+        dx \\[7ex]
+        (9.)\:\: \displaystyle\int \dfrac{dx}{1 + ke^{ax}} = x - \dfrac{\ln(1 + ke^{ax})}{a} + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Exponential Functions -->
+
+      <!-- Standard Integrals of Logarithmic Functions -->
+      <h2>Standard Integrals of Logarithmic Functions</h2>
+      <p>
+        $
+        \text{n is a positive constant} \\[3ex]
+        (1.)\:\: \displaystyle\int \ln x dx = x\ln x - x + C \\[7ex]
+        (2.)\:\: \displaystyle\int (\ln x)^n dx = x(\ln x)^n - n\displaystyle\int (\ln x)^{n - 1}dx \\[7ex]
+        (3.)\:\: \displaystyle\int \dfrac{dx}{x\ln x} = \ln|\ln x| + C \\[7ex]
+        (4.)\:\: \displaystyle\int x^n\ln x dx = \dfrac{x^{n + 1}[\ln x(n + 1) - 1]}{(n + 1)^2} + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Logarithmic Functions -->
+
+      <!-- Standard Integrals of Trigonometric Functions -->
+      <h2>Standard Integrals of Trigonometric Functions</h2>
+      <p>
+        $
+        (1.)\:\: \displaystyle\int \sin x dx = -cos x + C \\[7ex]
+        (2.)\:\: \displaystyle\int cos x dx = sin x + C \\[7ex]
+        (3.)\:\: \displaystyle\int \sec^2 x = \tan x + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Trigonometric Functions -->
+
+      <!-- Standard Integrals of Hyperbolic Functions -->
+      <h2>Standard Integrals of Hyperbolic Functions</h2>
+      <p>
+        $
+        (1.)\:\: \displaystyle\int \sinh x dx = \cosh x + C \\[7ex]
+        (2.)\:\: \displaystyle\int \cosh x dx = \sinh x + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Hyperbolic Functions -->
+
+      <!-- Standard Integrals of Rational Functions -->
+      <h2>Standard Integrals of Rational Functions</h2>
+      <p>
+        $
+        \text{a, b, n are positive constants} \\[3ex]
+        (1.)\:\: \displaystyle\int \dfrac{1}{x} dx = \ln x + C \\[7ex]
+        (2.)\:\: \displaystyle\int \dfrac{1}{ax \pm b} dx = \dfrac{\ln|ax \pm b|}{a} + C \\[7ex]
+        (3.)\:\: \displaystyle\int \dfrac{1}{\sqrt{1 - x^2}} dx = \sin^{-1}x + C \\[7ex]
+        (4.)\:\: \displaystyle\int \dfrac{-1}{\sqrt{1 - x^2}} dx = \cos^{-1}x + C \\[7ex]
+        (5.)\:\: \displaystyle\int \dfrac{1}{1 + x^2} dx = \tan^{-1}x + C \\[7ex]
+        (6.)\:\: \displaystyle\int \dfrac{1}{\sqrt{x^2 + 1}} dx = \sinh^{-1}x + C \\[7ex]
+        (7.)\:\: \displaystyle\int \dfrac{1}{\sqrt{x^2 - 1}} dx = \cosh^{-1}x + C \\[7ex]
+        (8.)\:\: \displaystyle\int \dfrac{1}{1 - x^2} dx = \tanh^{-1}x + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Rational Functions -->
+
+      <!-- Standard Integrals of Absolute Value Functions -->
+      <h2>Standard Integrals of Absolute Value Functions</h2>
+      <p>
+        $
+        \text{a, b, n are positive constants} \\[3ex]
+        (1.)\:\: \displaystyle\int |x| dx = \dfrac{x|x|}{2} + C \\[7ex]
+        (2.)\:\: \displaystyle\int |ax \pm b| dx = \dfrac{(ax \pm b)|ax \pm b|}{2a} + C \\[5ex]
+        $
+      </p>
+      <!-- End Standard Integrals of Absolute Value Functions -->
+
+      <!-- Other Standard Integrals -->
+      <h2>Other Standard Integrals</h2>
+      <p>
+        $
+        \underline{\text{Algebraic Substitution}} \\[3ex]
+        (1.)\:\: \displaystyle\int f(x)f'(x) dx = \dfrac{f^2(x)}{2} + C \\[7ex]
+        (2.)\:\: \displaystyle\int \dfrac{f'(x)}{f(x)} dx = \ln f(x) + C \\[7ex]
+        (3.)\:\: \displaystyle\int \dfrac{-f'(x)}{f(x)} dx = -\ln f(x) + C \\[7ex]
+
+        \underline{\text{Trigonometric Substitution}} \\[3ex]
+        (4.)\;\; \displaystyle\int \dfrac{dx}{a^2 + x^2} = \dfrac{1}{a}\tan^{-1}\left(\dfrac{x}{a}\right) + C \\[7ex]
+        (5.)\;\; \displaystyle\int \dfrac{dx}{\sqrt{a^2 - x^2}} = \sin^{-1}\left(\dfrac{x}{a}\right) + C \\[7ex]
+        (6.)\;\; \displaystyle\int \sqrt{a^2 - x^2}dx = \dfrac{a^2}{2}\left[\sin^{-1}\left(\dfrac{x}{a}\right) +
+        \dfrac{x\sqrt{a^2 - x^2}}{a^2}\right] + C \\[7ex]
+
+        \underline{\text{Integration by Parts (Integration of Products)}} \\[3ex]
+        (7.)\;\; \displaystyle\int vdu = uv - \displaystyle\int udv \\[7ex]
+
+        \underline{\text{Hyperbolic Substitution}} \\[3ex]
+        (8.)\;\; \displaystyle\int \dfrac{dx}{\sqrt{a^2 + x^2}} = \sinh^{-1}\left(\dfrac{x}{a}\right) + C \\[7ex]
+        (9.)\;\; \displaystyle\int \dfrac{dx}{\sqrt{x^2 - a^2}} = \cosh^{-1}\left(\dfrac{x}{a}\right) + C \\[7ex]
+
+        \underline{\text{Integral Reflection Method}} \\[3ex]
+        \text{Also known as Symmetric Substitution OR Functional Transformation in Integration} \\[3ex]
+        \displaystyle\int_a^b \dfrac{f(x_1)}{f(x_1) + f(x_2)}dx \\[7ex]
+        Let\;\; a + b = \text{some constant},\;c \\[3ex]
+        \text{Set the substitution}:\;\; x = c - x \\[3ex]
+        \implies \\[3ex]
+        f(x) = \text{original function} \\[3ex]
+        f(c - x) = \text{transformed function} \\[3ex]
+        \text{Assume the original function and the transformed function complements each other} \\[3ex]
+        f(x) + f(c - x) = 1 \\[3ex]
+        Let\;\; I_1 = \displaystyle\int_a^b \dfrac{f(x_1)}{f(x_1) + f(x_2)}dx ...\text{integral of original function}
+        \\[7ex]
+        Let:\;\;I_2 = \displaystyle\int_a^b \dfrac{f(x_2)}{f(x_2) + f(x_1)}dx ...\text{integral of transformed function}
+        \\[7ex]
+        I_1 = I_2 = \text{the integral},\;I \\[4ex]
+        I_1 + I_2 = 2I \\[3ex]
+        $
+        Because we are integrating over the same limits and the variable, <i>x</i> is just being swapped with <i>c</i>
+        &minus; <i>x</i>, the integral remains the same as long as the transformation preserves the total area under the
+        curve.
+        <br><br>
+        $
+        2I = \displaystyle\int_a^b 1 dx = [x]_a^b = b - a \\[5ex]
+        I = \dfrac{b - a}{2}
+        $
+      </p>
+      <!-- End Other Standard Integrals -->
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) <b>The Fundamental Theorem of Calculus</b>: <br>
+        Assume: <br>
+        a closed interval: $[c, d]$ <br>
+        a continuous function, $f$ defined on the interval <br>
+        an antiderivative of the function, $F$ defined on the interval <br>
+        then: <br>
+        $\displaystyle\int_c^d f(x) dx = F(d) - F(c)$
+        <br><br>
+        (2.)
+
+
+
+
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Applications -->
+    <div class="w3-container w3-padding-32" id="applications">
+      <h2>Applications</h2>
+      <p>
+        (1.) <b>Economics</b>
+        <br><br>
+        $
+        (a.) \\[3ex]
+        TC = \displaystyle\int MC(x) dx \\[5ex]
+        where \\[3ex]
+        x = \text{number of items} \\[3ex]
+        MC = \text{Marginal Cost function} \\[3ex]
+        TC = \text{Total Cost function} \\[3ex]
+        \text{constant of integration is the fixed cost} \\[5ex]
+        (b.) \\[3ex]
+        TR = \displaystyle\int MR(x) dx \\[5ex]
+        where \\[3ex]
+        x = \text{number of items} \\[3ex]
+        MR = \text{Marginal Revenue function} \\[3ex]
+        TR = \text{Total Revenue function} \\[3ex]
+        \text{constant of integration = 0 if no item is produced} \\[5ex]
+        (c.) \\[3ex]
+        NC = \displaystyle\int MPC(x) dx \\[5ex]
+        where \\[3ex]
+        x = \text{disposable national income} \\[3ex]
+        MPC = \text{marginal propensity to consume} \\[3ex]
+        NC = \text{national consumption function} \\[5ex]
+        $
+        (2.) <b>Average Value of a Function</b> <br>
+
+        (3.) <b>Trapezium Rule</b> (or <b>Trapezoidal Rule</b>)
+        <br><br>
+        $
+        Given: \displaystyle\int_{c}^{d} f(x) dx \\[7ex]
+        (a.) \\[3ex]
+        \text{Definite Integral} = \dfrac{\Delta x}{2} [f(x_0) + 2f(x_1) + 2f(x_2) + 2f(x_3) + ... + 2f(x_{n - 1}) +
+        f(x_n)] \\[7ex]
+        \text{Definite Integral} = \dfrac{\Delta x}{2} [f(x_0) + f(x_n) + 2(f(x_1) + f(x_2) + f(x_3) + ... + f(x_{n -
+        1}))] \\[7ex]
+        where: \\[3ex]
+        c = \text{lower limit of integration} \\[3ex]
+        d = \text{upper limit of integration} \\[3ex]
+        \Delta x = \text{width of the interval} \\[3ex]
+        x_0, x_1, x_2, x_3, ..., x_{n - 1}, x_n \;\;\text{are the nodes (also referred to as ordinates)} \\[3ex]
+        f(x_0) \;\;and\;\; f(x_n) \;\;\text{are the function values at the endpoints} \\[3ex]
+        f(c), \; f(d), \; f(x_3), ..., f(x_{n - 1}) \;\;\text{are the function values at the intermediate points}
+        \\[3ex]
+
+        (b.) \\[3ex]
+        \Delta x = \dfrac{d - c}{n} \\[5ex]
+        \Delta x = \dfrac{d - c}{r - 1} \\[5ex]
+        (c.) \\[3ex]
+        n = r - 1 \\[3ex]
+        where: \\[3ex]
+        n = \text{number of intervals} \\[3ex]
+        r = \text{number of ordinates} \\[5ex]
+        $
+
+
+
+
+
+      </p>
+    </div>
+    <!-- End Applications -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Using the Trapezium Rule with <b>seven</b> ordinates, evaluate, correct to <b>three</b> decimal places,
+          $
+          \displaystyle\int_{2.4}^{3.6} \dfrac{1}{\sqrt{x^2 - 2}} dx \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionIC1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCIC1')">Calculator Check</button>
+          <div class="result" id="solutionIC1">
+            <br>
+            Because we are asked to round the final answer to three decimal places, it is okay to round intermediate
+            values to at least six decimal places.
+            <br><br>
+            $
+            \dfrac{1}{\sqrt{x^2 - 2}} \\[5ex]
+            r = \text{number of ordinates (nodes)} = 7 \\[3ex]
+            n = \text{number of intervals} = 7 - 1 = 6 \\[5ex]
+
+            \underline{\text{Interval Width}} \\[3ex]
+            \Delta x = \dfrac{d - c}{n} \\[5ex]
+            where: \\[3ex]
+            c = \text{lower limit of integration} = 2.4 \\[3ex]
+            d = \text{upper limit of integration} = 3.6 \\[3ex]
+            \Delta x = \text{width of the interval} \\[3ex]
+            \Delta x = \dfrac{3.6 - 2.4}{6} \\[5ex]
+            = \dfrac{1.2}{6} \\[5ex]
+            = 0.2 \\[5ex]
+
+            \underline{\text{Nodes (Ordinates)}} \\[3ex]
+            \text{The nodes are:} \\[3ex]
+            x_0, x_1, x_2, x_3, x_4, x_5, x_6, x_7 \\[3ex]
+            = 2.4, 2.4 + 0.2, 2.4 + 2(0.2), 2.4 + 3(0.2), 2.4 + 4(0.2), 2.4 + 5(0.2), 2.4 + 6(0.2) \\[3ex]
+            = 2.4, 2.6, 2.8, 3, 3.2, 3.4, 3.6 \\[5ex]
+
+            \underline{\text{Function Values}} \\[3ex]
+            f(x_0), f(x_1), f(x_2), f(x_3), f(x_4), f(x_5), f(x_6), f(x_7) \\[3ex]
+            f(2.4) = \dfrac{1}{\sqrt{(2.4)^2 - 2}} \approx 0.515711 \\[5ex]
+            f(2.6) = \dfrac{1}{\sqrt{(2.6)^2 - 2}} \approx 0.458349 \\[5ex]
+            f(2.8) = \dfrac{1}{\sqrt{(2.8)^2 - 2}} \approx 0.413803 \\[5ex]
+            f(3) = \dfrac{1}{\sqrt{(3)^2 - 2}} \approx 0.377964 \\[5ex]
+            f(3.2) = \dfrac{1}{\sqrt{(3.2)^2 - 2}} \approx 0.348367 \\[5ex]
+            f(3.4) = \dfrac{1}{\sqrt{(3.4)^2 - 2}} \approx 0.323423 \\[5ex]
+            f(3.6) = \dfrac{1}{\sqrt{(3.6)^2 - 2}} \approx 0.302061 \\[7ex]
+
+            \underline{\text{Trapezium Rule}} \\[3ex]
+            \text{Definite Integral} = \dfrac{\Delta x}{2} [f(x_0) + f(x_n) + 2(f(x_1) + f(x_2) + f(x_3) + ... + f(x_{n
+            - 1}))] \\[5ex]
+            = \dfrac{0.2}{2} [0.515711 + 0.302031 + 2(0.458349 + 0.413803 + 0.377964 + 0.348367 + 0.323423)] \\[5ex]
+            = 0.1(4.661554) \\[3ex]
+            = 0.4661554 \\[3ex]
+            \approx 0.466 ...\text{to 3 decimal places}
+            $
+          </div>
+          <div class="result" id="solutionCIC1">
+            <br>
+            Directly (by Calculator): This is the exact answer. <br>
+            Trapezium Rule gives an approximate.
+            <br><br>
+            <img src="images/IntegralCalculus/Answers/Calculator1-4th.png" alt="Calculator1-4th">
+            <br><br>
+            Intermediate Steps: <br>
+            <img src="images/IntegralCalculus/Answers/Calculator1-1st.png" alt="Calculator1-1st">
+            <br><br>
+            <img src="images/IntegralCalculus/Answers/Calculator1-2nd.png" alt="Calculator1-2nd">
+            <br><br>
+            <img src="images/IntegralCalculus/Answers/Calculator1-3rd.png" alt="Calculator1-3rd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC2')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC3')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC3">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC4')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC5')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC6')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC7')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC7">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC8')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC9')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC9">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC10')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC11')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC11">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC12')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC13')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC14')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC15')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC16')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC17')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC18')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC19')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC20')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE-FurtherMath/IntegralCalculus.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC21')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC22')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC23')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC24')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC25')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC26')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC27')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC28')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC29')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionIC30')">Show/Hide Answer</button>
+          <div class="result" id="solutionIC30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

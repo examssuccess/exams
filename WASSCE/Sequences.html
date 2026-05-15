@@ -1,0 +1,1479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Sequences</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to WASSCE exam questions on sequences.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, WASSCE, 
+  West African Senior School Certificate Examination, Algebra, sequences, series, arithmetic progression, geometric progression, 
+  arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+  common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+  sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+  general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+  second difference, linear expression, quadratic expression, linear function, quadratic function, 
+  linear equation, quadratic equation, summation, sigma notation, recurrence sequence, recurrence relation, 
+  recurrence equation, square sequence, initial conditions, first-order linear recurrence relation, second-order linear 
+  recurrence relation, recursion, recurrence, triangular number, triangular number sequence, square number, 
+  square number sequence, cube sequence, cube number, cube number sequence, degree, characteristic equation, characteristic root,
+  explicit formula, closed form, golden ratio">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Sequences and Series</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to WASSCE past questions on Sequences. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable and helpful in your passing the
+        Mathematics test of WASSCE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Arithmetic Sequence</h2>
+        </li>
+        <li>$AS_n$ = $nth$ term of an Arithmetic Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$d$ = common difference</li>
+        <li>$n$ = number of terms</li>
+        <li>$SAS_n$ = sum of the first $n$ terms of an Arithmetic Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: AS_n = a + d(n - 1) \\[5ex]
+        (2.)\:\: AS_n = vn + w \:\:where\:\: v = d \:\:and\:\: w = a - d \\[5ex]
+        (3.)\:\: p = a + d(n - 1) \\[5ex]
+        (4.)\:\: SAS_n = \dfrac{n}{2}(a + AS_n) \\[7ex]
+        (5.)\:\: SAS_n = \dfrac{n}{2}(a + p) \\[7ex]
+        (6.)\:\: SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[7ex]
+        (7.)\:\: n = \dfrac{2 * SAS_n}{a + p} \\[7ex]
+        (8.)\:\: n = \dfrac{p - a + d}{d} \\[7ex]
+        (9.)\:\: n = \dfrac{-(2a - d) \pm \sqrt{(2a - d)^2 + 8d*SAS_n}}{2d} \\[7ex]
+        (10.)\;\; d = \dfrac{(p - a)(p + a)}{2 * SAS_n - p - a}
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Geometric Sequence</h2>
+        </li>
+        <li>$GS_n$ = $nth$ term of a Geometric Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$r$ = common ratio</li>
+        <li>$n$ = number of terms</li>
+        <li>$SGS_n$ = sum of the first $n$ terms of a Geometric Sequence</li>
+        <li>$S_{\infty}$ = sum to infinity of a Geometric Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: GS_n = ar^{n - 1} \\[5ex]
+        (2.)\:\: SGS_n = \dfrac{a(r^{n} - 1)}{r - 1} \:\:for\:\: r \gt 1 \\[7ex]
+        (3.)\:\: SGS_n = \dfrac{a(1 - r^{n})}{1 - r} \:\:for\:\: r \lt 1 \\[7ex]
+        (4.)\:\: n = \dfrac{\log{\left[\dfrac{SGS_n(r - 1)}{a} + 1\right]}}{\log r} \\[7ex]
+        (5.)\:\: If\:\:r \lt 1,\:\:the\:\:series\:\:converges\:\:and\:\: S_{\infty} = \dfrac{a}{1 - r} \\[7ex]
+        (6.)\:\: If\:\:r \gt 1,\:\:the\:\:series\:\:diverges \\[5ex]
+        (7.)\:\: If\:\:r = 1,\:\:S_{\infty}\:\:DNE \\[5ex]
+        (8.)\:\: r = \dfrac{S_{\infty} - a}{S_{\infty}} \\[7ex]
+        (9.)\:\: a = S_{\infty}(1 - r)
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Quadratic Sequence</h2>
+        </li>
+        <li>$QS_n$ = $n$th term of a Quadratic Sequence = $an^2 + bn + c$</li>
+        <li>$1st$ = first term</li>
+        <li>$2nd$ = second term</li>
+        <li>$3rd$ = third term</li>
+        <li>$4th$ = fourth term</li>
+        <li>$n$ = number of terms</li>
+        <li>$a$ = coefficient of $n^2$</li>
+        <li>$b$ = coefficient of $n$</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        QS = 1st,\:\:\:\:2nd,\:\:\:3rd,\:\:\:4th,... \\[5ex]
+        QS_n = an^2 + bn + c \\[5ex]
+        (1.)\:\: a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[7ex]
+        (2.)\:\: b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[7ex]
+        (3.)\:\: c = 3(1st) - 3(2nd) + 3rd \\[5ex]
+        (4.)\:\: \therefore QS_n = \dfrac{1st + 3rd - 2(2nd)}{2} * n^2 + \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} * n +
+        3(1st) - 3(2nd) + 3rd \\[7ex]
+        The\:\:Left\:\:Hand\:\:Side\:\:must\;\;be\:\:equal\:\:to\;\;the\:\:Right\:\:Hand\:\:Side \\[5ex]
+        (5.)\:\: a + b + c = 1st \\[5ex]
+        (6.)\:\: 4a + 2b + c = 2nd \\[5ex]
+        (7.)\:\: 9a + 3b + c = 3rd \\[5ex]
+        (8.)\:\: 3a + b = 2nd - 1st \\[5ex]
+        (9.)\:\: 8a + 2b = 3rd - 1st
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Other Sequences</h2>
+        </li>
+        <li>$TS_n$ = $nth$ term of a Triangular Number Sequence</li>
+        <li>$SS_{n}$ = $nth$ term of a Square Number Sequence</li>
+        <li>$CS_{n}$ = $nth$ term of a Cube Number Sequence</li>
+        <li>$n$ = number of terms</li>
+        <li>$STS_n$ = sum of the first $n$ terms of a Triangular Number Sequence</li>
+        <li>$SSS_n$ = sum of the first $n$ terms of a Square Number Sequence</li>
+        <li>$SCS_n$ = sum of the first $n$ terms of a Cube Number Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{Triangular\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: TS_n = \dfrac{n(n + 1)}{2} \\[7ex]
+        (2.)\;\; n = \dfrac{\sqrt{8 * TS_n + 1} - 1}{2} \\[7ex]
+        (3.)\:\: TS_n = C(n + 1, 2)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[5ex]
+        (4.)\;\; STS_n = \dfrac{n(n + 1)(n + 2)}{6} \\[7ex]
+        (5.)\:\: STS_n = C(n + 2, 3)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[7ex]
+
+        \underline{Square\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: SS_n = n^2 \\[5ex]
+        (2.)\;\; n = \sqrt{SS_n} \\[5ex]
+        (3.)\;\; SSS_n = \dfrac{n(n + 1)(2n + 1)}{6} \\[7ex]
+
+        \underline{Cube\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: CS_n = n^3 \\[5ex]
+        (2.)\;\; n = \sqrt[3]{CS_n} \\[5ex]
+        (3.)\;\; SCS_n = \left[\dfrac{n(n + 1)}{2}\right]^2 \\[7ex]
+        (4.)\;\; n = \dfrac{\sqrt{8\sqrt{SCS_n} + 1} - 1}{2} \\[7ex]
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Recursive Sequence</h2>
+        </li>
+        <li>$RS_n$ = $nth$ term of a Recursive Sequence</li>
+        <li>$RS_{n + 1}$ = next term of a Recursive Sequence</li>
+        <li>$a$ = first term (constant)</li>
+        <li>$r$ = common ratio (coefficient of the $nth$ term)</li>
+        <li>$RS_1$ = initial term</li>
+        <li>$n$ = number of terms</li>
+        <li>$SRS_n$ = sum of the first $n$ terms of a Recursive Sequence</li>
+        <li>$\phi$ = Golden Ratio</li>
+        <li>$FS_n$ = $nth$ term of a Fibonacci Sequence</li>
+        <li>$SFS_n$ = sum of the first $n$ terms of a Fibonacci Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{First-Order\;\;Linear\;\;Recurrence\;\;Relation} \\[3ex]
+        (1.)\:\: RS_{n + 1} = r * RS_{n} + a \\[5ex]
+        (2.)\:\: RS_{n + 1} = \dfrac{RS_1 * r^n(r - 1) + a(r^n - 1)}{r - 1} \;\;\;for\;\;r \gt 1 \\[7ex]
+        (3.)\;\; RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[7ex]
+
+        \underline{Fibonacci\;\;Sequence} \\[3ex]
+        (1.)\;\; \phi = \dfrac{1 + \sqrt{5}}{2} \\[7ex]
+        (2.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\left(\dfrac{1 + \sqrt{5}}{2}\right)^n - \left(\dfrac{1 -
+        \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (3.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\phi^n - \left(\dfrac{1 - \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (4.)\;\; SFS_n = \dfrac{\sqrt{5}}{5}\left[\dfrac{\phi^3(\phi^{n - 1} - 1) + [(\phi - 1)(1 - \phi^2)][(1 -
+        \phi)^{n - 1} - 1]}{\phi(\phi - 1)}\right] + 1
+        $
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Given the Arithmetic Sequence $-6, -2\dfrac{1}{2}, 1, ..., 71,$ <br>
+          find the: <br>
+          (i) common difference; <br>
+          (ii) number of terms of the sequence.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS1')">Show/Hide Answer</button>
+          <div class="result" id="solutionS1">
+            <br>
+            $
+            a = -6 \\[3ex]
+            p = 71 \\[3ex]
+            d = 2nd\:\: term - a \\[3ex]
+            OR \\[3ex]
+            d = 3rd\:\: term - 2nd\:\: term \\[3ex]
+            = -2\dfrac{1}{2} - (-6) \\[5ex]
+            = -\dfrac{5}{2} + 6 \\[5ex]
+            = -\dfrac{5}{2} + \dfrac{12}{2} \\[5ex]
+            \implies d = \dfrac{-5 + 12}{2} = \dfrac{7}{2} \\[5ex]
+            OR \\[3ex]
+            d = 1 - \left(-2\dfrac{1}{2}\right) \\[5ex]
+            = 1 + \left(2\dfrac{1}{2}\right) \\[5ex]
+            = 1 + \dfrac{5}{2} \\[5ex]
+            = \dfrac{2}{2} + \dfrac{5}{2} \\[5ex]
+            \implies d = \dfrac{2 + 5}{2} = \dfrac{7}{2} \\[5ex]
+            n = \dfrac{p - a + d}{d} \\[5ex]
+            n = (p - a + d) \div d \\[3ex]
+            p - a + d = 71 - (-6) + \dfrac{7}{2} \\[5ex]
+            = 71 + 6 + \dfrac{7}{2} \\[5ex]
+            = 77 + \dfrac{7}{2} \\[5ex]
+            = \dfrac{154}{2} + \dfrac{7}{2} \\[5ex]
+            = \dfrac{154 + 7}{2} = \dfrac{161}{2} \\[5ex]
+            \implies p - a + d = \dfrac{161}{2} \\[5ex]
+            (p - a + d) \div d = \dfrac{161}{2} \div \dfrac{7}{2} \\[5ex]
+            = \dfrac{161}{2} * \dfrac{2}{7} \\[5ex]
+            = 23 \\[3ex]
+            \implies n = 23
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) The product of the second and third terms of an exponential sequence (GP) is 972. <br>
+          If the first term is $\dfrac{3}{4}$, find the common ratio.
+          <br><br>
+          $
+          A.\:\: 8 \\[3ex]
+          B.\:\: 10 \\[3ex]
+          C.\:\: 11 \\[3ex]
+          D.\:\: 12 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionS2')">Show/Hide Answer</button>
+          <div class="result" id="solutionS2">
+            <br>
+            $
+            GS_n = ar^{n - 1} \\[3ex]
+            GS_2 = ar^{2 - 1} = ar^1 = ar \\[3ex]
+            GS_3 = ar^{3 - 1} = ar^2 \\[3ex]
+            ar * ar^2 = 972 \\[3ex]
+            a^2 * r^3 = 972 \\[3ex]
+            a^2 = \left(\dfrac{3}{4}\right)^2 = \dfrac{3^2}{4^2} = \dfrac{9}{16} \\[5ex]
+            \rightarrow \dfrac{9}{16} * r^3 = 972 \\[5ex]
+            Multiply\:\:both\:\:sides\:\:by\:\: \dfrac{16}{9} \\[5ex]
+            \dfrac{16}{9} * \dfrac{9}{16} * r^3 = \dfrac{16}{9} * 972 \\[5ex]
+            r^3 = 16 * 108 \\[3ex]
+            r^3 = 1728 \\[3ex]
+            r = \sqrt[3]{1728} \\[3ex]
+            r = 12
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The third and sixth terms of a Geometric Progression (G.P) are $\dfrac{1}{4}$ and $\dfrac{1}{32}$
+          respectively. <br>
+          Find the: <br>
+          (i) first term and the common ratio <br>
+          (ii) seventh term
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS3')">Show/Hide Answer</button>
+          <div class="result" id="solutionS3">
+            <br>
+            $
+            (i) \\[3ex]
+            GS_n = ar^{n - 1} \\[3ex]
+            GS_3 = ar^{3 - 1} \\[3ex]
+            \dfrac{1}{4} = ar^2 \\[5ex]
+            ar^2 = \dfrac{1}{4}...eqn.(1) \\[5ex]
+            GS_6 = ar^{6 - 1} \\[3ex]
+            \dfrac{1}{32} = ar^5 \\[5ex]
+            ar^5 = \dfrac{1}{32}...eqn.(2) \\[5ex]
+            eqn.(2) \div eqn.(1) \implies \\[3ex]
+            \dfrac{ar^5}{ar^2} = \dfrac{1}{32} \div \dfrac{1}{4} \\[5ex]
+            r^3 = \dfrac{1}{32} * \dfrac{4}{1} \\[5ex]
+            r^3 = \dfrac{1}{8} \\[5ex]
+            r = \sqrt[3]{\dfrac{1}{8}} \\[5ex]
+            r = \dfrac{1}{2} \\[5ex]
+            From\;\;eqn.(1) \\[3ex]
+            ar^2 = \dfrac{1}{4} \\[5ex]
+            a = \dfrac{1}{4} \div r^2 \\[5ex]
+            a = \dfrac{1}{4} \div \left(\dfrac{1}{2}\right)^2 \\[5ex]
+            a = \dfrac{1}{4} \div \dfrac{1}{4} \\[5ex]
+            a = 1 \\[3ex]
+            (ii) \\[3ex]
+            GS_7 = ar^6 \\[3ex]
+            = 1 * \left(\dfrac{1}{2}\right)^6 \\[5ex]
+            = \dfrac{1}{64}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) The fifth term of an Arithmetic Progression (A.P) is 11 and the eighth term is 20 <br>
+          Find the: <br>
+          (i) 12th term <br>
+          (ii.) Sum of the first 12 terms
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS4')">Show/Hide Answer</button>
+          <div class="result" id="solutionS4">
+            <br>
+            $
+            AS_n = a + d(n - 1) \\[3ex]
+            AS_{5} = a + 4d \\[3ex]
+            11 = a + 4d \\[3ex]
+            a + 4d = 11...eqn.(1) \\[3ex]
+            AS_{8} = a + 7d \\[3ex]
+            20 = a + 7d \\[3ex]
+            a + 7d = 20...eqn.(2) \\[3ex]
+            eqn.(2) - eqn.(1) \implies \\[3ex]
+            (a + 7d) - (a + 4d) = 20 - 11 \\[3ex]
+            a + 7d - a - 4d = 9 \\[3ex]
+            3d = 9 \\[3ex]
+            d = \dfrac{9}{3} \\[5ex]
+            d = 3 \\[3ex]
+            From\;\; eqn.(1) \\[3ex]
+            a = 11 - 4d \\[3ex]
+            a = 11 - 4(3) \\[3ex]
+            a = 11 - 12 \\[3ex]
+            a = -1 \\[3ex]
+            (i) \\[3ex]
+            AS_{12} = a + 11d \\[3ex]
+            = -1 + 11(3) \\[3ex]
+            = -1 + 33 \\[3ex]
+            = 32 \\[3ex]
+            (ii) \\[3ex]
+            SAS_n = \dfrac{n}{2}(a + AS_n) \\[5ex]
+            SAS_{12} = \dfrac{12}{2}(-1 + AS_{12}) \\[5ex]
+            = \dfrac{12}{2}(-1 + 32) \\[5ex]
+            = 6(31) \\[3ex]
+            = 186
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) The second, fourth and sixth terms of an Arithmetic Progression (<i>AP</i>) are $x - 1$, $x + 1$, and 7
+          respectively. <br>
+          Find the <br>
+          (i) common difference; <br>
+          (ii) first term; <br>
+          (iii) value of <i>x</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS5')">Show/Hide Answer</button>
+          <div class="result" id="solutionS5">
+            <br>
+            $
+            (i) \\[3ex]
+            AS_n = a + d(n - 1) \\[3ex]
+            AS_2 = a + d = x - 1...eqn.(1) \\[3ex]
+            AS_4 = a + 3d = x + 1...eqn.(2) \\[3ex]
+            AS_6 = a + 5d = 7...eqn.(3) \\[3ex]
+            eqn.(2) - eqn.(1) \implies (a + 3d) - (a + d) = (x + 1) - (x - 1) \\[3ex]
+            a + 3d - a - d = x + 1 - x + 1 \\[3ex]
+            2d = 2 \\[3ex]
+            d = \dfrac{2}{2} \\[5ex]
+            d = 1 \\[3ex]
+            (ii) \\[3ex]
+            From\:\: eqn.(3) \\[3ex]
+            a + 5d = 7 \\[3ex]
+            a = 7 - 5d \\[3ex]
+            Subst.\:\: d = 1 \\[3ex]
+            a = 7 - 5(1) \\[3ex]
+            a = 7 - 5 \\[3ex]
+            a = 2 \\[3ex]
+            (iii) \\[3ex]
+            From\:\: eqn.(1) \\[3ex]
+            a + d = x - 1 \\[3ex]
+            x - 1 = a + d \\[3ex]
+            x = a + d + 1 \\[3ex]
+            Subst.\:\: a = 2 \:\:and\:\: d = 1 \\[3ex]
+            x = 2 + 1 + 1 \\[3ex]
+            x = 4
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The 3rd, 4th and 5th terms of an exponential sequence are <i>x</i>, <i>y</i>, and <i>z</i> respectively.
+          <br>
+          Which of the following statements is <b>true</b>?
+          <br><br>
+          $
+          A.\:\: 3x = 20yz \\[3ex]
+          B.\:\: x^2 = yz \\[3ex]
+          C.\:\: y^2 = xz \\[3ex]
+          D.\:\: z^2 = xy \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionS6')">Show/Hide Answer</button>
+          <div class="result" id="solutionS6">
+            <br>
+            $
+            3rd = GS_3 = ar^2 = x \\[3ex]
+            4th = GS_4 = ar^3 = y \\[3ex]
+            5th = GS_5 = ar^4 = z \\[3ex]
+            $
+            Let us check each option
+            <br><br>
+            $
+            <u>Check</u>
+            <table>
+              <tr>
+                <td class="w3-padding">
+                  $
+                  \underline{LHS} \\[3ex]
+                  3x \\[3ex]
+                  3(ar^2) \\[3ex]
+                  3ar^2
+                  $
+                </td>
+                <td class="w3-padding">
+                  $
+                  \underline{RHS} \\[3ex]
+                  20yz \\[3ex]
+                  20(ar^3)(ar^4) \\[3ex]
+                  20a^2r^7
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w3-center">NO</td>
+              </tr>
+              <tr>
+                <td class="w3-padding">
+                  $
+                  x^2 \\[3ex]
+                  (ar^2)^2 \\[3ex]
+                  a^2r^4
+                  $
+                </td>
+                <td class="w3-padding">
+                  $
+                  yz \\[3ex]
+                  (ar^3)(ar^4) \\[3ex]
+                  a^2r^7
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w3-center">NO</td>
+              </tr>
+              <tr>
+                <td class="w3-padding">
+                  $
+                  y^2 \\[3ex]
+                  (ar^3)^2 \\[3ex]
+                  a^2r^6 \checkmark
+                  $
+                </td>
+                <td class="w3-padding">
+                  $
+                  xz \\[3ex]
+                  (ar^2)(ar^4) \\[3ex]
+                  a^2r^6 \checkmark
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w3-center">YES</td>
+              </tr>
+              <tr>
+                <td class="w3-padding">
+                  $
+                  z^2 \\[3ex]
+                  (ar^4)^2 \\[3ex]
+                  a^2r^8
+                  $
+                </td>
+                <td class="w3-padding">
+                  $
+                  xy \\[3ex]
+                  (ar^2)(ar^3) \\[3ex]
+                  a^2r^5
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" class="w3-center">NO</td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) The difference between the third and first terms of a Geometric Progression (G.P) is 42. <br>
+          If the fourth term is greater than the second term by 168, find the: <br>
+          (i) first term <br>
+          (ii) fourth term <br>
+          of the progression.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS7')">Show/Hide Answer</button>
+          <div class="result" id="solutionS7">
+            <br>
+            $
+            GS_3 - GS_1 = 42 \\[3ex]
+            GS_4 - GS_2 = 168 \\[3ex]
+            GS_n = ar^{n - 1} \\[3ex]
+            GS_1 = a \\[3ex]
+            GS_2 = ar^{2 - 1} = ar \\[3ex]
+            GS_3 = ar^{3 - 1} = ar^2 \\[3ex]
+            GS_4 = ar^{4 - 1} = ar^3 \\[3ex]
+            \implies ar^2 - a = 42 ...eqn.(1) \\[3ex]
+            \implies ar^3 - ar = 168 ...eqn.(2) \\[3ex]
+            From\:\: eqn(1),\:\: a(r^2 - 1) = 42 ...eqn.(3) \\[3ex]
+            From\:\: eqn(2),\:\: a(r^3 - r) = 168 ...eqn.(4) \\[3ex]
+            Divide\:\: eqn.(4)\:\: by\:\: eqn.(3) \\[3ex]
+            \dfrac{a(r^3 - r)}{a(r^2 - 1)} = \dfrac{168}{42} \\[5ex]
+            \dfrac{r^3 - r}{r^2 - 1} = 4 \\[5ex]
+            LCD = (r^2 - 1) \\[3ex]
+            Multiply\:\: both\:\: sides\:\: by\:\: the\:\: LCD \\[3ex]
+            r^3 - r = 4(r^2 - 1) \\[3ex]
+            r^3 - r = 4r^2 - 4 \\[3ex]
+            r^3 - r - 4r^2 + 4 = 0 \\[3ex]
+            Factor\:\: by\:\: Grouping \\[3ex]
+            r(r^2 - 1) - 4(r^2 - 1) = 0 \\[3ex]
+            (r^2 - 1)(r - 4) = 0 \\[3ex]
+            r^2 - 1 = r^2 - 1^2 = (r + 1)(r - 1)...Difference \:\:of\:\: Two\:\: Squares \\[3ex]
+            (r + 1)(r - 1)(r - 4) = 0 \\[3ex]
+            r + 1 = 0 \:\:OR\:\: r - 1 = 0 \:\:OR\:\: r - 4 = 0 \\[3ex]
+            r = -1 \:\:OR\:\: r = 1 \:\:OR\:\: r = 4 \\[3ex]
+            From\:\: eqn(3),\:\: a = \dfrac{42}{r^2 - 1} ...eqn.(5) \\[5ex]
+            Based\:\: on\:\: the\:\: denominator; r \ne 1, r\ne -1 \\[3ex]
+            This\:\: is\:\: because \\[3ex]
+            1^2 - 1 = 1 - 1 = 0 \\[3ex]
+            (-1)^2 - 1 = 1 - 1 = 0 \\[3ex]
+            So,\:\: r = 4 \\[3ex]
+            a = \dfrac{42}{r^2 - 1} \implies a = \dfrac{42}{(4)^2 - 1} \\[5ex]
+            a = \dfrac{42}{16 - 1} \\[5ex]
+            a = \dfrac{42}{15} \\[5ex]
+            (i)\:\: a = \dfrac{14}{5} \\[5ex]
+            GS_4 = ar^3 \\[3ex]
+            GS_4 = \dfrac{14}{5} * (4)^3 \\[5ex]
+            GS_4 = \dfrac{14}{5} * 64 \\[5ex]
+            (ii)\:\: GS_4 = \dfrac{896}{5}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) The 6th and 12th terms of a linear sequence (A.P) are 17 and 41 respectively. <br>
+          Find the sum of the first 20 terms.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS8')">Show/Hide Answer</button>
+          <div class="result" id="solutionS8">
+            <br>
+            $
+            AS_n = a + d(n - 1) \\[3ex]
+            AS_{6} = a + 5d = 17...eqn.(1) \\[3ex]
+            AS_{12} = a + 11d = 41...eqn.(2) \\[3ex]
+            eqn.(2) - eqn.(1) \rightarrow 6d = 24 \\[3ex]
+            d = \dfrac{24}{6} \\[5ex]
+            d = 4 \\[3ex]
+            From\:\:eqn.(1);\:\: a = 17 - 5d \\[3ex]
+            a = 17 - 5(4) \\[3ex]
+            a = 17 - 20 \\[3ex]
+            a = -3 \\[3ex]
+            Two\:\:ways\:\:to\:\:calculate\:\:SAS_{20} \\[3ex]
+            Choose\:\:your\:\:preference \\[3ex]
+            \underline{First\:\:Method} \\[3ex]
+            SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+            SAS_{20} = \dfrac{20}{2}[2(-3) + 4(20 - 1)] \\[5ex]
+            = 10[-6 + 4(19)] \\[3ex]
+            = 10[-6 + 76] \\[3ex]
+            = 10(70) \\[3ex]
+            SAS_{20} = 700 \\[3ex]
+            \underline{Second\:\:Method} \\[3ex]
+            SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+            SAS_n = \dfrac{n}{2}(a + AS_{n}) \\[5ex]
+            AS_{20} = a + 19d \\[3ex]
+            AS_{20} = -3 + 19(4) \\[3ex]
+            AS_{20} = -3 + 76 \\[3ex]
+            AS_{20} = 73 \\[3ex]
+            SAS_{20} = \dfrac{20}{2}(-3 + 73) \\[5ex]
+            SAS_{20} = 10(70) \\[3ex]
+            SAS_{20} = 700
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) The sum of the first ten terms of an Arithmetic Progression (A.P) is 130 <br>
+          If the fifth term is 3 times the first term, find the: <br>
+          (a.) common difference <br>
+          (b.) first term <br>
+          (c.) number of terms of the A.P if the last term is 28
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS9')">Show/Hide Answer</button>
+          <div class="result" id="solutionS9">
+            <br>
+            $
+            (a.) \\[3ex]
+            SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+            SAS_{10} = \dfrac{10}{2}[2a + d(10 - 1)] \\[5ex]
+            130 = 5[2a + 9d] \\[3ex]
+            \dfrac{130}{5} = 2a + 9d \\[3ex]
+            26 = 2a + 9d \\[3ex]
+            2a + 9d = 26...eqn.(1) \\[3ex]
+            AS_n = a + d(n - 1) \\[3ex]
+            AS_5 = a + d(5 - 1) \\[3ex]
+            AS_5 = a + 4d \\[3ex]
+            But\;\; AS_5 = 3 * a \\[3ex]
+            \implies 3a = a + 4d \\[3ex]
+            3a - a = 4d \\[3ex]
+            2a = 4d \\[3ex]
+            \dfrac{2a}{2} = \dfrac{4d}{2} \\[5ex]
+            a = 2d...eqn.(2) \\[3ex]
+            Subst.\;\;eqn.(2)\;\;into\;\;eqn.(1) \\[3ex]
+            2(2d) + 9d = 26 \\[3ex]
+            4d + 9d = 26 \\[3ex]
+            13d = 26 \\[3ex]
+            d = \dfrac{26}{13} \\[5ex]
+            d = 2 \\[5ex]
+            (b.) \\[3ex]
+            Subst.\;\; d = 2\;\;into\;\; eqn.(2) \\[3ex]
+            a = 2d \\[3ex]
+            a = 2(2) \\[3ex]
+            a = 4 \\[5ex]
+            (c.) \\[3ex]
+            last\;\;term = p = 28 \\[3ex]
+            n = \dfrac{p - a + d}{d} \\[5ex]
+            n = \dfrac{28 - 4 + 2}{2} \\[5ex]
+            n = \dfrac{26}{2} \\[5ex]
+            n = 13
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) If $(3 - x),\;\; 6,\;\; (7 - 5x)$ are consecutive terms of a Geometric Progression with constant ratio
+          <i>r</i> &gt; 0, find the: <br>
+          (i) values of <i>x</i>; <br>
+          (ii) common ratio
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS10')">Show/Hide Answer</button>
+          <div class="result" id="solutionS10">
+            <br>
+            $
+            (3 - x), 6, (7 - 5x) \\[3ex]
+            r = \dfrac{6}{3 - x} \\[5ex]
+            r = \dfrac{7 - 5x}{6} \\[5ex]
+            r = r \\[3ex]
+            \implies \dfrac{6}{3 - x} = \dfrac{7 - 5x}{6} \\[5ex]
+            (3 - x)(7 - 5x) = 6(6) \\[3ex]
+            21 - 15x - 7x + 5x^2 = 36 \\[3ex]
+            21 - 22x + 5x^2 = 36 \\[3ex]
+            5x^2 - 22x + 21 = 36 \\[3ex]
+            5x^2 - 22x + 21 - 36 = 0 \\[3ex]
+            5x^2 - 22x - 15 = 0 \\[3ex]
+            5x^2 + 3x - 25x - 15 = 0 \\[3ex]
+            x(5x + 3) - 5(5x + 3) = 0 \\[3ex]
+            5x + 3 = 0 \:\:OR\:\: x - 5 = 0 \\[3ex]
+            5x = -3 \:\:OR\:\: x = 5 \\[5ex]
+            (i)\:\: x = -\dfrac{3}{5} \:\:OR\:\: x = 5 \\[5ex]
+            r = \dfrac{7 - 5x}{6} \\[5ex]
+            when\:\: x = -\dfrac{3}{5} \\[5ex]
+            5x = 5 * -\dfrac{3}{5} = -3 \\[5ex]
+            r = \dfrac{7 - (-3)}{6} \\[5ex]
+            r = \dfrac{7 + 3}{6} = \dfrac{10}{6} = \dfrac{5}{3} \\[5ex]
+            when\:\: x = 5 \\[3ex]
+            r = \dfrac{7 - 5(5)}{6} \\[5ex]
+            r = \dfrac{7 - 25}{6} = -\dfrac{18}{6} = -3 \\[5ex]
+            Because\:\: r \gt 0 \\[5ex]
+            (ii)\:\: r = \dfrac{5}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Find the sum of the Arithmetic Progression (<i>AP</i>) $1, 3, 5, ..., 101$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS11')">Show/Hide Answer</button>
+          <div class="result" id="solutionS11">
+            <br>
+            This is a sequence of odd numbers <br>
+            So, we are asked to find the sum of the first $n$ odd numbers <br>
+            We need to find the number of terms first <br>
+            We can find $n$ in two ways.
+            <br><br>
+            <u>Mentally</u> <br>
+            There are 5 oddnumbers from 1 – 10 (1, 3, 5, 7, 9) <br>
+            There are 6 oddnumbers from 1 – 11 (1, 3, 5, 7, 9, 11) <br>
+            Therefore, there are 50 odd numbers from 1 – 100 <br>
+            So, there are 51 odd numbers from 1 – 101
+            <br><br>
+            $
+            n = 51 \\[3ex]
+            \underline{By\:\: Formula} \\[3ex]
+            a = 1 \\[3ex]
+            p = 101 \\[3ex]
+            d = 3 - 1 = 2 \\[3ex]
+            n = \dfrac{p - a + d}{d} \\[5ex]
+            n = \dfrac{101 - 1 + 2}{2} \\[5ex]
+            n = \dfrac{102}{2} \\[5ex]
+            n = 51 \\[3ex]
+            $
+            We can also find $SAS_n$ in two ways. <br>
+            You may use any of the formulas for $SAS_n$ <br><br>
+            $
+            SAS_n = \dfrac{n}{2}(a + p) \\[5ex]
+            SAS_n = \dfrac{51}{2}(1 + 101) \\[5ex]
+            = \dfrac{51}{2}(102) \\[5ex]
+            = 51 * 51 \\[3ex]
+            SAS_n = 2601 \\[3ex]
+            OR \\[3ex]
+            SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+            SAS_n = \dfrac{51}{2}[2(1) + 2(51 - 1)] \\[5ex]
+            = \dfrac{51}{2}[2 + 2(50)] \\[5ex]
+            = \dfrac{51}{2}[2 + 100] \\[5ex]
+            = \dfrac{51}{2}(102) \\[5ex]
+            = 51 * 51 \\[3ex]
+            SAS_n = 2601
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) The first term of an Arithmetic Progression (A.P) is 31 and the common difference is 9 <br>
+          Show that the nth term is 9n + 22 <br>
+          Hence, find the 20th term.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS12')">Show/Hide Answer</button>
+          <div class="result" id="solutionS12">
+            <br>
+            $
+            a = 31 \\[3ex]
+            d = 9 \\[3ex]
+            AP_n = a + d(n - 1) \\[3ex]
+            AP_n = 31 + 9(n - 1) \\[3ex]
+            AP_n = 31 + 9n - 9 \\[3ex]
+            AP_n = 9n + 22 \\[3ex]
+            AP_{20} = 9(20) + 22 \\[3ex]
+            AP_{20} = 180 + 22 \\[3ex]
+            AP_{20} = 202
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) The <i>nth</i> term of a sequence is $5 + \dfrac{2}{3^{n - 2}}$ for $n \ge 1$. <br>
+          What is the sum of the fourth and fifth terms? <br>
+          Leave your answers in the form $\dfrac{x}{y}$ where <i>x</i> and <i>y</i> are integers.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS13')">Show/Hide Answer</button>
+          <div class="result" id="solutionS13">
+            <br>
+            $
+            nth\:\:term = 5 + \dfrac{2}{3^{n - 2}} \\[5ex]
+            4th\:\:term = 5 + \dfrac{2}{3^{4 - 2}} \\[5ex]
+            = 5 + \dfrac{2}{3^2} \\[5ex]
+            = 5 + \dfrac{2}{9} \\[5ex]
+            = \dfrac{45}{9} + \dfrac{2}{9} \\[5ex]
+            = \dfrac{45 + 2}{9} \\[5ex]
+            = \dfrac{47}{9} \\[5ex]
+            5th\:\:term = 5 + \dfrac{2}{3^{5 - 2}} \\[5ex]
+            = 5 + \dfrac{2}{3^3} \\[5ex]
+            = 5 + \dfrac{2}{27} \\[5ex]
+            = \dfrac{135}{27} + \dfrac{2}{27} \\[5ex]
+            = \dfrac{135 + 2}{27} \\[5ex]
+            = \dfrac{137}{27} \\[5ex]
+            4th\:\:term + 5th\:\:term \\[3ex]
+            = \dfrac{47}{9} + \dfrac{137}{27} \\[5ex]
+            = \dfrac{141}{27} + \dfrac{137}{27} \\[5ex]
+            = \dfrac{141 + 137}{27} \\[5ex]
+            = \dfrac{278}{27}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS14')">Show/Hide Answer</button>
+          <div class="result" id="solutionS14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) If $\dfrac{1}{2}$, $\dfrac{1}{x}$, $\dfrac{1}{3}$ are successive terms of an arithmetic progression
+          (A.P), <br>
+          show that $\dfrac{2 - x}{x - 3} = \dfrac{2}{3}$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS15')">Show/Hide Answer</button>
+          <div class="result" id="solutionS15">
+            <br>
+            $
+            AP:\:\: \dfrac{1}{2},\dfrac{1}{x},\dfrac{1}{3} \\[5ex]
+            d = \dfrac{1}{x} - \dfrac{1}{2} \\[5ex]
+            d = \dfrac{1}{3} - \dfrac{1}{x} \\[5ex]
+            d = d \\[3ex]
+            \rightarrow \dfrac{1}{x} - \dfrac{1}{2} = \dfrac{1}{3} - \dfrac{1}{x} \\[5ex]
+            \dfrac{2}{2x} - \dfrac{x}{2x} = \dfrac{x}{3x} - \dfrac{3}{3x} \\[5ex]
+            \dfrac{2 - x}{2x} = \dfrac{x - 3}{3x} \\[5ex]
+            Cross\:\:Multiply \\[3ex]
+            3x(2 - x) = 2x(x - 3) \\[3ex]
+            Divide\:\:both\:\:sides\:\:by\:\:(x - 3) \\[3ex]
+            \dfrac{3x(2 - x)}{x - 3} = \dfrac{2x(x - 3)}{x - 3} \\[5ex]
+            \dfrac{3x(2 - x)}{x - 3} = \dfrac{2x}{1} \\[5ex]
+            Multiply\:\:both\:\:sides\:\:by\:\:\dfrac{1}{3x} \\[5ex]
+            \dfrac{1}{3x} * \dfrac{3x(2 - x)}{x - 3} = \dfrac{1}{3x} * \dfrac{2x}{1} \\[5ex]
+            \dfrac{2 -x}{x - 3} = \dfrac{2x}{3x} \\[5ex]
+            \dfrac{2 - x}{x - 3} = \dfrac{2}{3}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS16')">Show/Hide Answer</button>
+          <div class="result" id="solutionS16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS17')">Show/Hide Answer</button>
+          <div class="result" id="solutionS17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS18')">Show/Hide Answer</button>
+          <div class="result" id="solutionS18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) The heights of students in a class form an Arithmetic Progression (A.P.) such that the tallest student
+          is 1.90 m. <br>
+          The common difference in their heights is 0.05 m and the sum of their heights is 23.25 m. <br>
+          (a.) How many students are in the class? <br>
+          (b.) Find the height of the shortest student.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS19')">Show/Hide Answer</button>
+          <div class="result" id="solutionS19">
+            <br>
+            Let: <br>
+            height of the tallest student = last term = <i>p</i> <br>
+            height of the shortest student = first term = <i>a</i> <br>
+            commom difference = <i>d</i> <br>
+            number of students in the class = number of terms = <i>n</i> <br>
+            sum of the arithmetic sequence = <i>SAS<sub>n</sub></i>
+            <br><br>
+            $
+            p = 1.90\;m \\[3ex]
+            d = 0.05\;m \\[3ex]
+            SAS_n = 23.25 \\[5ex]
+            p = a + d(n - 1) \\[3ex]
+            1.9 = a + 0.05(n - 1) \\[3ex]
+            a + 0.05n - 0.05 = 1.9 \\[3ex]
+            a + 0.05n = 1.9 + 0.05 \\[3ex]
+            a + 0.05n = 1.95 ...eqn.(1) \\[5ex]
+            SAS_n = \dfrac{n(a + p)}{2} \\[5ex]
+            23.25 = \dfrac{n(a + 1.9)}{2} \\[5ex]
+            n(a + 1.9) = 2(23.25) \\[3ex]
+            an + 1.9n = 46.5 ...eqn.(2) \\[5ex]
+            \underline{\text{Substitution Method}} \\[3ex]
+            From\;\;eqn.(1) \\[3ex]
+            a = 1.95 - 0.05n ...eqn.(3) \\[5ex]
+            \text{Substitute eqn.(3) into eqn.(2)} \\[3ex]
+            n(1.95 - 0.05n) + 1.9n = 46.5 \\[3ex]
+            1.95n - 0.05n^2 + 1.9n = 46.5 \\[3ex]
+            -0.05n^2 + 3.85n - 46.5 = 0 \\[3ex]
+            \text{Multiply both sides by } -100 \\[3ex]
+            -100(-0.05n^2 + 3.85n - 46.5) = -100(0) \\[3ex]
+            5n^2 - 385n + 4650 = 0 \\[3ex]
+            \text{Divide both sides by 5} \\[3ex]
+            n^2 - 77n + 930 = 0 \\[3ex]
+            (n - 15)(n - 62) = 0 \\[3ex]
+            n - 15 = 0 \;\;\;OR\;\;\; n - 62 = 0 \\[3ex]
+            n = 15 \;\;\;OR\;\;\; n = 62 \\[3ex]
+            \text{Substitute these values of n in eqn.(3)} \\[3ex]
+            For\;\;n = 15 \\[3ex]
+            a = 1.95 - 0.05(15) \\[3ex]
+            a = 1.95 - 0.75 \\[3ex]
+            a = 1.2 \\[5ex]
+            For\;\;n = 62 \\[3ex]
+            a = 1.95 - 0.05(62) \\[3ex]
+            a = 1.95 - 3.1 \\[3ex]
+            a = -1.15 \\[3ex]
+            $
+            The height of the shortest student, <i>a</i> cannot be a negative value <br>
+            So, we have to discard that value. <br>
+            This also implies that the corresponding value of <i>n</i> will be discarded. <br>
+            Therefore: <br>
+            (a.) The number of students in the class is 15 <br>
+            (b.) The height of the shortest student is 1.2 m
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS20')">Show/Hide Answer</button>
+          <div class="result" id="solutionS20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE/Sequences.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS21')">Show/Hide Answer</button>
+          <div class="result" id="solutionS21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS22')">Show/Hide Answer</button>
+          <div class="result" id="solutionS22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS23')">Show/Hide Answer</button>
+          <div class="result" id="solutionS23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS24')">Show/Hide Answer</button>
+          <div class="result" id="solutionS24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS25')">Show/Hide Answer</button>
+          <div class="result" id="solutionS25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS26')">Show/Hide Answer</button>
+          <div class="result" id="solutionS26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) (a.) How many numbers between 75 and 500 are divisible by 7?
+          <br><br>
+          (b.) The 8th term of an Arithmetic Progression (A.P.) is 5 times the third term while the 7th term is 9
+          greater than the 4th term. <br>
+          Write the first five terms of the A.P.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS27')">Show/Hide Answer</button>
+          <div class="result" id="solutionS27">
+            <br>
+            How many numbers between $75$ and $500$ are divisible by $7$? <br>
+            Between $75$ and $500$ typically means that $75$ and $500$ are not included <br>
+            Even if they are, both numbers are NOT divisible by $7$ <br>
+            So, we need to find the number immediately greater than $75$ that is divisible by $7$ <br>
+            That number is $77$. <br>
+            This implies that $77$ is the first term. <br>
+            Also, we need to find the number immediately less than $500$ that is divisible by $7$ <br>
+            That number is $497$. <br>
+            This implies that $497$ is the last term. <br>
+            Because the numbers are divisible by $7$, the common difference is $7$ <br>
+            The count of the numbers divisible by $7$ is the number of terms <br><br>
+            $
+            (a.) \\[3ex]
+            a = 77 \\[3ex]
+            AP_n = 497 \\[3ex]
+            d = 7 \\[3ex]
+            n = ? \\[3ex]
+            AP_n = a + d(n - 1) \\[3ex]
+            497 = 77 + 7(n - 1) \\[3ex]
+            497 - 77 = 7(n - 1) \\[3ex]
+            420 = 7(n - 1) \\[3ex]
+            7(n - 1) = 420 \\[3ex]
+            n - 1 = \dfrac{420}{7} \\[5ex]
+            n - 1 = 60 \\[3ex]
+            n = 60 + 1 \\[3ex]
+            n = 61 \\[3ex]
+            $
+            There are 61 numbers between 75 and 500 that are divisible by 7
+            <br><br>
+            $
+            (b.) \\[3ex]
+            AP_n = a + d(n - 1) \\[3ex]
+            AP_8 = a + 7d \\[3ex]
+            AP_3 = a + 2d \\[3ex]
+            AP_7 = a + 6d \\[3ex]
+            AP_4 = a + 3d \\[3ex]
+            AP_8 = 5 * AP_3 \\[3ex]
+            a + 7d = 5(a + 2d) \\[3ex]
+            a + 7d = 5a + 10d \\[3ex]
+            5a + 10d = a + 7d \\[3ex]
+            5a - a + 10d - 7d = 0 \\[3ex]
+            4a + 3d = 0 ...eqn.(1) \\[3ex]
+            Also: \\[3ex]
+            AP_7 = 9 + AP_4 \\[3ex]
+            a + 6d = 9 + (a + 3d) \\[3ex]
+            a + 6d = 9 + a + 3d \\[3ex]
+            a - a + 6d - 3d = 9 \\[3ex]
+            3d = 9 \\[3ex]
+            d = \dfrac{9}{3} \\[5ex]
+            d = 3 \\[3ex]
+            Substitute \:\:d = 3\:\:into\:\:eqn.(1) \\[3ex]
+            4a + 3d = 0 \\[3ex]
+            4a = -3d \\[3ex]
+            4a = -3(3) \\[3ex]
+            4a = -9 \\[3ex]
+            a = -\dfrac{9}{4} \\[5ex]
+            AP_2 = a + d = -\dfrac{9}{4} + 3 = -\dfrac{9}{4} + \dfrac{12}{4} = \dfrac{-9 + 12}{4} = \dfrac{3}{4} \\[5ex]
+            AP_3 = a + 2d = AP_2 + d = \dfrac{3}{4} + 3 = \dfrac{3}{4} + \dfrac{12}{4} = \dfrac{3 + 12}{4} =
+            \dfrac{15}{4} \\[5ex]
+            AP_4 = a + 3d = AP_3 + d = \dfrac{15}{4} + 3 = \dfrac{15}{4} + \dfrac{12}{4} = \dfrac{15 + 12}{4} =
+            \dfrac{27}{4}
+            \\[5ex]
+            AP_5 = a + 2d = AP_4 + d = \dfrac{27}{4} + 3 = \dfrac{27}{4} + \dfrac{12}{4} = \dfrac{27 + 12}{4} =
+            \dfrac{39}{4}
+            \\[5ex]
+            AP:\:\: -\dfrac{9}{4}, \dfrac{3}{4}, \dfrac{15}{4}, \dfrac{27}{4}, \dfrac{39}{4}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS28')">Show/Hide Answer</button>
+          <div class="result" id="solutionS28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS29')">Show/Hide Answer</button>
+          <div class="result" id="solutionS29">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS30')">Show/Hide Answer</button>
+          <div class="result" id="solutionS30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS31')">Show/Hide Answer</button>
+          <div class="result" id="solutionS31">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS32')">Show/Hide Answer</button>
+          <div class="result" id="solutionS32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS33')">Show/Hide Answer</button>
+          <div class="result" id="solutionS33">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS34')">Show/Hide Answer</button>
+          <div class="result" id="solutionS34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS35')">Show/Hide Answer</button>
+          <div class="result" id="solutionS35">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS36')">Show/Hide Answer</button>
+          <div class="result" id="solutionS36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS37')">Show/Hide Answer</button>
+          <div class="result" id="solutionS37">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS38')">Show/Hide Answer</button>
+          <div class="result" id="solutionS38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS39')">Show/Hide Answer</button>
+          <div class="result" id="solutionS39">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS40')">Show/Hide Answer</button>
+          <div class="result" id="solutionS40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 21 through 40 -->
+
+
+
+    <!-- End Numbers 41 through 60 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

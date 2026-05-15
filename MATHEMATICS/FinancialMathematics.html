@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>The Mathematics of Finance</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to questions on the mathematics of finance.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  Algebra, mathematics of finance, financial mathematics, financial math, simple interest, compound interest, 
+  continuous compound interest, annual percentage yield, apy, annuity, ordinary annuity, annuity due, amortization, 
+  present value, future value, sinking fund, rule of 78, loan amortization, mortgage payments, stocks, bonds, 
+  investment decision rules, debt financing, time value of money, project evaluation, refund fraction, coupon bonds, 
+  bond coupons, bond coupon amount, bond coupon number, bond price, face value, par value, bond coupon rate, 
+  yield to maturity, market value, credit card, debit card">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#symbols" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Symbols</a>
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>The Mathematics of Finance</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to questions on the Mathematics of Finance. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your learning of
+        Mathematics, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Symbols and Meanings -->
+    <div class="w3-container w3-padding-32" id="symbols">
+      <div class="w3-row-padding">
+        <h2>Symbols and Meanings</h2>
+        <ul class="w3-ul">
+          <li>$Per\:\:annum$ OR $Per\:\:year$ OR $Annually$ OR $Yearly$ means for a year
+            (per $1$ year)</li>
+          <li>$SI$ OR $I$ = Simple Interest or Dividend or Yield or Return (<span>$</span>)
+          </li>
+          <li>$P$ = Principal or Present Value or Investment (<span>$</span>)</li>
+          <li>$r$ = Rate or Annual Interest Rate or Annual Percentage Rate (%)</li>
+          <li>$APR$ = Rate or Annual Percentage Rate (%)</li>
+          <li>$t$ = Time $(years)$</li>
+          <li>$A$ = Amount or Future Value (<span>$</span>)</li>
+          <li>$CI$ OR $I$ = Compound Interest or Yield or Dividend or Return(<span>$</span>)
+          </li>
+          <li>$m$ = Number of Compounding Periods Per Year </li>
+          <li>$n$ = Total Number of Compounding Periods $(years)$</li>
+          <li>$i$ = Interest Rate Per Period $(\%) \:\:per\:\: period$</li>
+          <li>$CCI$ = Continuous Compound Interest or Yield or Dividend or
+            Return(<span>$</span>)</li>
+          <li>$APY$ = Annual Percentage Yield or Effective Interest Rate or True Interest
+            Rate (%)</li>
+          <li>$FV$ = Future Value (<span>$</span>)</li>
+          <li>$PMT$ = periodic payment (<span>$</span>)</li>
+          <li>$PMTs$ = total periodic payments (<span>$</span>)</li>
+          <li>$PV$ = Present Value of all payments (<span>$</span>)</li>
+          <li>$a_{n\i}$ = $a$ angle $n$ at $i$</li>
+          <li>$s_{n\i}$ = $s$ angle $n$ at $i$</li>
+          <li>$PV$ = Present Value of all payments (<span>$</span>)</li>
+          <li>$payoff$ = payoff amount for a mortgage</li>
+          <li>$k$ = number of remaining payments</li>
+          <li>$CFV$ = Combined Future Value (<span>$</span>)</li>
+          <li></li>
+          <li><b>Rule of $78$</b></li>
+          <li>$UI$ = Unearned Interest or Interest Refund (<span>$</span>)</li>
+          <li>$PMT$ = Monthly Payment (<span>$</span>)</li>
+          <li>$k$ = Number of remaining monthly payments OR remaining number of monthly
+            payments</li>
+          <li>$TI$ = Total Interest (<span>$</span>)</li>
+          <li>$n$ = original number of payments</li>
+          <li>$TP$ = Total Payments (<span>$</span>)</li>
+          <li>$LA$ = Loan Amount or Finance Charge (<span>$</span>)</li>
+          <li>$RF$ = Refund Fraction</li>
+          <li>$LAR$ = Loan Amount Refund or Finance Charge Refund (<span>$</span>)</li>
+          <li></li>
+          <li><b>Bonds</b></li>
+          <li>$CP$ = Coupon Payment (<span>$</span>)</li>
+          <li>$CR$ = Coupon Rate (%)</li>
+          <li>$FV$ = Face Value or Par Value of the Bond (<span>$</span>)</li>
+          <li>
+            $m$ = Number of Coupon Payments per year <br>
+            This is similar to the number of compounding periods per year.
+          </li>
+          <li>$BP$ = Bond Price (<span>$</span>)</li>
+          <li>$YTM$ = Yield to Maturity ($\%$)</li>
+          <li>$t$ = time to reach maturity (years)</li>
+          <li>$Annualized\:\:YTM$ = Annualized Yield to Maturity ($\%$)</li>
+        </ul>
+      </div>
+    </div>
+    <!-- End Symbols -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <div class="w3-row-padding">
+        <h2>Mathematics of Finance Formulas</h2>
+        <h5>Financial Mathematics Literacy</h5>
+        <p>
+          (1.) Monthly interest payment = Monthly interest rate * Average balance <br><br>
+          (2.) Net monthly cash flow = Monthly income &minus; Monthly expenses
+        </p>
+        <br>
+        <h5>Simple Interest</h5>
+        <p>
+          $
+          (1.)\:\: SI = Prt \\[3ex]
+          (2.)\:\: SI = A - P \\[3ex]
+          (3.)\:\: P = \dfrac{SI}{rt} \\[5ex]
+          (4.)\:\: t = \dfrac{SI}{Pr} \\[5ex]
+          (5.)\:\: r = \dfrac{SI}{Pt} \\[5ex]
+          (6.)\:\: A = P + SI \\[3ex]
+          (7.)\:\: A = P(1 + rt) \\[3ex]
+          (8.)\:\: P = \dfrac{A}{1 + rt} \\[5ex]
+          (9.)\:\: t = \dfrac{A - P}{Pr} \\[5ex]
+          (10.)\:\: r = \dfrac{A - P}{Pt} \\[5ex]
+          (11.)\:\: SI = \dfrac{Art}{1 + rt}
+          $
+        </p>
+        <br>
+        <h5>Compound Interest</h5>
+        <p>
+          $
+          (1.)\:\: A = P\left(1 + \dfrac{r}{m}\right)^{mt} \\[7ex]
+          (2.)\:\: P = \dfrac{A}{\left(1 + \dfrac{r}{m}\right)^{mt}} \\[10ex]
+          (3.)\:\: r = m\left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{mt}} - 1\right] \\[10ex]
+          (4.)\:\: r = m\left(10^{\dfrac{\log\left(\dfrac{A}{P}\right)}{mt}} - 1\right) \\[10ex]
+          (5.)\:\: t = \dfrac{\log\left(\dfrac{A}{P}\right)}{m\log\left(1 + \dfrac{r}{m}\right)} \\[7ex]
+          (6.)\:\: A = P + CI \\[3ex]
+          (7.)\:\: CI = A - P \\[3ex]
+          (8.)\:\: A = P(1 + i)^n \\[4ex]
+          (9.)\:\: P = \dfrac{A}{(1 + i)^n} \\[7ex]
+          (10.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (11.)\:\: n = mt \\[3ex]
+          (12.)\;\; Total\;\;Return = \dfrac{A - P}{P} * 100\% \\[7ex]
+          (13.)\;\; Annual\;\;Return = \left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{t}} - 1\right] * 100\% \\[7ex]
+          $
+          <b>Future Value (Amount) of Cash Flows (Principal) for Several Years</b> <br><br>
+          $
+          (13.)\:\:At\:\:the\:\:end\:\:of\:\:each\:\:year:\:\: FV = PV\left(1 +
+          \dfrac{r}{m}\right)^{m(last\:\:year - that\:\:year)} \\[7ex]
+          (14.)\:\: Total\:FV = \Sigma FV
+          $
+        </p>
+
+        <p class="w3-center">
+          <b>Values of $m$</b>
+        </p>
+        <table>
+          <tr>
+            <th class="green" style="width: 50%;">If Compounded:</th>
+            <th class="green" style="width: 50%;"><i>m</i> = </th>
+          </tr>
+          <tr>
+            <td>
+              Annually
+            </td>
+            <td>
+              $1$ ($1$ time per year) <br>
+              Also means every twelve months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Semiannually
+            </td>
+            <td>
+              2 (2 times per year) <br>
+              Also means every six months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Quarterly
+            </td>
+            <td>
+              4 (4 times per year) <br>
+              Also means every three months
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Monthly
+            </td>
+            <td>
+              12 (12 times per year) <br>
+              Also means every month
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Weekly
+            </td>
+            <td>
+              52 (52 times per year)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Daily (Ordinary/Banker's Rule)
+            </td>
+            <td>
+              360 (360 times per year)
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Daily (Exact)
+            </td>
+            <td>
+              365 (365 times per year)
+            </td>
+          </tr>
+        </table>
+
+        <br>
+        <h5>Continuous Compound Interest</h5>
+        <p>
+          $
+          (1.)\:\: A = Pe^{rt} \\[4ex]
+          (2.)\:\: P = \dfrac{A}{e^{rt}} \\[7ex]
+          (3.)\:\: t = \dfrac{\ln \left(\dfrac{A}{P}\right)}{r} \\[7ex]
+          (4.)\:\: r = \dfrac{\ln \left(\dfrac{A}{P}\right)}{t} \\[7ex]
+          (5.)\;\; Total\;\;Return = \dfrac{A - P}{P} * 100\% \\[7ex]
+          (6.)\;\; Annual\;\;Return = \left[\left(\dfrac{A}{P}\right)^{\dfrac{1}{t}} - 1\right] * 100\%
+          $
+        </p>
+
+        <br>
+        <h5>APY for Compound Interest</h5>
+        <p>
+          $
+          (1.)\:\: APY = \left(1 + \dfrac{r}{m}\right)^m - 1 \\[7ex]
+          (2.)\:\: r = m\left[(APY + 1)^{\dfrac{1}{m}} - 1\right] \\[7ex]
+          (3.)\:\: r = m\left(\sqrt[m]{APY + 1} - 1\right)
+          $
+        </p>
+
+        <br>
+        <h5>APY for Continuous Compound Interest</h5>
+        <p>
+          $
+          (1.)\:\: APY = e^r - 1 \\[4ex]
+          (2.)\:\: r = \ln(APY + 1)
+          $
+        </p>
+
+        <br>
+        <h5>Investments</h5>
+        <p>
+          (1.) Market Capitalization (Market Cap) = Total Number of Outstanding Shares * Current Share Price
+          <br><br>
+
+
+        </p>
+
+        <br>
+        <h5>Income Taxes</h5>
+        <p>
+          (1.) Gross income (GI) = sum of all Income a person receives during the​ year, including​ wages, tips,
+          profits from a​ business, interest or dividends from investments.
+          <br><br>
+          (2.) Adjusted Gross Income (AGI) = Gross Income &minus; Contributions for individual retirement accounts
+          or any other​ tax-deferred savings plans
+          <br><br>
+          (3.) Taxable Income (TI) = Adjusted Gross Income &minus; Exemptions and Deductions <br>
+          Between Standard deduction and Itemized deductions, use whichever is higher.
+          <br><br>
+          (4.) If Standard Deduction &gt; Itemized Deductions: <br>
+          Use Standard Deduction <br>
+          Savings in Taxable Income = Standard Deduction &minus; Itemized Deductions
+          <br><br>
+          (5.) If Itemized Deductions &gt; Standard Deductions: <br>
+          Use Itemized Deductions <br>
+          Savings in Taxable Income = Itemized Deductions &minus; Standard Deduction
+          <br><br>
+
+
+        </p>
+
+        <br>
+        <h5>Future Value of Ordinary Annuity</h5>
+        <p>
+          $
+          (1.)\:\: FV = m * PMT * \left[\dfrac{\left(1 + \dfrac{r}{m}\right)^{mt} - 1}{r}\right] \\[10ex]
+          (2.)\;\; FV = PMT * \dfrac{\left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]}{\dfrac{r}{m}} \\[10ex]
+          (3.)\:\: t = \dfrac{\log\left[\dfrac{r * FV}{m * PMT} + 1\right]}{m * \log\left(1 + \dfrac{r}{m}\right)}
+          \\[10ex]
+          (4.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (5.)\:\: CI = FV - Total\:\:PMTs \\[5ex]
+          (6.)\:\: FV = PMT * \left[\dfrac{(1 + i)^n - 1}{i}\right] \\[7ex]
+          (7.)\:\: n = \dfrac{\log\left[\dfrac{i * FV}{PMT} + 1\right]}{\log(1 + i)} \\[10ex]
+          (8.)\:\: s_{n\i} = \dfrac{m}{r} * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right] \\[7ex]
+          (9.)\:\: s_{n\i} = \dfrac{(1 + i)^n - 1}{i} \\[5ex]
+          (10.)\:\: FV = PMT * s_{n\i} \\[3ex]
+          (11.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (12.)\:\: n = mt \\[3ex]
+          (13.)\:\: Annual\:\:Fuel\:\:Expense = \dfrac{Annual\:\:Miles\:\:Driven}{Miles\:\:per\:\:Gallon} *
+          Price\:\:per\:\:Gallon
+          $
+        </p>
+
+        <br>
+        <h5>Sinking Fund</h5>
+        <p>
+          $
+          (1.)\:\: PMT = \dfrac{r * FV}{m * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]} \\[10ex]
+          (2.)\:\: t = \dfrac{\log\left[\dfrac{r * FV}{m * PMT} + 1\right]}{m * \log\left(1 + \dfrac{r}{m}\right)}
+          \\[10ex]
+          (3.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (4.)\:\: CI = FV - Total\:\:PMTs \\[3ex]
+          (5.)\:\: PMT = \dfrac{i * FV}{(1 + i)^n - 1} \\[7ex]
+          (6.)\:\: n = \dfrac{\log\left[\dfrac{i * FV + PMT}{PMT}\right]}{\log(1 + i)} \\[10ex]
+          (7.)\:\: s_{n\i} = \dfrac{m}{r} * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right] \\[7ex]
+          (8.)\:\: s_{n\i} = \dfrac{(1 + i)^n - 1}{i} \\[5ex]
+          (9.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (10.)\:\: n = mt
+          $
+        </p>
+
+        <br>
+        <h5>Present Value of Ordinary Annuity</h5>
+        <p>
+          $
+          (1.)\:\: PV = m * PMT * \left[\dfrac{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}{r}\right] \\[10ex]
+          (2.)\:\: t = -\dfrac{\log\left[1 - \dfrac{r * PV}{m * PMT}\right]}{m * \log\left(1 +
+          \dfrac{r}{m}\right)} \\[10ex]
+          (3.)\:\: PV = PMT * \left[\dfrac{1 - (1 + i)^{-n}}{i}\right] \\[7ex]
+          (4.)\:\: n = \dfrac{\log \left[\dfrac{PMT}{PMT - i * PV}\right]}{\log(1 + i)} \\[10ex]
+          (5.)\:\: a_{n\i} = \dfrac{m}{r} * \left[1 - \left(1 + \dfrac{r}{m}\right)^{-mt}\right] \\[7ex]
+          (6.)\:\: a_{n\i} = \dfrac{1 - (1 + i)^{-n}}{i} \\[5ex]
+          (7.)\:\: PV = PMT * a_{n\i} \\[3ex]
+          (8.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (9.)\:\: n = mt \\[3ex]
+          (10.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (11.)\:\: CI = Total\:\:PMTs - PV
+          $
+        </p>
+
+        <br>
+        <h5>Amortization</h5>
+        <p>
+          $
+          (1.)\:\: PMT = \dfrac{PV}{m} * \left[\dfrac{r}{1 - \left(1 + \dfrac{r}{m}\right)^{-mt}}\right] \\[10ex]
+          (2.)\:\: t = -\dfrac{\log\left[1 - \dfrac{r * PV}{m * PMT}\right]}{m * \log\left(1 +
+          \dfrac{r}{m}\right)} \\[10ex]
+          (3.)\:\: PMT = \dfrac{i * PV}{1 - (1 + i)^{-n}} \\[7ex]
+          (4.)\:\: n = \dfrac{\log \left[\dfrac{PMT}{PMT - i * PV}\right]}{\log(1 + i)} \\[10ex]
+          (5.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (6.)\:\: n = mt \\[3ex]
+          (7.)\:\: Payoff = PMT * n * \left[\dfrac{1 - \left(1 + \dfrac{r}{n}\right)^{-k}}{r}\right] \\[10ex]
+          (8.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (9.)\:\: CI = Total\:\:PMTs - PV \\[3ex]
+          (10.)\:\: CI = PMT * m * t - PV \\[3ex]
+          (11.)\:\: Number\:\:of\:\:payments = m * t \\[3ex]
+          (12.)\:\: Down\:\:Payment = Given\:\:Rate * Purchase\:\:Price \\[3ex]
+          (13.)\:\: Amount\:\:of\:\:Mortgage = Purchase\:\:Price - Down\:\:Payment \\[3ex]
+          (14.)\:\: Payment\:\:for\:\:x\:\:points\:\:at\:closing = x\:\:as\:\:\% * Amount\:\:of\:\:Mortgage
+          $
+        </p>
+
+        <br>
+        <h5>Future Value of an Annuity Due</h5>
+        <p>
+          $
+          (1.)\:\: FV = m * PMT * \left[\dfrac{\left(1 + \dfrac{r}{m}\right)^{mt} - 1}{r}\right] * \left(1 +
+          \dfrac{r}{m}\right) \\[10ex]
+          (2.)\:\: PMT = \dfrac{r * FV}{(m + r) * \left[\left(1 + \dfrac{r}{m}\right)^{mt} - 1\right]} \\[10ex]
+          (3.)\:\: t = \dfrac{\log\left[\dfrac{r * FV}{PMT(m + r)} + 1\right]}{m * \log\left(1 +
+          \dfrac{r}{m}\right)} \\[10ex]
+          (4.)\:\: Total\:\:PMTs = PMT * m * t \\[3ex]
+          (5.)\:\: CI = FV - Total\:\:PMTs \\[3ex]
+          (6.)\:\: FV = PMT * \left[\dfrac{(1 + i)^n - 1}{i}\right] * (1 + i) \\[7ex]
+          (7.)\:\: PMT = \dfrac{i * FV}{(1 + i)\left[(1 + i)^n - 1\right]} \\[7ex]
+          (8.)\:\: n = \dfrac{\log\left[\dfrac{i * FV}{PMT(1 + i)} + 1\right]}{\log(1 + i)} \\[10ex]
+          (9.)\:\: i = \dfrac{r}{m} \\[5ex]
+          (10.)\:\: n = mt \\[3ex]
+          (11.)\:\: CFV = P\left(1 + \dfrac{r}{m}\right)^{mt} + m * PMT * \left[\dfrac{\left(1 +
+          \dfrac{r}{m}\right)^{mt} - 1}{r}\right] * \left(1 + \dfrac{r}{m}\right) \\[10ex]
+          (12.)\:\: t = \dfrac{\log\left[\dfrac{rCFV + PMT(m + r)}{rP + PMT(m + r)}\right]}{m\log\left(1 +
+          \dfrac{r}{m}\right)}
+          $
+        </p>
+
+        <br>
+        <h5>Rule of 78</h5>
+        <p>
+          $
+          \underline{Monthly} \\[3ex]
+          (1.)\:\: UI = \dfrac{TI * k * (k + 1)}{n(n + 1)} \\[5ex]
+          (2.)\:\: TP = n * PMT \\[3ex]
+          (3.)\:\: TI = TP - LA \\[3ex]
+          (4.)\:\: RF = \dfrac{UI}{TI} \\[5ex]
+          (5.)\:\: RF =
+          \dfrac{sum\:\:of\:\:digits\:\:for\:\:up\:\:to\:\:k}{sum\:\:of\:\:digits\:\:for\:\:up\:\:to\:\:n} \\[5ex]
+          (6.)\:\: LAR = LA * RF \\[3ex]
+          (7.)\:\: UI = TI * RF
+          $
+        </p>
+
+        <br>
+        <h5>Zero-Coupon Bonds</h5>
+        <p>
+          $
+          (1.)\:\: CP = \dfrac{CR * FV}{m} \\[7ex]
+          (2.)\:\: YTM = \left(\dfrac{FV}{BP}\right)^{\dfrac{1}{t}} - 1 \\[7ex]
+          (3.)\:\: BP = \dfrac{FV}{(YTM + 1)^t} \\[7ex]
+          (4.)\:\: FV = BP * (YTM + 1)^t \\[5ex]
+          (5.)\:\: t = \dfrac{\log\left(\dfrac{FV}{BP}\right)}{\log(YTM + 1)}
+          $
+        </p>
+
+        <br>
+        <h5>Coupon Bonds</h5>
+        <p>
+          $
+          (1.)\:\: CP = \dfrac{CR * FV}{m} \\[5ex]
+          (2.)\:\: BP = \dfrac{FV * CR}{YTM} * \left[1 - \dfrac{1}{\left(1 + \dfrac{YTM}{m}\right)^{mt}}\right] +
+          \dfrac{FV}{\left(1 + \dfrac{YTM}{m}\right)^{mt}} \\[10ex]
+          (3.)\:\: YTM \approx \dfrac{m * t * CP + FV - BP}{t(FV + BP)} \\[7ex]
+          (4.)\:\: Annualized\:\:YTM \approx \dfrac{2(m * t * CP + FV - BP)}{t(FV + BP)} \\[7ex]
+          (5.)\:\: YTM \approx \dfrac{t * CR * FV + FV - BP}{t(FV + BP)} \\[7ex]
+          (6.)\:\: Annualized\:\:YTM \approx \dfrac{2(t * CR * FV + FV - BP)}{t(FV + BP)} \\[7ex]
+          $
+        </p>
+      </div>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) A couple decides on the following plan for their newborn child's college education. <br>
+          Every 3 months, they will deposit <span>$</span>1,000 into a savings account paying 3.4% interest compounded
+          quarterly. <br>
+          However, after 8 years, they are unable to deposit any more money into the account. <br>
+          They stop making deposits and let the money accumulate interest at the same rate for 15 more years. <br>
+          How much money will be in the account at the end of the 23 years?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCFM1')">Calculator Solution</button>
+          <div class="result" id="solutionFM1">
+            <br>
+            There are two stages of investment in this question. <br>
+            <b>1st:</b> Periodic deposit of <span>$</span>1,000 every 3 months for 8 years. <br>
+            This is the Future Value of Ordinary Annuity
+            <br><br>
+            <b>2nd:</b> That amount (future value of ordinary annuity) then gets compounded for 15 years. <br>
+            This is Compound Interest.
+            <br><br>
+            Please check the meanings of the symbols used accordingly. <br>
+            They are listed in the Symbols and Formulas sections.
+            <br><br>
+            $
+            \underline{\text{1st: Future Value of Ordinary Annuity}} \\[3ex]
+            PMT = \$1000 \\[3ex]
+            r = 3.4\% = \dfrac{3.4}{100} = 0.034 \\[5ex]
+            m = 4...\text{every 3 months: compounded quarterly} \\[3ex]
+            t = 8\text{ years} \\[3ex]
+            FV = ? \\[3ex]
+            (a.) \\[3ex]
+            FV = m * PMT * \left[\dfrac{\left(1 + \dfrac{r}{m}\right)^{mt} - 1}{r}\right] \\[10ex]
+            FV = 4 * 1000 * \left[\dfrac{\left(1 + \dfrac{0.034}{4}\right)^{4 * 8} - 1}{0.034}\right] \\[10ex]
+            = 4000 * \left[\dfrac{\left(1 + 0.0085\right)^{32} - 1}{0.034}\right] \\[10ex]
+            = 4000 * \left[\dfrac{\left(1.0085\right)^{32} - 1}{0.034}\right] \\[10ex]
+            = 4000 * \left[\dfrac{1.311079061 - 1}{0.034}\right] \\[5ex]
+            = 4000 * \left[\dfrac{0.3110790615}{0.034}\right] \\[5ex]
+            = \dfrac{4000 * 0.3110790615}{0.034} \\[5ex]
+            = \dfrac{1244.316246}{0.034} \\[5ex]
+            = 36597.53664 \\[3ex]
+            \approx \$36597.54 \\[3ex]
+            $
+            Ceteris paribus, this should be the amount in the account after 8 years. <br>
+            They stopped making the periodic deposits. <br>
+            So, it is no longer an annuity. <br>
+            But the amount is still being compounded quarterly at 3.4% interest.
+            <br><br>
+            Unless otherwise stated, we do not round intermediate values. <br>
+            So, we shall not use the rounded value in the next stage. <br>
+            We shall use the value given by the calculator "as is"
+            <br><br>
+            $
+            \underline{\text{2nd: Compound Interest}} \\[3ex]
+            P = \$36597.53664 \\[3ex]
+            r = 3.4\% = \dfrac{3.4}{100} = 0.034 \\[5ex]
+            m = 4...\text{every 3 months: compounded quarterly} \\[3ex]
+            t = 15\text{ years} \\[3ex]
+            A = ? \\[3ex]
+            = P\left(1 + \dfrac{r}{m}\right)^{mt} \\[5ex]
+            = 36597.53664 * \left(1 + \dfrac{0.034}{4}\right)^{4(15)} \\[5ex]
+            = 36597.53664(1 + 0.0085)^{60} \\[4ex]
+            = 36597.53664(1.0085)^{60} \\[4ex]
+            = 36597.53664(1.661705866) \\[3ex]
+            = 60814.34131 \\[3ex]
+            \approx \$60814.34 \\[3ex]
+            $
+            Ceteris paribus, the money in the account at the end of the 23 years is approximately
+            <span>$</span>60,814.34
+          </div>
+          <div class="result" id="solutionCFM1">
+            <br>
+            <b>1st:</b> <img src="images/FinancialMathematics/Answers/Calculator1-first.png" alt="Calculator1-first">
+            <br><br>
+            <b>2nd:</b> <img src="images/FinancialMathematics/Answers/Calculator1-second.png" alt="Calculator1-second">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <button class="solutions" onclick="solutions('solutionFM2')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <button class="solutions" onclick="solutions('solutionFM3')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <button class="solutions" onclick="solutions('solutionFM4')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionFM5')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <button class="solutions" onclick="solutions('solutionFM6')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM7')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM8')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionFM9')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM10')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionFM11')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM12')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionFM13')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM14')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionFM15')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM16')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionFM17')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM18')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionFM19')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM20')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/CAMBRIDGE/O-LEVEL/FinancialMathematics.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM21')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM22')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionFM23')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM24')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionFM25')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM26')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionFM27')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM28')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionFM29')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM30')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionFM31')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM32')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionFM33')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM34')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionFM35')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM36')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionFM37')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM38')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionFM39')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionFM40')">Show/Hide Answer</button>
+          <div class="result" id="solutionFM40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

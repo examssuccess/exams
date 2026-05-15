@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Modular Arithmetic</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the WASSCE Mathematics exam questions in modular arithmetic.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, WASSCE, 
+  West African Senior School Certificate Examination, Arithmetic, Algebra, discrete mathematics, computer science, modulo, 
+  modular arithmetic, modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+  base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+  linear congruence, congruence, equivalence, equivalence classes, binary, decimal,  
+  octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+  modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+  quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+  tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+  gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+  relatively prime, mutually prime, division, algorithm, division algorithm, 
+  dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+  difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+  nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+  fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+  congruence class, number theory, binary operations, modulo tables">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Modular Arithmetic</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to the WASSCE Mathematics past questions on the topics on Modular Arithmetic. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable and helpful in your passing the
+        Additional Mathematics test of WASSCE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Evaluate $6 - 36 \mod 9$
+          <br><br>
+          $
+          A.\;\; 3 \\[3ex]
+          B.\;\; 4 \\[3ex]
+          C.\;\; 5 \\[3ex]
+          D.\;\; 6 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA1')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA1">
+            <br>
+            $
+            6 - 36 \mod 9 \\[3ex]
+            6 - 0 \\[3ex]
+            6
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) In what number base was the addition $1 + nn = 100$, where $n \gt 0$, done?
+          <br><br>
+          $
+          A.\;\; n - 1 \\[3ex]
+          B.\;\; n \\[3ex]
+          C.\;\; n + 1 \\[3ex]
+          D.\;\; n + 2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA2')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA2">
+            <br>
+            $
+            1 + nn = 100 \\[3ex]
+            1 + 99 = 100 ...base\;\;ten \\[3ex]
+            nn = 99 \implies n = 9 \\[3ex]
+            9 + 1 = 10 \\[3ex]
+            \therefore base = n + 1
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) If 20 mod 9 is equivalent to <i>y</i> mod 6, find <i>y</i>
+          <br><br>
+          $
+          A.\;\; 1 \\[3ex]
+          B.\;\; 2 \\[3ex]
+          C.\;\; 3 \\[3ex]
+          D.\;\; 4 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA3')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA3">
+            <br>
+            $
+            20\mod 9 \equiv y\mod 6 \\[3ex]
+            2 \equiv y\mod 6 \\[3ex]
+            2 \equiv 2\mod 6 \\[3ex]
+            y = 2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) Find the product of 1101<sub>two</sub> and 111<sub>two</sub>
+          <br><br>
+          $
+          A.\;\; 1101011_{two} \\[3ex]
+          B.\;\; 1011101_{two} \\[3ex]
+          C.\;\; 1110011_{two} \\[3ex]
+          D.\;\; 1011011_{two} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA4')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA4">
+            <br>
+            <u>First Method:</u> <b>Operate in Base Two</b> <br><br>
+            $
+            \begin{align}
+            1\ \ 1\ \ 0\ \ 1\ \ \\
+            * \ \ \ \ \ \ 1\ \ 1\ \ 1\ \ \\
+            \hline
+            1\ \ 1\ \ 0\ \ 1\ \ \\
+            + \ \ \ \ \ \ \ \ \ \ 1\ \ 1\ \ 0\ \ 1~~~~\ \ \\
+            1\ \ 1\ \ 0\ \ 1~~~~~~~~\ \ \\
+            \hline
+            1\ \ 0\ \ 1\ \ 1\ \ 0\ \ 1\ \ 1~~ \\
+            \hline
+            \end{align}
+            $
+            <br><br>
+            <mark>$1101_{two} * 111_{two} = 1011011_{two}$</mark> <br><br>
+
+            <u>Second Method:</u> <b>Convert to Base Ten, Operate in Base Ten, Convert to Base Two</b> <br><br>
+            $
+            \underline{Convert\;\;to\;\;Base\;\;Ten} \\[3ex]
+            1101_{two} \\[3ex]
+            = 1 * 2^3 + 1 * 2^2 + 0 * 2^1 + 1 * 2^0 \\[3ex]
+            = 1(8) + 1(4) + 0 + 1(1) \\[3ex]
+            = 8 + 4 + 0 + 1 \\[3ex]
+            = 13 \\[5ex]
+            111_{two} \\[3ex]
+            = 1 * 2^2 + 1 * 2^1 + 1 * 2^0 \\[3ex]
+            = 1(4) + 1(2) + 1(1) \\[3ex]
+            = 4 + 2 + 1 \\[3ex]
+            = 7 \\[5ex]
+            \underline{Operate\;\;in\;\;Base\;\;Ten} \\[3ex]
+            13 * 7 = 91 \\[5ex]
+            \underline{Convert\;\;to\;\;Base\;\;Two} \\[3ex]
+            \begin{array}{c|c}
+            2 & 91 \\
+            \hline
+            2 & 45 \:R\: 1 \\
+            \hline
+            2 & 22 \:R\: 1 \\
+            \hline
+            2 & 11 \:R\: 0 \\
+            \hline
+            2 & 5 \:R\: 1 \\
+            \hline
+            2 & 2 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            Count \:the\: remainders\: upwards \\[3ex]
+            91 = 1011011_{two} \\[3ex]
+            $
+            $1101_{two} * 111_{two} = 1011011_{two}$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Given that $110_x = 40_{five}$, find the value of <i>x</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA5')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA5">
+            <br>
+            $
+            110_x = 40_{five} \\[3ex]
+            \text{Convert both bases to base ten} \\[3ex]
+            1 * x^2 + 1 * x^1 + 0 * x^0 = 4 * 5^1 + 0 * 5^0 \\[3ex]
+            x^2 + x + 0 = 20 + 0 \\[3ex]
+            x^2 + x = 20 \\[3ex]
+            x^2 + x - 20 = 0 \\[3ex]
+            (x + 5)(x - 4) = 0 \\[3ex]
+            x = -5 \hspace{2em}OR\hspace{2em} x = 4 \\[3ex]
+            \text{The base cannot be negative} \\[3ex]
+            \therefore x = 4
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The operation $\triangle$ is defined on the set $T = \{2, 3, 5, 7\}$ by
+          $x \triangle y = (x + y + xy) \mod 8$ <br><br>
+          (i) Construct modulo $8$ table for the operation $\triangle$ on the set $T$ <br>
+          (ii) Use the table to find: <br><br>
+          $
+          I.\;\;\; 2\triangle (5 \triangle 7) \\[3ex]
+          II.\;\;\; 2 \triangle n = 5 \triangle 7 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA6')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA6">
+            <br>
+            $
+            T = \{2, 3, 5, 7\} \\[3ex]
+            x \triangle y = (x + y + xy) \mod 8 \\[3ex]
+            y \triangle x = (y + x + yx) \mod 8 \\[3ex]
+            x \triangle y = y \triangle x ...Commutative\;\;Property \\[5ex]
+            (i) \\[3ex]
+            2 \triangle 2 = [2 + 2 + 2(2)] \mod 8 \\[3ex]
+            = (4 + 4) \mod 8 \\[3ex]
+            = 8 \mod 8 = 0 \\[3ex]
+            2 \triangle 2 = 0 \\[3ex]
+            2 \triangle 3 = [2 + 3 + 2(3)] \mod 8 \\[3ex]
+            = (5 + 6) \mod 8 \\[3ex]
+            = 11 \mod 8 = 3 \\[3ex]
+            2 \triangle 3 = 3 \\[3ex]
+            2 \triangle 3 = 3 \triangle 2 = 3 \\[3ex]
+            2 \triangle 5 = [2 + 5 + 2(5)] \mod 8 \\[3ex]
+            = (7 + 10) \mod 8 \\[3ex]
+            = 17 \mod 8 = 1 \\[3ex]
+            2 \triangle 5 = 1 \\[3ex]
+            2 \triangle 5 = 5 \triangle 2 = 1 \\[3ex]
+            2 \triangle 7 = [2 + 7 + 2(7)] \mod 8 \\[3ex]
+            = (9 + 14) \mod 8 \\[3ex]
+            = 23 \mod 8 = 7 \\[3ex]
+            2 \triangle 7 = 7 \\[5ex]
+            2 \triangle 7 = 7 \triangle 2 = 7 \\[3ex]
+            3 \triangle 3 = [3 + 3 + 3(3)] \mod 8 \\[3ex]
+            = (6 + 9) \mod 8 \\[3ex]
+            = 15 \mod 8 = 7 \\[3ex]
+            3 \triangle 3 = 7 \\[3ex]
+            3 \triangle 5 = [3 + 5 + 3(5)] \mod 8 \\[3ex]
+            = (8 + 15) \mod 8 \\[3ex]
+            = 23 \mod 8 = 7 \\[3ex]
+            3 \triangle 5 = 7 \\[3ex]
+            3 \triangle 5 = 5 \triangle 3 = 7 \\[3ex]
+            3 \triangle 7 = [3 + 7 + 3(7)] \mod 8 \\[3ex]
+            = (10 + 21) \mod 8 \\[3ex]
+            = 31 \mod 8 = 7 \\[3ex]
+            3 \triangle 7 = 7 \\[3ex]
+            3 \triangle 7 = 7 \triangle 3 = 7 \\[5ex]
+            5 \triangle 5 = [5 + 5 + 5(5)] \mod 8 \\[3ex]
+            = (10 + 25) \mod 8 \\[3ex]
+            = 35 \mod 8 = 3 \\[3ex]
+            5 \triangle 5 = 3 \\[3ex]
+            5 \triangle 7 = [5 + 7 + 5(7)] \mod 8 \\[3ex]
+            = (12 + 35) \mod 8 \\[3ex]
+            = 47 \mod 8 = 7 \\[3ex]
+            5 \triangle 7 = 7 \triangle 5 = 7 \\[5ex]
+            7 \triangle 7 = [7 + 7 + 7(7)] \mod 8 \\[3ex]
+            = (14 + 49) \mod 8 \\[3ex]
+            = 63 \mod 8 = 7 \\[3ex]
+            7 \triangle 7 = 7 \\[3ex]
+            $
+            The modulo table for the operation $\triangle$ on the set $T$ is: <br>
+            <table class="w3-center question">
+              <tr>
+                <th class="green">$\triangle$</th>
+                <th class="green">$2$</th>
+                <th class="green">$3$</th>
+                <th class="green">$5$</th>
+                <th class="green">$7$</th>
+              </tr>
+              <tr>
+                <td>$2$</td>
+                <td>$0$</td>
+                <td>$3$</td>
+                <td>$1$</td>
+                <td>$7$</td>
+              </tr>
+              <tr>
+                <td>$3$</td>
+                <td>$3$</td>
+                <td>$7$</td>
+                <td>$7$</td>
+                <td>$7$</td>
+              </tr>
+              <tr>
+                <td>$5$</td>
+                <td>$1$</td>
+                <td>$7$</td>
+                <td>$3$</td>
+                <td>$7$</td>
+              </tr>
+              <tr>
+                <td>$7$</td>
+                <td>$7$</td>
+                <td>$7$</td>
+                <td>$7$</td>
+                <td>$7$</td>
+              </tr>
+            </table>
+            <br>
+            (ii) <br>
+            $
+            (I.) \\[3ex]
+            2 \triangle (5 \triangle 7) \\[3ex]
+            = 2 \triangle 7 \\[3ex]
+            = 7 \\[3ex]
+            (II.) \\[3ex]
+            2 \triangle n = 5 \triangle 7 \\[3ex]
+            2 \triangle n = 7 \\[3ex]
+            2 \triangle 7 = 7 \\[3ex]
+            \implies n = 7
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) <table class="w3-center">
+            <tr>
+              <td>$\oplus$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+            </tr>
+            <tr>
+              <td>$0$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+            </tr>
+            <tr>
+              <td>$1$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+              <td>$0$</td>
+            </tr>
+            <tr>
+              <td>$2$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+            </tr>
+            <tr>
+              <td>$3$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+            </tr>
+            <tr>
+              <td>$4$</td>
+              <td>$4$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+            </tr>
+            <tr>
+              <td colspan="6"><b>Fig. 1</b></td>
+            </tr>
+          </table>
+          <br>
+          <table class="w3-center">
+            <tr>
+              <td>$\otimes$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+            </tr>
+            <tr>
+              <td>$0$</td>
+              <td>$0$</td>
+              <td>$0$</td>
+              <td>$0$</td>
+              <td>$0$</td>
+              <td>$0$</td>
+            </tr>
+            <tr>
+              <td>$1$</td>
+              <td>$0$</td>
+              <td>$1$</td>
+              <td>$2$</td>
+              <td>$3$</td>
+              <td>$4$</td>
+            </tr>
+            <tr>
+              <td>$2$</td>
+              <td>$0$</td>
+              <td>$2$</td>
+              <td>$4$</td>
+              <td>$1$</td>
+              <td>$3$</td>
+            </tr>
+            <tr>
+              <td>$3$</td>
+              <td>$0$</td>
+              <td>$3$</td>
+              <td>$1$</td>
+              <td>$4$</td>
+              <td>$2$</td>
+            </tr>
+            <tr>
+              <td>$4$</td>
+              <td>$0$</td>
+              <td>$4$</td>
+              <td>$3$</td>
+              <td>$2$</td>
+              <td>$1$</td>
+            </tr>
+            <tr>
+              <td colspan="6"><b>Fig. 2</b></td>
+            </tr>
+          </table>
+          <br>
+          <b>Fig. 1</b> and <b>Fig. 2</b> are the addition and multiplication tables respectively in modulo 5. <br>
+          Use these tables to solve the equation $(n \otimes 4) \oplus 3 = 0(mod\;\; 5)$ <br><br>
+          $
+          A.\;\; 1 \\[3ex]
+          B.\;\; 2 \\[3ex]
+          C.\;\; 3 \\[3ex]
+          D.\;\; 4 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionMA7')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA7">
+            <br>
+            $
+            \underline{RHS} \\[3ex]
+            0 \mod 5 = 0 \\[3ex]
+            \underline{LHS} \\[3ex]
+            (n \otimes 4) \oplus 3 \\[3ex]
+            start\;\;from\;\;the\;\;left \\[3ex]
+            what?\;\; \oplus 3 = 0 \\[3ex]
+            2 \oplus 3 = 0...from\;\;Fig.\;1 \\[3ex]
+            this\;\;means\;\;that: \\[3ex]
+            n \otimes 4 = 2 \\[3ex]
+            3 \otimes 4 = 2...from\;\;Fig.\;2 \\[3ex]
+            n = 3 \\[3ex]
+            \therefore (3 \otimes 4) \oplus 3 = 0
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <button class="solutions" onclick="solutions('solutionMA8')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA8">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionMA9')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA10')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA11')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA12')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionMA13')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA14')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionMA15')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA16')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionMA17')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA18')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionMA19')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA20')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/WASSCE/ModularArithmetic.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionMA21')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA22')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionMA23')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA24')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionMA25')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA26')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionMA27')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA28')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionMA29')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA30')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

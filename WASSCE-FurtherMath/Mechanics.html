@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Mechanics</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the WASSCE Further Mathematics exam questions on mechanics.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, Further Mathematics, 
+  WASSCE, West African Senior School Certificate Examination, Arithmetic, Algebra, mechanics, statics, dynamics, friction, force, mass, velocity, 
+  acceleration, time, momentum, frictional force, coefficient of friction, equilibrium">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Mechanics: Statics and Dynamics</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to the WASSCE Further Mathematics past questions on the topics: Mechanics. <br>
+        This consists of topics in Statics and Dynamics. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the WASSCE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Symbols and Formulas</h2>
+      <p>
+        (1.) <b>Basic Formulas</b>
+        <br><br>
+        $
+        W = mg \\[3ex]
+        where \\[3ex]
+        W = weight\;(N) \\[3ex]
+        g = \text{acceleration due to gravity}\; (ms^{-2}) \\[3ex]
+        m = \text{mass}\;(kg) \\[3ex]
+
+        $
+
+        (2.) <b>Basic Equations of Motion</b>
+        <br><br>
+        $
+        (a.)\;\; v = u + at \\[3ex]
+        (b.)\;\; s = ut + \dfrac{1}{2}at^2 \\[5ex]
+        (c.)\;\; v^2 = u^2 + 2as \\[5ex]
+
+        \underline{\text{Working towards gravity}} \\[3ex]
+        a = g \\[5ex]
+
+        \underline{\text{Working aganist gravity}} \\[3ex]
+        a = -g \\[5ex]
+        $
+        where: <br>
+        <i>u</i> = initial velocity <br>
+        <i>v</i> = final velocity <br>
+        <i>a</i> = acceleration <br>
+        <i>t</i> = time <br>
+        <i>s</i> = distance <br>
+        <i>g</i> = acceleration due to gravity
+        <br><br>
+        (3.) <b>Total Momentum</b>
+        <br><br>
+        $
+        m_1 = \text{mass of first body} \\[4ex]
+        v_1 = \text{velocity of first body} \\[4ex]
+        m_2 = \text{mass of second body} \\[4ex]
+        v_2 = \text{velocity of second body} \\[5ex]
+
+        \underline{\text{Before Collision: Moving in Same Direction}} \\[4ex]
+        \text{momentum of first body} = m_1v_1 \\[4ex]
+        \text{momentum of second body} = m_2v_2 \\[4ex]
+        \text{total momentum} = m_1v_1 + m_2v_2 \\[5ex]
+
+        \underline{\text{After Collision: If Stuck Together}} \\[3ex]
+        \text{mass of: first body and second body} = m_1 + m_2 \\[4ex]
+        \text{common velocity} = v \\[3ex]
+        \text{total momentum} = v(m_1 + m_2) \\[5ex]
+
+        \underline{\text{Based on the Principle of Conservation of Momentum}} \\[3ex]
+        \text{total momentum before collision = total momentum after collision} \\[3ex]
+        m_1v_1 + m_2v_2 = v(m_1 + m_2) \\[5ex]
+
+        \underline{\text{Before Collision: Moving in Opposite Directions}} \\[4ex]
+        \text{momentum of first body} = m_1v_1 \\[4ex]
+        \text{momentum of second body} = m_2 * -v_2 = -m_2v_2 \\[4ex]
+        \text{The negative value of the velocity is because the second body is moving in opposite direction} \\[3ex]
+        \text{total momentum} = m_1v_1 - m_2v_2 \\[5ex]
+
+        \underline{\text{After Collision: If Stuck Together}} \\[3ex]
+        \text{mass of: first body and second body} = m_1 + m_2 \\[4ex]
+        \text{common velocity} = v \\[3ex]
+        \text{total momentum} = v(m_1 + m_2) \\[5ex]
+
+        \underline{\text{Based on the Principle of Conservation of Momentum}} \\[3ex]
+        \text{total momentum before collision = total momentum after collision} \\[3ex]
+        m_1v_1 - m_2v_2 = v(m_1 + m_2) \\[5ex]
+        $
+
+        (4.) Forces acting on a body
+        <br><br>
+        $
+        F_x = F \cos\theta \\[3ex]
+        F_y = F \sin\theta \\[3ex]
+        $
+        where: <br>
+        $F$ = magnitude of the force <br>
+        $F_x$ = horizontal component (<i>x</i>-component) of the force <br>
+        $F_y$ = vertical component (<i>y</i>-component) of the force <br>
+        &theta; = angle the force makes with the positive <i>x</i>-axis (measured counterclockwise).
+
+
+
+
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) A body of mass 40 kg is placed on a rough inclined plane which makes an angle of 30&deg; with the
+          horizontal. <br>
+          If a force of 420 N is applied upwards parallel to the plane, find the: <br>
+          (a.) <b>maximum</b> frictional force that will keep the body in equilibrium; <br>
+          (b.) coefficient of friction. <br>
+          [Take g = 10$ms^{-2}$]
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM1')">Show/Hide Answer</button>
+          <div class="result" id="solutionM1">
+            <br>
+            Let us represent the informaion diagrammatically
+            <br><br>
+            <img src="images/Mechanics/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            <i>m</i> = mass of the body = 40 kg <br>
+            &theta; = 30&deg; <br>
+            $F_A$ = applied force = 420 N <br>
+            $F_F$ = frictional force
+            <br><br>
+            <i>W</i> = weight of the body <br>
+            This acts vertically downward, forming the longest side of the right triangle (hypotenuse).
+            <br><br>
+            $W_\perp$ = perpendicular component of the weight also known as the Normal force <br>
+            This is the part of the weight that presses the body against the surface of the inclined plane. <br>
+            It is the side of the triangle that is perpendicular to the incline (adjacent side relative to the 30&deg;
+            angle).
+            <br><br>
+            $W_{||}$ = parallel component of the weight also known as the Downslope force <br>
+            This is the part of the weight that acts down the slope of the incline, trying to pull the body downward.
+            <br>
+            It is the side of the triangle that is aligned with the incline (opposite side relative to the 30&deg;
+            angle).
+            <br><br>
+            Frictional force opposes motion and acts upslope to prevent motion. <br>
+            Hence in equilibrium, the applied force (which tries to pull the body forward) is equal to the frictional
+            force (which opposes the motion) and the downslope force (which tries to pull the body downward).
+            <br><br>
+            &mu; = coefficient of friction <br>
+            This is the ratio of the frictional force to the normal force.
+            <br><br>
+            $
+            W = mg \\[3ex]
+            = 40(10) \\[3ex]
+            = 400\;N \\[5ex]
+
+            \underline{\text{Downslope force}} \\[3ex]
+            W_{||} = W\sin\theta ...SOHCAHTOA \\[3ex]
+            = 400\sin 30^\circ \\[3ex]
+            = 400 (0.5) \\[3ex]
+            = 200\;N \\[5ex]
+
+            (a.) \\[3ex]
+            \underline{\text{In Equilibrium}} \\[3ex]
+            F_A = F_F + W_{||} \\[3ex]
+            F_F = F_A - W_{||} \\[3ex]
+            = 420 - 200 \\[3ex]
+            = 220\;N \\[5ex]
+            (b.) \\[3ex]
+            \underline{\text{Normal force}} \\[3ex]
+            W_\perp = W\cos\theta ...SOHCAHTOA \\[3ex]
+            = 400\cos 30^\circ \\[3ex]
+            = 400 * \dfrac{\sqrt{3}}{2} \\[5ex]
+            = 200\sqrt{3}\;N \\[5ex]
+
+            \mu = \dfrac{F_F}{W_\perp} \\[5ex]
+            = \dfrac{220}{200\sqrt{3}} \\[5ex]
+            = \dfrac{11}{10\sqrt{3}} \\[5ex]
+            = \dfrac{11}{10\sqrt{3}} * \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]
+            = \dfrac{11\sqrt{3}}{30}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) A body of mass 6 <i>kg</i> moves with a velocity of 7 $ms^{-1}$. <br>
+          It collides with a second body moving in the opposite direction with a velocity of 5 $ms^{-1}$. <br>
+          After collision, the two bodies move together with a velocity of 4 $ms^{-1}$. <br>
+          Find the mass of the second body.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM2')">Show/Hide Answer</button>
+          <div class="result" id="solutionM2">
+            <br>
+            Let the: <br>
+            First body be <b>P</b>: mass of 6 kg and velocity of 7 m/s <br>
+            Second body be <b>Q</b>: mass of <i>m</i> kg and velocity of &minus;5 m/s <br>
+            The negative value of the velocity is because the second body is moving in the opposite direction <br>
+            Momentum = mass &times; velocity
+            <br><br>
+            $
+            \underline{\text{Before Collision}} \\[3ex]
+            \text{Momentum of Body P} = 6 \times 7 = 42\;kgm/s \\[3ex]
+            \text{Momentum of Body Q} = m \times -5 = -5m\;kgm/s \\[3ex]
+            \text{Total Momentum} = (42 - 5m)\;kgm/s \\[5ex]
+
+            \underline{\text{After Collision}} \\[3ex]
+            \text{Mass of P and Q after they stick together} = (6 + m)\;kg \\[3ex]
+            \text{The common velocity} = 4\;m/s \\[3ex]
+            \text{Total Momentum} = 4(6 + m)\;kgm/s \\[5ex]
+
+            \text{Based on the Principle of Conservation of Momentum:} \\[3ex]
+            42 - 5m = 4(6 + m) \\[3ex]
+            42 - 5m = 24 + 4m \\[3ex]
+            42 - 24 = 4m + 5m \\[3ex]
+            9m = 18 \\[3ex]
+            m = \dfrac{18}{2} \\[5ex]
+            m = 2\;kg
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) A particle of weight 12 <i>N</i> lying on a horizontal ground is acted upon by forces $F_1 = (10N,
+          090^\circ)$, $F_2 = (16N, 180^\circ)$, $F_3 = (7N, 030^\circ)$ and $F_4 = (12N, 300^\circ)$.
+          <br><br>
+          (a.) Express all the forces acting on the particle as column vectors. <br>
+          (b.) Find, correct to <b>two</b> decimal places, the magnitude of the: <br>
+          (i.) resultant force; <br>
+          (ii.) acceleration with which the particle starts to move. <br>
+          [Take g = 10$ms^{-2}$]
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM3')">Show/Hide Answer</button>
+          <div class="result" id="solutionM3">
+            <br>
+            (a.) The forces and the components of the forces are: <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 20%;">Force, $F$ (N)</th>
+                <th style="width: 30%;">Horizontal Component, $F_x$ (N)</th>
+                <th style="width: 30%;">Vertical Component, $F_y$ (N)</th>
+                <th style="width: 20%;">Column Vector = $\begin{bmatrix}
+                  F_x \\[3ex]
+                  F_y
+                  \end{bmatrix}$</th>
+              </tr>
+              <tr>
+                <td>$10$</td>
+                <td>
+                  $
+                  10 \cos 90^\circ \\[3ex]
+                  0
+                  $
+                </td>
+                <td>
+                  $
+                  10 \sin 90^\circ \\[3ex]
+                  10
+                  $
+                </td>
+                <td>
+                  $\begin{bmatrix}
+                  0 \\[3ex]
+                  10
+                  \end{bmatrix}$
+                </td>
+              </tr>
+              <tr>
+                <td>$16$</td>
+                <td>
+                  $
+                  16 \cos 180^\circ \\[3ex]
+                  -16
+                  $
+                </td>
+                <td>
+                  $
+                  16 \sin 180^\circ \\[3ex]
+                  0
+                  $
+                </td>
+                <td>
+                  $\begin{bmatrix}
+                  -16 \\[3ex]
+                  0
+                  \end{bmatrix}$
+                </td>
+              </tr>
+              <tr>
+                <td>$7$</td>
+                <td>
+                  $
+                  7 \cos 30^\circ \\[3ex]
+                  6.062177826
+                  $
+                </td>
+                <td>
+                  $
+                  7 \sin 30^\circ \\[3ex]
+                  3.5
+                  $
+                </td>
+                <td>
+                  $\begin{bmatrix}
+                  6.062177826 \\[3ex]
+                  3.5
+                  \end{bmatrix}$
+                </td>
+              </tr>
+              <tr>
+                <td>$12$</td>
+                <td>
+                  $
+                  12 \cos 300^\circ \\[3ex]
+                  6
+                  $
+                </td>
+                <td>
+                  $
+                  12 \sin 300^\circ \\[3ex]
+                  -10.39230485
+                  $
+                </td>
+                <td>
+                  $\begin{bmatrix}
+                  6 \\[3ex]
+                  -10.39230485
+                  \end{bmatrix}$
+                </td>
+              </tr>
+            </table>
+            <br>
+            $
+            (b.)(i) \\[3ex]
+            \text{Resultant Force}, F_{resultant} = F_x + F_y \\[3ex]
+            = \begin{bmatrix}
+            0 \\[3ex]
+            10
+            \end{bmatrix} + \begin{bmatrix}
+            -16 \\[3ex]
+            0
+            \end{bmatrix} + \begin{bmatrix}
+            6.062177826 \\[3ex]
+            3.5
+            \end{bmatrix} + \begin{bmatrix}
+            6 \\[3ex]
+            -10.39230485
+            \end{bmatrix} \\[10ex]
+            = \begin{bmatrix}
+            0 + -16 + 6.062177826 + 6 \\[3ex]
+            10 + 0 + 3.5 + -10.39230485
+            \end{bmatrix} \\[10ex]
+            = \begin{bmatrix}
+            -3.937822174 \\[3ex]
+            3.10769515
+            \end{bmatrix} \\[10ex]
+            |F_{resultant}| = \sqrt{F_x^2 + F_y^2} \\[4ex]
+            = \sqrt{(-3.937822174)^2 + 3.10769515^2} \\[4ex]
+            = \sqrt{25.16421262} \\[3ex]
+            = 5.016394384 \\[3ex]
+            \approx 5.02\;N \\[5ex]
+            (ii.) \\[3ex]
+            W = mg \\[3ex]
+            where \\[3ex]
+            W = weight = 12\;N \\[3ex]
+            g = \text{acceleration due to gravity} = 10\;ms^{-2} \\[3ex]
+            m = \text{mass} = ? \\[3ex]
+            m = \dfrac{W}{g} \\[5ex]
+            m = \dfrac{12}{10} \\[5ex]
+            m = 1.2\;kg \\[5ex]
+            F_{resultant} = ma \\[3ex]
+            where \\[3ex]
+            a = \text{accelaration of the particle} \\[3ex]
+            a = \dfrac{F_{resultant}}{m} \\[5ex]
+            a = \dfrac{5.016394384}{1.2} \\[5ex]
+            a = 4.180328654 \\[3ex]
+            a \approx 4.18\;ms^{-2}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM4')">Show/Hide Answer</button>
+          <div class="result" id="solutionM4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionM5')">Show/Hide Answer</button>
+          <div class="result" id="solutionM5">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM6')">Show/Hide Answer</button>
+          <div class="result" id="solutionM6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM7')">Show/Hide Answer</button>
+          <div class="result" id="solutionM7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM8')">Show/Hide Answer</button>
+          <div class="result" id="solutionM8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM9')">Show/Hide Answer</button>
+          <div class="result" id="solutionM9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM10')">Show/Hide Answer</button>
+          <div class="result" id="solutionM10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionM11')">Show/Hide Answer</button>
+          <div class="result" id="solutionM11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM12')">Show/Hide Answer</button>
+          <div class="result" id="solutionM12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionM13')">Show/Hide Answer</button>
+          <div class="result" id="solutionM13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM14')">Show/Hide Answer</button>
+          <div class="result" id="solutionM14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionM15')">Show/Hide Answer</button>
+          <div class="result" id="solutionM15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM16')">Show/Hide Answer</button>
+          <div class="result" id="solutionM16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionM17')">Show/Hide Answer</button>
+          <div class="result" id="solutionM17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM18')">Show/Hide Answer</button>
+          <div class="result" id="solutionM18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionM19')">Show/Hide Answer</button>
+          <div class="result" id="solutionM19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM20')">Show/Hide Answer</button>
+          <div class="result" id="solutionM20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE-FurtherMath/VectorsScalars.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionM21')">Show/Hide Answer</button>
+          <div class="result" id="solutionM21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM22')">Show/Hide Answer</button>
+          <div class="result" id="solutionM22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionM23')">Show/Hide Answer</button>
+          <div class="result" id="solutionM23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM24')">Show/Hide Answer</button>
+          <div class="result" id="solutionM24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionM25')">Show/Hide Answer</button>
+          <div class="result" id="solutionM25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM26')">Show/Hide Answer</button>
+          <div class="result" id="solutionM26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionM27')">Show/Hide Answer</button>
+          <div class="result" id="solutionM27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM28')">Show/Hide Answer</button>
+          <div class="result" id="solutionM28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionM29')">Show/Hide Answer</button>
+          <div class="result" id="solutionM29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM30')">Show/Hide Answer</button>
+          <div class="result" id="solutionM30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

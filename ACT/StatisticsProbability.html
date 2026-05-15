@@ -1,0 +1,3266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Statistics and Probability</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the ACT exam questions on statistics and probability.">
+
+  <meta name="keywords"
+    content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, statistics, probability, 
+    measures of center, measures of central tendency, mean, arithmetic mean, average, median, mode, midrange, measures of spread, 
+    measures of variability, measures of variation, measures of position, measures of location, events, classical method, empirical method, probabilities, odds of an event,
+    odds in favor, odds against, independent events, dependent events, mutually exclusive events, mutually inclusive events, complementary events, laws of probability, 
+    conditional probability, Bayes theorem, coins, dice, cards, deterministic phenomenon, random phenomenon, random experiment, outcome, success, failure, 
+    sample space, event space, theoretical probability, rare event rule, rules of probability, with replacement, without replacement, tree diagrams, Punnett squares, law of large numbers">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#symbols" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Symbols</a>
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+      <a href="#sixtyone-eighty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 61 &mdash;
+        80</a>
+      <a href="#eightyone-hundred" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 81 &mdash;
+        100</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Statistics and Probability</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Statistics and Probability. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Symbols -->
+    <div class="w3-container w3-padding-32" id="symbols">
+      <ul class="w3-ul white">
+        <li class="w3-yellow w3-hover-black w3-center">
+          <h2>Symbols and Meanings</h2>
+        </li>
+        <li>$X$ = dataset $X$</li>
+        <li>$x = x-values$ OR data values</li>
+        <li>$x_{mid}$ = class midpoint of $x-values$ = class midpoint of the data values</li>
+        <li>$\Sigma$ (pronounced as uppercase Sigma) = $summation$</li>
+        <li>$\Sigma x$ = summation of the $x-values$</li>
+        <li>$f = frequency$</li>
+        <li>$F = frequency$</li>
+        <li>$\Sigma f$ = summation of the frequencies</li>
+        <li>$\Sigma fx$ = summation of the product of the $x-values$ and their corresponding frequencies</li>
+        <li>$(\Sigma x)^2$ = square of the summation of the $x-values$</li>
+        <li>$\Sigma x^2$ = summation of the squared of the $x-values$</li>
+        <li>$\bar{x}$ is sample mean of the $x-values$</li>
+        <li>$\mu$ = population mean</li>
+        <li>$n$ = sample size</li>
+        <li>$N$ = population size</li>
+        <li>$\tilde{x}$ = median</li>
+        <li>$\widehat{x}$ = mode</li>
+        <li>$AM$ = assumed mean</li>
+        <li>$D$ = deviation from the assumed mean</li>
+        <li>$x_{MR}$ = midrange</li>
+        <li>$LCL$ = lower class limit</li>
+        <li>$UCL$ = upper class limit</li>
+        <li>$min$ = minimum data value</li>
+        <li>$max$ = maximum data value</li>
+        <li>$LCB_{med}$ = lower class boundary of the median class</li>
+        <li>$CW$ = class width</li>
+        <li>$f_{med}$ = frequency of the median class</li>
+        <li>$CF_{bmed}$ = cumulative frequency of the class before the median class</li>
+        <li>$LCB_{mod}$ = lower class boundary of the modal class </li>
+        <li>$f_{mod}$ = frequency of the modal class</li>
+        <li>$f_{bmod}$ = frequency of the class before the modal class</li>
+        <li>$f_{amod}$ = frequency of the class after the modal class</li>
+        <li>$R$ = range</li>
+        <li>$s$ = sample standard deviation</li>
+        <li>$s^2$ = sample variance</li>
+        <li>$\sigma$ = population standard deviation</li>
+        <li>$\sigma^2$ = population variance</li>
+        <li>$CV$ = coefficient of variation</li>
+        <li>$z = z-score$</li>
+        <li>$Q_1$ = lower quartile or first quartile</li>
+        <li>$P_{25}$ = 25th percentile or first quartile</li>
+        <li>$Q_2$ = middle quartile or second quartile or median</li>
+        <li>$P_{50}$ = 50th percentile or median</li>
+        <li>$Q_3$ = upper quartile or third quartile</li>
+        <li>$P_{75}$ = 75th percentile or third quartile</li>
+        <li>$IQR$ = interquartile range</li>
+        <li>$SIQR$ = semi-interquartile range</li>
+        <li>$MQ$ = midquartile</li>
+        <li>$LF$ = lower fence</li>
+        <li>$UF$ = upper fence</li>
+        <li>$TM$ = trimmed mean</li>
+        <li>$\Pi$ (pronounced as uppercase Pi) = $product$</li>
+        <li>$\Pi x$ = product of the $x-values$</li>
+        <li>$GM$ = geometric mean</li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- End Symbols -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <h4>Grouped Data</h4>
+      <p>
+        $
+        \underline{\text{Class Size or Class Width}} \\[3ex]
+        (1.)\;\; Class\:\:Width = \dfrac{Maximum - Minimum}{Number\:\:of\:\:classes} \\[5ex]
+        (2.)\;\; Class\:\:Width = LCI\:\:of\:\:2nd\:\:Class - LCI\:\:of\:\:1st\:\:Class \\[3ex]
+        (3.)\;\; Class\:\:Width = UCI\:\:of\:\:2nd\:\:Class - UCI\:\:of\:\:1st\:\:Class \\[3ex]
+        (4.)\;\; Class\:\:Width = UCB\:\:of\:\:a\:\:class - LCB\:\:of\:\:the\:\:same\:\:class \\[3ex]
+        (5.)\;\; Class\:\:Width = LCB\:\:of\:\:a\:\:Class - LCB\:\:of\:\:previous\:\:class \\[5ex]
+
+        \underline{\text{Frequency Density}} \\[3ex]
+        (6.)\;\; \text{Frequency Density} = \dfrac{\text{Frequency}}{\text{Class Width}} \\[7ex]
+
+        \underline{\text{Class Midpoints or Class Marks}} \\[3ex]
+        (7.)\;\; Class\:\:Width = LCB\:\:of\:\:a\:\:Class - LCB\:\:of\:\:previous\:\:class \\[5ex]
+
+        \underline{\text{Class Boundaries}} \\[3ex]
+        (8.)\;\; Lower\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{LCI\:\:of\:\:that\:\:class +
+        UCI\:\:of\:\:previous/preceding\:\:class}{2} \\[5ex]
+        (9.)\;\; Upper\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{UCI\:\:of\:\:that\:\:class +
+        LCI\:\:of\:\:next/succeeding\:\:class}{2} \\[5ex]
+        $
+        (10.) <u>Shortcut for Class Boundaries</u> <br>
+        If the class intervals are integers: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.5 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.5
+        <br><br>
+        If the class intervals are decimals in one decimal place: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.05 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.05
+        <br><br>
+        If the class intervals are decimals in two decimal places: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.005 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.005
+        <br><br>
+        ...and so on and so forth.
+        <br><br>
+        $
+        \underline{\text{Relative Frequency}} \\[3ex]
+        (11.)\;\; RF\:\:of\:\:a\:\:class = \dfrac{Frequency\:\:of\:\:that\:\:class}{\Sigma Frequency} \\[7ex]
+
+        \underline{\text{Cumulative Frequency}} \\[3ex]
+        (12.)\;\; CF\:\:of\:\:1st\:\:Class = Frequency\:\:of\:\:1st\:\:Class \\[3ex]
+        CF\:\:of\:\:2nd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class \\[3ex]
+        CF\:\:of\:\:3rd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class +
+        Frequency\:\:of\:\:3rd\:\:Class \\[3ex]
+        CF = CF\:\:of\:\:Last\:\:Class = \Sigma Frequency
+        $
+      </p>
+      <br>
+      <h4>Measures of Center: Raw Data and Ungrouped Data</h4>
+      <p>
+        $
+        \underline{Sample\:\:Mean} \\[3ex]
+        (1.)\:\: \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+        (2.)\:\: n = \Sigma f \\[3ex]
+        (3.)\:\: \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (4.)\:\: D = x - AM \\[3ex]
+        (5.)\:\: \bar{x} = AM + \dfrac{\Sigma D}{n} \\[5ex]
+        (6.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Population\:\:Mean} \\[3ex]
+        (7.)\:\: \mu = \dfrac{\Sigma x}{N} \\[5ex]
+        (8.)\:\: N = \Sigma f \\[3ex]
+
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (9.)\:\: D = x - AM \\[3ex]
+        (10.)\:\: \mu = AM + \dfrac{\Sigma D}{N} \\[5ex]
+        (11.)\:\: \mu = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Median} \\[3ex]
+        (12.)\:\: \tilde{x} = \left(\dfrac{\Sigma f + 1}{2}\right)th \:\:for\:\:sorted\:\:odd\:\:sample\:\:size \\[5ex]
+        (13.)\:\: \tilde{x} = \left(\dfrac{\Sigma f}{2}\right)th \:\:for\:\:sorted\:\:even\:\:sample\:\:size \\[7ex]
+
+        \underline{Mode} \\[3ex]
+        (14.)\:\: Mode = x-value(s) \:\;with\:\:highest\:\:frequency \\[5ex]
+
+        \underline{Midrange} \\[3ex]
+        (15.)\:\: x_{MR} = \dfrac{min + max}{2} \\[5ex]
+
+        \underline{Geometric\;\;Mean} \\[3ex]
+        (16.)\;\; GM = \sqrt[n]{\prod\limits_{x=1}^n x}
+        $
+      </p>
+      <br>
+      <h4>Measures of Center: Grouped Data</h4>
+      <p>
+        $
+        \underline{Class\:\:Midpoint} \\[3ex]
+        (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[7ex]
+
+        Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+        \underline{Mean} \\[3ex]
+        (2.)\:\: \bar{x} = \dfrac{\Sigma fx_{mid}}{\Sigma f} \\[7ex]
+
+        Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (3.)\:\: D = x_{mid} - AM \\[3ex]
+        (4.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Median} \\[3ex]
+        (5.)\:\: \tilde{x} = LCB_{med} + \dfrac{CW}{f_{med}} * \left[\left(\dfrac{\Sigma f}{2}\right) - CF_{bmed}\right]
+        \\[7ex]
+
+        \underline{Mode} \\[3ex]
+        (6.)\:\: \widehat{x} = LCB_{mod} + CW * \left[\dfrac{f_{mod} - f_{bmod}}{(f_{mod} - f_{bmod}) + (f_{mod} -
+        f_{amod})}\right]
+        $
+      </p>
+      <br>
+      <h4>Measures of Spread: Raw Data and Ungrouped Data</h4>
+      <p>
+        $
+        \underline{Range} \\[3ex]
+        (1.)\:\: Range = max - min \\[3ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (2.)\;\; D = x - AM \\[5ex]
+
+        \underline{Sample\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (3.)\:\: s^2 = \dfrac{\Sigma(x - \bar{x})^2}{n - 1} \\[5ex]
+        (4.)\:\: s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (5.)\:\: s^2 = \dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)} \\[5ex]
+        (6.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (7.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+        (8.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2 \\[10ex]
+
+        \underline{Population\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (9.)\:\: \sigma^2 = \dfrac{\Sigma(x - \mu)^2}{N} \\[5ex]
+        (10.)\:\: \sigma^2 = \dfrac{\Sigma f(x - \mu)^2}{\Sigma f} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (11.)\:\: \sigma^2 = \dfrac{N(\Sigma x^2) - (\Sigma x)^2}{N^2} \\[5ex]
+        (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{(\Sigma f)^2} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+        (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+        \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (15.)\:\: s = \sqrt{\dfrac{\Sigma(x - \bar{x})^2}{n - 1}} \\[5ex]
+        (16.)\:\: s = \sqrt{\dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (17.)\:\: s = \sqrt{\dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)}} \\[5ex]
+        (18.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)}} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (19.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+        (20.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2} \\[10ex]
+
+        \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (21.)\:\: \sigma = \sqrt{\dfrac{\Sigma(x - \mu)^2}{N}} \\[5ex]
+        (22.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x - \mu)^2}{\Sigma f}} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (23.)\:\: \sigma = \dfrac{\sqrt{N(\Sigma x^2) - (\Sigma x)^2}}{N} \\[5ex]
+        (24.)\:\: \sigma = \dfrac{\sqrt{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}}{\Sigma f} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (25.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+        (26.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2} \\[10ex]
+
+        \underline{Range\:\:Rule\:\:of\:\:Thumb} \\[3ex]
+        Approximate\:\:Value\:\:of\:\:Calculating\:\:Standard\:\:Deviation \\[3ex]
+        (27.)\:\: s = \dfrac{Range}{4} = \dfrac{max - min}{4} \\[7ex]
+
+        \underline{Interquartile\:\:Range} \\[3ex]
+        (28.)\:\: IQR = Q_3 - Q_1 \\[5ex]
+
+        \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Sample} \\[3ex]
+        (29.)\:\: CV = \dfrac{s}{x} * 100 ...in\:\:\% \\[7ex]
+
+        \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Population} \\[3ex]
+        (30.)\:\: CV = \dfrac{\sigma}{x} * 100 ...in\:\:\% \\[7ex]
+
+        \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+        (31.)\:\: MAD = \dfrac{\Sigma |x - \bar{x}|}{n} \\[5ex]
+
+        \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+        (32.)\:\: MAD = \dfrac{\Sigma f|x - \bar{x}|}{\Sigma f} \\[5ex]
+        $
+      </p>
+      <br>
+      <h4>Measures of Spread: Grouped Data</h4>
+      <p>
+        $
+        \underline{Class\:\:Midpoint} \\[3ex]
+        (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (2.)\;\; D = x_{mid} - AM \\[5ex]
+
+        \underline{Sample\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (3.)\:\: s^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (4.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (5.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+        (6.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2 \\[10ex]
+
+        \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (7.)\:\: s = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (8.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)}} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (9.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+        (10.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2} \\[10ex]
+
+        \underline{Population\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (11.)\:\: \sigma^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+        (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+        \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (15.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f}} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (16.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)}} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (17.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+        (18.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2} \\[10ex]
+        $
+      </p>
+      <br>
+      <h4>Measures of Position</h4>
+      <p>
+        A <b>data value is usual</b> if $-2.00 \le z-score \le 2.00$ <br><br>
+        A <b>data value is unusual</b> if $z-score \lt -2.00$ OR $z-score \gt 2.00$ <br><br>
+        $
+        \underline{Sample} \\[3ex]
+        Minimum\:\:usual\:\:data\:\:value = \bar{x} - 2s \\[3ex]
+        Maximum\:\:usual\:\:data\:\:value = \bar{x} + 2s \\[5ex]
+
+        \underline{Population} \\[3ex]
+        Minimum\:\:usual\:\:data\:\:value = \mu - 2\sigma \\[3ex]
+        Maximum\:\:usual\:\:data\:\:value = \mu + 2\sigma \\[5ex]
+
+        \underline{z\:\:score\:\:for\:\:Sample} \\[3ex]
+        (1.)\:\: z = \dfrac{x - \bar{x}}{s} \\[7ex]
+
+        \underline{z\:\:score\:\:for\:\:Population} \\[3ex]
+        (2.)\:\: z = \dfrac{x - \mu}{\sigma} \\[7ex]
+
+        \underline{Quantiles(Percentiles,\:Deciles,\:Quintiles,\:and\:Quartiles)} \\[3ex]
+        \color{red}{Convert\:\:a\:\:Data\:\:value\:\:to\:\:a\:\:Quantile} \\[3ex]
+        x\:\:and\:\:y\:\:are\:\:two\:\:different\:\:variables \\[3ex]
+        (3.)\:\: Percentile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 100 = yth\:\:Percentile
+        \\[5ex]
+        (4.)\:\: Decile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 10 = yth\:\:Decile
+        \\[5ex]
+        (5.)\:\: Quintile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 5 = yth\:\:Quintile
+        \\[5ex]
+        (6.)\:\: Quartile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 4 = yth\:\:Quartile
+        \\[7ex]
+
+        \color{red}{Convert\:\:a\:\:Quantile\:\:to\:\:a\:\:Data\:\:Value} \\[3ex]
+        Calculate\:\:the\:\:xth\:\:position\:\:of\:\:the\:\:yth\:\:Quantile \\[3ex]
+        (7.)\:\: xth\:\:position = \dfrac{yth\:\:Percentile}{100} * total\:\:number\:\:of\:\:values \\[5ex]
+        (8.)\:\: xth\:\:position = \dfrac{yth\:\:Decile}{10} * total\:\:number\:\:of\:\:values \\[5ex]
+        (9.)\:\: xth\:\:position = \dfrac{yth\:\:Quintile}{5} * total\:\:number\:\:of\:\:values \\[5ex]
+        (10.)\:\: xth\:\:position = \dfrac{yth\:\:Quartile}{4} * total\:\:number\:\:of\:\:values \\[7ex]
+        $
+      </p>
+      <br>
+      <table>
+        <tr class="w3-green">
+          <th>If the $xth$ position</th>
+          <th>then,</th>
+        </tr>
+        <tr>
+          <td>is an integer</td>
+          <td>
+            <br>
+            $xth\:\:position = \dfrac{xth\:\:position + (x + 1)th\:\;position}{2}$ <br><br>
+            In other words, find the value of the $xth$ position; find the value of the next position; and determine the
+            mean of the
+            two values.
+          </td>
+        </tr>
+        <tr>
+          <td>is not an integer</td>
+          <td>$xth$ position is <b>rounded up</b></td>
+        </tr>
+      </table>
+
+      <br><br>
+
+      <p>
+        $
+        \underline{The\:\:Five-Number\:\:Summary\:\:of\:\:Data} \\[3ex]
+        (11.)\:\: Minimum\:(min) \\[3ex]
+        (12.)\:\: Lower\:\:Quartile\:(Q_1) \\[3ex]
+        (13.)\:\: Median\:\:or\:\:Middle\:\:Quartile\:(Q_2) \\[3ex]
+        (14.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+        (15.)\:\: Maximum\:(Max) \\[5ex]
+
+        \underline{Other\:\:Statistics\:\:from\:\:Quantiles} \\[3ex]
+        (16.)\:\: IQR = Q_3 - Q_1 \\[3ex]
+        (17.)\:\: SIQR = \dfrac{IQR}{2} = \dfrac{Q_3 - Q_1}{2} \\[5ex]
+        (18.)\:\: MQ = \dfrac{Q_3 + Q_1}{2} \\[5ex]
+        (19.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+        (20.)\:\: LF = Q_1 - 1.5(IQR) \\[3ex]
+        (21.)\:\: UF = Q_3 + 1.5(IQR)
+        $
+      </p>
+      <br>
+      <h4>Probability</h4>
+      <p>
+        Given any two events say <i>A</i> and <i>B</i>
+        <br><br>
+        $
+        P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+
+        \underline{\text{Addition Rule}} \\[3ex]
+        \dfrac{n(A \cup B)}{n(S)} = \dfrac{n(A)}{n(S)} + \dfrac{n(B)}{n(S)} - \dfrac{n(A \cap B)}{n(S)} \\[5ex]
+        P(A \cup B) = P(A) + P(B) - P(A \cap B) \\[3ex]
+        P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - P(A\:\:\:AND\:\:\:B) \\[5ex]
+        $
+        For <u>Independent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B) \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B)] \\[5ex]
+        $
+        For <u>Dependent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B|A) \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B|A)] \\[5ex]
+        $
+        For <u>Mutually Exclusive Events (Disjoint Events)</u>
+        <br><br>
+        $
+        P(A \cap B) = 0 \\[3ex]
+        P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - 0 \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) \\[5ex]
+        $
+        <br>
+        $
+        \underline{\text{Multiplication Rule}} \\[3ex]
+        P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A) \\[3ex]
+        P(A \cap B) = P(A) * P(B|A) \\[3ex]
+        P(A\:\:\:AND\:\:\:B) = P(A \cap B) \\[5ex]
+        $
+        $P(B|A)$ is read as: the probability of event $B$ given event $A$
+        <br><br>
+        For <u>Independent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B) \\[3ex]
+        \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B) \\[5ex]
+        $
+        For <u>Dependent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B|A) \\[3ex]
+        \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A) \\[5ex]
+        $
+        The complement of Event $A$ is $A'$
+        <br><br>
+        $
+        \underline{Complementary\;\;Rule} \\[3ex]
+        P(A) + P(A') = 1 \\[3ex]
+        \rightarrow P(A') = 1 - P(A) \\[5ex]
+        $
+        <u>Other Formulas</u>
+        <br><br>
+        $
+        (1.)\;\; P(A) = P(A \cap B') + P(A \cap B)
+        $
+      </p>
+      <br>
+      <h4>Probability Distributions</h4>
+      <p>
+        $
+        \boldsymbol{Probability\;\;Distribution} \\[3ex]
+        (1.)\;\;\mu = \Sigma[x * P(x)] \\[3ex]
+        (2.)\;\;E = \Sigma[x * P(x)] \\[3ex]
+        (3.)\;\; \sigma = \sqrt{\Sigma[x^2 * P(x)] - \mu^2} \\[7ex]
+
+        \boldsymbol{Combinatorics} \\[3ex]
+        (1.)\:\: 0! = 1 \\[3ex]
+        (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[3ex]
+        (3.)\;\; n! = n * (n - 1)! \\[3ex]
+        (4.)\;\; n! = (n - 1) * (n - 2)!...among\;\;others \\[3ex]
+        (5.)\:\: C(n, x) = \dfrac{n!}{(n - x)!x!} \\[5ex]
+        (6.)\;\; C(n, x) = C(n, n - x) \\[7ex]
+
+        \boldsymbol{Binomial\;\;Distribution} \\[3ex]
+        (1.)\;\; p + q = 1 \\[3ex]
+        (2.)\;\; \mu = n * p \\[3ex]
+        (3.)\;\; \sigma = \sqrt{n * p * q} \\[4ex]
+        (4.)\;\; P(x) = C(n, x) * p^x * q^{n - x}...\text{Depends on the context of the question} \\[5ex]
+        where \\[3ex]
+        x = \text{number of successes/failures} \\[3ex]
+        n = \text{number of trials} = 12 \\[3ex]
+        C(n, x) = \text{Binomial coefficient} \\[3ex]
+        P(x) = \text{Probability of the number of successes/failures} \\[3ex]
+        p = \text{probability of success} = 70\% = 0.7 \\[3ex]
+        q = \text{probability of failure} = 1 - 0.7 = 0.3 \\[5ex]
+
+        \boldsymbol{Poisson\;\;Distribution} \\[3ex]
+        (1.)\;\;P(x) = \dfrac{\mu^x * e^{-\mu}}{x!} \\[5ex]
+        (2.)\;\; \mu = \sigma^2 \\[7ex]
+
+        \boldsymbol{Normal\;\;Distribution} \\[3ex]
+        (1.)\;\; z = \dfrac{x - \bar{x}}{s} \\[5ex]
+        (2.)\;\; x = \bar{x} + zs \\[3ex]
+        (3.)\;\; z = \dfrac{x - \mu}{\sigma} \\[5ex]
+        (4.)\;\; x = \mu + z\sigma \\[3ex]
+        (5.)\;\;\text{Probability Density Function},\;\;P(x) =
+        \dfrac{1}{\sigma\sqrt{2\pi}}e^{{-\dfrac{1}{2}}\left(\dfrac{x - \mu}{\sigma}\right)^2} \\[7ex]
+        $
+        <br><br>
+
+        <b>Empirical Rule (68 - 95 - 99.7 percent Rule)</b> <br>
+        (<i>Applies only to Normal Distribution</i>) <br>
+        (a.) 68% of the data lie within (below and above) 1 standard deviation of the mean <br>
+        (b.) 95% of the data lie within (below and above) 2 standard deviations of the mean <br>
+        (c.) 99.7% of the data lie within (below and above) 3 standard deviations of the mean
+        <br><br>
+
+        <b>Pafnuty Chebyshev's Theorem</b> <br>
+        (<i>Applies to any distribution</i>) <br>
+        At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $k$ standard deviations of the mean
+        <br>
+        implies <br>
+        At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $\mu - k\sigma$ and $\mu + k\sigma$
+        <br><br>
+
+        <b>Range Rule of Thumb</b> <br>
+        Minimum Usual Value = &mu; - 2&sigma; <br>
+        Maximum Usual Value = &mu; + 2&sigma; <br>
+        A data value is <b>unusual</b> if it is <b>less than the minimum usual value</b> <u>or</u> <b>greater than the
+          maximum usual value</b>
+        <br><br>
+
+        <b>z-score Boundary</b> <br>
+        A data value is <b>usual</b> if &minus;2.00 &le; <i>z</i>-score &le; 2.00 <br>
+        A data value is <b>unusual</b> if <i>z</i>-score &lt; &minus;2.00 <u>or</u> if <i>z</i>-score &gt; 2.00
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) A retail sales associate's daily commission during 1 week was <span>$</span>20 on Monday and Tuesday and
+          <span>$</span>60 on Wednesday, Thursday, and Friday. <br>
+          What was the associate's average daily commission for these 5 days?
+          <br><br>
+          $
+          A.\:\: \$40 \\[3ex]
+          B.\:\: \$41 \\[3ex]
+          C.\:\: \$44 \\[3ex]
+          D.\:\: \$45 \\[3ex]
+          E.\:\: \$46 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCSP1')">Calculator Solution</button>
+          <div class="result" id="solutionSP1">
+            <br>
+            Average implies Arithmetic Mean <br>
+            <span>$</span>20 on Monday and Tuesday (2 days) <br>
+            <span>$</span>60 on Wednesday, Thursday, and Friday (3 days)
+            <br><br>
+            $
+            Average = \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+            = \dfrac{(20 \cdot 2) + (60 \cdot 3)}{5} \\[5ex]
+            = \dfrac{40 + 180}{5} \\[5ex]
+            = \dfrac{220}{5} \\[5ex]
+            = \$44
+            $
+          </div>
+          <div class="result" id="solutionCSP1">
+            <br>
+            <img src="images/StatisticsProbability/Answers/Calculator1.png" alt="Calculator 1">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Biologists tagged and released 50 fish in a lake. <br>
+          From the same lake 3 weeks later, the biologists collected a random sample of 15 fish, 5 of which were tagged.
+          <br>
+          Let <i>p</i> be the proportion of the fish in the lake that are tagged. <br>
+          What is p&#770;, the sample proportion, for this sample?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{3} \\[5ex]
+          G.\;\; \dfrac{1}{5} \\[5ex]
+          H.\;\; \dfrac{1}{10} \\[5ex]
+          J.\;\; \dfrac{1}{13} \\[5ex]
+          K.\;\; \dfrac{3}{10} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP2')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP2">
+            <br>
+            $
+            \underline{Sample} \\[3ex]
+            n = 15 \\[3ex]
+            x = 5 \\[3ex]
+            \hat{p} = \dfrac{x}{n} \\[5ex]
+            = \dfrac{5}{15} \\[5ex]
+            = \dfrac{1}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) A ball was dropped from a table, and the maximum rebound height, in inches, after each of the first 4
+          bounces was measured and recorded
+          in the bar graph below. <br>
+          One of the following values is the mean of the 4 recorded heights. <br>
+          Which one?
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number3.png" alt="Number 3">
+          <br><br>
+          $
+          F.\;\; 2.30 \\[3ex]
+          G.\;\; 2.50 \\[3ex]
+          H.\;\; 4.50 \\[3ex]
+          J.\;\; 5.75 \\[3ex]
+          K.\;\; 7.00 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP3')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP3">
+            <br>
+            $
+            \text{Bounce} = 1st, 2nd, 3rd, 4th \\[3ex]
+            \text{Data Values}, x = 13, 6, 3, 1 \\[3ex]
+            \text{Sample size}, n = 4 \\[3ex]
+            \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+            = \dfrac{13 + 6 + 3 + 1}{4} \\[5ex]
+            = \dfrac{23}{4} \\[5ex]
+            = 5.75
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) What is the median of the data set below?
+          $$
+          \text{4, 8, 14, 4, 20}
+          $$
+          <br>
+          $
+          A.\;\; 4 \\[3ex]
+          B.\;\; 8 \\[3ex]
+          C.\;\; 10 \\[3ex]
+          D.\;\; 14 \\[3ex]
+          E.\;\; 16 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP4')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP4">
+            <br>
+            Sorting the dataset in ascending order gives:
+            <br><br>
+            $
+            \text{4, 4, 8, 14, 20} \\[3ex]
+            \text{median = middle number} = 8
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) At a local pet store, 50 shoppers were polled to see if they owned cats or dogs. <br>
+          Among the polled shoppers, 31 owned at least 1 dog, 20 owned at least 1 cat, 7 owned at least 1 dog and at
+          least 1 cat, and 6 owned neither
+          a dog nor a cat. <br>
+          One of the 50 polled shoppers will be selected at random. <br>
+          What is the probability that the selected shopper owned at least 1 dog or cat?
+          <br><br>
+          $
+          A.\;\; \dfrac{7}{50} \\[5ex]
+          B.\;\; \dfrac{13}{25} \\[5ex]
+          C.\;\; \dfrac{27}{50} \\[5ex]
+          D.\;\; \dfrac{19}{25} \\[5ex]
+          E.\;\; \dfrac{22}{25} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP5')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP5">
+            <br>
+            Let the number of shoppers who own at least 1 cat = C <br>
+            Let the number of shoppers who own at least 1 dog = D
+            <br><br>
+            $
+            n(S) = 50 \\[3ex]
+            n(C) = 20 \\[3ex]
+            n(D) = 31 \\[3ex]
+            n(C \cap D) = 7 \\[3ex]
+            n(C \cup D) = n(C) + n(D) - n(C \cap D) ...Addition\;\;Rule \\[3ex]
+            = 20 + 31 - 7 \\[3ex]
+            = 44 \\[5ex]
+            P(C \cup D) = \dfrac{n(C \cup D)}{n(S)} \\[5ex]
+            = \dfrac{44}{50} \\[5ex]
+            = \dfrac{22}{25}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The average of a list of 4 numbers is 88.0. <br>
+          A new list of 4 numbers has the same first 3 numbers as the original list, but the fourth number in the
+          original list is 50, and the fourth number in the new list is 70. <br>
+          What is the average of this new list of numbers?
+          <br><br>
+          $
+          A.\;\; 83.5 \\[3ex]
+          B.\;\; 88.0 \\[3ex]
+          C.\;\; 93.0 \\[3ex]
+          D.\;\; 95.0 \\[3ex]
+          E.\;\; 96.8 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP6')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP6">
+            <br>
+            $
+            \underline{Original\;\;List} \\[3ex]
+            \bar{x} = 88 \\[3ex]
+            n = 4 \\[3ex]
+            \Sigma x = \bar{x} \cdot n \\[3ex]
+            \Sigma x = 88(4) \\[3ex]
+            \Sigma x = 352 \\[3ex]
+            4th\;\;number = 50 \\[3ex]
+            \Sigma three = 352 - 50 \\[3ex]
+            \Sigma three = 302 \\[5ex]
+            \underline{New\;\;List} \\[3ex]
+            \Sigma three = 302 \\[3ex]
+            4th\;\;number = 70 \\[3ex]
+            \Sigma x = \Sigma four = 302 + 70 \\[3ex]
+            \Sigma x = 372 \\[3ex]
+            \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+            \bar{x} = \dfrac{372}{4} \\[5ex]
+            \bar{x} = 93
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 7 &ndash; 9.
+        <br><br>
+        The table below gives the average daily attendance for each grade level at JFK High School for 4 months of the
+        current school year. <br>
+        The boxplots below show the distribution of JFK's total daily attendance figures for the previous school year
+        (180 days) and for half of the current schoolyear
+        (90 days).
+        <br><br>
+        <table class="w3-center">
+          <tr>
+            <td></td>
+            <td colspan="4">Month</td>
+          </tr>
+          <tr>
+            <td>Grade</td>
+            <td>Sept.</td>
+            <td>Oct.</td>
+            <td>Nov.</td>
+            <td>Dec.</td>
+          </tr>
+          <tr>
+            <td>
+              9th <br>
+              10th <br>
+              11th <br>
+              12th
+            </td>
+            <td>
+              267 <br>
+              425 <br>
+              382 <br>
+              441
+            </td>
+            <td>
+              295 <br>
+              414 <br>
+              398 <br>
+              384
+            </td>
+            <td>
+              310 <br>
+              395 <br>
+              395 <br>
+              414
+            </td>
+            <td>
+              244 <br>
+              341 <br>
+              389 <br>
+              407
+            </td>
+          </tr>
+        </table>
+        <br><br>
+        <img src="images/StatisticsProbability/Questions/Numbers7-9.png" alt="Numbers 7 – 9">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Considering only the attendance for the months given in the table, which grade level, if any, has the
+          <i>strongest negative</i> linear correlation between the number of months into the current school year and the
+          average daily attendance for the month?
+          <br><br>
+          $
+          F.\;\; 9th \\[3ex]
+          G.\;\; 10th \\[3ex]
+          H.\;\; 11th \\[3ex]
+          J.\;\; 12th \\[3ex]
+          K.\;\;\text{No grade level has a negative correlation} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP7')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP7">
+            <br>
+            Let us observe the pattern for the grade levels in the table. <br>
+            We shall be looking at: Months and the Average Daily Attendance per Month <br>
+            As the number of months increases, (from Sept. to Oct. to Nov. to Dec):
+            <br><br>
+            9th Grade: the average daily attendance increases: (267, 295, 310) then decreases (310, 244)
+            <br><br>
+            10th Grade: the average daily attendance decreases: (425, 414, 395, 341)
+            <br><br>
+            11th Grade: the average daily attendance increases: (382, 398), then decreases (398, 395, 389)
+            <br><br>
+            12th Grade: the average daily attendance decreases: (441, 384), then increases (384, 414), then decreases
+            (414, 407)
+            <br><br>
+            So, the grade level that shows a consistent negative correlation (consistently decreases) is the 10th Grade.
+            <br>
+            The correct answer is Option G.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) One of the following statistics is greater for the data from the previous school year than for the data
+          from the current school year. <br>
+          Which one?
+          <br><br>
+          <b>F.</b> 1st quartile <br>
+          <b>G.</b> 3rd quartile <br>
+          <b>H.</b> Median <br>
+          <b>J.</b> Maximum <br>
+          <b>K.</b> Variance
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP8')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP8">
+            <br>
+            Based on the bixplots: <br>
+            The current school year's Five Number Summary (Minimum, 1st Quartile, 2nd Quartile, 3rd Quartile, Maximum)
+            is greater than the previous school year's Five Number Summary. <br>
+            The only noticeable statistics that the previous school year has, which is greater than the current school
+            year is the Interquartile Range which is represented by the length of the box. <br>
+            In other words, the length of the box for the previous school year is greater than the length of box for the
+            current school year. <br>
+            The length of the box in a boxplot is the Interquartile Range. <br>
+            This implies that the interquartile range of the previous school year is greater than the interquartile
+            range of the current school year. <br>
+            The Interquartile Range is not listed as an option, however, it is a measure of spread. <br>
+            Another measure of spread listed in the Variance. <br>
+            Therefore, the correct answer is the Variance: Option K.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) The number of school days at JFK High School in each of the 4 months is given below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Month</th>
+              <th style="width: 50%;">School days</th>
+            </tr>
+            <tr>
+              <td>
+                September <br>
+                October <br>
+                November <br>
+                December
+              </td>
+              <td>
+                20 <br>
+                20 <br>
+                18 <br>
+                15
+              </td>
+            </tr>
+          </table>
+          <br>
+          Using the attendance numbers in the table, which of the following expressions gives the average daily
+          attendance for the 9th grade for this 4-month period?
+          <br><br>
+          $
+          A.\;\; \dfrac{267 + 295 + 310 + 244}{4} \\[5ex]
+          B.\;\; \dfrac{20(267 + 295) + 18(310) + 15(244)}{20 + 18 + 15} \\[5ex]
+          C.\;\; \dfrac{20(267 + 295) + 18(310) + 15(244)}{4(20 + 18 + 15)} \\[5ex]
+          D.\;\; \dfrac{20(267 + 295) + 18(310) + 15(244)}{20(2) + 18 + 15} \\[5ex]
+          E.\;\; \dfrac{20(267) + 20(295) + 18(310) + 15(244)}{4} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP9')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP9">
+            <br>
+            Here is the table for 9th Grade
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 20%;">Month</th>
+                <th style="width: 20%;">Average Daily Attendance, X</th>
+                <th style="width: 20%;">School days, F</th>
+                <th style="width: 40%;">$F \cdot X$</th>
+              </tr>
+              <tr>
+                <td>
+                  September <br>
+                  October <br>
+                  November <br>
+                  December
+                </td>
+                <td>
+                  267 <br>
+                  295 <br>
+                  310 <br>
+                  244
+                </td>
+                <td>
+                  20 <br>
+                  20 <br>
+                  18 <br>
+                  15
+                </td>
+                <td>
+                  267(20) <br>
+                  295(20) <br>
+                  310(18) <br>
+                  244(15)
+                </td>
+              </tr>
+            </table>
+            <br>
+            $
+            \bar{x} = \dfrac{\Sigma FX}{\Sigma F} \\[5ex]
+            \bar{x} = \text{sample mean} \\[3ex]
+            X = \text{average daily attendance for the 4-month period} \\[3ex]
+            F = \text{frequency} = \text{number of school days for the 4-month period} \\[3ex]
+            \implies \\[3ex]
+            \Sigma FX = 267(20) + 295(20) + 310(18) + 244(15) \\[3ex]
+            \Sigma FX = 20(267 + 295) + 18(310) + 15(244) \\[5ex]
+            \Sigma F = 20 + 20 + 18 + 15 \\[3ex]
+            \Sigma F = 2(20) + 18 + 15 \\[5ex]
+            \bar{x} = \dfrac{20(267 + 295) + 18(310) + 15(244)}{20(2) + 18 + 15}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) A retail sales associate’s daily commission during 1 week was <span>$</span>30 on Monday and Tuesday and
+          <span>$</span>60 on
+          Wednesday, Thursday, and Friday. <br>
+          What was the associate’s average daily commission for these 5 days?
+          <br><br>
+          $
+          F.\;\; \$45 \\[3ex]
+          G.\;\; \$46 \\[3ex]
+          H.\;\; \$48 \\[3ex]
+          J.\;\; \$49 \\[3ex]
+          K.\;\; \$50 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP10')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP10">
+            <br>
+            Average implies Arithmetic Mean <br>
+            <span>$</span>30 on Monday and Tuesday (2 days) <br>
+            <span>$</span>60 on Wednesday, Thursday, and Friday (3 days)
+            <br><br>
+            $
+            Average = \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+            = \dfrac{(30 \cdot 2) + (60 \cdot 3)}{5} \\[5ex]
+            = \dfrac{60 + 180}{5} \\[5ex]
+            = \dfrac{240}{5} \\[5ex]
+            = \$48
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Yesterday, there was no snow on the ground at 8:00 a.m. when snow began to fall. <br>
+          Snow fell from 8:00 a.m. to 8:00 p.m. at a constant rate of $\dfrac{3}{4}$ inch per hour. <br>
+          Kate built a snowman made of 2 spherical snowballs, with the smaller placed on top of the larger. <br>
+          When she built the snowman, the diameter of the larger snowball was 3 times the diameter of the smaller
+          snowball. <br>
+          Today, the day after she built the snowman, there is a 50% chance of rain. <br>
+          If it rains today, then there is a 60% chance that the snowman will melt. <br>
+          If it does not rain today, then there is a 10% chance the snowman will melt.
+          <br><br>
+          What is the probability that the snowman will melt today?
+          <br><br>
+          $
+          A.\;\; 30\% \\[3ex]
+          B.\;\; 35\% \\[3ex]
+          C.\;\; 50\% \\[3ex]
+          D.\;\; 60\% \\[3ex]
+          E.\;\; 70\% \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP11')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP11">
+            <br>
+            This is a case of Conditional Probability <br>
+            It may rain. <br>
+            It may not rain. <br>
+            If it rains, the snow may melt. <br>
+            If it does not rain, the snow may melt. <br>
+            Let us discuss the conditions.
+            <br><br>
+            The probability that rain will occur = 50% = 0.5 <br>
+            The probability that rain will not occur = 100% &minus; 50% = 50% = 0.5 ...Complementary Rule
+            <br><br>
+            The probability that the snow will melt if it rains = 60% = 0.6 <br>
+            The probability that the snow will not melt if it rains = 1 &minus; 0.6 = 0.4 ...Complementary Rule
+            <br><br>
+            The probability that the snow will melt if it does not rain = 10% = 0.1 <br>
+            The probability that the snow will not melt if it does not rain = 1 &minus; 0.1 = 0.9 ...Complementary Rule
+            <br><br>
+            The question asked for the probability that the snow will melt, so we are going to look at the conditions
+            that the snow will melt.
+            <br><br>
+            $
+            P(Rain) = 0.5 \\[3ex]
+            P(Rain') = 0.5 \\[3ex]
+            P(Melts | Rain) = 0.6 \\[3ex]
+            P(Melts | Rain') = 0.1 \\[3ex]
+            P(Melts) = P(Rain) \cdot P(Melts | Rain) + P(Rain') \cdot P(Melts | Rain') \\[3ex]
+            = 0.5(0.6) + 0.5(0.1) \\[3ex]
+            = 0.3 + 0.05 \\[3ex]
+            = 0.35
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) Let K and J be independent events. <br>
+          Given that P(K) = 0.40 and P(J) = 0.20, what is the probability that K and J will both occur? <br>
+          (Note: P(A) is the probability that Event A will occur.)
+          <br><br>
+          <b>F.</b> 0.08 <br>
+          <b>G.</b> 0.20 <br>
+          <b>H.</b> 0.40 <br>
+          <b>J.</b> 0.52 <br>
+          <b>K.</b> 0.60
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP12')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP12">
+            <br>
+            P(K) = 0.40 <br>
+            P(J) = 0.20 <br>
+            P(both K and J) = P(K) &times; P(J) ...Multiplication Rule for Independent Events <br>
+            = 0.40 &times; 0.20 <br>
+            = 0.08
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) A 2-digit number will be formed by randomly selecting each digit from the set {2, 3, 9}. <br>
+          What is the probability that the number formed will be 99?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{27} \\[5ex]
+          G.\;\; \dfrac{1}{9} \\[5ex]
+          H.\;\; \dfrac{1}{9} \\[5ex]
+          J.\;\; \dfrac{1}{4} \\[5ex]
+          K.\;\; \dfrac{1}{3} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP13')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP13">
+            <br>
+            Selecting <u>each</u> digit from the set {2, 3, 9} <br>
+            It's better to use a Punnett Square
+            <br><br>
+            <table class="w3-center dice">
+              <tr>
+                <th style="width: 40%;">
+                  $2nd\:\:Set\:\:\rightarrow$ <br>
+                  $1st\:\:Set\:\:\downarrow$
+                </th>
+                <th class="w3-green">2</th>
+                <th class="w3-green">3</th>
+                <th class="w3-green">9</th>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>22</td>
+                <td>23</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>32</td>
+                <td>33</td>
+                <td>39</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>92</td>
+                <td>93</td>
+                <td style="color: darkblue;">99</td>
+              </tr>
+            </table>
+            <br><br>
+            $
+            P(99) = \dfrac{n(99)}{n(S)} \\[5ex]
+            = \dfrac{1}{9}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) A bag contains exactly 7 marbles, each with 1 number on it: 4 red marbles numbered 1, 2, 3, and 4; and 3
+          black marbles numbered 1, 2, and 3. <br>
+          One marble will be selected at random from the bag. <br>
+          What is the probability that the marble selected will be an odd-numbered red marble?
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{2} \\[5ex]
+          B.\;\; \dfrac{2}{7} \\[5ex]
+          C.\;\; \dfrac{7}{12} \\[5ex]
+          D.\;\; \dfrac{8}{49} \\[5ex]
+          E.\;\; \dfrac{16}{49} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP14')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP14">
+            <br>
+            $
+            Let: \\[3ex]
+            \text{red marble} = R \\[3ex]
+            \text{black marble} = B \\[3ex]
+            \text{Sample Space, S} = \{R1, R2, R3, R4, B1, B2, B3\} \\[3ex]
+            n(S) = 7 \\[3ex]
+            \text{Event Space, E} = \{R1, R3\}...\text{odd-numbered red marble} \\[3ex]
+            n(E) = 2 \\[3ex]
+            P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+            P(E) = \dfrac{2}{7}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) Each student in Mrs. O’Malley’s first-period Civics class draws 1 tag at random from each of 2 bowls to
+          determine seating location in the class. <br>
+          The tag drawn from the first bowl is the row number of a student’s seat; the 28 tags in the first bowl have an
+          equal distribution of the numbers 1, 2, 3, 4, 5, 6, and 7. <br>
+          The tag drawn from the second bowl is the seat number within the row determined by the first tag; the 28 tags
+          in the second bowl have an equal distribution of the numbers 1, 2, 3, and 4. <br>
+          What is the probability that the first student who draws will have a seating location
+          that is in Row 5, but NOT in Seat 1?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{28} \\[5ex]
+          G.\;\; \dfrac{3}{28} \\[5ex]
+          H.\;\; \dfrac{6}{28} \\[5ex]
+          J.\;\; \dfrac{9}{28} \\[5ex]
+          K.\;\; \dfrac{18}{28} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP15')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP15">
+            <br>
+            Let us use the Punnett Square to list the possibilities.
+            Then, we can select the seating location in Row 5 but NOT in Seat 1 <br>
+            Please Note: <br>
+            Beacuse the ACT is timed, you do not need to complete the entire table, even though I shall complete it
+            here. <br>
+            But you need to know that the cardinality of the sample space is: 4 &times; 7 = 28
+            <br><br>
+            1, 1 implies Row 1, Seat 1 <br>
+            5, 1 implies Row 5, Seat 1
+            <br><br>
+            <table class="w3-center dice">
+              <tr>
+                <th style="width: 12.5%;">
+                  $Row\:\:\rightarrow$ <br>
+                  $Seat\:\:\downarrow$
+                </th>
+                <th class="w3-green" style="width: 12.5%;">1</th>
+                <th class="w3-green" style="width: 12.5%;">2</th>
+                <th class="w3-green" style="width: 12.5%;">3</th>
+                <th class="w3-green" style="width: 12.5%;">4</th>
+                <th class="w3-green" style="width: 12.5%;">5</th>
+                <th class="w3-green" style="width: 12.5%;">6</th>
+                <th class="w3-green" style="width: 12.5%;">7</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>1, 1</td>
+                <td>2, 1</td>
+                <td>3, 1</td>
+                <td>4, 1</td>
+                <td>
+                  5, 1 <br>
+                  No
+                </td>
+                <td>6, 1</td>
+                <td>7, 1</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>1, 2</td>
+                <td>2, 2</td>
+                <td>3, 2</td>
+                <td>4, 2</td>
+                <td style="color: darkblue;">5, 2</td>
+                <td>6, 2</td>
+                <td>7, 2</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>1, 3</td>
+                <td>2, 3</td>
+                <td>3, 3</td>
+                <td>4, 3</td>
+                <td style="color: darkblue;">5, 3</td>
+                <td>6, 3</td>
+                <td>7, 3</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1, 4</td>
+                <td>2, 4</td>
+                <td>3, 4</td>
+                <td>4, 4</td>
+                <td style="color: darkblue;">5, 4</td>
+                <td>6, 4</td>
+                <td>7, 4</td>
+              </tr>
+            </table>
+            <br><br>
+            $
+            P(\text{Row 5 but NOT in Seat 1}) = \dfrac{n(\text{Row 5 but NOT in Seat 1})}{n(S)} \\[5ex]
+            = \dfrac{3}{28}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) On each of 10 tests, Andreas scored 2 points higher than Mischa. <br>
+          When their average test scores on these 10 tests are compared, how many points higher is Andreas’s average
+          than Mischa’s average?
+          <br><br>
+          $
+          F.\;\; 2 \\[3ex]
+          G.\;\; 5 \\[3ex]
+          H.\;\; 6 \\[3ex]
+          J.\;\; 8 \\[3ex]
+          K.\;\; 20 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP16')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP16">
+            <br>
+            The answer is Option <b>F.</b> <br>
+            Each of Mischa's data test scores was increased by 2 points to get Andreas' data test scores. <br>
+            Therefore, the average of Mischa's dataset will also be increased by 2 points to get the average of Andreas'
+            dataset.
+            <br><br>
+            If two data sets are related in such a way that the data values in the first dataset is increased or
+            decreased by a constant
+            say, <i>k</i> to obtain the data values in the second dataset, then the mean of the second dataset is
+            increased or decreased by
+            <i>k</i> from the mean of the first dataset.
+            <br><br>
+            <i>
+              <b>Student:</b> Can you do an example? <br>
+              <b>Teacher:</b> Yes, we can. Let's do it.
+            </i>
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 50%;">1st Dataset, x</td>
+                <th style="width: 50%;">2nd Dataset, d</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>2 + 3 = 5</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>3 + 3 = 6</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>4 + 3 = 7</td>
+              </tr>
+              <tr>
+                <td>&Sigma; <i>x</i> = 9</td>
+                <td>&Sigma; <i>d</i> = 18</td>
+              </tr>
+              <tr>
+                <td><i>n</i> = 3</td>
+                <td><i>n</i> = 3</td>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  \bar{x} = \dfrac{\Sigma x}{n} = \dfrac{9}{3} = 3
+                  $
+                </td>
+                <td>
+                  $
+                  \bar{d} = \dfrac{\Sigma d}{n} = \dfrac{18}{3} = 6 \\[5ex]
+                  6 = 3 + 3 \\[3ex]
+                  \bar{d} = 3 + \bar{x}
+                  $
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) Of the 300 juniors at Northeast High School, 130 are taking both math and English, 139 are taking both
+          science and
+          English, 119 are taking both math and science, and 98 are taking all 3 courses. <br>
+          Only 18 students are taking none of the 3 courses. <br>
+          The data are shown in the Venn diagram below.
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number17.png" alt="Number 17">
+          <br><br>
+          One of the juniors from Northeast High School will be chosen at random. <br>
+          What is the probability that the chosen student is taking exactly 1 of these 3 courses?
+          <br><br>
+          $
+          A.\;\; 0.30 \\[3ex]
+          B.\;\; 0.33 \\[3ex]
+          C.\;\; 0.36 \\[3ex]
+          D.\;\; 0.64 \\[3ex]
+          E.\;\; 0.67 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP17')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP17">
+            <br>
+            The number of juniors taking exactly 1 of these 3 courses are those taking: <br>
+            math only or <br>
+            science only or <br>
+            English only <br>
+            This is: 300 &minus; (32 + 41 + 21 + 98 + 18) <br>
+            = 300 &minus; 210 <br>
+            = 90
+            <br><br>
+            $
+            P(\text{taking exactly 1 of these 3 courses})
+            = \dfrac{n(\text{taking exactly 1 of these 3 courses})}{n(S)} \\[5ex]
+            = \dfrac{90}{300} \\[5ex]
+            = 0.3
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) For a certain basketball player, the probability of success on any given free throw attempt is 0.7. <br>
+          What is the least number of free throw attempts for which the result is expected to be at least 18 successes?
+          <br><br>
+          $
+          A.\;\; 21 \\[3ex]
+          B.\;\; 25 \\[3ex]
+          C.\;\; 26 \\[3ex]
+          D.\;\; 43 \\[3ex]
+          E.\;\; 44 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP18')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP18">
+            <br>
+            success on free throws <br>
+            Let the event of success = <i>E</i> ...this is the event space <br>
+            at least 18 successes means n(<i>E</i>) &ge; 18 <br>
+            We shall assume n(<i>E</i>) = 18
+            <br><br>
+            Let the event of free throws = <i>T</i>...this is the sample space <br>
+            How many free throws to guarantee?
+            <br><br>
+            $
+            P(E) = \dfrac{n(E)}{n(T)} \\[5ex]
+            0.7 = \dfrac{18}{n(T)} \\[5ex]
+            0.7 \cdot n(T) = 18 \\[3ex]
+            n(T) = \dfrac{18}{0.7} \\[5ex]
+            n(T) = 25.71428571 \approx 26 \\[3ex]
+            n(T) \ge 26 \\[3ex]
+            $
+            At least 26 free throws is needed to have at least 18 successes for a probability of 0.7
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) All students in a high school responded either “Yes” or “No” to the question “Are you studying enough?”
+          <br>
+          The table below gives the number of students in each grade who responded. <br>
+          Two numbers in the table are represented by <i>x</i> and <i>y</i>.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <td style="width: 20%;"></td>
+              <td style="width: 20%;">9th</td>
+              <td style="width: 20%;">10th</td>
+              <td style="width: 20%;">11th</td>
+              <td style="width: 20%;">12th</td>
+            </tr>
+            <tr>
+              <td>Yes</td>
+              <td>85</td>
+              <td>92</td>
+              <td>79</td>
+              <td>102</td>
+            </tr>
+            <tr>
+              <td>No</td>
+              <td>65</td>
+              <td><i>x</i></td>
+              <td><i>y</i></td>
+              <td>56</td>
+            </tr>
+          </table>
+          <br>
+          The probability that a randomly selected student from this high school is in 11th grade given that the student
+          responded “No” is $\dfrac{75}{267}$ <br>
+          One of the following is the value of <i>x</i>. <br>
+          Which one?
+          <br><br>
+          $
+          F.\;\; 71 \\[3ex]
+          G.\;\; 75 \\[3ex]
+          H.\;\; 100 \\[3ex]
+          J.\;\; 113 \\[3ex]
+          K.\;\; 146 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP19')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP19">
+            <br>
+            $
+            P(11th | No) = \dfrac{75}{267} ...Given \\[7ex]
+            P(11th | No) = \dfrac{n(11th \cap No)}{n(No)}...\text{Conditional Probability} \\[5ex]
+            = \dfrac{y}{65 + x + y + 56} \\[5ex]
+            = \dfrac{y}{x + y + 121} \\[5ex]
+            \implies \\[3ex]
+            \dfrac{y}{x + y + 121} = \dfrac{75}{267} \\[5ex]
+            y = 75...eqn.(1)...\text{Equality of Numerators} \\[3ex]
+            x + y + 121 = 267 ...eqn.(2)...\text{Equality of Denominators} \\[3ex]
+            \text{Substituting eqn.(1) into eqn.(2)} \implies \\[3ex]
+            x + 75 + 121 = 267 \\[3ex]
+            x = 267 - 75 - 121 \\[3ex]
+            x = 71
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) Sets <i>A, B,</i> and <i>C</i> are defined below. <br>
+          <i>A</i> = {1, 2, 3, 4, 5, 6, 7, 8, 9} <br>
+          <i>B</i> = {3, 6, 9} <br>
+          <i>C</i> = {2, 4, 6, 8}
+          <br>
+          A number will be randomly selected from set <i>A</i>. <br>
+          What is the probability that the selected number will be an element of set <i>B</i> and an element of set
+          <i>C</i>?
+          <br><br>
+          $
+          A.\;\; 0 \\[3ex]
+          B.\;\; \dfrac{1}{9} \\[5ex]
+          C.\;\; \dfrac{2}{9} \\[5ex]
+          D.\;\; \dfrac{6}{9} \\[5ex]
+          E.\;\; \dfrac{7}{9} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP20')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP20">
+            <br>
+            The element will be randomly selected from set <i>A</i>, hence, set <i>A</i> is the sample space. <br>
+            For an element of set <i>A</i> to be an element of set <i>B</i> <u>and</u> an element of set <i>C</i>, then:
+            <br><br>
+            $
+            A \cap B \cap C = ? \\[3ex]
+            \text{Let's do it two at a time} \\[3ex]
+            A \cap B = \{3, 6, 9\} \\[3ex]
+            \cap C = \{6\} \\[5ex]
+
+            \underline{\text{Event Space: E}} \\[3ex]
+            A \cap B \cap C = \{6\} \\[3ex]
+            n(E) = n(A \cap B \cap C) = 1 \\[5ex]
+
+            \underline{\text{Sample Space: S}} \\[3ex]
+            A = \{1, 2, 3, 4, 5, 6, 7, 8, 9\} \\[3ex]
+            n(S) = n(A) = 9 \\[5ex]
+
+            P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+            P(E) = \dfrac{1}{9}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/StatisticsProbability.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) A square dartboard is red and white, as shown below. <br>
+          Each 4-inch-long side of the red square is parallel to 2 sides of the white square and is 3 inches from the
+          closest side of the white square. <br>
+          A dart will be thrown randomly and will land on the dartboard. <br>
+          What is the probability that the dart will land on the red square?
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number21.png" alt="Number 21">
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{10} \\[5ex]
+          B.\;\; \dfrac{1}{7} \\[5ex]
+          C.\;\; \dfrac{2}{5} \\[5ex]
+          D.\;\; \dfrac{4}{25} \\[5ex]
+          E.\;\; \dfrac{16}{49} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP21')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP21">
+            <br>
+            $
+            \text{Area of Red Square} = 4^2 = 16\;\;square\;\;inches \\[4ex]
+            \text{Area of Dartboard} = (3 + 4 + 3)^2 = 10^2 = 100\;\;square\;\;inches \\[4ex]
+            P(Red\;\;Square) = \dfrac{\text{Area of Red Square}}{\text{Area of Dartboard}} \\[5ex]
+            = \dfrac{16}{100} \\[5ex]
+            = \dfrac{4}{25}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) Three friends are picking apples. <br>
+          Bill picks 5 red and 3 green apples; Ming picks 8 red and 2 green apples; Randi picks 2 red and 4 green
+          apples. <br>
+          They combine their apples into an empty basket. <br>
+          Ming will randomly select 1 apple from the basket. <br>
+          What is the probability she will select a green apple?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{5} \\[5ex]
+          G.\;\; \dfrac{3}{8} \\[5ex]
+          H.\;\; \dfrac{1}{2} \\[5ex]
+          J.\;\; \dfrac{3}{5} \\[5ex]
+          K.\;\; \dfrac{5}{8} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP22')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP22">
+            <br>
+            Let: <br>
+            sample space = S <br>
+            red = R, green = G <br>
+            Bill: 5R + 3G <br>
+            Ming: 8R + 2G <br>
+            Randi: 2R + 4G <br>
+            Combined: 5R + 3G + 8R + 2G + 2R + 4G <br>
+            = 15R + 9G
+            <br><br>
+            $
+            S = \{15R,\;\;9G\} \\[3ex]
+            n(S) = 15 + 9 = 24 \\[3ex]
+            P(G) = \dfrac{n(G)}{n(S)} \\[5ex]
+            = \dfrac{9}{24} \\[5ex]
+            = \dfrac{3}{8}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) A class of 32 students took a 10-point quiz. <br>
+          The frequency distribution of their scores is given below. <br>
+          What was the median score for the class?
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Score</th>
+              <th style="width: 50%;">Frequency</th>
+            </tr>
+            <tr>
+              <td>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                4 <br>
+                5 <br>
+                6 <br>
+                7 <br>
+                8 <br>
+                9 <br>
+                10
+              </td>
+              <td>
+                0 <br>
+                0 <br>
+                1 <br>
+                3 <br>
+                5 <br>
+                2 <br>
+                3 <br>
+                5 <br>
+                6 <br>
+                4 <br>
+                3
+              </td>
+            </tr>
+          </table>
+          <br>
+          $
+          A.\;\; 3 \\[3ex]
+          B.\;\; 5 \\[3ex]
+          C.\;\; 6 \\[3ex]
+          D.\;\; 7 \\[3ex]
+          E.\;\; 8 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP23')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCSP23')">Calculator Solution</button>
+          <div class="result" id="solutionSP23">
+            <br>
+            $
+            \Sigma F = 32 ...\text{class of 32 students} \\[3ex]
+            \dfrac{\Sigma F}{2} = \dfrac{32}{2} = 16 \\[5ex]
+            0 + 0 = 0 + 1 = 1 + 3 = 4 + 5 = 9 + 2 = 11 + 3 = 14 + 5 = 19...STOP \\[3ex]
+            5\;\;\text{is the point of focus} \\[3ex]
+            \text{What number has that frequency of }5? \\[3ex]
+            Median = 7
+            $
+          </div>
+          <div class="result" id="solutionCSP23">
+            <br>
+            Due to the time limit on the ACT, this calculator solution is not recommended. <br>
+            However, if you know you can enter in data accurately and speedily (less than 30 seconds), you may go for
+            it.
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator23-1st.png" alt="Calculator 23-1st">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator23-2nd.png" alt="Calculator 23-2nd">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator23-3rd.png" alt="Calculator 23-3rd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) The students in Mr. Montag's literature class are playing review games. <br>
+          For prizes, Mr. Montag has a bag that initially contained 23 fruit bars of different flavors: 6 cherry, 5
+          blueberry, 4 strawberry, and 8 raspberry. <br>
+          No fruit bars are added to the bag during the class. <br>
+          After each game, the winner randomly selects 1 fruit bar from the bag to keep. <br>
+          The winners of the first 4 games selected 1 cherry, 1 strawberry, and 2 raspberry fruit bars. <br>
+          Lin wins the 5th game. <br>
+          What is the probability that Lin will select a raspberry fruit bar?
+          <br><br>
+          $
+          A.\;\; \dfrac{6}{23} \\[5ex]
+          B.\;\; \dfrac{6}{19} \\[5ex]
+          C.\;\; \dfrac{8}{23} \\[5ex]
+          D.\;\; \dfrac{7}{19} \\[5ex]
+          E.\;\; \dfrac{8}{19} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP24')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP24">
+            <br>
+            Let: <br>
+            sample space = S <br>
+            cherry = C <br>
+            blueberry = B <br>
+            strawberry = T <br>
+            raspberry = R
+            <br><br>
+            After each game, the winner randomly selects 1 fruit bar from the bag <b>to keep.</b> <br>
+            This implies <b>Without Replacement</b> condition.
+            <br><br>
+            $
+            \underline{\text{Before 4 games}} \\[3ex]
+            S =\{6C + 5B + 4T + 6R\} \\[3ex]
+            n(S) = 23\;\text{fruit bars} \\[5ex]
+            \underline{\text{After 4 games}} \\[3ex]
+            S =\{(6 - 1)C + 5B + (4 - 1)T + (8 - 2)R\} \\[3ex]
+            S = \{5C + 5B + 3T + 6R\} \\[3ex]
+            n(S) = 19\;\text{fruit bars} \\[5ex]
+            \underline{\text{5th game}} \\[3ex]
+            n(R) = 6 \\[3ex]
+            P(R) = \dfrac{n(R)}{n(S)} \\[5ex]
+            = \dfrac{6}{19}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) A shirt will be randomly selected from a display of 23 shirts. <br>
+          The probability that the selected shirt will be long-sleeved is $\dfrac{13}{23}$. <br>
+          The probability that the selected shirt will be white is $\dfrac{8}{23}$. <br>
+          The probability that the selected shirt will be long-sleeved <i>and</i> white $\dfrac{3}{23}$. <br>
+          What is the probability that the selected shirt will be long-sleeved <i>or</i> white <i>or</i> both?
+          <br><br>
+          $
+          F.\;\; \dfrac{7}{23} \\[5ex]
+          G.\;\; \dfrac{8}{23} \\[5ex]
+          H.\;\; \dfrac{18}{23} \\[5ex]
+          J.\;\; \dfrac{22}{23} \\[5ex]
+          K.\;\; \dfrac{24}{23} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP25')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP25">
+            <br>
+            Let: <br>
+            a long-sleeved shirt = <i>L</i> <br>
+            a white shirt = <i>W</i>
+            <br><br>
+            $
+            P(L) = \dfrac{13}{23} \\[5ex]
+            P(W) = \dfrac{8}{23} \\[5ex]
+            P(L \;\;and\;\; W) = \dfrac{3}{23} \\[5ex]
+            P(L \;\;or\;\; W) = ? \\[5ex]
+            P(L \;\;or\;\; W) = P(L) + P(W) - P(L \;\;and\;\; W) ...Addition\;\;Rule \\[3ex]
+            = \dfrac{13}{23} + \dfrac{8}{23} - \dfrac{3}{23} \\[5ex]
+            = \dfrac{13 + 8 - 3}{23} \\[5ex]
+            = \dfrac{18}{23}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.) A student took 4 chemistry tests and earned an average score of exactly 80 points. <br>
+          A score of how many points on the 5th test will earn the student an average score of exactly 82 points for the
+          5 tests?
+          <br><br>
+          $
+          F.\;\; 72 \\[3ex]
+          G.\;\; 81 \\[3ex]
+          H.\;\; 82 \\[3ex]
+          J.\;\; 84 \\[3ex]
+          K.\;\; 90 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP26')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP26">
+            <br>
+            $
+            n = \dfrac{\Sigma x}{n} \\[5ex]
+            \Sigma x = n \cdot \bar{x} \\[5ex]
+            \underline{\text{4 chemistry tests}} \\[3ex]
+            n = 4 \\[3ex]
+            \bar{x} = 80 \\[3ex]
+            \Sigma x = 4(80) \\[3ex]
+            \Sigma x = 320 \\[5ex]
+            \underline{\text{4 chemistry tests + 5th test}} \\[3ex]
+            \text{5th test score } = x \\[3ex]
+            n = 5 \\[3ex]
+            \bar{x} = 82 \\[3ex]
+            \Sigma x = 320 + x \\[3ex]
+            \implies \\[3ex]
+            \Sigma x = 320 + x = 5(82) \\[3ex]
+            320 + x = 410 \\[3ex]
+            x = 410 - 320 \\[3ex]
+            x = 90 \\[3ex]
+            $
+            The student needs to earn 90 points on the 5th test to have an average score of exactly 82 points for the 5
+            tests.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) The probability distribution for both values of a random variable <i>X</i> is given in the table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Value of <i>X</i></th>
+              <th style="width: 50%;">Probability of <i>X</i></th>
+            </tr>
+            <tr>
+              <td>$12$</td>
+              <td>$\dfrac{1}{3}$</td>
+            </tr>
+            <tr>
+              <td><i>k</i></td>
+              <td>$\dfrac{2}{3}$</td>
+            </tr>
+          </table>
+          <br>
+          Given that the expected value of <i>X</i> is 20, what is the value of <i>k</i>?
+          <br><br>
+          $
+          A.\;\; 6 \\[3ex]
+          B.\;\; 8 \\[3ex]
+          C.\;\; 16 \\[3ex]
+          D.\;\; 24 \\[3ex]
+          E.\;\; 28 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP27')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP27">
+            <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 25%;">Value of <i>X</i></th>
+                <th style="width: 25%;">Probability of <i>X</i></th>
+                <th style="width: 50%;">$X \cdot P(X)$</th>
+              </tr>
+              <tr>
+                <td>$12$</td>
+                <td>$\dfrac{1}{3}$</td>
+                <td>$12 \cdot \dfrac{1}{3} = 4$</td>
+              </tr>
+              <tr>
+                <td><i>k</i></td>
+                <td>$\dfrac{2}{3}$</td>
+                <td>$k \cdot \dfrac{2}{3} = \dfrac{2k}{3}$</td>
+              </tr>
+              <tr>
+                <td colspan="3">$\mu = \Sigma[X \cdot P(X)] = 4 + \dfrac{2k}{3}$</td>
+              </tr>
+            </table>
+            <br>
+            The expected value of <i>X</i> is the mean of the probability distribution. <br>
+            This implies that:
+            <br><br>
+            $
+            4 + \dfrac{2k}{3} = 20 \\[5ex]
+            \dfrac{2k}{3} = 20 - 4 \\[5ex]
+            \dfrac{2k}{3} = 16 \\[5ex]
+            \dfrac{2k}{3} \cdot \dfrac{3}{2} = 16 \cdot \dfrac{3}{2} \\[5ex]
+            k = 8 \cdot 3 \\[3ex]
+            k = 24
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) A bag contains 8 red marbles, 5 yellow marbles, and 7 green marbles. <br>
+          How many additional red marbles must be added to the 20 marbles already in the bag so that the probability of
+          randomly drawing a red marble is $\dfrac{3}{5}$?
+          <br><br>
+          $
+          A.\;\; 5 \\[3ex]
+          B.\;\; 10 \\[3ex]
+          C.\;\; 18 \\[3ex]
+          D.\;\; 20 \\[3ex]
+          E.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP28')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP28">
+            <br>
+            Let: <br>
+            sample space = <i>S</i> <br>
+            red marbles = <i>R</i> <br>
+            yellow marbles = <i>Y</i> <br>
+            green marbles = <i>G</i> <br>
+            number of additional red marbles = <i>r</i>
+            <br><br>
+            $
+            \underline{\text{Initial List}} \\[3ex]
+            S = \{8R, 5Y, 7G\} \\[3ex]
+            n(S) = 20 \\[5ex]
+            \underline{\text{New List}} \\[3ex]
+            S = \{(8 + r)R, 5Y, 7G\} \\[3ex]
+            n(S) = 20 + r \\[5ex]
+            P(R) = \dfrac{n(R)}{n(S)} = \dfrac{8 + r}{20 + r} \\[5ex]
+            \implies \\[3ex]
+            \dfrac{8 + r}{20 + r} = \dfrac{3}{5} \\[5ex]
+            5(8 + r) = 3(20 + r) \\[3ex]
+            40 + 5r = 60 + 3r \\[3ex]
+            5r - 3r = 60 - 40 \\[3ex]
+            2r = 20 \\[3ex]
+            r = \dfrac{20}{2} \\[5ex]
+            r = 10
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.) The distance of the longest jump of each of the participants in a long jump competition is given in the
+          stem-and-leaf plot below.
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number29.png" alt="Number 29">
+          <br><br>
+          What is the probability that a long jump participant chosen at random from the competition will have jumped
+          <i>at least</i> 75 inches?
+          <br><br>
+          $
+          A.\;\; \dfrac{3}{13} \\[5ex]
+          B.\;\; \dfrac{7}{13} \\[5ex]
+          C.\;\; \dfrac{3}{10} \\[5ex]
+          D.\;\; \dfrac{4}{10} \\[5ex]
+          E.\;\; \dfrac{6}{10} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP29')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP29">
+            <br>
+            $
+            n(S) = 10 \\[3ex]
+            n(\ge 75) = 6 \\[3ex]
+            P(\ge 75) = \dfrac{n(\ge 75)}{n(S)} = \dfrac{6}{10}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.) A bag contains 13 solid-colored marbles: 3 red, 5 white, 4 black, and 1 yellow. <br>
+          If only 1 marble is selected, what is the probability of randomly selecting 1 marble that is NOT black?
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{9} \\[5ex]
+          B.\;\; \dfrac{4}{9} \\[5ex]
+          C.\;\; \dfrac{4}{13} \\[5ex]
+          D.\;\; \dfrac{9}{13} \\[5ex]
+          E.\;\; \dfrac{9}{26} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP30')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP30">
+            <br>
+            $
+            S = sample space \\[3ex]
+            n(S) = 13 \\[5ex]
+            B = black \\[3ex]
+            n(B) = 4 \\[3ex]
+            n(B') = n(NOT\;\;Black) = 13 - 4 = 9 \\[3ex]
+            P(B') = \dfrac{n(B')}{n(S)} \\[5ex]
+            = \dfrac{9}{13}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 31 and 32.
+        <br><br>
+        In a science class, students measured the weights, in pounds, of 23 pumpkins and counted the seeds in each
+        pumpkin. <br>
+        A scatterplot of the data is shown below. <br>
+        To the nearest pound, the average weight of these pumpkins was 10 pounds, and the average number of seeds per
+        pumpkin was 444 seeds. <br>
+        An equation of the regression line of best fit is <i>y</i> = 15<i>x</i> + 294, where <i>x</i> is the weight, in
+        pounds, and <i>y</i> is the number of seeds.
+        <br><br>
+        <img src="images/StatisticsProbability/Questions/Numbers31-32.png" alt="Numbers 31 - 32">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.) When one of the pumpkins is removed from the group of 23 pumpkins, the average number of seeds per
+          pumpkin for the remaining 22 pumpkins is 10 fewer than it was for all 23 pumpkins. <br>
+          How many seeds are in the removed pumpkin?
+          <br><br>
+          $
+          A.\;\; 224 \\[3ex]
+          B.\;\; 434 \\[3ex]
+          C.\;\; 454 \\[3ex]
+          D.\;\; 516 \\[3ex]
+          E.\;\; 664 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP31')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP31">
+            <br>
+            $
+            \underline{\text{23 pumpkins}} \\[3ex]
+            \bar{x} = 444 \\[3ex]
+            n = 23 \\[3ex]
+            \Sigma x = \bar{x} \cdot n \\[3ex]
+            = 444(23) \\[3ex]
+            = 10212\;seeds \\[5ex]
+            \underline{\text{22 pumpkins}} \\[3ex]
+            \bar{x} = 444 - 10 = 434 \\[3ex]
+            n = 22 \\[3ex]
+            \Sigma x = \bar{x} \cdot n \\[3ex]
+            = 434(22) \\[3ex]
+            = 9548\;seeds \\[5ex]
+            \underline{\text{Removed 1 pumpkin}} \\[3ex]
+            \Sigma x \text{ for 1 pumpkin} + \Sigma x \text{ for 22 pumpkins} = \Sigma x \text{ for 23 pumpkins} \\[3ex]
+            \Sigma x \text{ for 1 pumpkin} + 9548 = 10212 \\[3ex]
+            \Sigma x \text{ for 1 pumpkin} = 10212 - 9548 \\[3ex]
+            \Sigma x \text{ for 1 pumpkin} = 664\;seeds
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.) According to the regression line of best fit, what is the predicted number of seeds for a pumpkin
+          weighing 27 pounds?
+          <br><br>
+          $
+          F.\;\; 309 \\[3ex]
+          G.\;\; 336 \\[3ex]
+          H.\;\; 405 \\[3ex]
+          J.\;\; 699 \\[3ex]
+          K.\;\; 714 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP32')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP32">
+            <br>
+            $
+            y = 15x + 294 \\[3ex]
+            x = 27\;pounds \\[3ex]
+            y = 15(27) + 294 \\[3ex]
+            y = 405 + 294 \\[3ex]
+            y = 699\;seeds
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.) A particular company produces 500 computers a day. <br>
+          For 20 days the number of defective computers produced each day was recorded, and the results were placed in
+          the table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Number of defective computers</th>
+              <th style="width: 50%;">Number of days</th>
+            </tr>
+            <tr>
+              <td>
+                0 <br>
+                1 <br>
+                2 <br>
+                3
+              </td>
+              <td>
+                14 <br>
+                4 <br>
+                1 <br>
+                1
+              </td>
+            </tr>
+          </table>
+          <br>
+          Based on this data, on average over a long period of time, what is the expected number of defective computers
+          produced on any given day?
+          <br><br>
+          $
+          A.\;\; 0.45 \\[3ex]
+          B.\;\; 0.75 \\[3ex]
+          C.\;\; 1 \\[3ex]
+          D.\;\; 1.5 \\[3ex]
+          E.\;\; 2.25 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP33')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP33">
+            <br>
+            The expected number of defective computers
+            produced on any given day is the average number of defective computers. <br>
+            Let's calculate it.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 33%;">Number of defective computers, <i>x</i></th>
+                <th style="width: 33%;">Number of days, <i>F</i></th>
+                <th style="width: 34%;">$F \cdot x$</th>
+              </tr>
+              <tr>
+                <td>
+                  0 <br>
+                  1 <br>
+                  2 <br>
+                  3
+                </td>
+                <td>
+                  14 <br>
+                  4 <br>
+                  1 <br>
+                  1
+                </td>
+                <td>
+                  0 <br>
+                  4 <br>
+                  2 <br>
+                  3
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>$\Sigma F = 20$</td>
+                <td>$\Sigma Fx = 9$</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  $
+                  Average, \bar{x} = \dfrac{\Sigma Fx}{\Sigma F} = \dfrac{9}{20} = 0.45
+                  $
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.) Data for each of 10 students is represented by a corresponding data point plotted in the standard (<i>x,
+            y</i>) coordinate plane below. <br>
+          Each point has 2 integer coordinates. <br>
+          The <i>x</i>-coordinate is the number of hours the student spent studying for a retake test, and the
+          <i>y</i>-coordinate is the change in score from the original test to the retake test. <br>
+          Noel drew the line shown through 2 data points to help predict future changes in score.
+          <br><br>
+          <img src="images/NumbersFractionsDecimalsPercents/Questions/Number42.png" alt="Number 42">
+          <br><br>
+          What is the median number of hours spent studying by all 10 students?
+          <br><br>
+          $
+          A.\;\; 2.0 \\[3ex]
+          B.\;\; 2.5 \\[3ex]
+          C.\;\; 3.0 \\[3ex]
+          D.\;\; 3.2 \\[3ex]
+          E.\;\; 3.5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP34')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP34">
+            <br>
+            The middle numbers are in darkblue <br>
+            The hours (in ascending order) are: 0, 1, 1, 2, <span style="color: darkblue;">3, 3,</span> 4, 5, 6, 7
+            <br><br>
+            $
+            Median = \dfrac{3 + 3}{2} \\[5ex]
+            = \dfrac{6}{2} \\[5ex]
+            = 3
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.) Suppose that the 8 identical faces of a regular octahedron, like the one shown below, are numbered from
+          11 through 18, with 1 number per face, and each face is equally likely to land down when the octahedron is
+          tossed. <br>
+          What is the probability that, on 1 toss of this octahedron, the number on the face landing down is a prime
+          number or an even number?
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number35.png" alt="Number 35">
+          <br><br>
+          $
+          A.\;\; 0 \\[3ex]
+          B.\;\; \dfrac{1}{8} \\[5ex]
+          C.\;\; \dfrac{1}{4} \\[5ex]
+          D.\;\; \dfrac{1}{2} \\[5ex]
+          E.\;\; \dfrac{7}{8} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP35')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP35">
+            <br>
+            Let: <br>
+            the sample space = S <br>
+            the set of prime numbers = R <br>
+            the set of even numbers = E <br>
+            probability = P <br>
+            cardinality = n
+            <br><br>
+            $
+            S = \{1, 2, 3, 4, 5, 6, 7, 8\} \\[3ex]
+            n(S) = 8 \\[5ex]
+            R = \{2, 3, 5, 7\} \\[3ex]
+            n(R) = 4 \\[5ex]
+            E = \{2, 4, 6, 8\} \\[3ex]
+            n(E) = 4 \\[5ex]
+            R \cap E = \{2\} \\[3ex]
+            n(R \cap E) = n(R \hspace{1em}AND\hspace{1em} E) = 1 \\[5ex]
+            P(R \hspace{1em}OR\hspace{1em} E) \\[3ex]
+            = \dfrac{n(R) + n(E) - n(R \hspace{1em}AND\hspace{1em} E)}{n(S)}...\text{Addition Law} \\[5ex]
+            = \dfrac{4 + 4 - 1}{8} \\[5ex]
+            = \dfrac{7}{8}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.) Twenty households in a community were surveyed to determine how many bicycles they owned. <br>
+          The results were recorded and listed below. No household had 6 or more bicycles.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Number of bicycles</th>
+              <th style="width: 50%;">Percent of households</th>
+            </tr>
+            <tr>
+              <td>
+                0 <br>
+                1 <br>
+                2 <br>
+                3 <br>
+                4 <br>
+                5
+              </td>
+              <td>
+                10% <br>
+                10% <br>
+                25% <br>
+                10% <br>
+                35% <br>
+                10%
+              </td>
+            </tr>
+          </table>
+          <br>
+          Based on the data in the table, what is the expected value of the number of bicycles from a household in this
+          community, rounded to the nearest tenth of a bicycle?
+          <br><br>
+          $
+          F.\;\; 1.0 \\[3ex]
+          G.\;\; 2.0 \\[3ex]
+          H.\;\; 2.5 \\[3ex]
+          J.\;\; 2.8 \\[3ex]
+          K.\;\; 3.5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP36')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP36">
+            <br>
+            The expected value is the mean (average)
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 33%;">Number of bicycles, <i>x</i></th>
+                <th style="width: 33%;">Percent of households, <i>F</i></th>
+                <th style="width: 34%;"><i>x</i> &times; <i>F</i></th>
+              </tr>
+              <tr>
+                <td>
+                  0 <br>
+                  1 <br>
+                  2 <br>
+                  3 <br>
+                  4 <br>
+                  5
+                </td>
+                <td>
+                  10% <br>
+                  10% <br>
+                  25% <br>
+                  10% <br>
+                  35% <br>
+                  10%
+                </td>
+                <td>
+                  0% <br>
+                  10% <br>
+                  50% <br>
+                  30% <br>
+                  140% <br>
+                  50%
+                </td>
+              </tr>
+              <tr>
+                <td></td>
+                <td>&Sigma; <i>F</i> = 100%</td>
+                <td>&Sigma; <i>Fx</i> = 280%</td>
+              </tr>
+            </table>
+            <br>
+            $
+            \text{Expected Value} = \dfrac{\Sigma Fx}{\Sigma F} \\[5ex]
+            = \dfrac{280\%}{100\%} \\[5ex]
+            = 2.8
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.) Hector counted the number of blue candies in each of
+          14 packages and summarized his data in the frequency
+          bar graph below.
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number37.png" alt="Number 37">
+          <br><br>
+          What is the median of the numbers of blue candies in the 14 packages?
+          <br><br>
+          $
+          A.\;\; 4.0 \\[3ex]
+          B.\;\; 4.2 \\[3ex]
+          C.\;\; 4.5 \\[3ex]
+          D.\;\; 5.0 \\[3ex]
+          E.\;\; 6.0 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP37')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP37">
+            <br>
+            Let us represent the bar graph in a table. <br>
+            I think it is easier to work with tables.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 50%;">number of blue candies, <i>x</i></th>
+                <th style="width: 50%;">number of packages, <i>F</i></th>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>6</td>
+              </tr>
+            </table>
+            <br>
+            $
+            \text{To find the median:} \\[3ex]
+            \Sigma F = 14 \\[3ex]
+            \dfrac{\Sigma F}{2} = \dfrac{14}{2} = 7 \\[5ex]
+            \text{Begin from the top} \\[3ex]
+            4 + 2 = 6 \\[3ex]
+            6 + 1 = 7...STOP \\[3ex]
+            x = 4 \\[5ex]
+
+            \text{Begin from the bottom} \\[3ex]
+            6 + 1 = 7 ...STOP \\[3ex]
+            x = 5 \\[5ex]
+            Median = \dfrac{4 + 5}{2} \\[5ex]
+            = \dfrac{9}{2} \\[5ex]
+            = 4.5
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.) The probability that a certain basketball player will make any given free throw is 0.8. <br>
+          Based on this probability, how many free throws should this player expect to have to attempt in order to make
+          20 free throws?
+          <br><br>
+          $
+          F.\;\; 36 \\[3ex]
+          G.\;\; 28 \\[3ex]
+          H.\;\; 25 \\[3ex]
+          J.\;\; 24 \\[3ex]
+          K.\;\; 22 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP38')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP38">
+            <br>
+            We can solve this question using at least two approaches. <br>
+            Use any approach you prefer.
+            <br><br>
+            Having free throws = Sample Space = ? <br>
+            Making free throws = Event = 20
+            <br><br>
+            $
+            \underline{\text{1st Approach: Probability Formula}} \\[3ex]
+            P(event) = \dfrac{n(event)}{n(Sample\;\;Space)} \\[5ex]
+            0.8 = \dfrac{20}{n(Sample\;\;Space)} \\[5ex]
+            0.8 \cdot n(Sample\;\;Space) = 20 \\[3ex]
+            n(Sample\;\;Space) = \dfrac{20}{0.8} \\[5ex]
+            n(Sample\;\;Space) = 25 \\[3ex]
+            $
+            Having free throws = Whole = ? <br>
+            Making free throws = Part = 20
+            <br><br>
+            $
+            \underline{\text{2nd Approach: Proportional Reasoning}} \\[3ex]
+            0.8 = \dfrac{8}{10} = \dfrac{Part}{Whole} \\[5ex]
+            \dfrac{8}{10} = \dfrac{20}{Whole} \\[5ex]
+            8 \cdot Whole = 10 \cdot 20 \\[3ex]
+            Whole = \dfrac{200}{8} \\[5ex]
+            Whole = 25
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.) A basket contains 3 red apples, 4 green apples, and 2 yellow apples. <br>
+          An apple is drawn at random, eaten, and then another apple is randomly drawn. <br>
+          If the first apple is red, what is the probability the second apple is yellow?
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{12} \\[5ex]
+          B.\;\; \dfrac{1}{8} \\[5ex]
+          C.\;\; \dfrac{1}{4} \\[5ex]
+          D.\;\; \dfrac{2}{9} \\[5ex]
+          E.\;\; \dfrac{5}{81} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP39')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP39">
+            <br>
+            If the first apple is red, what is the probability the second apple is yellow? <br>
+            This can be reworded as: What is the probability of drawing a yellow apple <b>given that</b> the first apple
+            is red? <br>
+            This is <b>Conditional Probability</b>
+            <br><br>
+            Let: <br>
+            red = R <br>
+            green = G <br>
+            yellow = Y
+            <br><br>
+            $
+            n(R) = 3 \\[3ex]
+            n(G) = 4 \\[3ex]
+            n(Y) = 2 \\[3ex]
+            n(\text{Sample Space}) = 3 + 4 + 2 = 9 \\[5ex]
+
+            P(Y \cap R) = \dfrac{2}{9} \cdot \dfrac{3}{8}...\text{Without Replacement} \\[5ex]
+            P(Y \cap R) = \dfrac{1}{12} \\[5ex]
+            P(R) = \dfrac{n(R)}{n(\text{Sample Space})} = \dfrac{3}{9} = \dfrac{1}{3} \\[5ex]
+            P(Y | R) = \dfrac{P(Y \cap R)}{P(R)}...\text{Conditional Probability} \\[5ex]
+            = \dfrac{1}{12} \div \dfrac{1}{3} \\[5ex]
+            = \dfrac{1}{12} \cdot \dfrac{3}{1} \\[5ex]
+            = \dfrac{1}{4}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.) The graph below shows the distribution of a data set. <br>
+          The variables <i>a</i> &minus; <i>h</i> represent 8 consecutive positive integers in order from least to
+          greatest. <br>
+          The frequencies of <i>a, f, g</i>, and <i>h</i> are equal; the frequency of <i>e</i> is 2 times the frequency
+          of <i>a</i>; the frequency of <i>b</i> and of <i>d</i> is 3 times the frequency of <i>a</i>; and the frequency
+          of <i>c</i> is 4 times the frequency of <i>a</i>. <br>
+          Which of the following statements about the mean, median, and mode of the data set is true?
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number40.png">
+          <br><br>
+          <b>A.</b> The mode is less than the median, and the median is less than the mean. <br>
+          <b>B.</b> The mean is less than the median, and the median is less than the mode. <br>
+          <b>C.</b> The mode is equal to the mean, and the mean id less than the median. <br>
+          <b>D.</b> The mode is less than the mean, and the mean is equal to the median. <br>
+          <b>E.</b> The mean is equal to the median, and the median is equal to the mode.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP40')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP40">
+            <br>
+            For a: <br>
+            Left-skewed distribution (longer tail on the left): Mean &lt; Median &lt; Mode <br>
+            Symmetric distribution: Mean = Median = Mode <br>
+            Right-skewed distribution (longer tail on the right): Mean &gt; Median &gt; Mode
+            <br><br>
+            The distribution is right-skewed; hence the mean is greater than the median, and the median is greater than
+            the mode. <br>
+            This implies that: <br>
+            The mode is less than the median, and the median is less than the mean.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/StatisticsProbability.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.) Carina rolls 2 cubes. <br>
+          Each has the whole numbers from 1 through 6 on its faces, 1 per face. <br>
+          The faces of each cube are equally likely to land up. <br>
+          What is the probability that the sum of the numbers on the faces landing up is 3 or more?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{36} \\[5ex]
+          G.\;\; \dfrac{1}{18} \\[5ex]
+          H.\;\; \dfrac{1}{11} \\[5ex]
+          J.\;\; \dfrac{10}{11} \\[5ex]
+          K.\;\; \dfrac{35}{36} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP41')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP41">
+            <br>
+            We can solve this question using at least 2 approaches <br>
+            Use any approach you prefer, however, it is highly recommended that you use the first approach.
+            <br><br>
+            $
+            \text{Let } S = \text{sample space} \\[3ex]
+            n(S) = faces^tosses \\[4ex]
+            n(S) = 6^2 = 36 \\[3ex]
+            $
+            Assume event, E = sum of the numbers on the faces landing up is 3 or more <br>
+            Complement of the event, E' = sum of the numbers on the faces landing up is less than 3
+            <br><br>
+            $
+            \underline{\text{1st Approach: Complementary Rule}} \\[3ex]
+            \text{1st cube} = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+            \text{2nd cube} = \{1, 2, 3, 4, 5, 6\} \\[3ex]
+            $
+            Let us find all the possible event spaces where the sum of the numbers on both cubes is less than 3
+            <br><br>
+            $
+            1 + 1 = 2...\text{only one possibility} \\[3ex]
+            n(E') = 1 \\[3ex]
+            n(E) + n(E') = n(S) \\[3ex]
+            P(E) + P(E') = 1 ...\text{Complementary Rule} \\[3ex]
+            P(E) = 1 - P(E') \\[3ex]
+            = 1 - \dfrac{n(E')}{n(S)} \\[5ex]
+            = 1 - \dfrac{1}{36} \\[5ex]
+            = \dfrac{36}{36} - \dfrac{1}{36} \\[5ex]
+            = \dfrac{35}{36} \\[5ex]
+            $
+            <u>2nd Approach:</u> <b>Punnett Square</b> <br>
+            Sample Space for a Toss of Two Fair Cubes <br>
+            <table class="w3-center dice">
+              <caption>A Cube in the Column and A Cube in the Row</caption>
+              <tr>
+                <th style="width: 16%;" class="w3-padding">
+                  1 Cube &rightarrow; <br>
+                  (+) <br>
+                  1 Cube &downarrow;
+                </th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+              </tr>
+              <tr>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <td>12</td>
+              </tr>
+            </table>
+            <br>
+            $
+            n(E) = 35 \\[3ex]
+            P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+            P(E) = \dfrac{35}{36}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.) All 30 of Mr. Gray's algebra students took the midterm test, and Mr. Gray computed the average test
+          score for the class. <br>
+          Then, one of Mr. Gray's students, Mandy, found that her test should have been scored 5 points higher than it
+          was originally scored. <br>
+          All other students' scores were correct. <br>
+          After correcting the scoring error on Mandy's test, the average test score for the class increased by how many
+          points?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{30} \\[5ex]
+          G.\;\; \dfrac{1}{6} \\[5ex]
+          H.\;\; \dfrac{1}{5} \\[5ex]
+          J.\;\; 5 \\[3ex]
+          K.\;\; \text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP42')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP42">
+            <br>
+            Let: <br>
+            <i>n</i> = number of students <br>
+            <i>x</i> = score <br>
+            $\bar{x}$ = average score <br>
+            &Sigma;<i>x</i> = summation of the scores
+            <br><br>
+            $
+            \underline{\text{Initial: Graded Midterm Test}} \\[3ex]
+            n = 30 \\[3ex]
+            \bar{x} = p \\[3ex]
+            \Sigma x = \bar{x} \cdot n \\[3ex]
+            = p \cdot 30 \\[3ex]
+            = 30p \\[5ex]
+
+            \underline{\text{Corrected Grading}} \\[3ex]
+            n = 30 \\[3ex]
+            \Sigma x = 30p + 5 ...\text{increase of 5 points} \\[3ex]
+            \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+            = \dfrac{30p + 5}{30} \\[5ex]
+
+            \underline{\text{Change in the Average Score}} \\[3ex]
+            \text{Corrected Average} - \text{Initial Average} \\[3ex]
+            = \dfrac{30p + 5}{30} - p \\[5ex]
+            = \dfrac{30p + 5}{30} - \dfrac{30p}{30} \\[5ex]
+            = \dfrac{30p + 5 - 30p}{30} \\[5ex]
+            = \dfrac{5}{30} \\[5ex]
+            = \dfrac{1}{6}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 43 &mdash; 45.
+        <br><br>
+        The results for the 200-meter dash at the Shamrock High School (SHS) track meet are shown in the table below.
+        <br>
+        The SHS track is unique in that it is circular and has an outer diameter of 240 meters. <br>
+        The stadium has a capacity of 5,000 people.
+        <br><br>
+        <table class="w3-center">
+          <tr>
+            <th colspan="2">200-meter dash</th>
+          </tr>
+          <tr>
+            <th style="width: 50%;">Name</th>
+            <th style="width: 50%;">Time (seconds)</th>
+          </tr>
+          <tr>
+            <td>
+              Anthony <br>
+              Burke <br>
+              Cory <br>
+              Kate <br>
+              Lindsey <br>
+              Nathan <br>
+              Rebecca <br>
+              Sam
+            </td>
+            <td>
+              21.20 <br>
+              22.01 <br>
+              21.33 <br>
+              22.13 <br>
+              21.20 <br>
+              21.50 <br>
+              21.48 <br>
+              22.19
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.) What is the mean, in seconds, of the times listed in the
+          table for the 200-meter dash?
+          <br><br>
+          $
+          F.\;\; 21.20 \\[3ex]
+          G.\;\; 21.27 \\[3ex]
+          H.\;\; 21.49 \\[3ex]
+          J.\;\; 21.63 \\[3ex]
+          K.\;\; 22.07 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP43')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCSP43')">Calculator Solution</button>
+          <div class="result" id="solutionSP43">
+            <br>
+            $
+            \Sigma Time = 21.2 + 22.01 + 21.33 + 22.13 + 21.2 + 21.5 + 21.48 + 22.19 = 173.04 \\[3ex]
+            n = 8\;students \\[3ex]
+            Mean, \bar{x} = \dfrac{\Sigma Time}{n} = \dfrac{173.04}{8} = 21.63
+            $
+          </div>
+          <div class="result" id="solutionCSP43">
+            <br>
+            <img src="images/StatisticsProbability/Answers/Calculator43-1st.png" alt="Calculator43-1st">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator43-2nd.png" alt="Calculator43-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.) Each ticket for the track meet had a price of <span>$</span>8. <br>
+          Tickets were sold for exactly 85% of the stadium’s capacity. <br>
+          How many dollars did SHS collect through ticket sales for this meet?
+          <br><br>
+          $
+          A.\;\; \$ 3,400 \\[3ex]
+          B.\;\; \$ 34,000 \\[3ex]
+          C.\;\; \$ 39,915 \\[3ex]
+          D.\;\; \$ 40,085 \\[3ex]
+          E.\;\; \$ 340,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP44')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP44">
+            <br>
+            $
+            \text{stadium capacity} = 5000\;people \\[3ex]
+            \text{85% of stadium capacity} = \dfrac{85}{100} \cdot 5000 = 4250 \\[5ex]
+            \text{price of a ticket} = \$8 \\[3ex]
+            \text{ticket sales} = 4250(8) = \$34000
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.) The circular region containing the track and the infield (the grassy region enclosed by the track) is
+          divided into sectors that each have a central angle of 60°. <br>
+          Each sector is a different color. <br>
+          What is the area, in square meters, of each sector?
+          <br><br>
+          $
+          F.\;\; 2,400\pi \\[3ex]
+          G.\;\; 4,800\pi \\[3ex]
+          H.\;\; 9,600\pi \\[3ex]
+          J.\;\; 14,400\pi \\[3ex]
+          K.\;\; 19,200\pi \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionSP45')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP45">
+            <br>
+            $
+            \underline{\text{Circular Track}}, A_{track} \\[3ex]
+            \text{It is a circle} \\[3ex]
+            diamater = 240\;m \\[3ex]
+            radius = \dfrac{diamater}{2} = \dfrac{240}{2} = 120\;m \\[5ex]
+            Area = \pi \cdot radius^2 \\[3ex]
+            A_{track} = \pi \cdot 120^2 \\[5ex]
+
+            \underline{\text{Area of each Sector}}, A_{sector} \\[3ex]
+            \text{sectorial angle} = 60^\circ \\[3ex]
+            \text{angle in a circle} = 360^\circ \\[5ex]
+            A_{sector} = \dfrac{\text{sectorial angle}}{\text{circular angle}} \cdot A_{track} \\[5ex]
+            = \dfrac{60}{360} \cdot \pi \cdot 120 \cdot 120 \\[5ex]
+            = 2400\pi \;m^2
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.) Sumiko, who works at a restaurant, recorded the amounts of her customers’ checks and the corresponding
+          amounts of her tips, both in dollars, for 25 consecutive customers she served. <br>
+          She plotted the data in the standard (<i>x, y</i>) coordinate plane below with the amount of the check on the
+          <i>x</i>-axis and the amount of the tip on the y-axis. <br>
+          Sumiko then performed a linear regression on the data, finding the regression equation to be
+          $y = 0.16x − 0.44$ with a correlation coefficient, <i>r</i>, of 0.81. <br>
+          She also graphed the regression line.
+          <br><br>
+          <img src="images/StatisticsProbability/Questions/Number46.png" alt="Number 46">
+          <br><br>
+          From her statistical analysis, Sumiko can correctly conclude that every <span>$</span>1 increase in the total
+          amount of the check will result in approximately:
+          <br><br>
+          <b>F.</b> a 16 cent increase in her tip. <br>
+          <b>G.</b> a 44 cent increase in her tip. <br>
+          <b>H.</b> an 81 cent increase in her tip. <br>
+          <b>J.</b> a 16 cent decrease in her tip. <br>
+          <b>K.</b> a 44 cent decrease in her tip.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP46')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP46">
+            <br>
+            Regression Equation: $y = 0.16x − 0.44$ <br>
+            <i>x</i> = amount of check (in dollars) <br>
+            <i>y</i> = amount of tip (in dollars) <br>
+            Slope = <span>$</span>0.16 = 16 cents <br>
+            This is a positive slope.
+            The interpretation for the slope in this context implies that: On average, for every unit change
+            (<span>$</span>1 increase in) in
+            <i>x</i> (the amount of check), the <i>y</i> (amount of tip) increases by the slope (16 cents).
+            <br><br>
+            From her statistical analysis, Sumiko can correctly conclude that every <span>$</span>1 increase in the
+            total amount of the check will result in approximately a 16 cent increase in her tip.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <button class="solutions" onclick="solutions('solutionSP47')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.)
+          <button class="solutions" onclick="solutions('solutionSP48')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP48">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <button class="solutions" onclick="solutions('solutionSP49')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.)
+          <button class="solutions" onclick="solutions('solutionSP50')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP50">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <button class="solutions" onclick="solutions('solutionSP51')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.)
+          <button class="solutions" onclick="solutions('solutionSP52')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP52">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (53.)
+          <button class="solutions" onclick="solutions('solutionSP53')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP53">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (54.)
+          <button class="solutions" onclick="solutions('solutionSP54')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP54">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (55.)
+          <button class="solutions" onclick="solutions('solutionSP55')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP55">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (56.)
+          <button class="solutions" onclick="solutions('solutionSP56')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP56">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (57.)
+          <button class="solutions" onclick="solutions('solutionSP57')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP57">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (58.)
+          <button class="solutions" onclick="solutions('solutionSP58')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP58">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- End Numbers 41 through 60 -->
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+
+</body>
+
+</html>

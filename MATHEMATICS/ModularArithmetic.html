@@ -1,0 +1,2131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Modular Arithmetic and Algorithms</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to Mathematics questions on topics in modular arithmetic and algorithms.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  algebra, discrete mathematics, computer science, modulo, modular arithmetic,
+  modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+  base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, 
+  linear congruence, congruence, equivalence, equivalence classes, binary, decimal,  
+  octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+  modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents,
+  quinary, senary, septenary, nonary, decimal, undecimal, duodecimal, tridecimal, 
+  tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+  gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, 
+  relatively prime, mutually prime, division, algorithm, division algorithm, 
+  dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+  difference, product, multiplier, multiplicand, positive, nonnegative, negative,
+  nonpositive, numbers, bit, digit, binary digit, integers, whole numbers,
+  fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+  congruence class, number theory, binary operations, modulo tables">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#modularExponentiationAlgorithms" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Modular Exponentiation Algorithms</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Modular Arithmetic and Algorithms</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to Mathematics questions on Modular Arithmetic and Algorithms. <br>
+        The TI-84 Plus CE shall be used for applicable questions. <br>
+        If you find these resources valuable/helpful, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Modular Exponentiation Algorithms -->
+    <div class="w3-container w3-padding-32" id="modularExponentiationAlgorithms">
+      <h2>Modular Exponentiation Algorithms</h2>
+      <p>
+        In <b>Modular Exponentiation</b>, we want to calculate: an integer raised to a nonnegative integer modulo a
+        positive
+        integer. <br>
+        Say we have: $a^b \mod n$, <br>
+        $a$ and $b$ are nonnegative integers <br>
+        $n$ is a positive integer <br>
+        If $b$ is very large, the calculation of $a^b \mod n$ cannot be done with a calculator. <br>
+        Hence, we need to find how to solve such calculations.
+        <br><br>
+
+        Modular Exponentiation is one of the concepts used in Cryptology. <br>
+        Cryptology is the study of writing and cracking secret messages. <br>
+        Specifically, modular exponentiation is used in the RSA (Rivest, Shamir, Adelman) cryptosystem for secured data
+        transmissions.
+        <br><br>
+        There are four methods of solving modular exponentiation. <br>
+        They are: <br>
+        (1.) Method of Fast Modular Multiplication <br>
+        (2.) Method of Repeated Squaring using the Modular Exponentiation Algorithm <br>
+        (3.) Fermat's Little Theorem <br>
+        (4.) Fermat's Little Theorem and the Chinese Remainder Theorem
+        <br><br>
+
+        Let us review the algorithms used in these four methods.
+      </p>
+
+    </div>
+    <!-- End Modular Exponentiation Algorithms -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Calculate the decimal expansion of $11100111_2$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA1')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA1">
+            <br>
+            This means that $11100111$ in base two needs to be converted to a number in base ten. <br><br>
+            $
+            11100111_2 \\[3ex]
+            = 1 * 2^7 + 1 * 2^6 + 1 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1 * 2^0 \\[3ex]
+            = 1 * 128 + 1 * 64 + 1 * 32 + 0 * 16 + 0 * 8 + 1 * 4 + 1 * 2 + 1 * 1 \\[3ex]
+            = 128 + 64 + 32 + 0 + 0 + 4 + 2 + 1 \\[3ex]
+            $
+            &there4; $11100111_2 = 231$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container w3-padding-32">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Calculate the binary expansion of $231$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA2')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA2">
+            <br>
+            This means that $231$ needs to be converted to a number in base two.
+            <br><br>
+            $
+            \begin{array}{c|c}
+            2 & 231 \\
+            \hline
+            2 & 115 \:R\: 1 \\
+            \hline
+            2 & 57 \:R\: 1 \\
+            \hline
+            2 & 28 \:R\: 1 \\
+            \hline
+            2 & 14 \:R\: 0 \\
+            \hline
+            2 & 7 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            231 = 11100111_2 \\[3ex]
+            $
+            &therefore; $231 = 11100111_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) Calculate the decimal expansion of $11000100100011000_2$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA3')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA3">
+            <br>
+            This means that $11000100100011000$ in base two needs to be converted to a number in base ten.
+            <br><br>
+            $
+            11000100100011000_2 \\[3ex]
+            = 1 * 2^{16} + 1 * 2^{15} + 0 * 2^{14} + 0 * 2^{13} + 0 * 2^{12}
+            + 1 * 2^{11} + 0 * 2^{10} + 0 * 2^9 + 1 * 2^8 + 0 * 2^7
+            + 0 * 2^6 + 0 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2
+            + 0 * 2^1 + 0 * 2^0 \\[3ex]
+            = 1 * 65536 + 1 * 32768 + 0 * 16384 + 0 * 8192 + 0 * 4096
+            + 1 * 2048 + 0 * 1024 + 0 * 512 + 1 * 256 + 0 * 128
+            + 0 * 64 + 0 * 32 + 1 * 16 + 1 * 8 + 0 * 4
+            + 0 * 2 + 0 * 1 \\[3ex]
+            = 65536 + 32768 + 0 + 0 + 0 + 2048 + 0 + 0 + 256 + 0 + 0 + 0 + 16 + 8 + 0 + 0 + 0 \\[3ex]
+            = 100632 \\[3ex]
+            $
+            &there4; $11100111_2 = 100632$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) Calculate the binary expansion of $100632$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA4')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA4">
+            <br>
+            This means that $100632$ needs to be converted to a number in base two. <br><br>
+            $
+            \begin{array}{c|c}
+            2 & 100632 \\
+            \hline
+            2 & 50316 \:R\: 0 \\
+            \hline
+            2 & 25158 \:R\: 0 \\
+            \hline
+            2 & 12579 \:R\: 0 \\
+            \hline
+            2 & 6289 \:R\: 1 \\
+            \hline
+            2 & 3144 \:R\: 1 \\
+            \hline
+            2 & 1572 \:R\: 0 \\
+            \hline
+            2 & 786 \:R\: 0 \\
+            \hline
+            2 & 393 \:R\: 0 \\
+            \hline
+            2 & 196 \:R\: 1 \\
+            \hline
+            2 & 98 \:R\: 0 \\
+            \hline
+            2 & 49 \:R\: 0 \\
+            \hline
+            2 & 24 \:R\: 1 \\
+            \hline
+            2 & 12 \:R\: 0 \\
+            \hline
+            2 & 6 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 0 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            100632 = 11000100100011000_2 \\[3ex]
+            $
+            &there4; $100632 = 11000100100011000_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Calculate the hexadecimal expansion of $11101011100_2$ <br>
+          Solve this question using <u>at least three</u> different methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA5')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA5">
+            <br>
+            This means that $11101011100$ in base two needs to be converted to a number in base sixteen. <br><br>
+            <u>First Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX$</b> <br>
+            This is a long method. <br><br>
+            $
+            BIN \rightarrow DEC \\[3ex]
+            11101011100_2 \\[3ex]
+            = 1 * 2^{10} + 1 * 2^9 + 1 * 2^8 + 0 * 2^7 + 1 * 2^6
+            + 0 * 2^5 + 1 * 2^4 + 1 * 2^3 + 1 * 2^2 + 0 * 2^1
+            + 0 * 2^0 \\[3ex]
+            = 1 * 1024 + 1 * 512 + 1 * 256 + 0 * 128 + 1 * 64
+            + 0 * 32 + 1 * 16 + 1 * 8 + 1 * 4 + 0 * 2 + 0 * 1 \\[3ex]
+            = 1024 + 512 + 256 + 0 + 64 + 0 + 16 + 8 + 4 + 0 + 0 \\[3ex]
+            \therefore 11101011100_2 = 1884 \\[3ex]
+
+            DEC \rightarrow HEX \\[3ex]
+            \begin{array}{c|c}
+            16 & 1884 \\
+            \hline
+            16 & 117 \:R\: 12 \\
+            \hline
+            16 & 7 \:R\: 5 \\
+            \hline
+            & 0 \:R\: 7
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            1884 = 7\: 5\: {12} \\[3ex]
+            12 = C_{16} \\[3ex]
+            1884 = 75C \\[3ex]
+            $
+            &there4; $11101011100_2 = 75C_{16}$
+            <br><br>
+
+            <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$
+              Conversion Table</b>
+            <br>
+            This is a short method. <br><br>
+            Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            We split the digits in a set of four digits each. <br><br>
+            $
+            11101011100_2
+            111\: 0101\: 1100 \\[3ex]
+            $
+            We have two complete sets of four digits each. But we have one incomplete set. <br>
+            We will need to complete the first incomplete set by adding a $0$ <br>
+            $0111\: 0101\: 1100$ <br>
+            We begin from behind <br><br>
+            $
+            1100 = C \\[3ex]
+            0101 = 5 \\[3ex]
+            0111 = 7 \\[3ex]
+            $
+            We write it upwards (beginning from the bottom)<br>
+            $7 \:5\: C$ <br><br>
+            &there4; $\therefore 11101011100_2 = 75C_{16}$
+            <br><br>
+
+            <u>Third Method:</u><b>$\:BIN \rightarrow HEX\:$ Method</b> <br>
+            This is also a short method. <br><br>
+            Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            We split the digits in a set of four digits each. <br>
+            $11101011100_2$ <br>
+            $111\: 0101\: 1100$ <br>
+            We have two complete sets of four digits each. But we have one incomplete set. <br>
+            We will need to complete the first incomplete set by adding a $0$ <br>
+            $0111\: 0101\: 1100$ <br>
+            These are the face values. <br>
+            Let us write the place values beneath the face values. <br>
+            $
+            0\ \ \ 1\ \ \ 1\ \ \ 1\ \ \ \ \ \ \ \ 0\ \ \ 1\ \ \ 0\ \ \ 1\ \ \ \ \ \ \ 1\ \ \ 1\ \ \ 0\ \ \ 0\ \ \ \ \\
+            2^3\ 2^2\ 2^1\ 2^0\ \ \ \ \ \ 2^3\ 2^2\ 2^1\ 2^0\ \ \ \ \ \ \ 2^3\ 2^2\ 2^1\ 2^0\ \ \ \
+            $
+            <br><br>
+            $
+            0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+            8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \
+            $
+            <br><br>
+            Draw a line beneath the place values (as you would do with addition, subtraction, division, etc.) <br><br>
+            $
+            \begin{align}
+            0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+            8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+            \hline
+            \end{align}
+            $
+            <br><br>
+            For each face value of $0$, write a $0$ under the corresponding place value <br>
+            For each face value that is not a $0$, write the value of the corresponding place "as is" <br><br>
+            $
+            \begin{align}
+            0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+            8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+            \hline \\
+            0\ 4\ 2\ 1\ \ \ \ \ 0\ 4\ 0\ 1\ \ \ \ \ 8\ 4\ 0\ 0\ \ \ \
+            \end{align}
+            $
+            <br><br>
+            Add each set of four digits and write the sum below them. <br>
+            $8 + 4 + 0 + 0 = 12$ <br>
+            But, $12 = C_{16}$ <br>
+            $0 + 4 + 0 + 1 = 5$ <br>
+            $0 + 4 + 2 + 1 = 7$ <br><br>
+            $
+            \begin{align}
+            0\ 1\ 1\ 1\ \ \ \ \ 0\ 1\ 0\ 1\ \ \ \ \ 1\ 1\ 0\ 0\ \ \ \ \\
+            8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \ 8\ 4\ 2\ 1\ \ \ \ \\
+            \hline \\
+            \quad \underbrace{0\ 4\ 2\ 1}\ \ \ \ \underbrace{0\ 4\ 0\ 1}\ \ \ \underbrace{8\ 4\ 0\ 0}\ \ \ \\
+            \underbrace{7}\ \qquad \underbrace{5}\ \qquad \underbrace{C}\ \ \ \
+            \end{align} \\[3ex]
+            $
+            &there4; $\therefore 11101011100_2 = 75C_{16}$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) Calculate the hexadecimal expansion of $1001001101001010_2$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA6')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA6">
+            <br>
+            This means that $1001001101001010$ in base two needs to be converted to a number in base sixteen.
+            <br><br>
+            We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table
+            <br><br>
+            Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            We split the digits in a set of four digits each. <br>
+            $1001001101001010_2$ <br>
+            $1001 \:0011\: 0100\: 1010$ <br>
+            We have a complete set of four digits each. We are good. <br>
+            We begin from behind <br>
+            $1010 = A$ <br>
+            $0100 = 4$ <br>
+            $0011 = 3$ <br>
+            $1001 = 9$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $9 \:3\: 4\: A$ <br>
+            &there4; $\therefore 1001001101001010_2 = 934A_{16}$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Calculate the binary expansion of $ABBA_{16}$ <br>
+          Solve this question using <u>at least two</u> different methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA7')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA7">
+            <br>
+            This means that $ABBA$ in base sixteen needs to be converted to a number in base two. <br><br>
+            <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+            This is a long method. <br><br>
+            $HEX \rightarrow DEC$ <br><br>
+            $
+            ABBA_{16} \\[3ex]
+            = 10 * 16^3 + 11 * 16^2 + 11 * 16^1 + 10 * 16^0 \\[3ex]
+            = 10 * 4096 + 11 * 256 + 11 * 16 + 10 * 1 \\[3ex]
+            = 40960 + 2816 + 176 + 10 \\[3ex]
+            \therefore ABBA_{16} = 43962 \\[3ex]
+
+            DEC \rightarrow BIN \\[3ex]
+            \begin{array}{c|c}
+            2 & 43962 \\
+            \hline
+            2 & 21981 \:R\: 0 \\
+            \hline
+            2 & 10990 \:R\: 1 \\
+            \hline
+            2 & 5495 \:R\: 0 \\
+            \hline
+            2 & 2747 \:R\: 1 \\
+            \hline
+            2 & 1373 \:R\: 1 \\
+            \hline
+            2 & 686 \:R\: 1 \\
+            \hline
+            2 & 343 \:R\: 0 \\
+            \hline
+            2 & 171 \:R\: 1 \\
+            \hline
+            2 & 85 \:R\: 1 \\
+            \hline
+            2 & 42 \:R\: 1 \\
+            \hline
+            2 & 21 \:R\: 0 \\
+            \hline
+            2 & 10 \:R\: 1 \\
+            \hline
+            2 & 5 \:R\: 0 \\
+            \hline
+            2 & 2 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            43962 = 1010101110111010_2 \\[3ex]
+            $
+            &there4; $ABBA_{16} = 1010101110111010_2$
+            <br><br>
+
+            <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$
+              Conversion Table</b>
+            <br>
+            This is a short method. <br><br>
+            Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            $ABBA_{16}$ <br>
+            We begin from behind <br>
+            $A = 1010$ <br>
+            $B = 1011$ <br>
+            $B = 1011$ <br>
+            $A = 1010$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $1010 \:1011\: 1011\: 1010$ <br>
+            Remove any leading zero(s) if any. <br>
+            Leading zeros are zeros that may be in front of the first set of digits. <br>
+            In this case, there are no leading zeros. <br><br>
+            &there4; $\therefore ABBA_{16} = 1010101110111010_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) Calculate the binary expansion of $934A_{16}$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA8')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA8">
+            <br>
+            This means that $934A$ in base sixteen needs to be converted to a number in base two. <br><br>
+            We shall use the $\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table
+            <br><br>
+            Each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            $934A_{16}$ <br>
+            We begin from behind <br>
+            $A = 1010$ <br>
+            $4 = 0100$ <br>
+            $3 = 0011$ <br>
+            $9 = 1001$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $1001 \:0011\: 0100\: 1010$ <br>
+            Remove any leading zero(s) if any. <br>
+            Leading zeros are zeros that may be in front of the first set of digits. <br>
+            In this case, there are no leading zeros. <br><br>
+            &there4; $\therefore 934A_{16} = 1001001101001010_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Calculate the binary expansion of $CAF57_{16}$ <br>
+          Solve this question using <u>at least two</u> different methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA9')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA9">
+            <br>
+            This means that $CAF57$ in base sixteen needs to be converted to a number in base two. <br><br>
+            <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+            This is a long method. <br><br>
+            $
+            HEX \rightarrow DEC \\[3ex]
+            CAF57_{16} \\[3ex]
+            = 12 * 16^4 + 10 * 16^3 + 15 * 16^2 + 5 * 16^1 + 7 * 16^0 \\[3ex]
+            = 12 * 65536 + 10 * 4096 + 15 * 256 + 5 * 16 + 7 * 1 \\[3ex]
+            = 786432 + 40960 + 3840 + 80 + 7 \\[3ex]
+            \therefore CAF57_{16} = 831319 \\[3ex]
+
+            DEC \rightarrow BIN \\[3ex]
+
+            \begin{array}{c|c}
+            2 & 831319 \\
+            \hline
+            2 & 415659 \:R\: 1 \\
+            \hline
+            2 & 207829 \:R\: 1 \\
+            \hline
+            2 & 103914 \:R\: 1 \\
+            \hline
+            2 & 51957 \:R\: 0 \\
+            \hline
+            2 & 25978 \:R\: 1 \\
+            \hline
+            2 & 12989 \:R\: 0 \\
+            \hline
+            2 & 6494 \:R\: 1 \\
+            \hline
+            2 & 3247 \:R\: 0 \\
+            \hline
+            2 & 1623 \:R\: 1 \\
+            \hline
+            2 & 811 \:R\: 1 \\
+            \hline
+            2 & 405 \:R\: 1 \\
+            \hline
+            2 & 202 \:R\: 1 \\
+            \hline
+            2 & 101 \:R\: 0 \\
+            \hline
+            2 & 50 \:R\: 1 \\
+            \hline
+            2 & 25 \:R\: 0 \\
+            \hline
+            2 & 12 \:R\: 1 \\
+            \hline
+            2 & 6 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 0 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            831319 = 11001010111101010111_2 \\[3ex]
+            $
+            &there4; $CAF57_{16} = 11001010111101010111_2$
+            <br><br>
+
+            <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$
+              Conversion Table</b>
+            <br>
+            This is a short method. <br><br>
+            Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            $CAF57_{16}$ <br>
+            We begin from behind <br>
+            $7 = 0111$ <br>
+            $5 = 0101$ <br>
+            $F = 1111$ <br>
+            $A = 1010$ <br>
+            $C = 1100$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $1100 \:1010\: 1111\: 0101\: 0111$ <br>
+            Remove any leading zero(s) if any. <br>
+            Leading zeros are zeros that may be in front of the first set of digits. <br>
+            In this case, there are no leading zeros. <br><br>
+            &there4; $\therefore CAF57_{16} = 11001010111101010111_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Calculate the binary expansion of $75C_{16}$ <br>
+          Solve this question using <u>at least two</u> different methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA10')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA10">
+            <br>
+            This means that $75C$ in base sixteen needs to be converted to a number in base two.
+            <br><br>
+            <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+            This is a long method.
+            <br><br>
+            $
+            HEX \rightarrow DEC \\[3ex]
+            75C_{16} \\[3ex]
+            = 7 * 16^2 + 5 * 16^1 + 12 * 16^0 \\[3ex]
+            = 7 * 256 + 5 * 16 + 12 * 1 \\[3ex]
+            = 1792 + 80 + 12 \\[3ex]
+            \therefore 75C_{16} = 1884 \\[3ex]
+
+            DEC \rightarrow BIN \\[3ex]
+
+            \begin{array}{c|c}
+            2 & 1884 \\
+            \hline
+            2 & 942 \:R\: 0 \\
+            \hline
+            2 & 471 \:R\: 0 \\
+            \hline
+            2 & 235 \:R\: 1 \\
+            \hline
+            2 & 117 \:R\: 1 \\
+            \hline
+            2 & 58 \:R\: 1 \\
+            \hline
+            2 & 29 \:R\: 0 \\
+            \hline
+            2 & 14 \:R\: 1 \\
+            \hline
+            2 & 7 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            1884 = 11101011100_2 \\[3ex]
+            $
+            &there4; $75C_{16} = 11101011100_2$
+            <br><br>
+
+            <u>Second Method:</u><b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$
+              Conversion Table</b>
+            <br>
+            This is a short method. <br><br>
+            Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            $75C_{16}$ <br>
+            We begin from behind <br>
+            $C = 1100$ <br>
+            $5 = 0101$ <br>
+            $7 = 0111$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $0111 \:0101\: 1100$ <br>
+            Remove any leading zero(s) if any. <br>
+            Leading zeros are zeros that may be in front of the first set of digits. <br>
+            In this case, there is only one leading zero. <br>
+            $111 \:0101\: 1100$ <br><br>
+            &there4; $\therefore 75C_{16} = 11101011100_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Calculate the binary expansion of $3AC1_{16}$ <br>
+          Solve this question using <u>at least two</u> different methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA11')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA11">
+            <br>
+            This means that $3AC1$ in base sixteen needs to be converted to a number in base two.
+            <br><br>
+            <u>First Method:</u><b>$\:HEX \rightarrow DEC \rightarrow BIN$</b> <br>
+            This is a long method.
+            <br><br>
+            $
+            HEX \rightarrow DEC \\[3ex]
+            3AC1_{16} \\[3ex]
+            = 3 * 16^3 + 10 * 16^2 + 12 * 16^1 + 1 * 16^0 \\[3ex]
+            = 3 * 4096 + 10 * 256 + 12 * 16 + 1 * 1 \\[3ex]
+            = 12288 + 2560 + 192 + 1 \\[3ex]
+            \therefore 3AC1_{16} = 15041 \\[3ex]
+
+            DEC \rightarrow BIN \\[3ex]
+
+            \begin{array}{c|c}
+            2 & 15041 \\
+            \hline
+            2 & 7520 \:R\: 1 \\
+            \hline
+            2 & 3760 \:R\: 0 \\
+            \hline
+            2 & 1880 \:R\: 0 \\
+            \hline
+            2 & 940 \:R\: 0 \\
+            \hline
+            2 & 470 \:R\: 0 \\
+            \hline
+            2 & 235 \:R\: 0 \\
+            \hline
+            2 & 117 \:R\: 1 \\
+            \hline
+            2 & 58 \:R\: 1 \\
+            \hline
+            2 & 29 \:R\: 0 \\
+            \hline
+            2 & 14 \:R\: 1 \\
+            \hline
+            2 & 7 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            15041 = 11101011000001_2 \\[3ex]
+            $
+            &there4; $3AC1_{16} = 11101011000001_2$
+            <br><br>
+
+            <u>Second Method:</u>
+            <b>$\:BIN \rightarrow DEC \rightarrow HEX \rightarrow OCT \rightarrow QUA \:$ Conversion Table</b> <br>
+            This is a short method. <br><br>
+            Remember that each digit in $HEX$ is equivalent to four digits in $BIN$ <br>
+            $3AC1_{16}$ <br>
+            We begin from behind <br>
+            $1 = 0001$ <br>
+            $C = 1100$ <br>
+            $A = 1010$ <br>
+            $3 = 0011$ <br>
+            We write it upwards (beginning from the bottom)<br>
+            $0011 \:1010\: :1100\: 0001$ <br>
+            Remove any leading zero(s) if any. <br>
+            Leading zeros are zeros that may be in front of the first set of digits. <br>
+            In this case, there are two leading zeros. <br>
+            $11 \:1010\: :1100\: 0001$ <br><br>
+            &there4; $\therefore 3AC1_{16} = 11101011000001_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) 1000111<sub>2</sub> * 1111000<sub>2</sub>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA12')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA12">
+            <br>
+            <u>First Method:</u> <b>Operate in Base Two</b> <br>
+            We shall do our multiplication the usual way we multiply numbers. <br>
+            Remember that Multiplication is Repeated Addition. <br><br>
+            $
+            \begin{align}
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1\ \ \\
+            * \ \ 1\ \ 1\ \ 1\ \ 1\ \ 0\ \ 0\ \ 0\ \ \\
+            \hline
+            \end{align} \\[3ex]
+            $
+            The minuend = $1000111$ <br>
+            It is seven digits <br>
+            The subtrahend = $1111000$ <br>
+            It is also seven digits <br>
+            Line them up <br>
+            Do the multiplications <br>
+            Do the additions <br><br>
+            $
+            \begin{align}
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1\ \ \\
+            * \ \ 1\ \ 1\ \ 1\ \ 1\ \ 0\ \ 0\ \ 0\ \ \\
+            \hline
+            0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0\ \ \\
+            0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0~~~~\ \ \\
+            0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0\ \ 0~~~~~~~~\ \ \\
+            + \ \ \ \ \ \ \ \ \ \ 1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1~~~~~~~~~~~~\ \ \\
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1~~~~~~~~~~~~~~~~\ \ \\
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1~~~~~~~~~~~~~~~~~~~~\ \ \\
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1~~~~~~~~~~~~~~~~~~~~~~~~\ \ \\
+            \hline
+            1\ \ 0\ \ 0\ \ 0\ \ 0\ \ 1\ \ 0\ \ 1\ \ 0\ \ 0\ \ 1\ \ 0\ \ 0\ \ 0~~ \\
+            \hline \\[3ex]
+            \end{align}
+            $
+            &there4; $1000111_2 * 1111000_2 = 10000101001000_2$
+            <br><br>
+
+            <u>Second Method:</u> <b>Convert to Base Ten, Operate in Base Ten, Convert to Base Two</b> <br><br>
+            $
+            \underline{Convert\;\;to\;\;Base\;\;Ten} \\[3ex]
+            1000111_2 \\[3ex]
+            = 1 * 2^6 + 0 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1 * 2^0 \\[3ex]
+            = 1(64) + 0 + 0 + 0 + 1(4) + 1(2) + 1(1) \\[3ex]
+            = 64 + 4 + 2 + 1 \\[3ex]
+            = 71 \\[5ex]
+            1111000_2 \\[3ex]
+            = 1 * 2^6 + 1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 \\[3ex]
+            = 1(64) + 1(32) + 1(16) + 1(8) + 0 + 0 + 0 \\[3ex]
+            = 64 + 32 + 16 + 8 \\[3ex]
+            = 120 \\[5ex]
+            \underline{Operate\;\;in\;\;Base\;\;Ten} \\[3ex]
+            71 * 120 = 8520 \\[5ex]
+            \underline{Convert\;\;to\;\;Base\;\;Two} \\[3ex]
+            \begin{array}{c|c}
+            2 & 8520 \\
+            \hline
+            2 & 4260 \:R\: 0 \\
+            \hline
+            2 & 2130 \:R\: 0 \\
+            \hline
+            2 & 1065 \:R\: 0 \\
+            \hline
+            2 & 532 \:R\: 1 \\
+            \hline
+            2 & 266 \:R\: 0 \\
+            \hline
+            2 & 133 \:R\: 0 \\
+            \hline
+            2 & 66 \:R\: 1 \\
+            \hline
+            2 & 33 \:R\: 0 \\
+            \hline
+            2 & 16 \:R\: 1 \\
+            \hline
+            2 & 8 \:R\: 0 \\
+            \hline
+            2 & 4 \:R\: 0 \\
+            \hline
+            2 & 2 \:R\: 0 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            8520 = 11000100100011000_2 \\[3ex]
+            $
+            &there4; $1000111_2 * 1111000_2 = 10000101001000_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) 1000111<sub>2</sub> + 1111000<sub>2</sub>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA13')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA13">
+            <br>
+            <u>First Method:</u> <b>Operate in Base Two</b>
+            <br><br>
+            $
+            \begin{align}
+            1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1\ \ \\
+            + \ \ 1\ \ 1\ \ 1\ \ 1\ \ 0\ \ 0\ \ 0\ \ \\
+            \hline
+            \end{align} \\[3ex]
+            $
+            The augend = $1000111$ <br>
+            It is seven digits <br>
+            The addend = $1111000$ <br>
+            It is also seven digits <br>
+            Line them up <br>
+            Add each digit of the augend to the corresponding digit of the addend <br>
+            Begin from the left
+            <br><br>
+            $
+            1 + 0 = 1 \\[3ex]
+            1 + 0 = 1 \\[3ex]
+            1 + 0 = 1 \\[3ex]
+            0 + 1 = 1 \\[3ex]
+            0 + 1 = 1 \\[3ex]
+            0 + 1 = 1 \\[3ex]
+            1 + 1 = 2 = 10 \: (Remember \:that\: 2 = 10_2) \\[3ex]
+            $
+            Write the result upwards beginning from the bottom <br>
+            This gives: $10111111$ <br><br>
+            $
+            \begin{align}
+            \ \ 1\ \ 0\ \ 0\ \ 0\ \ 1\ \ 1\ \ 1\ \ \\
+            + \ \ \ \ 1\ \ 1\ \ 1\ \ 1\ \ 0\ \ 0\ \ 0\ \ \\
+            \hline
+            1\ \ 0\ \ 1\ \ 1\ \ 1\ \ 1\ \ 1\ \ 1~~ \\
+            \hline \\[3ex]
+            \end{align}
+            $
+            &there4; $1000111_2 + 1111000_2 = 10111111_2$
+            <br><br>
+
+            <u>Second Method:</u> <b>Convert to Base Ten, Operate in Base Ten, Convert to Base Two</b>
+            <br><br>
+            $
+            \underline{Convert\;\;to\;\;Base\;\;Ten} \\[3ex]
+            1000111_2 \\[3ex]
+            = 1 * 2^6 + 0 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 1 * 2^1 + 1 * 2^0 \\[3ex]
+            = 1(64) + 0 + 0 + 0 + 1(4) + 1(2) + 1(1) \\[3ex]
+            = 64 + 4 + 2 + 1 \\[3ex]
+            = 71 \\[5ex]
+            1111000_2 \\[3ex]
+            = 1 * 2^6 + 1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 0 * 2^0 \\[3ex]
+            = 1(64) + 1(32) + 1(16) + 1(8) + 0 + 0 + 0 \\[3ex]
+            = 64 + 32 + 16 + 8 \\[3ex]
+            = 120 \\[5ex]
+            \underline{Operate\;\;in\;\;Base\;\;Ten} \\[3ex]
+            71 + 120 = 191 \\[5ex]
+            \underline{Convert\;\;to\;\;Base\;\;Two} \\[3ex]
+            \begin{array}{c|c}
+            2 & 191 \\
+            \hline
+            2 & 95 \:R\: 1 \\
+            \hline
+            2 & 47 \:R\: 1 \\
+            \hline
+            2 & 23 \:R\: 1 \\
+            \hline
+            2 & 11 \:R\: 1 \\
+            \hline
+            2 & 5 \:R\: 1 \\
+            \hline
+            2 & 2 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            191 = 10111111_2 \\[3ex]
+            $
+            &there4; $1000111_2 + 1111000_2 = 10111111_2$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Calculate $3^{57} \mod 317$ <br>
+          Method: <b>Fast Modular Multiplication</b>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA14')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA14">
+            <br>
+            <u>$1st$ Step:</u> Convert the exponent to a binary base.
+            $$
+            \begin{array}{c|c}
+            2 & 57 \\
+            \hline
+            2 & 28 \:R\: 1 \\
+            \hline
+            2 & 14 \:R\: 0 \\
+            \hline
+            2 & 7 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards}
+            $$
+            $$
+            57 = 111001_2
+            $$
+            <u>$2nd$ Step:</u> Write the place values of the binary digit.
+            $$
+            \begin{align}
+            2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0\ \ \\
+            1\ \ \ 1\ \ \ 1\ \ \ 0\ \ \ 0\ \ \ 1~~\ \ \
+            \end{align}
+            $$
+            <u>$3rd$ Step:</u> Simplify. Write the main problem as a product of smaller exponents. <br><br>
+            $
+            3^{57} = 3^{(1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0)} \\[3ex]
+            = 3^{(1 * 32 + 1 * 16 + 1 * 8 + 0 * 4 + 0 * 2 + 1 * 1)} \\[3ex]
+            = 3^{(32 + 16 + 8 + 0 + 0 + 1)} \\[3ex]
+            Apply \:the\: laws\: of\: exponents \\[3ex]
+            = 3^{32} * 3^{16} * 3^8 * 3^0 * 3^0 * 3^1 \\[3ex]
+            = 3^{32} * 3^{16} * 3^8 * 1 * 1 * 1 * 3 \\[3ex]
+            Going\: forward\:, we\: shall\: forget\: the\: zeros \\[3ex]
+            There\: is\: no\: need\: to\: write\: them \\[3ex]
+            Because\: any\: base\: exponent\: zero\: gives\: 1 \\[3ex]
+            3^{57} \mod 317 \\[3ex]
+            = (3^{32} * 3^{16} * 3^8 * 3) \mod 317 \\[3ex]
+            = 3^{32} \mod 317 * 3^{16} \mod 317 * 3^8 \mod 317 * 3 \mod 317 \\[3ex]
+            3 \mod 317 = \color{red}{3} \\[3ex]
+            We\: have\: 3^8, \:3^{16}, \:3^{32} \\[3ex]
+            My\: advice:\: Do\: it\: in\: twos\: assume\: 3^8\: gave\: a\: large\: result \\[3ex]
+            However,\: 3^8 = 6561 \\[3ex]
+            So,\: we\: can\: go\: ahead\: and\: do\: it\: directly \\[3ex]
+            3^8 \mod 317 \\[3ex]
+            = 6561 \mod 317 \\[3ex]
+            = \color{red}{221} \\[3ex]
+            3^{16} \mod 317 = (3^8)^2 \mod 317 \\[3ex]
+            = (221)^2 \mod 317 \\[3ex]
+            = 48841 \mod 317 = \color{red}{23} \\[3ex]
+            3^{32} \mod 317 = (3^{16})^2 \mod 317 \\[3ex]
+            = (23)^2 \mod 317 \\[3ex]
+            = 529 \mod 317 \\[3ex]
+            = \color{red}{212} \\[3ex]
+            3^{57} \mod 317 \\[3ex]
+            = (3^{32} * 3^{16} * 3^8 * 3) \mod 317 \\[3ex]
+            = (3^{32} \mod 317 * 3^{16} \mod 317 * 3^8 \mod 317 * 3 \mod 317) \mod 317 \\[3ex]
+            = (212 * 23 * 221 * 3) \mod 317 \\[3ex]
+            = 3232788 \mod 317 \\[3ex]
+            = 22 \\[3ex]
+            $
+            $\therefore 3^{57} \mod 317 = 22$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) Calculate $3^{57} \mod 317$ <br>
+          Method: <b>Modular Exponentiation Algorithm</b>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA15')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA15">
+            <br>
+            <u>$1st$ Step:</u> Write the values of $a, b, n$ <br><br>
+            Compare $3^{57} \mod 317$ to $a^b \mod n$ <br><br>
+            $
+            a = 3 \\[3ex]
+            b = 57 \\[3ex]
+            n = 317 \\[3ex]
+            $
+            <u>$2nd$ Step:</u> Find the binary representation of $b$
+            $$
+            \begin{array}{c|c}
+            2 & 57 \\
+            \hline
+            2 & 28 \:R\: 1 \\
+            \hline
+            2 & 14 \:R\: 0 \\
+            \hline
+            2 & 7 \:R\: 0 \\
+            \hline
+            2 & 3 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 1 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards}
+            $$
+            <br>
+            $57 = \langle 111001 \rangle$ <br><br>
+
+            <u>$3rd$ Step:</u> Form a table and use the Modular Exponentiation algorithm to solve the problem. <br><br>
+            $
+            57 = \langle 111001 \rangle \\[3ex]
+            \langle 111001 \rangle = 111001_2 \\[3ex]
+            = 1 * 2^5 + 1 * 2^4 + 1 * 2^3 + 0 * 2^2 + 0 * 2^1 + 1 * 2^0 \\[3ex]
+            $
+            This means that: $i = 5...down\: to\: 0$ <br>
+            $i$ are the exponents. <br>
+            $b_i$ are the binary representations (the face values). <br><br>
+            $
+            a = 3 \\[3ex]
+            b = 57 \\[3ex]
+            n = 317 \\[3ex]
+            b_5 = 1 \\[3ex]
+            b_4 = 1 \\[3ex]
+            b_3 = 1 \\[3ex]
+            b_2 = 0 \\[3ex]
+            b_1 = 0 \\[3ex]
+            b_0 = 1 \\[3ex]
+            $
+            Let us do the algorithm step-by-step <br><br>
+            Initial: $c = 0$, $d = 1$
+            </p>
+            <p>
+              For $i = 5$ <br>
+              $b_5 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 0$ <br>
+              $c = 0$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (1 * 1) \mod 317$ <br>
+              $d = 1 \mod 317$ <br>
+              $d = 1$ <br><br>
+              But $b_5 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 0 + 1$ <br>
+              $c = 1$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (1 * 3) \mod 317$ <br>
+              $d = 3 \mod 317$ <br>
+              $d = 3$
+            </p>
+            <hr>
+            <p>
+              We shall not initial again. The initialization is for the first case. <br><br>
+              For $i = 4$ <br>
+              $b_4 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 1$ <br>
+              $c = 2$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (3 * 3) \mod 317$ <br>
+              $d = 9 \mod 317$ <br>
+              $d = 9$ <br><br>
+              But $b_4 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 2 + 1$ <br>
+              $c = 3$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (9 * 3) \mod 317$ <br>
+              $d = 27 \mod 317$ <br>
+              $d = 27$
+            </p>
+            <hr>
+            <p>
+              For $i = 3$ <br>
+              $b_3 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 3$ <br>
+              $c = 6$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (27 * 27) \mod 317$ <br>
+              $d = 729 \mod 317$ <br>
+              $d = 95$ <br><br>
+              But $b_3 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 6 + 1$ <br>
+              $c = 7$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (95 * 3) \mod 317$ <br>
+              $d = 285 \mod 317$ <br>
+              $d = 285$
+            </p>
+            <hr>
+            <p>
+              For $i = 2$ <br>
+              $b_2 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 7$ <br>
+              $c = 14$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (285 * 285) \mod 317$ <br>
+              $d = 81225 \mod 317$ <br>
+              $d = 73$ <br><br>
+              But $b_2 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 1$ <br>
+              $b_1 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 14$ <br>
+              $c = 28$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (73 * 73) \mod 317$ <br>
+              $d = 5329 \mod 317$ <br>
+              $d = 257$ <br><br>
+              But $b_1 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 0$ <br>
+              $b_0 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 28$ <br>
+              $c = 56$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (257 * 257) \mod 317$ <br>
+              $d = 66049 \mod 317$ <br>
+              $d = 113$ <br><br>
+              But $b_0 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 56 + 1$ <br>
+              $c = 57$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (113 * 3) \mod 317$ <br>
+              $d = 339 \mod 317$ <br>
+              $d = 22$
+            </p>
+
+            <table class="w3-center">
+              <tr>
+                <td>
+                  $i$
+                </td>
+                <td>
+                  $5$
+                </td>
+                <td>
+                  $4$
+                </td>
+                <td>
+                  $3$
+                </td>
+                <td>
+                  $2$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $b_i$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $1$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $c$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $3$
+                </td>
+                <td>
+                  $7$
+                </td>
+                <td>
+                  $14$
+                </td>
+                <td>
+                  $28$
+                </td>
+                <td>
+                  $57$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $d$
+                </td>
+                <td>
+                  $3$
+                </td>
+                <td>
+                  $27$
+                </td>
+                <td>
+                  $285$
+                </td>
+                <td>
+                  $73$
+                </td>
+                <td>
+                  $257$
+                </td>
+                <td>
+                  $22$ <br>
+                  return $d$
+                </td>
+              </tr>
+              <tr>
+                <td colspan="7">
+                  $\therefore 3^{57} \mod 317 = 22$
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) Calculate $11^{644} \mod 645$ <br>
+          Method: <b>Fast Modular Multiplication</b>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA16')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA16">
+            <br>
+            <u>$1st$ Step:</u> Convert the exponent to a binary base.
+            $$
+            \begin{array}{c|c}
+            2 & 644 \\
+            \hline
+            2 & 322 \:R\: 0 \\
+            \hline
+            2 & 161 \:R\: 0 \\
+            \hline
+            2 & 80 \:R\: 1 \\
+            \hline
+            2 & 40 \:R\: 0 \\
+            \hline
+            2 & 20 \:R\: 1 \\
+            \hline
+            2 & 10 \:R\: 0 \\
+            \hline
+            2 & 5 \:R\: 1 \\
+            \hline
+            2 & 2 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards}
+            $$
+            $$
+            644 = 1010000100_2
+            $$
+            <u>$2nd$ Step:</u> Write the place values of the binary digit.
+            $$
+            \begin{align}
+            2^9\ \ 2^8\ \ 2^7\ \ 2^6\ \ 2^5\ \ 2^4\ \ 2^3\ \ 2^2\ \ 2^1\ \ 2^0 \\
+            1\ \ \ 0\ \ \ 1\ \ \ 0\ \ \ \ 0\ \ \ \ 0\ \ \ \ 0\ \ \ \ 1\ \ \ 0\ \ \ 0\ \ \
+            \end{align}
+            $$
+            <u>$3rd$ Step:</u> Simplify. Write the main problem as a product of smaller exponents. <br>
+            $
+            11^{644} \\[3ex]
+            Forget\: the\: zeros \\[3ex]
+            = 11^{(1 * 2^9 + 1 * 2^7 + 1 * 2^2)} \\[3ex]
+            = 11^{(1 * 512 + 1 * 128 + 1 * 4)} \\[3ex]
+            = 11^{(512 + 128 + 4)} \\[3ex]
+            Apply \:the\: laws\: of\: exponents \\[3ex]
+            = 11^{512} * 11^{128} * 11^4 \\[3ex]
+            11^{644} \mod 645 \\[3ex]
+            = (11^{512} * 11^{128} * 11^4) \mod 645 \\[3ex]
+            = 11^{512} \mod 645 * 11^{128} \mod 645 * 11^4 \mod 645 \\[3ex]
+            11^4 \mod 645 \\[3ex]
+            = 14641 \mod 645 \\[3ex]
+            = \color{red}{451} \\[3ex]
+            We\: have\: 11^4, 11^{128}, 11^{512} \\[3ex]
+            My\: advice:\: Do\: it\: gradually\: because\: 11^{128} \:gives\: a\: large\: result \\[3ex]
+            Let\: us\: do\: 11^8, 11^{16}, 11^{32}, ... \\[3ex]
+            We \:may\: skip\: around\: if\: we\: find\: a\: result\: that\: is\: not\: large \\[3ex]
+            11^8 \mod 645 \\[3ex]
+            = (11^4)^2 \mod 645 \\[3ex]
+            = 451^2 \mod 645 \\[3ex]
+            = 203401 \mod 645 \\[3ex]
+            = 226 \\[3ex]
+            11^{16} \mod 645 \\[3ex]
+            = (11^8)^2 \mod 645 \\[3ex]
+            = 226^2 \mod 645 \\[3ex]
+            = 51076 \mod 645 \\[3ex]
+            = 121 \\[3ex]
+            11^{32} \mod 645 \\[3ex]
+            = (11^{16})^2 \mod 645 \\[3ex]
+            = 121^2 \mod 645 \\[3ex]
+            = 14641 \mod 645 \\[3ex]
+            = 451 \\[3ex]
+            $
+            Did you notice something? <br>
+            Let us save some time
+            <br><br>
+            $
+            11^{64} \mod 645 \\[3ex]
+            = (11^{32})^2 \mod 645 \\[3ex]
+            = 451^2 \mod 645 \\[3ex]
+            = 226 \\[3ex]
+            11^{128} \mod 645 \\[3ex]
+            = (11^{64})^2 \mod 645 \\[3ex]
+            = \color{red}{121} \\[3ex]
+            11^{256} \mod 645 \\[3ex]
+            = (11^{128})^2 \mod 645 \\[3ex]
+            = 451 \\[3ex]
+            11^{512} \mod 645 \\[3ex]
+            = (11^{256})^2 \mod 645 \\[3ex]
+            = \color{red}{226} \\[3ex]
+            11^{644} \mod 645 \\[3ex]
+            = (11^{512} * 11^{128} * 11^4) \mod 645 \\[3ex]
+            = (11^{512} \mod 645 * 11^{128} \mod 645 * 11^4 \mod 645) \mod 645 \\[3ex]
+            = (226 * 121 * 451) \mod 645 \\[3ex]
+            = 12333046 \mod 645 \\[3ex]
+            = 1 \\[3ex]
+            $
+            $\therefore 11^{644} \mod 645 = 1$
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) Calculate $11^{644} \mod 645$ <br>
+          Method: <b>Modular Exponentiation Algorithm</b>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA17')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA17">
+            <br>
+            <u>$1st$ Step:</u> Write the values of $a, b, n$ <br><br>
+            Compare $11^{644} \mod 645$ to $a^b \mod n$ <br><br>
+            $
+            a = 11 \\[3ex]
+            b = 644 \\[3ex]
+            n = 645 \\[3ex]
+            $
+            <u>$2nd$ Step:</u> Find the binary representation of $b$
+            $$
+            \begin{array}{c|c}
+            2 & 644 \\
+            \hline
+            2 & 322 \:R\: 0 \\
+            \hline
+            2 & 161 \:R\: 0 \\
+            \hline
+            2 & 80 \:R\: 1 \\
+            \hline
+            2 & 40 \:R\: 0 \\
+            \hline
+            2 & 20 \:R\: 0 \\
+            \hline
+            2 & 10 \:R\: 0 \\
+            \hline
+            2 & 5 \:R\: 0 \\
+            \hline
+            2 & 2 \:R\: 1 \\
+            \hline
+            2 & 1 \:R\: 0 \\
+            \hline
+            & 0 \:R\: 1
+            \end{array}
+            \text{Count the remainders upwards}
+            $$
+            <br>
+            $644 = \langle 1010000100 \rangle$ <br><br>
+
+            <u>$3^{rd}$ Step:</u> Form a table and use the Modular Exponentiation algorithm to solve the problem.
+            <br><br>
+            $
+            644 = \langle 1010000100 \rangle \\[3ex]
+            \langle 1010000100 \rangle = 1010000100_2 \\[3ex]
+            = 1 * 2^9 + 0 * 2^8 + 1 * 2^7 + 0 * 2^6 + 0 * 2^5 + 0 * 2^4 + 0 * 2^3 + 1 * 2^2 + 0 * 2^1 + 0 * 2^0
+            \\[3ex]
+            $
+            This means that: $i = 9...down\: to\: 0$ <br>
+            $i$ are the exponents. <br>
+            $b_i$ are the binary representations (the face values). <br><br>
+            $
+            a = 11 \\[3ex]
+            b = 644 \\[3ex]
+            n = 645 \\[3ex]
+            b_9 = 1 \\[3ex]
+            b_8 = 0 \\[3ex]
+            b_7 = 1 \\[3ex]
+            b_6 = 0 \\[3ex]
+            b_5 = 0 \\[3ex]
+            b_4 = 0 \\[3ex]
+            b_3 = 0 \\[3ex]
+            b_2 = 1 \\[3ex]
+            b_1 = 0 \\[3ex]
+            b_0 = 0 \\[3ex]
+            $
+            Let us do the algorithm step-by-step <br><br>
+            Initial: $c = 0$, $d = 1$
+            </p>
+            <p>
+              For $i = 9$ <br>
+              $b_9 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 0$ <br>
+              $c = 0$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (1 * 1) \mod 645$ <br>
+              $d = 1 \mod 645$ <br>
+              $d = 1$ <br><br>
+              But $b_9 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 0 + 1$ <br>
+              $c = 1$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (1 * 11) \mod 645$ <br>
+              $d = 11 \mod 645$ <br>
+              $d = 11$
+            </p>
+            <hr>
+            <p>
+              We shall not initial again. The initialization is for the first case.
+              <br><br>
+              For $i = 8$ <br>
+              $b_8 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 1$ <br>
+              $c = 2$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (11 * 11) \mod 645$ <br>
+              $d = 121 \mod 645$ <br>
+              $d = 121$ <br><br>
+              But $b_8 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 7$ <br>
+              $b_7 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 2$ <br>
+              $c = 4$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (121 * 121) \mod 645$ <br>
+              $d = 14641 \mod 645$ <br>
+              $d = 451$ <br><br>
+              But $b_7 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 4 + 1$ <br>
+              $c = 5$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (451 * 11) \mod 645$ <br>
+              $d = 4961 \mod 645$ <br>
+              $d = 446$
+            </p>
+            <hr>
+            <p>
+              For $i = 6$ <br>
+              $b_6 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 5$ <br>
+              $c = 10$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (446 * 446) \mod 645$ <br>
+              $d = 198916 \mod 645$ <br>
+              $d = 256$ <br><br>
+              But $b_6 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 5$ <br>
+              $b_5 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 10$ <br>
+              $c = 20$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (256 * 256) \mod 645$ <br>
+              $d = 65536 \mod 645$ <br>
+              $d = 391$ <br><br>
+              But $b_5 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 4$ <br>
+              $b_4 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 20$ <br>
+              $c = 40$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (391 * 391) \mod 645$ <br>
+              $d = 152881 \mod 645$ <br>
+              $d = 16$ <br><br>
+              But $b_4 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 3$ <br>
+              $b_3 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 40$ <br>
+              $c = 80$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (16 * 16) \mod 645$ <br>
+              $d = 256 \mod 645$ <br>
+              $d = 256$ <br><br>
+              But $b_3 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 2$ <br>
+              $b_2 = 1$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 80$ <br>
+              $c = 160$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (256 * 256) \mod 645$ <br>
+              $d = 65536 \mod 645$ <br>
+              $d = 391$ <br><br>
+              But $b_2 = 1$ <br>
+              $c = c + 1$ <br>
+              $c = 160 + 1$ <br>
+              $c = 161$ <br><br>
+              $d = (d * a) \mod n$ <br>
+              $d = (391 * 11) \mod 645$ <br>
+              $d = 4301 \mod 645$ <br>
+              $d = 431$
+            </p>
+            <hr>
+            <p>
+              For $i = 1$ <br>
+              $b_1 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 161$ <br>
+              $c = 322$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (431 * 431) \mod 645$ <br>
+              $d = 185761 \mod 645$ <br>
+              $d = 1$ <br><br>
+              But $b_1 = 0$ <br>
+              Stop.
+            </p>
+            <hr>
+            <p>
+              For $i = 0$ <br>
+              $b_0 = 0$ <br>
+              $c = 2c$ <br>
+              $c = 2 * 322$ <br>
+              $c = 644$ <br><br>
+              $d = (d * d) \mod n$ <br>
+              $d = (1 * 1) \mod 645$ <br>
+              $d = 1 \mod 645$ <br>
+              $d = 1$ <br><br>
+              But $b_0 = 0$ <br>
+              Stop.
+            </p>
+
+            <table class="w3-center">
+              <tr>
+                <td>
+                  $i$
+                </td>
+                <td>
+                  $9$
+                </td>
+                <td>
+                  $8$
+                </td>
+                <td>
+                  $7$
+                </td>
+                <td>
+                  $6$
+                </td>
+                <td>
+                  $5$
+                </td>
+                <td>
+                  $4$
+                </td>
+                <td>
+                  $3$
+                </td>
+                <td>
+                  $2$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $b_i$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $0$
+                </td>
+                <td>
+                  $0$
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  $c$
+                </td>
+                <td>
+                  $1$
+                </td>
+                <td>
+                  $2$
+                </td>
+                <td>
+                  $5$
+                </td>
+                <td>
+                  $10$
+                </td>
+                <td>
+                  $20$
+                </td>
+                <td>
+                  $40$
+                </td>
+                <td>
+                  $80$
+                </td>
+                <td>
+                  $161$
+                </td>
+                <td>
+                  $322$
+                </td>
+                <td>
+                  $644$
+                </td>
+              </tr>
+              <tr>
+                <td>$d$</td>
+                <td>$11$</td>
+                <td>$121$</td>
+                <td>$446$</td>
+                <td>$256$</td>
+                <td>$391$</td>
+                <td>$16$</td>
+                <td>$256$</td>
+                <td>$431$</td>
+                <td>$1$</td>
+                <td>
+                  $1$ <br>
+                  return $d$
+                </td>
+              </tr>
+              <tr>
+                <td colspan="11">
+                  $\therefore 11^{644} \mod 645 = 1$
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) How many zeros does 10! end with, when 10! is written in base 9?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA18')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA18">
+            <br>
+            $
+            10! = 10 * 9 * 8 * 7 * 6 * 5 * 4 * 3 * 2 * 1 = 3628800 \\[3ex]
+            3628800 \text{ is in base 10}. \\[3ex]
+            \text{Let us convert it to base 9} \\[3ex]
+            \begin{array}{c|c}
+            9 & 3628800 \\
+            \hline
+            9 & 403200 \:R\: 0 \\
+            \hline
+            9 & 44800 \:R\: 0 \\
+            \hline
+            9 & 4977 \:R\: 7 \\
+            \hline
+            9 & 553 \:R\: 0 \\
+            \hline
+            9 & 61 \:R\: 4 \\
+            \hline
+            9 & 6 \:R\: 7 \\
+            \hline
+            & 0 \:R\: 6
+            \end{array}
+            \text{Count the remainders upwards} \\[3ex]
+            3628800 = 6740700_9 \\[3ex]
+            $
+            &therefore; $3628800 = 6740700_9$ <br>
+            The number of zeros at the end is 2.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA19')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA20')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA20">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/MATHEMATICS/MathematicalLogic.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA21')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA22')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA23')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA24')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA25')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA26')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA27')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA28')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA29')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionMA30')">Show/Hide Answer</button>
+          <div class="result" id="solutionMA30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

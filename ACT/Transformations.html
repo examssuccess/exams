@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Transformations</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on transformations.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, 
+  Arithmetic, Algebra, Mathematics, algebra, geometry, transformations, algebra transformations, translations, shifts, reflections, stretches, 
+              compressions, functions, function family, parent functions, child functions, toolbox functions, identity
+              functions, linear functions, quadratic functions, squaring functions, cubic functions, cubing functions, 
+              positive square root functions, cube root functions, absolute value functions, reciprocal functions, 
+              exponential functions, logarithmic functions, trigonometric functions, Samdom's pneumonic, horizontal 
+              shift, HOSH, horizontal reflection, HORE, horizontal stretch, HOST, horizontal compression, HOCO, vertical 
+              compression, VECO, vertical stretch, VEST, vertical reflection, VERE, vertical shift, VESH, vertical, 
+              horizontal,  isometry, translations, reflections, rotations, dilations, glide reflections, preimage, image, rigid transformations, 
+        congruence transformations, similarity transformations, line of reflection, line symmetry, mirror symmetry, line of symmetry, 
+        reflectional symmetry, mirror line, translation rule, translation vector, rotational symmetry, transformation matrix, 
+        matrix of transformation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#algebraTransformations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Algebra
+        Transformations</a>
+      <a href="#geometryTransformations" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Geometry
+        Transformations</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Algebra Transformations and Geometry Transformations</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Algebra Transformations and Geometry
+        Transformations. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Algebra Transformations -->
+    <div class="w3-container w3-padding-32" id="algebraTransformations">
+      <h2>Algebra Transformations: Notable Notes and Formulas</h2>
+      <p>
+        <b>SAMDOM FOR PEACE Pneumonic for the Transformation of Functions</b> <br>
+        <b>HOSH</b>: Horizontal Shift <br>
+        <b>HORE</b>: Horizontal Reflection <br>
+        <b>HOST</b>: Horizontal Stretch <br>
+        <b>HOCO</b>: Horizontal Compression <br>
+        <b>VECO</b>: Vertical Compression <br>
+        <b>VEST</b>: Vertical Stretch <br>
+        <b>VERE</b>: Vertical Reflection <br>
+        <b>VESH</b>: Vertical Shift
+        <br><br>
+        $
+        y = f(x) ...Parent\;\;Function \\[3ex]
+        k = number \\[5ex]
+        (I.)\;\; y = f(x) + k ...VESH\;\;k\;\;units\;\;up \\[5ex]
+        (II.)\;\; y = f(x) - k ...VESH\;\;k\;\;units\;\;down \\[5ex]
+        (III.)\;\; y = f(x + k) ...HOSH\;\;k\;\;units\;\;left
+        ...\text{coordinates translated }\;\;k\;\;\text{units to the right} \\[5ex]
+        (IV.)\;\; y = f(x - k) ...HOSH\;\;k\;\;units\;\;right
+        ...\text{coordinates translated }\;\;k\;\;\text{units to the left} \\[5ex]
+        (V.)\;\; y = -f(x) ... VERE \\[5ex]
+        (VI.)\;\; y = f(-x) ... HORE \\[5ex]
+        (VII.)\;\; y = kf(x) \;\;\;where\;\;\; k \gt 1 ...VEST\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;y-coordinate\;\;by\;\;k \\[5ex]
+        (VIII.)\;\; y = kf(x) \;\;\;where\;\;\; 0 \lt k \lt 1 ...VECO\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;y-coordinate\;\;by\;\;k \\[5ex]
+        (IX.)\;\; y = f(kx) \;\;\;where\;\;\; 0 \lt k \lt 1 ...HOST\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;x-coordinate\;\;by\;\;\dfrac{1}{k} \\[5ex]
+        (X.)\;\; y = f(kx) \;\;\;where\;\;\; k \gt 1 ...HOCO\;\;by\;\;factor\;\;of\;\;k
+        ...multiply\;\;x-coordinate\;\;by\;\;\dfrac{1}{k}
+        $
+      </p>
+    </div>
+    <!-- End Algebra Transformations -->
+
+    <!-- Geometry Transformations -->
+    <div class="w3-container w3-padding-32" id="geometryTransformations">
+      <h2>Geometry Transformations: Notable Notes and Formulas</h2>
+      <p>
+        <b>Translation (Sliding or Gliding)</b> <br>
+        For any point, (x<sub>1</sub>, y<sub>1</sub>); <br>
+        A translation vector of &LT;x, y&GT; is the same as the translation rule of (x<sub>1</sub> + x, y<sub>1</sub>+y)
+        <br>
+        Say: <br>
+        preimage = (x<sub>1</sub>, y<sub>1</sub>), <br>
+        translation vector = &LT;x, y&GT;, <br>
+        image = (x<sub>2</sub>, y<sub>2</sub>);
+        <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> + x <br>
+        y<sub>2</sub> = y<sub>1</sub> + y
+        <br><br>
+        Translated <b>left</b> or <b>right:</b> <br>
+        only the x-coordinate changes <br>
+        the y-coordinate remains
+        <br><br>
+        Translated <b>up</b> or <b>down:</b> <br>
+        only the y-coordinate changes <br>
+        the x-coordinate remains
+        <br><br>
+        translated <i>x units</i> left: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> &minus; x <br>
+        y<sub>2</sub> = y<sub>1</sub>
+        <br><br>
+        translated <i>x units</i> right: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> + x <br>
+        y<sub>2</sub> = y<sub>1</sub>
+        <br><br>
+        translated <i>y units</i> up: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> <br>
+        y<sub>2</sub> = y<sub>1</sub> + y
+        <br><br>
+        translated <i>y units</i> down: <br>
+        then: <br>
+        x<sub>2</sub> = x<sub>1</sub> <br>
+        y<sub>2</sub> = y<sub>1</sub> &minus; y
+        <br><br>
+        <b>Reflection (Flipping)</b> <br>
+        On the x-axis, y-values are zero. <br>
+        Reflecting across the x-axis: <br>
+        y-coordinate changes, x-coordinate remains.
+        <br><br>
+
+        On the y-axis, x-values are zero. <br>
+        Reflecting across the y-axis: <br>
+        x-coordinate changes, y-coordinate remains.
+        <br><br>
+        Reflecting across the origin: <br>
+        both the x-coordinate and the y-coordinate changes.
+        <br><br>
+        Reflecting across the line: x = k (k is a constant): <br>
+        the x-coordinate changes, y-coordinate remains.
+        <br><br>
+        Reflecting across the line: y = k (k is a constant) <br>
+        the y-coordinate changes, x-coordinate remains.
+        <br><br>
+        Reflecting across the line: y = x: <br>
+        both the x-coordinate and the y-coordinate changes.
+        <br><br>
+        For any point, (x, y); <br>
+        Reflection across the x-axis gives (x, &minus;y) <br>
+        Reflection across the y-axis gives (&minus;x, y) <br>
+        Reflection across the origin gives (&minus;x, &minus;y) <br>
+        Reflection across the line: y = x gives (y, x) <br>
+        Reflection across the line: y = k (k is a constant) gives (x, 2k &minus; y) <br>
+        Reflection across the line: x = k (k is a constant) gives (2k &minus; x, y)
+        <br><br>
+        <b>Rotation (Turning)</b> <br>
+        A preimage is rotated about the <i>center of rotation</i> through an <i>angle of rotation</i>. <br>
+        If the preimage is rotated in a counterclockwise direction, the angle of rotation is positive. <br>
+        If the preimage is rotated in a clockwise direction, the angle of rotation is negative.
+        <br><br>
+
+        Given: <br>
+        the preimage (x, y), <br>
+        the center of rotation as the origin (0, 0), <br>
+        an angle of rotation, &theta;; <br>
+        the image would be $(x', y')$ <br>
+        where:
+        <br><br>
+        $
+        x' = x\cos\theta - y\sin\theta \\[3ex]
+        y' = y\cos\theta + x\sin\theta \\[3ex]
+        $
+        For <b>counterclockwise rotations</b>, use the <b>positive value</b> of &theta; <br>
+        For <b>clockwise rotations</b>, use the <b>negative value</b> of &theta;
+        <br><br>
+
+        Given: <br>
+        the preimage (x<sub>1</sub>, y<sub>1</sub>), <br>
+        the center of rotation as any point (x, y), <br>
+        an angle of rotation, &theta;; <br>
+        the image would be $(x_1', y_1')$ <br>
+        where:
+        <br><br>
+        $
+        x_1' = [\cos\theta(x_1 - x) - \sin\theta(y_1 - y)] + x \\[3ex]
+        y_1' = [\cos\theta(y_1 - y) + \sin\theta(x_1 - x)] + y
+        $
+      </p>
+    </div>
+    <!-- End Geometry Transformations -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Point (5, &minus;1), which is graphed in the standard (<i>x, y</i>) coordinate plane below, will be
+          reflected across the <i>x</i>-axis. <br>
+          What will be the coordinates of the image of <i>P</i>?
+          <br><br>
+          <img src="images/Transformations/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          $
+          F.\;\; (-5, -1) \\[3ex]
+          G.\;\; (-5, 1) \\[3ex]
+          H.\;\; (-1, 5) \\[3ex]
+          J.\;\; (5, -1) \\[3ex]
+          K.\;\; (5, 1) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionT1">
+            <br>
+            Reflected across the <i>x</i>-axis is Vertical Reflection <br>
+            This implies that only the <i>y</i>-coordinate changes (by multiplying by &minus;1). <br>
+            The <i>x</i>-coordinate does not change.
+            <br><br>
+            $
+            (5, -1) \hspace{1em} \underrightarrow{VERE} \hspace{1em} (5, -1 * -1) \\[3ex]
+            \hspace{7em} \rightarrow (5, 1)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) In order to obtain the graph of a new function, <i>g</i>(<i>t</i>), the graph of <i>f</i>(<i>t</i>) is
+          translated 2 units to the right and then reflected over the x-axis. <br>
+          The point (1, 90) on the graph of <i>f</i>(<i>t</i>) corresponds to what point on the graph of
+          <i>g</i>(<i>t</i>)?
+          <br><br>
+          $
+          F.\;\; (3, -90) \\[3ex]
+          G.\;\; (-3, 90) \\[3ex]
+          H.\;\; (-1, -90) \\[3ex]
+          J.\;\; (-1, 90) \\[3ex]
+          K.\;\; (90, 3) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionT2">
+            <br>
+            $
+            \underline{\text{Translated 2 units to the right: x-coordinate changes}} \\[3ex]
+            (1, 90) \rightarrow (1 + 2, 90) \\[3ex]
+            \hspace{3em} \rightarrow (3, 90) \\[5ex]
+            \underline{\text{Reflected over the x-axis: Vertical Reflection: y-coordinate changes}} \\[3ex]
+            (3, 90) \rightarrow (3, -90)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) In the standard (<i>x, y</i>) coordinate plane below, $\triangle$<i>ABC</i> will be translated 10 units
+          down and then the resulting image will be reflected over the <i>y-</i>axis. <br>
+          What will be the coordinates of the final image of <i>A</i> resulting from both transformations?
+          <br><br>
+          <img src="images/Transformations/Questions/Number3.png" alt="Number 3">
+          <br><br>
+          $
+          A.\;\; (-5, 9) \\[3ex]
+          B.\;\; (-1, 9) \\[3ex]
+          C.\;\; (1, -9) \\[3ex]
+          D.\;\; (5, -10) \\[3ex]
+          E.\;\; (5, -9) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionT3">
+            <br>
+            Translated up or down is only for the <i>y-</i>coordinate <br>
+            For any point, (x, y); reflection across the y-axis gives (&minus;x, y) <br>
+            We are only concerned with Point <i>A</i>
+            <br><br>
+            $
+            \underline{\text{Translated 10 units down: y-coordinate changes}} \\[3ex]
+            A(-5, 1) \rightarrow A'(-5, 1 - 10) \\[3ex]
+            A(-5, 1) \rightarrow A'(-5, -9) \\[5ex]
+            \underline{\text{Reflected over the y-axis: Vertical Reflection: x-coordinate changes}} \\[3ex]
+            A'(-5, -9) \rightarrow A''(5, -9)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) A point at (&minus;5, 7) in the standard (<i>x, y</i>) coordinate plane is translated right 7 coordinate
+          units and down
+          5 coordinate units. <br>
+          What are the coordinates of the point after the translation?
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionT4">
+            <br>
+            $
+            Point: (-5, 7) \\[3ex]
+            x = -5, y = 7 \\[3ex]
+            \underline{\text{Translated 7 units right: x-coordinate changes}} \\[3ex]
+            -5 + 7 = 2 \\[3ex]
+            (-5, 7) \rightarrow (2, 7) \\[3ex]
+            x = 2, y = 7 \\[5ex]
+            \underline{\text{Translated 5 units down: y-coordinate changes}} \\[3ex]
+            7 - 5 = 2 \\[3ex]
+            (2, 7) \rightarrow (2, 2)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) The figure below shows 3 circles in the standard (<i>x, y</i>) coordinate plane. <br>
+          Which of the following shows the reflection of the 3 circles across the <i>x-</i>axis?
+          <br><br>
+          <img src="images/Transformations/Questions/Number5-1st.png" alt="Number 5-1st">
+          <br><br>
+          <img src="images/Transformations/Questions/Number5-2nd.png" alt="Number 5-2nd">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionT5">
+            <br>
+            It is highly recommended to solve this question geometrically. <br>
+            (1.) <b>Reflection</b> is <b>Flipping</b> <br>
+            (2.) <b>Reflection across the x-axis</b> means <b>same x-values</b> but <b>different y-values</b> <br>
+            (3.) So, just flip the three circles <u>across</u> the x-axis <br>
+            It is going to be the <b>same positive x-axis</b> (same x-values) <br>
+            However, the 2 circles will be the top and the 3rd bigger circle will be below the 2 circles <br>
+            Option <b>K.</b> is the correct option
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) Point <i>A</i> is located at (3, 8) in the standard (<i>x, y</i>) coordinate plane. <br>
+          What are the coordinates of <i>A'</i>, the image of <i>A</i> after it is reflected across the <i>y-</i>axis?
+          <br><br>
+          <b>A.</b> (3, &minus;8) <br>
+          <b>B.</b> (&minus;3, &minus;8) <br>
+          <b>C.</b> (&minus;3, 8) <br>
+          <b>D.</b> (8, 3) <br>
+          <b>E.</b> (&minus;8, 3)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionT6">
+            <br>
+            Reflection across the <i>y</i>-axis is Horizontal Reflection: <i>x</i>-coordinate changes <br>
+            For any point, (x, y); reflection across the y-axis gives (&minus;x, y)
+            <br><br>
+            $
+            A(3, 8) \rightarrow A'(-3, 8)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) For an assignment on symmetry, Crystal created the pattern of digits shown below. <br>
+          Her teacher commented on the symmetry when evaluating the assignment. <br>
+          Which of the following is a true comment about the symmetry of this pattern?
+          <br><br>
+          <img src="images/Transformations/Questions/Number7.png" alt="Number 7">
+          <br><br>
+          <b>A.</b> The pattern has only a horizontal line of symmetry. <br>
+          <b>B.</b> The pattern has both a horizontal line and a vertical line of symmetry. <br>
+          <b>C.</b> The pattern has only a vertical line of symmetry. <br>
+          <b>D.</b> The pattern has a rotational symmetry of 180&deg; <br>
+          <b>E.</b> The pattern has a rotational symmetry of 90&deg;
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionT7">
+            <br>
+            Rotational Symmetry: shape looks the same after some rotations from it's initial position <br>
+            Rotational Symmetry of 180&deg;: shape looks the same when it is rotated about 180&deg; <br>
+            Okay, please do not laugh at my diagrams &#128522
+            <br><br>
+            <img src="images/Transformations/Answers/Number7-1st.png" alt="Number 7-1st">
+            <br><br>
+            <img src="images/Transformations/Answers/Number7-2nd.png" alt="Number 7-2nd">
+            <br><br>
+            <img src="images/Transformations/Answers/Number7-3rd.png" alt="Number 7-3rd">
+            <br><br>
+            <img src="images/Transformations/Answers/Number7-4th.png" alt="Number 7-4th">
+            <br><br>
+            This implies that: <br>
+            <img src="images/Transformations/Answers/Number7-5th.png" alt="Number 7-5th"> $\implies$ <img
+              src="images/Transformations/Answers/Number7-6th.png" alt="Number 7-6th">
+            <br><br>
+            Therefore, the pattern has a rotational symmetry of 180&deg;
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) A point at (&minus;2, 8) in the standard (<i>x, y</i>) coordinate plane is shifted right 8 units and down
+          2 units. <br>
+          What are the coordinates of the new point?
+          <br><br>
+          $
+          F.\;\; (-10, 10) \\[3ex]
+          G.\;\; (0, 0) \\[3ex]
+          H.\;\; (6, 6) \\[3ex]
+          J.\;\; (6, 10) \\[3ex]
+          K.\;\; (10, 10) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionT8">
+            <br>
+            Let the point be <i>A</i>(-2, 8) <br>
+            shifted right: only the x-coordinate is affected <br>
+            shifted down: only the y-coordinate is affected
+            <br><br>
+            $
+            \underline{shifted\;\;right\;\;8\;\;units} \\[3ex]
+            A(-2, 8) \rightarrow A'(-2 + 8, 8) \\[3ex]
+            A(-2, 8) \rightarrow A'(6, 8) \\[5ex]
+            \underline{shifted\;\;down\;\;2\;\;units} \\[3ex]
+            A'(6, 8) \rightarrow A''(6, 8 - 2) \\[3ex]
+            A'(6, 8) \rightarrow A''(6, 6)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Parallelogram <i>WXYZ</i> is shown in the standard <i>(x, y)</i> coordinate plane below. <br>
+          The coordinates for 3 of its vertices are <i>W</i>(0, 0), <i>X</i>(<i>a, b</i>), and <i>Z</i>(<i>c</i>, 0).
+          <br><br>
+          <img src="images/Transformations/Questions/Number9.png" alt="Number 9">
+          <br><br>
+          Parallelogram <i>WXYZ</i> is rotated clockwise ($\circlearrowright$) by 90&deg; about the origin. <br>
+          At what ordered pair is the image of <i>Z</i> located?
+          <br><br>
+          $
+          F.\;\; (0, -c) \\[3ex]
+          G.\;\; (-c, 0) \\[3ex]
+          H.\;\; (0, 0) \\[3ex]
+          J.\;\; (0, c) \\[3ex]
+          K.\;\; (a, b) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionT9">
+            <br>
+            We can solve this question using at least two approaches. <br>
+            Use any approach you prefer. <br>
+            However, I recommend you do it geometrically for the ACT test because it is a timed test. <br>
+            You have to solve this question in about a minute...so geometric approach is recommended.
+            <br><br>
+            <u>First Method:</u> <b>Algebraically</b>
+            <br><br>
+            $
+            \theta = -90^\circ ...rotated\;\;clockwise \\[3ex]
+            \cos\theta = \cos(-90) = \cos(90) = 0 ...Even\;\;Identities \\[3ex]
+            \sin\theta = \sin(-90) = -\sin(90) = -1 ...Odd\;\;Identities \\[5ex]
+            Z(c, 0) \\[3ex]
+            x = c \\[3ex]
+            y = 0 \\[5ex]
+            x' = x\cos\theta - y\sin\theta \\[3ex]
+            x' = c(0) - 0(-1) = 0 + 0 = 0 \\[5ex]
+            y' = y\cos\theta + x\sin\theta \\[3ex]
+            y' = 0(0) + c(-1) = 0 - c = -c \\[5ex]
+            (x', y') = (0, -c) \\[5ex]
+            \underline{Clockwise\;\;Rotation\;\;of\;\;90^\circ} \\[3ex]
+            Z(c, 0) \rightarrow Z'(0, -c) \\[5ex]
+            $
+            <u>Second Method:</u> <b>Geometrically</b>
+            <br><br>
+            <img src="images/Transformations/Answers/Number9.png" alt="Number 9">
+            <br><br>
+            $
+            \underline{Clockwise\;\;Rotation\;\;of\;\;90^\circ} \\[3ex]
+            Z(c, 0) \rightarrow Z'(0, -c)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) In the standard (<i>x, y</i>) coordinate plane, <i>A'</i> is the image resulting from the
+          reflection of the point <i>A</i>(2, &minus;3) across the <i>y</i>-axis. <br>
+          What are the coordinates of <i>A'</i> ? <br><br>
+          <b>A.</b> (&minus;3, 2) <br>
+          <b>B.</b> (&minus;2, &minus;3) <br>
+          <b>C.</b> (&minus;2, 3) <br>
+          <b>D.</b> (2, 3) <br>
+          <b>E.</b> (3, &minus;2)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionT10">
+            <br>
+            Reflection across the y-axis is Horizontal Reflection (HORE) <br>
+            Only <i>x</i>-value changes <br>
+            <i>y</i>-value will not change
+            <br><br>
+            $
+            Point: (2, -3) \\[3ex]
+            x = 2, y = -3 \\[3ex]
+            HORE:\;\;x-coordinate\;\;changes \\[3ex]
+            (2, -3) \rightarrow (-2, -3)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Triangles $\triangle$<i>ABC</i> and $\triangle$<i>A'B'C'</i> are graphed in the standard (<i>x, y</i>)
+          coordinate
+          plane below.
+          <br><br>
+          <img src="images/Transformations/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          Triangle $\triangle$<i>A'B'C'</i> is the image of $\triangle$<i>ABC</i> under one of the following
+          transformations. <br>
+          Which one?
+          <br><br>
+          <b>F.</b> 90&deg; clockwise rotation about the origin <br>
+          <b>G.</b> 90&deg; counterclockwise rotation about the origin <br>
+          <b>H.</b> Horizontal translation <br>
+          <b>J.</b> Reflection across the <i>x-</i>axis <br>
+          <b>K.</b> Reflection across the <i>y-</i>axis
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionT11">
+            <br>
+            Let us write the coordinates: of the points and their images
+            <br><br>
+            $
+            A(-1, 1) \rightarrow A'(1, 1) \\[3ex]
+            B(-4, 7) \rightarrow B'(4, 7) \\[3ex]
+            C(8, 5) \rightarrow C'(-8, 5) \\[3ex]
+            $
+            For <u>each</u> point, the <i>x-</i>coordinate changed but the <i>y-</i>coordinate did not change. <br>
+            This implies a <b>reflection across the <i>y-</i>axis</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) In the standard (<i>x, y</i>) coordinate plane, point <i>A</i> has coordinate (&minus;8, &minus;3). <br>
+          Point <i>A</i> is translated 8 units to the right and 3 units up, and that image is labeled <i>A'.</i> <br>
+          What are the coordinates of <i>A'</i> ?
+          <br><br>
+          <b>A.</b> (&minus;16, &minus;6) <br>
+          <b>B.</b> (&minus;11, &minus;11) <br>
+          <b>C.</b> (&minus;8, &minus;6) <br>
+          <b>D.</b> (0, 0) <br>
+          <b>E.</b> (16, 6)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionT12">
+            <br>
+            A(&minus;8, &minus;3) <br>
+            Translated 8 units right <br>
+            A(&minus;8, &minus;3) &rightarrow; A'(&minus;8 + 8, &minus;3) <br>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&nbsp;&nbsp; &rightarrow; A'(0, &minus;3)
+            <br><br>
+            Translated 3 units up <br>
+            A'(0, &minus;3) &rightarrow; A''(0, &minus;3 + 3) <br>
+            &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; &rightarrow; A''(0, 0)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) A series of transformations are applied to the graph in the standard (<i>x, y</i>) coordinate plane
+          below. <br>
+          The graph below is reflected across the <i>x-</i>axis. <br>
+          The new graph is reflected across the <i>y-</i>axis. <br>
+          This new graph is rotated 90&deg; clockwise ($\circlearrowright$) about the origin.
+          <br><br>
+          <img src="images/Transformations/Questions/Number13-1st.png" alt="Number 13-1st">
+          <br><br>
+          The resulting graph is one of the following graphs. <br>
+          Which one?
+          <br><br>
+          <img src="images/Transformations/Questions/Number13-2nd.png" alt="Number 13-2nd">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionT13">
+            <br>
+            For this question, we shall solve it using both methods: geometrically and algebraically <br>
+            However, I recommend you do it geometrically for the ACT test because it is a timed test <br>
+            You have to solve this question in about a minute...so geometric method is recommended. <br>
+            (<i>Please do not mind my diagram. It is not drawn to scale.</i>) &#128522 <br>
+            <br><br>
+            <u>First Method:</u> <b>Geometrically</b>
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-1st.png" alt="Number 13-1st">
+            <br><br>
+            Reflect across the <i>x-</i>axis (Flip)
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-2nd.png" alt="Number 13-2nd">
+            <br><br>
+            Reflect across the <i>y-</i>axis (Flip)
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-3rd.png" alt="Number 13-3rd">
+            <br><br>
+            Rotate 90&deg; about the origin (Turn)
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-4th.png" alt="Number 13-4th">
+            <br><br>
+            The answer is Option <b>G.</b>
+            <br><br>
+
+            <u>Second Method:</u> <b>Algebraically</b> <br>
+            Locate two <i>important</i> points in the original diagram <br>
+            Write the coordinates of both points (Just imagine if it was on a graph paper) <br>
+            Take note of these two points because we shall look out for them in the final image. <br><br>
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-5th.png" alt="Number 13-5th">
+            <br><br>
+            $
+            \underline{Initial\;\;Points} \\[3ex]
+            A(-3, 1) \\[3ex]
+            B(-1, 4) \\[3ex]
+            \underline{Reflect\;\;across\;\;the\;\;x-axis} \\[3ex]
+            A(-3, 1) \rightarrow A'(-3, -1) \\[3ex]
+            B(-1, 4) \rightarrow B'(-1, -4) \\[5ex]
+            \underline{Reflect\;\;across\;\;the\;\;y-axis} \\[3ex]
+            A'(-3, -1) \rightarrow A''(3, -1) \\[3ex]
+            B'(-1, -4) \rightarrow B''(1, -4) \\[5ex]
+            \underline{Rotate\;\;90^\circ\;\;clockwise} \\[3ex]
+            \theta = -90^\circ...clockwise\;\;rotation \\[3ex]
+            \sin(-90) = -\sin(90) = -1 ...Odd\;\;Identities \\[3ex]
+            \cos(-90) = \cos(90) = 0 ...Even\;\;Identities \\[3ex]
+            x' = x\cos\theta - y\sin\theta \\[3ex]
+            y' = y\cos\theta + x\sin\theta \\[5ex]
+            \underline{Point\;A''(3, -1)} \\[3ex]
+            x = 3 \\[3ex]
+            y = -1 \\[3ex]
+            x' = 3\cos(-90) - (-1)\sin(-90) \\[3ex]
+            x' = 3(0) + 1(-1) \\[3ex]
+            x' = 0 - 1 \\[3ex]
+            x' = -1 \\[3ex]
+            y' = -1\cos(-90) + 3\sin(-90) \\[3ex]
+            y' = -1(0) + 3(-1) \\[3ex]
+            y' = 0 - 3 \\[3ex]
+            y' = -3 \\[3ex]
+            A''(3, -1) \rightarrow A'''(-1, -3) \\[5ex]
+            \underline{Point\;B''(1, -4)} \\[3ex]
+            x = 1 \\[3ex]
+            y = -4 \\[3ex]
+            x' = 1\cos(-90) - (-4)\sin(-90) \\[3ex]
+            x' = 1(0) + 4(-1) \\[3ex]
+            x' = 0 - 4 \\[3ex]
+            x' = -4 \\[3ex]
+            y' = -4\cos(-90) + 1\sin(-90) \\[3ex]
+            y' = -4(0) + 1(-1) \\[3ex]
+            y' = 0 - 1 \\[3ex]
+            y' = -1 \\[3ex]
+            B''(1, -4) \rightarrow B'''(-4, -1) \\[3ex]
+            $
+            In the options (images), look for the location of those two points <br>
+            The points should be transformed as $A'''(-1, -3)$ and $B'''(-4, -1)$
+            <br><br>
+            <img src="images/Transformations/Answers/Number13-6th.png" alt="Number 13-6th">
+            <br><br>
+            The option that has those points is Option <b>G.</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) In the standard (<i>x, y</i>) coordinate plane, given Parabola A with equation $y = 3x^2$, Parabola B is
+          the image of
+          Parabola A after a shift of 7 coordinate units to the left and 4 coordinate units down. <br>
+          Parabola B has which of the following equations?
+          <br><br>
+          $
+          F.\;\; y = 3(x - 4)^2 - 7 \\[3ex]
+          G.\;\; y = 3(x - 7)^2 - 4 \\[3ex]
+          H.\;\; y = 3(x - 7)^2 + 4 \\[3ex]
+          J.\;\; y = 3(x + 7)^2 - 4 \\[3ex]
+          K.\;\; y = 3(x + 7)^2 + 4 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionT14">
+            <br>
+            Parabola A: Equation: <i>y</i> &equals; 3<i>x</i>² <br>
+            7 coordinate units to the left = HOSH 7 units left = 3(<i>x</i> &plus; 7)² <br>
+            4 coordinate units down &equals; VESH 4 units down = 3(<i>x</i> &plus; 7)² &minus; 4 <br>
+            Parabola B: Equation: <i>y</i> &equals; 3(<i>x</i> &plus; 7)² &minus; 4 <br>
+            The answer is Option <b>J.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) A point with coordinates (<i>a, b</i>) is plotted in the standard (<i>x, y</i>) coordinate plane as
+          shown below. <br>
+          The point is then reflected across the <i>y-</i>axis. <br>
+          Which of the following are the coordinates for the point after the reflection?
+          <br><br>
+          <img src="images/Transformations/Questions/Number15.png" alt="Number 15">
+          <br><br>
+          $
+          A.\;\; (-a, b) \\[3ex]
+          B.\;\; (a, -b) \\[3ex]
+          C.\;\; (b, a) \\[3ex]
+          D.\;\; (-b, a) \\[3ex]
+          E.\;\; (b, -a) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionT15">
+            <br>
+            For any point, (<i>x, y</i>); reflection across the y-axis gives (&minus;<i>x, y</i>) <br>
+            This implies
+            <br><br>
+            $
+            (a, b) \rightarrow (-a, b)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) A triangle, &#9651;<i>ABC</i>, is reflected across the <i>x-</i>axis to have the image
+          &#9651;<i>A'B'C'</i> in the standard (<i>x, y</i>) coordinate plane: thus, <i>A</i> reflects to <i>A'</i>.
+          <br>
+          The coordinates of point <i>A</i> are (<i>c, d</i>). <br>
+          What are the coordinates of point <i>A'</i> ? <br><br>
+          <b>F.</b> (<i>c, &minus;d</i>) <br>
+          <b>G.</b> (<i>&minus;c, d</i>) <br>
+          <b>H.</b> (<i>&minus;c, &minus;d</i>) <br>
+          <b>J.</b> (<i>d, c</i>) <br>
+          <b>K.</b> Cannot be determined from the given information.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionT16">
+            <br>
+            Reflection across the <i>x</i>-axis is Vertical Reflection (VERE)
+            <br><br>
+            $
+            VERE:\;\;y-coordinate\;\;changes \\[3ex]
+            A(c, d) \rightarrow A'(c, -d)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) The graph shown in the standard (<i>x, y</i>) coordinate plane below is to be rotated in the plane
+          180&deg; about the origin.
+          <br><br>
+          <img src="images/Transformations/Questions/Number17-1st.png" alt="Number 17-1st">
+          <br><br>
+          One of the following graphs is the result of this rotation. <br>
+          Which one is it?
+          <br><br>
+          <img src="images/Transformations/Questions/Number17-2nd.png" alt="Number 17-2nd">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionT17">
+            <br>
+            Choose two <i>simple</i> points on the initial graph and read the coordinates of those points
+            <br><br>
+            <img src="images/Transformations/Answers/Number17.png" alt="Number 17">
+            <br><br>
+            $
+            \theta = 180^\circ \\[3ex]
+            \sin 180 = 0 \\[3ex]
+            \cos 180 = -1 \\[5ex]
+            \underline{First\;\;Point} \\[3ex]
+            (x, y) = (1, 1) \\[3ex]
+            x' = x\cos\theta - y\sin\theta \\[3ex]
+            x' = 1 * \cos 180 - 0 * \sin 180 \\[3ex]
+            x' = 1(-1) - 0(0) \\[3ex]
+            x' = -1 \\[3ex]
+            y' = y\cos\theta + x\sin\theta \\[3ex]
+            y' = 1 * \cos 180 + 1 * \sin 180 \\[3ex]
+            y' = 1(-1) + 1(0) \\[3ex]
+            y' = -1 \\[3ex]
+            (x', y') = (-1, -1) \\[5ex]
+            \underline{Second\;\;Point} \\[3ex]
+            (x, y) = (4, 0) \\[3ex]
+            x' = x\cos\theta - y\sin\theta \\[3ex]
+            x' = 4 * \cos 180 - 0 * \sin 180 \\[3ex]
+            x' = 4(-1) - 0(0) \\[3ex]
+            x' = -4 \\[3ex]
+            y' = y\cos\theta + x\sin\theta \\[3ex]
+            y' = 0 * \cos 180 + 4 * \sin 180 \\[3ex]
+            y' = 0(-1) + 4(0) \\[3ex]
+            y' = 0 \\[3ex]
+            (x', y') = (-4, 0) \\[3ex]
+            $
+            Review the options for the graph that has (&minus;1, &minus;1) and (&minus;4, 0) <br>
+            The only graph that has both coordinates is Option <b>D.</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) In the standard (<i>x, y</i>) coordinate plane, point <i>A</i> has coordinates (&minus;7, &minus;5).
+          <br>
+          Point <i>A</i> is translated 7 units to the left and 5 units down, and that image is labeled <i>A'</i>. <br>
+          What are the coordinates of <i>A'</i>?
+          <br><br>
+          $
+          F.\;\; (-14, -10) \\[3ex]
+          G.\;\; (-12, -12) \\[3ex]
+          H.\;\; (-7, -10) \\[3ex]
+          J.\;\; (0, 0) \\[3ex]
+          K.\;\; (14, 10) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionT18">
+            <br>
+            Translated to the left or right is only for the x-coordinate <br>
+            Translated up or down is only for the y-coordinate
+            <br><br>
+            $
+            \underline{Translated\;\;7\;\;units\;\;to\;\;the\;\;left} \\[3ex]
+            A(-7, -5) \rightarrow A'(-7 - 7, -5) \\[3ex]
+            \hspace{4.5em} \rightarrow A'(-14, -5) \\[3ex]
+            \underline{Translated\;\;5\;\;units\;\;down} \\[3ex]
+            A'(-14, -5) \rightarrow A''(-14, -5 - 5) \\[3ex]
+            \hspace{5.2em} \rightarrow A''(-14, -10)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) The function <i>y</i> = <i>f</i>(<i>x</i>) is graphed in the standard (<i>x, y</i>) coordinate plane
+          below.
+          <br><br>
+          <img src="images/Transformations/Questions/Number19.png" alt="Number 19">
+          <br><br>
+          The points on the graph of the function <i>y</i> = 3 + <i>f</i>(<i>x</i> &minus; 1) can be obtained from the
+          points on
+          <i>y</i> = <i>f</i>(<i>x</i>) by a shift of: <br><br>
+          <b>A.</b> 1 unit to the right and 3 units up. <br>
+          <b>B.</b> 1 unit to the right and 3 units down. <br>
+          <b>C.</b> 3 units to the right and 1 unit up. <br>
+          <b>D.</b> 3 units to the right and 1 unit down. <br>
+          <b>E.</b> 3 units to the left and 1 unit down.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionT19">
+            <br>
+            Parent Function: <i>y</i> = <i>f</i>(<i>x</i>) <br>
+            HOSH 1 unit right <br>
+            Transformed (Child) Function: <i>y</i> = <i>f</i>(<i>x</i> &minus; 1) <br>
+            VESH 3 units up <br>
+            Transformed Function: <i>y</i> = <i>f</i>(<i>x</i> &minus; 1) + 3 <br>
+            <span style="margin-left: 9.5em;"><i>y</i> = 3 + <i>f</i>(<i>x</i> &minus; 1)</span> <br>
+            The answer is Option <b>A.</b>: 1 unit to the right and 3 units up.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) In the standard (<i>x, y</i>) coordinate plane, the graph of the function $y = 5\sin(x) - 7$ undergoes a
+          single
+          translation such that the equation of its image is $y = 5\sin(x) - 14$. <br>
+          Which of the following describes this translation?
+          <br><br>
+          <b>F.</b> Up 7 coordinate units <br>
+          <b>G.</b> Down 7 coordinate units <br>
+          <b>H.</b> Left 7 coordinate units <br>
+          <b>J.</b> Right 7 coordinate units <br>
+          <b>K.</b> Right 14 coordinate units
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionT20">
+            <br>
+            From &minus;7 to &minus;14 <br>
+            How do you get from &minus;7 to &minus;14? <br>
+            What will you add to &minus;7 to get &minus;14? <br>
+            Let the thing be <i>p</i>
+            <br><br>
+            $
+            -7 + p = -14 \\[3ex]
+            p = -14 + 7 \\[3ex]
+            p = -7 \\[3ex]
+            $
+            This represents a VESH of 7 units down <br>
+            This means: Option <b>G.</b> Down 7 coordinate units
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/VectorsScalars.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) The point (3, 27) is labeled on the graph of <i>f</i>(<i>x</i>) &equals; <i>x</i>³ in the standard
+          (<i>x, y</i>)
+          coordinate plane below. <br>
+          The graph of <i>f</i>(<i>x</i>) will be translated 3 coordinate units to the left. <br>
+          Which of the following points will be on the image of the graph after the translation?
+          <br><br>
+          <img src="images/Transformations/Questions/Number21.png" alt="Number 21">
+          <br><br>
+          <b>F.</b> (0, 27) <br>
+          <b>G.</b> (3, 24) <br>
+          <b>H.</b> (3, 27) <br>
+          <b>J.</b> (3, 30) <br>
+          <b>K.</b> (6, 27)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionT21">
+            <br>
+            Based on the graph: <br>
+            <img src="images/Transformations/Answers/Number21.png" alt="Number 21">
+            <br><br>
+            When we move the graph (<span style="color: green;">green color</span>) 3 units left, the point (3, 27) on
+            the graph
+            becomes (0, 27) on the
+            transformed graph (<span style="color: blue;">blue color</span>) <br>
+            It is seen as moving from Point A to Point B <br>
+            However, please note the equations of the parent function and the transformed function
+            <br><br>
+            $
+            Parent\;\;Function:\;\; y = x^3 \\[3ex]
+            Transformed\;\;Function:\;\;HOSH\;\;3\;\;units\;\;left:\;\; y = (x + 3)^3
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) A line segment has endpoints (<i>a, b</i>) and (<i>c, d</i>) in the standard (<i>x, y</i>) coordinate
+          plane, where <i>a, b, c</i>, and <i>d</i> are distinct positive integers. <br>
+          The segment is reflected across the <i>x-</i>axis. <br>
+          After this reflection, what are the coordinates of the endpoints of the image?
+          <br><br>
+          $
+          F.\;\; (-a, b)\;\;and\;\;(-c, d) \\[3ex]
+          G.\;\; (a, -b)\;\;and\;\;(c, -d) \\[3ex]
+          H.\;\; (-a, -b)\;\;and\;\;(-c, -d) \\[3ex]
+          J.\;\; (a, b)\;\;and\;\;(c, d) \\[3ex]
+          K.\;\; (a, 0)\;\;and\;\;(c, 0) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionT22">
+            <br>
+            For any point, (<i>x, y</i>); reflection across the x-axis gives (<i>x</i>, &minus;<i>y</i>) <br>
+            This implies
+            <br><br>
+            $
+            (a, b) \rightarrow (a, -b) \\[3ex]
+            (c, d) \rightarrow (c, -d) \\[5ex]
+            Option\;G:\;\; (a, -b)\;\;and\;\;(c, -d)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) The 2 circles graphed in the standard (<i>x, y</i>) coordinate plane below are centered at the
+          origin, <i>O</i>. <br>
+          In coordinate units, the radius of the smaller circle is 2, and the radius of the larger circle is 4. <br>
+          Points <i>A</i>(-4, 0), <i>B</i>, and <i>C</i>(4, 0) are on the larger circle. <br>
+          The measure of &angle;<i>BOC</i> is 45&deg;.
+          <br><br>
+          <img src="images/Transformations/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          (Note: Both axes have the same scale.) <br>
+          A 3rd circle, not shown, is the image resulting from applying the 1st transformation listed below to the
+          <i>smaller</i>
+          circle and then applying the 2nd transformation listed below to the result of the 1st transformation. <br>
+          &ensp;&ensp;&ensp; 1st: A dilation with center <i>O</i> and scale factor 2 <br>
+          &ensp;&ensp;&ensp; 2nd: A translation of 8 coordinate units to the right <br>
+          The 3rd circle has how many points in common with the <i>larger</i> circle?
+          <br><br>
+          $
+          A.\;\; 0 \\[3ex]
+          B.\;\; 1 \\[3ex]
+          C.\;\; 2 \\[3ex]
+          D.\;\; 4 \\[3ex]
+          E.\;\; \text{Infinitely many} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionT23">
+            <br>
+            <img src="images/Transformations/Answers/Number23.png" alt="Number 23">
+            <br><br>
+            $
+            Radius\;\;of\;\;smaller\;\;circle = 2 \\[3ex]
+            Radius\;\;OE = (2, 0) \\[5ex]
+            \underline{\text{1st Transformation: Dilation with scale factor = 2}} \\[3ex]
+            \text{Dilation applies to both x-coordinate and y-coordinate} \\[3ex]
+            (2, 0) \rightarrow (2 * 2, 2 * 0) \\[3ex]
+            (2, 0) \rightarrow (4, 0) \\[3ex]
+            \implies \\[3ex]
+            OE = OC \\[3ex]
+            3rd\;\;circle\;(smaller\;\;circle) = larger\;\;circle \\[5ex]
+            \underline{\text{2nd Transformation: Translation of 8 units to the right}} \\[3ex]
+            \text{Translation to left or right applies only to x-coordinate} \\[3ex]
+            (4, 0) \rightarrow (4 + 8, 0) \\[3ex]
+            (4, 0) \rightarrow (12, 0) \\[3ex]
+            Also: \\[3ex]
+            (-4, 0) \rightarrow (-4 + 8, 0) \\[3ex]
+            (-4, 0) \rightarrow (4, 0) \\[3ex]
+            Endpoints\;\;for\;\;3rd\;\;circle = (4,0) \;\;and\;\; (12, 0) \\[3ex]
+            Endpoints\;\;for\;\;larger\;\;circle = (-4, 0)\;\;and\;\;(4, 0) \\[3ex]
+            \text{left endpoint of 3rd circle = right endpoint of larger circle} \\[3ex]
+            $
+            So, the two circles have only one common point.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) A point at (&minus;3, 7) in the standard (<i>x, y</i>) coordinate plane is shifted down 3 units and
+          right 7 units. <br>
+          What are the coordinates of the new point?
+          <br><br>
+          $
+          F.\;\; (-10, 10) \\[3ex]
+          G.\;\; (0, 0) \\[3ex]
+          H.\;\; (4, 4) \\[3ex]
+          J.\;\; (4, 10) \\[3ex]
+          K.\;\; (10, 10) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionT24">
+            <br>
+            Let the point be <i>A</i>(&minus;3, 7) <br>
+            shifted down: only the y-coordinate is affected <br>
+            shifted right: only the x-coordinate is affected
+            <br><br>
+            $
+            \underline{shifted\;\;down\;\;3\;\;units} \\[3ex]
+            A(-3, 7) \rightarrow A'(-3, 7 - 3) \\[3ex]
+            A(-3, 7) \rightarrow A'(-3, 4) \\[5ex]
+            \underline{shifted\;\;right\;\;7\;\;units} \\[3ex]
+            A'(-3, 4) \rightarrow A''(-3 + 7, 4) \\[3ex]
+            A'(-3, 4) \rightarrow A''(4, 4)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) What are the coordinates of the image of point <i>B</i> resulting from a rotation of 180° about the
+          origin?
+          <br><br>
+          $
+          F.\;\; (-10, 0) \\[3ex]
+          G.\;\; (-6, 0) \\[3ex]
+          H.\;\; (-2, 0) \\[3ex]
+          J.\;\; (0, -6) \\[3ex]
+          K.\;\; (6, 0) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionT25">
+            <br>
+            We can solve the question using at least two approaches. <br>
+            Use any approach you prefer. <br>
+            B' is the image of B.
+            <br><br>
+            $
+            \underline{\text{Geometrically: Recommended}} \\[3ex]
+            B(6, 0) \rightarrow \underline{\text{counter clockwise rotation of 180°}} \rightarrow B'(-6, 0) \\[5ex]
+
+            \underline{\text{Algebraically: if there is time}} \\[3ex]
+            B(6, 0) \\[3ex]
+            x = 6 \\[3ex]
+            y = 0 \\[3ex]
+            \text{angle of rotation},\;\theta = 180^\circ \\[5ex]
+
+            x' = x\cos\theta - y\sin\theta \\[3ex]
+            = 6\cos 180^\circ - 0\sin 180^\circ \\[3ex]
+            = 6(-1) - 0(0) \\[3ex]
+            = -6 \\[5ex]
+
+            y' = y\cos\theta + x\sin\theta \\[3ex]
+            = 0\cos 180^\circ + 6\sin 180^\circ \\[3ex]
+            = 0(-1) + 6(0) \\[3ex]
+            = 0 \\[5ex]
+
+            B'(x', y') = (-6, 0)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.) In the standard (<i>x, y</i>) coordinate plane, the coordinates of the <i>y-intercept</i> of the
+          graph of the function $y = f(x)$ are (0, &minus;2). <br>
+          What are the coordinates of the <i>y-intercept</i> of the graph of the function $y = f(x) - 3$?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionT26">
+            <br>
+            $
+            Point: (0, -2) \\[3ex]
+            x = 0, y = -2 \\[3ex]
+            \text{VESH 3 units down: y-coordinate changes} \\[3ex]
+            \implies \\[3ex]
+            f(x) - 3 \\[3ex]
+            -2 - 3 = -5 \\[3ex]
+            (0, -2) \rightarrow (0, -5)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) In the standard (<i>x, y</i>) coordinate plane below, one of the following absolute value functions is
+          graphed. <br>
+          Which one?
+          <br><br>
+          <img src="images/Transformations/Questions/Number27.png" alt="Number 27">
+          <br><br>
+          $
+          A.\;\; f(x) = -|x - 3| + 2 \\[3ex]
+          B.\;\; f(x) = -|x + 3| + 2 \\[3ex]
+          C.\;\; f(x) = -|x - 3| - 2 \\[3ex]
+          D.\;\; f(x) = |x + 3| + 2 \\[3ex]
+          E.\;\; f(x) = |x - 3| + 2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionT27">
+            <br>
+            The parent function is $f(x) = |x|$ ...a V-shaped with vertex centered at the origin (0, 0) <br>
+            <br><br>
+            <b>Transformations</b> of the parent function to give the child function <br>
+            1st: The V-shape is turned upside down <br>
+            This is VERE: Vertical Reflection: Reflection across the <i>x</i>-axis <br>
+            Result: $f(x) = -|x|$
+            <br><br>
+            2nd: The vertex moved from (0, 0) in the parent to the (&minus;3, 0) <br>
+            This is HOSH 3 units left: Horizontal Shift of 3 units left <br>
+            Result: $f(x) = -|x + 3|$
+            <br><br>
+            3rd: The vertex moved from (&minus;3, 0) to (&minus;3, 2) <br>
+            This is VESH 2 units up: Vertical Shift of 2 units up <br>
+            Result: $f(x) = -|x + 3| + 2$
+            <br><br>
+            &there4;, the graph of the child function is: $f(x) = -|x + 3| + 2$
+            <br><br>
+            <u>Check</u> (Algebraically) <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 50%;"><i>x</i></th>
+                <th style="width: 50%;"><i>y</i></th>
+              </tr>
+              <tr>
+                <td>0</td>
+                <td>&minus;1</td>
+              </tr>
+              <tr>
+                <td>&minus;1</td>
+                <td>0</td>
+              </tr>
+              <tr>
+                <td>&minus;3</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <td>&minus;5</td>
+                <td>0</td>
+              </tr>
+            </table>
+            <br><br>
+            <u>Check</u> (Graphically) <br>
+            <img src="images/Transformations/Answers/Number27.png" alt="Number 27">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) The graph of <i>y</i> = |<i>x</i> &minus; 6| is in the standard (<i>x, y</i>) coordinate plane. <br>
+          Which of the following transformations, when applied to the graph of <i>y</i> &equals; |<i>x</i>|, results in
+          the graph
+          of <i>y</i> = |<i>x</i> &minus; 6|?
+          <br><br>
+          <b>F.</b> Translation to the right 6 coordinate units <br>
+          <b>G.</b> Translation to the left 6 coordinate units <br>
+          <b>H.</b> Translation up 6 coordinate units <br>
+          <b>J.</b> Translation down 6 coordinate units <br>
+          <b>K.</b> Reflection across the line <i>x</i> = 6
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionT28">
+            <br>
+            Parent Function: <i>y</i> = |<i>x</i>| <br>
+            HOSH 6 units right <br>
+            Transformed (Child) Function: <i>y</i> = |<i>x</i> &minus; 6| <br>
+            The answer is Option <b>F.:</b> Translation to the right 6 coordinate units
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.) A point at (&minus;4, 10) in the standard (<i>x, y</i>) coordinate plane is translated right 10
+          coordinate units and down 4 coordinate units. <br>
+          What are the coordinates of the point after the translation?
+          <br><br>
+          $
+          A.\;\; (-14, 14) \\[3ex]
+          B.\;\; (0, 0) \\[3ex]
+          C.\;\; (6, 6) \\[3ex]
+          D.\;\; (6, 14) \\[3ex]
+          E.\;\; (14, 14) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionT30">
+            <br>
+            (&minus;4, 10) translated right 10 coordinate units <br>
+            <i>x</i>-coordinate changes, <i>y</i>-coordinate remains <br>
+            (&minus;4, 10): 10 units right <br>
+            &rightarrow; (&minus;4 + 10, 10) <br>
+            &rightarrow; (6, 10)
+            <br><br>
+            (6, 10) translated down 4 coordinate units <br>
+            <i>y</i>-coordinate changes, <i>x</i>-coordinate remains <br>
+            (6, 10): 4 units down <br>
+            &rightarrow; (6, 10 – 4) <br>
+            &rightarrow; (6, 6)
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.) The graph in the standard (<i>x, y</i>) coordinate plane of $y = a(x - b)^2$, where |<i>a</i>| &ne;
+          |<i>b</i>|, is reflected across the <i>x</i>-axis. <br>
+          Which of the following is an equation of the reflection?
+          <br><br>
+          $
+          F.\;\; y = -a(x - b)^2 \\[3ex]
+          G.\;\; y = a(x - b)^2 \\[3ex]
+          H.\;\; y = a(x + b)^2 \\[3ex]
+          J.\;\; x = -b(y - a)^2 \\[3ex]
+          K.\;\; x = b(y + a)^2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionT32">
+            <br>
+            Reflected across the <i>x</i>-axis is Vertical Reflection <br>
+            In Vertical Reflection: <i>y</i> changes, <i>x</i> does not change <br>
+            <i>y</i>-coordinate is multiplied by &minus;1 <br>
+            The transformed <i>y</i>-coordinate becomes &minus;<i>y</i>
+            <br><br>
+            $
+            y = a(x - b)^2 \\[3ex]
+            -1 \cdot y = -1 \cdot a(x - b)^2 \\[3ex]
+            = -a(x - b)^2 \\[3ex]
+            \text{Transformed } y = -a(x - b)^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionT33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.) The graph in the standard (<i>x, y</i>) coordinate plane of $y = a(x - b)^2$, where |<i>a</i>| &ne;
+          |<i>b</i>|, is reflected across the <i>x</i>-axis. <br>
+          Which of the following is an equation of the reflection?
+          <br><br>
+          $
+          F.\;\; y = -a(x - b)^2 \\[3ex]
+          G.\;\; y = a(x - b)^2 \\[3ex]
+          H.\;\; y = a(x + b)^2 \\[3ex]
+          J.\;\; x = -b(y - a)^2 \\[3ex]
+          K.\;\; x = b(y + a)^2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionT34">
+            <br>
+            Reflected across the <i>x</i>-axis is Vertical Reflection <br>
+            In Vertical Reflection: <i>y</i> changes, <i>x</i> does not change <br>
+            <i>y</i>-coordinate is multiplied by &minus;1 <br>
+            The transformed <i>y</i>-coordinate becomes &minus;<i>y</i>
+            <br><br>
+            $
+            y = a(x - b)^2 \\[3ex]
+            -1 \cdot y = -1 \cdot a(x - b)^2 \\[3ex]
+            = -a(x - b)^2 \\[3ex]
+            \text{Transformed } y = -a(x - b)^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionT36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionT37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionT38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionT40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Statistics and Probability</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the SACE exam questions on statistics and probability.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  Further Mathematics, WASSCE, West African Senior School Certificate Examination, statistics, probability, measures of center, 
+  measures of central tendency, mean, arithmetic mean, average, median, mode, midrange, measures of spread, measures of variability, 
+  measures of variation, measures of position, measures of location, events, classical method, empirical method, probabilities, 
+  odds of an event, odds in favor, odds against, independent events, dependent events, mutually exclusive events, 
+  mutually inclusive events, complementary events, laws of probability, conditional probability, Bayes theorem, coins, dice, 
+  cards, deterministic phenomenon, random phenomenon, random experiment, outcome, success, failure, sample space, 
+  event space, theoretical probability, rare event rule, rules of probability, with replacement, without replacement, tree diagrams, 
+  Punnett squares, law of large numbers">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#symbols" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Symbols</a>
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Statistics and Probability</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the SACE past questions on Statistics and Probability. <br>
+        The TI-84 Plus CE shall be used for applicable questions. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics papers of the SACE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Symbols -->
+    <div class="w3-container w3-padding-32" id="symbols">
+      <ul class="w3-ul white">
+        <li class="w3-yellow w3-hover-black w3-center">
+          <h2>Symbols and Meanings</h2>
+        </li>
+        <li>$X$ = dataset $X$</li>
+        <li>$x = x-values$ OR data values</li>
+        <li>$x_{mid}$ = class midpoint of $x-values$ = class midpoint of the data values</li>
+        <li>$\Sigma$ (pronounced as uppercase Sigma) = $summation$</li>
+        <li>$\Sigma x$ = summation of the $x-values$</li>
+        <li>$f = frequency$</li>
+        <li>$F = frequency$</li>
+        <li>$\Sigma f$ = summation of the frequencies</li>
+        <li>$\Sigma fx$ = summation of the product of the $x-values$ and their corresponding frequencies</li>
+        <li>$(\Sigma x)^2$ = square of the summation of the $x-values$</li>
+        <li>$\Sigma x^2$ = summation of the squared of the $x-values$</li>
+        <li>$\bar{x}$ is sample mean of the $x-values$</li>
+        <li>$\mu$ = population mean</li>
+        <li>$n$ = sample size</li>
+        <li>$N$ = population size</li>
+        <li>$\tilde{x}$ = median</li>
+        <li>$\widehat{x}$ = mode</li>
+        <li>$AM$ = assumed mean</li>
+        <li>$D$ = deviation from the assumed mean</li>
+        <li>$x_{MR}$ = midrange</li>
+        <li>$LCL$ = lower class limit</li>
+        <li>$UCL$ = upper class limit</li>
+        <li>$min$ = minimum data value</li>
+        <li>$max$ = maximum data value</li>
+        <li>$LCB_{med}$ = lower class boundary of the median class</li>
+        <li>$CW$ = class width</li>
+        <li>$f_{med}$ = frequency of the median class</li>
+        <li>$CF_{bmed}$ = cumulative frequency of the class before the median class</li>
+        <li>$LCB_{mod}$ = lower class boundary of the modal class </li>
+        <li>$f_{mod}$ = frequency of the modal class</li>
+        <li>$f_{bmod}$ = frequency of the class before the modal class</li>
+        <li>$f_{amod}$ = frequency of the class after the modal class</li>
+        <li>$R$ = range</li>
+        <li>$s$ = sample standard deviation</li>
+        <li>$s^2$ = sample variance</li>
+        <li>$\sigma$ = population standard deviation</li>
+        <li>$\sigma^2$ = population variance</li>
+        <li>$CV$ = coefficient of variation</li>
+        <li>$z = z-score$</li>
+        <li>$Q_1$ = lower quartile or first quartile</li>
+        <li>$P_{25}$ = 25th percentile or first quartile</li>
+        <li>$Q_2$ = middle quartile or second quartile or median</li>
+        <li>$P_{50}$ = 50th percentile or median</li>
+        <li>$Q_3$ = upper quartile or third quartile</li>
+        <li>$P_{75}$ = 75th percentile or third quartile</li>
+        <li>$IQR$ = interquartile range</li>
+        <li>$SIQR$ = semi-interquartile range</li>
+        <li>$MQ$ = midquartile</li>
+        <li>$LF$ = lower fence</li>
+        <li>$UF$ = upper fence</li>
+        <li>$TM$ = trimmed mean</li>
+        <li>$\Pi$ (pronounced as uppercase Pi) = $product$</li>
+        <li>$\Pi x$ = product of the $x-values$</li>
+        <li>$GM$ = geometric mean</li>
+        <li></li>
+      </ul>
+    </div>
+    <!-- End Symbols -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <h4>Grouped Data</h4>
+      <p>
+        $
+        \underline{\text{Class Size or Class Width}} \\[3ex]
+        (1.)\;\; Class\:\:Width = \dfrac{Maximum - Minimum}{Number\:\:of\:\:classes} \\[5ex]
+        (2.)\;\; Class\:\:Width = LCI\:\:of\:\:2nd\:\:Class - LCI\:\:of\:\:1st\:\:Class \\[3ex]
+        (3.)\;\; Class\:\:Width = UCI\:\:of\:\:2nd\:\:Class - UCI\:\:of\:\:1st\:\:Class \\[3ex]
+        (4.)\;\; Class\:\:Width = UCB\:\:of\:\:a\:\:class - LCB\:\:of\:\:the\:\:same\:\:class \\[3ex]
+        (5.)\;\; Class\:\:Width = LCB\:\:of\:\:a\:\:Class - LCB\:\:of\:\:previous\:\:class \\[5ex]
+
+        \underline{\text{Frequency Density}} \\[3ex]
+        (6.)\;\; \text{Frequency Density} = \dfrac{\text{Frequency}}{\text{Class Width}} \\[7ex]
+
+        \underline{\text{Class Midpoints or Class Marks}} \\[3ex]
+        (7.)\;\; Class\:\:Width = LCB\:\:of\:\:a\:\:Class - LCB\:\:of\:\:previous\:\:class \\[5ex]
+
+        \underline{\text{Class Boundaries}} \\[3ex]
+        (8.)\;\; Lower\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{LCI\:\:of\:\:that\:\:class +
+        UCI\:\:of\:\:previous/preceding\:\:class}{2} \\[5ex]
+        (9.)\;\; Upper\:\:Class\:\:Boundary\:\:of\:\:a\:\:class = \dfrac{UCI\:\:of\:\:that\:\:class +
+        LCI\:\:of\:\:next/succeeding\:\:class}{2} \\[5ex]
+        $
+        (10.) <u>Shortcut for Class Boundaries</u> <br>
+        If the class intervals are integers: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.5 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.5
+        <br><br>
+        If the class intervals are decimals in one decimal place: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.05 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.05
+        <br><br>
+        If the class intervals are decimals in two decimal places: <br>
+        Lower Class Boundary = Lower Class Interval &minus; 0.005 <br>
+        Upper Class Boundary = Upper Class Interval &plus; 0.005
+        <br><br>
+        ...and so on and so forth.
+        <br><br>
+        $
+        \underline{\text{Relative Frequency}} \\[3ex]
+        (11.)\;\; RF\:\:of\:\:a\:\:class = \dfrac{Frequency\:\:of\:\:that\:\:class}{\Sigma Frequency} \\[7ex]
+
+        \underline{\text{Cumulative Frequency}} \\[3ex]
+        (12.)\;\; CF\:\:of\:\:1st\:\:Class = Frequency\:\:of\:\:1st\:\:Class \\[3ex]
+        CF\:\:of\:\:2nd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class \\[3ex]
+        CF\:\:of\:\:3rd\:\:Class = Frequency\:\:of\:\:1st\:\:Class + Frequency\:\:of\:\:2nd\:\:Class +
+        Frequency\:\:of\:\:3rd\:\:Class \\[3ex]
+        CF = CF\:\:of\:\:Last\:\:Class = \Sigma Frequency
+        $
+      </p>
+      <br>
+      <h4>Measures of Center: Raw Data and Ungrouped Data</h4>
+      <p>
+        $
+        \underline{Sample\:\:Mean} \\[3ex]
+        (1.)\:\: \bar{x} = \dfrac{\Sigma x}{n} \\[5ex]
+        (2.)\:\: n = \Sigma f \\[3ex]
+        (3.)\:\: \bar{x} = \dfrac{\Sigma fx}{\Sigma f} \\[5ex]
+
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (4.)\:\: D = x - AM \\[3ex]
+        (5.)\:\: \bar{x} = AM + \dfrac{\Sigma D}{n} \\[5ex]
+        (6.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Population\:\:Mean} \\[3ex]
+        (7.)\:\: \mu = \dfrac{\Sigma x}{N} \\[5ex]
+        (8.)\:\: N = \Sigma f \\[3ex]
+
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (9.)\:\: D = x - AM \\[3ex]
+        (10.)\:\: \mu = AM + \dfrac{\Sigma D}{N} \\[5ex]
+        (11.)\:\: \mu = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Median} \\[3ex]
+        (12.)\:\: \tilde{x} = \left(\dfrac{\Sigma f + 1}{2}\right)th \:\:for\:\:sorted\:\:odd\:\:sample\:\:size \\[5ex]
+        (13.)\:\: \tilde{x} = \left(\dfrac{\Sigma f}{2}\right)th \:\:for\:\:sorted\:\:even\:\:sample\:\:size \\[7ex]
+
+        \underline{Mode} \\[3ex]
+        (14.)\:\: Mode = x-value(s) \:\;with\:\:highest\:\:frequency \\[5ex]
+
+        \underline{Midrange} \\[3ex]
+        (15.)\:\: x_{MR} = \dfrac{min + max}{2} \\[5ex]
+
+        \underline{Geometric\;\;Mean} \\[3ex]
+        (16.)\;\; GM = \sqrt[n]{\prod\limits_{x=1}^n x}
+        $
+      </p>
+      <br>
+      <h4>Measures of Center: Grouped Data</h4>
+      <p>
+        $
+        \underline{Class\:\:Midpoint} \\[3ex]
+        (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[7ex]
+
+        Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+        \underline{Mean} \\[3ex]
+        (2.)\:\: \bar{x} = \dfrac{\Sigma fx_{mid}}{\Sigma f} \\[7ex]
+
+        Equal\:\:Class\:\:Intervals\:(Same\:\:Class\:\:Size) \\[3ex]
+        \underline{Given\:\:an\:\:Assumed\:\:Mean} \\[3ex]
+        (3.)\:\: D = x_{mid} - AM \\[3ex]
+        (4.)\:\: \bar{x} = AM + \dfrac{\Sigma fD}{\Sigma f} \\[7ex]
+
+        \underline{Median} \\[3ex]
+        (5.)\:\: \tilde{x} = LCB_{med} + \dfrac{CW}{f_{med}} * \left[\left(\dfrac{\Sigma f}{2}\right) - CF_{bmed}\right]
+        \\[7ex]
+
+        \underline{Mode} \\[3ex]
+        (6.)\:\: \widehat{x} = LCB_{mod} + CW * \left[\dfrac{f_{mod} - f_{bmod}}{(f_{mod} - f_{bmod}) + (f_{mod} -
+        f_{amod})}\right]
+        $
+      </p>
+      <br>
+      <h4>Measures of Spread: Raw Data and Ungrouped Data</h4>
+      <p>
+        $
+        \underline{Range} \\[3ex]
+        (1.)\:\: Range = max - min \\[3ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (2.)\;\; D = x - AM \\[5ex]
+
+        \underline{Sample\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (3.)\:\: s^2 = \dfrac{\Sigma(x - \bar{x})^2}{n - 1} \\[5ex]
+        (4.)\:\: s^2 = \dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (5.)\:\: s^2 = \dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)} \\[5ex]
+        (6.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (7.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+        (8.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2 \\[10ex]
+
+        \underline{Population\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (9.)\:\: \sigma^2 = \dfrac{\Sigma(x - \mu)^2}{N} \\[5ex]
+        (10.)\:\: \sigma^2 = \dfrac{\Sigma f(x - \mu)^2}{\Sigma f} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (11.)\:\: \sigma^2 = \dfrac{N(\Sigma x^2) - (\Sigma x)^2}{N^2} \\[5ex]
+        (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{(\Sigma f)^2} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+        (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+        \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (15.)\:\: s = \sqrt{\dfrac{\Sigma(x - \bar{x})^2}{n - 1}} \\[5ex]
+        (16.)\:\: s = \sqrt{\dfrac{\Sigma f(x - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (17.)\:\: s = \sqrt{\dfrac{n(\Sigma x^2) - (\Sigma x)^2}{n(n - 1)}} \\[5ex]
+        (18.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}{\Sigma f(\Sigma f - 1)}} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (19.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+        (20.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2} \\[10ex]
+
+        \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (21.)\:\: \sigma = \sqrt{\dfrac{\Sigma(x - \mu)^2}{N}} \\[5ex]
+        (22.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x - \mu)^2}{\Sigma f}} \\[5ex]
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (23.)\:\: \sigma = \dfrac{\sqrt{N(\Sigma x^2) - (\Sigma x)^2}}{N} \\[5ex]
+        (24.)\:\: \sigma = \dfrac{\sqrt{\Sigma f(\Sigma fx^2) - (\Sigma fx)^2}}{\Sigma f} \\[7ex]
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (25.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+        (26.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2} \\[10ex]
+
+        \underline{Range\:\:Rule\:\:of\:\:Thumb} \\[3ex]
+        Approximate\:\:Value\:\:of\:\:Calculating\:\:Standard\:\:Deviation \\[3ex]
+        (27.)\:\: s = \dfrac{Range}{4} = \dfrac{max - min}{4} \\[7ex]
+
+        \underline{Interquartile\:\:Range} \\[3ex]
+        (28.)\:\: IQR = Q_3 - Q_1 \\[5ex]
+
+        \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Sample} \\[3ex]
+        (29.)\:\: CV = \dfrac{s}{x} * 100 ...in\:\:\% \\[7ex]
+
+        \underline{Coefficient\:\:of\:\:Variation\:\:for\:\:Population} \\[3ex]
+        (30.)\:\: CV = \dfrac{\sigma}{x} * 100 ...in\:\:\% \\[7ex]
+
+        \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+        (31.)\:\: MAD = \dfrac{\Sigma |x - \bar{x}|}{n} \\[5ex]
+
+        \underline{Mean\:\:Absolute\:\:Deviation} \\[3ex]
+        (32.)\:\: MAD = \dfrac{\Sigma f|x - \bar{x}|}{\Sigma f} \\[5ex]
+        $
+      </p>
+      <br>
+      <h4>Measures of Spread: Grouped Data</h4>
+      <p>
+        $
+        \underline{Class\:\:Midpoint} \\[3ex]
+        (1.)\:\: x_{mid} = \dfrac{LCL + UCL}{2} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (2.)\;\; D = x_{mid} - AM \\[5ex]
+
+        \underline{Sample\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (3.)\:\: s^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (4.)\:\: s^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (5.)\;\; s^2 = \dfrac{\Sigma D^2}{n - 1} - \left(\dfrac{\Sigma D}{n - 1}\right)^2 \\[7ex]
+        (6.)\;\; s^2 = \dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2 \\[10ex]
+
+        \underline{Sample\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (7.)\:\: s = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f - 1}} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (8.)\:\: s = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f - 1)}} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (9.)\;\; s = \sqrt{\dfrac{\Sigma D^2}{n} - \left(\dfrac{\Sigma D}{n - 1}\right)^2} \\[7ex]
+        (10.)\;\; s = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f - 1} - \left(\dfrac{\Sigma fD}{\Sigma f - 1}\right)^2} \\[10ex]
+
+        \underline{Population\:\:Variance} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (11.)\:\: \sigma^2 = \dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (12.)\:\: \sigma^2 = \dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (13.)\;\; \sigma^2 = \dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2 \\[7ex]
+        (14.)\;\; \sigma^2 = \dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2 \\[10ex]
+
+        \underline{Population\:\:Standard\:\:Deviation} \\[3ex]
+        \color{red}{First\:\:Formula} \\[3ex]
+        (15.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(x_{mid} - \bar{x})^2}{\Sigma f}} \\[5ex]
+
+        \color{red}{Second\:\:Formula} \\[3ex]
+        (16.)\:\: \sigma = \sqrt{\dfrac{\Sigma f(\Sigma fx_{mid}^2) - (\Sigma fx_{mid})^2}{\Sigma f(\Sigma f)}} \\[5ex]
+
+        \underline{Using\;\;Assumed\;\;Mean} \\[3ex]
+        (17.)\;\; \sigma = \sqrt{\dfrac{\Sigma D^2}{N} - \left(\dfrac{\Sigma D}{N}\right)^2} \\[7ex]
+        (18.)\;\; \sigma = \sqrt{\dfrac{\Sigma fD^2}{\Sigma f} - \left(\dfrac{\Sigma fD}{\Sigma f}\right)^2} \\[10ex]
+        $
+      </p>
+      <br>
+      <h4>Measures of Position</h4>
+      <p>
+        A <b>data value is usual</b> if $-2.00 \le z-score \le 2.00$ <br><br>
+        A <b>data value is unusual</b> if $z-score \lt -2.00$ OR $z-score \gt 2.00$ <br><br>
+        $
+        \underline{Sample} \\[3ex]
+        Minimum\:\:usual\:\:data\:\:value = \bar{x} - 2s \\[3ex]
+        Maximum\:\:usual\:\:data\:\:value = \bar{x} + 2s \\[5ex]
+
+        \underline{Population} \\[3ex]
+        Minimum\:\:usual\:\:data\:\:value = \mu - 2\sigma \\[3ex]
+        Maximum\:\:usual\:\:data\:\:value = \mu + 2\sigma \\[5ex]
+
+        \underline{z\:\:score\:\:for\:\:Sample} \\[3ex]
+        (1.)\:\: z = \dfrac{x - \bar{x}}{s} \\[7ex]
+
+        \underline{z\:\:score\:\:for\:\:Population} \\[3ex]
+        (2.)\:\: z = \dfrac{x - \mu}{\sigma} \\[7ex]
+
+        \underline{Quantiles(Percentiles,\:Deciles,\:Quintiles,\:and\:Quartiles)} \\[3ex]
+        \color{red}{Convert\:\:a\:\:Data\:\:value\:\:to\:\:a\:\:Quantile} \\[3ex]
+        x\:\:and\:\:y\:\:are\:\:two\:\:different\:\:variables \\[3ex]
+        (3.)\:\: Percentile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 100 = yth\:\:Percentile
+        \\[5ex]
+        (4.)\:\: Decile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 10 = yth\:\:Decile
+        \\[5ex]
+        (5.)\:\: Quintile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 5 = yth\:\:Quintile
+        \\[5ex]
+        (6.)\:\: Quartile\:\:of\:\:x =
+        \dfrac{number\:\:of\:\:values\:\:less\:\:than\:\:x}{total\:\:number\:\:of\:\:values} * 4 = yth\:\:Quartile
+        \\[7ex]
+
+        \color{red}{Convert\:\:a\:\:Quantile\:\:to\:\:a\:\:Data\:\:Value} \\[3ex]
+        Calculate\:\:the\:\:xth\:\:position\:\:of\:\:the\:\:yth\:\:Quantile \\[3ex]
+        (7.)\:\: xth\:\:position = \dfrac{yth\:\:Percentile}{100} * total\:\:number\:\:of\:\:values \\[5ex]
+        (8.)\:\: xth\:\:position = \dfrac{yth\:\:Decile}{10} * total\:\:number\:\:of\:\:values \\[5ex]
+        (9.)\:\: xth\:\:position = \dfrac{yth\:\:Quintile}{5} * total\:\:number\:\:of\:\:values \\[5ex]
+        (10.)\:\: xth\:\:position = \dfrac{yth\:\:Quartile}{4} * total\:\:number\:\:of\:\:values \\[7ex]
+        $
+      </p>
+      <br>
+      <table>
+        <tr class="w3-green">
+          <th>If the $xth$ position</th>
+          <th>then,</th>
+        </tr>
+        <tr>
+          <td>is an integer</td>
+          <td>
+            <br>
+            $xth\:\:position = \dfrac{xth\:\:position + (x + 1)th\:\;position}{2}$ <br><br>
+            In other words, find the value of the $xth$ position; find the value of the next position; and determine the
+            mean of the
+            two values.
+          </td>
+        </tr>
+        <tr>
+          <td>is not an integer</td>
+          <td>$xth$ position is <b>rounded up</b></td>
+        </tr>
+      </table>
+
+      <br><br>
+
+      <p>
+        $
+        \underline{The\:\:Five-Number\:\:Summary\:\:of\:\:Data} \\[3ex]
+        (11.)\:\: Minimum\:(min) \\[3ex]
+        (12.)\:\: Lower\:\:Quartile\:(Q_1) \\[3ex]
+        (13.)\:\: Median\:\:or\:\:Middle\:\:Quartile\:(Q_2) \\[3ex]
+        (14.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+        (15.)\:\: Maximum\:(Max) \\[5ex]
+
+        \underline{Other\:\:Statistics\:\:from\:\:Quantiles} \\[3ex]
+        (16.)\:\: IQR = Q_3 - Q_1 \\[3ex]
+        (17.)\:\: SIQR = \dfrac{IQR}{2} = \dfrac{Q_3 - Q_1}{2} \\[5ex]
+        (18.)\:\: MQ = \dfrac{Q_3 + Q_1}{2} \\[5ex]
+        (19.)\:\: Upper\:\:Quartile\:(Q_3) \\[3ex]
+        (20.)\:\: LF = Q_1 - 1.5(IQR) \\[3ex]
+        (21.)\:\: UF = Q_3 + 1.5(IQR)
+        $
+      </p>
+      <br>
+      <h4>Probability</h4>
+      <p>
+        Given any two events say <i>A</i> and <i>B</i>
+        <br><br>
+        $
+        P(E) = \dfrac{n(E)}{n(S)} \\[5ex]
+
+        \underline{\text{Addition Rule}} \\[3ex]
+        \dfrac{n(A \cup B)}{n(S)} = \dfrac{n(A)}{n(S)} + \dfrac{n(B)}{n(S)} - \dfrac{n(A \cap B)}{n(S)} \\[5ex]
+        P(A \cup B) = P(A) + P(B) - P(A \cap B) \\[3ex]
+        P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - P(A\:\:\:AND\:\:\:B) \\[5ex]
+        $
+        For <u>Independent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B) \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B)] \\[5ex]
+        $
+        For <u>Dependent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B|A) \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - [P(A) * P(B|A)] \\[5ex]
+        $
+        For <u>Mutually Exclusive Events (Disjoint Events)</u>
+        <br><br>
+        $
+        P(A \cap B) = 0 \\[3ex]
+        P(A\:\:\:OR\:\:\:B) = P(A) + P(B) - 0 \\[3ex]
+        \rightarrow P(A\:\:\:OR\:\:\:B) = P(A) + P(B) \\[5ex]
+        $
+        <br>
+        $
+        \underline{\text{Multiplication Rule}} \\[3ex]
+        P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A) \\[3ex]
+        P(A \cap B) = P(A) * P(B|A) \\[3ex]
+        P(A\:\:\:AND\:\:\:B) = P(A \cap B) \\[5ex]
+        $
+        $P(B|A)$ is read as: the probability of event $B$ given event $A$
+        <br><br>
+        For <u>Independent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B) \\[3ex]
+        \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B) \\[5ex]
+        $
+        For <u>Dependent Events</u>
+        <br><br>
+        $
+        P(B|A) = P(B|A) \\[3ex]
+        \rightarrow P(A\:\:\:AND\:\:\:B) = P(A) * P(B|A) \\[5ex]
+        $
+        The complement of Event $A$ is $A'$
+        <br><br>
+        $
+        \underline{Complementary\;\;Rule} \\[3ex]
+        P(A) + P(A') = 1 \\[3ex]
+        \rightarrow P(A') = 1 - P(A) \\[5ex]
+        $
+        <u>Other Formulas</u>
+        <br><br>
+        $
+        (1.)\;\; P(A) = P(A \cap B') + P(A \cap B)
+        $
+      </p>
+      <br>
+      <h4>Probability Distributions</h4>
+      <p>
+        $
+        \boldsymbol{Probability\;\;Distribution} \\[3ex]
+        (1.)\;\;\mu = \Sigma[x * P(x)] \\[3ex]
+        (2.)\;\;E = \Sigma[x * P(x)] \\[3ex]
+        (3.)\;\; \sigma = \sqrt{\Sigma[x^2 * P(x)] - \mu^2} \\[7ex]
+
+        \boldsymbol{Combinatorics} \\[3ex]
+        (1.)\:\: 0! = 1 \\[3ex]
+        (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[3ex]
+        (3.)\;\; n! = n * (n - 1)! \\[3ex]
+        (4.)\;\; n! = (n - 1) * (n - 2)!...among\;\;others \\[3ex]
+        (5.)\:\: C(n, x) = \dfrac{n!}{(n - x)!x!} \\[5ex]
+        (6.)\;\; C(n, x) = C(n, n - x) \\[7ex]
+
+        \boldsymbol{Binomial\;\;Distribution} \\[3ex]
+        (1.)\;\; p + q = 1 \\[3ex]
+        (2.)\;\; \mu = n * p \\[3ex]
+        (3.)\;\; \sigma = \sqrt{n * p * q} \\[4ex]
+        (4.)\;\; P(x) = C(n, x) * p^x * q^{n - x}...\text{Depends on the context of the question} \\[5ex]
+        where \\[3ex]
+        x = \text{number of successes/failures} \\[3ex]
+        n = \text{number of trials} = 12 \\[3ex]
+        C(n, x) = \text{Binomial coefficient} \\[3ex]
+        P(x) = \text{Probability of the number of successes/failures} \\[3ex]
+        p = \text{probability of success} = 70\% = 0.7 \\[3ex]
+        q = \text{probability of failure} = 1 - 0.7 = 0.3 \\[5ex]
+
+        \boldsymbol{Poisson\;\;Distribution} \\[3ex]
+        (1.)\;\;P(x) = \dfrac{\mu^x * e^{-\mu}}{x!} \\[5ex]
+        (2.)\;\; \mu = \sigma^2 \\[7ex]
+
+        \boldsymbol{Normal\;\;Distribution} \\[3ex]
+        (1.)\;\; z = \dfrac{x - \bar{x}}{s} \\[5ex]
+        (2.)\;\; x = \bar{x} + zs \\[3ex]
+        (3.)\;\; z = \dfrac{x - \mu}{\sigma} \\[5ex]
+        (4.)\;\; x = \mu + z\sigma \\[3ex]
+        (5.)\;\;\text{Probability Density Function},\;\;P(x) =
+        \dfrac{1}{\sigma\sqrt{2\pi}}e^{{-\dfrac{1}{2}}\left(\dfrac{x - \mu}{\sigma}\right)^2} \\[7ex]
+        $
+        <br><br>
+
+        <b>Empirical Rule (68 - 95 - 99.7 percent Rule)</b> <br>
+        (<i>Applies only to Normal Distribution</i>) <br>
+        (a.) 68% of the data lie within (below and above) 1 standard deviation of the mean <br>
+        (b.) 95% of the data lie within (below and above) 2 standard deviations of the mean <br>
+        (c.) 99.7% of the data lie within (below and above) 3 standard deviations of the mean
+        <br><br>
+
+        <b>Pafnuty Chebyshev's Theorem</b> <br>
+        (<i>Applies to any distribution</i>) <br>
+        At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $k$ standard deviations of the mean
+        <br>
+        implies <br>
+        At least $\left(1 - \dfrac{1}{k^2}\right) * 100$ % of the data lie within $\mu - k\sigma$ and $\mu + k\sigma$
+        <br><br>
+
+        <b>Range Rule of Thumb</b> <br>
+        Minimum Usual Value = &mu; - 2&sigma; <br>
+        Maximum Usual Value = &mu; + 2&sigma; <br>
+        A data value is <b>unusual</b> if it is <b>less than the minimum usual value</b> <u>or</u> <b>greater than the
+          maximum usual value</b>
+        <br><br>
+
+        <b>z-score Boundary</b> <br>
+        A data value is <b>usual</b> if &minus;2.00 &le; <i>z</i>-score &le; 2.00 <br>
+        A data value is <b>unusual</b> if <i>z</i>-score &lt; &minus;2.00 <u>or</u> if <i>z</i>-score &gt; 2.00
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) The table shows the distribution of distance (<i>in km</i>) of 60 villages from a state capital.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <td style="width: 16%;">Distance (<i>in km</i>)</td>
+              <td style="width: 12%;">0 &ndash; 19</td>
+              <td style="width: 12%;">20 &ndash; 29</td>
+              <td style="width: 12%;">30 &ndash; 39</td>
+              <td style="width: 12%;">40 &ndash; 49</td>
+              <td style="width: 12%;">50 &ndash; 69</td>
+              <td style="width: 12%;">70 &ndash; 99</td>
+              <td style="width: 12%;">100 &ndash; 149</td>
+            </tr>
+            <tr>
+              <td>Number of villages</td>
+              <td>12</td>
+              <td>7</td>
+              <td>6</td>
+              <td>8</td>
+              <td>5</td>
+              <td>9</td>
+              <td>10</td>
+            </tr>
+          </table>
+          <br>
+          Draw a histogram for the distribution.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP1')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP1">
+            <br>
+            $
+            \text{Lower Class Boundary} = \text{Lower Class Interval} - 0.5...\text{because of integers} \\[3ex]
+            \text{Upper Class Boundary} = \text{Upper Class Interval} + 0.5...\text{because of integers} \\[3ex]
+            \text{Class Width} = \text{Upper Class Boundary} - \text{Lower Class Boundary} \\[3ex]
+            \text{Frequency Density} = \dfrac{\text{Frequency}}{\text{Class Width}} \\[5ex]
+            $
+            <table class="w3-center">
+              <tr>
+                <td style="width: 35%;">Class Intervals: Distance (km)</td>
+                <td style="width: 35%;">Class Boundaries</td>
+                <td style="width: 10%;">Number of Villages: Frequency, <i>F</i></td>
+                <td style="width: 10%;">Class Width</td>
+                <td style="width: 10%;">Frequency Density</td>
+              </tr>
+              <tr>
+                <td>0 &ndash; 19</td>
+                <td>&minus;0.5 &ndash; 19.5</td>
+                <td>12</td>
+                <td>20</td>
+                <td>0.6</td>
+              </tr>
+              <tr>
+                <td>20 &ndash; 29</td>
+                <td>19.5 &ndash; 29.5</td>
+                <td>7</td>
+                <td>10</td>
+                <td>0.7</td>
+              </tr>
+              <tr>
+                <td>30 &ndash; 39</td>
+                <td>29.5 &ndash; 39.5</td>
+                <td>6</td>
+                <td>10</td>
+                <td>0.6</td>
+              </tr>
+              <tr>
+                <td>40 &ndash; 49</td>
+                <td>39.5 &ndash; 49.5</td>
+                <td>8</td>
+                <td>10</td>
+                <td>0.8</td>
+              </tr>
+              <tr>
+                <td>50 &ndash; 69</td>
+                <td>49.5 &ndash; 69.5</td>
+                <td>5</td>
+                <td>20</td>
+                <td>0.25</td>
+              </tr>
+              <tr>
+                <td>70 &ndash; 99</td>
+                <td>69.5 &ndash; 99.5</td>
+                <td>9</td>
+                <td>30</td>
+                <td>0.3</td>
+              </tr>
+              <tr>
+                <td>100 &ndash; 149</td>
+                <td>99.5 &ndash; 149.5</td>
+                <td>10</td>
+                <td>50</td>
+                <td>0.2</td>
+              </tr>
+            </table>
+            <br>
+            Scale: <br>
+            1 cm to 0.1 unit on the <i>y</i>-axis (Frequency Density axis) <br>
+            2 cm to 20 units on the <i>x</i>-axis (Distance axis)
+            <br><br>
+            The histogram is drawn as shown:
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Number1.png" alt="Number 1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP2')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The data shows the ordered marks scored by students in a test:
+          $11, 12, (2x + y), (x + 2y), 14$ and $(y^2 - 2x)$. <br>
+          Given that the median is $13\dfrac{1}{2}$ and <i>y</i> is greater than <i>x</i> by 1, find: <br>
+          (a.) the values of <i>x</i> and <i>y</i>; <br>
+          (b.) correct to <b>three</b> significant figures, the standard deviation of the distribution.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP3')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCSP3')">Calculator Solution</button>
+          <div class="result" id="solutionSP3">
+            <br>
+            The dataset is ordered
+            <br><br>
+            $
+            11, 12, (2x + y), (x + 2y), 14, (y^2 - 2x) \\[3ex]
+            y = x + 1...eqn.(1) ...\text{greater than }x \;\;by\;\;1 \\[3ex]
+            Median = 13\dfrac{1}{2} = \dfrac{27}{2} \\[5ex]
+            Median = \dfrac{(2x + y) + (x + 2y)}{2} \\[5ex]
+            \implies \\[3ex]
+            \dfrac{(2x + y) + (x + 2y)}{2} = \dfrac{27}{2} \\[5ex]
+            \text{same denominator; equate the numerators} \\[3ex]
+            2x + y + x + 2y = 27 \\[3ex]
+            3x + 3y = 27 \\[3ex]
+            3(x + y) = 27 \\[3ex]
+            x + y = \dfrac{27}{3} \\[5ex]
+            x + y = 9...eqn.(2) \\[3ex]
+            \text{Substitute for y in eqn.(2)} \\[3ex]
+            x + x + 1 = 9 \\[3ex]
+            2x = 9 - 1 \\[3ex]
+            2x = 8 \\[3ex]
+            x = \dfrac{8}{2} \\[5ex]
+            x = 4 \\[3ex]
+            \text{Substitute for x in eqn.(1)} \\[3ex]
+            y = 4 + 1 \\[3ex]
+            y = 5 \\[5ex]
+            2x + y = 2(4) + 5 = 13 \\[3ex]
+            x + 2y = 4 + 2(5) = 14 \\[3ex]
+            y^2 - 2x = 5^2 - 2(4) = 17 \\[3ex]
+            \text{Dataset is: } 11, 12, 13, 14, 14, 17 \\[3ex]
+            \text{Size}, n = 6 \\[3ex]
+            $
+            We shall assume that the dataset is a population <br>
+            Let us set up the table to do the calculations.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 20%;">$x$</th>
+                <th style="width: 35%;">$x - \bar{x}$</th>
+                <th style="width: 45%;">(x - \bar{x})^2</th>
+              </tr>
+              <tr>
+                <td>11</td>
+                <td>&minus;2.5</td>
+                <td>6.25</td>
+              </tr>
+              <tr>
+                <td>12</td>
+                <td>&minus;1.5</td>
+                <td>2.25</td>
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>&minus;0.5</td>
+                <td>0.25</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>0.5</td>
+                <td>0.25</td>
+              </tr>
+              <tr>
+                <td>14</td>
+                <td>0.5</td>
+                <td>0.25</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>3.5</td>
+                <td>12.25</td>
+              </tr>
+              <tr>
+                <td>$\Sigma x = 81$</td>
+                <td>
+                  $
+                  Mean, \bar{x} = \dfrac{\Sigma x}{n}
+                  = \dfrac{81}{6} \\[5ex]
+                  = 13.5
+                  $
+                </td>
+                <td>$\Sigma (x - \bar{x})^2 = 21.5$</td>
+              </tr>
+            </table>
+            <br>
+            $
+            \text{Standard Deviation}, \mu = \sqrt{\dfrac{\Sigma (x - \bar{x})^2}{n}} \\[5ex]
+            = \sqrt{\dfrac{21.5}{6}} \\[5ex]
+            = 1.892969449 \\[3ex]
+            \approx 1.89 ...\text{to 3 significant figures}
+            $
+          </div>
+          <div class="result" id="solutionCSP3">
+            <br>
+            <img src="images/StatisticsProbability/Answers/Calculator3a.png" alt="Calculator 3a">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator3b.png" alt="Calculator 3b">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator3c.png" alt="Calculator 3c">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) Two events <i>M</i> and <i>N</i> are such that $P(M) = \dfrac{1}{2}$, $P(N) = \dfrac{9}{20}$ and $P(M
+          \cap N) = \dfrac{11}{50}$. <br><br>
+          Find: <br>
+          (a.) $P(M \cap N')$ <br>
+          (b.) $P(M' \cap N)$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP4')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP4">
+            <br>
+            $
+            (a.) \\[3ex]
+            P(M \cap N') = P(M\;\;only) \\[3ex]
+            P(M) = P(M \cap N') + P(M \cap N) \\[3ex]
+            P(M \cap N') = P(M) - P(M \cap N) \\[3ex]
+            = \dfrac{1}{2} - \dfrac{11}{50} \\[5ex]
+            = \dfrac{25 - 11}{50} \\[5ex]
+            = \dfrac{14}{50} \\[5ex]
+            = \dfrac{7}{25} \\[5ex]
+            (b.) \\[3ex]
+            P(M' \cap N) = P(N\;\;only) \\[3ex]
+            P(N) = P(M' \cap N) + P(M \cap N) \\[3ex]
+            P(M' \cap N) = P(N) - P(M \cap N) \\[3ex]
+            = \dfrac{9}{20} - \dfrac{11}{50} \\[5ex]
+            = \dfrac{45 - 22}{100} \\[5ex]
+            = \dfrac{23}{100}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) In an examination, 70% of the candidates passed. <br>
+          If 12 candidates are selected at random, find the probability that: <br>
+          (a.) <b>at least two</b> of them <b>failed</b>; <br>
+          (b.) <b>exactly half</b> of them <b>passed</b>; <br>
+          (c.) <b>not more than one-sixth</b> of them <b>failed</b>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP5')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCSP5')">Calculator Solution</button>
+          <div class="result" id="solutionSP5">
+            <br>
+            $
+            \underline{\text{Binomial Probability Distribution}} \\[3ex]
+            P(x) = C(n, x) * p^x * q^{n - x}...\text{depending on the context} \\[4ex]
+            where \\[3ex]
+            x = \text{number of successes/failures} ...\text{depending on the context} \\[3ex]
+            n = \text{number of trials} \\[3ex]
+            C(n, x) = \text{Binomial coefficient} \\[3ex]
+            P(x) = \text{Probability of the number of successes/failures} \\[3ex]
+            p = \text{probability of success} \\[3ex]
+            q = \text{probability of failure} \\[5ex]
+
+            (a.) \\[3ex]
+            \text{at least 2 failed} \\[3ex]
+            x \ge 2 \\[3ex]
+            n = 12 \\[3ex]
+            P(x) = ? \\[3ex]
+            p = 70\% = 0.7 \\[3ex]
+            q = 1 - 0.7 = 0.3 \\[5ex]
+
+            P(x \ge 2) + P(x \lt 2) = 1 ...\text{Complementary Rule} \\[3ex]
+            P(x \ge 2) = 1 - P(x \lt 2) \\[3ex]
+            = 1 - [P(x = 0) + P(x = 1)] \\[5ex]
+
+            P(x) = C(n, x) * q^x * p^{n - x}...\text{in the context of failing} \\[4ex]
+            P(x = 0) = C(12, 0) * (0.3)^0 * (0.7)^{12 - 0} \\[4ex]
+            = \dfrac{12!}{(12 - 0)! * 0!} * 1 * 0.7^{12} \\[5ex]
+            = \dfrac{12!}{12! * 1} * 0.0138412872 \\[5ex]
+            = 0.0138412872 \\[5ex]
+
+            P(x = 1) = C(12, 1) * (0.3)^1 * (0.7)^{12 - 1} \\[4ex]
+            = \dfrac{12!}{(12 - 1)! * 1!} * 0.3 * 0.7^{11} \\[5ex]
+            = \dfrac{12 * 11!}{11! * 1} * 0.3 * 0.0197732674 \\[5ex]
+            = 0.0711837627 \\[5ex]
+
+            \implies \\[3ex]
+            P(x \ge 2) = 1 - (0.0138412872 + 0.0711837627) \\[3ex]
+            = 1 - 0.0850250499 \\[3ex]
+            = 0.9149749501 \\[5ex]
+
+            (b.) \\[3ex]
+            \text{half of them} = \dfrac{1}{2} * 12 = 6 \\[5ex]
+            P(x) = C(n, x) * p^x * q^{n - x}...\text{in the context of passing} \\[4ex]
+            P(x = 6) = C(12, 6) * 0.7^6 * 0.3^{12 - 6} \\[4ex]
+            = \dfrac{12!}{(12 - 6)! * 6!} * 0.117649 * 0.3^6 \\[5ex]
+            = \dfrac{12!}{6! * 6!} * 0.117649 * 0.000729 \\[5ex]
+            = 0.0792478958 \\[5ex]
+
+            (c.) \\[3ex]
+            \text{one-sixth of them} = \dfrac{1}{6} * 12 = 2 \\[5ex]
+            \text{not more than 2 failed} = \text{at most 2 failed} \\[3ex]
+            x \le 2 \\[3ex]
+            P(x \le 2) = P(x = 0) + P(x = 1) + P(x = 2) \\[3ex]
+            P(x) = C(n, x) * q^x * p^{n - x}...\text{in the context of failing} \\[4ex]
+            P(x = 2) = C(12, 2) * 0.3^2 * 0.7^{12 - 2} \\[4ex]
+            = \dfrac{12!}{(12 - 2)! * 2!} * 0.09 * 0.7^{10} \\[5ex]
+            = \dfrac{12!}{10! * 2!} * 0.09 * 0.0282475249 \\[5ex]
+            = 0.1677902979 \\[3ex]
+            \therefore P(x \le 2) = 0.0138412872 + 0.0711837627 + 0.1677902979 \\[3ex]
+            = 0.2528153479
+            $
+          </div>
+          <div class="result" id="solutionCSP5">
+            <br>
+            (a.) <br>
+            <img src="images/StatisticsProbability/Answers/Calculator5a.png" alt="Calculator 5a">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator5b.png" alt="Calculator 5b">
+            <br><br>
+            (b.) <br>
+            <img src="images/StatisticsProbability/Answers/Calculator5c.png" alt="Calculator 5c">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator5d.png" alt="Calculator 5d">
+            <br><br>
+            (c.) <br>
+            <img src="images/StatisticsProbability/Answers/Calculator5e.png" alt="Calculator 5e">
+            <br><br>
+            <img src="images/StatisticsProbability/Answers/Calculator5f.png" alt="Calculator 5f">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+
+          <button class="solutions" onclick="solutions('solutionSP6')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP7')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP8')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionSP9')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP10')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionSP11')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP12')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionSP13')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP14')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionSP15')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP16')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionSP17')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP18')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionSP19')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP20')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/AUSTRALIA/SACE/StatisticsProbability.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP21')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP22')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionSP23')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP24')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionSP25')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP26')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionSP27')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP28')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionSP29')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP30')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionSP31')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP32')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionSP33')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP34')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionSP35')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP36')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionSP37')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP38')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionSP39')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionSP40')">Show/Hide Answer</button>
+          <div class="result" id="solutionSP40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="../images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

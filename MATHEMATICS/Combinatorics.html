@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Combinatorics</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to questions on combinatorics.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace,  Mathematics, 
+  Further Mathematics, Algebra, combinatorics, factorial notation, factorials, discrete mathematics, finite mathematics, 
+  fundamental counting principle, counting principle, multplication principle, fundamental principle of counting, 
+  principle of counting, permutations, combinations, probability, counting, probability, permutation in probability, 
+  combination in probability, circular permutation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Combinatorics</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+
+        These are the solutions to questions on the topics in Combinatorics. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        If you find these resources valuable/helpful, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions involving factorials, permutation, and/or combinations, these are
+        the steps to use the functions:
+        <br><br>
+        <img src="images/calculator-combinatorics.png" alt="Calculator Combinatorics">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas</h2>
+      <p>
+        Say: <br><br>
+        <i>n</i> is the number of items (<i>n</i> items)
+        <br><br>
+        <i>c</i> and <i>d</i> are the number of duplicate items
+        <br><br>
+        <i>n</i>! is read as <i>n</i>-factorial
+        <br><br>
+        The number of permutations of <i>n</i>items is <i>n</i>!
+        <br><br>
+        The number of permutations of duplicate items is $\dfrac{n!}{c! * d!}$
+        <br><br>
+        The number of permutations of $n$ total items taking $r$ items at a time is $^nP_r \;\;\;or\;\;\; _nP_r
+        \;\;\;or\;\;\; P(n, r)$
+        <br><br>
+        The number of combinations of $n$ total items taking $r$ items at a time is $^nC_r \;\;\;or\;\;\; _nC_r
+        \;\;\;or\;\;\; C(n, r) \;\;\;or\;\;\; \displaystyle{\binom{n}{r}}$
+        <br><br>
+        $
+        (1.)\:\: 0! = 1 \\[4ex]
+        (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[4ex]
+        (3.)\;\; n! = n * (n - 1)! \\[4ex]
+        (4.)\;\; n! = n * (n - 1) * (n - 2)!...\text{and so on and so forth} \\[4ex]
+        (5.)\;\; (n - 1)! = (n - 1) * (n - 2)!...\text{and so on and so forth} \\[4ex]
+        (6.)\;\; (n - 2)! = (n - 2) * (n - 3) * (n - 4)!...\text{and so on and so forth} \\[4ex]
+        (7.)\;\; (n - 3)! = (n - 3) * (n - 4) * (n - 5)!...\text{and so on and so forth} \\[4ex]
+        (8.)\;\; (n + 1)! = (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (9.)\;\; (n + 2)! = (n + 2) * (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (10.)\;\; (n + 3)! = (n + 3) * (n + 2) * (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (11.)\:\: P(n, r) = \dfrac{n!}{(n - r)!} \\[7ex]
+        (12.)\:\: C(n, r) = \dfrac{n!}{(n - r)!r!} \\[7ex]
+        (13.)\;\; P(n, r) = n! * C(n, r) \\[4ex]
+        (14.)\;\; C(n, r) = C(n, n - r) \\[4ex]
+        (15.)\;\; (n - r) * P(n, r) = P(n, r + 1) \\[4ex]
+        (16.)\;\; Number\;\;of\;\;circular\;\;permutations = (n - 1)! \\[4ex]
+        $
+        <b>Case 1:</b> <br>
+        <u>Given:</u> a certain number of digits/letters say <i>p</i> <br>
+        (14.) The number of unique number of digits/letters say <i>c</i> digits/letters that can be formed if the
+        digits/letters may be repeated is $p^c$ digits/letters.
+        <br><br>
+        (15.) The number of unique number of digits/letters say <i>c</i> digits/letters that can be formed if the
+        digits/letters may not be repeated is $P(p, c)$ digits/letters.
+        <br><br>
+        <b>Case 2:</b> <br>
+        <u>Given:</u> a certain number of people or items in a linear random order say $n$ <br>
+        (16.) The number of ways in which two people or two items must be close together is $2 * (n - 1) * (n - 2)!$
+        ways
+        <br><br>
+        <b>Binomial Theorem</b>
+        <br><br>
+        $
+        (x + y)^n \\[3ex]
+        = C(n, 0)(x^n)(y^0) + C(n, 1)(x^{n - 1})(y) + C(n, 2)(x^{n - 2})(y^2) + ... + C(n, r)(x^{n - r})(y^r) + ... +
+        C(n, n)(x^0)(y^n) \\[4ex]
+        = x^n + C(n, 1)(x^{n - 1})(y) + C(n, 2)(x^{n - 2})(y^2) + ... + C(n, r)(x^{n - r})(y^r) + ... + y^n \\[5ex]
+        $
+        <b>Generalized Binomial Series</b> <br>
+        <i>Recommended for negative values of the outside exponent (negative values of n)</i>
+        <br><br>
+        $
+        (1 + x)^n = 1 + nx + \dfrac{n(n - 1)}{2!}x^2 + \dfrac{n(n - 1)(n - 2)}{3!}x^3 + O(x^4) \\[3ex]
+        $
+        where $O(x^4)$ is the Big-O Notation representing the remainder of the series, and indicating that the omitted
+        terms are of the order of $x^4$ as <i>x</i> approaches zero.
+        <br><br>
+        The binomial expansion of $(1 + ax)^n$ is valid when $|ax| \lt 1$
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) The ratio of the number of arrangements of $(2n + 2)$ different objects taken <i>n</i> objects at a time
+          to the number of arrangements of $2n$ different objects taken <i>n</i> objects at a time is 14:5. <br>
+          Find the value of <i>n</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCC1')">Calculator Check</button>
+          <div class="result" id="solutionC1">
+            <br>
+            Numerator: The number of arrangements of $(2n + 2)$ different objects taken <i>n</i> objects at a time is:
+            $P(2n + 2), n$ <br>
+            Denominator: The number of arrangements of $2n$ different objects taken <i>n</i> objects at a time is:
+            $P(2n, n)$
+            <br><br>
+            $
+            \underline{\text{Numerator}} \\[3ex]
+            P(2n + 2, n) \\[3ex]
+            = \dfrac{(2n + 2)!}{(2n + 2 - n)!} \\[5ex]
+            = \dfrac{(2n + 2)!}{(n + 2)!} \\[5ex]
+            (2n + 2)! \\[3ex]
+            = (2n + 2)(2n + 2 - 1)(2n + 2 - 2)! \\[3ex]
+            = (2n + 2)(2n + 1)(2n)! \\[5ex]
+            (n + 2)! \\[3ex]
+            = (n + 2)(n + 2 - 1)(n + 2 - 2)! \\[3ex]
+            = (n + 2)(n + 1)(n)! \\[5ex]
+            \implies \\[3ex]
+            P(2n + 2, n) = \dfrac{(2n + 2)(2n + 1)(2n)!}{(n + 2)(n - 1)(n)!} \\[5ex]
+            \underline{\text{Denominator}} \\[3ex]
+            P(2n, n) \\[3ex]
+            = \dfrac{(2n)!}{(2n -n)!} \\[5ex]
+            = \dfrac{(2n)!}{n!} \\[5ex]
+            \underline{\text{Ratio: }Numerator \div Denominator} \\[3ex]
+            P(2n + 2, n) \div P(2n, n) \\[3ex]
+            \dfrac{(2n + 2)(2n + 1)(2n)!}{(n + 2)(n + 1)(n)!} \div \dfrac{(2n)!}{n!} \\[5ex]
+            \dfrac{2(n + 1)(2n + 1)(2n)!}{(n + 2)(n + 1)(n)!} * \dfrac{n!}{(2n)!} \\[5ex]
+            \dfrac{2(2n + 1)}{(n + 2)} \\[5ex]
+            \dfrac{4n + 2}{n + 2} \\[5ex]
+            \text{This ratio } = \dfrac{14}{5} \\[5ex]
+            \implies \\[3ex]
+            \dfrac{4n + 2}{n + 2} = \dfrac{14}{5} \\[5ex]
+            5(4n + 2) = 14(n + 2) \\[3ex]
+            20n + 10 = 14n + 28 \\[3ex]
+            20n - 14n = 28 - 10 \\[3ex]
+            6n = 18 \\[3ex]
+            n = 3
+            $
+          </div>
+          <div class="result" id="solutionCC1">
+            <br>
+            <img src="images/Combinatorics/Answers/Calculator1.png" alt="Calculator 1">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Using Pascal's Triangle only, expand and simplify completely: $(2x - 2y)^6$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC2')">Show/Hide Answer</button>
+          <div class="result" id="solutionC2">
+            <br>
+            $$
+            \begin{array}{c}
+            1 \\[2ex]
+            1 \quad 1 \\[2ex]
+            1 \quad 2 \quad 1 \\[2ex]
+            1 \quad 3 \quad 3 \quad 1 \\[2ex]
+            1 \quad 4 \quad 6 \quad 4 \quad 1 \\[2ex]
+            1 \quad 5 \quad 10 \quad 10 \quad 5 \quad 1 \\[2ex]
+            1 \quad 6 \quad 15 \quad 20 \quad 15 \quad 6 \quad 1 \\[2ex]
+            \end{array}
+            $$
+            $
+            (2x - 2y)^6 \\[3ex]
+            = 1(2x)^6(-2y)^0 + 6(2x)^5(-2y)^1 + 15(2x)^4(-2y)^2 + 20(2x)^3(-2y)^3 + 15(2x)^2(-2y)^4 + 6(2x)^1(-2y)^5 +
+            1(2x)^0(-2y)^6 \\[3ex]
+            = 64x^6 + 6(32)(-2)(x^5y) + 15(16)(4)(x^4y^2) + 20(8)(-8)x^3y^3 + 15(4)(16)(x^2y^4) + 6(2)(-32)(xy^5) +
+            64y^6 \\[3ex]
+            = 64x^6 - 384x^5y + 960x^4y^2 - 1280x^3y^3 + 960x^2y^4 - 384xy^5 + 64y^6
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) (a.) Determine the expansion of $(1 + x)^{-2}$, up and including the term in $x^3$. <br>
+          (b.) Use part (a.) to find the expansion of $(1 + 2x)^{-2}$, up and including the term in $x^3$, stating the
+          range of values of <i>x</i> for which this expansion is valid.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC3')">Show/Hide Answer</button>
+          <div class="result" id="solutionC3">
+            <br>
+            $
+            \underline{\text{Generalized Binomial Series}} \\[3ex]
+            (1 + x)^n = 1 + nx + \dfrac{n(n - 1)}{2!}x^2 + \dfrac{n(n - 1)(n - 2)}{3!}x^3 + O(x^4) \\[3ex]
+            (a.) \\[3ex]
+            (1 + x)^{-2} \\[3ex]
+            n = -2 \\[3ex]
+            \implies \\[3ex]
+            = 1 + (-2)(x) + \dfrac{-2(-2 - 1)}{2}x^2 + \dfrac{-2(-2 - 1)(-2 - 2)}{3 * 2}x^3 + O(x^4) \\[5ex]
+            = 1 - 2x + \dfrac{-2(-3)x^2}{2} + \dfrac{-2(-3)(-4)x^3}{6} + O(x^4) \\[5ex]
+            = 1 - 2x + 3x^2 - 4x^3 + O(x^4) \\[3ex]
+            (b.) \\[3ex]
+            (1 + 2x)^{-2} \\[3ex]
+            x = 2x \\[3ex]
+            \implies \\[3ex]
+            = 1 - 2(2x) + 3[(2x)^2] - 4[(2x)^3] + O(x^4) \\[3ex]
+            = 1 - 4x + 3(4x^2) - 4(8x^3) + O(x^4) \\[3ex]
+            = 1 - 4x + 12x^2 - 32x^3 + O(x^4) \\[5ex]
+            \underline{\text{Validity for }(1 + 2x)^{-2}} \\[3ex]
+            |2x| \lt 1 \\[3ex]
+            2x \lt 1 \hspace{3em}OR\hspace{3em} -(2x) \lt 1 \\[3ex]
+            x \lt \dfrac{1}{2} \hspace{3em}OR\hspace{3em} 2x \gt -1 \\[5ex]
+            x \lt \dfrac{1}{2} \hspace{3em}OR\hspace{3em} x \gt -\dfrac{1}{2} \\[5ex]
+            -\dfrac{1}{2} \lt x \lt \dfrac{1}{2}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+
+          <button class="solutions" onclick="solutions('solutionC4')">Show/Hide Answer</button>
+          <div class="result" id="solutionC4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+
+          <button class="solutions" onclick="solutions('solutionC5')">Show/Hide Answer</button>
+          <div class="result" id="solutionC5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+
+          <button class="solutions" onclick="solutions('solutionC6')">Show/Hide Answer</button>
+          <div class="result" id="solutionC6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <button class="solutions" onclick="solutions('solutionC7')">Show/Hide Answer</button>
+          <div class="result" id="solutionC7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC8')">Show/Hide Answer</button>
+          <div class="result" id="solutionC8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionC9')">Show/Hide Answer</button>
+          <div class="result" id="solutionC9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC10')">Show/Hide Answer</button>
+          <div class="result" id="solutionC10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionC11')">Show/Hide Answer</button>
+          <div class="result" id="solutionC11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC12')">Show/Hide Answer</button>
+          <div class="result" id="solutionC12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionC13')">Show/Hide Answer</button>
+          <div class="result" id="solutionC13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC14')">Show/Hide Answer</button>
+          <div class="result" id="solutionC14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionC15')">Show/Hide Answer</button>
+          <div class="result" id="solutionC15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC16')">Show/Hide Answer</button>
+          <div class="result" id="solutionC16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionC17')">Show/Hide Answer</button>
+          <div class="result" id="solutionC17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC18')">Show/Hide Answer</button>
+          <div class="result" id="solutionC18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionC19')">Show/Hide Answer</button>
+          <div class="result" id="solutionC19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC20')">Show/Hide Answer</button>
+          <div class="result" id="solutionC20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/MATHEMATICS/Combinatorics.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionC21')">Show/Hide Answer</button>
+          <div class="result" id="solutionC21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC22')">Show/Hide Answer</button>
+          <div class="result" id="solutionC22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

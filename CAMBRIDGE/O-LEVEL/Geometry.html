@@ -1,0 +1,1177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Geometry</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the Cambridge Ordinary Level (O-Level) exam questions on geometry.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, CAMBRIDGE, 
+  Cambridge Assessments, IGCSE, International General Certificate of Secondary Education, A-Level,  Advanced Level, 
+  O-Level, Ordinary Level, Pre-U, Pre-University, Algebra, Geometry, trigonometry, analytic trigonometry, trigonometric functions, 
+  angles, triangles, geometry, trigonometric identities, inverse trigonometric functions, sine function, inverse sine function, 
+  cosine function, inverse cosine function, tangent function, inverse tangent function, composite functions, 
+  trigonometric equations, trigonometric proofs, trigonometric formulas, trigonometric graphs, trigonometric inequalities, 
+  right triangles, sine law, cosine law, initial side, terminal side, coordinate plane, angular measures,
+    side lengths, vertex, standard position, coterminal angles, quadrantal angles, reference angles, unit circle, planar figures, 
+    three-dimensional figures, cofunction, quadrants, inverse cosecant function, inverse secant function, inverse cotangent function, 
+    trigonometric expressions, right triangles, area of triangle, bearings, distances, elevation, depression, angle of elevation, 
+    angle of depression, arc, length of arc, sector, segment, linear speed, angular speed, circular functions, 
+    area of sector, area of segment, base angle, apex angle, vertex angle, compass bearing, congruent triangles, similar triangles, 
+    congruency, similarity, measurement, geometry, trigonometry, mathematical literacy, quantitative literacy, length, width, 
+    volume, area, perimeter, surface area, slant height, frustrum, base area, perpendicular height, triangle, square, 
+    rectangle, parallelogram, rhombus, diamond, kite, rhombi, circle, cube, cuboid, cone, two-dimensional figure, shape, prism, 
+    trapezium, trapezoid, pyramid, cylinder, total surface area, curved surface area, square-based pyramid, composite shape, 
+    triangular-based pyramid, Hero's formula, Heron's formula, pentagons, hexagons, heptagons, octagons, nonagons, decagons, 
+    hendecagons, dodecagons">
+
+  <link rel="stylesheet" href="../styles/Mathematics.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+      <a href="#statements" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statements</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Geometry</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the Cambridge O-Level (Ordinary Level) past questions on Geometry. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        any of the Cambridge Assessments on Mathematics, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="../images/calculator-mode-degree.png" alt="Calculator Mode">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas</h2>
+
+      (1.) $\overleftrightarrow{AB}$ <br>
+      Line AB
+      <br><br>
+      (2.) $\overline{AB}$ <br>
+      Line Segment AB
+      <br><br>
+      (3.) $\overrightarrow{AB}$ <br>
+      Ray AB
+      <br><br>
+      (4.) Given: <i>n</i> collinear points: <br>
+      the number of different rays that can be named is: 2(<i>n</i> &minus; 1) rays.
+      <br><br>
+      (5.) Given: <i>n</i> collinear points: <br>
+      the number of different lines that can be named if order is important is found from the Permutation formula.
+      <br>
+      Two points are used to name a line. <br>
+      Permutation: order is important: <i>perm 2 from n</i> <br>
+      $P(n, 2) = \dfrac{n!}{(n - 2)!}$
+      <br><br>
+      (6.) Given: <i>n</i> collinear points: <br>
+      the number of different lines that can be named if order is <u>not</u> important is found from the Combination
+      formula. <br>
+      Two points are used to name a line. <br>
+      Combination: order is not important: <i>comb 2 from n</i> <br>
+      $C(n, 2) = \dfrac{n!}{(n - 2)! * 2!}$
+      <br><br>
+      (7.) Given: <i>n</i> coplanar points: <br>
+      the number of different ways to name the plane if order is important is found from the Permutation formula. <br>
+      Three points are used to name a plane. <br>
+      Permutation: order is important: <i>perm 3 from n</i> <br>
+      $P(n, 3) = \dfrac{n!}{(n - 3)!}$
+      <br><br>
+      (8.) Given: <i>n</i> coplanar points: <br>
+      the number of different ways to name the plane if order is <u>not</u> important is found from the Combination
+      formula. <br>
+      Three points are used to name a plane. <br>
+      Combination: order is not important: <i>comb 3 from n</i> <br>
+      $C(n, 3) = \dfrac{n!}{(n - 3)! * 3!}$
+      <br><br>
+      (9.) <b>Regular Polygons</b> <br>
+      Where: the <b>number of sides is greater than 4</b> <br>
+      Let: <br>
+      number of sides = <i>n</i> <br>
+      side length = <i>s</i> <br>
+      radius (the distance from the center to a vertex) = <i>r</i> <br>
+      apothem (shortest distance from the center to one of the sides) = <i>a</i> <br>
+      each interior angle = &theta; <br>
+      perimeter = P <br>
+      area = A
+      <br><br>
+      $
+      \Sigma \theta = 180^\circ(n - 2) \\[3ex]
+      \theta = \dfrac{180^\circ(n - 2)}{n} \\[5ex]
+      a = r\cos\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      a = \dfrac{s}{2\tan \left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      s = 2r\sin\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      s = 2a\tan\left(\dfrac{180^\circ}{n}\right) \\[7ex]
+      r = \dfrac{a}{\cos\left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      r = \dfrac{s}{2\sin\left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      P = ns \\[3ex]
+      P = 2rn\sin\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      P = 2an\tan\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      A = \dfrac{\pi r^2}{2}\sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+      A = \dfrac{aP}{2} \\[5ex]
+      A = \dfrac{ans}{2} \\[5ex]
+      A = \dfrac{\pi a^2}{\cos^2\left(\dfrac{180^\circ}{n}\right)} \sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+
+      \text{Sum of interior angles} = 180(n - 2) \\[4ex]
+      \text{Each interior angle} = \dfrac{180(n - 2)}{n} \\[6ex]
+      \text{Sum of exterior angles} = 360^\circ \\[4ex]
+      \text{Each interior angle} = \dfrac{360}{n} \\[6ex]
+      $
+
+      (10.) <b>Section Formula</b> <br>
+      Given two points say <i>A</i>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) and <i>B</i>(<i>x</i><sub>2</sub>,
+      <i>y</i><sub>2</sub>): if a point say <i>C</i>(<i>x</i>, <i>y</i>) divides the line segment |AB| in the ratio:
+      <i>m</i>:<i>n</i>, then the coordinates of <i>C</i> is given by:
+      <br><br>
+      $
+      C = \dfrac{mB + nA}{m + n} \\[5ex]
+      C(x, y) = \left(\dfrac{mx_2 + nx_1}{m + n}, \dfrac{my_2 + ny_1}{m + n}\right)
+      $
+
+      <br><br>
+
+      <ul class="w3-ul cornsilk">
+        <li class="w3-yellow w3-hover-black w3-center"><b>Symbols and Meanings for Circles</b></li>
+        <li>(<i>h</i>, <i>k</i>) = coordinates of the center of a circle</li>
+        <li><i>r</i> = radius of a circle</li>
+        <li><i>d</i> = diameter of a circle</li>
+        <li><i>C</i> = circumference of a circle (also known as the perimeter)</li>
+        <li><i>A</i> = area of a circle</li>
+        <li>&pi; = pi = $\dfrac{22}{7}$</li>
+        <li>&theta; = central angle</li>
+        <li>&deg; = DEG = degrees</li>
+        <li>RAD = radians</li>
+        <li><i>L</i> = length of arc</li>
+        <li><i>A</i><sub>sec</sub> = area of sector</li>
+        <li><i>P</i><sub>sec</sub> = perimeter of sector</li>
+        <li><i>A</i><sub>seg</sub> = area of segment</li>
+        <li><i>P</i><sub>seg</sub> = perimeter of segment</li>
+        <li>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) = first endpoint of the diameter of a circle</li>
+        <li>(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>) = second endpoint of the diameter of a circle</li>
+      </ul>
+
+      <br><br>
+
+      <b>Radius, Diameter, Circumference, Area</b>
+      <br><br>
+      $
+      \underline{Circle} \\[3ex]
+      d = 2r \\[3ex]
+      r = \dfrac{d}{2} \\[5ex]
+      C = \pi d \\[3ex]
+      d = \dfrac{C}{\pi} \\[5ex]
+      C = 2\pi r \\[3ex]
+      r = \dfrac{C}{2\pi} \\[5ex]
+      A = \pi r^2 \\[3ex]
+      r = \sqrt{\dfrac{A}{\pi}} \\[5ex]
+      A = \dfrac{\pi d^2}{4} \\[5ex]
+      d = \sqrt{\dfrac{4A}{\pi}} \\[5ex]
+      A = \dfrac{C^2}{4\pi} \\[5ex]
+      C = 2\sqrt{A\pi} \\[5ex]
+
+      \underline{Semicircle} \\[3ex]
+      d = 2r \\[3ex]
+      r = \dfrac{d}{2} \\[5ex]
+      C = \pi r \\[3ex]
+      C = \dfrac{\pi d}{2} \\[5ex]
+      r = \dfrac{C}{\pi} \\[5ex]
+      d = \dfrac{2C}{\pi} \\[5ex]
+      A = \dfrac{\pi r^2}{2} \\[5ex]
+      r = \sqrt{\dfrac{2A}{\pi}} \\[5ex]
+      A = \dfrac{\pi d^2}{8} \\[5ex]
+      d = \sqrt{\dfrac{8A}{\pi}} \\[7ex]
+
+      \underline{\theta\;\;in\;\;DEG} \\[3ex]
+      L = \dfrac{2\pi r\theta}{360} \\[5ex]
+      \theta = \dfrac{180L}{\pi r} \\[5ex]
+      r = \dfrac{180L}{\pi \theta} \\[5ex]
+      A_{sec} = \dfrac{\pi r^2\theta}{360} \\[5ex]
+      P_{sec} = \dfrac{r(\pi\theta + 360)}{180} \\[5ex]
+      \theta = \dfrac{360A_{sec}}{\pi r^2} \\[5ex]
+      r = \dfrac{360A_{sec}}{\pi\theta} \\[5ex]
+      A_{sec} = \dfrac{Lr}{2} \\[5ex]
+      A_{sec} = \dfrac{Lr}{2} \\[5ex]
+      r = \dfrac{2A_{sec}}{L} \\[5ex]
+      L = \dfrac{2A_{sec}}{r} \\[5ex]
+
+      \underline{\theta\;\;in\;\;RAD} \\[3ex]
+      L = r\theta \\[5ex]
+      \theta = \dfrac{L}{r} \\[5ex]
+      r = \dfrac{L}{\theta} \\[5ex]
+      A_{sec} = \dfrac{r^2\theta}{2} \\[5ex]
+      \theta = \dfrac{2A_{sec}}{r^2} \\[5ex]
+      r = \sqrt{\dfrac{2A_{sec}}{\theta}} \\[5ex]
+      $
+      (1.) <b>Standard Form of the Equation of a Circle</b> <br>
+      $(x - h)^2 + (y - k)^2 = r^2$ <br>
+      where: <br>
+      $x, y$ are the variables <br>
+      $(h, k)$ are the coordinates of the center of the circle <br>
+      $r$ is the radius of the circle
+      <br><br>
+
+      (2.) <b>General Form of the Equation of a Circle</b> <br>
+      $x^2 + y^2 + 2gx + 2fy + c = 0$ <br>
+      where: <br>
+      $x, y$ are the variables <br>
+      $c$ is the coefficient of $x$ <br>
+      $d$ is the coefficient of $y$ <br>
+      $c, d, e$ are values/constants
+      <br><br>
+      (3.) <u>Given:</u> <b>The Center Coordinates of a Circle and an Endpoint on the Circumference of the Circle</b>
+      <br>
+      The coordinates of the center of the circle = $(h, k)$ <br>
+      The endpoint on the circumference of the circle = $(x_1, y_1)$ <br>
+      The radius of the circle can be found by the <b>Distance Formula</b> <br>
+      The radius of the circle = $r$ <br>
+      r = $\sqrt{(x_1 - h)^2 + (y_1 - k)^2}$ <br>
+      The diameter of the circle = $d$ <br>
+      The diameter of the circle is twice the radius. <br>
+      $d = 2 * r$ <br>
+      The second endpoint of the diameter of the circle can also be found <br>
+      The second endpoint of the diameter of the circle = $(x_2, y_2)$ <br><br>
+      $
+      x_2 = x_1 + r \\[3ex]
+      y_2 = y_1 + r \\[3ex]
+      (x_2, y_2) = (x_1 + r, y_1 + r) \\[3ex]
+      $
+
+      (4.) <u>Given:</u> <b>The Endpoints of the Diameter of the Circle</b> <br>
+      $(x_1, y_1)$ = first endpoint of the diameter of a circle <br>
+      $(x_2, y_2)$ = second endpoint of the diameter of a circle <br>
+      The center of the circle is found using the <b>Midpoint Formula</b> <br>
+      $(h, k)$ are the coordinates of the center of the circle <br><br>
+      $
+      h = \dfrac{x_1 + x_2}{2} \\[5ex]
+      k = \dfrac{y_1 + y_2}{2} \\[5ex]
+      $
+
+      <b>Euler's Theorem:</b> The number of faces (F ), vertices (V ), and edges (E ) of a polyhedron are
+      related by the formula: F + V = E + 2 <br>
+      &Implies; F + V &minus; E = 2
+
+      <br><br>
+
+      In naming a line, two points are used. <br>
+      In naming a plane, three points are used.
+      <br><br>
+      We can measure angles in: <br>
+      Degrees (DEG, $^\circ$) <br>
+      Radians (RAD) <br>
+      Gradians (GRAD) <br>
+      Degrees, Minutes, and Seconds ($^\circ \:'\:''$) <br><br>
+      $DRG$ means $Degree-Radian-Gradian$ in some calculators <br>
+      $180^\circ = \pi \:\:RAD = 200 \:\:GRAD$ <br><br>
+      <u>To convert from:</u> <br>
+      radians to degrees, multiply by $\dfrac{180}{\pi}$ <br><br>
+      degrees to radians, multiply by $\dfrac{\pi}{180}$
+      <br><br>
+      $DMS$ means $Degree-Minute-Second$ in some calculators
+      <br><br>
+      $
+      1^\circ = 60' \\[3ex]
+      1^\circ = 3600'' \\[3ex]
+      1^\circ = 60' = 3600'' \\[3ex]
+      1' = 60'' \\[3ex]
+      $
+      <u>To convert from:</u> <br>
+      degrees to minutes, multiply by $60$ <br>
+      minutes to degrees, divide by $60$ <br>
+      degrees to seconds, multiply by $3600$ <br>
+      seconds to degrees, divide by $3600$ <br>
+      minutes to seconds, multiply by $60$ <br>
+      seconds to minutes, divide by $60$
+
+      <br><br>
+      <i>
+        Show students these angular measures in their scientific calculators. <br>
+        Show them how to convert from one angular measure to another.
+      </i>
+      <br><br>
+
+      <b>Ellipses</b>
+      <br><br>
+      <ul class="w3-ul cornsilk">
+        <li class="w3-yellow w3-hover-black w3-center"><b>Symbols and Meanings for Ellipses</b></li>
+        <li>(<i>h, k</i>) = coordinates of the center of an ellipse</li>
+        <li><b>Ellipse:</b> <i>a</i> = horizontal distance from the center to the boundary</li>
+        <li><b>Ellipse:</b> <i>b</i> = vertical distance from the center to the boundary</li>
+        <li><b>Horizontal Ellipse:</b> <i>a</i> = half the length of the major axis <u>OR</u> the
+          length of the semi-major axis</li>
+        <li><b>Horizontal Ellipse:</b> <i>b</i> = half the length of the minor axis <u>OR</u> the
+          length of the semi-minor axis</li>
+        <li><b>Vertical Ellipse:</b> <i>a</i> = half the length of the minor axis <u>OR</u> the
+          length of the semi-minor axis</li>
+        <li><b>Vertical Ellipse:</b> <i>b</i> = half the length of the major axis <u>OR</u> the
+          length of the semi-major axis</li>
+        <li><i>c</i> = linear eccentricity = distance from the center of the ellipse to the foci
+        </li>
+        <li>$f_1,f_2$ = foci points</li>
+        <li>$f$ = distance between the foci</li>
+        <li><i>e</i> = eccentricity</li>
+        <li><i>A</i> = area</li>
+        <li><i>P</i> = perimeter</li>
+        <li><i>L</i> = length of the latus rectum</li>
+        <li>$L_1,\;L_2,\;L_3,\;L_4$ = endpoints of the latus rectum</li>
+        <li><i>D</i> = distance between the two directrixes</li>
+        <li><i>C</i> = fractional factorials binomial coefficient</li>
+        <li>&lambda; = square of the ratio of the difference of the semi-axis to the sum of the
+          semi-axis</li>
+        <li><i>n</i> = number of terms</li>
+      </ul>
+      <br><br>
+
+      (1.) <b>Standard Form of the Equation of an Ellipse</b>
+      <br><br>
+      $
+      \dfrac{(x - h)^2}{a^2} + \dfrac{(y - k)^2}{b^2} = 1 \\[5ex]
+      $
+      If $a \gt b$, the ellipse is a horizontal ellipse. <br>
+      If $a \lt b$, the ellipse is a vertical ellipse.
+      <br><br>
+      $
+      \underline{\text{Assume a Horizontal Ellipse}} \\[3ex]
+      \text{Length of Major Axis} = 2a \\[3ex]
+      \text{Length of Minor Axis} = 2b \\[3ex]
+      \text{Distance between two Foci} = 2\sqrt{a^2 - b^2} \\[5ex]
+      $
+
+
+      (2.) <b>Eccentricity</b>
+      <br><br>
+      $
+      e = \dfrac{\sqrt{semiMajor\;\;axis\;\;length^2 - semiMinor\;\;axis\;\;length^2}}{semiMajor\;\;axis\;\;length}
+      \\[3ex]
+      $
+      In other words: <br>
+      <b>Eccentricity: Horizontal Ellipse:</b> <br>
+      Major axis is the horizontal axis <br>
+      Semi-major axis length = <i>a</i> <br><br>
+      $
+      e = \dfrac{\sqrt{a^2 - b^2}}{a} \\[3ex]
+      $
+
+      <b>Eccentricity: Vertical Ellipse:</b> <br>
+      Major axis is the vertical axis <br>
+      Semi-major axis length = <i>b</i>
+      <br><br>
+      $
+      e = \dfrac{\sqrt{b^2 - a^2}}{b} \\[5ex]
+      $
+
+      <br><br>
+      (1.) <b>Standard Form of a Horizontal Hyperbola</b>
+      <br><br>
+      $
+      \dfrac{(x - h)^2}{a^2} - \dfrac{(y - k)^2}{b^2} = 1 \\[5ex]
+      $
+      where: <br>
+      (<i>h, k</i>) is the coordinates of the center of the hyperbola <br>
+      the transverse axis is along the <i>x</i>-axis (horizontal transverse axis)
+      <br><br>
+      (2.) <b>Standard Form of a Vertical Hyperbola</b>
+      <br><br>
+      $
+      \dfrac{(y - h)^2}{b^2} - \dfrac{(x - k)^2}{a^2} = 1 \\[5ex]
+      $
+      where: <br>
+      (<i>h, k</i>) is the coordinates of the center of the hyperbola <br>
+      the transverse axis is along the <i>y</i>-axis (vertical transverse axis)
+      <br><br>
+      (3.) <b>Asymptotes of a Hyperbola</b>
+      <br><br>
+      $
+      \pm \dfrac{b}{a}x
+      $
+
+
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) The sum of the interior angles of a triangle is 180&deg;
+        <br><br>
+        (2.) The exterior angle of a triangle is the sum of the two interior opposite angles.
+        <br><br>
+        (3.) The sum of angles on a straight line is 180&deg;
+        <br><br>
+        (4.) The sum of the angles at a point is 360&deg;
+        <br><br>
+        (5.) <b>Interior Angle Sum Theorem:</b> The sum of the interior angles of a polygon (regular and irregular
+        polygons) is $180(n - 2)$ where <i>n</i> is the number of sides. <br>
+        This is because any polygon of <i>n</i> sides can be split into <i>n</i> &minus; 2 triangles.
+        <br><br>
+        (6.) <b>Exterior Angle Sum Theorem:</b> The sum of the exterior angles of a polygon (regular and irregular
+        polygons) is 360&deg;
+        <br><br>
+        (7.) <b>Angle Bisector Theorem:</b> Any point on the bisector of an angle is equidistant from the two sides of
+        the angle.
+        <br><br>
+        (8.) For any point on an ellipse, the sum of the distances from the foci to that point is equal to the length of
+        the major axis.
+        <br><br>
+
+
+
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Statements -->
+    <div class="w3-container w3-padding-32" id="statements">
+      <h2>Statements</h2>
+      <p>
+        (1.) <b>Regular Polygon Symmetry</b>: A regular polygon has equal side lengths and congruent interior angle
+        vertices. <br>
+        This symmetry leads to this statement: <br>
+        Any line drawn from the center of the center (radius) to a vertex of a regular polygon <b>bisects</b> the
+        interior angle of the polygon.
+
+      </p>
+    </div>
+    <!-- End Statements -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) <img src="images/Geometry/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          The diagram shows a pentagon. <br>
+          (a.) Calculate the interior angle <i>B</i>. <br>
+          (b.) In the pentagon, <i>AE</i> = 8 cm and <i>AD</i> = 15 cm. <br>
+          Calculate the length <i>ED</i>. <br>
+          Show your working and give your answer correct to 1 decimal place.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG1')">Show/Hide Answer</button>
+          <div class="result" id="solutionG1">
+            <br>
+            $
+            (a.) \\[3ex]
+            \underline{\text{Pentagon}} \\[3ex]
+            sides = n = 5 \\[3ex]
+            \text{Sum of interior angles} = 180(n - 2) \\[3ex]
+            = 180(5 - 2) \\[3ex]
+            = 540^\circ \\[3ex]
+            Also: \\[3ex]
+            \text{Sum of interior angles} \\[3ex]
+            = \text{Interiors }: \angle A + \angle B + \angle C + \angle D + \angle E \\[3ex]
+            = 106 + \angle B + 148 + 79 + 120 \\[3ex]
+            = \angle B + 453 \\[3ex]
+            \implies \\[3ex]
+            \angle B + 453 = 540 \\[3ex]
+            \angle B = 540 - 453 \\[3ex]
+            \angle B = 87^\circ \\[3ex]
+            $
+            (b.) Let us represent the information on a diagram
+            <br><br>
+            <img src="images/Geometry/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            $
+            \underline{\triangle AED} \\[3ex]
+            \text{Let } |ED| = a \\[3ex]
+            15^2 = 8^2 + a^2 - 2(8)(a) \cos 120^\circ ...\text{Cosine Law} \\[3ex]
+            225 = 64 + a^2 - (16a)(-0.5) \\[3ex]
+            64 + a^2 + 8a - 225 = 0 \\[3ex]
+            a^2 + 8a - 161 = 0 \\[3ex]
+            \text{Compare }: a_1^2x + bx + c = 0 \\[3ex]
+            a_1 = 1; \hspace{3em} b = 8; \hspace{3em} c = -161 \\[3ex]
+            a = \dfrac{-b \pm \sqrt{b^2 - 4a_1c}}{2a_1} \\[5ex]
+            a = \dfrac{-8 \pm \sqrt{8^2 - 4(1)(-161)}}{2(1)} \\[5ex]
+            a = \dfrac{-8 \pm \sqrt{64 + 644}}{2} \\[5ex]
+            a = \dfrac{-8 \pm \sqrt{708}}{2} \\[5ex]
+            a = \dfrac{-8 + \sqrt{708}}{2} \hspace{3em}OR\hspace{3em} a = \dfrac{-8 + \sqrt{708}}{2} \\[5ex]
+            \text{Discard the negative root (the second root) because the length cannot be negative} \\[3ex]
+            |ED| = a = 9.304134696 \\[3ex]
+            |ED| \approx 9.3\;cm...\text{to 1 decimal place}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <button class="solutions" onclick="solutions('solutionG2')">Show/Hide Answer</button>
+          <div class="result" id="solutionG2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <button class="solutions" onclick="solutions('solutionG3')">Show/Hide Answer</button>
+          <div class="result" id="solutionG3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <button class="solutions" onclick="solutions('solutionG4')">Show/Hide Answer</button>
+          <div class="result" id="solutionG4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionG5')">Show/Hide Answer</button>
+          <div class="result" id="solutionG5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <button class="solutions" onclick="solutions('solutionG6')">Show/Hide Answer</button>
+          <div class="result" id="solutionG6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG7')">Show/Hide Answer</button>
+          <div class="result" id="solutionG7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG8')">Show/Hide Answer</button>
+          <div class="result" id="solutionG8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionG9')">Show/Hide Answer</button>
+          <div class="result" id="solutionG9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG10')">Show/Hide Answer</button>
+          <div class="result" id="solutionG10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionG11')">Show/Hide Answer</button>
+          <div class="result" id="solutionG11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG12')">Show/Hide Answer</button>
+          <div class="result" id="solutionG12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionG13')">Show/Hide Answer</button>
+          <div class="result" id="solutionG13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG14')">Show/Hide Answer</button>
+          <div class="result" id="solutionG14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionG15')">Show/Hide Answer</button>
+          <div class="result" id="solutionG15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG16')">Show/Hide Answer</button>
+          <div class="result" id="solutionG16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionG17')">Show/Hide Answer</button>
+          <div class="result" id="solutionG17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG18')">Show/Hide Answer</button>
+          <div class="result" id="solutionG18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionG19')">Show/Hide Answer</button>
+          <div class="result" id="solutionG19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG20')">Show/Hide Answer</button>
+          <div class="result" id="solutionG20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/CAMBRIDGE/O-LEVEL/Geometry.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG21')">Show/Hide Answer</button>
+          <div class="result" id="solutionG21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG22')">Show/Hide Answer</button>
+          <div class="result" id="solutionG22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionG23')">Show/Hide Answer</button>
+          <div class="result" id="solutionG23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG24')">Show/Hide Answer</button>
+          <div class="result" id="solutionG24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionG25')">Show/Hide Answer</button>
+          <div class="result" id="solutionG25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG26')">Show/Hide Answer</button>
+          <div class="result" id="solutionG26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionG27')">Show/Hide Answer</button>
+          <div class="result" id="solutionG27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG28')">Show/Hide Answer</button>
+          <div class="result" id="solutionG28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionG29')">Show/Hide Answer</button>
+          <div class="result" id="solutionG29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG30')">Show/Hide Answer</button>
+          <div class="result" id="solutionG30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionG31')">Show/Hide Answer</button>
+          <div class="result" id="solutionG31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG32')">Show/Hide Answer</button>
+          <div class="result" id="solutionG32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionG33')">Show/Hide Answer</button>
+          <div class="result" id="solutionG33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG34')">Show/Hide Answer</button>
+          <div class="result" id="solutionG34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionG35')">Show/Hide Answer</button>
+          <div class="result" id="solutionG35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG36')">Show/Hide Answer</button>
+          <div class="result" id="solutionG36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionG37')">Show/Hide Answer</button>
+          <div class="result" id="solutionG37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG38')">Show/Hide Answer</button>
+          <div class="result" id="solutionG38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionG39')">Show/Hide Answer</button>
+          <div class="result" id="solutionG39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG40')">Show/Hide Answer</button>
+          <div class="result" id="solutionG40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="../images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="../scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

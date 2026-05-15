@@ -1,0 +1,1064 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Linear Algebra</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage has the solutions to the WASSCE Further Mathematics questions on linear algebra.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, WASSCE, 
+  West African Senior School Certificate Examination, Arithmetic, Algebra, linear systems, linear equations, matrix, consistent, inconsistent, independent, 
+  dependent, consistent-independent, consistent-dependent, rows, columns, elements, variables, matrices, determinants, substitution, graph, elimination, 
+  Cramer's rule, row reduction, Guassian elimination, Guass-Jordan method, matrix inverse, consistent, inconsistent, dependent, independent, 
+  solutions, element, member, row, column, order, size, dimension, row matrix, row vector, column matrix, column vector, zero matrix, null matrix, 
+  rectangular matrix, square matrix, diagonal matrix, scalar matrix, identity matrix, unit matrix, triangular matrix, transpose, symmetric matrix, 
+  skew symmetric matrix, minor, cofactor, determinant, augmented matrix, row echelon matrix, rank, pivot, reduced row echelon matrix, 
+  adjoint, inverse, cramer's rule, row operations, row reduction, guass-jordan method, guassian elimination method, triangular method, 
+  matrix inverse method, cryptology, singular, non-invertible, non-singular, invertible, linear transformation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Linear Algebra</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to the WASSCE Further Mathematics past questions on Linear Algebra. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable and helpful in your passing the Further Mathematics test of the WASSCE,
+        please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Linear Transformation to Matrix</h2>
+      <p>
+        For a linear transformation $T:(x, y) \rightarrow (ax + by, cx + dy)$,
+        <br><br>
+        the corresponding matrix is:
+        $
+        T = \begin{bmatrix}
+        a & b \\[3ex]
+        c & d
+        \end{bmatrix}
+        $
+      </p>
+      <br>
+      <h2>2 by 2 Matrix</h2>
+      <p>
+        Let:
+        <br><br>
+        $
+        A = \begin{bmatrix}
+        a_{11} & a_{12} \\[3ex]
+        a_{21} & a_{22}
+        \end{bmatrix} = \begin{bmatrix}
+        \color{red}{a} & \color{darkblue}{b} \\[3ex]
+        \color{darkblue}{c} & \color{red}{d}
+        \end{bmatrix} \\[10ex]
+
+        (1.)\;\; minor\:\: A = \begin{bmatrix}
+        d & c \\[3ex]
+        b & a
+        \end{bmatrix} \\[10ex]
+
+        \text{The signs to remember cofactors when determining the determinant of a matrix is}: \\[3ex]
+        \begin{vmatrix}
+        + & - \\[3ex]
+        - & +
+        \end{vmatrix} \\[10ex]
+
+        (2.)\;\; cofactor\:\: A = \begin{bmatrix}
+        d & -c \\[3ex]
+        -b & a
+        \end{bmatrix} \\[10ex]
+
+        (3.)\;\; adj\:\: A = \begin{bmatrix}
+        d & -b \\[3ex]
+        -c & a
+        \end{bmatrix} \\[10ex]
+
+        (4.)\;\; det\;A = ad - cb \\[3ex]
+        (5.)\;\; A^{-1} = \dfrac{adj\;A}{det\;A}
+        $
+      </p>
+      <br>
+      <h2>3 by 3 Matrix</h2>
+      <p>
+        Let:
+        <br><br>
+        $
+        A = \begin{bmatrix}
+        a_{11} & a_{12} & a_{13} \\[3ex]
+        a_{21} & a_{22} & a_{23} \\[3ex]
+        a_{31} & a_{32} & a_{33}
+        \end{bmatrix} =
+        \begin{bmatrix}
+        a & b & c \\[3ex]
+        d & e & f \\[3ex]
+        g & h & i
+        \end{bmatrix} \\[15ex]
+
+        (1.)\;\; minor\:\: A = \begin{bmatrix}
+        ei - hf & di - gf & dh - ge \\[3ex]
+        bi - hc & ai - gc & ah - gb \\[3ex]
+        bf - ec & af - dc & ae - db
+        \end{bmatrix} \\[15ex]
+
+        \text{The signs to remember cofactors when determining the determinant of a matrix is}: \\[3ex]
+        \begin{vmatrix}
+        + & - & + \\[3ex]
+        - & + & - \\[3ex]
+        + & - & +
+        \end{vmatrix} \\[10ex]
+
+        (2.)\;\; cofactor\:\: A = \begin{bmatrix}
+        ei - hf & gf - di & dh - ge \\[3ex]
+        hc - bi & ai - gc & gb - ah \\[3ex]
+        bf - ec & dc - af & ae - db
+        \end{bmatrix} \\[15ex]
+
+        (3.)\;\; adj\: A = \begin{bmatrix}
+        ei - hf & hc - bi & bf - ec \\[3ex]
+        gf - di & ai - gc & dc - af \\[3ex]
+        dh - ge & gb - ah & ae - db
+        \end{bmatrix} \\[15ex]
+
+        (4.)\;\; det\: A = aei + bgf + cdh - ahf - bdi - cge \\[3ex]
+        (5.)\;\; A^{-1} = \dfrac{adj\;A}{det\;A}
+        $
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) (a.) Calculate
+          <br><br>
+          $
+          \begin{vmatrix}
+          3 & 5 & -4 \\[3ex]
+          6 & -3 & -5 \\[3ex]
+          -2 & 2 & 1
+          \end{vmatrix} \\[10ex]
+          $
+          (b.) Using your result in (a.), solve the simultaneous equation
+          <br><br>
+          $
+          3x + 5y - 4z = 1 \\[3ex]
+          6x - 3y - 5z = -15 \\[3ex]
+          -2x + 2y + z = 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionLA1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA1')">Calculator Solution</button>
+          <div class="result" id="solutionLA1">
+            <br>
+            The question is asking us to use the Method of Determinants (also known as Cramer's Rule)
+            <br><br>
+            $
+            \begin{bmatrix}
+            3 & 5 & -4 \\[3ex]
+            6 & -3 & -5 \\[3ex]
+            -2 & 2 & 1
+            \end{bmatrix}
+            \begin{bmatrix}
+            x \\[3ex]
+            y \\[3ex]
+            z
+            \end{bmatrix} =
+            \:\:\:
+            \begin{bmatrix}
+            1 \\[3ex]
+            -15 \\[3ex]
+            5
+            \end{bmatrix} \\[15ex]
+
+            (a.) \\[3ex]
+            \underline{\text{Denominator}} \\[3ex]
+            \begin{vmatrix}
+            + & - & + \\[3ex]
+            - & + & - \\[3ex]
+            + & - & +
+            \end{vmatrix} \hspace{3em}
+            \begin{vmatrix}
+            3 & 5 & -4 \\[3ex]
+            6 & -3 & -5 \\[3ex]
+            -2 & 2 & 1
+            \end{vmatrix} \\[12ex]
+            \underline{\text{1st Row}} \\[3ex]
+            = 3\begin{vmatrix}
+            -3 & -5 \\[3ex]
+            2 & 1
+            \end{vmatrix}
+            -5\begin{vmatrix}
+            6 & -5 \\[3ex]
+            -2 & 1
+            \end{vmatrix}
+            + -4\begin{vmatrix}
+            6 & -3 \\[3ex]
+            -2 & 2
+            \end{vmatrix} \\[12ex]
+            = 3(-3 + 10) - 5(6 - 10) - 4(12 - 6) \\[3ex]
+            = 3(7) - 5(-4) - 4(6) \\[3ex]
+            = 21 + 20 - 24 \\[3ex]
+            = 17
+            $
+            <br><br>
+            $
+            \underline{\text{Numerator for }x} \\[3ex]
+            \begin{vmatrix}
+            1 & 5 & -4 \\[3ex]
+            -15 & -3 & -5 \\[3ex]
+            5 & 2 & 1
+            \end{vmatrix} \\[12ex]
+            \underline{\text{1st Row}} \\[3ex]
+            = 1\begin{vmatrix}
+            -3 & -5 \\[3ex]
+            2 & 1
+            \end{vmatrix}
+            -5\begin{vmatrix}
+            -15 & -5 \\[3ex]
+            5 & 1
+            \end{vmatrix}
+            + -4\begin{vmatrix}
+            -15 & -3 \\[3ex]
+            5 & 2
+            \end{vmatrix} \\[10ex]
+            = (-3 + 10) - 5(-15 + 25) - 4(-30 + 15) \\[3ex]
+            = 7 - 5(10) - 4(-15) \\[3ex]
+            = 7 - 50 + 60 \\[3ex]
+            = 17
+            $
+            <br><br>
+            $
+            \underline{\text{Numerator for }y} \\[3ex]
+            \begin{vmatrix}
+            3 & 1 & -4 \\[3ex]
+            6 & -15 & -5 \\[3ex]
+            -2 & 5 & 1
+            \end{vmatrix} \\[12ex]
+            \underline{\text{3rd Row}} \\[3ex]
+            = -2\begin{vmatrix}
+            1 & -4 \\[3ex]
+            -15 & -5
+            \end{vmatrix}
+            -5\begin{vmatrix}
+            3 & -4 \\[3ex]
+            6 & -5
+            \end{vmatrix}
+            + 1\begin{vmatrix}
+            3 & 1 \\[3ex]
+            6 & -15
+            \end{vmatrix} \\[10ex]
+            = -2(-5 - 60) - 5(-15 + 24) + (-45 - 6) \\[3ex]
+            = -2(-65) -5(9) + -51 \\[3ex]
+            = 130 - 45 - 51 \\[3ex]
+            = 34
+            $
+            <br><br>
+            $
+            \underline{\text{Numerator for }z} \\[3ex]
+            \begin{vmatrix}
+            3 & 5 & 1 \\[3ex]
+            6 & -3 & -15 \\[3ex]
+            -2 & 2 & 5
+            \end{vmatrix} \\[12ex]
+            \underline{\text{2nd Row}} \\[3ex]
+            = -6\begin{vmatrix}
+            5 & 1 \\[3ex]
+            2 & 5
+            \end{vmatrix}
+            + -3\begin{vmatrix}
+            3 & 1 \\[3ex]
+            -2 & 5
+            \end{vmatrix}
+            - -15\begin{vmatrix}
+            3 & 5 \\[3ex]
+            -2 & 2
+            \end{vmatrix} \\[10ex]
+            = -6(25 - 2) - 3(15 + 2) + 15(6 + 10) \\[3ex]
+            = -6(23) - 3(17) + 15(16) \\[3ex]
+            = -138 - 51 + 240 \\[3ex]
+            = 51
+            $
+            <br><br>
+            $
+            x = \dfrac{17}{17} = 1 \\[5ex]
+            y = \dfrac{34}{17} = 2 \\[5ex]
+            z = \dfrac{51}{17} = 3 \\[5ex]
+            $
+            <u>Check</u> <br>
+            <table class="w3-center">
+              <caption>$x = 1,\;\;\;y = 2,\;\;\;z = 3$</caption>
+              <tr>
+                <th style="width: 80%;">LHS</th>
+                <th style="width: 20%;">RHS</th>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  3x + 5y - 4z \\[3ex]
+                  3(1) + 5(2) - 4(3) \\[3ex]
+                  3 + 10 - 12 \\[3ex]
+                  1
+                  $
+                </td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  6x - 3y - 5z \\[3ex]
+                  6(1) - 3(2) - 5(3) \\[3ex]
+                  6 - 6 - 15 \\[3ex]
+                  -15
+                  $
+                </td>
+                <td>&minus;15</td>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  -2x + 2y + z \\[3ex]
+                  -2(1) + 2(2) + 3 \\[3ex]
+                  -2 + 4 + 3 \\[3ex]
+                  5
+                  $
+                </td>
+                <td>5</td>
+              </tr>
+            </table>
+          </div>
+          <div class="result" id="solutionCLA1">
+            <br>
+            $
+            Let: \\[3ex]
+            \text{Numerator for}\;x = Matrix\;A \\[3ex]
+            \text{Numerator for}\;y = Matrix\;B \\[3ex]
+            \text{Numerator for}\;z = Matrix\;C \\[3ex]
+            \text{Denominator} = Matrix\;D \\[3ex]
+            $
+            <img src="images/LinearAlgebra/Answers/Calculator1a.png" alt="Calculator 1a"> <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator1b.png" alt="Calculator 1b"> <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator1c.png" alt="Calculator 1c"> <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator1d.png" alt="Calculator 1d"> <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator1e.png" alt="Calculator 1e"> <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator1f.png" alt="Calculator 1f">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) <b>Three</b> linear transformations, P, Q and R in the <i>oxy</i> plane are defined by
+          <br><br>
+          $
+          P: (x, y) \rightarrow (-4x - y, 2x) \\[3ex]
+          Q: (x, y) \rightarrow (y, 6x - 9y) \\[3ex]
+          R: (x, y) \rightarrow (x - 2y, 3x + 5y) \\[3ex]
+          $
+          (a.) Write down the matrices of P, Q and R. <br>
+          (b.) Find: <br>
+          (i.) 2P &minus; 3R + Q; <br>
+          (ii.) QR; <br>
+          (iii.) the inverse of the matrix R.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA2')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCLA2')">Calculator Solution</button>
+          <div class="result" id="solutionLA2">
+            <br>
+            $
+            (a.) \\[3ex]
+            P: (x, y) \rightarrow (-4x - y, 2x) \rightarrow (-4x - y, 2x + 0y) \\[3ex]
+            Q: (x, y) \rightarrow (y, 6x - 9y) \rightarrow (0x + y, 6x - 9y) \\[3ex]
+            R: (x, y) \rightarrow (x - 2y, 3x + 5y) \\[5ex]
+            \underline{\text{Corresponding Matrices}} \\[3ex]
+            P = \begin{bmatrix}
+            -4 & -1 \\[3ex]
+            2 & 0
+            \end{bmatrix} \hspace{3em}
+            Q = \begin{bmatrix}
+            0 & 1 \\[3ex]
+            6 & -9
+            \end{bmatrix} \hspace{3em}
+            R = \begin{bmatrix}
+            1 & -2 \\[3ex]
+            3 & 5
+            \end{bmatrix}
+            $
+            <br><br>
+            $
+            (b.) (i.) \\[3ex]
+            2P = \begin{bmatrix}
+            2(-4) & 2(-1) \\[3ex]
+            2(2) & 2(0)
+            \end{bmatrix} = \begin{bmatrix}
+            -8 & -2 \\[3ex]
+            4 & 0
+            \end{bmatrix}
+            \\[7ex]
+            3R = \begin{bmatrix}
+            3(1) & 3(-2) \\[3ex]
+            3(3) & 3(5)
+            \end{bmatrix} = \begin{bmatrix}
+            3 & -6 \\[3ex]
+            9 & 15
+            \end{bmatrix}
+            \\[7ex]
+            2P - 3R + Q = \begin{bmatrix}
+            -8 - 3 + 0 & -2 - (-6) + 1 \\[3ex]
+            4 - 9 + 6 & 0 - 15 + (-9)
+            \end{bmatrix} = \begin{bmatrix}
+            -11 & 5 \\[3ex]
+            1 & -24
+            \end{bmatrix}
+            \\[10ex]
+            (ii.) \\[3ex]
+            QR = \begin{bmatrix}
+            0 & 1 \\[3ex]
+            6 & -9
+            \end{bmatrix}\begin{bmatrix}
+            1 & -2 \\[3ex]
+            3 & 5
+            \end{bmatrix} \\[7ex]
+            = \begin{bmatrix}
+            0(1) + 1(3) & 0(-2) + 1(5) \\[3ex]
+            6(1) + -9(3) & 6(-2) + -9(5)
+            \end{bmatrix} \\[7ex]
+            = \begin{bmatrix}
+            0 + 3 & 0 + 5 \\[3ex]
+            6 - 27 & -12 - 45
+            \end{bmatrix} \\[7ex]
+            = \begin{bmatrix}
+            3 & 5 \\[3ex]
+            -21 & -57
+            \end{bmatrix}
+            $
+            <br><br>
+            (ii.) To find the inverse of matrix R, we can use at least two methods. <br>
+            Use any method you prefer.
+            <br><br>
+            $
+            \underline{\text{1st Approach: By Formula}} \\[3ex]
+            R = \begin{bmatrix}
+            1 & -2 \\[3ex]
+            3 & 5
+            \end{bmatrix} \\[8ex]
+            adj\;R = \begin{bmatrix}
+            5 & -(-2) \\[2ex]
+            -3 & 1
+            \end{bmatrix} = \begin{bmatrix}
+            5 & 2 \\[2ex]
+            -3 & 1
+            \end{bmatrix} \\[8ex]
+            det\;R = \begin{vmatrix}
+            1 & -2 \\[3ex]
+            3 & 5
+            \end{vmatrix} \\[8ex]
+            = 1(5) - 3(-2) \\[3ex]
+            = 5 + 6 \\[3ex]
+            = 11 \\[5ex]
+            R^{-1} = \dfrac{adj\;R}{det\;R} \\[5ex]
+            = \dfrac{\begin{bmatrix}
+            5 & 2 \\[2ex]
+            -3 & 1
+            \end{bmatrix}}{11} \\[7ex]
+            = \begin{bmatrix}
+            \dfrac{5}{11} & \dfrac{2}{11} \\[5ex]
+            -\dfrac{3}{11} & \dfrac{1}{11}
+            \end{bmatrix} \\[12ex]
+
+            \underline{\text{2nd Approach: Row Reduction Method}} \\[3ex]
+            R \ \ | \ \ I = I \ \ | \ \ R^{-1} \\[3ex]
+            \left[
+            \begin{array}{cc|cc}
+            1 & -2 & 1 & 0 \\[3ex]
+            3 & 5 & 0 & 1
+            \end{array}
+            \right]
+            \underrightarrow{-3R_1 + R_2}
+            \left[
+            \begin{array}{cc|cc}
+            1 & -2 & 1 & 0 \\[3ex]
+            0 & 11 & -3 & 1
+            \end{array}
+            \right] \\[10ex]
+            \underrightarrow{2R_2 + 11R_1}
+            \left[
+            \begin{array}{cc|cc}
+            11 & 0 & 5 & 2 \\[3ex]
+            0 & 11 & -3 & 1
+            \end{array}
+            \right] \\[10ex]
+            \underrightarrow{\dfrac{R_1, R_2}{11}}
+            \left[
+            \begin{array}{cc|cc}
+            1 & 0 & \dfrac{5}{11} & \dfrac{2}{11} \\[5ex]
+            0 & 1 & -\dfrac{3}{11} & \dfrac{1}{11}
+            \end{array}
+            \right] \\[10ex]
+            \implies \\[3ex]
+            R^{-1} = \begin{bmatrix}
+            \dfrac{5}{11} & \dfrac{2}{11} \\[5ex]
+            -\dfrac{3}{11} & \dfrac{1}{11}
+            \end{bmatrix}
+            $
+          </div>
+          <div class="result" id="solutionCLA2">
+            <br>
+            Let Matrices P, Q, R be Matrices A, B, C respectively.
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator2a.png" alt="Calculator 2a">
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator2b.png" alt="Calculator 2b">
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator2c.png" alt="Calculator 2c">
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator2d.png" alt="Calculator 2d">
+            <br><br>
+            <img src="images/LinearAlgebra/Answers/Calculator2e.png" alt="Calculator 2e">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA3')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA4')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA5')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA6')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA7')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA7">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA8')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA9')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA9">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA10')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA11')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA11">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA12')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA13')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA14')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA15')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA16')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA17')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA18')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA19')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA20')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE-FurtherMath/LinearAlgebra.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA21')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA22')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA23')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA24')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA25')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA26')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA27')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA28')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA29')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionLA30')">Show/Hide Answer</button>
+          <div class="result" id="solutionLA30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

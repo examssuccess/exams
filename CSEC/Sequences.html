@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Sequences</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the CSEC exam questions on sequences.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, CSEC, 
+  Caribbean Secondary Education Certificate, Algebra, sequences, series, arithmetic progression, geometric progression, 
+  arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+  common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+  sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+  general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+  second difference, linear expression, quadratic expression, linear function, quadratic function, 
+  linear equation, quadratic equation, summation, sigma notation, recurrence sequence, recurrence relation, 
+  recurrence equation, square sequence, initial conditions, first-order linear recurrence relation, second-order linear 
+  recurrence relation, recursion, recurrence, triangular number, triangular number sequence, square number, 
+  square number sequence, cube sequence, cube number, cube number sequence, degree, characteristic equation, characteristic root,
+  explicit formula, closed form, golden ratio">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulaSheet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formula Sheet</a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Sequences and Series</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the CSEC past questions on Sequences. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable and helpful in your passing the
+        Mathematics test of the CSEC, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <h2>Notable Notes </h2>
+      <p>
+        (1.) If you notice that the pattern represents an arithmetic sequence, it is recommended that you save time by
+        using the formulas for Arithmetic Sequences
+        to determine the <i>n</i>th term as applicable.
+        <br><br>
+        (2.) If you notice that the pattern represents a geometric sequence, it is recommended that you save time by
+        using the formulas for Geometric Sequences
+        to determine the <i>n</i>th term as applicable.
+        <br><br>
+        (3.) If the sequence is neither an arithmetic nor a geometric sequence, then it is important to establish a
+        pattern/rule for each row and column so that we can determine the formula that works
+        for <i>n</i>
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formula Sheet -->
+    <div class="w3-container w3-padding-32" id="formulaSheet">
+      <div class="w3-row-padding">
+        <h5>Formula Sheet: List of Formulae</h5>
+        <object data="CSECMathematicsFormulaSheet.pdf" width="1400" height="700"></object>
+      </div>
+    </div>
+    <!-- End Formula Sheet -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Arithmetic Sequence</h2>
+        </li>
+        <li>$AS_n$ = $nth$ term of an Arithmetic Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$d$ = common difference</li>
+        <li>$n$ = number of terms</li>
+        <li>$SAS_n$ = sum of the first $n$ terms of an Arithmetic Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: AS_n = a + d(n - 1) \\[5ex]
+        (2.)\:\: AS_n = vn + w \:\:where\:\: v = d \:\:and\:\: w = a - d \\[5ex]
+        (3.)\:\: p = a + d(n - 1) \\[5ex]
+        (4.)\:\: SAS_n = \dfrac{n}{2}(a + AS_n) \\[7ex]
+        (5.)\:\: SAS_n = \dfrac{n}{2}(a + p) \\[7ex]
+        (6.)\:\: SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[7ex]
+        (7.)\:\: n = \dfrac{2 * SAS_n}{a + p} \\[7ex]
+        (8.)\:\: n = \dfrac{p - a + d}{d} \\[7ex]
+        (9.)\:\: n = \dfrac{-(2a - d) \pm \sqrt{(2a - d)^2 + 8d*SAS_n}}{2d} \\[7ex]
+        (10.)\;\; d = \dfrac{(p - a)(p + a)}{2 * SAS_n - p - a}
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Geometric Sequence</h2>
+        </li>
+        <li>$GS_n$ = $nth$ term of a Geometric Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$r$ = common ratio</li>
+        <li>$n$ = number of terms</li>
+        <li>$SGS_n$ = sum of the first $n$ terms of a Geometric Sequence</li>
+        <li>$S_{\infty}$ = sum to infinity of a Geometric Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: GS_n = ar^{n - 1} \\[5ex]
+        (2.)\:\: SGS_n = \dfrac{a(r^{n} - 1)}{r - 1} \:\:for\:\: r \gt 1 \\[7ex]
+        (3.)\:\: SGS_n = \dfrac{a(1 - r^{n})}{1 - r} \:\:for\:\: r \lt 1 \\[7ex]
+        (4.)\:\: n = \dfrac{\log{\left[\dfrac{SGS_n(r - 1)}{a} + 1\right]}}{\log r} \\[7ex]
+        (5.)\:\: If\:\:r \lt 1,\:\:the\:\:series\:\:converges\:\:and\:\: S_{\infty} = \dfrac{a}{1 - r} \\[7ex]
+        (6.)\:\: If\:\:r \gt 1,\:\:the\:\:series\:\:diverges \\[5ex]
+        (7.)\:\: If\:\:r = 1,\:\:S_{\infty}\:\:DNE \\[5ex]
+        (8.)\:\: r = \dfrac{S_{\infty} - a}{S_{\infty}} \\[7ex]
+        (9.)\:\: a = S_{\infty}(1 - r)
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Quadratic Sequence</h2>
+        </li>
+        <li>$QS_n$ = $n$th term of a Quadratic Sequence = $an^2 + bn + c$</li>
+        <li>$1st$ = first term</li>
+        <li>$2nd$ = second term</li>
+        <li>$3rd$ = third term</li>
+        <li>$4th$ = fourth term</li>
+        <li>$n$ = number of terms</li>
+        <li>$a$ = coefficient of $n^2$</li>
+        <li>$b$ = coefficient of $n$</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        QS = 1st,\:\:\:\:2nd,\:\:\:3rd,\:\:\:4th,... \\[5ex]
+        QS_n = an^2 + bn + c \\[5ex]
+        (1.)\:\: a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[7ex]
+        (2.)\:\: b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[7ex]
+        (3.)\:\: c = 3(1st) - 3(2nd) + 3rd \\[5ex]
+        (4.)\:\: \therefore QS_n = \dfrac{1st + 3rd - 2(2nd)}{2} * n^2 + \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} * n +
+        3(1st) - 3(2nd) + 3rd \\[7ex]
+        The\:\:Left\:\:Hand\:\:Side\:\:must\;\;be\:\:equal\:\:to\;\;the\:\:Right\:\:Hand\:\:Side \\[5ex]
+        (5.)\:\: a + b + c = 1st \\[5ex]
+        (6.)\:\: 4a + 2b + c = 2nd \\[5ex]
+        (7.)\:\: 9a + 3b + c = 3rd \\[5ex]
+        (8.)\:\: 3a + b = 2nd - 1st \\[5ex]
+        (9.)\:\: 8a + 2b = 3rd - 1st
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Other Sequences</h2>
+        </li>
+        <li>$TS_n$ = $nth$ term of a Triangular Number Sequence</li>
+        <li>$SS_{n}$ = $nth$ term of a Square Number Sequence</li>
+        <li>$CS_{n}$ = $nth$ term of a Cube Number Sequence</li>
+        <li>$n$ = number of terms</li>
+        <li>$STS_n$ = sum of the first $n$ terms of a Triangular Number Sequence</li>
+        <li>$SSS_n$ = sum of the first $n$ terms of a Square Number Sequence</li>
+        <li>$SCS_n$ = sum of the first $n$ terms of a Cube Number Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{Triangular\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: TS_n = \dfrac{n(n + 1)}{2} \\[7ex]
+        (2.)\;\; n = \dfrac{\sqrt{8 * TS_n + 1} - 1}{2} \\[7ex]
+        (3.)\:\: TS_n = C(n + 1, 2)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[5ex]
+        (4.)\;\; STS_n = \dfrac{n(n + 1)(n + 2)}{6} \\[7ex]
+        (5.)\:\: STS_n = C(n + 2, 3)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[7ex]
+
+        \underline{Square\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: SS_n = n^2 \\[5ex]
+        (2.)\;\; n = \sqrt{SS_n} \\[5ex]
+        (3.)\;\; SSS_n = \dfrac{n(n + 1)(2n + 1)}{6} \\[7ex]
+
+        \underline{Cube\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: CS_n = n^3 \\[5ex]
+        (2.)\;\; n = \sqrt[3]{CS_n} \\[5ex]
+        (3.)\;\; SCS_n = \left[\dfrac{n(n + 1)}{2}\right]^2 \\[7ex]
+        (4.)\;\; n = \dfrac{\sqrt{8\sqrt{SCS_n} + 1} - 1}{2} \\[7ex]
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Recursive Sequence</h2>
+        </li>
+        <li>$RS_n$ = $nth$ term of a Recursive Sequence</li>
+        <li>$RS_{n + 1}$ = next term of a Recursive Sequence</li>
+        <li>$a$ = first term (constant)</li>
+        <li>$r$ = common ratio (coefficient of the $nth$ term)</li>
+        <li>$RS_1$ = initial term</li>
+        <li>$n$ = number of terms</li>
+        <li>$SRS_n$ = sum of the first $n$ terms of a Recursive Sequence</li>
+        <li>$\phi$ = Golden Ratio</li>
+        <li>$FS_n$ = $nth$ term of a Fibonacci Sequence</li>
+        <li>$SFS_n$ = sum of the first $n$ terms of a Fibonacci Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{First-Order\;\;Linear\;\;Recurrence\;\;Relation} \\[3ex]
+        (1.)\:\: RS_{n + 1} = r * RS_{n} + a \\[5ex]
+        (2.)\:\: RS_{n + 1} = \dfrac{RS_1 * r^n(r - 1) + a(r^n - 1)}{r - 1} \;\;\;for\;\;r \gt 1 \\[7ex]
+        (3.)\;\; RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[7ex]
+
+        \underline{Fibonacci\;\;Sequence} \\[3ex]
+        (1.)\;\; \phi = \dfrac{1 + \sqrt{5}}{2} \\[7ex]
+        (2.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\left(\dfrac{1 + \sqrt{5}}{2}\right)^n - \left(\dfrac{1 -
+        \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (3.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\phi^n - \left(\dfrac{1 - \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (4.)\;\; SFS_n = \dfrac{\sqrt{5}}{5}\left[\dfrac{\phi^3(\phi^{n - 1} - 1) + [(\phi - 1)(1 - \phi^2)][(1 -
+        \phi)^{n - 1} - 1]}{\phi(\phi - 1)}\right] + 1
+        $
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) A sequence of patterns is made of dots and lines of unit length. <br>
+          Some of these lines form squares. <br>
+          The first three diagrams in the sequence are shown below.
+          <br><br>
+          <img src="images/Sequences/Questions/Number1-1st.png" alt="Number 1-1st">
+          <br><br>
+          (a.) Add more lines and dots to the diagram below to show Diagram 4 of the sequence.
+          <br><br>
+          <img src="images/Sequences/Questions/Number1-2nd.png" alt="Number 1-2nd">
+          <br><br>
+          (b.) The number of dots, <i>D</i>, and the number of unit lines that form each diagram, <i>L</i>, form a
+          pattern. <br>
+          The values for <i>D</i> and <i>L</i> for the first 3 diagrams are written in the table below. <br>
+          Study the pattern of numbers in each row of the table. <br>
+          Complete the rows numbered (i.), (ii.), and (iii.)
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 33%;">Diagram</th>
+              <th style="width: 33%;">Number of Dots (<i>D</i>)</th>
+              <th style="width: 34%;">Number of Lines (<i>L</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>5</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>8</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>11</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>59</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) One of the diagrams in the sequence has 148 <b>lines</b>. <br>
+          Calculate the number of <b>dots</b> in this diagram.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS1')">Show/Hide Answer</button>
+          <div class="result" id="solutionS1">
+            <br>
+            (a.) Diagram 4 is: <br>
+            <img src="images/Sequences/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Number of Dots, D}} \\[3ex]
+            5, 8, 11, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 5 \\[3ex]
+            d = 8 - 5 = 3 \\[3ex]
+            D_n = a + d(n - 1) \\[3ex]
+            = 5 + 3(n - 1) \\[3ex]
+            = 5 + 3n - 3 \\[3ex]
+            = 3n + 2 \\[3ex]
+            nth\;\;term = 3n + 2 \\[5ex]
+            \underline{\text{Number of Lines, L}} \\[3ex]
+            8, 15, 22, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 8 \\[3ex]
+            d = 15 - 8 = 7 \\[3ex]
+            L_n = a + d(n - 1) \\[3ex]
+            = 8 + 7(n - 1) \\[3ex]
+            = 8 + 7n - 7 \\[3ex]
+            = 7n + 1 \\[3ex]
+            nth\;\;term = 7n + 1 \\[5ex]
+            (i.) \\[3ex]
+            \underline{\text{4th Diagram}} \\[3ex]
+            n = 4 \\[3ex]
+            D_4 = 3(4) + 2 \\[3ex]
+            = 12 + 2 \\[3ex]
+            = 14 \\[3ex]
+            L_4 = 7(4) + 1 \\[3ex]
+            = 28 + 1 \\[3ex]
+            = 29 \\[5ex]
+            (ii.) \\[3ex]
+            \text{Number of Dots} = 59 \\[3ex]
+            \implies \\[3ex]
+            D_n = 59 \\[3ex]
+            3n + 2 = 59 \\[3ex]
+            3n = 59 - 2 \\[3ex]
+            3n = 57 \\[3ex]
+            n = \dfrac{57}{3} \\[5ex]
+            n = 19...\text{19th Diagram} \\[3ex]
+            L_{19} = 7(19) + 1 \\[4ex]
+            = 133 + 1 \\[3ex]
+            = 134 \\[3ex]
+            $
+            The completed table is:
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 33%;">Diagram</th>
+                <th style="width: 33%;">Number of Dots (<i>D</i>)</th>
+                <th style="width: 34%;">Number of Lines (<i>L</i>)</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>8</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>11</td>
+                <td>22</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>14</td>
+                <td>29</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>19</td>
+                <td>59</td>
+                <td>134</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td><i>n</i></td>
+                <td>3<i>n</i> + 2</td>
+                <td>7<i>n</i> + 1</td>
+              </tr>
+            </table>
+            <br><br>
+            $
+            (c.) \\[3ex]
+            L_n = 148 \\[3ex]
+            7n + 1 = 148 \\[3ex]
+            7n = 148 - 1 \\[3ex]
+            7n = 147 \\[3ex]
+            n = \dfrac{147}{7} \\[5ex]
+            n = 21 \\[5ex]
+            D_n = 3(21) + 2 \\[3ex]
+            = 63 + 2 \\[3ex]
+            = 65\;dots
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) The diagram below shows the first four diagrams in a sequence of regular hexagons. <br>
+          Each regular hexagon is made using sticks of unit length.
+          <br><br>
+          <img src="images/Sequences/Questions/Number2-1st.png" alt="Number 2-1st">
+          <br><br>
+          (a.) Complete the diagram below to represent Diagram 5 in the sequence of regular hexagons.
+          <br><br>
+          <img src="images/Sequences/Questions/Number2-2nd.png" alt="Number 2-2nd">
+          <br><br>
+          (b.) The number of regular hexagons, <i>H</i>, the number of sticks, <i>S</i>, and the perimeter of each
+          figure, <i>P</i>, follow a pattern. <br>
+          The values for <i>H, S</i> and <i>P</i>, for the first 4 diagrams are shown in the table below. <br>
+          Study the pattern of numbers in each row of the table and answer the questions that follow. <br>
+          Complete the rows marked (i.), (ii.), and (iii.) in the table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 25%;">Diagram Number (<i>D</i>)</th>
+              <th style="width: 25%;">Number of Hexagons (<i>H</i>)</th>
+              <th style="width: 25%;">Number of Sticks (<i>S</i>)</th>
+              <th style="width: 25%;">Perimeter (<i>P</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>3</td>
+              <td>15</td>
+              <td>12</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>5</td>
+              <td>23</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>7</td>
+              <td>31</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>9</td>
+              <td>39</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>28</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>47</td>
+              <td>191</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br><br>
+          (c.) Skyla says that she can make one of these figures with a perimeter of EXACTLY 1005. <br>
+          Explain why she is <b>incorrect.</b>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS2')">Show/Hide Answer</button>
+          <div class="result" id="solutionS2">
+            <br>
+            (a.) Diagram 5 in the sequence of regular hexagons (Not drawn to scale) is: <br>
+            <img src="images/Sequences/Answers/Number2.png" alt="Number 2">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Number of Hexagons, H}} \\[3ex]
+            3, 5, 7, 9, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 3 \\[3ex]
+            d = 9 - 7 = 7 - 5 = 5 - 3 = 2 \\[3ex]
+            H_n = a + d(n - 1) \\[3ex]
+            = 3 + 2(n - 1) \\[3ex]
+            = 3 + 2n - 2 \\[3ex]
+            = 2n + 1 \\[3ex]
+            nth\;\;term = 2n + 1 \\[5ex]
+            \underline{\text{Number of Sticks, S}} \\[3ex]
+            15, 23, 31, 39, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 15 \\[3ex]
+            d = 39 - 31 = 31 - 23 = 23 - 15 = 8 \\[3ex]
+            S_n = a + d(n - 1) \\[3ex]
+            = 15 + 8(n - 1) \\[3ex]
+            = 15 + 8n - 8 \\[3ex]
+            = 8n + 7 \\[3ex]
+            nth\;\;term = 8n + 7 \\[5ex]
+            \underline{\text{Perimeter, P}} \\[3ex]
+            12, 16, 20, 24, 28, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 12 \\[3ex]
+            d = 28 - 24 = 24 - 20 = 20 - 16 = 16 - 12 = 4 \\[3ex]
+            P_n = a + d(n - 1) \\[3ex]
+            = 12 + 4(n - 1) \\[3ex]
+            = 12 + 4n - 4 \\[3ex]
+            = 4n + 8 \\[3ex]
+            nth\;\;term = 4n + 8 \\[5ex]
+
+            (i.) \\[3ex]
+            \underline{\text{Diagram Number 5}} \\[3ex]
+            n = 5 \\[3ex]
+            H_5 = 2(5) + 1 \\[3ex]
+            = 10 + 1 \\[3ex]
+            = 11 \\[3ex]
+            S_5 = 8(5) + 7 \\[3ex]
+            = 40 + 7 \\[3ex]
+            = 47 \\[5ex]
+            (ii.) \\[3ex]
+            \text{Number of Hexagons} = 47 \\[3ex]
+            \implies \\[3ex]
+            H_n = 47 \\[3ex]
+            2n + 1 = 47 \\[3ex]
+            2n = 47 - 1 \\[3ex]
+            2n = 46 \\[3ex]
+            n = \dfrac{46}{2} \\[5ex]
+            n = 23...\text{Diagram Number 23} \\[3ex]
+            P_{23} = 4(23) + 8 \\[4ex]
+            = 92 + 8 \\[3ex]
+            = 100 \\[3ex]
+            $
+            The completed table is:
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 25%;">Diagram Number (<i>D</i>)</th>
+                <th style="width: 25%;">Number of Hexagons (<i>H</i>)</th>
+                <th style="width: 25%;">Number of Sticks (<i>S</i>)</th>
+                <th style="width: 25%;">Perimeter (<i>P</i>)</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>3</td>
+                <td>15</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>5</td>
+                <td>23</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>7</td>
+                <td>31</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td>9</td>
+                <td>39</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>11</td>
+                <td>47</td>
+                <td>28</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>23</td>
+                <td>47</td>
+                <td>191</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td><i>n</i></td>
+                <td>2<i>n</i> + 1</td>
+                <td>8<i>n</i> + 7</td>
+                <td>4<i>n</i> + 8</td>
+              </tr>
+            </table>
+            <br><br>
+            $
+            (c.) \\[3ex]
+            P_n = 1005 \\[4ex]
+            4n + 8 = 1005 \\[3ex]
+            4n = 1005 - 8 \\[3ex]
+            4n = 997 \\[3ex]
+            n = \dfrac{997}{4} \\[5ex]
+            n = 249.25 \\[3ex]
+            $
+            <i>n</i> = 249.25 (which gives a perimeter of 1005) is not a whole number. <br>
+            Hence, the perimeter of exactly 1005 is not feasible.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The grid below shows the first 3 figures in a sequence. <br>
+          Each figure is made using a set of small squares of unit length that are <b>both</b> coloured (shaded) and
+          white (unshaded).
+          <br><br>
+          <img src="images/Sequences/Questions/Number3-1st.png" alt="Number 3-1st">
+          <br><br>
+          (a.) In the space provided below, draw Figure 4 of the sequence.
+          <br><br>
+          <img src="images/Sequences/Questions/Number3-2nd.png" alt="Number 3-2nd">
+          <br><br>
+          (b.) The number of coloured squares, <i>C</i>, the total number of squares, <i>T</i> and the perimeter of the
+          figure, <i>P</i>, follow a pattern. <br>
+          Study the patterns in the table below and answer the questions that follow. <br>
+          Complete Rows (i.), (ii.), and (iii) in the table below. <br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 25%;">Figure Number (<i>F</i>)</th>
+              <th style="width: 25%;">Number of Coloured Squares (<i>C</i>)</th>
+              <th style="width: 25%;">Perimeter of Figure (<i>P</i>)</th>
+              <th style="width: 25%;">Total Number of Squares (<i>F</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>5</td>
+              <td>12</td>
+              <td>(1 + 2)² = 9</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>7</td>
+              <td>16</td>
+              <td>(2 + 2)² = 16</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>9</td>
+              <td>20</td>
+              <td>(3 + 2)² = 25</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>.......</td>
+              <td>52</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>49</td>
+              <td>.......</td>
+              <td>(23 + 2)² = 625</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) How many <b>white squares</b> are in Figure 11.?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS3')">Show/Hide Answer</button>
+          <div class="result" id="solutionS3">
+            <br>
+            (a.) Figure 4 of the sequence is drawn as shown: <br>
+            <img src="images/Sequences/Answers/Number3.png" alt="Number 3">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Number of Coloured Squares, C}} \\[3ex]
+            5, 7, 9, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 5 \\[3ex]
+            d = 7 - 5 = 2 \\[3ex]
+            C_n = a + d(n - 1) \\[3ex]
+            = 5 + 2(n - 1) \\[3ex]
+            = 5 + 2n - 2 \\[3ex]
+            = 2n + 3 \\[3ex]
+            nth\;\;term = 2n + 3 \\[5ex]
+            \underline{\text{Perimeter of Figure, P}} \\[3ex]
+            12, 16, 20, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 12 \\[3ex]
+            d = 16 - 12 = 4 \\[3ex]
+            P_n = a + d(n - 1) \\[3ex]
+            = 12 + 4(n - 1) \\[3ex]
+            = 12 + 4n - 4 \\[3ex]
+            = 4n + 8 \\[3ex]
+            = 4(n + 2) \\[3ex]
+            nth\;\;term = 4(n + 2) \\[5ex]
+            (i.) \\[3ex]
+            \underline{\text{11th Figure}} \\[3ex]
+            n = 11 \\[3ex]
+            C_{11} = 2(11) + 3 \\[3ex]
+            = 22 + 3 \\[3ex]
+            = 25 \\[3ex]
+            \text{Total Number of Squares is not an Arithmetic Sequence} \\[3ex]
+            \text{We shall find it another way} \\[5ex]
+            (ii.) \\[3ex]
+            \text{Number of Coloured Squares} = 49 \\[3ex]
+            \implies \\[3ex]
+            C_n = 49 \\[3ex]
+            2n + 3 = 49 \\[3ex]
+            2n = 49 - 3 \\[3ex]
+            2n = 46 \\[3ex]
+            n = \dfrac{46}{2} \\[5ex]
+            n = 23...\text{23rd Figure} \\[3ex]
+            P_{23} = 4(n + 2) \\[4ex]
+            = 4(23 + 2) \\[3ex]
+            = 4(25) \\[3ex]
+            = 100 \\[3ex]
+            $
+            (b.) We shall use the <span style="color: darkblue;">dark blue color</span> to see the patterns.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 25%;">Figure Number (<i>F</i>)</th>
+                <th style="width: 25%;">Number of Coloured Squares (<i>C</i>)</th>
+                <th style="width: 25%;">Perimeter of Figure (<i>P</i>)</th>
+                <th style="width: 25%;">Total Number of Squares (<i>F</i>)</th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$5 = \color{darkblue}{1}(2) + 3$</td>
+                <td>$12 = 4(\color{darkblue}{1} + 2)$</td>
+                <td>$(\color{darkblue}{1} + 2)^2 = 9$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$7 = \color{darkblue}{2}(2) + 3$</td>
+                <td>$16 = 4(\color{darkblue}{2} + 2)$</td>
+                <td>$(\color{darkblue}{2} + 2)^2 = 16$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$9 = \color{darkblue}{3}(2) + 3$</td>
+                <td>$20 = 4(\color{darkblue}{3} + 2)$</td>
+                <td>$(\color{darkblue}{3} + 2)^2 = 25$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{11}$</td>
+                <td>$\color{darkblue}{11}(2) + 3 = 25$</td>
+                <td>$4(\color{darkblue}{11} + 2) = 52$</td>
+                <td>$(\color{darkblue}{11} + 2)^2 = 169$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{23}$</td>
+                <td>$\color{darkblue}{23}(2) + 3 = 49$</td>
+                <td>$4(\color{darkblue}{23} + 2) = 100$</td>
+                <td>$(\color{darkblue}{23} + 2)^2 = 625$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>$\color{darkblue}{n}(2) + 3 = 2n + 3$</td>
+                <td>$4(\color{darkblue}{n} + 2) = 4(n + 2)$</td>
+                <td>$(\color{darkblue}{n} + 2)^2 = (n + 2)^2$</td>
+              </tr>
+            </table>
+            <br>
+            (c.) The sum of the number of coloured squares and the number of white squares is the total number of
+            squares <br>
+            Number of white squares = Total number of squares &minus; Number of coloured squares <br>
+            For Figure 11: <br>
+            Number of white squares = 169 &minus; 25 = 144.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) A sequence of designes is made using black discs and white discs. <br>
+          The first 3 designs in the sequence are shown below.
+          <br><br>
+          <img src="images/Sequences/Questions/Number4.png" alt="Number 4">
+          <br><br>
+          (a.) In the space provided on the grid above, draw Design 4.
+          <br><br>
+          (b.) The number of white discs, <i>W</i>, the number of black discs, <i>B</i>, and the total number of discs,
+          <i>T</i>, that form each design follows a pattern. <br>
+          The values for <i>W, B</i> and <i>T</i> for the first 3 designs are shown in the table below. <br>
+          Study the pattern of numbers in the table. <br>
+          Complete Rows (i), (ii), and (iii.) in the table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 15%;">Design Number (<i>P</i>)</th>
+              <th style="width: 35%;">Number of White Discs (<i>W</i>)</th>
+              <th style="width: 25%;">Number of Black Discs (<i>B</i>)</th>
+              <th style="width: 25%;">Total Number of Discs (<i>T</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>(1 &times; 1) + 1 + 1 = 3</td>
+              <td>4</td>
+              <td>7</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>(2 &times; 2) + 2 + 1 = 7</td>
+              <td>6</td>
+              <td>13</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>(3 &times; 3) + 3 + 1 = 13</td>
+              <td>8</td>
+              <td>21</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>(....... &times; .......) + ....... + ....... = .......</td>
+              <td>.......</td>
+              <td>111</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>(20 &times; 20) + 20 + 1 = 421</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) Stephen has 28 black discs and 154 white discs, and wants to make Design 12. <br>
+          Explain why it is NOT possible for him to make Design 12.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS4')">Show/Hide Answer</button>
+          <div class="result" id="solutionS4">
+            <br>
+            (a.) Design 4 of the sequence is drawn as shown: <br>
+            <img src="images/Sequences/Answers/Number4.png" alt="Number 4">
+            <br><br>
+            $
+            (b.)(i.)\;\;and\;\;(iii.) \\[3ex]
+            \underline{\text{Number of White Discs, W}} \\[3ex]
+            For\;\;n = 9 \\[3ex]
+            W_9 = (9 * 9) + 9 + 1 \\[3ex]
+            W_9 = 91 \\[5ex]
+            For\;\; n = n \\[3ex]
+            nth\;\;term = W_n = (n * n) + n + 1 \\[3ex]
+            W_n = n^2 + n + 1 \\[5ex]
+
+            \underline{\text{Number of Black Discs, B}} \\[3ex]
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} \\[5ex]
+            4, 6, 8, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 4 \\[3ex]
+            d = 8 - 6 = 6 - 4 = 2 \\[3ex]
+            B_n = a + d(n - 1) \\[3ex]
+            = 4 + 2(n - 1) \\[3ex]
+            = 4 + 2n - 2 \\[3ex]
+            = 2n + 2 \\[3ex]
+            nth\;\;term = B_n = 2n + 2 \\[5ex]
+            For\;\;n = 9 \\[3ex]
+            B_9 = 2(9) + 2 \\[3ex]
+            = 18 + 2 \\[5ex]
+
+            \underline{\text{Total Number of Discs, T}} \\[3ex]
+            For\;\;n = 9 \\[3ex]
+            T_9 = W_9 + B_9 \\[3ex]
+            = 91 + 20 \\[3ex]
+            = 111 \\[5ex]
+            For\;\; n = n \\[3ex]
+            T_n = W_n + B_n \\[3ex]
+            = n^2 + n + 1 + 2n + 2 \\[3ex]
+            = n^2 + 3n + 3 \\[3ex]
+            nth\;\;term = T_n = n^2 + 3n + 3 \\[5ex]
+
+            (ii.) \\[3ex]
+            W_n = (20 * 20) + 20 + 1 = 421 \implies n = 20 \\[5ex]
+            B_{20} = 2(20) + 2 \\[3ex]
+            = 40 + 2 \\[3ex]
+            = 42 \\[5ex]
+            T_{20} = W_{20} + B_{20} \\[3ex]
+            = 421 + 42 \\[3ex]
+            = 463 \\[5ex]
+            $
+            Let us complete the table. <br>
+            We shall use the <span style="color: darkblue;">dark blue color</span> to see the pattern.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 15%;">Design Number (<i>P</i>)</th>
+                <th style="width: 35%;">Number of White Discs (<i>W</i>)</th>
+                <th style="width: 25%;">Number of Black Discs (<i>B</i>)</th>
+                <th style="width: 25%;">Total Number of Discs (<i>T</i>)</th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$(\color{darkblue}{1} \times \color{darkblue}{1}) + \color{darkblue}{1} + 1 = 3$</td>
+                <td>$4 = 2(\color{darkblue}{1}) + 2$</td>
+                <td>$7 = (\color{darkblue}{1})^2 + 3(\color{darkblue}{1}) + 3$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$(\color{darkblue}{2} \times \color{darkblue}{2}) + \color{darkblue}{2} + 1 = 7$</td>
+                <td>$6 = 2(\color{darkblue}{2}) + 2$</td>
+                <td>$13 = (\color{darkblue}{2})^2 + 3(\color{darkblue}{2}) + 3$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$(\color{darkblue}{3} \times \color{darkblue}{3}) + \color{darkblue}{3} + 1 = 13$</td>
+                <td>$8 = 2(\color{darkblue}{3}) + 2$</td>
+                <td>$21 = (\color{darkblue}{3})^2 + 3(\color{darkblue}{3}) + 3$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{9}$</td>
+                <td>$(\color{darkblue}{9} \times \color{darkblue}{9}) + \color{darkblue}{9} + 1 = 19$</td>
+                <td>$20 = 2(\color{darkblue}{9}) + 2$</td>
+                <td>$111 = (\color{darkblue}{9})^2 + 3(\color{darkblue}{9}) + 3$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{20}$</td>
+                <td>$(\color{darkblue}{20} \times \color{darkblue}{20}) + \color{darkblue}{20} + 1 = 421$</td>
+                <td>$42 = 2(\color{darkblue}{20}) + 2$</td>
+                <td>$463 = (\color{darkblue}{20})^2 + 3(\color{darkblue}{20}) + 3$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>$(\color{darkblue}{n} \times \color{darkblue}{n}) + \color{darkblue}{n} + 1 = n^2 + n + 1$</td>
+                <td>$2(\color{darkblue}{n}) + 2$</td>
+                <td>$(\color{darkblue}{n})^2 + 3(\color{darkblue}{n}) + 3$</td>
+              </tr>
+            </table>
+            <br>
+            $
+            (c.) \\[3ex]
+            \underline{\text{Design 12}} \\[3ex]
+            n = 12 \\[3ex]
+            W_{12} = 12^2 + 12 + 1 \\[3ex]
+            = 144 + 12 + 1 \\[3ex]
+            = 157 \\[3ex]
+            $
+            Stephen needs 157 white discs to make Design 12. <br>
+            But he has 154 white discs. <br>
+            Hence, it is NOT possible for him to make Design 12.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) At an entertainment hall, tables and chairs can be arranged in two different ways as shown in the diagram
+          below.
+          <br><br>
+          <img src="images/Sequences/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          (a.) Draw the diagram for <b>4 tables</b> using <b>Arrangement <i>L</i></b>
+          <br><br>
+          (b.) The number of chairs, <i>C</i>, that can be placed around a given number of tables, <i>T</i>, for either
+          arrangement, <i>L</i> or <i>M</i>, forms a pattern. <br>
+          The values for <i>C</i> for the first 3 diagrams for both arrangements are shown in the table below. <br>
+          Study the pattern of numbers in each row of the table. <br>
+          Complete the rows numbered (i.), (ii.), and (iii.) <br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 34%;">Number of Tables (<i>T</i>)</th>
+              <th style="width: 33%;">
+                Arrangement <i>L</i> <br>
+                Number of Chairs (<i>C</i>)
+              </th>
+              <th style="width: 33%;">
+                Arrangement <i>M</i> <br>
+                Number of Chairs (<i>C</i>)
+              </th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>10</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>14</td>
+              <td>16</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>18</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>.......</td>
+              <td>130</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) Leon needs to arrange tables to seat 70 people for a birthday party. <br>
+          Which of the arrangements, <i>L</i> or <i>M</i>, will allow him to rent the LEAST number of tables? <br>
+          Use calculations to justify your answer.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS5')">Show/Hide Answer</button>
+          <div class="result" id="solutionS5">
+            <br>
+            (a.) The diagram for <b>4 tables</b> using <b>Arrangement <i>L</i></b> is: <br>
+            <img src="images/Sequences/Answers/Number5.png" alt="Number 5">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Arrangement L: Number of Chairs, LC}} \\[3ex]
+            10, 14, 18, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 10 \\[3ex]
+            d = 14 - 10 = 4 \\[3ex]
+            LC_n = a + d(n - 1) \\[3ex]
+            = 10 + 4(n - 1) \\[3ex]
+            = 10 + 4n - 4 \\[3ex]
+            = 4n + 6 \\[3ex]
+            nth\;\;term = 4n + 6 \\[5ex]
+            \underline{\text{Arrangement M: Number of Chairs, MC}} \\[3ex]
+            10, 16, 22, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 10 \\[3ex]
+            d = 16 - 10 = 6 \\[3ex]
+            MC_n = a + d(n - 1) \\[3ex]
+            = 10 + 6(n - 1) \\[3ex]
+            = 10 + 6n - 6 \\[3ex]
+            = 6n + 4 \\[3ex]
+            nth\;\;term = 6n + 4 \\[5ex]
+            (i.) \\[3ex]
+            \underline{\text{4 Tables}} \\[3ex]
+            n = 4 \\[3ex]
+            LC_4 = 4(4) + 6 \\[3ex]
+            = 16 + 6 \\[3ex]
+            = 22 \\[3ex]
+            MC_4 = 6(4) + 4 \\[3ex]
+            = 24 + 4 \\[3ex]
+            = 28 \\[5ex]
+            (ii.) \\[3ex]
+            \text{Arrangement M: Number of Chairs} = 130 \\[3ex]
+            \implies \\[3ex]
+            MC_n = 130 \\[3ex]
+            6n + 4 = 130 \\[3ex]
+            6n = 130 - 4 \\[3ex]
+            6n = 126 \\[3ex]
+            n = \dfrac{126}{6} \\[5ex]
+            n = 21...\text{21 Tables} \\[3ex]
+            LC_{21} = 4(21) + 6 \\[4ex]
+            = 84 + 6 \\[3ex]
+            = 90 \\[3ex]
+            $
+            (b.) We shall use the <span style="color: darkblue;">dark blue color</span> to see the patterns.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 34%;">Number of Tables (<i>T</i>)</th>
+                <th style="width: 33%;">
+                  Arrangement <i>L</i> <br>
+                  Number of Chairs (<i>C</i>)
+                </th>
+                <th style="width: 33%;">
+                  Arrangement <i>M</i> <br>
+                  Number of Chairs (<i>C</i>)
+                </th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$10 = 2(\color{darkblue}{1} + \color{darkblue}{1}) + 6$</td>
+                <td>$10 = 3(\color{darkblue}{1} + \color{darkblue}{1}) + 4$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$14 = 2(\color{darkblue}{2} + \color{darkblue}{2}) + 6$</td>
+                <td>$16 = 3(\color{darkblue}{2} + \color{darkblue}{2}) + 4$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$18 = 2(\color{darkblue}{3} + \color{darkblue}{3}) + 6$</td>
+                <td>$22 = 3(\color{darkblue}{3} + \color{darkblue}{3}) + 4$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{4}$</td>
+                <td>$22 = 2(\color{darkblue}{4} + \color{darkblue}{4}) + 6$</td>
+                <td>$28 = 3(\color{darkblue}{4} + \color{darkblue}{4}) + 4$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{21}$</td>
+                <td>$90 = 2(\color{darkblue}{21} + \color{darkblue}{21}) + 6$</td>
+                <td>
+                  $
+                  3(\color{darkblue}{what} + \color{darkblue}{what}) + 4 = 130 \\[3ex]
+                  3(2what) + 4 = 130 \\[3ex]
+                  6\cdot what + 4 = 130 \\[3ex]
+                  6\cdot what = 130 - 4 \\[3ex]
+                  6\cdot what = 126 \\[3ex]
+                  what = \dfrac{126}{6} \\[5ex]
+                  what = 21 \\[3ex]
+                  \underline{Check} \\[3ex]
+                  130 = 3(\color{darkblue}{21} + \color{darkblue}{21}) + 4
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>
+                  $
+                  2(\color{darkblue}{n} + \color{darkblue}{n}) + 6 \\[3ex]
+                  2(2n) + 6 \\[3ex]
+                  4n + 6
+                  $
+                </td>
+                <td>
+                  $
+                  3(\color{darkblue}{n} + \color{darkblue}{n}) + 4 \\[3ex]
+                  3(2n) + 4 \\[3ex]
+                  6n + 4
+                  $
+                </td>
+              </tr>
+            </table>
+            <br>
+            (c.) Seating 70 people for a birthday party implies 70 chairs <br>
+            So, let us determine the least number of tables for 70 chairs
+            <br><br>
+            $
+            \underline{Arrangement\;L} \\[3ex]
+            4n + 6 = 70 \\[3ex]
+            4n = 70 - 6 \\[3ex]
+            4n = 64 \\[3ex]
+            n = \dfrac{64}{4} \\[5ex]
+            n = 16\;tables \\[5ex]
+
+            \underline{Arrangement\;M} \\[3ex]
+            6n + 4 = 70 \\[3ex]
+            6n = 70 - 4 \\[3ex]
+            6n = 66 \\[3ex]
+            n = \dfrac{66}{6} \\[5ex]
+            n = 11\;tables \\[3ex]
+            $
+            The calculations show that <b>Arrangement <i>M</i></b> will allow him to rent the LEAST number of tables for
+            70 people.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The diagram below shows the first 3 shapes in a sequence, which forms a pattern. <br>
+          Each shape is made using a set of small white counters and black counters.
+          <br><br>
+          <img src="images/Sequences/Questions/Number6-1st.png" alt="Number 6-1st">
+          <br><br>
+          (a.) Complete the diagram below to represent Shape 4. <br>
+          <img src="images/Sequences/Questions/Number6-2nd.png" alt="Number 6-2nd">
+          <br><br>
+          (b.) The number of white counters, <i>W</i>, the number of black counters, <i>B</i>, and the total number of
+          counters, <i>T</i>, that form each shape follow a pattern. <br>
+          The values for <i>W, B</i> and <i>T</i> for the first 3 shapes are shown in the table below. <br>
+          Study the pattern of numbers in each row of the table and answer the questions that follow. <br>
+          Complete the rows marked (i.), (ii.), and (iii.) in the table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 20%;">Shape Number (<i>S</i>)</th>
+              <th style="width: 20%;">Number of White Counters (<i>W</i>)</th>
+              <th style="width: 40%;">Number of Black Counters (<i>B</i>)</th>
+              <th style="width: 20%;">Total Number of Counters (<i>T</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>(1 + 1)[2(1) + 1] = 6</td>
+              <td>(1 + 1)² = 4</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>(2 + 1)[2(2) + 1] = 15</td>
+              <td>(2 + 1)² = 9</td>
+              <td>24</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>(3 + 1)[2(3) + 1] = 28</td>
+              <td>(3 + 1)² = 16</td>
+              <td>44</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td><b>45</b></td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>.......</td>
+              <td><b>144</b></td>
+              <td><b>420</b></td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>(....... + .......)[....... + .......]</td>
+              <td>(....... + .......)²</td>
+              <td>$3n^2 + 5n + 2$</td>
+            </tr>
+          </table>
+          <br>
+          (c.) The expression for the total number of counters, $T = W + B$, in Shape <i>S</i> is given by $T = aS^2 +
+          bS + 2$, where <i>a</i> and <i>b</i> are both positive integers. <br>
+          By substituting suitable values for <i>S</i>, show that the <b>total</b> number of counters in Shape 1 and
+          Shape 3, in terms of <i>a</i> and <i>b</i>, is represented by the equations
+          <br><br>
+          $
+          a + b = 8 \;\;\text{and} \\[3ex]
+          3a + b = 14 \;\;\text{respectively}. \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionS6')">Show/Hide Answer</button>
+          <div class="result" id="solutionS6">
+            <br>
+            (a.) The diagram that represents Shape 4 is: <br>
+            <img src="images/Sequences/Answers/Number6.png" alt="Number 6">
+            <br><br>
+            (b.) CSEC was so kind to show us the pattern for the Number of White Counters and the Number of Black
+            Counters. <br>
+            We are going to use that pattern. <br>
+            We shall use the <span style="color: darkblue;">dark blue color</span> color to see the patterns.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 20%;">Shape Number (<i>S</i>)</th>
+                <th style="width: 20%;">Number of White Counters (<i>W</i>)</th>
+                <th style="width: 40%;">Number of Black Counters (<i>B</i>)</th>
+                <th style="width: 20%;">Total Number of Counters (<i>T</i>)</th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$(\color{darkblue}{1} + 1)[2(\color{darkblue}{1}) + 1] = 6$</td>
+                <td>$(\color{darkblue}{1} + 1)^2 = 4$</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$(\color{darkblue}{2} + 1)[2(\color{darkblue}{2}) + 1] = 15$</td>
+                <td>$(\color{darkblue}{2} + 1)^2 = 9$</td>
+                <td>24</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$(\color{darkblue}{3} + 1)[2(\color{darkblue}{3}) + 1] = 28$</td>
+                <td>$(\color{darkblue}{3} + 1)^2 = 16$</td>
+                <td>44</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{4}$</td>
+                <td><b>45</b></td>
+                <td>
+                  $(\color{darkblue}{4} + 1)^2 = 5^2 = 25$
+                </td>
+                <td>$45 + 25 = 70$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{11}$</td>
+                <td>
+                  $
+                  W + B = T \\[3ex]
+                  W + 144 = 420 \\[3ex]
+                  W = 420 - 144 \\[3ex]
+                  W = 276
+                  $
+                </td>
+                <td>
+                  <b>144</b> <br>
+                  $
+                  (\color{darkblue}{S} + 1)^2 \\[4ex]
+                  (S + 1)^2 = 144 \\[4ex]
+                  S + 1 = \sqrt{144} \\[3ex]
+                  S + 1 = 12 \\[3ex]
+                  S = 12 - 1 \\[3ex]
+                  S = 11
+                  $
+                </td>
+                <td><b>420</b></td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>
+                  $
+                  (\color{darkblue}{n} + 1)[2(\color{darkblue}{n}) + 1] \\[3ex]
+                  (\color{darkblue}{n} + 1)[2\color{darkblue}{n} + 1]
+                  $
+                </td>
+                <td>$(\color{darkblue}{n} + 1)^2$</td>
+                <td>$3n^2 + 5n + 2$</td>
+              </tr>
+            </table>
+            <br>
+            $
+            (c.) \\[3ex]
+            T = W + B...eqn.(1) \\[3ex]
+            T = aS^2 + bS + 2...eqn.(2) \\[3ex]
+            T = T \\[3ex]
+            \underline{\text{Shape } 1} \\[3ex]
+            S = 1 \\[3ex]
+            T = 10 \\[3ex]
+            \implies \\[3ex]
+            a(1)^2 + b(1) + 2 = 10 \\[3ex]
+            a(1) + b = 10 - 2 \\[3ex]
+            a + b = 8 \\[5ex]
+            \underline{\text{Shape } 3} \\[3ex]
+            S = 3 \\[3ex]
+            T = 44 \\[3ex]
+            \implies \\[3ex]
+            a(3)^2 + b(3) + 2 = 44 \\[3ex]
+            a(9) + 3b = 44 - 2 \\[3ex]
+            9a + 3b = 42 \\[3ex]
+            3(3a + b) = 42 \\[3ex]
+            3a + b = \dfrac{42}{3} \\[5ex]
+            3a + b = 14
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) A sequence of figures is made from lines of unit length and dots. <br>
+          The lines form a series of octagons and squares. <br>
+          The dots are placed at each vertex. <br>
+          The first 3 figures in the sequence are shown below.
+          <br><br>
+          <img src="images/Sequences/Questions/Number7-1st.png" alt="Number 7-1st">
+          <br><br>
+          (a.) Figure 3 of the sequence is shown by itself below. <br>
+          Add more lines of unit length and dots to Figure 3 to correctly represent Figure 4.
+          <br><br>
+          <img src="images/Sequences/Questions/Number7-2nd.png" alt="Number 7-2nd">
+          <br><br>
+          (b.) The number of dots, <i>D</i>, and the number of unit lines that form the perimeter of the shape,
+          <i>P</i>, form a pattern. <br>
+          The values for <i>D</i> and <i>P</i> for the first 3 figures are written in the table below. <br>
+          Study the pattern of numbers in each row of the table. <br>
+          Complete the rows numbered (i.), (ii.), and (iii.)
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 22%;">Figure Number</th>
+              <th style="width: 39%;">Number of Dots (<i>D</i>)</th>
+              <th style="width: 39%;">Perimeter of Figure (<i>P</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>8</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>16</td>
+              <td>14</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>24</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>.......</td>
+              <td>86</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) For any figure, <i>n</i> &gt; 1, the number of dots, <i>D</i>, is greater than its perimeter, <i>P</i>.
+          <br>
+          Determine the value of <i>n</i> for a figure in which the difference between <i>D</i> and <i>P</i> is 36.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS7')">Show/Hide Answer</button>
+          <div class="result" id="solutionS7">
+            <br>
+            (a.) Figure 4 of the sequence is drawn as shown: <br>
+            <img src="images/Sequences/Answers/Number7.png" alt="Number 7">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} = \text{Figure Number} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Number of Dots, D}} \\[3ex]
+            8, 16, 24, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 8 \\[3ex]
+            d = 24 - 16 = 16 - 8 = 8 \\[3ex]
+            D_n = a + d(n - 1) \\[3ex]
+            = 8 + 8(n - 1) \\[3ex]
+            = 8 + 8n - 8 \\[3ex]
+            = 8n \\[3ex]
+            nth\;\;term = D_n = 8n \\[5ex]
+
+            \underline{\text{Perimeter of Figure, P}} \\[3ex]
+            8, 14, 20, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 8 \\[3ex]
+            d = 20 - 14 = 14 - 8 = 6 \\[3ex]
+            P_n = a + d(n - 1) \\[3ex]
+            = 8 + 6(n - 1) \\[3ex]
+            = 8 + 6n - 6 \\[3ex]
+            = 6n + 2 \\[3ex]
+            nth\;\;term = P_n = 6n + 2 \\[5ex]
+
+            (i.) \\[3ex]
+            n = 4 \\[3ex]
+            D_4 = 8(4) \\[3ex]
+            = 32 \\[3ex]
+            P_4 = 6(4) + 2 \\[3ex]
+            = 24 + 2 \\[3ex]
+            = 26 \\[5ex]
+
+            (ii.) \\[3ex]
+            P_n = 86 \\[3ex]
+            \implies \\[3ex]
+            6n + 2 = 86 \\[3ex]
+            6n = 86 - 2 \\[3ex]
+            6n = 84 \\[3ex]
+            n = \dfrac{84}{2} \\[5ex]
+            n = 14 \\[3ex]
+            D_4 = 8(14) \\[3ex]
+            = 112 \\[3ex]
+            $
+            Let us use the <span style="color: darkblue;">dark blue color</span> to see the patterns in the completed
+            table.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 22%;">Figure Number</th>
+                <th style="width: 39%;">Number of Dots (<i>D</i>)</th>
+                <th style="width: 39%;">Perimeter of Figure (<i>P</i>)</th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$8 = 8(\color{darkblue}{1})$</td>
+                <td>$8 = 6(\color{darkblue}{1}) + 2$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$16 = 8(\color{darkblue}{2})$</td>
+                <td>$14 = 6(\color{darkblue}{2}) + 2$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$24 = 8(\color{darkblue}{3})$</td>
+                <td>$20 = 6(\color{darkblue}{3}) + 2$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{4}$</td>
+                <td>$32 = 8(\color{darkblue}{4})$</td>
+                <td>$26 = 6(\color{darkblue}{4}) + 2$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{14}$</td>
+                <td>$112 = 8(\color{darkblue}{14})$</td>
+                <td>$86 = 6(\color{darkblue}{14}) + 2$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>$8(\color{darkblue}{n})$</td>
+                <td>$6(\color{darkblue}{n}) + 2$</td>
+              </tr>
+            </table>
+            <br>
+            $
+            (c.) \\[3ex]
+            D_n - P_n = 36 \\[3ex]
+            8n - (6n + 2) = 36 \\[3ex]
+            8n - 6n - 2 = 36 \\[3ex]
+            2n = 36 + 2 \\[3ex]
+            2n = 38 \\[3ex]
+            n = \dfrac{38}{2} \\[5ex]
+            n = 19
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) The first 3 figures in a sequence of shapes, formed by connecting lines of unit length, are shown below.
+          <br><br>
+          <img src="images/Sequences/Questions/Number8.png" alt="Number 8">
+          <br><br>
+          (a.) Draw Figure 4 of the pattern in the space provided above.
+          <br><br>
+          (b.) The number of lines, <i>L</i>, in each shape and the perimeter, <i>P</i>, of the shape follow a pattern.
+          <br>
+          Study the pattern of numbers in each row of the table below and answer the questions that follow. <br>
+          Complete the table below showing the number of lines and the perimeter of each figure.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 22%;">Figure</th>
+              <th style="width: 39%;">Number of Lines (<i>L</i>)</th>
+              <th style="width: 39%;">Perimeter (<i>P</i>)</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>6</td>
+              <td>5</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>11</td>
+              <td>8</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>16</td>
+              <td>11</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td>.......</td>
+              <td>66</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (c.) Write a simplified expression, in terms of <i>n</i>, for the <b>difference</b>, <i>d</i>, between the
+          number of lines and the perimeter of any figure, <i>n</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS8')">Show/Hide Answer</button>
+          <div class="result" id="solutionS8">
+            <br>
+            (a.) Figure 4 of the sequence is drawn as shown: <br>
+            <img src="images/Sequences/Answers/Number8.png" alt="Number 8">
+            <br><br>
+            $
+            a = \text{first term} \\[3ex]
+            d = \text{common difference} \\[3ex]
+            n = \text{number of terms} = \text{Figure Number} \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\text{Number of Lines, L}} \\[3ex]
+            6, 11, 16, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 6 \\[3ex]
+            d = 16 - 11 = 11 - 6 = 5 \\[3ex]
+            L_n = a + d(n - 1) \\[3ex]
+            = 6 + 5(n - 1) \\[3ex]
+            = 6 + 5n - 5 \\[3ex]
+            = 5n + 1 \\[3ex]
+            nth\;\;term = L_n = 5n + 1 \\[5ex]
+
+            \underline{\text{Perimeter, P}} \\[3ex]
+            5, 8, 11, ... \text{indicates an Arithmetic Sequence} \\[3ex]
+            a = 5 \\[3ex]
+            d = 11 - 8 = 8 - 5 = 3 \\[3ex]
+            P_n = a + d(n - 1) \\[3ex]
+            = 5 + 3(n - 1) \\[3ex]
+            = 5 + 3n - 3 \\[3ex]
+            = 3n + 2 \\[3ex]
+            nth\;\;term = P_n = 3n + 2 \\[5ex]
+
+            (i.) \\[3ex]
+            n = 5 \\[3ex]
+            L_5 = 5(5) + 1 \\[3ex]
+            = 25 + 1 \\[3ex]
+            = 26 \\[3ex]
+            P_5 = 3(5) + 2 \\[3ex]
+            = 15 + 2 \\[3ex]
+            = 17 \\[5ex]
+
+            (ii.) \\[3ex]
+            L_n = 66 \\[3ex]
+            \implies \\[3ex]
+            5n + 1 = 66 \\[3ex]
+            5n = 66 - 1 \\[3ex]
+            5n = 65 \\[3ex]
+            n = \dfrac{65}{5} \\[5ex]
+            n = 13 \\[3ex]
+            P_{13} = 3(13) + 2 \\[3ex]
+            = 39 + 2 \\[3ex]
+            = 41 \\[3ex]
+            $
+            Let us use the <span style="color: darkblue;">dark blue color</span> to see the patterns in the completed
+            table.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 22%;">Figure</th>
+                <th style="width: 39%;">Number of Lines (<i>L</i>)</th>
+                <th style="width: 39%;">Perimeter (<i>P</i>)</th>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{1}$</td>
+                <td>$6 = 5(\color{darkblue}{1}) + 1$</td>
+                <td>$5 = 3(\color{darkblue}{1}) + 2$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{2}$</td>
+                <td>$11 = 5(\color{darkblue}{2}) + 1$</td>
+                <td>$8 = 3(\color{darkblue}{2}) + 2$</td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{3}$</td>
+                <td>$16 = 5(\color{darkblue}{3}) + 1$</td>
+                <td>$11 = 3(\color{darkblue}{3}) + 2$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{5}$</td>
+                <td>$26 = 5(\color{darkblue}{5}) + 1$</td>
+                <td>$17 = 3(\color{darkblue}{5}) + 2$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{13}$</td>
+                <td>$66 = 5(\color{darkblue}{13}) + 1$</td>
+                <td>$41 = 3(\color{darkblue}{13}) + 2$</td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$\color{darkblue}{n}$</td>
+                <td>$5(\color{darkblue}{n}) + 1$</td>
+                <td>$3(\color{darkblue}{n}) + 2$</td>
+              </tr>
+            </table>
+            <br>
+            $
+            (c.) \\[3ex]
+            difference = d \\[3ex]
+            d = L_n - P_n \\[3ex]
+            d = (5n + 1) - (3n + 2) \\[3ex]
+            d = 5n + 1 - 3n - 2 \\[3ex]
+            d = 2n - 1
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionS9')">Show/Hide Answer</button>
+          <div class="result" id="solutionS9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <button class="solutions" onclick="solutions('solutionS10')">Show/Hide Answer</button>
+          <div class="result" id="solutionS10">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionS11')">Show/Hide Answer</button>
+          <div class="result" id="solutionS11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) The diagrams below show a sequence of figures made up of circles with dots. <br>
+          Each figure has one dot at the centre and 4 dots on the circumference of each circle. <br>
+          The radius of the first circle is one unit. <br>
+          The radius of each new circle is one unit greater than the radius of the previous circle. <br>
+          Except for the first figure, a portion of each of the other figures is shaded.
+          <br><br>
+          <img src="images/Sequences/Questions/Number12.png" alt="Number 12">
+          <br><br>
+          (a.) Complete the rows in the table below for Figure 5 and Figure <i>n</i> <br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 10%;">Figure Number</th>
+              <th style="width: 15%;">Number of Dots</th>
+              <th style="width: 25%;">Area of Outer (Largest) Circle</th>
+              <th style="width: 20%;">Area of Shaded Region</th>
+              <th style="width: 30%;">Total Length of Circumference of all Circles</th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>5</td>
+              <td>&pi;</td>
+              <td>&pi;</td>
+              <td>2&pi;</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>9</td>
+              <td>4&pi;</td>
+              <td>3&pi;</td>
+              <td>6&pi;</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>13</td>
+              <td>9&pi;</td>
+              <td>5&pi;</td>
+              <td>12&pi;</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>17</td>
+              <td>16&pi;</td>
+              <td>7&pi;</td>
+              <td>20&pi;</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>.......</td>
+              <td>25&pi;</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+            <tr>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+              <td class="threeVerticalDots"></td>
+            </tr>
+            <tr>
+              <td><i>n</i></td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>.......</td>
+              <td>.......</td>
+            </tr>
+          </table>
+          <br>
+          (b.) Determine the value of <i>n</i>, when the number of dots in Figure <i>n</i> is 541.
+          <br><br>
+          (c.) Write down, in terms of <i>p</i> and &pi;, the area of the LARGEST circle in Figure 3<i>p</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS12')">Show/Hide Answer</button>
+          <div class="result" id="solutionS12">
+            <br>
+            Let us simplify the information for easier comprehension. <br>
+            In that sense, we shall introduce more columnns to the table. <br>
+            The main goal is to establish a pattern/rule for each subsequent row after the first row so that we can
+            determine the formula that works for <i>n</i> <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 6%;">Figure Number</th>
+                <th style="width: 6%;">Number of Dots</th>
+                <th style="width: 6%;">Number of Circles</th>
+                <th style="width: 10%;">Radii of Circles, <i>r</i></th>
+                <th style="width: 18%;">Area of Outer (Largest) Circle = &pi;<i>r</i><sup>2</sup></th>
+                <th style="width: 18%;">Area of Larger Circle = &pi;<i>r</i><sup>2</sup></th>
+                <th style="width: 18%;">Area of Shaded Region = Area of Largest Circle &minus; Area of Larger Circle
+                  (Number of Circles &gt; 1)</th>
+                <th style="width: 18%;">Total Length of Circumference of all Circles = 2&pi;<i>r</i></th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>5</td>
+                <td>1</td>
+                <td>1</td>
+                <td>
+                  $
+                  \pi \cdot (1)^2 \\[3ex]
+                  \pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (1)^2 \\[3ex]
+                  \pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (1)^2 \\[3ex]
+                  \pi
+                  $
+                </td>
+                <td>
+                  $
+                  2\pi(1) \\[3ex]
+                  2\pi
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td style="color: darkblue;">2</td>
+                <td>
+                  $
+                  5 + 4 = 9 \\[3ex]
+                  \implies \\[3ex]
+                  5 + 4(1) \\[3ex]
+                  5 + 4(\color{darkblue}{2} - 1)
+                  $
+                </td>
+                <td>2</td>
+                <td>1, 2</td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{2})^2 \\[3ex]
+                  4\pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{2} - 1)^2 \\[3ex]
+                  \pi \cdot (1)^2 \\[3ex]
+                  \pi
+                  $
+                </td>
+                <td>
+                  $
+                  4\pi - \pi = 3\pi
+                  $
+                </td>
+                <td>
+                  $
+                  2\pi(1) + 2\pi(2) \\[3ex]
+                  2\pi + 4\pi
+                  6\pi \\[3ex]
+                  \implies \\[3ex]
+                  \pi \cdot 2 \cdot 3 \\[3ex]
+                  \pi \cdot \color{darkblue}{2} \cdot (\color{darkblue}{2} + 1)
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td style="color: darkblue;">3</td>
+                <td>
+                  $
+                  5 + 4 + 4 = 13 \\[3ex]
+                  \implies \\[3ex]
+                  5 + 4(2) \\[3ex]
+                  5 + 4(\color{darkblue}{3} - 1)
+                  $
+                </td>
+                <td>3</td>
+                <td>1, 2, 3</td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{3})^2 \\[3ex]
+                  9\pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{3} - 1)^2 \\[3ex]
+                  \pi \cdot (2)^2 \\[3ex]
+                  4\pi
+                  $
+                </td>
+                <td>
+                  $
+                  9\pi - 4\pi = 5\pi
+                  $
+                </td>
+                <td>
+                  $
+                  2\pi(1) + 2\pi(2) + 2\pi(3) \\[3ex]
+                  2\pi + 4\pi + 6\pi \\[3ex]
+                  12\pi \\[3ex]
+                  \implies \\[3ex]
+                  \pi \cdot 3 \cdot 4 \\[3ex]
+                  \pi \cdot \color{darkblue}{3} \cdot (\color{darkblue}{3} + 1)
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td style="color: darkblue;">4</td>
+                <td>
+                  $
+                  5 + 4 + 4 + 4 = 17 \\[3ex]
+                  \implies \\[3ex]
+                  5 + 4(3) \\[3ex]
+                  5 + 4(\color{darkblue}{4} - 1)
+                  $
+                </td>
+                <td>4</td>
+                <td>1, 2, 3, 4</td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{4})^2 \\[3ex]
+                  16\pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{4} - 1)^2 \\[3ex]
+                  \pi \cdot (3)^2 \\[3ex]
+                  9\pi
+                  $
+                </td>
+                <td>
+                  $
+                  16\pi - 9\pi = 7\pi
+                  $
+                </td>
+                <td>
+                  $
+                  2\pi(1) + 2\pi(2) + 2\pi(3) + 2\pi(4) \\[3ex]
+                  2\pi + 4\pi + 6\pi + 8\pi \\[3ex]
+                  20\pi \\[3ex]
+                  \implies \\[3ex]
+                  \pi \cdot 4 \cdot 5 \\[3ex]
+                  \pi \cdot \color{darkblue}{4} \cdot (\color{darkblue}{4} + 1)
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td style="color: darkblue;">5</td>
+                <td>
+                  $
+                  5 + 4 + 4 + 4 + 4 = 21 \\[3ex]
+                  \implies \\[3ex]
+                  5 + 4(4) \\[3ex]
+                  5 + 4(\color{darkblue}{5} - 1)
+                  $
+                </td>
+                <td>4</td>
+                <td>1, 2, 3, 4, 5</td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{5})^2 \\[3ex]
+                  25\pi
+                  $
+                </td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{5} - 1)^2 \\[3ex]
+                  \pi \cdot (4)^2 \\[3ex]
+                  16\pi
+                  $
+                </td>
+                <td>
+                  $
+                  25\pi - 16\pi = 9\pi
+                  $
+                </td>
+                <td>
+                  $
+                  2\pi(1) + 2\pi(2) + 2\pi(3) + 2\pi(4) + 2\pi(5) \\[3ex]
+                  2\pi + 4\pi + 6\pi + 8\pi + 10\pi \\[3ex]
+                  30\pi
+                  \implies \\[3ex]
+                  \pi \cdot 5 \cdot 6 \\[3ex]
+                  \pi \cdot \color{darkblue}{5} \cdot (\color{darkblue}{5} + 1)
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td style="color: darkblue;"><i>n</i></td>
+                <td>
+                  $
+                  5 + 4(\color{darkblue}{n} - 1) \\[3ex]
+                  5 + 4n - 4 \\[3ex]
+                  4n + 1
+                  $
+                </td>
+                <td><i>n</i></td>
+                <td>$1, 2, 3, 4, 5, ..., n - 1, n$</td>
+                <td>
+                  $
+                  \pi \cdot (\color{darkblue}{n})^2 \\[3ex]
+                  \pi n^2
+                  $
+                </td>
+                <td>
+                  $
+                  \pi(\color{darkblue}{n} - 1)^2
+                  $
+                </td>
+                <td>
+                  $
+                  \pi n^2 - \pi(n - 1)^2 \\[3ex]
+                  \pi[n^2 - (n - 1)^2] \\[3ex]
+                  \pi[n^2 - (n - 1)(n - 1)] \\[3ex]
+                  \pi[n^2 - (n^2 - n - n + 1)] \\[3ex]
+                  \pi[n^2 - (n^2 - 2n + 1)] \\[3ex]
+                  \pi(n^2 - n^2 + 2n - 1) \\[3ex]
+                  \pi(2n - 1)
+                  $
+                </td>
+                <td>
+                  $
+                  \implies \\[3ex]
+                  \pi \cdot n \cdot n + 1 \\[3ex]
+                  \pi \cdot \color{darkblue}{n} \cdot (\color{darkblue}{n} + 1) \\[3ex]
+                  \pi n(n + 1)
+                  $
+                </td>
+              </tr>
+            </table>
+            <br>
+            $
+            (b.) \\[3ex]
+            \underline{Figure\;n} \\[3ex]
+            Number\;\;of\;\;dots = 541 \\[3ex]
+            Number\;\;of\;\;dots = 4n + 1 \\[3ex]
+            \implies \\[3ex]
+            4n + 1 = 541 \\[3ex]
+            4n = 541 - 1 \\[3ex]
+            4n = 540 \\[3ex]
+            n = \dfrac{540}{4} \\[5ex]
+            n = 135 \\[5ex]
+            (c.) \\[3ex]
+            \underline{Figure\;n} \\[3ex]
+            Area\;\;of\;\;the\;\;LARGEST\;\;circle = \pi n^2 \\[3ex]
+            \implies \\[3ex]
+            \underline{Figure\;3p} \\[3ex]
+            Area\;\;of\;\;the\;\;LARGEST\;\;circle = \pi (3p)^2 \\[4ex]
+            = 9\pi p^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionS13')">Show/Hide Answer</button>
+          <div class="result" id="solutionS13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <button class="solutions" onclick="solutions('solutionS14')">Show/Hide Answer</button>
+          <div class="result" id="solutionS14">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionS15')">Show/Hide Answer</button>
+          <div class="result" id="solutionS15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <button class="solutions" onclick="solutions('solutionS16')">Show/Hide Answer</button>
+          <div class="result" id="solutionS16">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionS17')">Show/Hide Answer</button>
+          <div class="result" id="solutionS17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <button class="solutions" onclick="solutions('solutionS18')">Show/Hide Answer</button>
+          <div class="result" id="solutionS18">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionS19')">Show/Hide Answer</button>
+          <div class="result" id="solutionS19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS20')">Show/Hide Answer</button>
+          <div class="result" id="solutionS20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/CSEC/Sequences.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+
+
+    <!-- Numbers 21 through 40 -->
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

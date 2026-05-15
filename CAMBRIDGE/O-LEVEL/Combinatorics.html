@@ -1,0 +1,2481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Combinatorics</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the Cambridge Ordinary Level (O-Level) exam questions on combinatorics.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  CAMBRIDGE, Cambridge Assessments, IGCSE, International General Certificate of Secondary Education, A-Level,  Advanced Level, 
+  O-Level, Ordinary Level, Pre-U, Pre-University, Algebra, Combinatorics, combinatorics, factorial notation, 
+  factorials, discrete mathematics, finite mathematics, fundamental counting principle, counting principle, 
+  multplication principle, fundamental principle of counting, principle of counting, permutations, combinations, 
+  probability, counting, probability, permutation in probability, Pascal's triangle, binomial expansion, binomial theorem,
+  combination in probability, circular permutation">
+
+  <link rel="stylesheet" href="../styles/Mathematics.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulaSheet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formula Sheet</a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Combinatorics</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the Cambridge O-Level (Ordinary Level) past questions on Combinatorics. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        any of the Cambridge Assessments on Mathematics, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formula Sheet -->
+    <div class="w3-container w3-padding-32" id="formulaSheet">
+      <div class="w3-row-padding">
+        <h5>Formula Sheet: List of Formulae</h5>
+        <object data="../formulas/FormulaList-O-LEVEL-AdditionalMathematics-22.pdf" width="1400" height="700"></object>
+      </div>
+    </div>
+    <!-- End Formula Sheet -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas</h2>
+      <p>
+        Say: <br><br>
+        <i>n</i> is the number of items (<i>n</i> items)
+        <br><br>
+        <i>c</i> and <i>d</i> are the number of duplicate items
+        <br><br>
+        <i>n</i>! is read as <i>n</i>-factorial
+        <br><br>
+        The number of permutations of <i>n</i>items is <i>n</i>!
+        <br><br>
+        The number of permutations of duplicate items is $\dfrac{n!}{c! * d!}$
+        <br><br>
+        The number of permutations of $n$ total items taking $r$ items at a time is $^nP_r \;\;\;or\;\;\; _nP_r
+        \;\;\;or\;\;\; P(n, r)$
+        <br><br>
+        The number of combinations of $n$ total items taking $r$ items at a time is $^nC_r \;\;\;or\;\;\; _nC_r
+        \;\;\;or\;\;\; C(n, r) \;\;\;or\;\;\; \displaystyle{\binom{n}{r}}$
+        <br><br>
+        $
+        (1.)\:\: 0! = 1 \\[4ex]
+        (2.)\:\: n! = n * (n - 1) * (n - 2) * (n - 3) * ... * 1 \\[4ex]
+        (3.)\;\; n! = n * (n - 1)! \\[4ex]
+        (4.)\;\; n! = n * (n - 1) * (n - 2)!...\text{and so on and so forth} \\[4ex]
+        (5.)\;\; (n - 1)! = (n - 1) * (n - 2)!...\text{and so on and so forth} \\[4ex]
+        (6.)\;\; (n - 2)! = (n - 2) * (n - 3) * (n - 4)!...\text{and so on and so forth} \\[4ex]
+        (7.)\;\; (n - 3)! = (n - 3) * (n - 4) * (n - 5)!...\text{and so on and so forth} \\[4ex]
+        (8.)\;\; (n + 1)! = (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (9.)\;\; (n + 2)! = (n + 2) * (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (10.)\;\; (n + 3)! = (n + 3) * (n + 2) * (n + 1) * n!...\text{and so on and so forth} \\[4ex]
+        (11.)\:\: P(n, r) = \dfrac{n!}{(n - r)!} \\[7ex]
+        (12.)\:\: C(n, r) = \dfrac{n!}{(n - r)!r!} \\[7ex]
+        (13.)\;\; P(n, r) = n! * C(n, r) \\[4ex]
+        (14.)\;\; C(n, r) = C(n, n - r) \\[4ex]
+        (15.)\;\; (n - r) * P(n, r) = P(n, r + 1) \\[4ex]
+        (16.)\;\; Number\;\;of\;\;circular\;\;permutations = (n - 1)! \\[4ex]
+        $
+        <b>Case 1:</b> <br>
+        <u>Given:</u> a certain number of digits/letters say <i>p</i> <br>
+        (14.) The number of unique number of digits/letters say <i>c</i> digits/letters that can be formed if the
+        digits/letters may be repeated is $p^c$ digits/letters.
+        <br><br>
+        (15.) The number of unique number of digits/letters say <i>c</i> digits/letters that can be formed if the
+        digits/letters may not be repeated is $P(p, c)$ digits/letters.
+        <br><br>
+        <b>Case 2:</b> <br>
+        <u>Given:</u> a certain number of people or items in a linear random order say $n$ <br>
+        (16.) The number of ways in which two people or two items must be close together is $2 * (n - 1) * (n - 2)!$
+        ways
+        <br><br>
+        <b>Binomial Theorem</b>
+        <br><br>
+        $
+        (x + y)^n \\[3ex]
+        = C(n, 0)(x^n)(y^0) + C(n, 1)(x^{n - 1})(y) + C(n, 2)(x^{n - 2})(y^2) + ... + C(n, r)(x^{n - r})(y^r) + ... +
+        C(n, n)(x^0)(y^n) \\[4ex]
+        = x^n + C(n, 1)(x^{n - 1})(y) + C(n, 2)(x^{n - 2})(y^2) + ... + C(n, r)(x^{n - r})(y^r) + ... + y^n \\[5ex]
+        $
+        <b>Generalized Binomial Series</b> <br>
+        <i>Recommended for negative values of the outside exponent (negative values of n)</i>
+        <br><br>
+        $
+        (1 + x)^n = 1 + nx + \dfrac{n(n - 1)}{2!}x^2 + \dfrac{n(n - 1)(n - 2)}{3!}x^3 + O(x^4) \\[3ex]
+        $
+        where $O(x^4)$ is the Big-O Notation representing the remainder of the series, and indicating that the omitted
+        terms are of the order of $x^4$ as <i>x</i> approaches zero.
+        <br><br>
+        The binomial expansion of $(1 + ax)^n$ is valid when $|ax| \lt 1$
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Find the number of different ways the 9 letters of the word POLYMATHS can be arranged when <br>
+          (a.) the O and A are <b>not</b> next to each other <br>
+          (b.) the letters MATHS are together in this order.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC1')">Show/Hide Answer</button>
+          <div class="result" id="solutionC1">
+            <br>
+            Number of different arrangements of the 9 letters of POLYMATHS = 9!
+            <br><br>
+            (a.) Event: O and A must not be together <br>
+            Complementary Event: O and A must be together.
+            <br><br>
+            To solve this question, it is better to assume that O and A must be together. <br>
+            Let us begin with the complementary event. <br>
+            We shall consider two arrangements: <br>
+            <u>1st:</u> Assume O and A must be together: the two letters are treated as a single unit <br>
+            Type: Permutation <br>
+            Hence, we have: (7 + 1)! = 8! arrangements
+            <br><br>
+            <u>2nd:</u> Within the single unit of O and A, the two letters can be arranged in 2! ways <br>
+            It can be OA or AO <br>
+            Hence, we have 2! arrangements
+            <br><br>
+            The total number of arrangements if O and A must be together = 8! * 2!
+            <br><br>
+            The number of different arrangements if O and A are not together is: <br>
+            Number of different arrangements of the 9 letters &minus; Number of arrangements if O and A must be together
+            <br>
+            = 9! &minus; (2! * 8!) <br>
+            = 282240 arrangements
+            <br><br>
+            (b.) If the letters MATHS must be together <b>in this order</b> <br>
+            MATHS is treated as a single unit in <b>that order</b>. <br>
+            So, we have POLY + (MATHS) <br>
+            Hence, the number of arrangements <br>
+            = (4 + 1)! <br>
+            = 5! <br>
+            = 120 arrangements.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) In the binomial expansion of $\left(2 + \dfrac{x}{2}\right)^n$, the first three terms in increasing
+          powers of <i>x</i> are $b + abx + \dfrac{9}{8}abx^2$. <br>
+          Find the values of the constants <i>n, a</i> and <i>b</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC2')">Show/Hide Answer</button>
+          <div class="result" id="solutionC2">
+            <br>
+            $
+            \underline{\text{First thre terms of the expansion in increasing powers of }} x \\[3ex]
+            \left(2 + \dfrac{x}{2}\right)^n \\[5ex]
+            = 2^n + C(n, 1)(2^{n - 1})\left(\dfrac{x}{2}\right)^1 + C(n, 2)(2^{n - 2})\left(\dfrac{x}{2}\right)^2
+            \\[5ex]
+            = 2^n + \dfrac{n!}{(n - 1)! * 1!}(2^{n - 1})\left(\dfrac{x}{2}\right) +
+            \dfrac{n!}{(n - 2)! * 2!}(2^{n - 2})\left(\dfrac{x^2}{4}\right) \\[5ex]
+            = 2^n + \dfrac{n (n - 1)!}{(n - 1)!} * 2^{n - 1} * \dfrac{x}{2} +
+            \dfrac{n(n - 1)(n - 2)!}{(n - 2)! * 2} * 2^{n - 2} * \dfrac{x^2}{4} \\[5ex]
+            = 2^n + n * 2^{n - 1} * \dfrac{x}{2} + \dfrac{n(n - 1)}{2} * 2^{n - 2} * \dfrac{x^2}{4} \\[5ex]
+            = b + abx + \dfrac{9}{8}abx^2 \\[5ex]
+            \underline{\text{Compare and Equate terms}} \\[3ex]
+            b = 2^n ...eqn.(1) \\[3ex]
+
+            abx = n * 2^{n - 1} * \dfrac{x}{2} \\[5ex]
+            ab = n * 2^{n - 1} * \dfrac{1}{2} \\[5ex]
+            \text{Substitute for b from eqn.(1)} \\[3ex]
+            a * 2^n = n * \dfrac{2^{n - 1}}{2^1} \\[5ex]
+            a = \dfrac{n * 2^{n - 1}}{2^n * 2^1} \\[5ex]
+            a = \dfrac{n * 2^{n - 1}}{2^{n + 1}} \\[5ex]
+            a = n * 2^{n - 1 - (n + 1)} \\[4ex]
+            a = n * 2^{n - 1 - n - 1} \\[5ex]
+            a = n * 2^{-2} \\[4ex]
+            a = n * \dfrac{1}{2^2} \\[5ex]
+            a = \dfrac{n}{4} ...eqn.(2) \\[5ex]
+
+            \dfrac{9}{8}abx^2 = n(n - 1) * 2^{n - 2} * \dfrac{x^2}{4} \\[5ex]
+            \text{Substitute for a and b from eqn.(1) and eqn.(2)} \\[3ex]
+            \dfrac{9}{8} * \dfrac{n}{4} * 2^n * x^2 = \dfrac{n(n - 1)}{2} * 2^{n - 2} * \dfrac{x^2}{4} \\[5ex]
+            9 * \dfrac{1}{4} * 2^n = (n - 1) * 2^{n - 2} \\[5ex]
+            n - 1 = 9 * \dfrac{1}{4} * 2^n * \dfrac{1}{2^{n - 2}} \\[5ex]
+            n - 1 = \dfrac{9}{4} * \dfrac{2^n}{2^{n - 2}} \\[5ex]
+            n - 1 = \dfrac{9}{4} * 2^{n - (n - 2)} \\[5ex]
+            n - 1 = \dfrac{9}{4} * 2^{n - n + 2} \\[5ex]
+            n - 1 = \dfrac{9}{4} * 2^2 \\[5ex]
+            n - 1 = \dfrac{9}{4} * 4 \\[5ex]
+            n = 9 + 1 \\[3ex]
+            n = 10 \\[5ex]
+            \text{Substitute for n in eqn.(2)} \\[3ex]
+            a = \dfrac{10}{4} \\[5ex]
+            a = \dfrac{5}{2} \\[5ex]
+            \text{Substitute for n in eqn.(1)} \\[3ex]
+            b = 2^{10} \\[3ex]
+            b = 1024
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) There are 3 women, 2 men, and 4 children in a choir. <br>
+          (a.) The choir stands in a single straight line. <br>
+          (i.) Find the number of possible arrangements if the first person and last person are both women. <br>
+          (ii.) Find the number of possible arrangements if all the children stand next to each other.
+          <br><br>
+          (b.) Four of the choir are selected to sing in a group. <br>
+          (i.) Find the number of different selections if no man is chosen. <br>
+          (ii.) Find the number of different selections if at least 2 women are selected.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC3')">Show/Hide Answer</button>
+          <div class="result" id="solutionC3">
+            <br>
+            3 women + 2 men + 4 children = 9 people
+            <br><br>
+            (a.) (i.) Arranging 9 people in a single straight line <br>
+            <u>Condition:</u> The first person and the last person in the line are women
+            <br><br>
+            <u>1st:</u> Any of the 3 women can stand as the first person in the line. <br>
+            Number of arrangements = 3
+            <br><br>
+            <u>2nd:</u> Any of the remaining two women can stand as the last person in the line. <br>
+            Number of arrangements = 2
+            <br><br>
+            The remaining 7 people (9 &minus; 2 = 7) can be arranged in 7! ways <br>
+            Number of arrangements = 7!
+            <br><br>
+            Total number of possible arrangements <br>
+            = 3 * 2 * 7! <br>
+            = 30240 arrangements.
+            <br><br>
+            (ii.) If the 4 children must stand next to each other: <br>
+            Type: Permutation <br>
+            <u>1st:</u> They are treated as a single unit <br>
+            Number of arrangements = (3 + 2 + 1)! = 6!
+            <br><br>
+            <u>2nd:</u> Within the block of the 4 children, they can be arranged in 4! ways among themselves <br>
+            Number of arrangements = 4!
+            <br><br>
+            Total number of possible arrangements <br>
+            = 6! * 4! <br>
+            = 17280 arrangements.
+            <br><br>
+            (b.) Selecting 4 from the choir of 9 people: This is Combination because the order of selection does not
+            matter. <br>
+            (i.) <u>Condition:</u> No man must be in the four people selected <br>
+            There are 2 men <br>
+            This leaves us with: 9 people &minus; 2 men = 7 people <br>
+            So, we have to select 4 people from 7 people
+            <br><br>
+            $
+            \text{Number of selections} \\[3ex]
+            = C(4, 7) \\[3ex]
+            = \dfrac{7!}{(7 - 4)! * 4!} \\[5ex]
+            = 35\text{ selections} \\[3ex]
+            $
+            (ii.) <b>Condition:</b> At least 2 women must be selected <br>
+            Type: Combination <br>
+            There are 3 women <br>
+            At least 2 means 2 or more <br>
+            At least 2 women in the context of the question = 2 women or 3 women
+            <br><br>
+            <u>1st:</u> Select 2 women from 3 women <b>and</b> the remaining 2 people (4 &minus; 2) from 6 people (9
+            &minus; 3) <br>
+            OR <br>
+            Select 3 women from 3 women <b>and</b> the remaining 1 person (4 &minus; 3) from 6 people (9
+            &minus; 3)
+            <br><br>
+            $
+            \text{Number of selections} \\[3ex]
+            = C(3, 2) * C(6, 2) \hspace{3em}OR\hspace{3em} C(3, 3) * C(6, 1) \\[3ex]
+            = \left[\dfrac{3!}{(3 - 2)! * 2!} * \dfrac{6!}{(6 - 2)! * 2!}\right] +
+            \left[\dfrac{3!}{(3 - 3)! * 3!} * \dfrac{6!}{(6 - 1)! * 1!}\right] \\[5ex]
+            = (3 * 15) + (1 * 6) \\[3ex]
+            = 45 + 6 \\[3ex]
+            = 51\text{ selections}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) (a.) In the expansion of $(x + x^2)^8$ in ascending powers of <i>x</i>, the 3rd and 6th terms are equal.
+          <br>
+          Find the value of <i>x</i>.
+          <br><br>
+          (b.) In the expansion of $\left(x + \dfrac{2}{x}\right)^n$ in decreasing powers of <i>x</i>, the 6th term is a
+          constant. <br>
+          (i.) Find the value of the positive integer <i>n</i>. <br>
+          (ii.) Find the value of the 6th term.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC4')">Show/Hide Answer</button>
+          <div class="result" id="solutionC4">
+            <br>
+            $
+            (a.) \\[3ex]
+            \text{Expansion of }(x + x^2)^8 \text{ in ascending powers of } x \\[3ex]
+            \text{3rd term} = C(8, 2) * x^6 * (x^2)^2 \\[3ex]
+            = \dfrac{8!}{(8 - 2)! * 2!} * x^6 * x^4 \\[5ex]
+            = 28 * x^{6 + 4} \\[3ex]
+            = 28x^{10} \\[5ex]
+
+            \text{6th term} = C(8, 5) * x^3 * (x^2)^5 \\[3ex]
+            = \dfrac{8!}{(8 - 5)! * 5!} * x^3 * x^{10} \\[5ex]
+            = 56 * x^{3 + 10} \\[3ex]
+            = 56x^{13} \\[5ex]
+
+            \text{3rd term} = \text{6th term} \\[3ex]
+            \implies \\[3ex]
+            28x^{10} = 56x^{13} \\[3ex]
+            \dfrac{x^{13}}{x^{10}} = \dfrac{28}{56} \\[5ex]
+            x^{13 - 10} = \dfrac{1}{2} \\[5ex]
+            x^3 = \dfrac{1}{2} \\[5ex]
+            x = \sqrt[3]{\dfrac{1}{2}} \\[5ex]
+            x = \dfrac{\sqrt[3]{1}}{\sqrt[3]{2}} \\[5ex]
+            x = \dfrac{1}{\sqrt[3]{2}} * \dfrac{\sqrt[3]{4}}{\sqrt[3]{4}} \\[5ex]
+            x = \dfrac{\sqrt[3]{4}}{\sqrt[3]{8}} \\[5ex]
+            x = \dfrac{\sqrt[3]{4}}{2} \\[5ex]
+            (b.) \\[3ex]
+            \text{Expansion of }\left(x + \dfrac{2}{x}\right)^n \text{ in decreasing powers of } x \\[5ex]
+            \text{6th term} = C(n, 5) * x^{n - 5} * \left(\dfrac{2}{x}\right)^5 \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * x^{n - 5} * \dfrac{32}{x^5} \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * \dfrac{x^n}{x^5} * \dfrac{32}{x^5} \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * \dfrac{x^n}{x^5 * x^5} * 32 \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * \dfrac{x^n}{x^{5 + ^5}} * 32 \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * \dfrac{x^n}{x^{10}} * 32 \\[5ex]
+            = \dfrac{n!}{(n - 5)! * 5!} * x^{n - 10} * 32 \\[5ex]
+            $
+            For the 6th term to be a constant, that means that the variable, <i>x</i> should be 1
+            <br>
+            <i>
+              The variable should not be zero because it will make the entire 6th term to be 0 <br>
+              The variable should be 1
+            </i>
+            <br>
+            For the variable, <i>x</i> to be 1, the index/power/exponent must be zero <br>
+            Anything raised to exponent zero gives 1...Law 3...Exp <br>
+            So, this implies that:
+            <br><br>
+            $
+            (i.) \\[3ex]
+            x^{n - 10} = 1 \\[3ex]
+            x^{n - 10} = x^0 \\[3ex]
+            \text{same base; equate exponents} \\[3ex]
+            n - 10 = 0 \\[3ex]
+            n = 10 \\[5ex]
+            (ii.) \\[3ex]
+            \text{6th term} = \dfrac{10!}{(10 - 5)! * 5!} * x^{10 - 10} * 32 \\[5ex]
+            = 252 * 1 * 32 \\[5ex]
+            = 8064
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) (a.) There are 3 girls and 2 boys standing in a straight line. <br>
+          Find the number of possible orders in each of the following cases. <br>
+          (i.) No girls are next to each other. <br>
+          (ii.) The 2 boys are not next to each other.
+          <br><br>
+          (b.) 12 people, including Anjie and Bubay, are divided into 3 groups of 4 people. <br>
+          Anjie and Bubay must not be in the same group. <br>
+          Find the number of ways in which the 3 groups can be selected.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC5')">Show/Hide Answer</button>
+          <div class="result" id="solutionC5">
+            <br>
+            (a.) In this case, the number of girls is more than the number of boys. <br>
+            So, we shall use the Gaps (Spacing) method this time.
+            <br><br>
+            $
+            (i.) \\[3ex]
+            \text{3 girls and 2 boys} \\[3ex]
+            \text{No girls are next to each other} \\[3ex]
+            \underline{\text{1st Case}}: \\[3ex]
+            \begin{array}{c c c c c}
+            \stackrel{\Large G}{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large G}{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large G}{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large 3}{\rule{1cm}{0.5mm}} & \stackrel{\Large 2}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 2}{\rule{1cm}{0.5mm}} & \stackrel{\Large 1}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 1}{\rule{1cm}{0.5mm}}
+            \end{array}
+            $
+            <br>
+            This is the only case that works. <br>
+            Any of the 3 girls can take the first position: 3 ways <br>
+            Any of the 2 boys can take the second position: 2 ways <br>
+            Any of the remaining 2 girls (3 &minus; 1) can take the third position: 2 ways <br>
+            The remaining boy must take the fourth position: 1 way <br>
+            The remaining girl must take the fifth position: 1 way <br>
+            Number of possible orders <br>
+            = 3 * 2 * 2 * 1 * 1 <br>
+            = 12 arrangements.
+            <br><br>
+            Type: Permutation <br>
+            <u>Case 1</u>: No restriction <br>
+            3 girls and 2 boys = 5 people <br>
+            Number of arrangements = 5!
+            <br><br>
+            <u>Case 2</u>: Condition: Assume the 2 boys are next to each other. <br>
+            Type: Permutation <br>
+            <u>1st:</u> They are treated as a single unit <br>
+            Number of arrangements = (3 + 1)! = 4!
+            <br><br>
+            <u>2nd:</u> Within the block of the 2 boys, they can be arranged in 2! ways between each other <br>
+            Number of arrangements = 2!
+            <br><br>
+            Total number of possible arrangements if the 2 boys are next to each other <br>
+            = 4! * 2!
+            <br><br>
+            (ii.) <u>Case 3</u>: Condition: The 2 boys are not next to each other. <br>
+            Number of arrangements <br>
+            = Case 1 &minus; Case 2 <br>
+            = 5! &minus; (4! * 2!) <br>
+            = 72 possible orders.
+            <br><br>
+            (b.) 12 people, including Anjie and Bubay, are divided into 3 groups of 4 people. <br>
+            <u>Case 1</u>: No restriction
+            <br><br>
+            Any 4 people can be chosen from the 12 to be in th 1st group <br>
+            Number of ways = $C(12, 4)$
+            <br><br>
+            Any 4 people can be chosen from the remaining 8 (12 &minus; 4) to be in the 2nd group
+            Number of ways = $C(8, 4)$
+            <br><br>
+            The remaining 4 people will be chosen from the remaining 4 (8 &minus; 4) to be in the 3rd group
+            Number of ways = $C(4, 4)$
+            <br><br>
+            $
+            \text{Number of ways} \\[3ex]
+            = C(12, 4) * C(8, 4) * C(4, 4) \\[3ex]
+            = \dfrac{12!}{(12 - 4)! * 4!} * \dfrac{8!}{(8 - 4)! * 4!} * \dfrac{4!}{(4 - 4)! * 4!} \\[5ex]
+            = 495 * 70 * 1 \\[3ex]
+            = 34650 \\[3ex]
+            $
+            However: <br>
+            The 3 groups are not labeled. <br>
+            They are not distinguishable. <br>
+            Because the groups are not distinguishable (not labeled/of the same size), there may be overcounting. <br>
+            To account for overcounting (prevent duplicates) and ensure that each group is counted once, we have to find
+            the number of ways of arranging the three groups, and use it to divide the initial result. <br>
+            Number of ways to arrange these 3 groups = 3! = 6 ways
+            <br><br>
+            Number of ways of selecting 12 people into 3 groups of 4 people without any restriction <br>
+            = 34650 &div; 6 <br>
+            = 5775 ways
+            <br><br>
+            <u>Case 2</u>: Condition: Assume Anjie and Bubay are in the same group. <br>
+            Type: Combination <br>
+            <u>1st:</u> Anjie must be in the group: 1 spot is filled <br>
+            Bubay must be in the group: another spot is filled <br>
+            Two spots are filled. <br>
+            We have to select 2 more people from 10 (12 &minus; 2) <br>
+            Number of ways = $1 * 1 * C(10, 2)$ <br>
+            = 45 ways
+            <br><br>
+            <u>2nd:</u> For the other two groups: <br>
+            Any 4 people can be chosen from the remaining 8 (12 &minus; 4) to be in the 2nd group
+            Number of ways = $C(8, 4)$
+            <br><br>
+            The remaining 4 people will be chosen from the remaining 4 (8 &minus; 4) to be in the 3rd group
+            Number of ways = $C(4, 4)$
+            <br><br>
+            Because the two groups are not labeled (of the same size), the number of ways to arrange these 2 groups = 2!
+            = 2 ways
+            <br><br>
+            Number of ways of dividing 8 people into 2 groups of 4 people <br>
+            = $[C(8, 4) * C(4, 4)]$ &div; 2 <br>
+            = (70 * 1) &div; 2 <br>
+            = 35 ways
+            <br><br>
+            Therefore, the number of ways of selecting 12 people into 3 groups of 4 people where Anjie and Bubay must
+            be in the same group <br>
+            = 45 * 35 <br>
+            = 1575 ways
+            <br><br>
+            (b.) The number of ways of selecting 12 people into 3 groups of 4 people where Anjie and Bubay must not
+            be in the same group <br>
+            = Case 1 &minus; Case 2 <br>
+            = 5775 &minus; 1575 <br>
+            = 4200 ways
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) A class of 10 students includes Abby and Ben. <br>
+          (a.) A group of 5 students is to be selected from the class. <br>
+          Find the number of possible groups in the following cases. <br>
+          (i.) There are no restrictions. <br>
+          (ii.) The group includes both Abby and Ben. <br>
+          (iii.) The group includes either Abby or Ben, but not both.
+          <br><br>
+          (b.) All 10 students are arranged in a line. <br>
+          How many arrangements are possible if there are exactly three students between Abby and Ben?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC6')">Show/Hide Answer</button>
+          <div class="result" id="solutionC6">
+            <br>
+            (b.) All 10 students are arranged in a line. <br>
+            There are exactly three students between Abby and Ben
+            <br><br>
+            <u>Case 1:</u> No restriction on how Abby and Ben seats <br>
+            It can be Abby, ..., Ben <u>or</u> Ben, ..., Abby <br>
+            Type: Permutation
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large Abby}{\rule{2cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large Ben}{\rule{1.5cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large Ben}{\rule{1.5cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large Abby}{\rule{2cm}{0.5mm}}
+            \end{array} \\[3ex]
+            $
+            Number of arrangements = 2! = 2 arrangements
+            <br><br>
+            <u>Case 2:</u> Any three students are selected to seat between Abby and Ben <br>
+            Type: Combination <br>
+            After Abby and Ben are seated, 3 students are chosen from 8 (10 &minus; 2) <br>
+            Number of ways to select 3 people from 8 people <br>
+            = $C(8, 3)$ <br>
+            = 56 ways
+            <br><br>
+            <u>Case 3:</u> Seating the three students between Abby and Ben <br>
+            Type: Permutation <br>
+            Number of arrangements to seat the 3 students between Abby and Ben <br>
+            = 3! <br>
+            = 6 arrangements
+            <br><br>
+            <u>Case 4:</u> Seating the remaining students <br>
+            Type: Permutation <br>
+            We are done with seating 5 students (Abby, Ben, and 3 students) <br>
+            These 5 students must sit together. <br>
+            They are treated as a single unit. <br>
+            The remaining 5 students (10 &minus; 5) need to be seated <br>
+            So, we are looking at seating 6 students ("5 as 1" + 5) <br>
+            Number of arrangements <br>
+            = 6! <br>
+            = 720 arrangements
+            <br><br>
+            &there4; The possible number of seating arrangements if there are exactly three students between Abby and
+            Ben <br>
+            = Case 1 * Case 2 * Case 3 * Case 4 <br>
+            = 2 * 56 * 6 * 720 <br>
+            = 483840 arrangements
+            <br><br>
+            <i>
+              <b>Student:</b> Is there a simpler way to do this question? <br>
+              I'm not sure if I can remember all these steps <br>
+              <b>Teacher:</b> We can use another approach. <br>
+              The Gaps/Spaning approach ...
+            </i>
+            <br><br>
+            $
+            \underline{\text{2nd Approach: Gaps Method}} \\[3ex]
+            Let: \\[3ex]
+            Abby = A \\[3ex]
+            Ben = B \\[3ex]
+            \text{These are the possibilities for the seating: Abby before Ben} \\[3ex]
+            \begin{array}{c c c c c}
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}}
+            \end{array}
+            $
+            <br><br>
+            $
+            \underline{\text{1st Possibility}} \\[3ex]
+            \begin{array}{c c c c c}
+            \stackrel{\Large 1}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 1}{\rule{1cm}{0.5mm}} & \stackrel{\Large 5}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 4}{\rule{1cm}{0.5mm}} & \stackrel{\Large 3}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 2}{\rule{1cm}{0.5mm}} & \stackrel{\Large 1}{\rule{1cm}{0.5mm}}
+            \end{array}
+            $
+            <br>
+            If we analyze the first possibility <br>
+            Seat Number 1: A can be seated in 1 seat: 1 arrangement <br>
+            Seat Number 5: B can be seated in 1 seat: 1 arrangement <br>
+            Seat Number 2: Any of 8 students can seat in the first seat after A: 8 arrangements <br>
+            Seat Number 3: Any of 7 students can seat in the second seat after A: 7 arrangements <br>
+            Seat Number 4: Any of 6 students can seat in the third seat after A (directly before B): 6 arrangements
+            <br>
+            Seat Number 6: Any of 5 students can seat in the sixth seat: 5 arrangements <br>
+            Seat Number 7: Any of 4 students can seat in the sixth seat: 4 arrangements <br>
+            Seat Number 8: Any of 3 students can seat in the sixth seat: 3 arrangements <br>
+            Seat Number 9: Any of 2 students can seat in the sixth seat: 2 arrangements <br>
+            Seat Number 10: The 1 remaining student must seat in the tenth seat: 1 arrangement
+            <br><br>
+            $
+            \text{Number of arrangements for 1 possibility} \\[3ex]
+            = 1 * 1 * 8! \\[3ex]
+            = 8!\text{ arrangements} \\[3ex]
+            $
+            Each possibility gives the same result. <br>
+            There are 6 possibilities. <br>
+            <i>Ask students to list the arrangement of the remaining 5 possibilities.</i>
+            <br><br>
+            $
+            \text{Number of arrangements for 6 possibilities} \\[3ex]
+            = 6 * 8!\text{ arrangements} \\[5ex]
+
+            \text{These are the possibilities for the seating: Ben before Abby} \\[3ex]
+            \begin{array}{c c c c c}
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large B}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large A}{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}}
+            \end{array} \\
+            \begin{array}{c c c c c}
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large B}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large }{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large }{\rule{1cm}{0.5mm}} & \stackrel{\Large A}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+
+            \text{Number of arrangements for 6 possibilities} \\[3ex]
+            = 6 * 8!\text{ arrangements} \\[5ex]
+
+            \text{Total Number of possible arrangements} \\[3ex]
+            = 2 * 6 * 8! \\[3ex]
+            = 483840\text{ arrangements}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) (a.) Find, in descending powers of <i>x</i>, the first 3 terms in the expression of $\left(x +
+          \dfrac{2}{x^2}\right)^{10}$. <br>
+          Simplify each term as far as possible.
+          <br><br>
+          (b.) Find the term independent of <i>x</i> in the expansion of $\left(4x^2 + \dfrac{1}{2x^2}\right)^8$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC7')">Show/Hide Answer</button>
+          <div class="result" id="solutionC7">
+            <br>
+            $
+            (a.) \\[3ex]
+            \underline{\text{1st 3 terms}} \\[3ex]
+            \left(x +
+            \dfrac{2}{x^2}\right)^{10} \\[5ex]
+            = x^{10} + C(10, 1) * x^9 * \left(\dfrac{2}{x^2}\right) + C(10, 2) * x^8 * \left(\dfrac{2}{x^2}\right)^2
+            \\[5ex]
+            = x^{10} + \dfrac{10!}{(10 - 1)! * 1!} * \dfrac{2x^9}{x^2} + \dfrac{10!}{(10 - 2)! * 2!} * x^8 *
+            \dfrac{4}{x^4} \\[5ex]
+            = x^{10} + 10 * 2 * x^{9 - 2} + 45 * 4 * x^{8 - 4} \\[4ex]
+            = x^{10} + 20x^7 + 180x^4 \\[3ex]
+
+            (b.) \\[3ex]
+            \left(4x^2 + \dfrac{1}{2x^2}\right)^8 \\[5ex]
+            $
+            The term independent of <i>x</i> is the term where the power of <i>x</i> in the numerator is equal to the
+            power of <i>x</i> in the denominator, so they can divide to give 1 <br>
+            At the moment, they are the same power/degree/exponent, but will change when we begin to expand. <br>
+            We do not need to expand the entire expression. <br>
+            When we get to the expansion of the exponents by 4, we notice that the powers will cancel out: $x^8$ in the
+            numerator is divided by $x^8$ in the denominator, leaving a result of 1. <br>
+            This is the 5th term.
+            <br><br>
+            $
+            \text{5th term} \\[3ex]
+            = C(8, 4) * (4x^2)^4 * \left(\dfrac{1}{2x^2}\right)^4 \\[5ex]
+            = \dfrac{8!}{(8 - 4)! * 4!} * 256x^8 * \dfrac{1}{16x^8} \\[5ex]
+            = \dfrac{70 * 256}{16} \\[5ex]
+            = 1120
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) (a.) Find the number of ways in which 14 people can be put into 4 groups containing 2, 3, 4 and 5 people.
+          <br><br>
+          (b.) 6-digit numbers are to be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8, 9. <br>
+          Each digit may be used only once in any 6-digit number. <br>
+          A 6-digit number must not start with 0. <br>
+          Find how many 6-digit numbers can be formed if: <br>
+          (i.) there are no further restrictions. <br>
+          (ii.) the 6-digit number is divisible by 10. <br>
+          (iii.) the 6-digit number is greater than 500 000 and even.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC8')">Show/Hide Answer</button>
+          <div class="result" id="solutionC8">
+            <br>
+            (a.) <b>Combination</b> <br>
+            The 4 groups containing 2, 3, 4 and 5 people is considered distinguishable (labeled) because of the
+            different group sizes. <br>
+            In that regard, overcounting is not taken into account.
+            <br><br>
+            Any 2 people can be chosen from the 14 to be in th 1st group <br>
+            Number of ways = $C(14, 2)$
+            <br><br>
+            Any 3 people can be chosen from the remaining 12 (14 &minus; 2) to be in the 2nd group
+            Number of ways = $C(12, 3)$
+            <br><br>
+            Any 4 people can be chosen from the remaining 9 (12 &minus; 3) to be in the 3rd group
+            Number of ways = $C(9, 4)$
+            <br><br>
+            The remaining 5 people will be chosen from the remaining 5 (9 &minus; 4) to be in the 4th group
+            Number of ways = $C(5, 5)$
+            <br><br>
+            $
+            \text{Number of ways} \\[3ex]
+            = C(14, 2) * C(12, 3) * C(9, 4) * C(5, 5) \\[3ex]
+            = \dfrac{14!}{(14 - 2)! * 2!} * \dfrac{12!}{(12 - 3)! * 3!} * \dfrac{9!}{(9 - 4)! * 4!} * \dfrac{5!}{(5 -
+            5)! * 5!} \\[5ex]
+            = 91 * 220 * 126 * 1 \\[3ex]
+            = 2522520\;\;ways \\[3ex]
+            $
+            (b.)(i.) <br>
+            6-digit number <br>
+            Digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 <br>
+            There are 10 digits.
+            <br><br>
+            <u>Restrictions</u>: <br>
+            (1.) No repetitions: each number may be used only once. <br>
+            (2.) The 6-digit number must not start with 0. <br>
+            This leaves us with 9 (10 &minus; 1) digits.
+            <br><br>
+            (i.) No further restrictions. <br>
+            Digit Number 1: Any of the 9 numbers besides 0 may be used as the 1st digit: 9 arrangements <br>
+            0 must not be used, hence we have 9 numbers.
+            <br><br>
+            Digit Number 2: Any of remaining 8 numbers (8 arrangements from 9 &minus; 1) and 0 (1 arrangement) can be
+            used as the 2nd digit: 8 + 1 = 9 arrangements
+            <br><br>
+            Digit Number 3: Any of remaining 8 numbers may be used as the 3rd digit: 8 arrangements. <br>
+            Digit Number 4: Any of remaining 7 numbers may be used as the 4th digit: 7 arrangements. <br>
+            Digit Number 5: Any of remaining 6 numbers may be used as the 5th digit: 6 arrangements. <br>
+            Digit Number 6: Any of remaining 5 numbers may be used as the 6th digit: 5 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 9}{\rule{1cm}{0.5mm}} & \stackrel{\Large 9}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 8}{\rule{1cm}{0.5mm}} & \stackrel{\Large 7}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 6}{\rule{1cm}{0.5mm}} & \stackrel{\Large 5}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed} \\[3ex]
+            = 9 * 9 * 8 * 7 * 6 * 5 \\[3ex]
+            = 136080
+            $
+            <br>
+            (ii.) The 6-digit number is divisible by 10. <br>
+            Any number divisible by 10 must end with a 0 <br>
+            Digit Number 6: The 6th digit must be 0: 1 arrangement.
+            <br><br>
+            Digit Number 1: Any of the 9 numbers besides 0 may be used as the 1st digit: 9 arrangements <br>
+            0 must not be used, and has already been used, hence we have 9 numbers.
+            <br><br>
+            Digit Number 2: Any of remaining 8 numbers may be used as the 2nd digit: 8 arrangements <br>
+            Digit Number 3: Any of remaining 7 numbers may be used as the 3rd digit: 7 arrangements. <br>
+            Digit Number 4: Any of remaining 6 numbers may be used as the 4th digit: 6 arrangements. <br>
+            Digit Number 5: Any of remaining 5 numbers may be used as the 5th digit: 5 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 9}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 5}{\rule{1cm}{0.5mm}} & \stackrel{\Large 1}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed} \\[3ex]
+            = 9 * 8 * 7 * 6 * 5 * 1 \\[3ex]
+            = 15120
+            $
+            <br>
+            (iii.) The 6-digit number is greater than 500 000 and even. <br>
+            In the context of the question: <br>
+            A number greater than 500 000 must have the first digit as at least 5: from 5 through 9 (5, 6, 7, 8, 9): 5
+            arrangements <br>
+            An even number is a number that must end in 0, 2, 4, 6, 8 <br>
+            There are overlap numbers for the two conditions: greater than 500 000 and even: 6, 8 <br>
+            Because of the overlap of these two numbers, we have to consider a case that involves only them (6, 8) as
+            the 1st digit and a case that does not involve them (5, 7, 9) as the 1st digit.
+            <br><br>
+            <b>Case 1: involves only 6, 8 as the 1st digit</b> <br>
+            Digit Number 1: Any of the 2 numbers (6, 8) may be used as the 1st digit: 2 arrangements <br>
+            Digit Number 6: Any of the remaining 3 digits (5, 7, 9) and either 6 or 8 (depending on which one was used
+            in the 1st digit) may be used as the 6th digit: 4 arrangements.
+            <br><br>
+            Digit Number 2: Any of remaining 8 numbers (10 &minus; 1 &minus; 1) may be used as the 2nd digit: 8
+            arrangements <br>
+            Digit Number 3: Any of remaining 7 numbers may be used as the 3rd digit: 7 arrangements. <br>
+            Digit Number 4: Any of remaining 6 numbers may be used as the 4th digit: 6 arrangements. <br>
+            Digit Number 5: Any of remaining 5 numbers may be used as the 5th digit: 5 arrangements.
+            <br><br>
+            $\begin{array}{c c c c c}
+            \stackrel{\Large 2}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 5}{\rule{1cm}{0.5mm}} & \stackrel{\Large 4}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed in Case 1} \\[3ex]
+            = 2 * 8 * 7 * 6 * 5 * 4 \\[3ex]
+            = 13440
+            $
+            <br>
+            <b>Case 2: does not involve 6, 8 as the 1st digit</b> <br>
+            Digit Number 1: Any of the 3 numbers (5, 7, 9) may be used as the 1st digit: 3 arrangements <br>
+            Digit Number 6: Any of the 5 digits (0, 2, 4, 6, 8) may be used as the 6th digit: 5 arrangements. <br>
+            Digit Number 2: Any of remaining 8 numbers (10 &minus; 1 &minus; 1) may be used as the 2nd digit: 8
+            arrangements <br>
+            Digit Number 3: Any of remaining 7 numbers may be used as the 3rd digit: 7 arrangements. <br>
+            Digit Number 4: Any of remaining 6 numbers may be used as the 4th digit: 6 arrangements. <br>
+            Digit Number 5: Any of remaining 5 numbers may be used as the 5th digit: 5 arrangements.
+            <br><br>
+            $\begin{array}{c c c c c}
+            \stackrel{\Large 3}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 5}{\rule{1cm}{0.5mm}} & \stackrel{\Large 5}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed in Case 2} \\[3ex]
+            = 3 * 8 * 7 * 6 * 5 * 5 \\[3ex]
+            = 25200 \\[3ex]
+            $
+            &there4; The number of 6-digits that can be formed if the 6-digit number is greater than 500 000 and even
+            <br>
+            = 13440 + 25200 <br>
+            = 38640
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) (a.) The first three terms, in ascending powers of <i>x</i>, in the expansion of $(3 + px)^n$ are $243 +
+          810x + qx^2$, where <i>n, p</i> and <i>q</i> are constants. <br>
+          Find the values of <i>n, p</i> and <i>q</i>.
+          <br><br>
+          (b.) Find the term independent of <i>y</i> in the expansion of $\left(2y - \dfrac{1}{3y^2}\right)^6$. <br>
+          Give your answer in exact form.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC9')">Show/Hide Answer</button>
+          <div class="result" id="solutionC9">
+            <br>
+            $
+            (a.) \\[3ex]
+            (3 + px)^n = 243 + 810x + qx^2...\text{Given} \\[3ex]
+            (3 + px)^n = 3^n + C(n, 1)(3^{n - 1})(px) + C(n, 2)(3^{n - 2})(px)^2 \\[3ex]
+            \text{Compare}: \\[3ex]
+            \underline{\text{1st term to 1st term}} \\[3ex]
+            3^n = 243 \\[3ex]
+            3^n = 3^5 \\[3ex]
+            n = 5 \\[5ex]
+
+            \underline{\text{2nd term to 2nd term}} \\[3ex]
+            C(n, 1)(3^{n - 1})(px) = 810x \\[3ex]
+            C(5, 1)(3^{5 - 1}) * p * x = 810x \\[3ex]
+            \dfrac{5!}{(5 - 1)! * 1!} * 3^4 * p = 810 \\[5ex]
+            5 * 81 * p = 810 \\[3ex]
+            p = \dfrac{810}{5 * 81} \\[5ex]
+            p = 2 \\[5ex]
+
+            \underline{\text{3rd term to 3rd term}} \\[3ex]
+            C(n, 2)(3^{n - 2})(px)^2 = qx^2 \\[3ex]
+            C(5, 2)(3^{5 - 2}) * p^2 * x^2 = qx^2 \\[3ex]
+            \dfrac{5!}{(5 - 2)! * 2!} * 3^3 * 2^2 = q \\[5ex]
+            10 * 27 * 4 = q \\[3ex]
+            q = 1080 \\[5ex]
+
+            (b.) \\[3ex]
+            \left(2y - \dfrac{1}{3y^2}\right)^6 \\[5ex]
+            ........................................................... \\[3ex]
+            \text{Let:} \\[3ex]
+            \text{numerator} = n \\[3ex]
+            \text{denominator} = d \\[3ex]
+            \underline{\text{Expanded Term}} \\[3ex]
+            \text{degree must be the same so they divide to be 1} \\[3ex]
+            y^n \div y^{2d} = y^0 \\[3ex]
+            y^{n - 2d} = y^0 \\[3ex]
+            n - 2d = 0 \\[3ex]
+            n = 2d ...eqn.(1) \\[5ex]
+            \underline{\text{Each Term}} \\[3ex]
+            n + d = 6 \\[3ex]
+            2d + d = 6 \\[3ex]
+            3d = 6 \\[3ex]
+            d = \dfrac{6}{3} \\[5ex]
+            d = 2 \implies \text{the 3rd term} \\[3ex]
+            n = 2(2) = 4 \\[3ex]
+            ........................................................... \\[3ex]
+            \text{3rd term}\\[3ex]
+            = C(6, 2) * (2y)^{6 - 2} * \left(-\dfrac{1}{3y^2}\right)^2 \\[5ex]
+            = \dfrac{6!}{(6 - 2)! * 2!} * (2y)^4 * \dfrac{1}{9y^4} \\[5ex]
+            = 15 * 16y^4 * \dfrac{1}{9y^4} \\[5ex]
+            = \dfrac{80}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) (a.) A team of 8 people is to be chosen from a group of 15 people. <br>
+          (i.) Find the number of different teams that can be chosen. <br>
+          (ii.) Find the number of different teams that can be chosen if the group of 15 people contains a family of 4
+          people who must be kept together.
+          <br><br>
+          (b.) Given that $(n + 9) \times ^nP_{10} = (n^2 + 243) \times ^{(n - 1)}P_9$, find the value of <i>n</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC10')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCC10')">Calculator Check</button>
+          <div class="result" id="solutionC10">
+            <br>
+            (a.)(i.) <br>
+            Type: Combination <br>
+            Number of different 8-people teams that can be chosen from a group of 15 people
+            <br><br>
+            $
+            = C(15, 8) \\[3ex]
+            = \dfrac{15!}{(15 - 8)! * 8!} \\[5ex]
+            = 6435\text{ teams} \\[3ex]
+            $
+            (ii.) <br>
+            Type: Combination <br>
+            For the family of 4 people to be kept together, they may be in the 8-people team OR they may not be on the
+            8-people team. <br>
+            The main thing is that the family of 4 must be together. <br>
+            So, we shall consider: Case 1: where they are in the 8-people team; and Case 2: where they are not in the
+            8-people team.
+            <br><br>
+            <u>Case 1:</u> Family of 4 people must be kept together in the 8-people team chosen from a group of 15
+            people <br>
+            Family of 4 being kept together: considered a single unit: 4 spots are filled <br>
+            Number of ways to do it = C(4, 4) = 1 way
+            <br><br>
+            Remaining spots to be filled: 4 people (8 &minus; 4) to be selected from 11 people (15 &minus; 4) <br>
+            Number of ways = C(11, 4)
+            <br><br>
+            $
+            \text{Number of ways for Case 1} \\[3ex]
+            = 1 * C(11, 4) \\[3ex]
+            = \dfrac{11!}{(11 - 4)! * 4!} \\[5ex]
+            = 330\;ways \\[3ex]
+            $
+            <u>Case 2:</u> Family of 4 people must be kept together but not in the 8-people team chosen from a group of
+            15
+            people <br>
+            Family of 4 being kept together: considered a single unit: 4 spots are filled <br>
+            Number of ways to do it = 1 way
+            <br><br>
+            Remaining spots to be filled: 8 people (8 &minus; 4) to be selected from 11 people (15 &minus; 4) <br>
+            Number of ways = C(11, 8)
+            <br><br>
+            $
+            \text{Number of ways for Case 1} \\[3ex]
+            = 1 * C(11, 8) \\[3ex]
+            = \dfrac{11!}{(11 - 8)! * 8!} \\[5ex]
+            = 165\;ways \\[5ex]
+            \underline{\text{Number of ways for both cases}} \\[3ex]
+            = 330 + 165 \\[3ex]
+            = 495\;ways \\[3ex]
+            $
+            The number of different teams that can be chosen if the group of 15 people contains a family of 4
+            people who must be kept together are 495 different 8-people teams.
+            <br><br>
+            $
+            (b.) \\[3ex]
+            (n + 9) \times ^nP_{10} = (n^2 + 243) \times ^{(n - 1)}P_9 \\[3ex]
+            (n + 9) \times P(n, 10) = (n^2 + 243) \times P(n - 1, 9) \\[3ex]
+            ................................................................ \\[3ex]
+            P(n, 10) = \dfrac{n!}{(n - 10)!} = \dfrac{n(n - 1)!}{(n - 10)!} \\[5ex]
+            P(n - 1, 9) = \dfrac{(n - 1)!}{(n - 1 - 9)!} = \dfrac{(n - 1)!}{(n - 10)!} \\[5ex]
+            ................................................................ \\[3ex]
+            (n + 9) \times \dfrac{n(n - 1)!}{(n - 10)!} = (n^2 + 243) \times \dfrac{(n - 1)!}{(n - 10)!} \\[5ex]
+            n(n + 9) = n^2 + 243 \\[3ex]
+            n^2 + 9n - n^2 = 243 \\[3ex]
+            n = \dfrac{243}{9} \\[5ex]
+            n = 27
+            $
+          </div>
+          <div class="result" id="solutionCC10">
+            <br>
+            <img src="images/Combinatorics/Answers/Calculator10.png" alt="Calculator10">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) (a.) (i.) Find the first three terms in the expansion of $\left(1 + \dfrac{x}{7}\right)^5$, in ascending
+          powers of <i>x</i>. <br>
+          Simplify the coefficient of each term. <br>
+          (ii.) The expansion of $7(1 + x)^n\left(1 + \dfrac{x}{7}\right)^5$, where <i>n</i> is a positive integer, is
+          written in ascending powers of <i>x</i>. <br>
+          The first two terms in the expansion are $7 + 89x$. <br>
+          Find the value of <i>n</i>.
+          <br><br>
+          (b.) In the expansion of $(k - 2x)^8$, where <i>k</i> is a constant, the coefficient of $x^4$ divided by the
+          coefficient of $x^2$ is $\dfrac{5}{8}$. <br>
+          The coefficient of <i>x</i> is positive. <br>
+          Form an equation and hence find the value of <i>k</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC11')">Show/Hide Answer</button>
+          <div class="result" id="solutionC11">
+            <br>
+            $
+            (a.) (i.) \\[3ex]
+            \left(1 + \dfrac{x}{7}\right)^5 \\[5ex]
+            = 1^5 + C(5, 1) (1^4) \left(\dfrac{x}{7}\right) + C(5, 2) (1^3) \left(\dfrac{x}{7}\right)^2 \\[5ex]
+            = 1 + \dfrac{5!}{(5 - 1)! * 1!} * 1 * \dfrac{x}{7} + \dfrac{5!}{(5 - 2)! * 2!} * \dfrac{x^2}{49} \\[5ex]
+            = 1 + 5 * \dfrac{x}{7} + 10 * \dfrac{x^2}{49} \\[5ex]
+            = 1 + \dfrac{5x}{7} + \dfrac{10x^2}{49} \\[5ex]
+
+            (ii.) \\[3ex]
+            7(1 + x)^n\left(1 + \dfrac{x}{7}\right)^5 \\[5ex]
+            \text{Let us do it two at a time; the first two terms} \\[3ex]
+            \underline{\text{1st 2 expressions}} \\[3ex]
+            7(1 + x)^n \\[3ex]
+            = 7[1^n + C(n, 1)(1^{n - 1})(x)] \\[3ex]
+            = 7\left[1 + \dfrac{n!}{(n - 1)! * 1!} * x\right] \\[5ex]
+            = 7\left[1 + \dfrac{n(n - 1)!}{(n - 1)! * 1} * x\right] \\[5ex]
+            = 7(1 + nx) \\[3ex]
+            = 7 + 7nx \\[5ex]
+
+            \underline{\text{Multiply with the remaining expression; the first two terms}} \\[3ex]
+            (7 + 7nx)\left(1 + \dfrac{5x}{7}\right) \\[5ex]
+            = 7 + 5x + 7nx + 5nx^2 \\[3ex]
+            = 7 + x(5 + 7n) + 5nx^2 ...\text{Computed} \\[3ex]
+            = 7 + 89x ...\text{Given} \\[3ex]
+            \text{Compare: Computed with Given} \\[3ex]
+            7 = 7 \\[3ex]
+            5 + 7n = 89 \\[3ex]
+            7n = 89 - 5 \\[3ex]
+            7n = 84 \\[3ex]
+            n = \dfrac{84}{7} \\[5ex]
+            n = 12 \\[5ex]
+
+            (b.) \\[3ex]
+            (-2x)^4 \text{ is found in the 5th term} \\[3ex]
+            \text{5th term} \\[3ex]
+            = C(8, 4) (k^4) (-2x)^4 \\[3ex]
+            = \dfrac{8!}{(8 - 4)! * 4!} * k^4 * 16x^4 \\[5ex]
+            = 70 * k^4 * 16 * x^4 \\[3ex]
+            = 1120k^4x^4 \\[3ex]
+            \text{coefficient of }x^4 = 1120k^4 \\[5ex]
+
+            (-2x)^2 \text{ is found in the 3rd term} \\[3ex]
+            \text{3rd term} \\[3ex]
+            = C(8, 2) (k^6) (-2x)^2 \\[3ex]
+            = \dfrac{8!}{(8 - 2)! * 2!} * k^6 * 4x^2 \\[5ex]
+            = 28 * k^6 * 4 * x^2 \\[3ex]
+            = 112k^6x^2 \\[3ex]
+            \text{coefficient of }x^2 = 112k^6 \\[5ex]
+
+            \text{coefficient of }x^4 \div \text{coefficient of }x^2 = \dfrac{5}{8} \\[5ex]
+            \dfrac{1120k^4}{112k^6x^2} = \dfrac{5}{8} \\[5ex]
+            \dfrac{10}{k^{6 - 4}} = \dfrac{5}{8} \\[5ex]
+            \dfrac{10}{k^2} = \dfrac{5}{8} \\[5ex]
+            5k^2 = 10(8) \\[3ex]
+            k^2 = \dfrac{10(8)}{5} \\[5ex]
+            k^2 = 16 \\[3ex]
+            k = \pm \sqrt{16} \\[3ex]
+            k = \pm 4 \\[3ex]
+            $
+            But: The coefficient of <i>x</i> is positive. <br>
+            What is the coefficient of <i>x</i>?
+            <br><br>
+            $
+            (-2x)^1 \text{ is found in the 2nd term} \\[3ex]
+            \text{2nd term} \\[3ex]
+            = C(8, 1) (k^7) (-2x)^1 \\[3ex]
+            = \dfrac{8!}{(8 - 1)! * 1!} * k^7 * (-2x) \\[5ex]
+            = 8 * k^7 * -2 * x \\[3ex]
+            \text{coefficient of }x = -16k^7 \\[5ex]
+
+            k = \pm 4 \\[3ex]
+            \text{When }k = 4 \\[3ex]
+            \text{coefficient of }x = -16(4)^7...\text{ this is negative} \\[5ex]
+
+            \text{When }k = -4 \\[3ex]
+            \text{coefficient of }x = -16(-4)^7...\text{ this is positive} \\[3ex]
+            \therefore k = -4
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) A team of 8 people is to be formed from 6 teachers, 5 doctors amd 4 police officers. <br>
+          (a.) Find the number of teams that can be formed. <br>
+          (b.) Find the number of teams that can be formed without teachers. <br>
+          (c.) Find the number of teams that can be formed with the same number of doctors as teachers.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC12')">Show/Hide Answer</button>
+          <div class="result" id="solutionC12">
+            <br>
+            6 teachers, 5 doctors amd 4 police officers <br>
+            = 6 + 5 + 4 <br>
+            = 15 people
+            <br><br>
+            (a.) <br>
+            Type: Combination <br>
+            Number of different 8-people teams that can be formed from 15 people
+            <br><br>
+            $
+            = C(15, 8) \\[3ex]
+            = \dfrac{15!}{(15 - 8)! * 8!} \\[5ex]
+            = 6435\text{ teams} \\[3ex]
+            $
+            Without any teachers &Implies; 5 doctors amd 4 police officers <br>
+            = 5 + 4 <br>
+            = 9 people
+            <br><br>
+            (b.) <br>
+            Type: Combination <br>
+            Number of different 8-people teams that can be formed from 9 people
+            <br><br>
+            $
+            = C(9, 8) \\[3ex]
+            = \dfrac{9!}{(9 - 8)! * 8!} \\[5ex]
+            = 9\text{ teams} \\[3ex]
+            $
+            (c.) <br>
+            The 8-people team is to be formed from a combination of teachers, doctors, and police officers. <br>
+            The team must have the same number of doctors as teachers. <br>
+            Let us consider the different possibilities that meet this requirement
+            <br><br>
+            *<u>Case 1:</u>*? 1 teacher, 1 doctor, and 6 (8 &minus; 1 &minus; 1) police officers <br>
+            This will not work because there are only 4 police officers
+            <br><br>
+            <u>Case 1:</u> 2 teachers, 2 doctors, and 4 (8 &minus; 2 &minus; 2) police officers <br>
+            Number of ways = C(6, 2) * C(5, 2) * C(4, 4) <br>
+            OR <br>
+            <u>Case 2:</u> 3 teachers, 3 doctors, and 2 (8 &minus; 3 &minus; 3) police officers <br>
+            Number of ways = C(6, 3) * C(5, 3) * C(4, 2) <br>
+            OR <br>
+            <u>Case 3:</u> 4 teachers, 4 doctors, and 0 (8 &minus; 4 &minus; 4) police officers <br>
+            Number of ways = C(6, 4) * C(5, 4) <br>
+            Number of 8-people teams with the same number of doctors as teachers
+            <br><br>
+            $
+            = \text{Case 1} + \text{Case 2} + \text{Case 3} \\[3ex]
+            = [C(6, 2) * C(5, 2) * C(4, 4)] + [C(6, 3) * C(5, 3) * C(4, 2)] + [C(6, 4) * C(5, 4)] \\[3ex]
+            = \left[\dfrac{6!}{(6 - 2)! * 2!} * \dfrac{5!}{(5 - 2)! * 2!} * \dfrac{4!}{(4 - 4)! * 4!}\right] + \\[5ex]
+            \left[\dfrac{6!}{(6 - 3)! * 3!} * \dfrac{5!}{(5 - 3)! * 3!} * \dfrac{4!}{(4 - 2)! * 2!}\right] + \\[5ex]
+            \left[\dfrac{6!}{(6 - 4)! * 4!} * \dfrac{5!}{(5 - 4)! * 4!}\right] \\[5ex]
+            = (15 * 10 * 1) + (20 * 10 * 6) + (15 * 5) \\[3ex]
+            = 150 + 1200 + 75 \\[3ex]
+            = 1425\text{ teams}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) In the expansion of $\left(ax + \dfrac{b}{x^2}\right)^9$, where <i>a</i> and <i>b</i> are constants with
+          $a \gt 0$, the term independent of <i>x</i> is &minus;145152 and the coefficient of $x^6$ is &minus;6912. <br>
+          Show that $a^2b = -12$ and find the value of <i>a</i> and the value of <i>b</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC13')">Show/Hide Answer</button>
+          <div class="result" id="solutionC13">
+            <br>
+            The term independent of <i>x</i> implies that the exponent of <i>x</i> in the numerator should be equal to
+            the exponent of <i>x</i> in the denominator. The <i>x</i>'s (<i>not your ex's lol</i>) will cancel out. <br>
+            Let: <br>
+            numerator = <i>n</i> <br>
+            denominator = <i>d</i>
+            <br><br>
+            $
+            \left(ax + \dfrac{b}{x^2}\right)^9 \\[5ex]
+            ....................................................................... \\[3ex]
+            \dfrac{x^n}{x^{2d}} \\[5ex]
+            n = 2d ...eqn.(1)...\text{so the x's cancel out} \\[3ex]
+            n + d = 9 ...eqn.(2) ...\text{based on the Binomial Theorem} \\[3ex]
+            \implies \\[3ex]
+            2d + d = 9 \\[3ex]
+            3d = 9 \\[3ex]
+            d = \dfrac{9}{3} \\[5ex]
+            d = 3 \\[3ex]
+            \text{From eqn.(2)} \\[3ex]
+            n = 9 - d \\[3ex]
+            n = 9 - 3 \\[3ex]
+            n = 6 \\[3ex]
+            \text{the term independent in }x \text{ is }: d = 3...\text{4th term} \\[3ex]
+            ....................................................................... \\[3ex]
+            \text{4th term} \\[3ex]
+            = C(9, 3) * (ax)^6 * \left(\dfrac{b}{x^2}\right)^3 \\[5ex]
+            = \dfrac{9!}{(9 - 3)! * 3!} * a^6 * x^6 * \dfrac{b^3}{x^6} \\[5ex]
+            = 84a^6b^3 \\[3ex]
+            84a^6b^3 = -145152 \\[3ex]
+            a^6b^3 = -\dfrac{145152}{84} \\[5ex]
+            a^6b^3 = -1728 ...eqn.(3) \\[3ex]
+            b^3 = -\dfrac{1728}{a^6} \\[5ex]
+            b = \sqrt[3]{-\dfrac{1728}{a^6}} \\[5ex]
+            b = \dfrac{\sqrt[3]{-1728}}{a^{6 * \dfrac{1}{3}}} \\[7ex]
+            b = -\dfrac{12}{a^2}...eqn.(4) \\[5ex]
+            a^2b = -12 \\[3ex]
+            $
+            To get the coefficient of $x^6$, we need the term that has $x^6$ <br>
+            To get the term that has $x^6$, the numerator exponent minus the denominator exponent should be 6.
+            <br><br>
+            $
+            ....................................................................... \\[3ex]
+            \dfrac{x^n}{x^{2d}} \\[5ex]
+            n - 2d = 6 ...eqn.(5)...\text{to get the term with }x^6 \\[3ex]
+            n + d = 9 ...eqn.(6) ...\text{based on the Binomial Theorem} \\[3ex]
+            eqn.(6) - eqn.(5) \implies \\[3ex]
+            3d = 3 \\[3ex]
+            d = \dfrac{3}{3} \\[5ex]
+            d = 1 \\[3ex]
+            \text{From eqn.(6)} \\[3ex]
+            n = 9 - d \\[3ex]
+            n = 9 - 1 \\[3ex]
+            n = 8 \\[3ex]
+            \text{the term with }x^6 \text{ is }: d = 1...\text{2nd term} \\[3ex]
+            ....................................................................... \\[3ex]
+            \text{2nd term} \\[3ex]
+            = C(9, 1) * (ax)^8 * \left(\dfrac{b}{x^2}\right)^1 \\[5ex]
+            = \dfrac{9!}{(9 - 1)! * 1!} * a^8 * x^8 * \dfrac{b^1}{x^2} \\[5ex]
+            = 9a^8b * x^6 \\[3ex]
+            \text{coefficient of }x^6 = 9a^8b \\[3ex]
+            9a^8b = -6912 \\[3ex]
+            a^8b = -\dfrac{6912}{9} \\[5ex]
+            a^8b = -768 ...eqn.(7) \\[5ex]
+            \text{Substitute for b from eqn.(4)} \\[3ex]
+            a^8 * -\dfrac{12}{a^2} = -768 \\[5ex]
+            \dfrac{a^8}{a^2} = \dfrac{-768}{-12} \\[5ex]
+            a^{8 - 2} = \dfrac{-768}{-12} \\[5ex]
+            a^6 = 64 \\[3ex]
+            a = \sqrt[6]{64} \\[3ex]
+            a = 2 \\[3ex]
+            \text{Substitute for a in eqn.(4)} \\[3ex]
+            b = -\dfrac{12}{2^2} \\[5ex]
+            b = -3
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) (a.) A 6-digit number is to be formed using the digits 0, 1, 2, 3, 4, 5, 6, 7, 8 and 9. <br>
+          Each digit may be used only once in any 6-digit number. <br>
+          A 6-digit number cannot start with 0. <br>
+          (i.) Find how many 6-digit numbers can be formed. <br>
+          (ii.) Find how many of these 6-digit numbers are divisible by 5.
+          <br><br>
+          (b.) A committee of 7 people is to be chosen from 6 doctors, 10 nurses and 8 dentists. <br>
+          (i.) Find the number of committees that can be chosen. <br>
+          (ii.) Find the number of committees that can be chosen if all the doctors have to be on the committee. <br>
+          (iii.) Find the number of committees that can be chosen if there has to be at least one dentist on the
+          committee.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC14')">Show/Hide Answer</button>
+          <div class="result" id="solutionC14">
+            <br>
+            6-digit number <br>
+            Digits: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 <br>
+            There are 10 digits.
+            <br><br>
+            <u>Restrictions</u>: <br>
+            (1.) No repetitions: each digit may be used only once in any 6-digit number. <br>
+            (2.) The 6-digit number must not start with 0. <br>
+            This leaves us with 9 (10 &minus; 1) digits.
+            <br><br>
+            (i.) Find how many 6-digit numbers can be formed. <br>
+            Digit Number 1: Any of the 9 numbers besides 0 may be used as the 1st digit: 9 arrangements <br>
+            0 must not be used, hence we have 9 numbers.
+            <br><br>
+            Digit Number 2: Any of remaining 8 numbers (8 arrangements from 9 &minus; 1) and 0 (1 arrangement) can be
+            used as the 2nd digit: 8 + 1 = 9 arrangements
+            <br><br>
+            Digit Number 3: Any of remaining 8 numbers may be used as the 3rd digit: 8 arrangements. <br>
+            Digit Number 4: Any of remaining 7 numbers may be used as the 4th digit: 7 arrangements. <br>
+            Digit Number 5: Any of remaining 6 numbers may be used as the 5th digit: 6 arrangements. <br>
+            Digit Number 6: Any of remaining 5 numbers may be used as the 6th digit: 5 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 9}{\rule{1cm}{0.5mm}} & \stackrel{\Large 9}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 8}{\rule{1cm}{0.5mm}} & \stackrel{\Large 7}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 6}{\rule{1cm}{0.5mm}} & \stackrel{\Large 5}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digit numbers that can be formed} \\[3ex]
+            = 9 * 9 * 8 * 7 * 6 * 5 \\[3ex]
+            = 136080
+            $
+            <br>
+            (ii.) The 6-digit number is divisible by 5. <br>
+            Any number divisible by 5 must end with a 0 or 5 <br>
+            Let us consider both cases: where the 6th digit ends with a 0 and where the 6th digit ends with a 5.
+            <br><br>
+            <u>Case 1:</u> where the 6th digit ends with a 0 <br>
+            Digit Number 6: The 6th digit must be 0: 1 arrangement <br>
+            Digit Number 1: Any of the remaining 9 numbers may be used as the 1st digit: 9 arrangements <br>
+            Digit Number 2: Any of remaining 8 numbers may be used as the 2nd digit: 8 arrangements <br>
+            Digit Number 3: Any of remaining 7 numbers may be used as the 3rd digit: 7 arrangements. <br>
+            Digit Number 4: Any of remaining 6 numbers may be used as the 4th digit: 6 arrangements. <br>
+            Digit Number 5: Any of remaining 5 numbers may be used as the 5th digit: 5 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 9}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 5}{\rule{1cm}{0.5mm}} & \stackrel{\Large 1}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed from Case 1} \\[3ex]
+            = 9 * 8 * 7 * 6 * 5 * 1 \\[3ex]
+            = 15120 \\[3ex]
+            $
+            OR <br>
+            <u>Case 2:</u> where the 6th digit ends with a 5 <br>
+            Digit Number 6: The 6th digit must be 5: 1 arrangement <br>
+            Digit Number 1: Any of the remaining 9 numbers besides 0 may be used as the 1st digit: 8 arrangements <br>
+            0 must not be used as the 1st digit; 5 has already been used as the last digit, hence we have 8
+            arrangements.
+            <br><br>
+            Digit Number 2: Any of remaining 8 numbers may be used as the 2nd digit: 8 arrangements <br>
+            Digit Number 3: Any of remaining 7 numbers may be used as the 3rd digit: 7 arrangements. <br>
+            Digit Number 4: Any of remaining 6 numbers may be used as the 4th digit: 6 arrangements. <br>
+            Digit Number 5: Any of remaining 5 numbers may be used as the 5th digit: 5 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 8}{\rule{1cm}{0.5mm}} & \stackrel{\Large 8}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 7}{\rule{1cm}{0.5mm}} & \stackrel{\Large 6}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 5}{\rule{1cm}{0.5mm}} & \stackrel{\Large 1}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 6-digits that can be formed from Case 2} \\[3ex]
+            = 8 * 8 * 7 * 6 * 5 * 1 \\[3ex]
+            = 13440 \\[3ex]
+            $
+            Number of 6-digit numbers are divisible by 5 <br>
+            = Case 1 + Case 2 <br>
+            = 15120 + 13440 <br>
+            = 28560
+            <br><br>
+            (b.) 6 doctors, 10 nurses, and 8 dentists <br>
+            = 6 + 10 + 8 <br>
+            = 24 people
+            <br><br>
+            (i.) <br>
+            Type: Combination <br>
+            Number of 7-person committee that can be chosen from 24 people
+            <br><br>
+            $
+            = C(24, 7) \\[3ex]
+            = \dfrac{24!}{(24 - 7)! * 7!} \\[5ex]
+            = 346104\text{ committees} \\[3ex]
+            $
+            (ii.) All the doctors have to be on the committee. <br>
+            6 doctors; 7-person committee <br>
+            <u>Case 1:</u> Choose 6 doctors from 6 doctors <br>
+            Number of ways = C(6, 6) <br>
+            AND <br>
+            <u>Case 2:</u> Choose the remaining committee person (7 &minus; 6) from the remaining people: 18 (10 nurses
+            + 8 dentists) <br>
+            Number of ways = C(18, 1)
+            <br><br>
+            $
+            \text{Number of committees if all the doctors have to be on the committee.} \\[3ex]
+            = \text{Case 1} * \text{Case 2} \\[3ex]
+            = C(6, 6) * C(18, 1) \\[3ex]
+            = \dfrac{6!}{(6 - 6)! * 6!} * \dfrac{18!}{(18 - 1)! * 1!} \\[5ex]
+            = 1 * 18 \\[3ex]
+            = 346104\text{ committees} \\[3ex]
+            $
+            (iii.) Number of committees if there has to be at least one dentist on the committee. <br>
+            We can solve this question using at least two approches. <br>
+            Use any approach you prefer.
+            <br><br>
+            <b>1st Approach: Complementary Rule</b> <br>
+            Let: <br>
+            Case 3 = Number of committees if there has to be at least one dentist on the committee <br>
+            Case 4 = Number of committees if there is no dentist on the committee <br>
+            Case 5 = Number of committees that can be chosen.
+            <br><br>
+            Number of committees if there has to be at least one dentist on the committee <br>
+            + <br>
+            Number of committees if there is no dentist on the committee <br>
+            = <br>
+            Number of committees that can be chosen.
+            <br><br>
+            <u>Case 4:</u> <br>
+            6 doctors and 10 nurses <br>
+            = 6 + 10 <br>
+            = 16 people <br>
+            Number of 7-person committee that can be chosen from 16 people
+            <br><br>
+            $
+            = C(16, 7) \\[3ex]
+            = \dfrac{16!}{(16 - 7)! * 7!} \\[5ex]
+            = 11440\text{ committees} \\[3ex]
+            $
+            <u>Case 5:</u> <br>
+            Number of 7-person committee that can be chosen from 24 people = 346104 committees
+            <br><br>
+            &there4; <u>Case 3:</u> <br>
+            Number of committees if there is no dentist on the committee <br>
+            = Case 5 &minus; Case 4 <br>
+            = 346104 &minus; 11440 <br>
+            = 334664
+            <br><br>
+            <b>2nd Approach: By Definition</b> <br>
+            This approach involves more work, but some people may find it easier to understand. <br>
+            At least one <u>means</u> one or more <br>
+            In the context of the question: For a 7-person committee, at least 1 dentist <u>means</u> 1, 2, 3, 4, 5, 6,
+            7
+            <br><br>
+            $
+            \text{6 doctors, 10 nurses and 8 dentists: 7-person committee} \\[3ex]
+            \text{8 dentists; 16 (10 + 6) nurses and doctors} \\[5ex]
+            \text{1 dentist AND 6 nurses and doctors} \\[3ex]
+            = C(8, 1) * C(16, 6) \\[3ex]
+            = 8 * 8008 \\[3ex]
+            = 64064 \\[3ex]
+            OR \\[3ex]
+            \text{2 dentists AND 5 nurses and doctors} \\[3ex]
+            = C(8, 2) * C(16, 5) \\[3ex]
+            = 28 * 4368 \\[3ex]
+            = 122304 \\[3ex]
+            OR \\[3ex]
+            \text{3 dentists AND 4 nurses and doctors} \\[3ex]
+            = C(8, 3) * C(16, 4) \\[3ex]
+            = 56 * 1820 \\[3ex]
+            = 101920 \\[3ex]
+            OR \\[3ex]
+            \text{4 dentists AND 3 nurses and doctors} \\[3ex]
+            = C(8, 4) * C(16, 3) \\[3ex]
+            = 70 * 560 \\[3ex]
+            = 39200 \\[3ex]
+            OR \\[3ex]
+            \text{5 dentists AND 2 nurses and doctors} \\[3ex]
+            = C(8, 5) * C(16, 2) \\[3ex]
+            = 56 * 120 \\[3ex]
+            = 6720 \\[3ex]
+            OR \\[3ex]
+            \text{6 dentists AND 1 nurse/doctor} \\[3ex]
+            = C(8, 6) * C(16, 1) \\[3ex]
+            = 28 * 16 \\[3ex]
+            = 448 \\[3ex]
+            OR \\[3ex]
+            \text{7 dentists AND 0 nurse/doctor} \\[3ex]
+            = C(8, 7) * C(16, 0) \\[3ex]
+            = 8 * 1 \\[3ex]
+            = 8 \\[3ex]
+            \implies \\[3ex]
+            \text{Number of committees if at least one dentist is on the committee} \\[3ex]
+            = 64064 + 122304 + 101920 + 39200 + 6720 + 448 + 8 \\[3ex]
+            = 334664
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) (a.) It is given that the first four terms, in ascending powers of <i>x</i>, in the expansion of
+          $\left(1 - \dfrac{x}{2}\right)^n$ can be written in the form $1 - 8x + px^2 + qx^3$, where <i>n, p</i> and
+          <i>q</i> are integers. <br>
+          Find the values of <i>n, p</i> and <i>q</i>. <br>
+          (b.) Find the term independent of <i>x</i> in the expansion of
+          $\left(\dfrac{2}{x^2} + \dfrac{x}{3}\right)^6$, giving your answer as a rational number.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC15')">Show/Hide Answer</button>
+          <div class="result" id="solutionC15">
+            <br>
+            $
+            (a.) \\[3ex]
+            \left(1 - \dfrac{x}{2}\right)^n \\[5ex]
+            = 1^n + C(n, 1)(1)^{n - 1}\left(-\dfrac{x}{2}\right)^1 + C(n, 2)(1)^{n - 2}\left(-\dfrac{x}{2}\right)^2 +
+            C(n, 3)(1)^{n - 3}\left(-\dfrac{x}{2}\right)^3 \\[5ex]
+            .................................................................................. \\[3ex]
+            C(n, 1) \\[3ex]
+            = \dfrac{n!}{(n - 1)! * 1!} \\[5ex]
+            = \dfrac{n(n - 1)!}{(n - 1)!} \\[5ex]
+            = n \\[5ex]
+            C(n, 2) \\[3ex]
+            = \dfrac{n!}{(n - 2)! * 2!} \\[5ex]
+            = \dfrac{n(n - 1)(n - 2)!}{2(n - 2)!} \\[5ex]
+            = \dfrac{n(n - 1)}{2} \\[5ex]
+            C(n, 3) \\[3ex]
+            = \dfrac{n!}{(n - 3)! * 3!} \\[5ex]
+            = \dfrac{n(n - 1)(n - 2)(n - 3)!}{6(n - 3)!} \\[5ex]
+            = \dfrac{n(n - 1)(n - 2)}{6} \\[5ex]
+            .................................................................................. \\[3ex]
+            = 1 + n(1)\left(-\dfrac{x}{2}\right) + \dfrac{n(n - 1)}{2}(1)\left(\dfrac{x^2}{4}\right) +
+            \dfrac{n(n - 1)(n - 2)}{6}(1)\left(-\dfrac{x^3}{8}\right) \\[5ex]
+            = 1 - \dfrac{n}{2}x + \dfrac{n(n - 1)}{8}x^2 - \dfrac{n(n - 1)(n - 2)}{48}x^3...\text{Calculated} \\[5ex]
+            = 1 - 8x + px^2 + qx^3 ...\text{Given} \\[3ex]
+            \text{Calculated = Given: Compare} \\[3ex]
+            \dfrac{n}{2} = 8 \\[5ex]
+            n = 2(8) \\[3ex]
+            n = 16 \\[5ex]
+            \dfrac{n(n - 1)}{8} = p \\[5ex]
+            p = \dfrac{16(16 - 1)}{8} \\[5ex]
+            p = 2(15) \\[3ex]
+            p = 30 \\[5ex]
+            -\dfrac{n(n - 1)(n - 2)}{48} = q \\[5ex]
+            q = -\dfrac{16(16 - 1)(16 - 2)}{48} \\[5ex]
+            q = -5(14) \\[3ex]
+            q = -70 \\[3ex]
+            $
+            The term independent of <i>x</i> implies that the exponent of <i>x</i> in the numerator (2nd term) should be
+            equal to the exponent of <i>x</i> in the denominator (1st term). <br>
+            The <i>x</i>'s will cancel out. <br>
+            Let: <br>
+            numerator = <i>n</i> <br>
+            denominator = <i>d</i>
+            <br><br>
+            $
+            \left(\dfrac{2}{x^2} + \dfrac{x}{3}\right)^6 \\[5ex]
+            ....................................................................... \\[3ex]
+            \dfrac{x^n}{x^{2d}} \\[5ex]
+            n = 2d ...eqn.(1)...\text{so the x's cancel out} \\[3ex]
+            n + d = 6 ...eqn.(2) ...\text{based on the Binomial Theorem} \\[3ex]
+            \text{Substitute for n from eqn.(1) into eqn.(2)} \\[3ex]
+            2d + d = 6 \\[3ex]
+            3d = 6 \\[3ex]
+            d = \dfrac{6}{3} \\[5ex]
+            d = 2 \\[3ex]
+            \text{From eqn.(1)} \\[3ex]
+            n = 2(2) \\[3ex]
+            n = 4 \\[3ex]
+            \text{the term independent in }x \text{ is }: n = 4...\text{5th term} \\[3ex]
+            ....................................................................... \\[3ex]
+            (b.) \\[3ex]
+            \text{5th term} \\[3ex]
+            = C(6, 4) * \left(\dfrac{2}{x^2}\right)^2 * \left(\dfrac{x}{3}\right)^4 \\[5ex]
+            = \dfrac{6!}{(6 - 4)! * 4!} * \dfrac{4}{x^4} * \dfrac{x^4}{81} \\[5ex]
+            = \dfrac{20}{27}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) (a.) A 5-character password is to be formed from the following 10 characters. <br>
+          Letters: A B C X Y Z <br>
+          Symbols: * <span>$</span> # & <br>
+          No character can be used more than once in any 5-character password. <br>
+          (i.) Find the number of passwords that can be formed. <br>
+          (ii.) Find the number of passwords that can be formed if the password has to contain at least one symbol. <br>
+          (iii.) Find the number of passwords that can be formed if the password has to start with two letters and end
+          with two symbols.
+          <br><br>
+          (b.) A team of 8 people is to be chosen from 5 doctors, 4 teachers and 6 police officers. <br>
+          Find how many possible teams have the same number of doctors as teachers.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC16')">Show/Hide Answer</button>
+          <div class="result" id="solutionC16">
+            <br>
+            (a.) <br>
+            6 letters <br>
+            4 symbols <br>
+            Sum = 10 characters (letters and symbols).
+            <br><br>
+            <u>Restriction</u>: <br>
+            No character may be used more than once in any 5-character password.
+            <br><br>
+            (i.) Find the number of passwords that can be formed. <br>
+            Type: Permutation (because the order matters: ABC*# is the not the same as B*A#C) <br>
+            Number of 5-character passwords that can be formed <br>
+            = P(10, 5) <br>
+            = 30240 passwords <br>
+            This is the explanation.
+            <br><br>
+            Character Number 1: Any of the 10 characters may be used as the 1st character: 10 arrangements. <br>
+            Character Number 2: Any of the remaining 9 characters may be used as the 2nd character: 9 arrangements. <br>
+            Character Number 3: Any of remaining 8 characters may be used as the 3rd character: 8 arrangements. <br>
+            Character Number 4: Any of remaining 7 characters may be used as the 4th character: 7 arrangements. <br>
+            Character Number 5: Any of remaining 6 characters may be used as the 5th character: 6 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 10}{\rule{1cm}{0.5mm}} & \stackrel{\Large 9}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 8}{\rule{1cm}{0.5mm}} & \stackrel{\Large 7}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 6}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 5-character passwords that can be formed} \\[3ex]
+            = 10 * 9 * 8 * 7 * 6 \\[3ex]
+            = 30240\text{ passwords} \\[3ex]
+            $
+            (ii.) Find the number of passwords that can be formed if the password has to contain at least one symbol.
+            <br>
+            We can solve this question using at least two approches. <br>
+            Use any approach you prefer.
+            <br><br>
+            <b>Complementary Rule</b> <br>
+            Type: Permutation (because the order matters) <br>
+            Let: <br>
+            Case 1 = Number of 5-character passwords that can be formed. <br>
+            Case 2 = Number of 5-character passwords that can be formed without any symbol <br>
+            Case 3 = Number of 5-character passwords that can be formed with at least one symbol.
+            <br><br>
+            Number of 5-character passwords that can be formed with at least one symbol (Case 2) <br>
+            + <br>
+            Number of 5-character passwords that can be formed without any symbol (Case 3) <br>
+            = <br>
+            Number of 5-character passwords that can be formed (Case 1)
+            <br><br>
+            Case 2 + Case 3 = Case 1 <br>
+            Case 3 = Case 1 &minus; Case 2 <br>
+            6 letters <br>
+            4 symbols <br>
+            Sum = 10 characters (letters and symbols).
+            <br><br>
+            <u>Case 1:</u> <br>
+            Number of 5-character passwords that can be formed <br>
+            = P(10, 5) <br>
+            = 30240 passwords
+            <br><br>
+            <u>Case 2:</u> <br>
+            Number of 5-character passwords that can be formed without any symbol <br>
+            = Number of 5-character passwords that can be formed with all letters <br>
+            = P(6, 5) <br>
+            = 720 passwords
+            <br><br>
+            <u>Case 3:</u> <br>
+            Number of 5-character passwords that can be formed with at least one symbol <br>
+            = 30240 &minus; 720 <br>
+            = 29520 passwords
+            <br><br>
+            (iii.) The number of passwords that can be formed if the password has to start with two letters and end
+            with two symbols. <br>
+            Type: Permutation
+            <br><br>
+            Character Number 1: Any of the 6 letters may be used as the 1st character: 6 arrangements. <br>
+            Character Number 2: Any of the remaining 5 letters may be used as the 2nd character: 5 arrangements. <br>
+            Character Number 4: Any of the 4 symbols may be used as the 4th character: 4 arrangements. <br>
+            Character Number 5: Any of remaining 3 symbols may be used as the 5th character: 3 arrangements. <br>
+            Character Number 3: Any of remaining 6 (10 &minus; 2 &minus; 2) characters may be used as the 3rd character:
+            6 arrangements.
+            <br><br>
+            $
+            \begin{array}{c c c c c}
+            \stackrel{\Large 6}{\rule{1cm}{0.5mm}} & \stackrel{\Large 5}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 6}{\rule{1cm}{0.5mm}} & \stackrel{\Large 4}{\rule{1cm}{0.5mm}} &
+            \stackrel{\Large 3}{\rule{1cm}{0.5mm}}
+            \end{array} \\[5ex]
+            \text{Number of 5-character passwords that can be formed} \\[3ex]
+            = 6 * 5 * 6 * 4 * 3 \\[3ex]
+            = 2160\text{ passwords} \\[3ex]
+            $
+            (b.) <br>
+            The 8-people team is to be formed from a combination of 5 doctors, 4 teachers and 6 police officers. <br>
+            The team must have the same number of doctors as teachers. <br>
+            Let us consider the different possibilities that meet this requirement.
+            <br><br>
+            <u>Case 1:</u> 1 doctor, 1 teacher, and 6 (8 &minus; 1 &minus; 1) police officers <br>
+            Number of ways = C(5, 1) * C(4, 1) * C(6, 6) <br>
+            = 5 * 4 * 1 <br>
+            = 20 teams
+            <br>
+            OR <br>
+            <u>Case 2:</u> 2 doctors, 2 teachers, and 4 (8 &minus; 2 &minus; 2) police officers <br>
+            Number of ways = C(5, 2) * C(4, 2) * C(6, 4) <br>
+            = 10 * 6 * 15 <br>
+            = 900 teams <br>
+            OR <br>
+            <u>Case 3:</u> 3 doctors, 3 teachers, and 2 (8 &minus; 3 &minus; 3) police officers <br>
+            Number of ways = C(5, 3) * C(4, 3) * C(6, 2) <br>
+            = 10 * 4 * 15 <br>
+            = 600 teams <br>
+            OR <br>
+            <u>Case 4:</u> 4 doctors, 4 teachers, and 0 (8 &minus; 4 &minus; 4) police officers <br>
+            Number of ways = C(5, 4) * C(4, 4) <br>
+            = 5 * 1 <br>
+            = 5 teams
+            <br><br>
+            Number of 8-people teams with the same number of doctors as teachers <br>
+            = 20 + 900 + 600 + 5 <br>
+            = 1525 teams
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC17')">Show/Hide Answer</button>
+          <div class="result" id="solutionC17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC18')">Show/Hide Answer</button>
+          <div class="result" id="solutionC18">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC19')">Show/Hide Answer</button>
+          <div class="result" id="solutionC19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC20')">Show/Hide Answer</button>
+          <div class="result" id="solutionC20">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/CAMBRIDGE/O-LEVEL/Combinatorics.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC21')">Show/Hide Answer</button>
+          <div class="result" id="solutionC21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC22')">Show/Hide Answer</button>
+          <div class="result" id="solutionC22">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC23')">Show/Hide Answer</button>
+          <div class="result" id="solutionC23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC24')">Show/Hide Answer</button>
+          <div class="result" id="solutionC24">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC25')">Show/Hide Answer</button>
+          <div class="result" id="solutionC25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC26')">Show/Hide Answer</button>
+          <div class="result" id="solutionC26">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC27')">Show/Hide Answer</button>
+          <div class="result" id="solutionC27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC28')">Show/Hide Answer</button>
+          <div class="result" id="solutionC28">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC29')">Show/Hide Answer</button>
+          <div class="result" id="solutionC29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC30')">Show/Hide Answer</button>
+          <div class="result" id="solutionC30">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC31')">Show/Hide Answer</button>
+          <div class="result" id="solutionC31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC32')">Show/Hide Answer</button>
+          <div class="result" id="solutionC32">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC33')">Show/Hide Answer</button>
+          <div class="result" id="solutionC33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC34')">Show/Hide Answer</button>
+          <div class="result" id="solutionC34">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC35')">Show/Hide Answer</button>
+          <div class="result" id="solutionC35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC36')">Show/Hide Answer</button>
+          <div class="result" id="solutionC36">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC37')">Show/Hide Answer</button>
+          <div class="result" id="solutionC37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC38')">Show/Hide Answer</button>
+          <div class="result" id="solutionC38">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC39')">Show/Hide Answer</button>
+          <div class="result" id="solutionC39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC40')">Show/Hide Answer</button>
+          <div class="result" id="solutionC40">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/CAMBRIDGE/O-LEVEL/Combinatorics.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 40 through 60 -->
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC41')">Show/Hide Answer</button>
+          <div class="result" id="solutionC41">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC42')">Show/Hide Answer</button>
+          <div class="result" id="solutionC42">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC43')">Show/Hide Answer</button>
+          <div class="result" id="solutionC43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC44')">Show/Hide Answer</button>
+          <div class="result" id="solutionC44">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC45')">Show/Hide Answer</button>
+          <div class="result" id="solutionC45">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC46')">Show/Hide Answer</button>
+          <div class="result" id="solutionC46">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC47')">Show/Hide Answer</button>
+          <div class="result" id="solutionC47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC48')">Show/Hide Answer</button>
+          <div class="result" id="solutionC48">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC49')">Show/Hide Answer</button>
+          <div class="result" id="solutionC49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionC50')">Show/Hide Answer</button>
+          <div class="result" id="solutionC50">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+    <!-- Numbers 41 through 60 -->
+
+    <!-- End Questions and Answers -->
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="../images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="../scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

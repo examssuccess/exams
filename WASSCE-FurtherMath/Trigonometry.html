@@ -1,0 +1,1737 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Trigonometry</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the WASSCE Further Mathematics exam questions on trigonometry.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, Further Mathematics, WASSCE, 
+  West African Senior School Certificate Examination, trigonometry, analytic trigonometry, trigonometric functions, angles, triangles, geometry, 
+  trigonometric identities, inverse trigonometric functions, sine function, inverse sine function, cosine function, inverse cosine function, 
+  tangent function, inverse tangent function, composite functions, trigonometric equations, trigonometric proofs, trigonometric formulas, 
+  trigonometric graphs, trigonometric inequalities, right triangles, sine law, cosine law, initial side, terminal side, coordinate plane, 
+  angular measures, side lengths, vertex, standard position, coterminal angles, quadrantal angles, reference angles, unit circle, planar figures, 
+    three-dimensional figures, cofunction, quadrants, inverse cosecant function, inverse secant function, inverse cotangent function, 
+    trigonometric expressions, right triangles, area of triangle, bearings, distances, elevation, depression, angle of elevation, 
+    angle of depression, arc, length of arc, sector, segment, linear speed, angular speed, circular functions, 
+    area of sector, area of segment, base angle, apex angle, vertex angle, compass bearing, congruent triangles, similar triangles, 
+    congruency, similarity">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#coterminalAngles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coterminal
+        Angles</a>
+
+      <a href="#trigonometricFunctions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Functions</a>
+
+      <a href="#unitCircle" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Unit Circle</a>
+
+      <a href="#trigonometricIdentities" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Identities</a>
+
+      <a href="#trigonometricFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Formulas</a>
+
+      <a href="#factoringFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Factoring
+        Formulas</a>
+
+      <a href="#triangleLaws" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Triangle Laws</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#circleFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Circle Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Trigonometry</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the WASSCE Further Mathematics past questions on the topics in Trigonometry. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if of these resources were helpful in your passing the
+        Further Mathematics test of WASSCE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="images/calculator-mode.png" alt="Calculator Mode">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Coterminal Angles -->
+    <div class="w3-container w3-padding-32" id="coterminalAngles">
+      <h2>Coterminal Angles</h2>
+      <p>
+        Coterminal angles are angles with the <b>same initial side</b> and the <b>same terminal side</b>. <br>
+        The concept of coterminal angles helps us to find the equivalent positive angle of a negative angle. <br>
+        Because an angle in standard position is measured counterclockwise, adding 360° to it accounts for a full
+        revolution, keeping the direction intact. <br>
+        Hence for any angle say &theta;, the coterminal angles are &theta; + 360<i>k</i> where <i>k</i> is any integer.
+      </p>
+    </div>
+    <!-- End Coterminal Angles -->
+
+    <!-- Trigonometric Functions -->
+    <div class="w3-container w3-padding-32" id="trigonometricFunctions">
+      <h2>Trigonometric Functions</h2>
+      <p>
+        Right Triangle Trigonometry for any angle, say $\theta$ <br>
+        Pneumonic for it is: <b>SOHCAHTOA</b> and <b>cosecHOsecHAcotanAO</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{opp}{hyp} \\[7ex]
+        (2.)\;\; \cos \theta = \dfrac{adj}{hyp} \\[7ex]
+        (3.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[5ex]
+        = \sin \theta \div \cos \theta \\[3ex]
+        = \dfrac{opp}{hyp} \div \dfrac{adj}{hyp} \\[5ex]
+        = \dfrac{opp}{hyp} * \dfrac{hyp}{adj} \\[5ex]
+        \therefore \tan \theta = \dfrac{opp}{adj} \\[7ex]
+        (4.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[5ex]
+        = 1 \div \sin \theta \\[3ex]
+        = 1 \div \dfrac{opp}{hyp} \\[5ex]
+        \therefore \csc \theta = \dfrac{hyp}{opp} \\[7ex]
+        (5.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[5ex]
+        = 1 \div \cos \theta \\[3ex]
+        = 1 \div \dfrac{adj}{hyp} \\[5ex]
+        \therefore \sec \theta = \dfrac{hyp}{adj} \\[7ex]
+        (6.)\;\; \cot \theta = \dfrac{1}{\tan \theta} = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        = \cos \theta \div \sin \theta \\[3ex]
+        = \dfrac{adj}{hyp} \div \dfrac{opp}{hyp} \\[5ex]
+        = \dfrac{adj}{hyp} * \dfrac{hyp}{opp} \\[5ex]
+        \therefore \cot \theta = \dfrac{adj}{opp}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Functions -->
+
+    <!-- Unit Circle -->
+    <div class="w3-container w3-padding-32" id="unitCircle">
+      <h2>Summary: The Unit Circle</h2>
+      <table class="w3-center">
+        <tr>
+          <th class="green">$\theta$ in DEG</th>
+          <th class="green">$\theta$ in RAD</th>
+          <th class="green">$\sin \theta$</th>
+          <th class="green">$\cos \theta$</th>
+          <th class="green">$\tan \theta$</th>
+          <th class="green">$\csc \theta$</th>
+          <th class="green">$\sec \theta$</th>
+          <th class="green">$\cot \theta$</th>
+        </tr>
+        <tr>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$30$</td>
+          <td>$\dfrac{\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$45$</td>
+          <td>$\dfrac{\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$60$</td>
+          <td>$\dfrac{\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$90$</td>
+          <td>$\dfrac{\pi}{2}$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$120$</td>
+          <td>$\dfrac{2\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$135$</td>
+          <td>$\dfrac{3\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$150$</td>
+          <td>$\dfrac{5\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$180$</td>
+          <td>$\pi$</td>
+          <td>$0$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$210$</td>
+          <td>$\dfrac{7\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$225$</td>
+          <td>$\dfrac{5\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$240$</td>
+          <td>$\dfrac{4\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$270$</td>
+          <td>$\dfrac{3\pi}{2}$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$315$</td>
+          <td>$\dfrac{7\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$300$</td>
+          <td>$\dfrac{5\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$330$</td>
+          <td>$\dfrac{11\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$360$</td>
+          <td>$2\pi$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+      </table>
+    </div>
+    <!-- End Unit Circle -->
+
+    <!-- Trigonometric Identities -->
+    <div class="w3-container w3-padding-32" id="trigonometricIdentities">
+      <h2>Trigonometric Identities</h2>
+      <p>
+        \begin{array}{c | c}
+        II & I \\
+        \hline
+        III & IV
+        \end{array} =
+        \begin{array}{c | c}
+        S & A \\
+        \hline
+        T & C
+        \end{array} =
+        \begin{array}{c | c}
+        Sine\:\: is\:\: positive & All\:\: are\:\: positive \\
+        \hline
+        Tangent\:\: is\:\: positive & Cosine\:\: is\:\: positive
+        \end{array}
+      </p>
+      <br><br>
+      <p>
+        <b>The pneumonic to remember it:</b> <br>
+        First Quadrant to Fourth Quadrant (clockwise direction): A-C-T-S (ACTS of the Apostles) <br><br>
+        First Quadrant to Fourth Quadrant (counter-clockwise direction): A-S-T-C: ADD - SUGAR - TO - COFFEE <br><br>
+        Fourth Quadrant to Third Quadrant (counter-clockwise direction): C-A-S-T (Simon Peter, CAST your net into the
+        sea.) <br><br>
+        Second Quadrant to Third Quadrant (clockwise direction): S-A-C-T <br><br>
+
+        <b>Cofunction Identities (Identities of Complements)</b> <br>
+        <b>First Quadrant Identities</b> <br>
+        <u>First Quadrant:</u> <b>All (sine, cosine, tangent) are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent</b> are also positive. <br><br>
+        <u>Given:</u> two angles say: $\alpha$ and $\beta$; <br>
+        If $\alpha$ and $\beta$ are complementary, then the: <br>
+        <b>Sine</b> function and the <b>Cosine</b> functions are cofunctions <br><br>
+        $
+        \sin \alpha = \cos \beta \\[3ex]
+        \cos \alpha = \sin \beta \\[3ex]
+        $
+        <b>Tangent</b> function and the <b>Cotangent</b> functions are cofunctions <br><br>
+        $
+        \tan \alpha = \cot \beta \\[3ex]
+        \cot \alpha = \tan \beta \\[3ex]
+        $
+        <b>Secant</b> function and the <b>Cosecant</b> functions are cofunctions <br><br>
+        $
+        \sec \alpha = \csc \beta \\[3ex]
+        \csc \alpha = \sec \beta \\[3ex]
+        $
+
+        <u>Given:</u> one angle say: $\theta$; <br>
+        <b>First Quadrant Identities or Cofunction Identities or Identities of Complements</b>
+        <br><br>
+        $0 \lt \theta \lt 90 ...Angle\:\: in\:\: Degrees \\[3ex]$
+        Reference Angle = $\theta$ ... Angle in Degrees <br><br>
+        $0 \lt \theta \lt \dfrac{\pi}{2} ...Angle\:\: in\:\: Radians \\[5ex]$
+        Reference Angle = $\theta$ ... Angle in Radians <br><br>
+        <u>First Quadrant:</u> <b>sine, cosine, tangent are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent are also positive</b>
+        <br><br>
+        Complement of $\theta$ = $90 - \theta$ where $\theta$ is in degrees:
+        <br><br>
+        Complement of $\theta$ = $\dfrac{\pi}{2} - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\:\: \sin \theta = \cos (90 - \theta) \\[3ex]
+        (2.)\:\: \sin \theta = \cos \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (3.)\:\: \cos \theta = \sin (90 - \theta) \\[3ex]
+        (4.)\:\: \cos \theta = \sin \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (5.)\:\: \tan \theta = \cot (90 - \theta) \\[3ex]
+        (6.)\:\: \tan \theta = \cot \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (7.)\:\: \cot \theta = \tan (90 - \theta) \\[3ex]
+        (8.)\:\: \cot \theta = \tan \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (9.)\:\: \sec \theta = \csc (90 - \theta) \\[3ex]
+        (10.)\:\: \sec \theta = \csc \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (11.)\:\: \csc \theta = \sec (90 - \theta) \\[3ex]
+        (12.)\:\: \csc \theta = \sec \left(\dfrac{\pi}{2} - \theta \right) \\[7ex]
+        $
+
+        <b>Second Quadrant Identities or Identities of Supplements</b>
+        <br><br>
+        $90 \lt \theta \lt 180$ ... Angle in Degrees <br>
+        Reference Angle = $180 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{\pi}{2} \lt \theta \lt \pi$ ... Angle in Radians <br>
+        Reference Angle = $\pi - \theta$ ... Angle in Radians <br>
+        <u>Second Quadrant:</u> <b>sine is positive</b> <br>
+        This implies that <b>cosecant is also positive</b> <br>
+        Symmetric across the y-axis
+        <br><br>
+        <u>Given:</u> one angle say: $\theta$; <br>
+        Supplement of $\theta$ = $180 - \theta$ where $\theta$ is in degrees: <br>
+        Supplement of $\theta$ = $\pi - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \sin (180 - \theta) \\[3ex]
+        (2.)\;\; \sin (180 - \theta) = \sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = \sin (\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (\pi - \theta) = \sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (180 - \theta) \\[3ex]
+        (6.)\;\; \cos (180 - \theta) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (\pi - \theta) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (180 - \theta) \\[3ex]
+        (10.)\;\; \tan (180 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (\pi - \theta) = -\tan \theta \\[5ex]
+        $
+
+        <b>Third Quadrant Identities</b> <br>
+        $180 \lt \theta \lt 270$ ... Angle in Degrees <br>
+        Reference Angle = $\theta - 180$ ... Angle in Degrees <br>
+        $\pi \lt \theta \lt \dfrac{3\pi}{2}$ ... Angle in Radians <br>
+        Reference Angle = $\theta - \pi$ ... Angle in Radians <br>
+        <u>Third Quadrant:</u> <b>tangent is positive</b> <br>
+        This implies that <b>cotangent is also positive</b> <br>
+        Symmetric across the origin <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (\theta - 180) \\[3ex]
+        (2.)\;\; \sin (\theta - 180) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (\theta - \pi) \\[3ex]
+        (4.)\;\; \sin (\theta - \pi) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (\theta - 180) \\[3ex]
+        (6.)\;\; \cos (\theta - 180) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\theta - \pi) \\[3ex]
+        (8.)\;\; \cos (\theta - \pi) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = \tan (\theta - 180) \\[3ex]
+        (10.)\;\; \tan (\theta - 180) = \tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = \tan (\theta - \pi) \\[3ex]
+        (12.)\;\; \tan (\theta - \pi) = \tan \theta \\[5ex]
+        $
+        But if $\theta \lt 180$, use $\theta + 180$
+        <br><br>
+
+        <b>Fourth Quadrant Identities</b> <br>
+        $270 \lt \theta \lt 360$ ... Angle in Degrees <br>
+        Reference Angle = $360 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{3\pi}{2} \lt \theta \lt 2\pi$ ... Angle in Radians <br>
+        Reference Angle = $2\pi - \theta$ ... Angle in Radians <br>
+        <u>Fourth Quadrant:</u> <b>cosine is positive</b> <br>
+        This implies that <b>secant is also positive</b> <br>
+        Symmetric across the x-axis <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (360 - \theta) \\[3ex]
+        (2.)\;\; \sin (360 - \theta) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (2\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (2\pi - \theta) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = \cos (360 - \theta) \\[3ex]
+        (6.)\;\; \cos (360 - \theta) = \cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = \cos (2\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (2\pi - \theta) = \cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (360 - \theta) \\[3ex]
+        (10.)\;\; \tan (360 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (2\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (2\pi - \theta) = -\tan \theta \\[3ex]
+        $
+
+        <b>Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[3ex]
+        (2.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[3ex]
+        (3.)\;\; \cot \theta = \dfrac{1}{\tan \theta} \\[3ex]
+        $
+
+        <b>From Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{1}{\csc \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \dfrac{1}{\sec \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \dfrac{1}{\cot \theta} \\[5ex]
+        $
+
+        <b>Quotient Identities</b> <br>
+        $
+        (1.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[3ex]
+        (2.)\;\; \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[3ex]
+        $
+
+        As you can see, $\cot \theta$ has two formulas <br><br>
+        $
+        \cot \theta = \dfrac{1}{\tan \theta} \\[5ex]
+        \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        $
+        Sometimes, we shall use the first one. Sometimes, we shall use the second one. <br>
+        We have to use the formula that will not give us an undefined value (where the denominator is zero) <br><br>
+
+        <b>Even Identities</b> <br>
+        Recall: a function, say $f(x)$ is even if $f(-x) = f(x)$ <br>
+        In Trigonometry, the <b>cosine function</b> and the <b>secant function</b> are <b>even functions.</b> <br><br>
+        $
+        (1.)\;\; \cos (-\theta) = \cos \theta \\[3ex]
+        (2.)\;\; \sec (-\theta) = \sec \theta \\[5ex]
+        $
+
+        <b>Odd Identities</b> <br>
+        Recall: a function, say $f(x)$ is odd if $f(-x) = -f(x)$ <br>
+        In Trigonometry, the <b>sine function</b>, the <b>cosecant function</b>,
+        the <b>tangent function</b>, and the <b>cotangent function</b> are <b>odd functions.</b> <br><br>
+        $
+        (1.)\;\; \sin (-\theta) = -\sin \theta \\[3ex]
+        (2.)\;\; \csc (-\theta) = -\csc \theta \\[3ex]
+        (3.)\;\; \tan (-\theta) = -\tan \theta \\[3ex]
+        (4.)\;\; \cot (-\theta) = -\cot \theta \\[5ex]
+        $
+
+        <b>Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \theta + \cos^2 \theta = 1 \\[3ex]
+        (2.)\;\; \tan^2 \theta + 1 = \sec^2 \theta \\[3ex]
+        (3.)\;\; \cot^2 \theta + 1 = \csc^2 \theta \\[3ex]
+        $
+
+        <b>From Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin \theta = \pm \sqrt{1 - \cos^2 \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \pm \sqrt{1 - \sin^2 \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \pm \sqrt{\sec^2 \theta - 1} \\[3ex]
+        (4.)\;\; \sec \theta = \pm \sqrt{\tan^2 \theta + 1} \\[3ex]
+        (5.)\;\; \cot \theta = \pm \sqrt{\csc^2 \theta - 1} \\[3ex]
+        (6.)\;\; \csc \theta = \pm \sqrt{\cot^2 \theta + 1}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Identities -->
+
+    <!-- Trigonometric Formulas -->
+    <div class="w3-container w3-padding-32" id="trigonometricFormulas">
+      <h2>Trigonometric Formulas</h2>
+      <p>
+        <b>Sum and Difference Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta \\[3ex]
+        (2.)\;\; \cos (\alpha \pm \beta) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta \\[3ex]
+        (3.)\;\; \tan (\alpha \pm \beta) = \dfrac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta} \\[5ex]
+        $
+        <b>Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin \dfrac{\theta}{2} = \pm \sqrt{\dfrac{1 - \cos \theta}{2}} \\[5ex]
+        (2.)\;\; \cos {\theta \over 2} = \pm \sqrt{\dfrac{1 + \cos \theta}{2}} \\[5ex]
+        (3.)\;\; \tan {\theta \over 2} = \pm \sqrt{\dfrac{1 - \cos \theta}{1 + \cos \theta}} \\[5ex]
+        (4.)\;\; \tan {\theta \over 2} = \dfrac{\sin \theta}{1 + \cos \theta} \\[5ex]
+        (5.)\;\; \tan {\theta \over 2} = \dfrac{1 - \cos \theta}{\sin \theta} \\[5ex]
+        $
+
+        <b>Formulas from Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{2} \\[5ex]
+        (2.)\;\; \cos^2 \dfrac{\theta}{2} = \dfrac{1 + \cos \theta}{2} \\[5ex]
+        (3.)\;\; \tan^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{1 + \cos \theta} \\[7ex]
+        $
+
+        <b>Double-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin (2\theta) = 2 \sin \theta \cos \theta \\[3ex]
+        (2.)\;\; \cos (2\theta) = \cos^2 \theta - \sin^2 \theta \\[3ex]
+        (3.)\;\; \cos (2\theta) = 1 - 2\sin^2 \theta \\[3ex]
+        (4.)\;\; \cos (2\theta) = 2\cos^2 \theta - 1 \\[3ex]
+        (5.)\;\; \tan (2\theta) = \dfrac{2\tan \theta}{1 - \tan^2 \theta} \\[5ex]
+        $
+
+        <b>Formulas from Double-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin^2 \theta = \dfrac{1 - \cos(2\theta)}{2} \\[5ex]
+        (2.)\;\; \cos^2 \theta = \dfrac{1 + \cos(2\theta)}{2} \\[5ex]
+        (3.)\;\; \tan^2 \theta = \dfrac{1 - \cos(2\theta)}{1 + \cos(2\theta)} \\[7ex]
+        $
+
+        <b>Triple-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (3\theta) = 3 \sin \theta - 4\sin^3 \theta \\[3ex]
+        (2.)\;\; \cos (3\theta) = 4 \cos^3 \theta - 3 \cos \theta \\[3ex]
+        (3.)\;\; \tan (3\theta) = \dfrac{3\tan \theta - \tan^3 \theta}{1 - 3\tan^2 \theta} \\[7ex]
+        $
+
+        <b>Sum-to-Product Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha + \sin \beta = 2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (2.)\;\; \sin \alpha - \sin \beta = 2 \sin \left(\dfrac{\alpha - \beta}{2}\right) \cos \left(\dfrac{\alpha +
+        \beta}{2}\right) \\[5ex]
+        (3.)\;\; \cos \alpha + \cos \beta = 2 \cos \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (4.)\;\; \cos \alpha - \cos \beta = -2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \sin \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        $
+        <i>
+          Ask students to write the compact form / shortened form of the first two Sum-to-Product Formulas.
+        </i>
+        <br><br>
+
+        <b>Sum-to-Product Formulas (Compact Form of the First Two Formulas)</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha \pm \sin \beta = 2 \sin \dfrac{\alpha \pm \beta}{2} \cos \dfrac{\alpha \mp \beta}{2}
+        \\[7ex]
+        $
+
+        <b>Product-to-Sum Formulas</b>
+        <br><br>
+        $
+        (1.) \sin \alpha * \sin \beta = \dfrac{1}{2} [\cos(\alpha - \beta) - \cos(\alpha + \beta)] \\[5ex]
+        (2.) \cos \alpha * \cos \beta = \dfrac{1}{2} [\cos(\alpha - \beta) + \cos(\alpha + \beta)] \\[5ex]
+        (3.) \sin \alpha * \cos \beta = \dfrac{1}{2} [\sin(\alpha + \beta) + \sin(\alpha + \beta)] \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Formulas -->
+
+    <!-- Factoring Formulas -->
+    <div class="w3-container w3-padding-32" id="factoringFormulas">
+      <h2>Factoring Formulas</h2>
+      <p>
+        <i>x</i> is any trigonometric ratio <br>
+        <i>y</i> is any trigonometric ratio
+        <br><br>
+        $
+        \underline{Difference\;\;of\;\;Two\;\;Squares} \\[3ex]
+        (1.)\;\;x^2 - y^2 = (x + y)(x - y) \\[5ex]
+        \underline{Difference\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (2.)\;\; x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\[5ex]
+        \underline{Sum\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (3.)\;\; x^3 + y^3 = (x + y)(x^2 - xy + y^2) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Factoring Formulas -->
+
+    <!-- Triangle Laws -->
+    <div class="w3-container w3-padding-32" id="triangleLaws">
+      <h2>Triangle Laws</h2>
+      <p>
+        <b>Sine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the ratio of the side length of any triangle to the sine of the angle measure opposite that side
+        is the same for the three sides of the triangle.
+        <br><br>
+        $
+        \dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C} \\[5ex]
+        $
+        OR <br><br>
+        The ratio of the angle measure of any triangle to the side length opposite that angle is the same for the three
+        angles of the triangle.
+        <br><br>
+        $
+        \dfrac{\sin A}{a} = \dfrac{\sin B}{b} = \dfrac{\sin C}{c} \\[5ex]
+        $
+
+        <b>Cosine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the square of a side of a triangle is the difference between the sum of the squares of the other
+        two sides and twice the product of the two sides and the included angle.
+        <br><br>
+        $
+        a^2 = b^2 + c^2 - 2bc \cos A \\[3ex]
+        \cos A = \dfrac{b^2 + c^2 - a^2}{2bc} \\[5ex]
+        \rightarrow A = \cos^{-1} \left(\dfrac{b^2 + c^2 - a^2}{2bc}\right) \\[5ex]
+        b^2 = a^2 + c^2 - 2ac \cos B \\[3ex]
+        \cos B = \dfrac{a^2 + c^2 - b^2}{2ac} \\[5ex]
+        \rightarrow B = \cos^{-1} \left(\dfrac{a^2 + c^2 - b^2}{2ac}\right) \\[5ex]
+        c^2 = a^2 + b^2 - 2ab \cos C \\[3ex]
+        \cos C = \dfrac{a^2 + b^2 - c^2}{2ab} \\[5ex]
+        \rightarrow C = \cos^{-1} \left(\dfrac{a^2 + b^2 - c^2}{2ab}\right) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Triangle Laws -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) <b>Sum of Angles of a Triangle Theorem:</b> <br>
+        The sum of the interior angles of a triangle is 180&deg;
+        <br><br>
+        (2.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the hypotenuse
+        is twice the length of the short side.
+        <br><br>
+        (3.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the middle side
+        is the square root of 3 times the length of short side.
+        <br><br>
+        (4.) In a <b>45&deg; &ndash; 45&deg; &ndash; 90&deg; right triangle theorem</b> (Right Isosceles Triangle
+        Theorem); the length of the hypotenuse is the square root of 2 times the length of either side.
+        <br><br>
+        (5.) <b>Pythagorean Theorem:</b> Applies only to right triangles. <br>
+        In a <b>right triangle</b>, the square of the length of the hypotenuse is the
+        sum of the squares of the short side and the middle side.
+        <br><br>
+        $hyp^2 = leg^2 + leg^2$
+        <br><br>
+        (6.) <b>Converse of the Pythagorean Theorem (Right Triangle Theorem):</b> <br>
+        If the square of the long side(hypotenuse) is the
+        sum of the squares of the other two sides, then the triangle is a right triangle.
+        <br><br>
+        (7.) <b>Acute Triangle Theorem:</b> If the square of the long side is less than the sum of the squares of the
+        other two sides, then the triangle is an acute triangle.
+        <br><br>
+        (8.) <b>Obtuse Triangle Theorem:</b> If the square of the long side is greater than the sum of the squares of
+        the other two sides, then the triangle is an obtuse triangle.
+        <br><br>
+        (9.) <b>Triangle Inequality Theorem:</b> This is the theorem that determines if you can form a triangle using
+        any three lengths. <br>
+        The sum of the lengths of any two sides of a triangle is greater than the length of the third side.
+        <br><br>
+        (10.) <b>Side Length &ndash; Angle Measure Theorem:</b> If any two side lengths of a triangle are unequal; the
+        angles of the triangle are also unequal, and the measure of an angle is opposite the length of the side facing
+        that angle as regards size. <br>
+        The measure of the smallest angle is opposite the shortest side length. <br>
+        The measure of the greatest angle is opposite the longest side length. <br>
+        The measure of the middle angle is opposite the middle side length. <br>
+        In other words; regarding size, the measure of an angle is opposite the length of the side facing the
+        angle; or the side length facing an angle is opposite the angle measure as regards size. <br>
+        Small side faces small angle, middle side faces middle angle, big side faces big angle
+        <br><br>
+        (11.) <b>Exterior Angle of a Triangle Theorem:</b> The exterior angle of a triangle is the sum of the two
+        interior opposite angles.
+        <br><br>
+        (12.) <b>Isosceles Base Angles Theorem:</b> The base angles of an isosceles triangle are equal.
+        <br><br>
+        (13.) <b>Converse of the Isosceles Base Angles Theorem:</b> If the base angles of a triangle are equal, then the
+        triangle is an isosceles triangle.
+        <br><br>
+        (14.) <b>Perpendicular Bisector of the Base of an Isosceles Triangle Theorem:</b> It states that if a line
+        bisects the vertex angle of an isosceles triangle, then the line is also the perpendicular
+        bisector of the base (the line also bisects the base of that isosceles triangle at right angles).
+        <br><br>
+        (15.) <b>Perpendicular Height to Base of Isosceles Triangle Theorem</b> It states that the perpendicular height
+        drawn from the apex of an isosceles triangle to the base: <br>
+        (a.) bisects the base <br>
+        (b.) bisects the apex angle.
+        <br><br>
+        (16.) <b>Side-Splitter Theorem</b> Applies to all triangles with <i>inserted</i> parallel lines as applicable.
+        <br>
+        It states that if a line segment is parallel to one side of a triangle and intersects the other two sides of
+        the triangle, then it divides those two sides proportionally.
+        <br><br>
+        (17.) <b>Midpoint Theorem</b> Applies to all triangles in which a line segment
+        <i>joins the midpoints of any two sides</i> of the triangle. <br>
+        It states that if a line segment joins any two sides of a triangle, then the line segment: <br>
+        (a.) is parallel to the third side. <br>
+        (b.) bisects the third side.
+        <br><br>
+        (18.) <b>Converse of the Midpoint Theorem</b> A line segment drawn through the midpoint of one side of a
+        triangle and parallel to another side, bisects the third side.
+        <br><br>
+        (19.) <b>Scale Factor, Perimeter Ratio, and Area Ratio of Similar Figures Theorem</b> Applies to all similar
+        figures including similar triangles. <br>
+        It states that for two similar figures, the ratio of the perimeters is the same as the scale factor; and the
+        ratio of the areas is the ratio of the square of the scale factor.
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Circle Formulas -->
+    <div class="w3-container w3-padding-32" id="circleFormulas">
+      <h2>Circle Formulas</h2>
+      <p>
+        Except stated otherwise, use:
+        <br><br>
+        $
+        d = diameter \\[3ex]
+        r = radius \\[3ex]
+        L = arc\:\:length \\[3ex]
+        A = area\;\;of\;\;sector \\[3ex]
+        P = perimeter\;\;of\;\;sector \\[3ex]
+        \theta = central\:\:angle \\[3ex]
+        \pi = \dfrac{22}{7} \\[5ex]
+        RAD = radians \\[3ex]
+        ^\circ = DEG = degrees \\[7ex]
+
+        \underline{\theta\;\;in\;\;DEG} \\[3ex]
+        L = \dfrac{2\pi r\theta}{360} \\[5ex]
+        \theta = \dfrac{180L}{\pi r} \\[5ex]
+        r = \dfrac{180L}{\pi \theta} \\[5ex]
+        A = \dfrac{\pi r^2\theta}{360} \\[5ex]
+        \theta = \dfrac{360A}{\pi r^2} \\[5ex]
+        r = \dfrac{360A}{\pi\theta} \\[5ex]
+        P = \dfrac{r(\pi\theta + 360)}{180} \\[7ex]
+
+        \underline{\theta\;\;in\;\;RAD} \\[3ex]
+        L = r\theta \\[5ex]
+        \theta = \dfrac{L}{r} \\[5ex]
+        r = \dfrac{L}{\theta} \\[5ex]
+        A = \dfrac{r^2\theta}{2} \\[5ex]
+        \theta = \dfrac{2A}{r^2} \\[5ex]
+        r = \sqrt{\dfrac{2A}{\theta}} \\[5ex]
+        P = r(\theta + 2) \\[7ex]
+
+        Circumference\:\:of\:\:a\:\:circle = 2\pi r = \pi d \\[3ex]
+        L = \dfrac{2A}{r} \\[5ex]
+        r = \dfrac{2A}{L} \\[5ex]
+        A = \dfrac{Lr}{2}
+        $
+      </p>
+    </div>
+    <!-- End Circle Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) If $\tan x = \dfrac{1}{3}$, where 180&deg; &lt; <i>x</i> 270&deg;, evaluate $\dfrac{\sin 2x - \cos
+          x}{2\tan x + \sin 2x}$, leaving your answer in surd form (radicals).
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionT1">
+            <br>
+            180&deg; &lt; <i>x</i> 270&deg; is in the 3rd Quadrant <br>
+            Let us represent $\tan x = \dfrac{1}{3}$ diagrammatically
+            <br><br>
+            <img src="images/Trigonometry/Questions/Number1.png" alt="Number 1">
+            <br><br>
+            $
+            opp = -1 \\[3ex]
+            adj = -3 \\[5ex]
+
+            \underline{\text{Pythagorean Theorem}} \\[3ex]
+            hyp^2 = opp^2 + adj^2 \\[3ex]
+            = (-1)^2 + (-3)^2 \\[3ex]
+            = 1 + 9 \\[3ex]
+            = 10 \\[3ex]
+            hyp = \sqrt{10} \\[5ex]
+
+            \underline{\text{SOHCAHTOA}} \\[3ex]
+            \sin x = \dfrac{opp}{hyp} \\[5ex]
+            = \dfrac{-1}{\sqrt{10}} \\[5ex]
+            = \dfrac{-1}{\sqrt{10}} * \dfrac{\sqrt{10}}{\sqrt{10}} \\[5ex]
+            = -\dfrac{\sqrt{10}}{10} \\[5ex]
+
+            \cos x = \dfrac{adj}{hyp} \\[5ex]
+            = \dfrac{-3}{\sqrt{10}} \\[5ex]
+            = \dfrac{-3}{\sqrt{10}} * \dfrac{\sqrt{10}}{\sqrt{10}} \\[5ex]
+            = -\dfrac{3\sqrt{10}}{10} \\[5ex]
+
+            \tan x = \dfrac{opp}{adj} \\[5ex]
+            = \dfrac{-1}{-3} \\[5ex]
+            = \dfrac{1}{3} \\[5ex]
+
+            \sin 2x = 2\sin x \cos x ...\text{Double-Angle Formulas} \\[3ex]
+            = 2 * -\dfrac{\sqrt{10}}{10} * -\dfrac{3\sqrt{10}}{10} \\[5ex]
+            = \dfrac{3}{5} \\[5ex]
+
+            For\;\;\dfrac{\sin 2x - \cos x}{2\tan x + \sin 2x} \\[5ex]
+
+            \underline{\text{Numerator}} \\[3ex]
+            \sin 2x - \cos x \\[3ex]
+            = \dfrac{3}{5} - -\dfrac{3\sqrt{10}}{10} \\[5ex]
+            = \dfrac{3}{5} + \dfrac{3\sqrt{10}}{10} \\[5ex]
+            = \dfrac{6 + 3\sqrt{10}}{10} \\[5ex]
+            = \dfrac{3(2 + \sqrt{10})}{10} \\[5ex]
+
+            \underline{\text{Denominator}} \\[3ex]
+            2\tan x + \sin 2x \\[3ex]
+            = 2\left(\dfrac{1}{3}\right) + \dfrac{3}{5} \\[5ex]
+            = \dfrac{2}{3} + \dfrac{3}{5} \\[5ex]
+            = \dfrac{10 + 9}{15} \\[5ex]
+            = \dfrac{19}{15} \\[5ex]
+
+            \text{Numerator} \div \text{Denominator} \\[3ex]
+            = \dfrac{3(2 + \sqrt{10})}{10} \div \dfrac{19}{15} \\[5ex]
+            = \dfrac{3(2 + \sqrt{10})}{10} * \dfrac{15}{19} \\[5ex]
+            = \dfrac{9(2 + \sqrt{10})}{38}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionT2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionT3">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionT4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionT5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionT6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <button class="solutions" onclick="solutions('solutionT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionT7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionT8">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionT9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionT10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionT11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionT12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionT13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionT14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionT15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionT16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionT17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionT18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionT19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionT20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE-FurtherMath/Trigonometry.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionT21">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionT22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionT23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionT24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionT25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionT26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionT27">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionT28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionT30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionT32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionT33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionT34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionT36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionT37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionT38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionT40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/WASSCE-FurtherMath/Trigonometry.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT41')">Show/Hide Answer</button>
+          <div class="result" id="solutionT41">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT42')">Show/Hide Answer</button>
+          <div class="result" id="solutionT42">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT43')">Show/Hide Answer</button>
+          <div class="result" id="solutionT43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT44')">Show/Hide Answer</button>
+          <div class="result" id="solutionT44">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT45')">Show/Hide Answer</button>
+          <div class="result" id="solutionT45">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT46')">Show/Hide Answer</button>
+          <div class="result" id="solutionT46">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT47')">Show/Hide Answer</button>
+          <div class="result" id="solutionT47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT48')">Show/Hide Answer</button>
+          <div class="result" id="solutionT48">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT49')">Show/Hide Answer</button>
+          <div class="result" id="solutionT49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT50')">Show/Hide Answer</button>
+          <div class="result" id="solutionT50">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT51')">Show/Hide Answer</button>
+          <div class="result" id="solutionT51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT52')">Show/Hide Answer</button>
+          <div class="result" id="solutionT52">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- End Numbers 41 through 60 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

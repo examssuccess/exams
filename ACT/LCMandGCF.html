@@ -1,0 +1,1304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Least Common Multiple and Greatest Common Factor</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="These are the solutions to the ACT exam questions on the least common multiple (LCM) and greatest common factor (GCF) of terms.">
+
+  <meta name="keywords"
+    content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, LCM, 
+  Least Common Multiple, GCF, Greatest Common Factor, LCD, Least Common Denominator, GCD, Greatest Common Divisor, GCM, Greatest Common Measure">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Least Common Multiple (LCM) and Greatest Common Factor (GCF)</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Least
+        Common Multiple (LCM) and Greatest Common Factor (GCF). <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the Mathematics test of the ACT,
+        please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+        <br><br>
+        For the questions where we used the TI-84 Plus CE calculator, here are the basic steps to get the LCM and GCD.
+        <br>
+        Please note that GCF (Greatest Common Factor), GCD (Greatest Common Divisor), and GCM (Greatest Common Measure)
+        mean the same thing.
+        <br><br>
+        Step 1: <br>
+        <img src="images/LCMandGCF/Calculator-1st.png" alt="Calculator-1st">
+        <br><br>
+        Step 2: <br>
+        <img src="images/LCMandGCF/Calculator-2nd.png" alt="Calculator-2nd">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) What is the least common multiple of 50, 30, and 70?
+          <br><br>
+          $
+          F.\:\: 50 \\[3ex]
+          G.\:\: 105 \\[3ex]
+          H.\:\: 150 \\[3ex]
+          J.\:\: 1,050 \\[3ex]
+          K.\:\: 105,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN1')">Calculator Solution</button>
+          <div class="result" id="solutionN1">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 50, 30, 70 \\[3ex]
+            50 = \color{black}{2} * \color{darkblue}{5} * 5 \\[3ex]
+            30 = \color{black}{2} * 3 * \color{darkblue}{5} \\[3ex]
+            70 = \color{black}{2} * \color{darkblue}{5} * 7 \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{5} * 5 * 3 * 7 \\[3ex]
+            LCM = 1,050
+            $
+          </div>
+          <div class="result" id="solutionCN1">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number1.png" alt="Number1">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) If <i>x</i> and <i>y</i> are positive integers such that the greatest common factor of
+          $x^2y^2$ and $xy^3$ is 45, then which of the following could <i>y</i> equal?
+          <br><br>
+          $
+          A.\;\; 45 \\[3ex]
+          B.\;\; 15 \\[3ex]
+          C.\;\; 9 \\[3ex]
+          D.\;\; 5 \\[3ex]
+          E.\;\; 3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN2')">Show/Hide Answer</button>
+          <div class="result" id="solutionN2">
+            <br>
+            First, let us find the GCF of $x^2y^2$ and $xy^3$ <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            They are the only ones to be included in the calculation of the GCF.
+            <br><br>
+            $
+            x^2y^2 = \color{black}{x} * x * \color{darkblue}{y} * \color{purple}{y} \\[3ex]
+            xy^3 = \color{black}{x} * y * \color{darkblue}{y} * \color{purple}{y} \\[5ex]
+            GCF = \color{black}{x} * \color{darkblue}{y} * \color{purple}{y} \\[3ex]
+            GCF = xy^2 \\[3ex]
+            GCF = 45 \\[3ex]
+            \implies \\[3ex]
+            xy^2 = 45 \\[3ex]
+            $
+            Note: $y$ <u>must be squared</u> in order to compute the GCF <br>
+            Looking at the options: <br>
+            1 and 45 will not work. <br>
+            3 and 15 will not work. <br>
+            But 5 and 9 would work. Because 9 is a perfect square. <br>
+            9 is 3<sup>2</sup>
+            <br><br>
+            <i>
+              <u>Student:</u> Mr. C, how do you mean? <br>
+              May you explain? <br>
+              <u>Teacher:</u> Sure. <br>
+              Let us analyze each option
+            </i>
+            <br><br>
+            <b>A.</b> 45 <br>
+            45 is the GCF <br>
+            This option is incorrect because if $y$ is 45, then $y^2$ would be more than 45
+            <br><br>
+            <b>B.</b> 15 <br>
+            This is also incorrect because the square of 15 is greater than 45
+            <br><br>
+            <b>C.</b> 9 <br>
+            This is incorrect because the square of 9 is greater than 45
+            <br><br>
+            <b>D.</b> 5 <br>
+            This is incorrect because even if we square 5, which gives 25; there is no positive integer whose
+            product with
+            25 gives 45
+            <br><br>
+            $
+            Assume\;\; y = 5 \\[3ex]
+            y^2 = 5^2 = 25 \\[3ex]
+            x * 25 = 45 \\[3ex]
+            $
+            $x$ should be a positive integer, but it is not. It is a decimal. So, this option is incorrect.
+            <br><br>
+
+            <b>E.</b> 3
+            <br><br>
+            $
+            Assume\;\; y = 3 \\[3ex]
+            y^2 = 3^2 = 9 \\[3ex]
+            x * 9 = 45 \\[3ex]
+            $
+            This option is correct.
+            <br><br>
+            <i>
+              <u>Student:</u> I still don't get it. <br>
+              <u>Teacher:</u> Please attend the YouTube Livestream for verbal explanations.
+            </i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) What is the greatest common factor of 45, 50, and 84?
+          <br><br>
+          $
+          A.\;\; 0 \\[3ex]
+          B.\;\; 1 \\[3ex]
+          C.\;\; 2 \\[3ex]
+          D.\;\; 3 \\[3ex]
+          E.\;\; 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN3')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN3')">Calculator Solution</button>
+          <div class="result" id="solutionN3">
+            <br>
+            $
+            \underline{Prime\;\;Factorization\;\;Method} \\[3ex]
+            45 = 3 * 3 * 5 \\[3ex]
+            50 = 2 * 5 * 5 \\[3ex]
+            84 = 2 * 2 * 3 * 7 \\[3ex]
+            GCF = 1 \\[3ex]
+            $
+            This is because there is no other common factor of the three numbers. <br>
+            1 is a factor of everything because $1$ * any thing is that thing. <br>
+            1 was not listed in that method because it is not a prime number. <br>
+            However, 1 is a factor of those three numbers.
+          </div>
+          <div class="result" id="solutionCN3">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number3.png" alt="Number3">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) Two warning signs begin flashing at the same time. <br>
+          One sign flashes every 3 seconds, and the other sign flashes every 8 seconds. <br>
+          How many seconds elapse from the moment the 2 signs flash at the same time until they next flash at the
+          same time? <br><br>
+          $
+          F.\;\; 5 \\[3ex]
+          G.\;\; 5.5 \\[3ex]
+          H.\;\; 11 \\[3ex]
+          J.\;\; 12 \\[3ex]
+          K.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN4')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN4')">Calculator Solution</button>
+          <div class="result" id="solutionN4">
+            <br>
+            The question is asking for the Least Common Multiple (LCM) of 3 and 8
+            <br><br>
+            $
+            Numbers = 3, 8 \\[3ex]
+            3 = 3 \\[3ex]
+            8 = 2 * 2 * 2 \\[5ex]
+            LCM = 3 * 2 * 2 * 2 \\[3ex]
+            LCM = 24 \\[3ex]
+            $
+            24 seconds elapse from the moment the 2 signs flash at the same time until they next flash at the same time.
+          </div>
+          <div class="result" id="solutionCN4">
+            <br>
+            Please see Number (19.) and verify your answer with the calculator.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) What is the greatest common factor of 60, 84, and 126?
+          <br><br>
+          $
+          A.\;\; 12 \\[3ex]
+          B.\;\; 6 \\[3ex]
+          C.\;\; 3 \\[3ex]
+          D.\;\; 2 \\[3ex]
+          E.\;\; 1 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN5')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN5')">Calculator Solution</button>
+          <div class="result" id="solutionN5">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            They are the only ones to be included in the calculation of the GCF.
+            <br><br>
+            $
+            Numbers = 60, 84, 126 \\[3ex]
+            60 = \color{black}{2} * 2 * \color{darkblue}{3} * 5 \\[3ex]
+            84 = \color{black}{2} * 2 * \color{darkblue}{3} * 7 \\[3ex]
+            126 = \color{black}{2} * \color{darkblue}{3} * 3 * 7 \\[5ex]
+            GCF = \color{black}{2} * \color{darkblue}{3} \\[3ex]
+            GCF = 6
+            $
+          </div>
+          <div class="result" id="solutionCN5">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number5.png" alt="Number5">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) Two whole numbers have a greatest common factor of 6 and a least common multiple of 36. <br>
+          Which of the following pairs of whole numbers will satisfy the given conditions? <br><br>
+          $
+          F.\;\; 4 \;\;and\;\; 9 \\[3ex]
+          G.\;\; 9 \;\;and\;\; 12 \\[3ex]
+          H.\;\; 12 \;\;and\;\; 15 \\[3ex]
+          J.\;\; 12 \;\;and\;\; 18 \\[3ex]
+          K.\;\; 18 \;\;and\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN6')">Show/Hide Answer</button>
+          <div class="result" id="solutionN6">
+            <br>
+            Test each option
+            <br><br>
+            Option <b>F.</b> 4 and 9 <br>
+            6 is not a factor of either 4 or 9...NEXT
+            <br><br>
+            Option <b>G.</b> 9 and 12 <br>
+            6 is not a factor of 9...NEXT
+            <br><br>
+            Option <b>H.</b> 12 and 15 <br>
+            6 is not a factor of 15...NEXT
+            <br><br>
+            Option <b>J.</b> 12 and 18 <br>
+            6 is a factor of both <br>
+            Find the LCM
+            <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 12, 18 \\[3ex]
+            12 = \color{black}{2} * 2 * \color{darkblue}{3} \\[3ex]
+            18 = \color{black}{2} * \color{darkblue}{3} * 3 \\[3ex]
+            LCM = \color{black}{2} * \color{darkblue}{3} * 2 * 3 \\[3ex]
+            LCM = 36...STOP \\[3ex]
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) The least common multiple (LCM) of 2 numbers is 216. <br>
+          The larger of the 2 numbers is 108. <br>
+          What is the greatest value the other number can have?
+          <br><br>
+          $
+          A.\;\; 2 \\[3ex]
+          B.\;\; 6 \\[3ex]
+          C.\;\; 36 \\[3ex]
+          D.\;\; 54 \\[3ex]
+          E.\;\; 72 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN7')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN7')">Calculator Solution</button>
+          <div class="result" id="solutionN7">
+            <br>
+            Because the ACT is a timed test, my advice in solving this question is to begin with the highest
+            number <br>
+            Why? Because the question is asking for the greatest value. <br>
+            Begin with the highest number and if it does not work, try the next higher number, and keep going
+            that way through
+            the options. <br>
+            The highest number = 72 <br>
+            So, let us find the LCM of 108 and 72
+            <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 108, 72 \\[3ex]
+            108 = \color{black}{2} * \color{darkblue}{2} * 3 * \color{purple}{3} * \color{green}{3} \\[3ex]
+            72 = \color{black}{2} * \color{darkblue}{2} * 2 * \color{purple}{3} * \color{green}{3} \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{2} * \color{purple}{3} * \color{green}{3} * 3 * 2 \\[3ex]
+            LCM = 216 \\[3ex]
+            $
+            This works. <br>
+            The other number is 72
+          </div>
+          <div class="result" id="solutionCN7">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number7.png" alt="Number7">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) One welcome sign flashes every 8 seconds, and another welcome sign flashes every 12
+          seconds. <br>
+          At a certain instant, the 2 signs flash at the same time. <br>
+          How many seconds elapse until the 2 signs next flash at the same time?
+          <br><br>
+          $
+          A.\;\; 4 \\[3ex]
+          B.\;\; 10 \\[3ex]
+          C.\;\; 20 \\[3ex]
+          D.\;\; 24 \\[3ex]
+          E.\;\; 96 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN8')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN8')">Calculator Solution</button>
+          <div class="result" id="solutionN8">
+            <br>
+            We need to find the Least Common Multiple (LCM) of 8 and 12 <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 8, 12 \\[3ex]
+            8 = \color{black}{2} * \color{darkblue}{2} * 2 \\[3ex]
+            12 = \color{black}{2} * \color{darkblue}{2} * 3 \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{2} * 2 * 3 \\[3ex]
+            LCM = 24 \\[3ex]
+            $
+            24 seconds elapse until the 2 signs next flash at the same time
+          </div>
+          <div class="result" id="solutionCN8">
+            <br>
+            Please see Number (21.) and verify your answer with the calculator.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) What is the least common multiple of 70, 60, and 50?
+          <br><br>
+          $
+          F.\:\: 60 \\[3ex]
+          G.\:\: 180 \\[3ex]
+          H.\:\: 210 \\[3ex]
+          J.\:\: 2,100 \\[3ex]
+          K.\:\: 210,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN9')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN9')">Calculator Solution</button>
+          <div class="result" id="solutionN9">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 70, 60, 50 \\[3ex]
+            70 = \color{black}{2} * \color{darkblue}{5} * 7 \\[3ex]
+            60 = \color{black}{2} * 2 * 3 * \color{darkblue}{5} \\[3ex]
+            50 = \color{black}{2} * \color{darkblue}{5} * 5 \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{5} * 7 * 2 * 3 * 5 \\[3ex]
+            LCM = 2,100
+            $
+          </div>
+          <div class="result" id="solutionCN9">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number9.png" alt="Number9">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Rya and Sampath start running laps from the same starting line at the same time and in
+          the same direction on a certain indoor track. <br>
+          Rya completes one lap in 16 seconds, and Sampath completes the same lap in 28 seconds. <br>
+          Both continue running at their same respective rates and in the same direction for 10 minutes. <br>
+          What is the fewest number of seconds after starting that Rya and Sampath will again be at their starting
+          line at the same time?
+          <br><br>
+          $
+          F.\:\: 88 \\[3ex]
+          G.\:\: 112 \\[3ex]
+          H.\:\: 120 \\[3ex]
+          J.\:\: 220 \\[3ex]
+          K.\:\: 448 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN10')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN10')">Calculator Solution</button>
+          <div class="result" id="solutionN10">
+            <br>
+            The question is simply asking for the LCM (<b>least</b> common multiple) of 16 and 28 because of
+            <b>fewest number of seconds</b> <br>
+            Keep in mind that it is not just the common multiple of 16 and 28, but the <b>least</b> common multiple
+            <br><br>
+            $
+            \underline{Prime\;\;Factorization\;\;Method} \\[3ex]
+            16 = \color{black}{2} * \color{darkblue}{2} * 2 * 2 \\[3ex]
+            28 = \color{black}{2} * \color{darkblue}{2} * 7 \\[3ex]
+            LCM = \color{black}{2} * \color{darkblue}{2} * 2 * 2 * 7 \\[3ex]
+            LCM = 112 \\[3ex]
+            $
+            The next time Rya and Sampath will again be at their starting line is 112 seconds
+          </div>
+          <div class="result" id="solutionCN10">
+            <br>
+            Please see Number (21.) and verify your answer with the calculator.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) What is the least common multiple of 60, 70, and 90?
+          <br><br>
+          $
+          F.\:\: 60 \\[3ex]
+          G.\:\: 220 \\[3ex]
+          H.\:\: 630 \\[3ex]
+          J.\:\: 1,260 \\[3ex]
+          K.\:\: 378,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN11')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN11')">Calculator Solution</button>
+          <div class="result" id="solutionN11">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 60, 70, 90 \\[3ex]
+            60 = \color{black}{2} * 2 * \color{purple}{3} * \color{darkblue}{5} \\[3ex]
+            70 = \color{black}{2} * \color{darkblue}{5} * 7 \\[3ex]
+            90 = \color{black}{2} * 3 * \color{purple}{3} * \color{darkblue}{5} \\[5ex]
+            LCM = \color{black}{2} * \color{purple}{3} * \color{darkblue}{5} * 2 * 7 * 3 \\[3ex]
+            LCM = 1,260
+            $
+          </div>
+          <div class="result" id="solutionCN11">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number11.png" alt="Number11">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) One neon sign flashes every 6 seconds. <br>
+          Another neon sign flashes every 8 seconds. <br>
+          If they flash together and you begin counting seconds, how many seconds after they flash together will they
+          next flash together?
+          <br><br>
+          $
+          F.\;\; 48 \\[3ex]
+          G.\;\; 24 \\[3ex]
+          H.\;\; 14 \\[3ex]
+          J.\;\; 7 \\[3ex]
+          K.\;\; 2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN12')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN12')">Calculator Solution</button>
+          <div class="result" id="solutionN12">
+            <br>
+            Similar to Question (19.); the question is asking for the Least Common Multiple (LCM) of 6 and 8
+            <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 6, 8 \\[3ex]
+            6 = \color{black}{2} * 3 \\[3ex]
+            8 = \color{black}{2} * 2 * 2 \\[5ex]
+            LCM = \color{black}{2} * 3 * 2 * 2 \\[3ex]
+            LCM = 24 \\[3ex]
+            $
+            24 seconds after they flash together, they will next flash together
+          </div>
+          <div class="result" id="solutionCN12">
+            <br>
+            Please see Number (19.) and verify your answer with the calculator.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) What is the least common multiple of the numbers 1, 2, 3, 4, 5, and 6?
+          <br><br>
+          $
+          A.\;\; 720 \\[3ex]
+          B.\;\; 180 \\[3ex]
+          C.\;\; 60 \\[3ex]
+          D.\;\; 30 \\[3ex]
+          E.\;\; 1 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN13')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN13')">Calculator Solution</button>
+          <div class="result" id="solutionN13">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 1, 2, 3, 4, 5, 6 \\[3ex]
+            1 = 1 \\[3ex]
+            2 = \color{black}{2} \\[3ex]
+            3 = \color{darkblue}{3} \\[3ex]
+            4 = \color{black}{2} * 2 \\[3ex]
+            5 = 5 \\[3ex]
+            6 = \color{black}{2} * \color{darkblue}{3} \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{3} * 1 * 2 * 5 \\[3ex]
+            LCM = 60
+            $
+          </div>
+          <div class="result" id="solutionCN13">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number13.png" alt="Number13">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Two whole numbers have a greatest common factor of 4 and a least common multiple of 24. <br>
+          Which of the following pairs of whole numbers will satisfy the given conditions?
+          <br><br>
+          $
+          F.\;\; 4 \;\;and\;\; 8 \\[3ex]
+          G.\;\; 4 \;\;and\;\; 12 \\[3ex]
+          H.\;\; 8 \;\;and\;\; 12 \\[3ex]
+          J.\;\; 8 \;\;and\;\; 24 \\[3ex]
+          K.\;\; 12 \;\;and\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN14')">Show/Hide Answer</button>
+          <div class="result" id="solutionN14">
+            <br>
+            Test each option
+            <br><br>
+            Option <b>F.</b> 4 and 8 <br>
+            4 is the greatest common factor of 4 and 8 <br>
+            However, 8 is the least common multiple of 4 and 8 <br>
+            This option does not work...NEXT
+            <br><br>
+            Option <b>G.</b> 4 and 12 <br>
+            4 is the greatest common factor of 4 and 12 <br>
+            However, 12 is the least common multiple of 4 and 12 <br>
+            This option does not work...NEXT
+            <br><br>
+            Option <b>H.</b> 8 and 12 <br>
+            4 is the greatest common factor of 4 and 12 <br>
+            Let us find the least common multiple of 8 and 12
+            <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 8, 12 \\[3ex]
+            8 = \color{black}{2} * \color{black}{2} * 2 \\[3ex]
+            12 = \color{black}{2} * \color{black}{2} * 3 \\[3ex]
+            LCM = \color{black}{2} * \color{black}{2} * 2 * 3 \\[3ex]
+            LCM = 24...STOP \\[3ex]
+            $
+            Option <b>H.</b> is the correct option.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) What is the least common multiple of 30, 20, and 70?
+          <br><br>
+          $
+          F.\:\: 40 \\[3ex]
+          G.\:\: 42 \\[3ex]
+          H.\:\: 120 \\[3ex]
+          J.\:\: 420 \\[3ex]
+          K.\:\: 42,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN15')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN15')">Calculator Solution</button>
+          <div class="result" id="solutionN15">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 30, 20, 70 \\[3ex]
+            30 = \color{black}{2} * 3 * \color{darkblue}{5} \\[3ex]
+            20 = \color{black}{2} * 2 * \color{darkblue}{5} \\[3ex]
+            70 = \color{black}{2} * \color{darkblue}{5} * 7 \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{5} * 3 * 2 * 7 \\[3ex]
+            LCM = 420
+            $
+          </div>
+          <div class="result" id="solutionCN15">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number15.png" alt="Number15">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) During a promotion, a radio station gave every 35th caller a T-shirt and gave every 50th caller a
+          concert ticket. <br>
+          Given that 1,000 people called during the promotion, how many callers received both a T-shirt <i>and</i> a
+          concert ticket?
+          <br><br>
+          $
+          A.\;\; 2 \\[3ex]
+          B.\;\; 5 \\[3ex]
+          C.\;\; 35 \\[3ex]
+          D.\;\; 200 \\[3ex]
+          E.\;\; 350 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN16')">Show/Hide Answer</button>
+          <div class="result" id="solutionN16">
+            <br>
+            The question is asking for the Least Common Multiple (LCM) of 35 and 50 up until 1000 <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 35, 50 \\[3ex]
+            35 = \color{black}{5} * 7 \\[3ex]
+            50 = 2 * \color{black}{5} * 5 \\[5ex]
+            LCM = 2 * \color{black}{5} * 7 * 5 \\[3ex]
+            LCM = 350 \\[3ex]
+            $
+            The 350th person will receive both a T-shirt and a concert ticket <br>
+            The 700th person will receive both a T-shirt and a concert ticket <br>
+            The next person (700 + 350 = 1050th person) is more than 1000, hence only <b>2 people</b> will receive both
+            a
+            T-shirt and a concert ticket.
+            <br><br>
+            You may also find the quotient of 1000 and 350 (do not include the remainder because human beings are whole
+            number people). <br>
+            1000 &div; 350 = 2.857142857
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) What is the least common multiple of 80, 70, and 30?
+          <br><br>
+          $
+          F.\:\: 60 \\[3ex]
+          G.\:\: 168 \\[3ex]
+          H.\:\: 180 \\[3ex]
+          J.\:\: 1,680 \\[3ex]
+          K.\:\: 168,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN17')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN17')">Calculator Solution</button>
+          <div class="result" id="solutionN17">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 80, 70, 30 \\[3ex]
+            80 = \color{black}{2} * 2 * 2 * 2 * \color{darkblue}{5} \\[3ex]
+            70 = \color{black}{2} * \color{darkblue}{5} * 7 \\[3ex]
+            30 = \color{black}{2} * 3 * \color{darkblue}{5} \\[5ex]
+            LCM = \color{black}{2} * \color{darkblue}{5} * 2 * 2 * 2 * 7 * 3 \\[3ex]
+            LCM = 1680
+            $
+          </div>
+          <div class="result" id="solutionCN17">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number17.png" alt="Number17">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) One neon sign flashes every 6 seconds. <br>
+          Another neon sign flashes every 8 seconds. <br>
+          Given that the signs sometimes flash simultaneously how many seconds are there between consecutive
+          simultaneous flashings?
+          <br><br>
+          $
+          F.\;\; 2 \\[3ex]
+          G.\;\; 7 \\[3ex]
+          H.\;\; 14 \\[3ex]
+          J.\;\; 24 \\[3ex]
+          K.\;\; 48 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN18')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN18')">Calculator Solution</button>
+          <div class="result" id="solutionN18">
+            <br>
+            Similar to Question (19.); the question is asking for the Least Common Multiple (LCM) of 6 and 8
+            <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 6, 8 \\[3ex]
+            6 = \color{black}{2} * 3 \\[3ex]
+            8 = \color{black}{2} * 2 * 2 \\[5ex]
+            LCM = \color{black}{2} * 3 * 2 * 2 \\[3ex]
+            LCM = 24 \\[3ex]
+            $
+            There are 24 seconds between consecutive simultaneous flashings.
+          </div>
+          <div class="result" id="solutionCN18">
+            <br>
+            Please see Number (19.) and verify your answer with the calculator.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) One caution sign flashes every 4 seconds, and another caution sign flashes every 10 seconds. <br>
+          At a certain instant, the 2 signs flash at the same time. <br>
+          How many seconds elapse until the 2 signs next flash at the same time?
+          <br><br>
+          $
+          A.\;\; 6 \\[3ex]
+          B.\;\; 7 \\[3ex]
+          C.\;\; 14 \\[3ex]
+          D.\;\; 20 \\[3ex]
+          E.\;\; 40 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN19')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN19')">Calculator Solution</button>
+          <div class="result" id="solutionN19">
+            <br>
+            The question is asking for the Least Common Multiple (LCM) of 4 and 10 <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 4, 10 \\[3ex]
+            4 = \color{black}{2} * 2 \\[3ex]
+            10 = \color{black}{2} * 5 \\[5ex]
+            LCM = \color{black}{2} * 2 * 5 \\[3ex]
+            LCM = 20 \\[3ex]
+            $
+            20 seconds will elapse until the 2 signs next flash at the same time.
+          </div>
+          <div class="result" id="solutionCN19">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number19.png" alt="Number19">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) What is the least common denominator of the 3 fractions $\dfrac{2}{15}, \dfrac{5}{6}, \;\;and\;\;
+          \dfrac{7}{8}$ ?
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 8 \\[3ex]
+          H.\;\; 15 \\[3ex]
+          J.\;\; 90 \\[3ex]
+          K.\;\; 120 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN20')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN20')">Calculator Solution</button>
+          <div class="result" id="solutionN20">
+            <br>
+            The Least Common Denominator (LCD) of the 3 fractions is the Least Common Multiple (LCM) of the 3 fractions.
+            <br>
+            So, let us find the LCM of 15, 6, and 8 <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 80, 70, 30 \\[3ex]
+            15 = \color{black}{3} * 5 \\[3ex]
+            6 = \color{darkblue}{2} * \color{black}{3} \\[3ex]
+            8 = \color{darkblue}{2} * 2 * 2 \\[5ex]
+            LCM = \color{black}{3} * \color{darkblue}{2} * 5 * 2 * 2 \\[3ex]
+            LCM = 120
+            $
+          </div>
+          <div class="result" id="solutionCN20">
+            <br>
+            Please see the Calculator Solution of Number (17.) as an example.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/LCMandGCF.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) Mary takes 2 medications throughout the day and night. <br>
+          One medication is to be taken every 6 hours and the other is to be taken every 4 hours. <br>
+          If Mary begins taking both medications at 7:00 A.M. and takes both medications on schedule, how many
+          hours later will
+          it be when she next takes both medications at the same time?
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 9 \\[3ex]
+          H.\;\; 10 \\[3ex]
+          J.\;\; 12 \\[3ex]
+          K.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN21')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN21')">Calculator Solution</button>
+          <div class="result" id="solutionN21">
+            <br>
+            We need to find the Least Common Multiple (LCM) of 6 and 4 <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest. <br><br>
+            $
+            Numbers = 6, 4 \\[3ex]
+            6 = \color{black}{2} * 3 \\[3ex]
+            4 = \color{black}{2} * 2 \\[5ex]
+            LCM = \color{black}{2} * 3 * 2 \\[3ex]
+            LCM = 12 \\[3ex]
+            $
+            12 hours later, Mary will take both medications at the same time. <br><br>
+            <i>
+              If we are asked to find the actual time, then it will be: <br>
+              7:00 AM + 12 hours <br>
+              = 19 <br>
+              = 7:00 PM <br>
+              At 7:00 PM, Mary will take both medications at the same time.
+            </i>
+          </div>
+          <div class="result" id="solutionCN21">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number21.png" alt="Number21">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) One construction sign flashes every 6 seconds, and another construction sign flashes every 10 seconds.
+          <br>
+          At a certain instant, the 2 signs flash at the same time. <br>
+          How many seconds elapse until the 2 signs next flash at the same time?
+          <br><br>
+          $
+          A.\;\; 4 \\[3ex]
+          B.\;\; 8 \\[3ex]
+          C.\;\; 16 \\[3ex]
+          D.\;\; 30 \\[3ex]
+          E.\;\; 60 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN22')">Show/Hide Answer</button>
+          <div class="result" id="solutionN22">
+            <br>
+            The question wants us to find the Least Common Multiple (LCM) of 6 and 10 <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 6, 10 \\[3ex]
+            6 = \color{black}{2} * 3 \\[3ex]
+            10 = \color{black}{2} * 5 \\[5ex]
+            LCM = \color{black}{2} * 3 * 5 \\[3ex]
+            LCM = 30 \\[3ex]
+            $
+            30 seconds elapse before the 2 signs next flash at the same time.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) The greatest common divisor of 84, 90, and 66 (that is, the largest exact divisor of all three numbers)
+          is:
+          <br><br>
+          $
+          A.\;\; 6 \\[3ex]
+          B.\;\; 12 \\[3ex]
+          C.\;\; 18 \\[3ex]
+          D.\;\; 36 \\[3ex]
+          E.\;\; 90 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN23')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN23')">Calculator Solution</button>
+          <div class="result" id="solutionN23">
+            <br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            They are the only ones to be included in the calculation of the GCF.
+            <br><br>
+            $
+            Numbers = 84, 90, 66 \\[3ex]
+            84 = \color{black}{2} * 2 * \color{darkblue}{3} * 7 \\[3ex]
+            90 = \color{black}{2} * \color{darkblue}{3} * 3 * 5 \\[3ex]
+            66 = \color{black}{2} * \color{darkblue}{3} * 11 \\[5ex]
+            GCF = \color{black}{2} * \color{darkblue}{3} \\[3ex]
+            GCF = 6
+            $
+          </div>
+          <div class="result" id="solutionCN23">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number23.png" alt="Number23">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) One neon sign flashes every 4 seconds, and another neon sign flashes every 6 seconds. <br>
+          At a certain instant, the 2 signs flash at the same time. <br>
+          How many seconds elapse until the 2 signs next flash at the same time?
+          <br><br>
+          $
+          F.\;\; 2 \\[3ex]
+          G.\;\; 5 \\[3ex]
+          H.\;\; 10 \\[3ex]
+          J.\;\; 12 \\[3ex]
+          K.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionN24')">Show/Hide Answer</button>
+          <div class="result" id="solutionN24">
+            <br>
+            The question is asking for the Least Common Multiple (LCM) of 4 and 6 <br><br>
+            The colors besides red indicate the common factors that should be counted only one time. <br>
+            Begin with them in the multiplication for the LCM. <br>
+            Then, include the rest.
+            <br><br>
+            $
+            Numbers = 4, 10 \\[3ex]
+            4 = \color{black}{2} * 2 \\[3ex]
+            6 = \color{black}{2} * 3 \\[5ex]
+            LCM = \color{black}{2} * 2 * 3 \\[3ex]
+            LCM = 12 \\[3ex]
+            $
+            12 seconds will elapse until the 2 signs next flash at the same time.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionN25')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN25')">Calculator Solution</button>
+          <div class="result" id="solutionN25">
+            <br>
+
+
+          </div>
+          <div class="result" id="solutionCN25">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number25.png" alt="Number25">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <button class="solutions" onclick="solutions('solutionN26')">Show/Hide Answer</button>
+          <div class="result" id="solutionN26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionN27')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN27')">Calculator Solution</button>
+          <div class="result" id="solutionN27">
+            <br>
+
+
+          </div>
+          <div class="result" id="solutionCN27">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number27.png" alt="Number27">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <button class="solutions" onclick="solutions('solutionN28')">Show/Hide Answer</button>
+          <div class="result" id="solutionN28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionN29')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCN29')">Calculator Solution</button>
+          <div class="result" id="solutionN29">
+            <br>
+
+
+          </div>
+          <div class="result" id="solutionCN29">
+            <br>
+            <img src="images/LCMandGCF/Answers/Number29.png" alt="Number29">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <button class="solutions" onclick="solutions('solutionN30')">Show/Hide Answer</button>
+          <div class="result" id="solutionN30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

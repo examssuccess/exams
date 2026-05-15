@@ -1,0 +1,2783 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Mensuration</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on mensuration.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, ACT, 
+  American College Testing, Arithmetic, Algebra, mensuration, measurement, geometry, trigonometry, mathematical literacy, quantitative literacy, length, width, volume,
+  area, perimeter, surface area, slant height, frustrum, base area, perpendicular height, triangle, square, rectangle, 
+  parallelogram, rhombus, diamond, kite, rhombi, circle, cube, cuboid, cone, two-dimensional figure, shape, prism, 
+  trapezium, trapezoid, pyramid, cylinder, total surface area, curved surface area, square-based pyramid, composite shape,
+  triangular-based pyramid, Hero's formula, Heron's formula">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Mensuration</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics in Mensuration. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas</h2>
+
+      <div class="w3-row-padding">
+        <h5>Right Triangle</h5>
+        <p>
+          $
+          perpendicular\:\:height = height \\[3ex]
+          Area = \dfrac{1}{2} * base * height \\[5ex]
+          height = \dfrac{2 * Area}{base} \\[5ex]
+          base = \dfrac{2 * Area}{height} \\[5ex]
+          hypotenuse^2 = height^2 + base^2...Pythagorean\:\:Theorem \\[3ex]
+          hypotenuse = \sqrt{height^2 + base^2} \\[3ex]
+          height = \sqrt{hypotenuse^2 - base^2} \\[3ex]
+          base = \sqrt{hypotenuse^2 - height^2} \\[3ex]
+          Perimeter = hypotenuse + height + base \\[3ex]
+          Area = \dfrac{1}{2} * height * base * \sin (hypotenuseAngle) \\[5ex]
+          Area = \dfrac{1}{2} * height * hypotenuse * \sin (baseAngle) \\[5ex]
+          Area = \dfrac{1}{2} * base * hypotenuse * \sin (heightAngle) \\[5ex]
+          Semiperimeter = \dfrac{height + base + hypotenuse}{2} \\[5ex]
+          Semiperimeter - height = firstdifference \\[3ex]
+          Semiperimeter - base = seconddifference \\[3ex]
+          Semiperimeter - hypotenuse = thirddifference \\[3ex]
+          Area = \sqrt{Semiperimeter * firstdifference * seconddifference *
+          thirddifference}...Hero's\:\:Formula\:\:or\:\:Heron's\:\:Formula \\[5ex]
+          hypotenuse = {Perimeter^2 - 4 * Area}{2 * Perimeter} \\[5ex]
+          base = \dfrac{(Perimeter - hypotenuse) \pm Math.sqrt((hypotenuse - Perimeter)^2 - 8 * Area)}{2} \\[5ex]
+          height = \dfrac{2 * Area}{base}
+          $
+        </p>
+        <br>
+        <h5>Triangle</h5>
+        <p>
+          $
+          Perimeter = firstside + secondside + thirdside \\[5ex]
+          Area = \dfrac{1}{2} * firstside * secondside * \sin (thirdAngle) \\[5ex]
+          Area = \dfrac{1}{2} * firstside * thirdside * \sin (secondAngle) \\[5ex]
+          Area = \dfrac{1}{2} * secondside * thirdside * \sin (firstAngle) \\[5ex]
+          Semiperimeter = \dfrac{firstside + secondside + thirdside}{2} \\[5ex]
+          Semiperimeter - firstside = firstdifference \\[3ex]
+          Semiperimeter - secondside = seconddifference \\[3ex]
+          Semiperimeter - thirdside = thirddifference \\[3ex]
+          Area = \sqrt{Semiperimeter * firstdifference * seconddifference *
+          thirddifference}...Hero's\:\:Formula\:\:or\:\:Heron's\:\:Formula \\[5ex]
+          \underline{Cosine\:\:Law} \\[3ex]
+          firstside^2 = secondside^2 + thirdside^2 - 2 * secondside * thirdside * \cos (firstAngle) \\[3ex]
+          secondside^2 = firstside^2 + thirdside^2 - 2 * firstside * thirdside * \cos (secondAngle) \\[3ex]
+          thirdside^2 = firstside^2 + secondside^2 - 2 * firstside * secondside * \cos (thirdAngle) \\[5ex]
+          firstAngle = \cos^{-1} \left(\dfrac{secondside^2 + thirdside^2 - firstside^2}{2 * secondside *
+          thirdside}\right) \\[5ex]
+          secondAngle = \cos^{-1} \left(\dfrac{firstside^2 + thirdside^2 - secondside^2}{2 * firstside *
+          thirdside}\right) \\[5ex]
+          thirdAngle = \cos^{-1} \left(\dfrac{firstside^2 + secondside^2 - thirdside^2}{2 * firstside *
+          secondside}\right) \\[7ex]
+          \underline{\text{Area of a Triangle given the vertices}} \\[3ex]
+          \text{Let the vertices be:} \\[3ex]
+          Vertex\;1:\;\;(x_1, y_1) \\[4ex]
+          Vertex\;2:\;\;(x_2, y_2) \\[4ex]
+          Vertex\;3:\;\;(x_3, y_3) \\[4ex]
+          Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)|
+          $
+        </p>
+        <br>
+        <h5>Insribed Triangle (Circumscribed Circle)</h5>
+        <p>
+          $
+          Circumradius = \dfrac{firstside \cdot secondside \cdot thirdside}{4 \cdot Area}
+
+
+
+          $
+        </p>
+        <br>
+        <h5>Square</h5>
+        <p>
+          $
+          side = length = width = height \\[3ex]
+          Area = side^2 \\[3ex]
+          side = \sqrt{Area} \\[3ex]
+          Perimeter = 4 * side \\[3ex]
+          side = \dfrac{Perimeter}{4} \\[5ex]
+          diagonal = side * \sqrt{2} \\[3ex]
+          side = \dfrac{diagonal * \sqrt{2}}{2} \\[5ex]
+          Area = \dfrac{Perimeter^2}{16} \\[5ex]
+          Perimeter = 4 * \sqrt{Area} \\[3ex]
+          Area = \dfrac{diagonal^2}{2} \\[5ex]
+          diagonal = \sqrt{2 * Area} \\[3ex]
+          Perimeter = 2 * diagonal * \sqrt{2} \\[3ex]
+          diagonal = \dfrac{Perimeter * \sqrt{2}}{4}
+          $
+        </p>
+        <br>
+        <h5>Rectangle</h5>
+        <p>
+          $
+          Area = length * width \\[3ex]
+          length = \dfrac{Area}{width} \\[5ex]
+          width = \dfrac{Area}{length} \\[5ex]
+          Area = \dfrac{(length * Perimeter) - (2 * length^2)}{2} \\[5ex]
+          Area = \dfrac{(width * Perimeter) - (2 * width^2)}{2} \\[5ex]
+          Perimeter = 2(length + width) \\[3ex]
+          length = \dfrac{Perimeter - 2 * width}{2} \\[5ex]
+          width = \dfrac{Perimeter - 2 * length}{2} \\[5ex]
+          Perimeter = \dfrac{2(length^2 + Area)}{length} \\[5ex]
+          Perimeter = \dfrac{2(width^2 + Area)}{width} \\[5ex]
+          diagonal = \sqrt{length^2 + width^2} \\[4ex]
+          length = \sqrt{diagonal^2 - width^2} \\[4ex]
+          width = \sqrt{diagonal^2 - length^2} \\[4ex]
+          diagonal = \dfrac{\sqrt{length^4 + Area^2}}{length} \\[5ex]
+          diagonal = \dfrac{\sqrt{width^4 + Area^2}}{width} \\[5ex]
+          diagonal = \dfrac{\sqrt{(Perimeter^2) + (5 * length^2) - (4 * Perimeter * length)}}{2} \\[5ex]
+          diagonal = \dfrac{\sqrt{(Perimeter^2) + (5 * width^2) - (4 * Perimeter * width)}}{2}
+          $
+        </p>
+        <br>
+        <h5>Circle</h5>
+        <p>
+          $
+          Area = A \\[3ex]
+          Circumference = C \\[3ex]
+          Radius = r \\[3ex]
+          Diameter = d \\[3ex]
+          d = 2r \\[3ex]
+          r = \dfrac{d}{2} \\[5ex]
+          A = \pi r^2 \\[3ex]
+          A = \dfrac{\pi d^2}{4} \\[5ex]
+          C = 2\pi r \\[3ex]
+          C = \pi d \\[3ex]
+          r = \dfrac{\sqrt{A\pi}}{\pi} \\[5ex]
+          r = \dfrac{C}{2\pi} \\[5ex]
+          d = \dfrac{2\sqrt{A\pi}}{\pi} \\[5ex]
+          r = \dfrac{C}{\pi} \\[5ex]
+          A = \dfrac{C^2}{4\pi} \\[5ex]
+          C = 2\sqrt{A\pi}
+          $
+        </p>
+        <br>
+        <h5>Cube</h5>
+        <p>
+          6 square faces <br>
+          12 edges
+          <br><br>
+          $
+          edge = side = length = width = height \\[3ex]
+          Surface\:\:Area = 6 * edge^2 \\[3ex]
+          edge = \sqrt{\dfrac{Surface\:\:Area}{6}} \\[5ex]
+          Volume = edge^3 \\[3ex]
+          edge = \sqrt[3]{Volume} \\[3ex]
+          Volume = \dfrac{edge * Surface\:\: Area}{6} \\[5ex]
+          edge = \dfrac{6 * Volume}{Surface\:\:Area} \\[5ex]
+          Surface\:\:Area = \dfrac{6 * Volume}{edge} \\[5ex]
+          Volume = \dfrac{Surface\:\:Area * \sqrt{6 * Surface\:\:Area}}{36} \\[5ex]
+          edge = \dfrac{diagonal * \sqrt{3}}{3} \\[5ex]
+          diagonal = \sqrt{3} * edge \\[3ex]
+          Surface\:\:Area = 2 * diagonal^2 \\[3ex]
+          diagonal = \dfrac{\sqrt{2 * Surface\:\:Area}}{2} \\[5ex]
+          Volume = \dfrac{diagonal^3 * \sqrt{3}}{9} \\[5ex]
+          diagonal = \sqrt{3} * \sqrt[3]{Volume}
+          $
+        </p>
+        <br>
+        <h5>Cuboid (Right Rectangular Prism)</h5>
+        <p>
+          $
+          Volume = Length \cdot Width \cdot Height \\[3ex]
+          $
+        </p>
+        <br>
+        <h5>Right Cone</h5>
+        <p>
+          Curved Surface Area = Lateral Surface Area <br>
+          Height = Perpendicular Height <br><br>
+          $
+          Volume\:\:of\:\:Cone = \dfrac{1}{3} * Volume\:\:of\:\:Cylinder \\[5ex]
+          Lateral\:\:Surface\:\:Area = LSA \\[3ex]
+          Base\:\:Area = BA \\[3ex]
+          Total\:\:Surface\:\:Area = TSA \\[3ex]
+          Volume = V \\[3ex]
+          Diameter = d \\[3ex]
+          Radius = r \\[3ex]
+          Height = h \\[3ex]
+          Slant Height = l \\[3ex]
+          r = \dfrac{d}{2} \\[5ex]
+          d = 2r \\[3ex]
+          l = \sqrt{h^2 + r^2} \\[3ex]
+          l = \dfrac{\sqrt{4h^2 + d^2}}{2} \\[5ex]
+          h = \sqrt{l^2 - r^2} \\[3ex]
+          h = \dfrac{\sqrt{4l^2 - d^2}}{2} \\[5ex]
+          r = \sqrt{l^2 - h^2} \\[3ex]
+          d = 2 * \sqrt{l^2 - h^2} \\[3ex]
+          BA = \pi r^2 \\[3ex]
+          r = \dfrac{\sqrt{BA * \pi}}{\pi} \\[5ex]
+          BA = \dfrac{\pi d^2}{4} \\[5ex]
+          d = \dfrac{2\sqrt{BA * \pi}}{\pi} \\[5ex]
+          LSA = \pi rl \\[3ex]
+          LSA = \dfrac{\pi dl}{2} \\[5ex]
+          l = \dfrac{LSA}{\pi r} \\[5ex]
+          LSA = \pi r\sqrt{h^2 + r^2} \\[3ex]
+          h = \dfrac{\sqrt{LSA^2 - \pi^2 r^4}}{\pi r} \\[5ex]
+          TSA = BA + LSA \\[3ex]
+          TSA = \pi r(r + l) \\[3ex]
+          l = \dfrac{TSA - \pi r^2}{\pi r} \\[5ex]
+          TSA = \dfrac{\pi d(d + 2l)}{4} \\[5ex]
+          l = \dfrac{4 * TSA - \pi d^2}{2\pi d} \\[5ex]
+          r = \dfrac{-\pi l \pm \sqrt{\pi^2 l^2 + 4\pi * TSA}}{2\pi} \\[5ex]
+          TSA = \pi r(r + \sqrt{h^2 + r^2}) \\[3ex]
+          h = \dfrac{\sqrt{TSA(TSA - 2\pi r^2)}}{\pi r} \\[5ex]
+          V = \dfrac{BA * h}{3} \\[5ex]
+          V = \dfrac{\pi r^2h}{3} \\[5ex]
+          V = \dfrac{\pi hd^2}{12} \\[5ex]
+          V = \dfrac{\pi h(l^2 - h^2)}{3} \\[5ex]
+          h = \dfrac{3V}{\pi r^2} \\[5ex]
+          r = \dfrac{\sqrt{3V\pi h}}{\pi h}
+          $
+        </p>
+        <br>
+        <h5>Right Cylinder</h5>
+        <p>
+          Curved Surface Area = Lateral Surface Area <br>
+          Height = Perpendicular Height <br><br>
+          $
+          Volume\:\:of\:\:Cylinder = 3 * Volume\:\:of\:\:Cone \\[3ex]
+          Lateral\:\:Surface\:\:Area = LSA \\[3ex]
+          Base\:\:Area = BA \\[3ex]
+          Total\:\:Surface\:\:Area = TSA \\[3ex]
+          Volume = V \\[3ex]
+          Diameter = d \\[3ex]
+          Radius = r \\[3ex]
+          Height = h \\[3ex]
+          r = \dfrac{d}{2} \\[5ex]
+          d = 2r \\[3ex]
+          LSA = 2\pi rh \\[3ex]
+          r = \dfrac{LSA}{2\pi h} \\[5ex]
+          h = \dfrac{LSA}{2\pi r} \\[5ex]
+          LSA = \pi dh \\[3ex]
+          h = \dfrac{LSA}{\pi d} \\[5ex]
+          d = \dfrac{LSA}{\pi h} \\[5ex]
+          BA = \pi r^2 \\[3ex]
+          r = \dfrac{\sqrt{\pi BA}}{\pi} \\[5ex]
+          r = \dfrac{1}{\pi} * \sqrt{\dfrac{\pi(TSA - 2 * LSA)}{2}} \\[5ex]
+          BA = \dfrac{\pi d^2}{4} \\[5ex]
+          d = \dfrac{2\sqrt{\pi BA}}{\pi} \\[5ex]
+          d = \dfrac{\sqrt{2\pi (TSA - LSA)}}{\pi} \\[5ex]
+          TSA = 2\pi r(r + h) \\[3ex]
+          h = \dfrac{TSA - 2\pi r^2}{2\pi r} \\[5ex]
+          r = \dfrac{-\pi h \pm \sqrt{\pi(\pi h^2 + 2 * TSA)}}{2\pi} \\[5ex]
+          TSA = 2BA + LSA \\[3ex]
+          BA = \dfrac{TSA - LSA}{2} \\[5ex]
+          LSA = TSA - 2BA \\[3ex]
+          TSA = \pi d\left(\dfrac{d + 2h}{2}\right) \\[5ex]
+          h = \dfrac{2 * TSA - \pi d^2}{2\pi d} \\[5ex]
+          d = \dfrac{-\pi h \pm \sqrt{\pi(h^2 + 2 * TSA)}}{\pi} \\[5ex]
+          h = \dfrac{LSA * \sqrt{\pi * BA}}{\pi * BA} \\[5ex]
+          h = \dfrac{LSA}{\sqrt{2\pi(TSA - LSA)}} \\[5ex]
+          BA = \dfrac{LSA^2}{\pi h^2} \\[5ex]
+          BA = \dfrac{(4 * TSA + \pi h^2) \pm h\sqrt{\pi(\pi h^2 - 8 * TSA)}}{8} \\[5ex]
+          LSA = h\sqrt{BA * \pi} \\[3ex]
+          LSA = \dfrac{-\pi h^2 \pm h\sqrt{\pi(\pi h^2 + 8 * TSA)}}{4} \\[5ex]
+          TSA = 2 * BA \pm h\sqrt{\pi * BA} \\[3ex]
+          TSA = \dfrac{LSA(2 * LSA + \pi h^2)}{\pi h^2} \\[5ex]
+          V = \pi r^2h \\[3ex]
+          r = \dfrac{2V}{LSA} \\[5ex]
+          d = \dfrac{4V}{LSA} \\[5ex]
+          r = \dfrac{\sqrt{Vh\pi}}{h\pi} \\[5ex]
+          V = BA * h \\[3ex]
+          BA = \dfrac{V}{h} \\[5ex]
+          h = \dfrac{V}{BA} \\[5ex]
+          h = \dfrac{V}{\pi r^2} \\[5ex]
+          h = \dfrac{4V}{\pi d^2} \\[5ex]
+          V = \dfrac{\pi d^2h}{4} \\[5ex]
+          d = \dfrac{\sqrt{Vh\pi}}2{h\pi} \\[5ex]
+          V = \dfrac{LSA^2}{h\pi} \\[5ex]
+          LSA = \sqrt{Vh\pi} \\[3ex]
+          h = \dfrac{LSA^2}{4V\pi} \\[5ex]
+          V = \dfrac{(h^3\pi + 4 * TSA * h) \pm h^2\sqrt{\pi(h^2\pi + 8 * TSA)}}{8} \\[5ex]
+          TSA = \dfrac{2V + h\sqrt{Vh\pi}}{h} \\[5ex]
+          TSA = \dfrac{2V + 2\pi rh^2}{h} \\[5ex]
+          r = \dfrac{TSA * h - 2V}{2\pi h^2} \\[5ex]
+          d = \dfrac{TSA * h - 2V}{\pi h^2} \\[5ex]
+          h = \dfrac{TSA \pm \sqrt{TSA^2 - 16\pi rV}}{4\pi r}
+          $
+        </p>
+        <br>
+        <h5>Trapezoid</h5>
+        <p>
+          Trapezoid's Midpoint Segment Theorem states that the line segment connecting the nonparallel sides of a
+          trapezoid is parallel to the bases, and it's length is the average of the lengths of the bases.
+          <br><br>
+          $
+          Midline = \dfrac{short\;\;base + long\;base}{2}
+          $
+        </p>
+      </div>
+
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Yesterday, there was no snow on the ground at 8:00 a.m. when snow began to fall. <br>
+          Snow fell from 8:00 a.m. to 8:00 p.m. at a constant rate of $\dfrac{3}{4}$ inch per hour. <br>
+          Kate built a snowman made of 2 spherical snowballs, with the smaller placed on top of the larger. <br>
+          When she built the snowman, the diameter of the larger snowball was 3 times the diameter of the smaller
+          snowball. <br>
+          Today, the day after she built the snowman, there is a 50% chance of rain. <br>
+          If it rains today, then there is a 60% chance that the snowman will melt. <br>
+          If it does not rain today, then there is a 10% chance the snowman will melt.
+          <br><br>
+          When Kate built the snowman, the circumference of the larger snowball was 36 &pi; inches. <br>
+          When Kate built the snowman, what was the diameter, in inches, of the smaller snowball?
+          <br><br>
+          $
+          F.\;\; 4 \\[3ex]
+          G.\;\; 6 \\[3ex]
+          H.\;\; 12 \\[3ex]
+          J.\;\; 54 \\[3ex]
+          K.\;\; 108 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM1')">Show/Hide Answer</button>
+          <div class="result" id="solutionM1">
+            <br>
+            Let the: <br>
+            diameter of the larger snowball = D <br>
+            circumference of the larger snowball = C <br>
+            diameter of the smaller snowball = d
+            <br><br>
+            $
+            \underline{\text{Larger Snowball}} \\[3ex]
+            C = \pi D ...formula \\[3ex]
+            C = 36\pi ...given \\[3ex]
+            C = C \implies \\[3ex]
+            \pi D = 36\pi \\[3ex]
+            D = 36\;inches \\[3ex]
+            \underline{\text{Smaller Snowball}} \\[3ex]
+            3d = D \\[3ex]
+            d = \dfrac{D}{3} \\[5ex]
+            d = \dfrac{36}{3} \\[5ex]
+            d = 12\;inches
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) A certain rectangle has a width of 6km and a length that is 4km more than 2 times the width. <br>
+          What is the area, in square kilometers, of this rectangle?
+          <br><br>
+          $
+          F.\;\; 16 \\[3ex]
+          G.\;\; 24 \\[3ex]
+          H.\;\; 32 \\[3ex]
+          J.\;\; 60 \\[3ex]
+          K.\;\; 96 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM2')">Show/Hide Answer</button>
+          <div class="result" id="solutionM2">
+            <br>
+            $
+            width = 6\;km \\[3ex]
+            length = 4 + 2\cdot width \\[3ex]
+            = 4 + 2(6) \\[3ex]
+            = 4 + 12 \\[3ex]
+            = 16\;km \\[3ex]
+            Area = length \cdot width \\[3ex]
+            = 16 \cdot 6 \\[3ex]
+            = 96\;km^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The table below gives the lengths, widths, and heights, in feet, of 3 right rectangular prisms. <br>
+          The difference between the volume of Prism A and the volume of Prism B is how many times the volume of Prism
+          C?
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 25%;">Prism</th>
+              <th style="width: 25%;">Length</th>
+              <th style="width: 25%;">Width</th>
+              <th style="width: 25%;">Height</th>
+            </tr>
+            <tr>
+              <td>A</td>
+              <td>4</td>
+              <td>4</td>
+              <td>3</td>
+            </tr>
+            <tr>
+              <td>B</td>
+              <td>3</td>
+              <td>3</td>
+              <td>4</td>
+            </tr>
+            <tr>
+              <td>C</td>
+              <td>4</td>
+              <td>3</td>
+              <td>1</td>
+            </tr>
+          </table>
+          <br><br>
+          $
+          F.\;\; 0 \\[3ex]
+          G.\;\; 1 \\[3ex]
+          H.\;\; 5 \\[3ex]
+          J.\;\; 8 \\[3ex]
+          K.\;\; 12 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM3')">Show/Hide Answer</button>
+          <div class="result" id="solutionM3">
+            <br>
+            <table class="w3-center">
+              <tr>
+                <th style="width: 15%;">Prism</th>
+                <th style="width: 15%;">Length</th>
+                <th style="width: 15%;">Width</th>
+                <th style="width: 15%;">Height</th>
+                <th style="width: 40%;">Volume = Length &times; Width &times; Height</th>
+              </tr>
+              <tr>
+                <td>A</td>
+                <td>4</td>
+                <td>4</td>
+                <td>3</td>
+                <td>48</td>
+              </tr>
+              <tr>
+                <td>B</td>
+                <td>3</td>
+                <td>3</td>
+                <td>4</td>
+                <td>36</td>
+              </tr>
+              <tr>
+                <td>C</td>
+                <td>4</td>
+                <td>3</td>
+                <td>1</td>
+                <td>12</td>
+              </tr>
+            </table>
+            <br><br>
+            $
+            48 - 36 = what \cdot 12 \\[3ex]
+            12 = what \cdot 12 \\[3ex]
+            what = 1
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) A circle with radius 4 centimeters is inscribed in a square, as shown below. <br>
+          Which of the following represents the area, in square centimeters, of the shaded region?
+          <br>
+          <div class="w3-center">
+            <img src="images/Mensuration/Questions/Number4.png" alt="Number 4">
+          </div>
+          <br>
+          $
+          A.\;\; 32 - 8\pi \\[3ex]
+          B.\;\; 32 - 16\pi \\[3ex]
+          C.\;\; 32 + 16\pi \\[3ex]
+          D.\;\; 64 - 16\pi \\[3ex]
+          E.\;\; 64 + 16\pi \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM4')">Show/Hide Answer</button>
+          <div class="result" id="solutionM4">
+            <br>
+            Area of the shaded region = Area of the Square &minus; Area of the Circle
+            <br><br>
+            $
+            \underline{Square} \\[3ex]
+            apothem,\;a = 4\;cm \\[3ex]
+            Length,\;L = 2a = 2(4) = 8\;cm \\[3ex]
+            Area,\;A = L^2 \\[3ex]
+            A = 8^2 \\[3ex]
+            A = 64\;cm^2 \\[5ex]
+            \underline{Circle} \\[3ex]
+            radius,\;r = 4\;cm \\[3ex]
+            Area,\;A = \pi r^2 \\[4ex]
+            A = \pi(4)^2 \\[4ex]
+            A = 16\pi\;cm^2 \\[5ex]
+            \implies \\[3ex]
+            \text{Area of the shaded region} = 64 - 16\pi
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Josie has decided to make a new lampshade for her bedroom lamp. <br>
+          She will order materials from a website that offers 4 different print designs and 4 different color schemes
+          that can be used with each design. <br>
+          The top and bottom edges of Josie’s current lampshade are parallel circles with diameters of length 6 inches
+          and 8 inches, as pictured below. <br>
+          The centers of the 2 circles are directly above and below one another.
+          <br><br>
+          <img src="images/Mensuration/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          (I.) What is the ratio of the area of the circle modeled by the top edge of the lampshade to the area of the
+          circle modeled by the bottom edge of the lampshade?
+          <br><br>
+          $
+          A.\;\; 3:7 \\[3ex]
+          B.\;\; 3:4 \\[3ex]
+          C.\;\; 9:16 \\[3ex]
+          D.\;\; 4:3 \\[3ex]
+          E.\;\; 16:9 \\[5ex]
+          $
+          (II.) Which of the following 2-dimensional shapes, when rotated about its vertical symmetry line, will form
+          the shape of this lampshade?
+          <br><br>
+          <b>A.</b> Circle <br>
+          <b>B.</b> Octagon <br>
+          <b>C.</b> Pentagon <br>
+          <b>D.</b> Rectangle <br>
+          <b>E.</b> Isosceles trapezoid
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM5')">Show/Hide Answer</button>
+          <div class="result" id="solutionM5">
+            <br>
+            (I.) Let: <br>
+            <i>r</i> be the radius of the circle modeled by the top edge of the lampshade <br>
+            <i>R</i> be teh radius of the circle modeled by the bottom edge of the lampshade
+            <br><br>
+            $
+            radius = \dfrac{diameter}{2} \\[5ex]
+            Area = \pi radius^2 \\[4ex]
+            r = \dfrac{6}{2} = 3\;in \\[5ex]
+            R = \dfrac{8}{2} = 4\;in \\[5ex]
+            \text{Ratio of the areas} \\[3ex]
+            = \dfrac{\pi (3)^2}{\pi (4)^2} \\[5ex]
+            = \dfrac{9}{16} \\[5ex]
+            = 9 : 16 \\[3ex]
+            $
+            (II.) The shape of Josie's lampshade is a truncated cone. <br>
+            When rotated about its vertical symmetry line, the 2-dimensional shape that will form the shape of a
+            truncated cone is the Isosceles trapezoid.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The base of a right square pyramid has a side length of 20 ft. <br>
+          The pyramid’s slant height is 15 ft. <br>
+          What is the total surface area, in square feet, of the pyramid?
+          <br><br>
+          $
+          A.\;\; 550 \\[3ex]
+          B.\;\; 600 \\[3ex]
+          C.\;\; 1,000 \\[3ex]
+          D.\;\; 1,600 \\[3ex]
+          E.\;\; 2,000 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM6')">Show/Hide Answer</button>
+          <div class="result" id="solutionM6">
+            <br>
+            The base of a right square pyramid is a square <br>
+            The base has a side length of 20 ft. <br>
+            This implies that: <br>
+            The square has a side length of 20 ft. <br>
+            This implies that the base area is the area of the square <br>
+            Base Area, BA = Area of the square = side² = (20)² = 400 square feet
+            <br><br>
+            The slant height of the pyramid = 15 ft. <br>
+            Lateral Surface Area, LSA = 2 &times; base &times; slant height <br>
+            LSA = 2 &times; 20 &times; 15 = 600 square feet
+            <br><br>
+            Total Surface Area, TSA = BA + LSA <br>
+            TSA = 400 + 600 <br>
+            TSA = 1000 square feet.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Tisha is building a wooden drying rack. <br>
+          The top of the rack is in the shape of a trapezoid. <br>
+          The trapezoid's bases are 24 inches long and 38 inches long, respectively. <br>
+          Tisha will add a brace that joins the midpoints of the trapezoid's 2 nonparallel sides to support her drying
+          rack, as shown in the figure below. <br>
+          How many inches long will the brace be?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number7.png" alt="Number 7">
+          <br><br>
+          $
+          A.\;\; 26 \\[3ex]
+          B.\;\; 28 \\[3ex]
+          C.\;\; 31 \\[3ex]
+          D.\;\; 32 \\[3ex]
+          E.\;\; 33.5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM7')">Show/Hide Answer</button>
+          <div class="result" id="solutionM7">
+            <br>
+            $
+            Midline = \dfrac{short\;\;base + long\;base}{2} ...Midpoint\;\;Segment\;\;Theorem \\[5ex]
+            = \dfrac{24 + 38}{2} \\[5ex]
+            = \dfrac{62}{2} \\[5ex]
+            = 31\;inches
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) A rectangular field that measures 300 meters by 175 meters is to be completely fenced along its
+          perimeter. <br>
+          Given that fencing sells for <span>$</span>2.05 per meter, what will the fencing for the field cost?
+          <br><br>
+          $
+          A.\;\; \$973.75 \\[3ex]
+          B.\;\; \$1,332.50 \\[3ex]
+          C.\;\; \$1,405.00 \\[3ex]
+          D.\;\; \$1,588.75 \\[3ex]
+          E.\;\; \$1,947.50 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM8')">Show/Hide Answer</button>
+          <div class="result" id="solutionM8">
+            <br>
+            $
+            \underline{Rectangular\;\;Field} \\[3ex]
+            Length,\;L = 300\;m \\[3ex]
+            Width,\;W = 175\;m \\[3ex]
+            Perimeter = P \\[3ex]
+            P = 2(L + W) \\[3ex]
+            = 2(300 + 175) \\[3ex]
+            = 2(475) \\[3ex]
+            = 950\;m \\[5ex]
+            \underline{Fencing\;\;Cost} \\[3ex]
+            950\meters\;\;@\;\;\$2.05\;\;per\;\;meter \\[3ex]
+            = 950(2.05) \\[3ex]
+            = \$1947.50
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) The length of Rectangle A is equal to the length of Rectangle B. <br>
+          The width of Rectangle A is 3 inches less than the width of Rectangle B. <br>
+          If it can be determined, how many inches less is the perimeter of Rectangle A than the perimeter of Rectangle
+          B?
+          <br><br>
+          $
+          F.\;\; 3 \\[3ex]
+          G.\;\; 6 \\[3ex]
+          H.\;\; 9 \\[3ex]
+          J.\;\; 12 \\[3ex]
+          K.\;\;\text{Cannot be determined from the given information} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM9')">Show/Hide Answer</button>
+          <div class="result" id="solutionM9">
+            <br>
+            <table>
+              <tr>
+                <th style="width: 50%;">Rectangle A</th>
+                <th style="width: 50%;">Rectangle B</th>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  Length = L_A \\[4ex]
+                  Width = W_A \\[4ex]
+                  Perimeter = P_A \\[5ex]
+                  L_A = L_B \\[4ex]
+                  W_A = W_B - 3 \\[4ex]
+                  P_A = 2(L_A + W_A) \\[4ex]
+                  = 2(L_B + W_B - 3) \\[4ex]
+                  = 2L_B + 2W_B - 6
+                  $
+                </td>
+                <td>
+                  $
+                  Length = L_B \\[4ex]
+                  Width = W_B \\[4ex]
+                  Perimeter = P_B \\[5ex]
+                  P_B = 2(L_B + W_B) \\[4ex]
+                  = 2L_B + 2W_B
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  How many inches less is the perimeter of Rectangle A than the perimeter of Rectangle B?
+                  <br><br>
+                  $
+                  P_B - P_A \\[4ex]
+                  = (2L_B + 2W_B) - (2L_B + 2W_B - 6) \\[4ex]
+                  = 2L_B + 2W_B - 2L_B - 2W_B + 6 \\[4ex]
+                  = 6
+                  $
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) The figure below shows 3 rectangles where <i>a, b, c, d, e,</i> and <i>f</i> are side lengths measured
+          in meters. <br>
+          Which of the following expressions <i>must</i> give the area of the shaded region, in square meters?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number10.png" alt="Number 10">
+          <br><br>
+          $
+          A.\;\; ab - cd \\[3ex]
+          B.\;\; ab - ef \\[3ex]
+          C.\;\; cd - ef \\[3ex]
+          D.\;\; cd + ef \\[3ex]
+          E.\;\; ab - cd + ef \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM10')">Show/Hide Answer</button>
+          <div class="result" id="solutionM10">
+            <br>
+            $
+            \text{Area of a rectangle} = Length \cdot Width \\[3ex]
+            \text{Area of the 1st (inner) rectangle},A_1 = f \cdot e = ef \\[4ex]
+            \text{Area of the 2nd rectangle}, A_2 = d \cdot c = cd \\[4ex]
+            \text{Area of the shaded region} = A_2 - A_1 \\[4ex]
+            = cd - ef
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) The vertices of $\triangle PQR$ are given in the standard (<i>x, y</i>) coordinate plane below.
+          <br>
+          What is the area, in square coordinate units, of $\triangle PQR$?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 10 \\[3ex]
+          H.\;\; 12 \\[3ex]
+          J.\;\; 20 \\[3ex]
+          K.\;\; 48 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM11')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCM11')">Calculator Use</button>
+          <div class="result" id="solutionM11">
+            <br>
+            $
+            P:\;Vertex\;1:\;\;(x_1, y_1) = (8, 12) \\[4ex]
+            Q:\;Vertex\;2:\;\;(x_2, y_2) = (10, 8) \\[4ex]
+            R:\;Vertex\;3:\;\;(x_3, y_3) = (8, 2) \\[4ex]
+            x_1 = 8 ~~~~~~~~~~~~~~~~ y_1 = 12 \\[4ex]
+            x_2 = 10 ~~~~~~~~~~~~~~~ y_2 = 8 \\[4ex]
+            x_3 = 8 ~~~~~~~~~~~~~~~~~ y_3 = 2 \\[4ex]
+            Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \\[4ex]
+            = \dfrac{1}{2}|8(8 - 2) + 10(2 - 12) + 8(12 - 8)| \\[5ex]
+            = \dfrac{1}{2}|8(6) + 10(-10) + 8(4)| \\[5ex]
+            = \dfrac{1}{2}|48 - 100 + 32| \\[5ex]
+            = \dfrac{1}{2}|-20| \\[5ex]
+            = \dfrac{1}{2} \cdot 20 \\[5ex]
+            = 10\;square\;\;units
+            $
+          </div>
+          <div class="result" id="solutionCM11">
+            <br>
+            <img src="images/Mensuration/Answers/Calculator11.png" alt="Calculator 11">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) Which of the following equations expresses a relationship between <i>D</i>, the length of the diagonal
+          of the square shown below, and <i>S</i>, the length of a side of the square?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number12.png" alt="Number 12">
+          <br><br>
+          $
+          A.\;\; D = S \\[3ex]
+          B.\;\; D = \sqrt{2}S \\[3ex]
+          C.\;\; D = \sqrt{3}S \\[3ex]
+          D.\;\; D = 2S \\[3ex]
+          E.\;\; D = 3S \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM12')">Show/Hide Answer</button>
+          <div class="result" id="solutionM12">
+            <br>
+            The four sides of the square are congruent <br>
+            Each interior angle in a square is a right angle
+            <br><br>
+            <img src="images/Mensuration/Answers/Number12.png" alt="Number 12">
+            <br><br>
+            $
+            \underline{\triangle ABC} \\[3ex]
+            hyp^2 = leg^2 + leg^2 ...\text{Pythagorean Theorem} \\[4ex]
+            D^2 = S^2 + S^2 \\[4ex]
+            D^2 = 2S^2 \\[4ex]
+            D = \sqrt{2S^2} \\[4ex]
+            D = \sqrt{2} \cdot \sqrt{S^2} \\[4ex]
+            D = \sqrt{2}S
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) The dimensions of a hallway floor are shown below. <br>
+          Each pair of adjacent walls meets at a right angle. <br>
+          Teresa plans to completely carpet this entire hallway floor. <br>
+          At a cost of <span>$</span>2 per square foot, how much will carpeting this hallway floor cost?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number13.png" alt="Number 13">
+          <br><br>
+          $
+          A.\;\; \$ 95 \\[3ex]
+          B.\;\; \$ 150 \\[3ex]
+          C.\;\; \$ 190 \\[3ex]
+          D.\;\; \$ 285 \\[3ex]
+          E.\;\; \$ 300 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM13')">Show/Hide Answer</button>
+          <div class="result" id="solutionM13">
+            <br>
+            15 feet &minus; 4 feet = 11 feet <br>
+            Hence we have two regions: Region 1 and Region 2
+            <br><br>
+            <img src="images/Mensuration/Answers/Number13.png" alt="NUmber 13">
+            <br><br>
+            $
+            \text{Area of Region 1 } = 4(10) = 40\;feet^2 \\[4ex]
+            \text{Area of Region 2 } = 11(5) = 55\;feet^2 \\[4ex]
+            \text{Area of Hallway Floor} = \text{Area of Region 1} + \text{Area of Region 2} \\[3ex]
+            = 40 + 55 \\[3ex]
+            = 95\;feet^2 \\[5ex]
+            \text{Cost of Carpeting Entire Hallway Floor } @\;\;\$2\;\; \text{per square feet } \\[3ex]
+            = 95\;square\;\;feet \cdot \dfrac{\$2}{1\;square\;\;foot} \\[5ex]
+            = \$ 190
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Each side of square <i>ABCD</i> has a length of 48 m. <br>
+          A certain rectangle whose area is equal to the area of <i>ABCD</i> has a width of 12 m. <br>
+          What is the length, in meters, of the rectangle?
+          <br><br>
+          $
+          F.\;\; 36 \\[3ex]
+          G.\;\; 48 \\[3ex]
+          H.\;\; 60 \\[3ex]
+          J.\;\; 144 \\[3ex]
+          K.\;\; 192 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM14')">Show/Hide Answer</button>
+          <div class="result" id="solutionM14">
+            <br>
+            $
+            \underline{Square\;\;ABCD} \\[3ex]
+            Area = Length^2 = 48^2 \;m^2 \\[5ex]
+            \underline{Rectangle} \\[3ex]
+            Area = Length * Width \\[3ex]
+            \text{Let the length of the rectangle } = L_R \\[4ex]
+            Area = L_R \cdot 12 \\[5ex]
+            \text{Area of the Rectangle = Area of the Square} \\[3ex]
+            \implies \\[3ex]
+            L_R \cdot 12 = 48^2 \\[4ex]
+            L_R = \dfrac{48 \cdot 48}{12} \\[5ex]
+            = 4 \cdot 48 \\[3ex]
+            = 192\;m
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) Hoshi is building a circular pond in a square section of her backyard. <br>
+          The square section measures 20feet on each side. <br>
+          The pond touches all 4 sides of the square section. <br>
+          Approximately what is the total area, in square feet, of the region inside this square section but outside the
+          circular pond?
+          <br><br>
+          $
+          A.\;\; 86 \\[3ex]
+          B.\;\; 126 \\[3ex]
+          C.\;\; 314 \\[3ex]
+          D.\;\; 337 \\[3ex]
+          E.\;\; 714 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM15')">Show/Hide Answer</button>
+          <div class="result" id="solutionM15">
+            <br>
+            Let us represent this information diagrammatically
+            <br><br>
+            <img src="images/Mensuration/Answers/Number15.png" alt="Number 15">
+            <br><br>
+            <b>O</b> is the center of the circle. <br>
+            The region inside this square section but outside the circular pond is the shaded region. <br>
+            The question is asking us to calculate the area of the shaded region.
+            <br><br>
+            $
+            \underline{\text{Square Section}} \\[3ex]
+            \text{Length of the square} = 20\;feet \\[3ex]
+            Area = Length^2 \\[4ex]
+            = 20^2 \\[3ex]
+            = 400\;feet^2 \\[5ex]
+            \underline{\text{Circular Pond}} \\[3ex]
+            \text{radius of the circle} = \dfrac{1}{2} \cdot 20 = 10\;feet
+            ...\text{radius of an inscribed circle = half the length of the square} \\[5ex]
+            Area = \pi * radius^2 \\[4ex]
+            = \pi * 10^2 \\[4ex]
+            = 100\pi \\[5ex]
+            \underline{\text{Area of the shaded region}} \\[3ex]
+            = \text{Area of the Square Section} - \text{Area of the Circular Pond} \\[3ex]
+            = 400 - 100\pi \\[3ex]
+            = 85.84073464 \\[3ex]
+            \approx 86\;feet^2 ...\text{to the nearest whole number}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) A piece of chocolate candy enclosing an almond in the center is made in a rectangular mold that has
+          inside dimensions 4 cm, 3 cm, and 2 cm. <br>
+          If the volume of the almond is 2 cubic centimeters, what is the maximum volume, in cubic centimeters, of the
+          chocolate in the piece of candy?
+          <br><br>
+          $
+          A.\;\; 7 \\[3ex]
+          B.\;\; 12 \\[3ex]
+          C.\;\; 16 \\[3ex]
+          D.\;\; 22 \\[3ex]
+          E.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM16')">Show/Hide Answer</button>
+          <div class="result" id="solutionM16">
+            <br>
+            The rectangular mold is a rectangular prism. <br>
+            The chocolate candy is made in the rectangular prism. <br>
+            The almond is in the center of the chocolate candy. <br>
+            This implies that the volume of the chocolate candy is the volume of the almond subtracted from the volume
+            of the rectangular prism
+            <br><br>
+            $
+            \text{Volume of the Rectangular Prism} \\[3ex]
+            = Length \cdot Width \cdot Height \\[3ex]
+            = 4 \cdot 3 \cdot 2 \\[3ex]
+            = 24\;cm^3 \\[5ex]
+            \text{Volume of the Almond} = 2\;cm^3 \\[5ex]
+            \text{Volume of the Chocolate Candy} = 24 - 2 \\[3ex]
+            = 22\;cm^3
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) Rafael wrapped a gift box <i>l</i> inches long, <i>w</i> inches wide, and <i>h</i> inches high. <br>
+          He tied a decorative rope around it and used an extra 6 inches for a tie at the top, as shown below. <br>
+          On both the top and the bottom, he formed right angles where the rope crossed. <br>
+          About how many inches of decorative rope did Rafael use?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number17.png" alt="Number 17">
+          <br><br>
+          $
+          F.\;\; 2l + 2w + 2h \\[3ex]
+          G.\;\; 2l + 2w + 2h + 6 \\[3ex]
+          H.\;\; 2l + 2w + 4h + 6 \\[3ex]
+          J.\;\; 2l + 4w + 2h + 6 \\[3ex]
+          K.\;\; 4l + 2w + 2h + 6 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM17')">Show/Hide Answer</button>
+          <div class="result" id="solutionM17">
+            <br>
+            $
+            \text{Decorative Rope} \\[5ex]
+            \underline{\text{Top and Bottom of Box}} \\[3ex]
+            Length:\;\; 2 \cdot l = 2l\;inches \\[3ex]
+            Width:\;\; 2 \cdot w = 2w\;inches \\[5ex]
+            \underline{\text{4 Sides of the Box}} \\[3ex]
+            Height:\;\; 4 \cdot h = 4h\;inches \\[5ex]
+            \underline{\text{Extra 6 inches for a tie at the top}} \\[3ex]
+            Tie:\;\; 6\;inches \\[5ex]
+            \text{Perimeter of Decorative Rope} = (2l + 2w + 4h + 6)\;inches
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) In a certain triangle that has an area of 12 square inches, the length of one altitude is $\dfrac{2}{3}$
+          the length of its corresponding base. <br>
+          What is the length of that base, in inches?
+          <br><br>
+          $
+          A.\;\; 2 \\[3ex]
+          B.\;\; 3 \\[3ex]
+          C.\;\; 6 \\[3ex]
+          D.\;\; 9 \\[3ex]
+          E.\;\; \sqrt{18} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM18')">Show/Hide Answer</button>
+          <div class="result" id="solutionM18">
+            <br>
+            Assume the altitude to be the perpendicular height, <i>h</i> <br>
+            base = <i>b</i> <br>
+            Area = <i>A</i>
+            <br><br>
+            $
+            A = 12\;inches^2 \\[4ex]
+            b = b \\[3ex]
+            h = \dfrac{2}{3}b \\[5ex]
+            A = \dfrac{1}{2}\cdot b \cdot h \\[5ex]
+            12 = \dfrac{1}{2} \cdot b \cdot \dfrac{2}{3}b \\[5ex]
+            \dfrac{b^2}{3} = 12 \\[5ex]
+            b^2 = 3(12) \\[3ex]
+            b = +\sqrt{36}...\text{The negative square root is discarded} \\[3ex]
+            \text{This is because the length cannot be negative} \\[3ex]
+            b = 6\;inches
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) Rectangular pyramids A (left) and B (right) are shown below with dimensions given in feet.
+          <br><br>
+          <img src="images/Mensuration/Questions/Number19.png" alt="Number 19">
+          <br><br>
+          Let <i>a</i> and <i>b</i> be the volumes of A and B, respectively. <br>
+          Which of the following equations is true?
+          <br><br>
+          $
+          F.\;\; a = \dfrac{1}{3}b \\[5ex]
+          G.\;\; a = \dfrac{2}{3}b \\[5ex]
+          H.\;\; a = b \\[3ex]
+          J.\;\; a = \dfrac{3}{2}b \\[5ex]
+          K.\;\; a = 3b \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM19')">Show/Hide Answer</button>
+          <div class="result" id="solutionM19">
+            <br>
+            $
+            \underline{Rectangular\;\;Pyramid} \\[3ex]
+            Volume = \dfrac{1}{3} \cdot Length \cdot Width \cdot \perp Height \\[5ex]
+            a = \dfrac{1}{3} \cdot \dfrac{12}{x} \cdot x \cdot 12 \\[5ex]
+            a = 48\;cubic\;feet \\[5ex]
+            b = \dfrac{1}{3} \cdot 12 \cdot x \cdot \dfrac{12}{x} \\[5ex]
+            b = 48\;cubic\;feet \\[5ex]
+            a = b
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) A restaurant currently has an outdoor rectangular dining section measuring 30 feet by 40 feet. <br>
+          The shorter sides will be increased by 10 feet each, resulting in a larger rectangular dining section. <br>
+          What is the positive difference, in square feet, between the areas of the resulting and current dining
+          sections?
+          <br><br>
+          $
+          F.\;\; 100 \\[3ex]
+          G.\;\; 300 \\[3ex]
+          H.\;\; 400 \\[3ex]
+          J.\;\; 500 \\[3ex]
+          K.\;\; 600 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM20')">Show/Hide Answer</button>
+          <div class="result" id="solutionM20">
+            <br>
+            $
+            \underline{\text{Current Dining Section}} \\[3ex]
+            \text{Rectangular: 30 feet by 40 feet} \\[3ex]
+            Area = 30(40) = 1200\;square\;\;feet \\[5ex]
+            \underline{\text{Resulting Dining Section}} \\[3ex]
+            \text{shorter sides} = 30 feet \\[3ex]
+            \text{increase by 10 feet each} = 30 + 10 = 40\;feet \\[3ex]
+            \implies \\[3ex]
+            \text{Square: 40 feet by 40 feet} \\[3ex]
+            Area = 40(40) = 1600\;square\;\;feet \\[5ex]
+            \text{Positive Difference Between the Areas} \\[3ex]
+            = 1600 - 1200 \\[3ex]
+            = 400\;square\;\;feet.
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/Mensuration.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) What is the area, in square millimeters, of a triangle whose side lengths are 5 millimeters, 5
+          millimeters, and 6 millimeters?
+          <br><br>
+          <b>A.</b> 6 <br>
+          <b>B.</b> 12 <br>
+          <b>C.</b> 15 <br>
+          <b>D.</b> 25 <br>
+          <b>E.</b> 30
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM21')">Show/Hide Answer</button>
+          <div class="result" id="solutionM21">
+            <br>
+            We can solve this question using at least two approaches. <br>
+            Use any approach you prefer.
+            <br><br>
+            $
+            \text{1st Approach: Hero's Formula} \\[3ex]
+            side1, a = 5\;mm \\[3ex]
+            side2, b = 5\;mm \\[3ex]
+            side3, c = 6\;mm \\[3ex]
+            semiperimeter, s = \dfrac{a + b + c}{2} \\[5ex]
+            = \dfrac{5 + 5 + 6}{2} \\[5ex]
+            = \dfrac{16}{2} \\[5ex]
+            = 8\;mm \\[5ex]
+            difference1 = semiperimeter - side1 \\[3ex]
+            = s - a \\[3ex]
+            = 8 - 5 \\[3ex]
+            = 3\;mm \\[5ex]
+            difference2 = semiperimeter - side2 \\[3ex]
+            = s - b \\[3ex]
+            = 8 - 5 \\[3ex]
+            = 3\;mm \\[5ex]
+            difference3 = semiperimeter - side3 \\[3ex]
+            = s - c \\[3ex]
+            = 8 - 6 \\[3ex]
+            = 2\;mm \\[5ex]
+            Area, A = \sqrt{s(s - a)(s - b)(s - c)} \\[4ex]
+            = \sqrt{8(3)(3)(2)} \\[4ex]
+            = \sqrt{144} \\[4ex]
+            = 12\;mm^2 \\[5ex]
+            \text{2nd Approach: Formula and Theorem} \\[3ex]
+            $
+            To do the 2nd approach, let us represent the information diagrammatically. <br>
+            Draw a perpendicular line from Vertex <i>B</i> to Midpoint <i>D</i>
+            <br><br>
+            <img src="images/Mensuration/Answers/Number21.png" alt="Number 21">
+            <br><br>
+            base = <i>b</i> = 6mm <br>
+            perpendicular height = <i>h</i>
+            <br><br>
+            $
+            5^2 = h^2 + 3^2 ...\text{Pythagorean Theorem} \\[4ex]
+            25 = h^2 + 9 \\[4ex]
+            h^2 + 9 = 25 \\[4ex]
+            h^2 = 25 - 9 \\[4ex]
+            h^2 = 16 \\[4ex]
+            h = \sqrt{16} \\[4ex]
+            h = 4\;mm \\[5ex]
+            Area, A = \dfrac{1}{2} \cdot b \cdot h \\[5ex]
+            = \dfrac{1}{2} \cdot 6 \cdot 4 \\[5ex]
+            = 12\;mm^2
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) A square vegetable garden is built in a rectangular 50-meter-by-40-meter lawn. <br>
+          The lengths of the sides of the garden are 5 meters. <br>
+          What area of the lawn, in square meters, is outside of the vegetable garden?
+          <br><br>
+          $
+          F.\;\; 1,575 \\[3ex]
+          G.\;\; 1,750 \\[3ex]
+          H.\;\; 1,800 \\[3ex]
+          J.\;\; 1,975 \\[3ex]
+          K.\;\; 2,475 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM22')">Show/Hide Answer</button>
+          <div class="result" id="solutionM22">
+            <br>
+            $
+            \underline{\text{Outer: Rectangular Lawn}} \\[3ex]
+            Area = Length \cdot Width \\[3ex]
+            = 50(40) \\[3ex]
+            = 2000\;m^2 \\[5ex]
+            \underline{\text{Inner: Square Garden}} \\[3ex]
+            Area = Length^2 \\[4ex]
+            = 5^2 \\[4ex]
+            = 25\;m^2 \\[5ex]
+            \underline{\text{Middle: Shaded Area: Outside Square Garden}} \\[3ex]
+            Area = \text{Area of Rectangular Lawn} - \text{Area of Square Garden} \\[3ex]
+            = 2000 - 25 \\[3ex]
+            = 1975\;m^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) The vertices of $\triangle PQR$ are given in the standard (<i>x</i>, <i>y</i>) coordinate plane below.
+          <br>
+          What is the area, in square coordinate units, of $\triangle PQR$?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          $
+          A.\;\; 18 \\[3ex]
+          B.\;\; 21 \\[3ex]
+          C.\;\; 36 \\[3ex]
+          D.\;\; 40 \\[3ex]
+          E.\;\; 42 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM23')">Show/Hide Answer</button>
+          <div class="result" id="solutionM23">
+            <br>
+            $
+            P:\;Vertex\;1:\;\;(x_1, y_1) = (8, 10) \\[4ex]
+            Q:\;Vertex\;2:\;\;(x_2, y_2) = (8, 4) \\[4ex]
+            R:\;Vertex\;3:\;\;(x_3, y_3) = (1, 2) \\[4ex]
+            x_1 = 8 ~~~~~~~~~~~~~~~~ y_1 = 10 \\[4ex]
+            x_2 = 8 ~~~~~~~~~~~~~~~ y_2 = 4 \\[4ex]
+            x_3 = 1 ~~~~~~~~~~~~~~~~~ y_3 = 2 \\[4ex]
+            Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \\[4ex]
+            = \dfrac{1}{2}|8(4 - 2) + 8(2 - 10) + 1(10 - 4)| \\[5ex]
+            = \dfrac{1}{2}|8(2) + 8(-8) + 1(6)| \\[5ex]
+            = \dfrac{1}{2}|16 - 64 + 6| \\[5ex]
+            = \dfrac{1}{2}|-42| \\[5ex]
+            = \dfrac{1}{2} \cdot 42 \\[5ex]
+            = 21\;square\;\;units
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) Rectangle P has an <i>area</i> of 24 square inches. <br>
+          Rectangle Q has a <i>perimeter</i> of 24 inches. <br>
+          The ratio of the area of Rectangle P to the area of Rectangle Q is 2:3. <br>
+          Which of the quantities below can be determined from just the given information?
+          <br><br>
+          I. The perimeter of Rectangle P <br>
+          II. The area of Rectangle Q <br>
+          III. The ratio of the perimeter of Rectangle P to the perimeter of Rectangle Q
+          <br><br>
+          <b>F.</b> I only <br>
+          <b>G.</b> II only <br>
+          <b>H.</b> III only <br>
+          <b>J.</b> I and II only <br>
+          <b>K.</b> I, II, and III
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM24')">Show/Hide Answer</button>
+          <div class="result" id="solutionM24">
+            <br>
+            Which of the quantities below can be determined from <b><u>just</u></b> the given information? <br>
+            This is a tricky question. <br>
+            The question is asking us to use only the information given.
+            <br><br>
+            Given: <br>
+            Area of Rectangle P <br>
+            Perimeter of Rectangle Q <br>
+            Ratio of the area of Rectangle P to the area of Rectangle Q is 2:3.
+            <br><br>
+            $
+            \dfrac{\text{Area of Rectangle P}}{\text{Area of Rectangle Q}} = \dfrac{2}{3} \\[5ex]
+            2 \cdot \text{Area of Rectangle Q} = 3 \cdot \text{Area of Rectangle P} \\[3ex]
+            2 \cdot \text{Area of Rectangle Q} = 3 \cdot 24 \\[3ex]
+            $
+            So, we can determine the Area of Rectangle Q <u>directly</u> from the given information. <br>
+            We are not given the ratio of the perimeters so we cannot determine the perimeter of Rectangle P directly
+            without doing some algebraic substitutions. <br>
+            The same applies to the ratio of the perimeters. <br>
+            Hence, the correct answer is Option <b>G.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) In kite <i>ABCD</i>, shown below, the diagonals intersect at <i>E</i> at a right angle. <br>
+          The given lengths are in centimeters. <br>
+          Which of the following values is closest to the perimeter, in centimeters, of <i>ABCD</i>?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number25.png" alt="Number 25">
+          <br><br>
+          $
+          F.\;\; 32 \\[3ex]
+          G.\;\; 40 \\[3ex]
+          H.\;\; 65 \\[3ex]
+          J.\;\; 91 \\[3ex]
+          K.\;\; 182 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM25')">Show/Hide Answer</button>
+          <div class="result" id="solutionM25">
+            <br>
+            Considering the fact that you have to solve this question in 1 minute, it is recommended that you figure out
+            the correct answer. <br>
+            This is because the <b>figure is drawn to scale</b> <br>
+            <b>1st Approach:</b> <br>
+            In Figure <i>ABE</i>, the hypotenuse, |<i>AB</i>| is greater than 24 <br>
+            Assume that |<i>AB</i>| is about 25 cm <br>
+            This also means that |<i>AD</i>| is about 25 cm
+            <br><br>
+            In Figure <i>CBE</i>, the hypotenuse, |<i>CB</i>| is greater than 7 <br>
+            Assume that |<i>CB</i>| is about 8 cm <br>
+            This also means that |<i>CD</i>| is about 8 cm
+            <br><br>
+            So, the perimeter is about: 25(2) + 8(2) = 50 + 16 = 66 cm. <br>
+            The closest answer in the option is 65 cm. <br>
+            So, the correct answer is Option <b>H.</b>
+            <br><br>
+
+            $
+            \underline{\text{2nd Approach}} \\[3ex]
+            \underline{\text{Right Triangles and the Pythagorean Theorem}} \\[3ex]
+            \underline{\triangle ABE} \\[3ex]
+            hyp^2 = 24^2 + 7^2 \\[4ex]
+            hyp^2 = 576 + 49 \\[4ex]
+            hyp = \sqrt{625} \\[3ex]
+            |AB| = hyp = 25\;cm \\[5ex]
+            \underline{\triangle ADE} \\[3ex]
+            |AD| = hyp = 25\;cm ...\text{congruent triangle to triangle ABE} \\[5ex]
+            \underline{\triangle BCE} \\[3ex]
+            hyp^2 = 7^2 + 2^2 \\[4ex]
+            hyp^2 = 49 + 4 \\[3ex]
+            hyp = \sqrt{53} \\[3ex]
+            |BC| = hyp = 7.280109889\;cm \\[5ex]
+            \underline{\triangle DCE} \\[3ex]
+            |DC| = hyp = 7.280109889\;cm ...\text{congruent triangle to triangle BCE} \\[5ex]
+            Perimeter = |AB| + |AD| + |BC| + |DC| \\[3ex]
+            = 25 + 25 + 7.280109889 + 7.280109889 \\[3ex]
+            = 64.56021978 \\[3ex]
+            \approx 65\;cm
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.) What is the volume, in cubic inches, of a cylinder that has a diameter of 16 inches and a height of 25
+          inches? <br>
+          (Note: The volume, <i>V</i>, of a cylinder with radius <i>r</i> and height <i>h</i> is given by $V = \pi
+          r^2h$.)
+          <br><br>
+          $
+          A.\;\; 200\pi \\[3ex]
+          B.\;\; 400\pi \\[3ex]
+          C.\;\; 1.600\pi \\[3ex]
+          D.\;\; 5,000\pi \\[3ex]
+          E.\;\; 6,400\pi \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM26')">Show/Hide Answer</button>
+          <div class="result" id="solutionM26">
+            <br>
+            $
+            Let\;\;diameter = d \\[3ex]
+            r = \dfrac{d}{2} = \dfrac{16}{2} = 8\;inches \\[5ex]
+            h = 25\;inches \\[3ex]
+            V = \pi r^2 h \\[3ex]
+            = \pi \cdot 8^2 \cdot 25 \\[3ex]
+            = 1,600\pi
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) The dimensions, in feet, of a standard tennis court are shown in the figure below. <br>
+          All lines that meet in the figure do so at right angles. <br>
+          Which of the following values is closest to the area, in square feet, of the 1 service box shown shaded?
+          <br><br>
+          <img src="images/Geometry/Questions/Number27.png" alt="Number 27">
+          <br><br>
+          $
+          F.\;\; 284 \\[3ex]
+          G.\;\; 527 \\[3ex]
+          H.\;\; 567 \\[3ex]
+          J.\;\; 1,053 \\[3ex]
+          K.\;\; 1,134 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM27')">Show/Hide Answer</button>
+          <div class="result" id="solutionM27">
+            <br>
+            Dimensions of shaded box = 21 feet by 13.5 feet <br>
+            Length = 21 feet <br>
+            Width = 13.5 feet
+            <br><br>
+            $
+            Area = Length \cdot Width \\[3ex]
+            = 21 \cdot 13.5 \\[3ex]
+            = 283.5 \\[3ex]
+            \approx 284\;square\;feet
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) The rectangular top surface of a patio is 4 feet longer than it is wide and has an area of 192 square
+          feet. <br>
+          What is the width, in feet, of the rectangular top surface of the patio?
+          <br><br>
+          $
+          F.\;\; 12 \\[3ex]
+          G.\;\; 16 \\[3ex]
+          H.\;\; 24 \\[3ex]
+          J.\;\; 46 \\[3ex]
+          K.\;\; 48 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM28')">Show/Hide Answer</button>
+          <div class="result" id="solutionM28">
+            <br>
+            $
+            Area (A) = Length (L) \cdot Width (W) \\[3ex]
+            A = 192\;square\;feet \\[3ex]
+            \text{4 feet longer than it is wide means that}: \\[3ex]
+            L = W + 4 \\[3ex]
+            \implies \\[3ex]
+            A = (W + 4) \cdot W \\[3ex]
+            W(W + 4) = 192 \\[3ex]
+            W^2 + 4W = 192 \\[3ex]
+            W^2 + 4W - 192 = 0 \\[3ex]
+            (W + 16)(W - 12) = 0 \\[3ex]
+            W + 16 = 0 \hspace{3em}OR\hspace{3em} W - 12 = 0 \\[3ex]
+            W = -16 \hspace{3em}OR\hspace{3em} W = 12 \\[3ex]
+            \text{The width cannot have a negative value} \\[3ex]
+            \therefore W = 12\;feet
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.) The vertices of $\triangle PQR$ are given in the standard (<i>x, y</i>) coordinate plane below.
+          <br>
+          What is the area, in square coordinate units, of &triangle;<i>PQR</i>?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number29.png" alt="Number 29">
+          <br><br>
+          $
+          A.\;\; 6 \\[3ex]
+          B.\;\; 10 \\[3ex]
+          C.\;\; 12 \\[3ex]
+          D.\;\; 15 \\[3ex]
+          E.\;\; 30 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM29')">Show/Hide Answer</button>
+          <div class="result" id="solutionM29">
+            <br>
+            $
+            P:\;Vertex\;1:\;\;(x_1, y_1) = (7, 6) \\[4ex]
+            Q:\;Vertex\;2:\;\;(x_2, y_2) = (7, 3) \\[4ex]
+            R:\;Vertex\;3:\;\;(x_3, y_3) = (-3, 4) \\[4ex]
+            x_1 = 7 \hspace{5em} y_1 = 6 \\[4ex]
+            x_2 = 7 \hspace{5em} y_2 = 3 \\[4ex]
+            x_3 = -3 \hspace{5em} y_3 = 4 \\[4ex]
+            Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \\[4ex]
+            = \dfrac{1}{2}|7(3 - 4) + 7(4 - 6) + -3(6 - 3)| \\[5ex]
+            = \dfrac{1}{2}|7(-1) + 7(-2) - 3(3)| \\[5ex]
+            = \dfrac{1}{2}|-7 - 14 - 9| \\[5ex]
+            = \dfrac{1}{2}|-30| \\[5ex]
+            = \dfrac{1}{2} \cdot 30 \\[5ex]
+            = 15\;square\;\;units
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.) In $\triangle ABC$ shown below, the lengths of the sides and an altitude are given in meters. <br>
+          Which of the following expressions gives the area, in square meters, of $\triangle ABC$?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number30.png" alt="Number 30">
+          <br><br>
+          $
+          A.\;\; hb \\[3ex]
+          B.\;\; \dfrac{1}{2}ab \\[5ex]
+          C.\;\; c\sin A \\[3ex]
+          D.\;\; abc \sin A \\[3ex]
+          E.\;\; \dfrac{1}{2}bc\sin A \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM30')">Show/Hide Answer</button>
+          <div class="result" id="solutionM30">
+            <br>
+            $
+            \underline{\text{Area of a Triangle}} \\[3ex]
+            Area = \dfrac{1}{2} \cdot base \cdot \perp height...\text{usually given to you} \\[5ex]
+            \text{However, please see this pattern in another formula for Area} \\[3ex]
+            Area = \dfrac{1}{2}ab \sin C \\[5ex]
+            or \\[3ex]
+            Area = \dfrac{1}{2}ac \sin B \\[5ex]
+            or \\[3ex]
+            Area = \dfrac{1}{2} bc \sin A \\[5ex]
+            $
+            The correct answer is Option <b>E.</b> <br>
+            Did you notice the pattern in the area: $\dfrac{1}{2} \cdot \;...$ <br>
+            sides: <i>ab</i>; Angle: <i>C</i> <br>
+            sides: <i>ac</i>; Angle: <i>B</i> <br>
+            sides: <i>bc</i>; Angle: <i>A</i>
+            <br><br>
+            <i>
+              <b>Student:</b> What if I do not remember the second formula? <br>
+              ACT gives only the first formula. <br>
+              $\dfrac{base \times height}{2}$ ...this is the formula that I am familiar with
+              <br><br>
+              <b>Teacher:</b> In that case, let us use the first formula and get the second formula. <br>
+              Let us insert another label, D...vertex B meets $\overline{AC}$ at D
+            </i>
+            <br><br>
+            <img src="images/Mensuration/Answers/Number30.png" alt="Number 30">
+            <br><br>
+            $
+            \underline{\triangle ABD} \\[3ex]
+            SOHCAHTOA \\[3ex]
+            \sin A = \dfrac{opp}{hyp} = \dfrac{h}{c} \\[5ex]
+            h = c\sin A \\[5ex]
+
+            Area = \dfrac{1}{2}bh \\[5ex]
+            = \dfrac{1}{2} \cdot b \cdot c\sin A \\[5ex]
+            = \dfrac{1}{2}bc\sin A
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.) A particular brand of paper towel has 193 sheets per roll, and each sheet is 11 in by 5.5 in. <br>
+          The paper towels come in boxes of 6 rolls with a shipping weight of 6.8 pounds. <br>
+          The cost for a box of 6 rolls of this paper towel is <span>$</span>15.99 plus the shipping cost, given in the
+          table below.
+          <br><br>
+          <table class="w3-center">
+            <tr>
+              <th style="width: 50%;">Number of boxes shipped</th>
+              <th style="width: 50%;">Shipping cost per box</th>
+            </tr>
+            <tr>
+              <td>
+                1 &ndash; 10 <br>
+                11 &ndash; 99 <br>
+                100 or more
+              </td>
+              <td>
+                <span>$</span>13.25 <br>
+                <span>$</span>12.00 <br>
+                <span>$</span>10.00
+              </td>
+            </tr>
+          </table>
+          <br>
+          The diameter of each cylindrical roll is 6 inches. <br>
+          Each roll has a cylindrical hole 1.5 inches in diameter, and each roll has a height of 11 inches, as shown in
+          the diagrams below.
+          <br><br>
+          <img src="images/Mensuration/Questions/Number31-1st.png" alt="Number 31-1st">
+          <br><br>
+          The 6 rolls are shipped in a box as shown below where the interior of the box is as small as possible. <br>
+          What are the interior dimensions of this box, in inches?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number31-2nd.png" alt="Number 31-2nd">
+          <br><br>
+          $
+          A.\;\; 8 \times 12 \times 11 \\[3ex]
+          B.\;\; 9 \times 13.5 \times 11 \\[3ex]
+          C.\;\; 11 \times 16.5 \times 11 \\[3ex]
+          D.\;\; 12 \times 18 \times 11 \\[3ex]
+          E.\;\; 36 \times 36 \times 66 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM31')">Show/Hide Answer</button>
+          <div class="result" id="solutionM31">
+            <br>
+            Length: 2 rolls * 6 inches diameter = 12 inches <br>
+            Width: 3 rolls * 6 inches diameter = 18 inches <br>
+            Height: 1 roll of 11 inches (all the rolls have equal height) <br>
+            The interior dimensions of the box = Length &times; Width &times; Height <br>
+            = 12 inches &times; 18 inches &times; 11 inches
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.) Increasing both the length and width of a rectangle by 20% will increase the area of the rectangle by
+          what percent?
+          <br><br>
+          $
+          A.\;\; 4\% \\[3ex]
+          B.\;\; 20\% \\[3ex]
+          C.\;\; 40\% \\[3ex]
+          D.\;\; 44\% \\[3ex]
+          E.\;\; 80\% \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM32')">Show/Hide Answer</button>
+          <div class="result" id="solutionM32">
+            <br>
+            $
+            \underline{\text{Initial Rectangle}} \\[3ex]
+            Length = L \\[3ex]
+            Width = W \\[3ex]
+            Area = A \\[3ex]
+            A = L \cdot W = LW \\[5ex]
+
+            \underline{\text{New Rectangle}} \\[3ex]
+            \text{increase in length and width} \\[3ex]
+            \text{20% of Length} = 0.2 \cdot L = 0.2L \\[3ex]
+            \text{New Length} = L + 0.2L = 1.2L \\[3ex]
+            \text{20% of Width} = 0.2 \cdot W = 0.2W \\[3ex]
+            \text{New Width} = W + 0.2W = 1.2W \\[3ex]
+            \text{New Area} = 1.2L \cdot 1.2W = 1.44LW \\[5ex]
+
+            \underline{\text{Percent Change in the Area}} \\[3ex]
+            \%Change = \dfrac{\text{New Area – Initial Area}}{Initial Area} \cdot 100 \\[5ex]
+            = \dfrac{1.44LW - LW}{LW} \cdot 100 \\[5ex]
+            = \dfrac{0.44LW}{LW} \cdot 100 \\[5ex]
+            = 44\%
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.) The dimensions, in inches, of 2 rectangular prisms are shown in the figure below. <br>
+          The volume of the large prism is the same as the volume of how many of the small prisms?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number33.png" alt="Number 33">
+          <br><br>
+          $
+          A.\;\; 2 \\[3ex]
+          B.\;\; 4 \\[3ex]
+          C.\;\; 6 \\[3ex]
+          D.\;\; 7 \\[3ex]
+          E.\;\; 12 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM33')">Show/Hide Answer</button>
+          <div class="result" id="solutionM33">
+            <br>
+            $
+            \text{Volume of a rectangular prism} = Length \cdot Width \cdot Height \\[3ex]
+            \underline{\text{Small Prism}} \\[3ex]
+            Volume_{small} = x \cdot y \cdot z \\[3ex]
+            Volume_{small} = xyz \\[5ex]
+            \underline{\text{Large Prism}} \\[3ex]
+            Volume_{large} = 2x \cdot 2y \cdot 3z \\[3ex]
+            Volume_{large} = 2\cdot x \cdot 2\cdot y \cdot 3\cdot z \\[3ex]
+            Volume_{large} = 12xyz \\[5ex]
+            $
+            $Volume_{large}$ is equal to <b>how many</b> of $Volume_{small}?$
+            <br><br>
+            $
+            Volume_{large} = \text{how many} \;\; Volume_{small} \\[3ex]
+            12xyz = \text{how many} \cdot xyz \\[3ex]
+            \text{how many} = \dfrac{12xyz}{xyz} \\[5ex]
+            how many = 12
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.) In the figure below, <i>ABEH</i> is a square. <br>
+          Points <i>C</i> and <i>D</i> are on $\overline{BE}$ such that $\overline{BC}$, $\overline{CD}$, and
+          $\overline{DE}$ all have the same length. <br>
+          Points <i>F</i> and <i>G</i> are on $\overline{EH}$ such that $\overline{EF}$, $\overline{FG}$, and
+          $\overline{GH}$ all have the same length. <br>
+          How many of the triangles numbered 1 – 5
+          ($\triangle ABC$, $\triangle ACD$, $\triangle ADE$, $\triangle AEF$, and $\triangle AFG$ respectively) have
+          the same area as $\triangle AGH$?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number34.png" alt="Number 34">
+          <br><br>
+          $
+          A.\;\; 1 \\[3ex]
+          B.\;\; 2 \\[3ex]
+          C.\;\; 3 \\[3ex]
+          D.\;\; 4 \\[3ex]
+          E.\;\; 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM34')">Show/Hide Answer</button>
+          <div class="result" id="solutionM34">
+            <br>
+            Let us analyze this question.
+            <br><br>
+            $
+            \text{Area of a Triangle} = \dfrac{1}{2} \cdot base \cdot \perp height \\[3ex]
+            $
+            $\triangle ACB$ has the same area as $\triangle AGH$ <br>
+            This is because they have: <br>
+            (I.) the same base: $\overline{BC} = \overline{GH}$ <br>
+            (II.) the same perpendicular height: because a square has equal sides: $\overline{AB} = \overline{AH}$
+            <br><br>
+            The other triangles: $\triangle ACD$, $\triangle ADE$, $\triangle AEF$, and $\triangle AFG$ have: <br>
+            (III.) the same base: $\overline{CD} = \overline{DE} = \overline{EF} = \overline{FG}$
+            <br><br>
+            But what about their perpendicular heights? <br>
+            How do we calculate the area of a triangle if the triangle does not have a perpendicular height? <br>
+            One of the ways to calculate the area is to extend the base to the same level as the opposite vertex, then
+            draw a perpendicular height from that vertex to the extension of the base. <br>
+            This is what I mean. <br>
+            $\triangle ACD$ does not a perpendicular height
+            <br><br>
+            <img src="images/Mensuration/Answers/Number34-1st.png" alt="Number 34-1st">
+            <br><br>
+            One of the ways to calculate the area of the triangle is to draw the perpendicular height $\overline{AB}$
+            (<i>Please see the red lines</i>)
+            <br><br>
+            <img src="images/Mensuration/Answers/Number34-2nd.png" alt="Number 34-2nd">
+            <br><br>
+            This implies that the perpendicular height is still the <u>same</u> side of the square <br>
+            (IV.) the same perpendicular height: the side of the square
+            <br><br>
+            Therefore all five triangles: $\triangle ACB$, $\triangle ACD$, $\triangle ADE$, $\triangle AEF$, and
+            $\triangle AFG$ have the same area as $\triangle AGH$.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.) A scale drawing of a proposed trapezoidal landscape design is shown in the figure below, with the given
+          dimensions in meters. <br>
+          The trapezoid consists of a right triangle and a square divided into 3 isosceles right triangles. <br>
+          The unshaded regions will be white rock; the shaded triangular regions will be black rock. <br>
+          What is the area, in square meters, that will be black rock?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number35.png" alt="Number 35">
+          <br><br>
+          $
+          F.\;\; 20 \\[3ex]
+          G.\;\; 25 \\[3ex]
+          H.\;\; 45 \\[3ex]
+          J.\;\; 60 \\[3ex]
+          K.\;\; 70 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM35')">Show/Hide Answer</button>
+          <div class="result" id="solutionM35">
+            <br>
+            The diagram is drawn to scale. <br>
+            Doing it the ACT way (because of the time limit of 1 minute):
+            <br><br>
+            $
+            \underline{\text{shaded right triangle}} \\[3ex]
+            base = 14 - 10 = 4\;m \\[3ex]
+            \perp height = 10\;m \\[3ex]
+            Area = \dfrac{1}{2} \cdot base \cdot \perp height \\[5ex]
+            = \dfrac{1}{2} \cdot 4 \cdot 10 = 20\;m^2 \\[5ex]
+            \underline{\text{shaded isosceles triangle}} \\[3ex]
+            Area = \dfrac{1}{4} \cdot \text{Area of the square}...diagram \\[3ex]
+            = \dfrac{1}{4} \cdot (10 \cdot 10) \\[5ex]
+            = 25\;m^2 \\[5ex]
+            \underline{\text{black rock}} \\[3ex]
+            Area = 20 + 25 \\[3ex]
+            = 45\;m^2 \\[3ex]
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.) A solid rectangular block of steel weighs <i>w</i> pounds. <br>
+          Which of the following expressions gives the weight, in pounds, of a larger solid rectangular block that is
+          made of the same kind of steel and has length, width, and height 4 times those of the smaller block? <br>
+          (Note: Assume that weight is proportional to volume.)
+          <br><br>
+          $
+          F.\;\; 4w^3 \\[3ex]
+          G.\;\; 4w \\[3ex]
+          H.\;\; 16w \\[3ex]
+          J.\;\; 64w \\[3ex]
+          K.\;\; 64w^3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM36')">Show/Hide Answer</button>
+          <div class="result" id="solutionM36">
+            <br>
+            $
+            Volume = Length \cdot Width \cdot Height \\[3ex]
+
+            \underline{\text{Solid Rectangular Block: 1}} \\[3ex]
+            Length = L \\[3ex]
+            Width = W \\[3ex]
+            Height = H \\[3ex]
+            Volume = V_1 \\[3ex]
+            Weight = w ...Given \\[3ex]
+            V_1 = L \cdot W \cdot H \\[3ex]
+            V_1 = LWH \\[5ex]
+
+            \underline{\text{Larger Solid Rectangular Block: 2}} \\[3ex]
+            Length = 4L \\[3ex]
+            Width = 4W \\[3ex]
+            Height = 4H \\[3ex]
+            Volume = V_2 \\[3ex]
+            Weight = ? \\[5ex]
+            V_2 = 4L \cdot 4W \cdot 4H \\[3ex]
+            V_2 = 64LWH \\[5ex]
+
+            Volume \alpha Weight...\text{Direct Proportion...assumed} \\[3ex]
+            Volume = k \cdot Weight ...\text{k = constant of proportionality} \\[3ex]
+            k = \dfrac{Volume}{Weight} \\[5ex]
+            \implies \\[3ex]
+            k = \dfrac{V_1}{w} = \dfrac{V_2}{Weight} \\[5ex]
+            \dfrac{LWH}{w} = \dfrac{64LWH}{Weight} \\[5ex]
+            \text{Cross Multiply} \\[3ex]
+            LWH \cdot Weight = w \cdot 64LWH \\[3ex]
+            Weight = \dfrac{w \cdot 64LWH}{LWH} \\[5ex]
+            Weight = 64w\;pounds
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.) Julia, an archaeology student, needs to dig 6 cylindrical pits at an archaeological site. <br>
+          Each pit will be 8 feet in diameter and 6 feet deep. <br>
+          Since she needs to work slowly and carefully, Julia can remove dirt at an average rate of 3 cubic feet per
+          hour. <br>
+          Which of the following values is closest to the number of hours it will take Julia to dig all 6 pits?
+          <br><br>
+          (Note: The volume, <i>V</i>, of a cylinder with radius <i>r</i> and height <i>h</i> is $V = \pi r^2 h$; &pi;
+          &approx; 3.14)
+          <br><br>
+          $
+          F.\;\; 100 \\[3ex]
+          G.\;\; 200 \\[3ex]
+          H.\;\; 400 \\[3ex]
+          J.\;\; 600 \\[3ex]
+          K.\;\; 800 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM37')">Show/Hide Answer</button>
+          <div class="result" id="solutionM37">
+            <br>
+            First, we can find the volume to dig a pit, then use the Unity Fraction method to set up the calculation
+            <br><br>
+            $
+            \underline{\text{1 Cylindrical Pit}} \\[3ex]
+            diameter, d = 8\;ft \\[3ex]
+            radius, r = \dfrac{d}{2} = \dfrac{8}{2} = 4\;ft \\[5ex]
+            height, h = 6\;ft \\[3ex]
+            \pi \approx 3.14 \\[3ex]
+            Volume, V = \pi r^2 h \\[3ex]
+            V = 3.14 \cdot 4^2 \cdot 6 \\[3ex]
+            V = 301.44\;ft^3 \\[5ex]
+
+            \underline{\text{Unity Fraction Method}} \\[3ex]
+            \text{Average rate of 3 cubic feet per hour to remove dirt} \\[3ex]
+            \text{number of hours it will take Julia to dig 6 cylindrical pits = ?} \\[3ex]
+            6\;pit \cdot \dfrac{...ft^3}{...pit} \cdot \dfrac{...hr}{...ft^3} \\[5ex]
+            6\;pit \cdot \dfrac{301.44\;ft^3}{1\;pit} \cdot \dfrac{1\;hr}{3\;ft^3} \\[5ex]
+            602.88\;hours \\[3ex]
+            \approx 600\;hours ...\text{closest answer} \\[3ex]
+            $
+            <i>
+              <b>Student:</b> Mr. C, what if I want to do it one at a time? <br>
+              Like...calculate the volume to dig 1 pit first <br>
+              Then, multiply by 6 to get the volume to dig all 6 pits <br>
+              Then, use Proportional Reasoning to find the time <br>
+              1 hour to dig 3 cubic feet <br>
+              Therefore, how many hours is needed to dig 301.44 cubic feet? <br>
+              <b>Teacher:</b> Sure, you can do it that way. <br>
+              The main thing is to get it correctly on time.
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.) The midpoints of the sides of square <i>ABCD</i> are the vertices pf square <i>KLMN</i>, shown below.
+          <br>
+          The side length of square <i>ABCD</i> is 14 meters. <br>
+          What is the area, in square meters, of the shaded portion?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number38.png" alt="Number 38">
+          <br><br>
+          $
+          F.\;\; 7\sqrt{2} \\[3ex]
+          G.\;\; 14\sqrt{2} \\[3ex]
+          H.\;\; 24.5 \\[3ex]
+          J.\;\; 49 \\[3ex]
+          K.\;\; 98 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM38')">Show/Hide Answer</button>
+          <div class="result" id="solutionM38">
+            <br>
+            Area of the shaded portion = Area of Square <i>ABCD</i> &minus; Area of Square <i>KLMN</i> <br>
+            Area of a Square = Side Length²
+            <br><br>
+            $
+            \underline{\text{Square ABCD}} \\[3ex]
+            \text{side length} = 14\;m \\[3ex]
+            \overline{AB} = \overline{BC} = \overline{CD} = \overline{DA} = 14\;m \\[3ex]
+            Area = 14^2 \\[3ex]
+            Area = 196\;m^2 \\[5ex]
+
+            \underline{\text{Triangle ALK}} \\[3ex]
+            \text{This is a right triangle because a square has 4 right angles} \\[3ex]
+            \overline{AL} = \dfrac{\overline{AB}}{2} ...\text{Midpoint} \\[5ex]
+            = \dfrac{14}{2} \\[5ex]
+            = 7\;m \\[5ex]
+            \overline{AK} = \dfrac{\overline{DA}}{2} ...\text{Midpoint} \\[5ex]
+            = \dfrac{14}{2} \\[5ex]
+            = 7\;m \\[5ex]
+
+            \overline{KL}^2 = \overline{AL}^2 + \overline{AK}^2 ...\text{Pythagorean Theorem} \\[3ex]
+            \overline{KL}^2 = 7^2 + 7^2 \\[3ex]
+            \overline{KL}^2 = 49 + 49 \\[3ex]
+            \overline{KL}^2 = 98 \\[3ex]
+            \overline{KL} = \sqrt{98} \\[5ex]
+
+
+            \underline{\text{Square KLMN}} \\[3ex]
+            \text{side length} = \overline{KL} = \sqrt{98}\;m \\[3ex]
+            Area = \sqrt{98}^2 \\[3ex]
+            Area = 98\;m^2 \\[5ex]
+
+            \underline{\text{Shaded Portion}} \\[3ex]
+            Area = 196 - 98 \\[3ex]
+            Area = 98\;m^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 39 &mdash; 40. <br>
+        Shown below is quadrilateral <i>ABCD</i> in the standard (<i>x, y</i>) coordinate plane.
+        <br><br>
+        <img src="images/Mensuration/Questions/Numbers39-40.png" alt="Numbers 39-40">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.) What is the area, in square coordinate units, of <i>ABCD</i>?
+          <br><br>
+          $
+          F.\;\; 16 \\[3ex]
+          G.\;\; 24 \\[3ex]
+          H.\;\; 32 \\[3ex]
+          J.\;\; 48 \\[3ex]
+          K.\;\; 64 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM39')">Show/Hide Answer</button>
+          <div class="result" id="solutionM39">
+            <br>
+            Quadrilateral <i>ABCD</i> consists of two triangles: Triangle <i>DAB</i> and Triangle <i>DCB</i> <br>
+            Let us find the area of those two triangles
+            <br><br>
+            $
+            \underline{\text{Triangle DAB}} \\[3ex]
+            D:\;Vertex\;1:\;\;(x_1, y_1) = (-2, 0) \\[4ex]
+            A:\;Vertex\;2:\;\;(x_2, y_2) = (0, 4) \\[4ex]
+            B:\;Vertex\;3:\;\;(x_3, y_3) = (6, 0) \\[4ex]
+            x_1 = -2 \hspace{5em} y_1 = 0 \\[4ex]
+            x_2 = 0 \hspace{5em} y_2 = 4 \\[4ex]
+            x_3 = 6 \hspace{5em} y_3 = 0 \\[4ex]
+            Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \\[4ex]
+            = \dfrac{1}{2}|-2(4 - 0) + 0(0 - 0) + 6(0 - 4)| \\[5ex]
+            = \dfrac{1}{2}|-2(4) + 0 + 6(-4)| \\[5ex]
+            = \dfrac{1}{2}|-8 - 24| \\[5ex]
+            = \dfrac{1}{2}|-32| \\[5ex]
+            = \dfrac{1}{2} \cdot 32 \\[5ex]
+            = 16\;square\;units \\[5ex]
+
+            \underline{\text{Triangle DCB}} \\[3ex]
+            D:\;Vertex\;1:\;\;(x_1, y_1) = (-2, 0) \\[4ex]
+            C:\;Vertex\;2:\;\;(x_2, y_2) = (0, -4) \\[4ex]
+            B:\;Vertex\;3:\;\;(x_3, y_3) = (6, 0) \\[4ex]
+            x_1 = -2 \hspace{5em} y_1 = 0 \\[4ex]
+            x_2 = 0 \hspace{5em} y_2 = -4 \\[4ex]
+            x_3 = 6 \hspace{5em} y_3 = 0 \\[4ex]
+            Area = \dfrac{1}{2}|x_1(y_2 - y_3) + x_2(y_3 - y_1) + x_3(y_1 - y_2)| \\[4ex]
+            = \dfrac{1}{2}|-2(-4 - 0) + 0(0 - 0) + 6(0 - -4)| \\[5ex]
+            = \dfrac{1}{2}|-2(-4) + 0 + 6(0 + 4)| \\[5ex]
+            = \dfrac{1}{2}|8 + 6(4)| \\[5ex]
+            = \dfrac{1}{2}|8 + 24| \\[5ex]
+            = \dfrac{1}{2}|32| \\[5ex]
+            = \dfrac{1}{2} \cdot 32 \\[5ex]
+            = 16\;square\;units \\[5ex]
+
+            \underline{\text{Area of Quadrilateral ABCD}} \\[3ex]
+            = \text{Area of Triangle DAB} + \text{Area of Triangle DCB} \\[3ex]
+            = 16 + 16 \\[3ex]
+            = 32\;square\;units \\[3ex]
+            $
+            <i>
+              <b>Student:</b> Mr. C <br>
+              Considering the fact that Triangle DAB is congruent to Triangle DCB, <br>
+              did we need to calculate the area of Triangle DCB? <br>
+              I mean... I thought we were supposed to solve this question in about a minute <br>
+              <b>Teacher:</b> Yes, you are correct... <br>
+              The two triangles are congruent <br>
+              So, we could have just multiplied the area of Triangle DAB by 2
+            </i>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.) What is the perimeter, in coordinate units, of <i>ABCD</i>?
+          <br><br>
+          $
+          A.\;\; 4\sqrt{5} \\[3ex]
+          B.\;\; 4\sqrt{5} + 4\sqrt{13} \\[3ex]
+          C.\;\; 4\sqrt{13} \\[3ex]
+          D.\;\; 16 \\[3ex]
+          E.\;\; 144 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM40')">Show/Hide Answer</button>
+          <div class="result" id="solutionM40">
+            <br>
+            $
+            \underline{\text{Distance AB}} \\[3ex]
+            A\;(x_1, y_1) = (0, 4) \\[4ex]
+            B\;(x_2, y_2) = (6, 0) \\[4ex]
+            |AB| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\[4ex]
+            = \sqrt{(6 - 0)^2 + (0 - 4)^2} \\[4ex]
+            = \sqrt{6^2 + (-4)^2} \\[4ex]
+            = \sqrt{36 + 16} \\[3ex]
+            = \sqrt{52} \\[3ex]
+            = \sqrt{4 \cdot 13} \\[3ex]
+            = \sqrt{4} \cdot \sqrt{13} \\[3ex]
+            = 2\sqrt{13} \\[5ex]
+
+            \underline{\text{Distance BC}} \\[3ex]
+            |BC| = 2\sqrt{13} ...|BC| \cong |AB| \\[5ex]
+
+            \underline{\text{Distance AD}} \\[3ex]
+            A\;(x_1, y_1) = (0, 4) \\[4ex]
+            D\;(x_2, y_2) = (-2, 0) \\[4ex]
+            |AD| = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\[4ex]
+            = \sqrt{(-2 - 0)^2 + (0 - 4)^2} \\[4ex]
+            = \sqrt{(-2)^2 + (-4)^2} \\[4ex]
+            = \sqrt{4 + 16} \\[3ex]
+            = \sqrt{20} \\[3ex]
+            = \sqrt{4 \cdot 5} \\[3ex]
+            = \sqrt{4} \cdot \sqrt{5} \\[3ex]
+            = 2\sqrt{5} \\[5ex]
+
+            \underline{\text{Distance DC}} \\[3ex]
+            |DC| = 2\sqrt{5} ...|DC| \cong |AD| \\[5ex]
+
+            \underline{\text{Quadrilateral ABCD}} \\[3ex]
+            Perimeter = |AB| + |BC| + |AD| + |CD| \\[3ex]
+            = 2\sqrt{13} + 2\sqrt{13} + 2\sqrt{5} + 2\sqrt{5} \\[3ex]
+            = 4\sqrt{13} + 4\sqrt{5}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/Mensuration.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.) The volume of a solid object is equal to the volume of water it displaces when completely submerged in
+          water. <br>
+          A solid object will be placed in a rectangular tank that has a base of 40 in by 30 in and is filled with water
+          to a uniform depth of 10 in. <br>
+          When the object is completely submerged, the new depth of the water in the tank is $10\dfrac{1}{2}$ inch. <br>
+          What is the volume, in cubic inches, of the object?
+          <br><br>
+          $
+          F.\;\; 120 \\[3ex]
+          G.\;\; 600 \\[3ex]
+          H.\;\; 1,095 \\[3ex]
+          J.\;\; 1,260 \\[3ex]
+          K.\;\; 2,400 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM41')">Show/Hide Answer</button>
+          <div class="result" id="solutionM41">
+            <br>
+            The volume of a solid object is equal to the volume of water it displaces when completely submerged in
+            water...<br>
+            <i>
+              Connecting Math and Physics <br>
+              This is the Archimedes' Principle. <br>
+              It states that the buoyant force acting on a submerged object is equal to the weight of the fluid it
+              displaces.
+            </i>
+            <br><br>
+            $
+            \underline{\text{Rectangular Tank before Object was completely submerged}} \\[3ex]
+            \text{base area} = 40 \cdot 30 = 1200\;in^2 \\[3ex]
+            \text{depth} = 10\;in \\[5ex]
+
+            \underline{\text{Rectangular Tank after Object was completely submerged}} \\[3ex]
+            \text{base area} = 40 \cdot 30 = 1200\;in^2 \\[3ex]
+            \text{new depth} = 10\dfrac{1}{2}\;in \\[5ex]
+            \text{change in depth} = \text{rise in water} = \text{displaced water} \\[3ex]
+            = 10\dfrac{1}{2} - 10 = \dfrac{1}{2}\;in \\[5ex]
+            \text{This change is due to the submerging of the object} \\[5ex]
+
+            \underline{\text{Volume of Object}} \\[3ex]
+            \text{Volume} = \text{base area} \cdot \text{displaced water} \\[3ex]
+            = 1200 \cdot \dfrac{1}{2} \\[5ex]
+            = 600\;in^3
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.) The area of the trapezoid shown below is 20 square feet, the height is 5 feet, and the length of one
+          base is 2 feet. <br>
+          What is <i>b</i>, the length of the other base, in feet?
+          <br><br>
+          <img src="images/Mensuration/Questions/Number42.png" alt="Number 42">
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 8 \\[3ex]
+          H.\;\; 13 \\[3ex]
+          J.\;\; 15 \\[3ex]
+          K.\;\; 23 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM42')">Show/Hide Answer</button>
+          <div class="result" id="solutionM42">
+            <br>
+            The area of a trapezoid is the product of: one-half <u>and</u> the sum of the parallel sides <u>and</u> the
+            perpendicular height
+            <br><br>
+            $
+            Area = 20\;ft^2 \\[3ex]
+            Area = \dfrac{1}{2} \cdot (2 + b) \cdot 5 \\[5ex]
+            \dfrac{5}{2} \cdot (2 + b) = 20 \\[5ex]
+            2 + b = 20 \cdot \dfrac{2}{5} \\[5ex]
+            2 + b = 8 \\[3ex]
+            b = 8 - 2 \\[3ex]
+            b = 6\;feet
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <button class="solutions" onclick="solutions('solutionM43')">Show/Hide Answer</button>
+          <div class="result" id="solutionM43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.) A square and a rectangle have the same area. <br>
+          The length of the rectangle is 196 centimeters, and the width of the rectangle is 4 centimeters. <br>
+          What is the length, in centimeters, of a side of the square?
+          <br><br>
+          $
+          A.\;\; 20 \\[3ex]
+          B.\;\; 28 \\[3ex]
+          C.\;\; 100 \\[3ex]
+          D.\;\; 400 \\[3ex]
+          E.\;\; 784 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM44')">Show/Hide Answer</button>
+          <div class="result" id="solutionM44">
+            <br>
+            $
+            \underline{\text{Rectangle}} \\[3ex]
+            Length = 196\;cm \\[3ex]
+            Width = 4\;cm \\[3ex]
+            Area = Length \cdot Width \\[3ex]
+            = 196 \cdot 4 \\[3ex]
+            = 784 \;cm^2 \\[5ex]
+
+            \underline{\text{Square}} \\[3ex]
+            Length = L \\[3ex]
+            Area = 784 \;cm^2 \\[3ex]
+            Area = L^2 \\[3ex]
+            L^2 = 784 \\[3ex]
+            L = \sqrt{784} \\[3ex]
+            L = 28\;cm
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 45 &mdash; 47.
+        <br><br>
+        Jerry is building a rectangular patio against one side of his house. <br>
+        The top surface of the patio, along with its width and diagonal, is shown in the figure below. <br>
+        To build the patio, he will first dig a rectangular hole to a uniform depth of 8 inches. <br>
+        He will then fill the hole with gravel to a uniform depth of 3 inches. <br>
+        He will purchase gravel from his local rock quarry for <span>$</span>54 per cubic yard (1 cubic yard = 27 cubic
+        feet). <br>
+        Next, he will pour concrete on top of the gravel to obtain a smooth surface for the patio. <br>
+        Finally, he will frame and build a rectangular concrete step with the dimensions shown below.
+        <br><br>
+        <img src="images/Mensuration/Questions/Numbers45-47.png" alt="Numbers 45-47">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.) Jerry will purchase 42 cubic feet of gravel for his patio. <br>
+          The local rock quarry will sell gravel in the exact volume needed by the customer. <br>
+          What is the cost, in dollars, to purchase the gravel from the local rock quarry?
+          <br><br>
+          $
+          A.\;\; \$ 54 \\[3ex]
+          B.\;\; \$ 84 \\[3ex]
+          C.\;\; \$162 \\[3ex]
+          D.\;\; \$270 \\[3ex]
+          E.\;\; \$432 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM45')">Show/Hide Answer</button>
+          <div class="result" id="solutionM45">
+            <br>
+            1 cubic yard = 27 cubic feet <br>
+            <span>$</span>54 per cubic yard &Implies; 1 cubic yard = <span>$</span>54
+            <br><br>
+            $
+            \underline{\text{Unity Fraction Method}} \\[3ex]
+            \text{42 cubic feet} \cdot
+            \dfrac{\text{...cubic yard}}{\text{...cubic feet}} \cdot
+            \dfrac{\text{...dollar}}{\text{...cubic yard}} \\[5ex]
+            = \text{42 cubic feet} \cdot
+            \dfrac{\text{1 cubic yard}}{\text{27 cubic feet}} \cdot
+            \dfrac{\text{54 dollars}}{\text{1 cubic yard}} \\[5ex]
+            = \$84
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.) What is the area, in square feet, of the top surface of Jerry’s patio?
+          <br><br>
+          $
+          F.\;\; 18 \\[3ex]
+          G.\;\; 24 \\[3ex]
+          H.\;\; 168 \\[3ex]
+          J.\;\; 175 \\[3ex]
+          K.\;\; 576 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM46')">Show/Hide Answer</button>
+          <div class="result" id="solutionM46">
+            <br>
+            $
+            \underline{\text{Rectangular Patio}} \\[3ex]
+            Diagonal, D = hypotenuse = 25\;ft \\[3ex]
+            Width, W = leg = 7\;ft \\[3ex]
+            Length, L = leg = ? \\[5ex]
+
+            hyp^2 = leg^2 + leg^2 ...\text{Pythagorean Theorem} \\[3ex]
+            L^2 + W^2 = D^2 \\[3ex]
+            L^2 + 7^2 = 25^2 \\[3ex]
+            L^2 = 25^2 - 7^2 \\[3ex]
+            L^2 = 625 - 49 \\[3ex]
+            L^2 = 576 \\[3ex]
+            L = \sqrt{576} \\[3ex]
+            L = 24\;ft \\[5ex]
+
+            \underline{\text{Top Surface: Rectangular Patio}} \\[3ex]
+            Area = Length \cdot Width \\[3ex]
+            Area = 24 \cdot 7 \\[3ex]
+            Area = 168\;ft^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.) Jerry will use bags of concrete mix to make the step. <br>
+          Each bag makes 0.4 cubic feet of concrete. <br>
+          To the nearest 0.1 bag, how many bags of concrete mix will he need for the step?
+          <br><br>
+          $
+          A.\;\; 1.8 \\[3ex]
+          B.\;\; 4.5 \\[3ex]
+          C.\;\; 5.5 \\[3ex]
+          D.\;\; 11.3 \\[3ex]
+          E.\;\; 18.0 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM47')">Show/Hide Answer</button>
+          <div class="result" id="solutionM47">
+            <br>
+            $
+            \underline{\text{Rectangular Concrete Step}} \\[3ex]
+            Length = 3\;ft \\[3ex]
+            Width = 1.5\;ft \\[3ex]
+            Height = 1\;ft \\[5ex]
+            Volume = Length \cdot Width \cdot Height \\[3ex]
+            Volume = 3 \cdot 1.5 \cdot 1 \\[3ex]
+            Volume = 4.5\;\text{cubic feet} \\[5ex]
+
+            0.4\;\text{cubic feet}= \text{1 bag of concrete} \\[3ex]
+            \therefore 4.5\;\text{cubic feet} = ? \[5ex]
+
+            \underline{\text{Unity Fraction Method}} \\[3ex]
+            4.5\;\text{cubic feet} \cdot \dfrac{\text{1 bag}}{0.4\;\text{cubic feet}} \\[5ex]
+            = 11.25\;bags \\[3ex]
+            \approx 11.3\;bags ...\text{to the nearest 0.1 bag}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.) A wheel with a radius of 1 centimeter rolls without slipping along the ground. <br>
+          After exactly 2 revolutions, how many centimeters has the wheel traveled along the ground?
+          <br><br>
+          $
+          A.\;\; 2 \\[3ex]
+          B.\;\; \pi \\[3ex]
+          C.\;\; 2\pi \\[3ex]
+          D.\;\; 4 \\[3ex]
+          E.\;\; 4\pi \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionM48')">Show/Hide Answer</button>
+          <div class="result" id="solutionM48">
+            <br>
+            A wheel with a radius of 1 centimeter rolls ... <br>
+            How many centimeters has the wheel traveled along the ground?
+            <br><br>
+            Assume a circular wheel...of course it should be circular <br>
+            This implies that 1 revolution of rolling the wheel is the <b>circumference</b> of the circle.
+            So, 2 revolutions is twice the circumference of the circle
+            <br><br>
+            $
+            radius = 1\;cm \\[3ex]
+            Circumference = 2 \cdot \pi \cdot radius \\[3ex]
+            \text{2 revolutions = twice the circumference} \\[3ex]
+            = 2 \cdot 2 \cdot \pi \cdot 1 \\[3ex]
+            = 4\pi
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <button class="solutions" onclick="solutions('solutionM49')">Show/Hide Answer</button>
+          <div class="result" id="solutionM49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM50')">Show/Hide Answer</button>
+          <div class="result" id="solutionM50">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <button class="solutions" onclick="solutions('solutionM51')">Show/Hide Answer</button>
+          <div class="result" id="solutionM51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM52')">Show/Hide Answer</button>
+          <div class="result" id="solutionM52">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (53.)
+          <button class="solutions" onclick="solutions('solutionM53')">Show/Hide Answer</button>
+          <div class="result" id="solutionM53">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (55.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM55')">Show/Hide Answer</button>
+          <div class="result" id="solutionM55">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (55.)
+          <button class="solutions" onclick="solutions('solutionM55')">Show/Hide Answer</button>
+          <div class="result" id="solutionM55">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (56.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM56')">Show/Hide Answer</button>
+          <div class="result" id="solutionM56">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (57.)
+          <button class="solutions" onclick="solutions('solutionM57')">Show/Hide Answer</button>
+          <div class="result" id="solutionM57">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (58.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM58')">Show/Hide Answer</button>
+          <div class="result" id="solutionM58">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (59.)
+          <button class="solutions" onclick="solutions('solutionM59')">Show/Hide Answer</button>
+          <div class="result" id="solutionM59">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (60.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionM60')">Show/Hide Answer</button>
+          <div class="result" id="solutionM60">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 41 through 60 -->
+
+    <!-- End Questions and Answers -->
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,2804 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Trigonometry</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on trigonometry.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, ACT, 
+  American College Testing, trigonometry, analytic trigonometry, trigonometric functions, angles, triangles, geometry, trigonometric identities, 
+  inverse trigonometric functions, sine function, inverse sine function, cosine function, inverse cosine function, tangent function, 
+  inverse tangent function, composite functions, trigonometric equations, trigonometric proofs, trigonometric formulas, trigonometric graphs, 
+  trigonometric inequalities, right triangles, sine law, cosine law, initial side, terminal side, coordinate plane, angular measures,
+    side lengths, vertex, standard position, coterminal angles, quadrantal angles, reference angles, unit circle, planar figures, 
+    three-dimensional figures, cofunction, quadrants, inverse cosecant function, inverse secant function, inverse cotangent function, 
+    trigonometric expressions, right triangles, area of triangle, bearings, distances, elevation, depression, angle of elevation, 
+    angle of depression, arc, length of arc, sector, segment, linear speed, angular speed, circular functions, 
+    area of sector, area of segment, base angle, apex angle, vertex angle, compass bearing, congruent triangles, similar triangles, 
+    congruency, similarity">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#coterminalAngles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coterminal
+        Angles</a>
+
+      <a href="#trigonometricFunctions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Functions</a>
+
+      <a href="#unitCircle" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Unit Circle</a>
+
+      <a href="#trigonometricIdentities" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Identities</a>
+
+      <a href="#trigonometricFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Formulas</a>
+
+      <a href="#factoringFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Factoring
+        Formulas</a>
+
+      <a href="#triangleLaws" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Triangle Laws</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#circleFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Circle Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Trigonometry</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics in Trigonometry. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="images/calculator-mode-degree.png" alt="Calculator-Mode-Degree">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Coterminal Angles -->
+    <div class="w3-container w3-padding-32" id="coterminalAngles">
+      <h2>Coterminal Angles</h2>
+      <p>
+        Coterminal angles are angles with the <b>same initial side</b> and the <b>same terminal side</b>. <br>
+        The concept of coterminal angles helps us to find the equivalent positive angle of a negative angle. <br>
+        Because an angle in standard position is measured counterclockwise, adding 360° to it accounts for a full
+        revolution, keeping the direction intact. <br>
+        Hence for any angle say &theta;, the coterminal angles are &theta; + 360<i>k</i> where <i>k</i> is any integer.
+      </p>
+    </div>
+    <!-- End Coterminal Angles -->
+
+    <!-- Trigonometric Functions -->
+    <div class="w3-container w3-padding-32" id="trigonometricFunctions">
+      <h2>Trigonometric Functions</h2>
+      <p>
+        Right Triangle Trigonometry for any angle, say $\theta$ <br>
+        Pneumonic for it is: <b>SOHCAHTOA</b> and <b>cosecHOsecHAcotanAO</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{opp}{hyp} \\[7ex]
+        (2.)\;\; \cos \theta = \dfrac{adj}{hyp} \\[7ex]
+        (3.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[5ex]
+        = \sin \theta \div \cos \theta \\[3ex]
+        = \dfrac{opp}{hyp} \div \dfrac{adj}{hyp} \\[5ex]
+        = \dfrac{opp}{hyp} * \dfrac{hyp}{adj} \\[5ex]
+        \therefore \tan \theta = \dfrac{opp}{adj} \\[7ex]
+        (4.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[5ex]
+        = 1 \div \sin \theta \\[3ex]
+        = 1 \div \dfrac{opp}{hyp} \\[5ex]
+        \therefore \csc \theta = \dfrac{hyp}{opp} \\[7ex]
+        (5.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[5ex]
+        = 1 \div \cos \theta \\[3ex]
+        = 1 \div \dfrac{adj}{hyp} \\[5ex]
+        \therefore \sec \theta = \dfrac{hyp}{adj} \\[7ex]
+        (6.)\;\; \cot \theta = \dfrac{1}{\tan \theta} = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        = \cos \theta \div \sin \theta \\[3ex]
+        = \dfrac{adj}{hyp} \div \dfrac{opp}{hyp} \\[5ex]
+        = \dfrac{adj}{hyp} * \dfrac{hyp}{opp} \\[5ex]
+        \therefore \cot \theta = \dfrac{adj}{opp}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Functions -->
+
+    <!-- Unit Circle -->
+    <div class="w3-container w3-padding-32" id="unitCircle">
+      <h2>Summary: The Unit Circle</h2>
+      <table class="w3-center">
+        <tr>
+          <th class="green">$\theta$ in DEG</th>
+          <th class="green">$\theta$ in RAD</th>
+          <th class="green">$\sin \theta$</th>
+          <th class="green">$\cos \theta$</th>
+          <th class="green">$\tan \theta$</th>
+          <th class="green">$\csc \theta$</th>
+          <th class="green">$\sec \theta$</th>
+          <th class="green">$\cot \theta$</th>
+        </tr>
+        <tr>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$30$</td>
+          <td>$\dfrac{\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$45$</td>
+          <td>$\dfrac{\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$60$</td>
+          <td>$\dfrac{\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$90$</td>
+          <td>$\dfrac{\pi}{2}$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$120$</td>
+          <td>$\dfrac{2\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$135$</td>
+          <td>$\dfrac{3\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$150$</td>
+          <td>$\dfrac{5\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$180$</td>
+          <td>$\pi$</td>
+          <td>$0$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$210$</td>
+          <td>$\dfrac{7\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$225$</td>
+          <td>$\dfrac{5\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$240$</td>
+          <td>$\dfrac{4\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$270$</td>
+          <td>$\dfrac{3\pi}{2}$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$315$</td>
+          <td>$\dfrac{7\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$300$</td>
+          <td>$\dfrac{5\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$330$</td>
+          <td>$\dfrac{11\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$360$</td>
+          <td>$2\pi$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+      </table>
+    </div>
+    <!-- End Unit Circle -->
+
+    <!-- Trigonometric Identities -->
+    <div class="w3-container w3-padding-32" id="trigonometricIdentities">
+      <h2>Trigonometric Identities</h2>
+      <p>
+        \begin{array}{c | c}
+        II & I \\
+        \hline
+        III & IV
+        \end{array} =
+        \begin{array}{c | c}
+        S & A \\
+        \hline
+        T & C
+        \end{array} =
+        \begin{array}{c | c}
+        Sine\:\: is\:\: positive & All\:\: are\:\: positive \\
+        \hline
+        Tangent\:\: is\:\: positive & Cosine\:\: is\:\: positive
+        \end{array}
+      </p>
+      <br><br>
+      <p>
+        <b>The pneumonic to remember it:</b> <br>
+        First Quadrant to Fourth Quadrant (clockwise direction): A-C-T-S (ACTS of the Apostles) <br><br>
+        First Quadrant to Fourth Quadrant (counter-clockwise direction): A-S-T-C: ADD - SUGAR - TO - COFFEE <br><br>
+        Fourth Quadrant to Third Quadrant (counter-clockwise direction): C-A-S-T (Simon Peter, CAST your net into the
+        sea.) <br><br>
+        Second Quadrant to Third Quadrant (clockwise direction): S-A-C-T <br><br>
+
+        <b>Cofunction Identities (Identities of Complements)</b> <br>
+        <b>First Quadrant Identities</b> <br>
+        <u>First Quadrant:</u> <b>All (sine, cosine, tangent) are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent</b> are also positive. <br><br>
+        <u>Given:</u> two angles say: $\alpha$ and $\beta$; <br>
+        If $\alpha$ and $\beta$ are complementary, then the: <br>
+        <b>Sine</b> function and the <b>Cosine</b> functions are cofunctions <br><br>
+        $
+        \sin \alpha = \cos \beta \\[3ex]
+        \cos \alpha = \sin \beta \\[3ex]
+        $
+        <b>Tangent</b> function and the <b>Cotangent</b> functions are cofunctions <br><br>
+        $
+        \tan \alpha = \cot \beta \\[3ex]
+        \cot \alpha = \tan \beta \\[3ex]
+        $
+        <b>Secant</b> function and the <b>Cosecant</b> functions are cofunctions <br><br>
+        $
+        \sec \alpha = \csc \beta \\[3ex]
+        \csc \alpha = \sec \beta \\[3ex]
+        $
+
+        <u>Given:</u> one angle say: $\theta$; <br>
+        <b>First Quadrant Identities or Cofunction Identities or Identities of Complements</b>
+        <br><br>
+        $0 \lt \theta \lt 90 ...Angle\:\: in\:\: Degrees \\[3ex]$
+        Reference Angle = $\theta$ ... Angle in Degrees <br><br>
+        $0 \lt \theta \lt \dfrac{\pi}{2} ...Angle\:\: in\:\: Radians \\[5ex]$
+        Reference Angle = $\theta$ ... Angle in Radians <br><br>
+        <u>First Quadrant:</u> <b>sine, cosine, tangent are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent are also positive</b>
+        <br><br>
+        Complement of $\theta$ = $90 - \theta$ where $\theta$ is in degrees:
+        <br><br>
+        Complement of $\theta$ = $\dfrac{\pi}{2} - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\:\: \sin \theta = \cos (90 - \theta) \\[3ex]
+        (2.)\:\: \sin \theta = \cos \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (3.)\:\: \cos \theta = \sin (90 - \theta) \\[3ex]
+        (4.)\:\: \cos \theta = \sin \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (5.)\:\: \tan \theta = \cot (90 - \theta) \\[3ex]
+        (6.)\:\: \tan \theta = \cot \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (7.)\:\: \cot \theta = \tan (90 - \theta) \\[3ex]
+        (8.)\:\: \cot \theta = \tan \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (9.)\:\: \sec \theta = \csc (90 - \theta) \\[3ex]
+        (10.)\:\: \sec \theta = \csc \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (11.)\:\: \csc \theta = \sec (90 - \theta) \\[3ex]
+        (12.)\:\: \csc \theta = \sec \left(\dfrac{\pi}{2} - \theta \right) \\[7ex]
+        $
+
+        <b>Second Quadrant Identities or Identities of Supplements</b>
+        <br><br>
+        $90 \lt \theta \lt 180$ ... Angle in Degrees <br>
+        Reference Angle = $180 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{\pi}{2} \lt \theta \lt \pi$ ... Angle in Radians <br>
+        Reference Angle = $\pi - \theta$ ... Angle in Radians <br>
+        <u>Second Quadrant:</u> <b>sine is positive</b> <br>
+        This implies that <b>cosecant is also positive</b> <br>
+        Symmetric across the y-axis
+        <br><br>
+        <u>Given:</u> one angle say: $\theta$; <br>
+        Supplement of $\theta$ = $180 - \theta$ where $\theta$ is in degrees: <br>
+        Supplement of $\theta$ = $\pi - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \sin (180 - \theta) \\[3ex]
+        (2.)\;\; \sin (180 - \theta) = \sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = \sin (\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (\pi - \theta) = \sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (180 - \theta) \\[3ex]
+        (6.)\;\; \cos (180 - \theta) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (\pi - \theta) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (180 - \theta) \\[3ex]
+        (10.)\;\; \tan (180 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (\pi - \theta) = -\tan \theta \\[5ex]
+        $
+
+        <b>Third Quadrant Identities</b> <br>
+        $180 \lt \theta \lt 270$ ... Angle in Degrees <br>
+        Reference Angle = $\theta - 180$ ... Angle in Degrees <br>
+        $\pi \lt \theta \lt \dfrac{3\pi}{2}$ ... Angle in Radians <br>
+        Reference Angle = $\theta - \pi$ ... Angle in Radians <br>
+        <u>Third Quadrant:</u> <b>tangent is positive</b> <br>
+        This implies that <b>cotangent is also positive</b> <br>
+        Symmetric across the origin <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (\theta - 180) \\[3ex]
+        (2.)\;\; \sin (\theta - 180) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (\theta - \pi) \\[3ex]
+        (4.)\;\; \sin (\theta - \pi) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (\theta - 180) \\[3ex]
+        (6.)\;\; \cos (\theta - 180) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\theta - \pi) \\[3ex]
+        (8.)\;\; \cos (\theta - \pi) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = \tan (\theta - 180) \\[3ex]
+        (10.)\;\; \tan (\theta - 180) = \tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = \tan (\theta - \pi) \\[3ex]
+        (12.)\;\; \tan (\theta - \pi) = \tan \theta \\[5ex]
+        $
+        But if $\theta \lt 180$, use $\theta + 180$
+        <br><br>
+
+        <b>Fourth Quadrant Identities</b> <br>
+        $270 \lt \theta \lt 360$ ... Angle in Degrees <br>
+        Reference Angle = $360 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{3\pi}{2} \lt \theta \lt 2\pi$ ... Angle in Radians <br>
+        Reference Angle = $2\pi - \theta$ ... Angle in Radians <br>
+        <u>Fourth Quadrant:</u> <b>cosine is positive</b> <br>
+        This implies that <b>secant is also positive</b> <br>
+        Symmetric across the x-axis <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (360 - \theta) \\[3ex]
+        (2.)\;\; \sin (360 - \theta) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (2\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (2\pi - \theta) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = \cos (360 - \theta) \\[3ex]
+        (6.)\;\; \cos (360 - \theta) = \cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = \cos (2\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (2\pi - \theta) = \cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (360 - \theta) \\[3ex]
+        (10.)\;\; \tan (360 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (2\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (2\pi - \theta) = -\tan \theta \\[3ex]
+        $
+
+        <b>Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[3ex]
+        (2.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[3ex]
+        (3.)\;\; \cot \theta = \dfrac{1}{\tan \theta} \\[3ex]
+        $
+
+        <b>From Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{1}{\csc \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \dfrac{1}{\sec \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \dfrac{1}{\cot \theta} \\[5ex]
+        $
+
+        <b>Quotient Identities</b> <br>
+        $
+        (1.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[3ex]
+        (2.)\;\; \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[3ex]
+        $
+
+        As you can see, $\cot \theta$ has two formulas <br><br>
+        $
+        \cot \theta = \dfrac{1}{\tan \theta} \\[5ex]
+        \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        $
+        Sometimes, we shall use the first one. Sometimes, we shall use the second one. <br>
+        We have to use the formula that will not give us an undefined value (where the denominator is zero) <br><br>
+
+        <b>Even Identities</b> <br>
+        Recall: a function, say $f(x)$ is even if $f(-x) = f(x)$ <br>
+        In Trigonometry, the <b>cosine function</b> and the <b>secant function</b> are <b>even functions.</b> <br><br>
+        $
+        (1.)\;\; \cos (-\theta) = \cos \theta \\[3ex]
+        (2.)\;\; \sec (-\theta) = \sec \theta \\[5ex]
+        $
+
+        <b>Odd Identities</b> <br>
+        Recall: a function, say $f(x)$ is odd if $f(-x) = -f(x)$ <br>
+        In Trigonometry, the <b>sine function</b>, the <b>cosecant function</b>,
+        the <b>tangent function</b>, and the <b>cotangent function</b> are <b>odd functions.</b> <br><br>
+        $
+        (1.)\;\; \sin (-\theta) = -\sin \theta \\[3ex]
+        (2.)\;\; \csc (-\theta) = -\csc \theta \\[3ex]
+        (3.)\;\; \tan (-\theta) = -\tan \theta \\[3ex]
+        (4.)\;\; \cot (-\theta) = -\cot \theta \\[5ex]
+        $
+
+        <b>Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \theta + \cos^2 \theta = 1 \\[3ex]
+        (2.)\;\; \tan^2 \theta + 1 = \sec^2 \theta \\[3ex]
+        (3.)\;\; \cot^2 \theta + 1 = \csc^2 \theta \\[3ex]
+        $
+
+        <b>From Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin \theta = \pm \sqrt{1 - \cos^2 \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \pm \sqrt{1 - \sin^2 \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \pm \sqrt{\sec^2 \theta - 1} \\[3ex]
+        (4.)\;\; \sec \theta = \pm \sqrt{\tan^2 \theta + 1} \\[3ex]
+        (5.)\;\; \cot \theta = \pm \sqrt{\csc^2 \theta - 1} \\[3ex]
+        (6.)\;\; \csc \theta = \pm \sqrt{\cot^2 \theta + 1}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Identities -->
+
+    <!-- Trigonometric Formulas -->
+    <div class="w3-container w3-padding-32" id="trigonometricFormulas">
+      <h2>Trigonometric Formulas</h2>
+      <p>
+        <b>Sum and Difference Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta \\[3ex]
+        (2.)\;\; \cos (\alpha \pm \beta) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta \\[3ex]
+        (3.)\;\; \tan (\alpha \pm \beta) = \dfrac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta} \\[5ex]
+        $
+        <b>Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin \dfrac{\theta}{2} = \pm \sqrt{\dfrac{1 - \cos \theta}{2}} \\[5ex]
+        (2.)\;\; \cos {\theta \over 2} = \pm \sqrt{\dfrac{1 + \cos \theta}{2}} \\[5ex]
+        (3.)\;\; \tan {\theta \over 2} = \pm \sqrt{\dfrac{1 - \cos \theta}{1 + \cos \theta}} \\[5ex]
+        (4.)\;\; \tan {\theta \over 2} = \dfrac{\sin \theta}{1 + \cos \theta} \\[5ex]
+        (5.)\;\; \tan {\theta \over 2} = \dfrac{1 - \cos \theta}{\sin \theta} \\[5ex]
+        $
+
+        <b>Formulas from Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{2} \\[5ex]
+        (2.)\;\; \cos^2 \dfrac{\theta}{2} = \dfrac{1 + \cos \theta}{2} \\[5ex]
+        (3.)\;\; \tan^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{1 + \cos \theta} \\[7ex]
+        $
+
+        <b>Double-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin (2\theta) = 2 \sin \theta \cos \theta \\[3ex]
+        (2.)\;\; \cos (2\theta) = \cos^2 \theta - \sin^2 \theta \\[3ex]
+        (3.)\;\; \cos (2\theta) = 1 - 2\sin^2 \theta \\[3ex]
+        (4.)\;\; \cos (2\theta) = 2\cos^2 \theta - 1 \\[3ex]
+        (5.)\;\; \tan (2\theta) = \dfrac{2\tan \theta}{1 - \tan^2 \theta} \\[5ex]
+        $
+
+        <b>Formulas from Double-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin^2 \theta = \dfrac{1 - \cos(2\theta)}{2} \\[5ex]
+        (2.)\;\; \cos^2 \theta = \dfrac{1 + \cos(2\theta)}{2} \\[5ex]
+        (3.)\;\; \tan^2 \theta = \dfrac{1 - \cos(2\theta)}{1 + \cos(2\theta)} \\[7ex]
+        $
+
+        <b>Triple-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (3\theta) = 3 \sin \theta - 4\sin^3 \theta \\[3ex]
+        (2.)\;\; \cos (3\theta) = 4 \cos^3 \theta - 3 \cos \theta \\[3ex]
+        (3.)\;\; \tan (3\theta) = \dfrac{3\tan \theta - \tan^3 \theta}{1 - 3\tan^2 \theta} \\[7ex]
+        $
+
+        <b>Sum-to-Product Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha + \sin \beta = 2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (2.)\;\; \sin \alpha - \sin \beta = 2 \sin \left(\dfrac{\alpha - \beta}{2}\right) \cos \left(\dfrac{\alpha +
+        \beta}{2}\right) \\[5ex]
+        (3.)\;\; \cos \alpha + \cos \beta = 2 \cos \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (4.)\;\; \cos \alpha - \cos \beta = -2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \sin \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        $
+        <i>
+          Ask students to write the compact form / shortened form of the first two Sum-to-Product Formulas.
+        </i>
+        <br><br>
+
+        <b>Sum-to-Product Formulas (Compact Form of the First Two Formulas)</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha \pm \sin \beta = 2 \sin \dfrac{\alpha \pm \beta}{2} \cos \dfrac{\alpha \mp \beta}{2}
+        \\[7ex]
+        $
+
+        <b>Product-to-Sum Formulas</b>
+        <br><br>
+        $
+        (1.) \sin \alpha * \sin \beta = \dfrac{1}{2} [\cos(\alpha - \beta) - \cos(\alpha + \beta)] \\[5ex]
+        (2.) \cos \alpha * \cos \beta = \dfrac{1}{2} [\cos(\alpha - \beta) + \cos(\alpha + \beta)] \\[5ex]
+        (3.) \sin \alpha * \cos \beta = \dfrac{1}{2} [\sin(\alpha + \beta) + \sin(\alpha + \beta)] \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Formulas -->
+
+    <!-- Factoring Formulas -->
+    <div class="w3-container w3-padding-32" id="factoringFormulas">
+      <h2>Factoring Formulas</h2>
+      <p>
+        <i>x</i> is any trigonometric ratio <br>
+        <i>y</i> is any trigonometric ratio
+        <br><br>
+        $
+        \underline{Difference\;\;of\;\;Two\;\;Squares} \\[3ex]
+        (1.)\;\;x^2 - y^2 = (x + y)(x - y) \\[5ex]
+        \underline{Difference\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (2.)\;\; x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\[5ex]
+        \underline{Sum\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (3.)\;\; x^3 + y^3 = (x + y)(x^2 - xy + y^2) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Factoring Formulas -->
+
+    <!-- Triangle Laws -->
+    <div class="w3-container w3-padding-32" id="triangleLaws">
+      <h2>Triangle Laws</h2>
+      <p>
+        <b>Sine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the ratio of the side length of any triangle to the sine of the angle measure opposite that side
+        is the same for the three sides of the triangle.
+        <br><br>
+        $
+        \dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C} \\[5ex]
+        $
+        OR <br><br>
+        The ratio of the angle measure of any triangle to the side length opposite that angle is the same for the three
+        angles of the triangle.
+        <br><br>
+        $
+        \dfrac{\sin A}{a} = \dfrac{\sin B}{b} = \dfrac{\sin C}{c} \\[5ex]
+        $
+
+        <b>Cosine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the square of a side of a triangle is the difference between the sum of the squares of the other
+        two sides and twice the product of the two sides and the included angle.
+        <br><br>
+        $
+        a^2 = b^2 + c^2 - 2bc \cos A \\[3ex]
+        \cos A = \dfrac{b^2 + c^2 - a^2}{2bc} \\[5ex]
+        \rightarrow A = \cos^{-1} \left(\dfrac{b^2 + c^2 - a^2}{2bc}\right) \\[5ex]
+        b^2 = a^2 + c^2 - 2ac \cos B \\[3ex]
+        \cos B = \dfrac{a^2 + c^2 - b^2}{2ac} \\[5ex]
+        \rightarrow B = \cos^{-1} \left(\dfrac{a^2 + c^2 - b^2}{2ac}\right) \\[5ex]
+        c^2 = a^2 + b^2 - 2ab \cos C \\[3ex]
+        \cos C = \dfrac{a^2 + b^2 - c^2}{2ab} \\[5ex]
+        \rightarrow C = \cos^{-1} \left(\dfrac{a^2 + b^2 - c^2}{2ab}\right) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Triangle Laws -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) <b>Sum of Angles of a Triangle Theorem:</b> <br>
+        The sum of the interior angles of a triangle is 180&deg;
+        <br><br>
+        (2.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the hypotenuse
+        is twice the length of the short side.
+        <br><br>
+        (3.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the middle side
+        is the square root of 3 times the length of short side.
+        <br><br>
+        (4.) In a <b>45&deg; &ndash; 45&deg; &ndash; 90&deg; right triangle theorem</b> (Right Isosceles Triangle
+        Theorem); the length of the hypotenuse is the square root of 2 times the length of either side.
+        <br><br>
+        (5.) <b>Pythagorean Theorem:</b> Applies only to right triangles. <br>
+        In a <b>right triangle</b>, the square of the length of the hypotenuse is the
+        sum of the squares of the short side and the middle side.
+        <br><br>
+        $hyp^2 = leg^2 + leg^2$
+        <br><br>
+        (6.) <b>Converse of the Pythagorean Theorem (Right Triangle Theorem):</b> <br>
+        If the square of the long side(hypotenuse) is the
+        sum of the squares of the other two sides, then the triangle is a right triangle.
+        <br><br>
+        (7.) <b>Acute Triangle Theorem:</b> If the square of the long side is less than the sum of the squares of the
+        other two sides, then the triangle is an acute triangle.
+        <br><br>
+        (8.) <b>Obtuse Triangle Theorem:</b> If the square of the long side is greater than the sum of the squares of
+        the other two sides, then the triangle is an obtuse triangle.
+        <br><br>
+        (9.) <b>Triangle Inequality Theorem:</b> This is the theorem that determines if you can form a triangle using
+        any three lengths. <br>
+        The sum of the lengths of any two sides of a triangle is greater than the length of the third side.
+        <br><br>
+        (10.) <b>Side Length &ndash; Angle Measure Theorem:</b> If any two side lengths of a triangle are unequal; the
+        angles of the triangle are also unequal, and the measure of an angle is opposite the length of the side facing
+        that angle as regards size. <br>
+        The measure of the smallest angle is opposite the shortest side length. <br>
+        The measure of the greatest angle is opposite the longest side length. <br>
+        The measure of the middle angle is opposite the middle side length. <br>
+        In other words; regarding size, the measure of an angle is opposite the length of the side facing the
+        angle; or the side length facing an angle is opposite the angle measure as regards size. <br>
+        Small side faces small angle, middle side faces middle angle, big side faces big angle
+        <br><br>
+        (11.) <b>Exterior Angle of a Triangle Theorem:</b> The exterior angle of a triangle is the sum of the two
+        interior opposite angles.
+        <br><br>
+        (12.) <b>Isosceles Base Angles Theorem:</b> The base angles of an isosceles triangle are equal.
+        <br><br>
+        (13.) <b>Converse of the Isosceles Base Angles Theorem:</b> If the base angles of a triangle are equal, then the
+        triangle is an isosceles triangle.
+        <br><br>
+        (14.) <b>Perpendicular Bisector of the Base of an Isosceles Triangle Theorem:</b> It states that if a line
+        bisects the vertex angle of an isosceles triangle, then the line is also the perpendicular
+        bisector of the base (the line also bisects the base of that isosceles triangle at right angles).
+        <br><br>
+        (15.) <b>Perpendicular Height to Base of Isosceles Triangle Theorem</b> It states that the perpendicular height
+        drawn from the apex of an isosceles triangle to the base: <br>
+        (a.) bisects the base <br>
+        (b.) bisects the apex angle.
+        <br><br>
+        (16.) <b>Side-Splitter Theorem</b> Applies to all triangles with <i>inserted</i> parallel lines as applicable.
+        <br>
+        It states that if a line segment is parallel to one side of a triangle and intersects the other two sides of
+        the triangle, then it divides those two sides proportionally.
+        <br><br>
+        (17.) <b>Midpoint Theorem</b> Applies to all triangles in which a line segment
+        <i>joins the midpoints of any two sides</i> of the triangle. <br>
+        It states that if a line segment joins any two sides of a triangle, then the line segment: <br>
+        (a.) is parallel to the third side. <br>
+        (b.) bisects the third side.
+        <br><br>
+        (18.) <b>Converse of the Midpoint Theorem</b> A line segment drawn through the midpoint of one side of a
+        triangle and parallel to another side, bisects the third side.
+        <br><br>
+        (19.) <b>Scale Factor, Perimeter Ratio, and Area Ratio of Similar Figures Theorem</b> Applies to all similar
+        figures including similar triangles. <br>
+        It states that for two similar figures, the ratio of the perimeters is the same as the scale factor; and the
+        ratio of the areas is the ratio of the square of the scale factor.
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Circle Formulas -->
+    <div class="w3-container w3-padding-32" id="circleFormulas">
+      <h2>Circle Formulas</h2>
+      <p>
+        Except stated otherwise, use:
+        <br><br>
+        $
+        d = diameter \\[3ex]
+        r = radius \\[3ex]
+        L = arc\:\:length \\[3ex]
+        A = area\;\;of\;\;sector \\[3ex]
+        P = perimeter\;\;of\;\;sector \\[3ex]
+        \theta = central\:\:angle \\[3ex]
+        \pi = \dfrac{22}{7} \\[5ex]
+        RAD = radians \\[3ex]
+        ^\circ = DEG = degrees \\[7ex]
+
+        \underline{\theta\;\;in\;\;DEG} \\[3ex]
+        L = \dfrac{2\pi r\theta}{360} = \dfrac{\pi r\theta}{180} \\[5ex]
+        \theta = \dfrac{180L}{\pi r} \\[5ex]
+        r = \dfrac{180L}{\pi \theta} \\[5ex]
+        A = \dfrac{\pi r^2\theta}{360} \\[5ex]
+        \theta = \dfrac{360A}{\pi r^2} \\[5ex]
+        r = \dfrac{360A}{\pi\theta} \\[5ex]
+        P = \dfrac{r(\pi\theta + 360)}{180} \\[7ex]
+
+        \underline{\theta\;\;in\;\;RAD} \\[3ex]
+        L = r\theta \\[5ex]
+        \theta = \dfrac{L}{r} \\[5ex]
+        r = \dfrac{L}{\theta} \\[5ex]
+        A = \dfrac{r^2\theta}{2} \\[5ex]
+        \theta = \dfrac{2A}{r^2} \\[5ex]
+        r = \sqrt{\dfrac{2A}{\theta}} \\[5ex]
+        P = r(\theta + 2) \\[7ex]
+
+        Circumference\:\:of\:\:a\:\:circle = 2\pi r = \pi d \\[3ex]
+        L = \dfrac{2A}{r} \\[5ex]
+        r = \dfrac{2A}{L} \\[5ex]
+        A = \dfrac{Lr}{2}
+        $
+      </p>
+    </div>
+    <!-- End Circle Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) In the figure below, <i>C</i> is on $\overline{BD}$, $\angle BAC$ measures 35&deg; and $\angle ABC$
+          measures 95&deg; <br>
+          What is the measure of $\angle ACD$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          $
+          F.\;\; 95^\circ \\[3ex]
+          G.\;\; 125^\circ \\[3ex]
+          H.\;\; 130^\circ \\[3ex]
+          J.\;\; 140^\circ \\[3ex]
+          K.\;\; 145^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionT1">
+            <br>
+            Average implies Arithmetic Mean
+            <br><br>
+            $
+            \angle ACD = \angle BAC + \angle ABC ...exterior\;\;\angle\;\;of\;\;a\;\;\triangle =
+            sum\;\;of\;\;the\;\;two\;\;interior\;\;opposite\;\;\angle s \\[3ex]
+            \angle ACD = 35 + 95 \\[3ex]
+            = 130^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) For the right triangle below, $\tan \theta = \dfrac{5}{\sqrt{39}}$ <br>
+          What is $\sin \theta$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number2.png" alt="Number 2">
+          <br><br>
+          $
+          A.\;\; \dfrac{25}{39} \\[5ex]
+          B.\;\; \dfrac{5}{8} \\[5ex]
+          C.\;\; \dfrac{\sqrt{39}}{8} \\[5ex]
+          D.\;\; 1 - \dfrac{5\sqrt{39}}{39} \\[5ex]
+          E.\;\; \sqrt{1 - \left(\dfrac{5}{\sqrt{39}}\right)^2} \\[7ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionT2">
+            <br>
+            $
+            \underline{SOHCAHTOA} \\[3ex]
+            \tan \theta = \dfrac{5}{\sqrt{39}} = \dfrac{opp}{adj} \\[5ex]
+            \underline{Pythagorean\;\;Theorem} \\[3ex]
+            hyp^2 = opp^2 + adj^2 \\[3ex]
+            hyp^2 = 5^2 + \left(\sqrt{39}\right)^2 \\[4ex]
+            hyp^2 = 25 + 39 \\[3ex]
+            hyp^2 = 64 \\[3ex]
+            hyp = \sqrt{64} \\[3ex]
+            hyp = 8\;units \\[3ex]
+            \sin\theta = \dfrac{opp}{hyp}...SOHCAHTOA \\[5ex]
+            \sin\theta = \dfrac{5}{8}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) In the figure below, point <i>C</i> is on $\overline{AD}$, and 2 angle measures of $\triangle ABC$ are
+          given. <br>
+          What is the measure of $\angle BCD$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number3.png" alt="Number 3">
+          <br><br>
+          $
+          A.\;\; 65^\circ \\[4ex]
+          B.\;\; 85^\circ \\[4ex]
+          C.\;\; 95^\circ \\[4ex]
+          D.\;\; 105^\circ \\[4ex]
+          E.\;\; 115^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionT3">
+            <br>
+            $
+            \angle BCD = 65^\circ + 30^\circ ...exterior\;\angle \;\;of\;\;a\;\;\triangle =
+            sum\;\;of\;\;two\;\;interior\;\;opposite\;\;\angle s \\[4ex]
+            \angle BCD = 95^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) In the figure shown below, $\triangle ABC \sim \triangle DEF$ and the given lengths are in inches. <br>
+          Which of the following expressions gives the value of <i>x</i> in terms of <i>b</i>?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number4.png" alt="Number 4">
+          <br><br>
+          $
+          A.\;\; b \\[3ex]
+          B.\;\; \dfrac{21}{5}b \\[5ex]
+          C.\;\; 5b \\[3ex]
+          D.\;\; 9b \\[3ex]
+          E.\;\; \dfrac{35}{3}b \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionT4">
+            <br>
+            $
+            \dfrac{x}{7b} = \dfrac{3a}{5a}...\text{ratio of corresponding sides of similar}\;\triangle s \\[5ex]
+            x = \dfrac{3a \cdot 7b}{5a} \\[5ex]
+            x = \dfrac{21b}{5}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) The isosceles triangle shown below has congruent legs that are each 10 centimeters long. <br>
+          The perimeter of the triangle is 32 centimeters. <br>
+          What is the length, in centimeters, of the altitude that splits the triangle into 2 congruent right triangles?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          $
+          A.\;\; \sqrt{44} \\[3ex]
+          B.\;\; 6 \\[3ex]
+          C.\;\; 7 \\[3ex]
+          D.\;\; 8 \\[3ex]
+          E.\;\; 10 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionT5">
+            <br>
+            Let the perpendicular altitude = <i>h</i>
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number5.png" alt="Number 5">
+            <br><br>
+            $
+            \underline{2\;\;Right\;\;\triangle s} \\[3ex]
+            Perimeter = 32\;cm \\[3ex]
+            Length\;\;of\;\;base = 32 - (10 + 10) \\[3ex]
+            = 32 - 20 \\[3ex]
+            = 12\;cm \\[3ex]
+            Base\;\;of\;\;each\;\;Right\;\;\triangle = \dfrac{12}{2} = 6\;cm \\[5ex]
+            ...\text{altitude splits the triangle into 2 congruent right triangles} \\[3ex]
+            \text{Using any of the Right Triangles} \\[3ex]
+            10^2 = h^2 + 6^2...Pythagorean\;\;Theorem \\[4ex]
+            h^2 = 10^2 - 6^2 \\[4ex]
+            h^2 = 100 - 36 \\[3ex]
+            h^2 = 64 \\[3ex]
+            h = \sqrt{64} \\[3ex]
+            h = 8\;cm
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) For all triangles with sides of length <i>a, b</i> and <i>c</i> opposite angles of measure <i>A, B</i>
+          and <i>C</i>, respectively, which of the following equations <i>must</i> be true?
+          <br><br>
+          $
+          A.\;\; \dfrac{a}{A} = \dfrac{b}{B} \\[5ex]
+          B.\;\; \dfrac{\sin a}{A} = \dfrac{\sin b}{B} \\[5ex]
+          C.\;\; \dfrac{a}{\cos A} = \dfrac{b}{\cos B} \\[5ex]
+          D.\;\; b^2 = a^2 + c^2 - 2ab(\sin B) \\[4ex]
+          E.\;\; c^2 = a^2 + b^2 - 2ab(\cos C) \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionT6">
+            <br>
+            $
+            c^2 = a^2 + b^2 - 2ab(\cos C) ...Cosine\;\;Law
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) Olivia, Ashton, and Jane are standing on a soccer field such that Olivia is 20 meters due west of Ashton
+          and Jane is 40 meters due north of Ashton. <br>
+          Their positions are at the vertices of a triangle. <br>
+          Which of the following expressions gives the degree measure of the angle of the triangle at the vertex where
+          Olivia is standing?
+          <br><br>
+          $
+          F.\;\; \cos^{-1}\left(\dfrac{40}{20}\right) \\[5ex]
+          G.\;\; \sin^{-1}\left(\dfrac{40}{20}\right) \\[5ex]
+          H.\;\; \sin^{-1}\left(\dfrac{20}{40}\right) \\[5ex]
+          J.\;\; \tan^{-1}\left(\dfrac{40}{20}\right) \\[5ex]
+          K.\;\; \tan^{-1}\left(\dfrac{20}{40}\right) \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionT7">
+            <br>
+            Let the degree measure of the angle of the triangle at the vertex where Olivia is
+            standing be $\theta$ <br>
+            Let us represent the information using a diagram <br>
+            <img src="images/Trigonometry/Answers/Number7.png" alt="Number 7">
+            <br><br>
+            $
+            SOH:CAH:TOA \\[3ex]
+            \tan \theta = \dfrac{40}{20} \\[5ex]
+            \theta = \tan^{-1}\left(\dfrac{40}{20}\right)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) A 12-foot taut wire has one end attached to the ground and the other end attached to a vertical pole, as
+          shown below. <br>
+          The point of contact of the wire and the pole is 8 feet above the ground. <br>
+          What angle does the wire make with the level ground?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number8.png" alt="Number 8">
+          <br><br>
+          $
+          A.\;\; \cos^{-1}\left(\dfrac{8}{12}\right) \\[6ex]
+          B.\;\; \csc^{-1}\left(\dfrac{8}{12}\right) \\[6ex]
+          C.\;\; \sec^{-1}\left(\dfrac{8}{12}\right) \\[6ex]
+          D.\;\; \sin^{-1}\left(\dfrac{8}{12}\right) \\[6ex]
+          E.\;\; \tan^{-1}\left(\dfrac{8}{12}\right) \\[6ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionT8">
+            <br>
+            Let the angle that the wire makes with the level ground = &theta;
+            <br><br>
+            $
+            \sin\theta = \dfrac{opp}{hyp} ...SOHCAHTOA \\[5ex]
+            \sin\theta = \dfrac{8}{12} \\[5ex]
+            \theta = \sin^{-1}\left(\dfrac{8}{12}\right)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Skyline Tours is offering hot-air balloon tours. <br>
+          The tables below give information about the balloon, the equipment, and the tours offered. <br>
+          <table>
+            <tr>
+              <td colspan="2" class="w3-center">Hot-air-balloon information</td>
+            </tr>
+            <tr>
+              <td class="w3-padding">
+                Volume of balloon <br>
+                Maximum capacity of basket <br>
+                Weight of balloon <br>
+                Weight of basket <br>
+                Weight of burner
+              </td>
+              <td class="w3-padding">
+                $80,000$ cubic feet <br>
+                $8$ people <br>
+                $200$ pounds <br>
+                $150$ pounds <br>
+                $50$ pounds
+              </td>
+            </tr>
+          </table> <br>
+
+          <table class="w3-center">
+            <tr>
+              <td colspan="4">Tour information</td>
+            </tr>
+            <tr>
+              <td class="w3-padding">Tour</td>
+              <td class="w3-padding">Ticket price</td>
+              <td class="w3-padding">Duration, in minutes</td>
+              <td class="w3-padding">Maximum altitude, in feet</td>
+            </tr>
+            <tr>
+              <td class="w3-padding">
+                A <br>
+                B <br>
+                C
+              </td>
+              <td class="w3-padding">
+                $\$100$ <br>
+                $\$125$ <br>
+                $\$200$
+              </td>
+              <td class="w3-padding">
+                $45$ <br>
+                $60$ <br>
+                $90$
+              </td>
+              <td class="w3-padding">
+                $500$ <br>
+                $600$ <br>
+                $1,000$
+              </td>
+            </tr>
+          </table> <br>
+
+          Jarrod is looking up at a hot-air balloon. <br>
+          The balloon is currently at the maximum altitude duirng Tour C <br>
+          The angle of elevation from the horizon is $37^\circ$, as shown in the figure below. <br>
+          Which of the following expressions is closest to the distance, $d$ feet, from Jarrod to the basket?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number9.png" alt="Number 9">
+          <br><br>
+          $
+          F.\;\; \dfrac{1,000}{\sin 37^\circ} \\[5ex]
+          G.\;\; \dfrac{1,000}{\cos 37^\circ} \\[5ex]
+          H.\;\; 1,000 \sin 37^\circ \\[3ex]
+          J.\;\; 1,000 \cos 37^\circ \\[3ex]
+          K.\;\; 1,000 \tan 37^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionT9">
+            <br>
+            <img src="images/Trigonometry/Answers/Number9.png" alt="Number 9">
+            <br><br>
+            $
+            SOH:CAH:TOA \\[3ex]
+            \sin 37^\circ = \dfrac{opp}{hyp} = \dfrac{1000}{d} \\[6ex]
+            d * \sin 37 = 1000 \\[3ex]
+            d = \dfrac{1,000}{\sin 37^\circ}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Which of the following degree values of <i>x</i> is NOT in the domain of the function below?
+          $$
+          f(x) = \dfrac{1}{1 + \sec x}
+          $$
+          $
+          A.\;\; 0^\circ \\[4ex]
+          B.\;\; 45^\circ \\[4ex]
+          C.\;\; 60^\circ \\[4ex]
+          D.\;\; 150^\circ \\[4ex]
+          E.\;\; 180^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionT10">
+            <br>
+            The denominator should not be zero <br>
+            So, any value that would make the denominator, zero is NOT in the domain <br>
+            Let us set the denominator to zero to find that value
+            <br><br>
+            $
+            1 + \sec x = 0 \\[3ex]
+            \sec x = 0 - 1 \\[3ex]
+            \sec x = -1 \\[3ex]
+            \implies \\[3ex]
+            \dfrac{1}{\cos x} = -1 \\[5ex]
+            \cos x * -1 = 1 \\[3ex]
+            \cos x = \dfrac{1}{-1} \\[5ex]
+            \cos x = -1 \\[3ex]
+            x = \cos^{-1}(-1) \\[4ex]
+            x = 180^\circ \\[3ex]
+            $
+            180&deg; is NOT in the domain of the function.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) A vertical radio tower stands on level ground. <br>
+          From a point 200 feet along level ground from the base of the tower, the angle of elevation to the top of the
+          tower is 50°. <br>
+          Which of the following values is closest to the height, in feet, of the radio tower? <br>
+          (Note: $\sin 50^\circ \approx 0.77, \;\;\cos 50^\circ \approx 0.64, \;\;\tan 50^\circ \approx 1.20$)
+          <br><br>
+          $
+          F.\;\; 150 \\[3ex]
+          G.\;\; 170 \\[3ex]
+          H.\;\; 240 \\[3ex]
+          J.\;\; 260 \\[3ex]
+          K.\;\; 310 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionT11">
+            <br>
+            Let us represent the information on a diagram
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number11.png" alt="Number 11">
+            <br><br>
+            $
+            \underline{SOHCAHTOA} \\[3ex]
+            \tan 50^\circ = \dfrac{opp}{adj} = \dfrac{height}{200} \\[5ex]
+            height = 200\tan 50^\circ \\[3ex]
+            \approx 200(1.20) \\[3ex]
+            \approx 240\;feet
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) Let &theta; be an acute angle of a right triangle. <br>
+          Given $\sin\theta = \dfrac{a}{b}$ and $\tan\theta = \dfrac{a}{c}$, $\cos\theta =?$
+          <br><br>
+          $
+          F.\;\; 1 \\[3ex]
+          G.\;\; \dfrac{b}{a} \\[5ex]
+          H.\;\; \dfrac{b}{c} \\[5ex]
+          J.\;\; \dfrac{c}{a} \\[5ex]
+          K.\;\; \dfrac{c}{b} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionT12">
+            <br>
+            $
+            \tan\theta = \dfrac{\sin\theta}{\cos\theta}...Quotient\;\;Identities \\[5ex]
+            \cos\theta \cdot \tan\theta = \sin\theta \\[3ex]
+            \implies \\[3ex]
+            \cos\theta = \dfrac{\sin\theta}{\tan\theta} \\[5ex]
+            = \sin\theta \div \tan\theta \\[3ex]
+            = \dfrac{a}{b} \div \dfrac{a}{c} \\[5ex]
+            = \dfrac{a}{b} \cdot \dfrac{c}{a} \\[5ex]
+            = \dfrac{c}{b}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) Which of the following expressions is undefined?
+          <br><br>
+          $
+          F.\;\; \tan(0) \\[3ex]
+          G.\;\; \tan(\pi) \\[3ex]
+          H.\;\; \dfrac{1}{\sin\left(-\dfrac{\pi}{2}\right)} \\[7ex]
+          J.\;\; \dfrac{1}{\cos(0)} \\[5ex]
+          K.\;\; \dfrac{1}{\sin(0)} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT13')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCT13')">Calculator Solution</button>
+          <div class="result" id="solutionT13">
+            <br>
+            When the argument (the angular measures) has &pi;, then it is necessary to use the angle measure in RADIANS.
+            <br>
+            Alternatively, you may convert each angular measure in radians to degrees, and use the angle measure in
+            DEGREES. <br>
+            With your knowledge of Unit Circle (though we shall confirm with the calculator), we know that $\sin 0 = 0$
+            <br>
+            Any term that has only zero as the denominator is undefined because you cannot divide by zero. <br>
+            Division by zero is undefined. <br>
+            Therefore, $\dfrac{1}{\sin(0)} = \dfrac{1}{0} = undefined$
+            <br><br>
+            The rest of the options have values. Please see the Calculator Solution.
+          </div>
+          <div class="result" id="solutionCT13">
+            <br>
+            <img src="images/Trigonometry/Answers/Calculator13-1st.png" alt="Calculator 13-1st"> <br>
+            <img src="images/Trigonometry/Answers/Calculator13-2nd.png" alt="Calculator 13-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) Juanita walked from her home to the bakery, first walking 0.3 miles due east and then 0.4 miles due
+          north. <br>
+          What is the straight-line distance, in miles, from the bakery to Juanita's home?
+          <br><br>
+          $
+          A.\;\; 0.1 \\[3ex]
+          B.\;\; 0.2 \\[3ex]
+          C.\;\; 0.3 \\[3ex]
+          D.\;\; 0.5 \\[3ex]
+          E.\;\; 0.7 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionT14">
+            <br>
+            Let us represent this information in a diagram <br>
+            <img src="images/Trigonometry/Answers/Number14.png" alt="Number 14">
+            <br><br>
+            $
+            Straight-line\;\;distance = hyp \\[3ex]
+            hyp^2 = 0.3^2 + 0.4^2 ... Pythagorean\:\: Theorem \\[3ex]
+            hyp^2 = 0.09 + 0.16 \\[3ex]
+            hyp^2 = 0.25 \\[3ex]
+            hyp = \sqrt{0.25} \\[3ex]
+            hyp = 0.5\;miles
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) In the figure below, the circle is centered at <i>O</i>, the measure of angle $\angle MON$ ($m\angle
+          MON$) is 30&deg;, $m\angle NOP$ = <i>x</i>&deg;, and $m\angle POR$ = 80&deg;. <br>
+          The length of arc $\overset{\huge\frown}{MR}$ that does NOT contain <i>N</i> and <i>P</i> is 4 times the
+          length of minor arc $\overset{\huge\frown}{MN}$. <br>
+          What is the value of <i>x</i>? <br>
+          (Note: The figure below is NOT drawn to scale.)
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number15.png" alt="Number 15">
+          <br><br>
+          <b>F.</b> 10 <br>
+          <b>G.</b> 22 <br>
+          <b>H.</b> 50 <br>
+          <b>J.</b> 130 <br>
+          <b>K.</b> 190
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionT15">
+            <br>
+            $
+            L = \dfrac{\pi r\theta}{180} \\[5ex]
+            where \\[3ex]
+            L = \text{Length of arc} \\[3ex]
+            r = \text{radius} \\[3ex]
+            \theta = \text{central angle} \\[5ex]
+
+            \overset{\huge\frown}{MN} = \dfrac{\pi \cdot r \cdot 30}{180} \\[5ex]
+            \overset{\huge\frown}{MR} = \dfrac{\pi \cdot r \cdot Obtuse\angle MOR}{180} \\[5ex]
+            But: \\[3ex]
+            \overset{\huge\frown}{MR} = 4 \cdot \overset{\huge\frown}{MN} \\[3ex]
+            \dfrac{\pi r \cdot Obtuse\angle MOR}{180} = 4 \cdot \dfrac{\pi \cdot r \cdot 30}{180} \\[5ex]
+            Obtuse\angle MOR = 4 \cdot 30 \\[3ex]
+            Obtuse\angle MOR = 120^\circ \\[5ex]
+            120 + 30 + x + 80 = 360^\circ ...\text{sum of angles at a point} \\[3ex]
+            230 + x = 360 \\[3ex]
+            x = 360 - 230 \\[3ex]
+            x = 130^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) Josh is standing in a pool and looking up at his friend Olivia. <br>
+          Olivia is lying on her stomach on the diving board looking at Josh. <br>
+          The horizontal and vertical distances, in meters, between Josh and Olivia are given in the diagram below. <br>
+          What is the measure of the angle of elevation, $\theta$, of Josh's line of sight? <br>
+          (Note: Drawing is NOT to scale.)
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number16.png" alt="Number 16">
+          <br><br>
+          $
+          F.\;\; Arc\;sin\left(\dfrac{3}{8}\right) \\[5ex]
+          G.\;\; Arc\;cos\left(\dfrac{3}{8}\right) \\[5ex]
+          H.\;\; Arc\;tan\left(\dfrac{3}{8}\right) \\[5ex]
+          J.\;\; Arc\;cot\left(\dfrac{3}{8}\right) \\[5ex]
+          K.\;\; Arc\;csc\left(\dfrac{3}{8}\right) \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionT16">
+            <br>
+            $
+            SOHCAHTOA \\[3ex]
+            \tan \theta = \dfrac{3}{8} \\[5ex]
+            \theta = \tan^{-1}\left(\dfrac{3}{8}\right) \\[5ex]
+            \theta = Arctan\left(\dfrac{3}{8}\right)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) In $\triangle PQR$ shown below, <i>r</i> = 8 meters, <i>p</i> = 10 meters, and the measure of $\angle Q$
+          is 120&deg;. <br>
+          The solution of which of the following equations gives the length <i>q</i> in meters?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number17.png" alt="Number 17">
+          <br><br>
+          (Note: For a triangle with sides of length <i>a, b,</i> and <i>c</i> that are opposite angles $\angle A$,
+          $\angle B$, and $\angle C$, respectively, $\dfrac{\sin \angle A}{a} = \dfrac{\sin \angle B}{b} = \dfrac{\sin
+          \angle C}{c}$ and $c^2 = a^2 + b^2 - 2ab \cos \angle C$.)
+          <br><br>
+          $
+          F.\;\; \dfrac{\sin q}{120} = \dfrac{8}{10} \\[5ex]
+          G.\;\; \dfrac{\sin 120^\circ}{q} = \dfrac{8}{10} \\[6ex]
+          H.\;\; \dfrac{\sin 10^\circ}{q} = \dfrac{\sin 8^\circ}{120} \\[6ex]
+          J.\;\; 120^2 = 8^2 + 10^2 - 2(8)(10) \cos q \\[4ex]
+          K.\;\; q^2 = 8^2 + 10^2 - 2(8)(10) \cos 120^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionT17">
+            <br>
+            To determine the length of <i>q</i>, we have to use the Cosine Law beause the triangle has two sides and an
+            included angle.
+            <br><br>
+            $
+            q^2 = r^2 + p^2 - 2(r)(p) \cos Q...\text{Cosine Law} \\[4ex]
+            q^2 = 8^2 + 10^2 - 2(8)(10) \cos 120^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) Two motorcycles, starting at the same point at the same time, travel away from each other at a 90&deg;
+          angle. <br>
+          One travels at 40 miles per hour and the other at 60 miles per hour. <br>
+          If they continue traveling at these constant rates, after about how many hours will they be 200 miles apart?
+          <br><br>
+          $
+          A.\;\; 1.4 \\[3ex]
+          B.\;\; 2.8 \\[3ex]
+          C.\;\; 3.2 \\[3ex]
+          D.\;\; 7.7 \\[3ex]
+          E.\;\; 8.7 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionT18">
+            <br>
+            The diagram representing the information is shown:
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number18.png" alt="Number 18">
+            <br><br>
+            $
+            e^2 = 60^2 + 40^2 ...Pythagorean\;\;Theorem \\[3ex]
+            e^2 = 3600 + 1600 \\[3ex]
+            e^2 = 5200 \\[3ex]
+            e = \sqrt{5200} \\[3ex]
+            e = 72.11102551\;mph \\[3ex]
+            But: \\[3ex]
+            time = \dfrac{distance}{speed} \\[5ex]
+            distance = 200\;miles \\[3ex]
+            speed = 72.11102551\;mph \\[3ex]
+            time = \dfrac{200}{72.11102551} \\[5ex]
+            time = 2.773500981 \\[3ex]
+            time \approx 2.8\;seconds
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) In the figure shown below, $\triangle ABC$ is a right triangle with a right angle at <i>C</i>. <br>
+          Point <i>D</i> is on $\overline{BC}$, $m\angle ADC = 60^\circ,\;\;m\angle ABC = 30^\circ$, and <i>BD</i> = 100
+          feet. <br>
+          What is the length, in feet, of $\overline{AC}$
+          <br><br>
+          <div class="w3-center">
+            <img src="images/Trigonometry/Questions/Number19.png" alt="Number 19">
+          </div>
+          <br>
+          $
+          A.\;\; 50 \\[3ex]
+          B.\;\; \dfrac{100}{3} \\[5ex]
+          C.\;\; \dfrac{200}{3} \\[5ex]
+          D.\;\; 50\sqrt{3} \\[3ex]
+          E.\;\; 200\sqrt{3} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionT19">
+            <br>
+            $
+            Let: \\[3ex]
+            |AC| = y \\[3ex]
+            |CD| = x \\[5ex]
+            \underline{\triangle ACD} \\[3ex]
+            \angle CAD + \angle ADC + \angle ACD = 180^\circ ...sum\;\;of\;\;\angle s\;\;of\;\;a\;\;\triangle \\[3ex]
+            \angle CAD + 60 + 90 = 180 \\[3ex]
+            \angle CAD = 180 - 60 - 90 \\[3ex]
+            \angle CAD = 30^\circ \\[5ex]
+            \dfrac{x}{\sin 30^\circ} = \dfrac{y}{\sin 60^\circ}...Sine\;\;Law \\[5ex]
+            x = \dfrac{y\sin 30}{\sin 60} \\[5ex]
+
+            \underline{\triangle ACB} \\[3ex]
+            \angle CAB + \angle ABC + \angle ACB = 180^\circ ...sum\;\;of\;\;\angle s\;\;of\;\;a\;\;\triangle \\[3ex]
+            \angle CAB + 30 + 90 = 180 \\[3ex]
+            \angle CAB = 180 - 30 - 90 \\[3ex]
+            \angle CAB = 60^\circ \\[5ex]
+
+            \angle CAB = \angle CAD + \angle DAB ...diagram \\[3ex]
+            60 = 30 + \angle DAB \\[3ex]
+            \angle DAB = 60 - 30 \\[3ex]
+            \angle DAB = 30^\circ \\[5ex]
+
+            \dfrac{x + 100}{\sin 60^\circ} = \dfrac{y}{\sin 30^\circ} ...Sine\;\;Law \\[5ex]
+            x + 100 = \dfrac{y\sin 60}{\sin 30} \\[5ex]
+            x = \dfrac{y\sin 60}{\sin 30} - 100 \\[5ex]
+            $
+            This is the updated diagram <br>
+            <img src="images/Trigonometry/Answers/Number19.png" alt="Number 19">
+            <br><br>
+            $
+            x = x \implies \\[3ex]
+            \dfrac{y\sin 30}{\sin 60} = \dfrac{y\sin 60}{\sin 30} - 100 \\[5ex]
+            y * \sin 30 * \dfrac{1}{\sin 60} = y * \sin 60 * \dfrac{1}{\sin 30} - 100 \\[5ex]
+            \sin 30^\circ = \dfrac{1}{2}...Special\;\angle s \\[5ex]
+            \dfrac{1}{\sin 30^\circ} = \dfrac{2}{1} = 2 \\[5ex]
+            \sin 60^\circ = \dfrac{\sqrt{3}}{2}...Special\;\angle s \\[5ex]
+            \dfrac{1}{\sin 60^\circ} = \dfrac{2}{\sqrt{3}} \\[5ex]
+            \implies \\[3ex]
+            y * \dfrac{1}{2} * \dfrac{2}{\sqrt{3}} = y * \dfrac{\sqrt{3}}{2} * \dfrac{2}{1} - 100 \\[5ex]
+            \dfrac{y}{\sqrt{3}} = y\sqrt{3} - 100 \\[5ex]
+            \sqrt{3}\left(\dfrac{y}{\sqrt{3}}\right) = \sqrt{3}\left(y\sqrt{3}\right) - \sqrt{3}(100) \\[5ex]
+            y = 3y - 100\sqrt{3} \\[3ex]
+            100\sqrt{3} = 3y - y \\[3ex]
+            2y = 100\sqrt{3} \\[3ex]
+            y = \dfrac{100\sqrt{3}}{2} \\[5ex]
+            y = 50\sqrt{3}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) Josiah stands on level ground 15 ft from the base of a cliff. <br>
+          The angle of elevation from where Josiah is standing to the top of the cliff is 50&deg;, as shown below. <br>
+          Which of the following values is closest to the height, in feet, of the cliff? <br>
+          (Note: $\sin 50^\circ = 0.8;\;\;\cos 50^\circ = 0.6;\;\;\tan 50^\circ = 1.2$)
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number20.png" alt="Number 20">
+          <br><br>
+          $
+          A.\;\; 12 \\[3ex]
+          B.\;\; 13 \\[3ex]
+          C.\;\; 18 \\[3ex]
+          D.\;\; 25 \\[3ex]
+          E.\;\; 60 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionT20">
+            <br>
+            $
+            \tan 50^\circ = \dfrac{height}{15} ...SOHCAHTOA \\[6ex]
+            15\tan 50 = height \\[3ex]
+            height = 15 * \tan 50 \\[3ex]
+            height = 15(1.2) \\[3ex]
+            height = 18\;ft
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/Trigonometry.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) Loto begins at his back door and walks 8 yards east, 6 yards north, 12 yards east, and 5 yards north to
+          the barn door. <br>
+          About how many yards less would he walk if he could walk directly from the back door to the barn door?
+          <br><br>
+          $
+          A.\;\; 8 \\[3ex]
+          B.\;\; 19 \\[3ex]
+          C.\;\; 23 \\[3ex]
+          D.\;\; 26 \\[3ex]
+          E.\;\; 31 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionT21">
+            <br>
+            Let us draw the diagram to represent the information. <br>
+            Walking 8 yards east means walking 8 yards due/directly east <br>
+            This question is trying to assess our knowledge of the Pythagorean Theorem, as well as the importance of the
+            hypotenuse compared to the two legs of a right triangle.
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number21.png" alt="Number 21">
+            <br><br>
+            $
+            c^2 = 6^2 + 8^2 ...Pythagorean\;\;Theorem \\[3ex]
+            c^2 = 36 + 64 \\[3ex]
+            c^2 = 100 \\[3ex]
+            c = \sqrt{100} \\[3ex]
+            c = 10\;yards \\[5ex]
+            Also: \\[3ex]
+            d^2 = 5^2 + 12^2 ...Pythagorean\;\;Theorem \\[3ex]
+            d^2 = 25 + 144 \\[3ex]
+            d^2 = 169 \\[3ex]
+            d = \sqrt{169} \\[3ex]
+            d = 13\;yards \\[5ex]
+            \underline{Distance\;\;walked\;\;by\;\;Loto} \\[3ex]
+            = 8 + 6 + 12 + 5 \\[3ex]
+            = 31\;yards \\[5ex]
+            \underline{Distance\;\;that\;\;Loto\;\;could\;\;have\;\;walked\;\;directly} \\[3ex]
+            = c + d \\[3ex]
+            = 10 + 13 \\[3ex]
+            = 23\;yards \\[5ex]
+            \underline{How\;\;many\;\;yards\;\;less} \\[3ex]
+            = Difference \\[3ex]
+            = 31 - 23 \\[3ex]
+            = 8\;yards
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) In $\triangle PQR$ shown below, the measure of $\angle P$ is 40&deg;, <i>PR</i> = 110 meters, and the
+          measure of $\angle R$ is 80&deg;. <br>
+          Which of the following expressions gives <i>QR</i>, in meters?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number22.png" alt="Number 22">
+          <br><br>
+          (Note: For a triangle with sides of length <i>a, b, and c</i> that are opposite angles $\angle A$, $\angle B$,
+          $\angle C$, respectively, $\dfrac{\sin \angle A}{a} = \dfrac{\sin \angle B}{b} = \dfrac{\sin \angle C}{c}$)
+          <br><br>
+          $
+          F.\;\; \dfrac{110\sin 40^\circ}{\sin 60^\circ} \\[5ex]
+          G.\;\; \dfrac{110\sin 40^\circ}{\sin 80^\circ} \\[5ex]
+          H.\;\; \dfrac{110\sin 60^\circ}{\sin 40^\circ} \\[5ex]
+          J.\;\; \dfrac{110\sin 80^\circ}{\sin 40^\circ} \\[5ex]
+          K.\;\; \dfrac{110\sin 80^\circ}{\sin 60^\circ} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionT22">
+            <br>
+            $
+            \angle Q + 40^\circ + 80^\circ = 180^\circ ...sum\;\;of\;\;\angle s\;\;of\;\;a\;\;\triangle \\[4ex]
+            \angle Q = 180 - 40 - 80 \\[3ex]
+            \angle Q = 60^\circ \\[5ex]
+            \dfrac{QR}{\sin \angle P} = \dfrac{PR}{\sin \angle Q} ...Sine\;\;Law \\[5ex]
+            \dfrac{QR}{\sin 40^\circ} = \dfrac{110}{\sin 60^\circ} \\[5ex]
+            QR = \dfrac{110\sin 40^\circ}{\sin 60^\circ}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) The figure below shows a flying kite. <br>
+          At a certain moment, the kite string forms an angle of elevation of 75&deg; from point <i>A</i> on the ground.
+          <br>
+          At the same moment, the angle of elevation of the kite at point <i>B</i>, 240 ft from <i>A</i> on level
+          ground, is 45&deg;. <br>
+          What is the length, in feet, of the string?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          $
+          A.\;\; 60\sqrt{3} \\[3ex]
+          B.\;\; 80\sqrt{6} \\[3ex]
+          C.\;\; 144 \\[3ex]
+          D.\;\; 180 \\[3ex]
+          E.\;\; 240 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionT23">
+            <br>
+            <img src="images/Trigonometry/Answers/Number23.png" alt="Number 23">
+            <br><br>
+            Let the length of string = string <br><br>
+            $
+            \underline{\triangle AKB} \\[3ex]
+            \angle KAB + \angle KBA + \angle AKB = 180^\circ ...sum\;\;of\;\;\angle s\;\;of\;\;\triangle AKB \\[3ex]
+            75 + 45 + \angle AKB = 180 \\[3ex]
+            120 + \angle AKB = 180 \\[3ex]
+            \angle AKB = 180 - 120 \\[3ex]
+            \angle AKB = 60^\circ \\[3ex]
+            \dfrac{string}{\sin 45^\circ} = \dfrac{240}{\sin 60^\circ} ...Sine\;\;Law \\[5ex]
+            \sin 45 = \dfrac{\sqrt{2}}{2} ...Special\;\;Angles \\[5ex]
+            \sin 60 = \dfrac{\sqrt{3}}{2} ... Special\;\;Angles \\[3ex]
+            \implies \\[3ex]
+            string \div \sin 45 = 240 \div \sin 60 \\[3ex]
+            string \div \dfrac{\sqrt{2}}{2} = 240 \div \dfrac{\sqrt{3}}{2} \\[5ex]
+            string * \dfrac{2}{\sqrt{2}} = 240 * \dfrac{2}{\sqrt{3}} \\[5ex]
+            \dfrac{\sqrt{2}}{2} * string * \dfrac{2}{\sqrt{2}} = \dfrac{\sqrt{2}}{2} * 240 * \dfrac{2}{\sqrt{3}} \\[5ex]
+            string = \dfrac{240\sqrt{2}}{\sqrt{3}} \\[5ex]
+            = \dfrac{240\sqrt{2}}{\sqrt{3}} * \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]
+            = \dfrac{240\sqrt{6}}{3} \\[5ex]
+            = 80\sqrt{6}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) For the triangle shown below, what is $\tan \angle A$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number24.png" alt="Number 24">
+          <br><br>
+          $
+          F.\;\; \dfrac{3}{5} \\[5ex]
+          G.\;\; \dfrac{5}{3} \\[5ex]
+          H.\;\; \dfrac{3}{\sqrt{34}} \\[5ex]
+          J.\;\; \dfrac{5}{\sqrt{34}} \\[5ex]
+          K.\;\; \dfrac{\sqrt{34}}{5} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionT24">
+            <br>
+            $
+            \text{SOH CAH TOA} \\[3ex]
+            \tan A = \dfrac{opp}{adj} = \dfrac{5}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) In $\triangle RST$ below, <i>U</i> is a point on $\overline{RT}$ such that $\overrightarrow{SU}$ is an
+          angle bisector of $\angle RST$. <br>
+          What is $m\angle R$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number25.png" alt="Number 25">
+          <br><br>
+          $
+          F.\;\; 43.75^\circ \\[3ex]
+          G.\;\; 50^\circ \\[3ex]
+          H.\;\; 70^\circ \\[3ex]
+          J.\;\; 90^\circ \\[3ex]
+          K.\;\; 100^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionT25">
+            <br>
+            $
+            \underline{\triangle SUT} \\[3ex]
+            x^\circ + (3x)^\circ + (x + 5)^\circ = 180^\circ ... \text{sum of angles in a triangle} \\[3ex]
+            x + 3x + x + 5 = 180 \\[3ex]
+            5x = 180 - 5 \\[3ex]
+            5x = 175 \\[3ex]
+            x = \dfrac{175}{5} \\[5ex]
+            x = 35^\circ \\[5ex]
+
+            \underline{\triangle SRU \;\;and\;\; \triangle SUT} \\[3ex]
+            (3x)^\circ = x^\circ + m\angle R
+            ...\text{exterior angle of a triangle is the sum of the two interior opposite angles} \\[3ex]
+            m\angle R = 3x - x \\[3ex]
+            = 2x \\[3ex]
+            = 2(35) \\[3ex]
+            = 70^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.) For 2 similar triangles, $\triangle ABC$ and $\triangle DEF$, such that $\angle A$, $\angle B$, and
+          $\angle C$ correspond to $\angle D$, $\angle E$, and $\angle F$, respectively, how many feet long is
+          $\overline{DE}$ when <i>AB</i> = 10ft, <i>BC</i> = 12 ft, <i>AC</i> = 15 ft, and <i>DF</i> = 12 ft?
+          <br><br>
+          $
+          A.\;\; 8 \\[3ex]
+          B.\;\; 10 \\[5ex]
+          C.\;\; 12.5 \\[3ex]
+          D.\;\; 14.4 \\[3ex]
+          E.\;\; 15 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionT26">
+            <br>
+            $
+            \triangle ABC \sim \triangle DEF \\[3ex]
+            \dfrac{\overline{DE}}{\overline{AB}} = \dfrac{\overline{DF}}{\overline{AC}} \\[6ex]
+            \dfrac{\overline{DE}}{10} = \dfrac{12}{15} \\[6ex]
+            \overline{DE} = \dfrac{12(10)}{15} \\[5ex]
+            \overline{DE} = 8\;ft
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) A highway engineer is using a road map to lay out a detour for the westbound lane of a section of
+          highway that, on the map, is a straight line going east and west. <br>
+          On the map, the detour goes 4 miles straight north, 1 mile straight west, 2 miles straight north, 6 miles
+          straight west,
+          3 miles straight south, 1 mile straight east, and finally 3 miles straight south, back to the highway. <br>
+          According to the map, how many more miles will a westbound driver travel by taking the detour than he would if
+          he could stay on the highway?
+          <br><br>
+          $
+          F.\;\; 20 \\[3ex]
+          G.\;\; 14 \\[3ex]
+          H.\;\; 13 \\[3ex]
+          J.\;\; 12 \\[3ex]
+          K.\;\; 6 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionT27">
+            <br>
+            Let us represent the information on a diagram
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number27.png" alt="Number 27">
+            <br><br>
+            $
+            Total\;\;distance\;\;using\;\;the\;\;detour \\[3ex]
+            = 4 + 1 + 2 + 6 + 3 + 1 + 3 = 20\;miles \\[3ex]
+            Distance\;\;covered\;\;directly:\;\;highway\;\;to\;\;highway = 1 + 6 - 1 = 6\;miles \\[3ex]
+            Difference = 20 - 6 = 14\;miles \\[3ex]
+            $
+            The westbound driver will travel 14 more miles by taking the detour than he would if he could
+            stay on the highway.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) Let <i>a</i> and <i>b</i> be unknown nonzero constants such that the equation below is true for all
+          values of &theta; <br>
+          $$
+          a\sin^2\theta + a\cos^2\theta = b
+          $$ <br>
+          What is the value of $\dfrac{b}{a}$
+          <br><br>
+          $
+          F.\;\; -1 \\[3ex]
+          G.\;\; 0 \\[3ex]
+          H.\;\; \dfrac{1}{2} \\[5ex]
+          J.\;\; 1 \\[3ex]
+          K.\;\; 2 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionT28">
+            <br>
+            $
+            a\sin^2\theta + a\cos^2\theta = b \\[4ex]
+            a(\sin^2\theta + \cos^2\theta) = b \\[4ex]
+            \sin^2\theta + \cos^2\theta = 1 ...\text{Pythagorean Identity} \\[4ex]
+            \implies \\[3ex]
+            a \cdot 1 = b \\[3ex]
+            a = b \\[5ex]
+            \dfrac{b}{a} = \dfrac{b}{b} = 1
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.) In the figure shown below, $\overline{AB} || \overline{DE}$, <i>C</i> is the intersection of
+          $\overline{AE}$ and $\overline{BD}$, $\angle D$ is a right angle, and the given side lengths are in inches.
+          <br>
+          What is the length of $\overline{AC}$, in inches?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number29.png" alt="Number 29">
+          <br><br>
+          $
+          A.\;\; \dfrac{15}{4} \\[5ex]
+          B.\;\; 4 \\[3ex]
+          C.\;\; 5 \\[3ex]
+          D.\;\; \dfrac{25}{4} \\[5ex]
+          E.\;\; \dfrac{25}{3} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionT29">
+            <br>
+            We can solve the question using at least two approaches. <br>
+            Because of the time limit of 1 minute per question on the ACT, I recommend the first approach.
+            <br><br>
+            $
+            \triangle ECD \\[3ex]
+            \overline{EC}^2 = \overline{ED}^2 + \overline{DC}^2 ...\text{Pythagorean Theorem} \\[3ex]
+            \overline{EC}^2 = 4^2 + 3^2 \\[3ex]
+            \overline{EC}^2 = 16 + 9 \\[3ex]
+            \overline{EC}^2 = 25 \\[3ex]
+            \overline{EC} = \sqrt{25} \\[3ex]
+            \overline{EC} = 5 \\[5ex]
+
+            \underline{\text{1st Approach: Similar Triangles}} \\[3ex]
+            \triangle ACB\;\;and\;\;\triangle ECD \\[3ex]
+            \overline{AB} || \overline{DE} \\[3ex]
+            \angle ABC = \angle EDB = 90^\circ ...\text{alternate angles are congruent} \\[3ex]
+            \angle ACB = \angle ECD ...\text{vertical angles are congruent} \\[3ex]
+            \angle BAC = \angle DEC ...\text{alternate angles are congruent} \\[3ex]
+            \triangle ACB \sim \triangle ECD ...\text{Angle — Angle Similarity} \\[3ex]
+            $
+            Because the triangles are similar, the corresponding sides will have the same ratio.
+            <br><br>
+            $
+            \underline{\text{Ratio of Corresponding Sides}} \\[3ex]
+            \dfrac{\overline{AC}}{\overline{AB}} = \dfrac{\overline{EC}}{\overline{ED}} \\[5ex]
+            \dfrac{\overline{AC}}{5} = \dfrac{5}{4} \\[5ex]
+            \overline{AC} = \dfrac{5 \cdot 5}{4} \\[5ex]
+            \overline{AC} = \dfrac{25}{4}\;inches \\[5ex]
+
+            \underline{\text{2nd Approach: Trigonometric Ratios and Laws}} \\[3ex]
+            \angle ABC = \angle EDB = 90^\circ ...\text{alternate angles are congruent} \\[5ex]
+
+            \triangle ECD \\[3ex]
+            \sin \angle ECD = \dfrac{opp}{hyp} = \dfrac{4}{5} ...\text{SOHCAHTOA} \\[5ex]
+
+            \triangle ACB \\[3ex]
+            \angle ACB = \angle ECD ...\text{vertical angles are congruent} \\[3ex]
+            \implies \\[3ex]
+            \sin\angle ACB = \sin\angle ECD = \dfrac{4}{5} \\[5ex]
+
+            \dfrac{\overline{AC}}{\sin\angle ABC} = \dfrac{\overline{AB}}{\sin\angle ACB} ...\text{Sine Law} \\[5ex]
+            \dfrac{\overline{AC}}{\sin 90^\circ} = \dfrac{5}{\dfrac{4}{5}} \\[8ex]
+            \dfrac{\overline{AC}}{1} = 5 \div \dfrac{4}{5} \\[5ex]
+            \overline{AC} = 5 \cdot \dfrac{5}{4} \\[5ex]
+            \overline{AC} = \dfrac{25}{4}\;inches
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.) Two of the sides of a triangular garden have lengths of 100 feet and 80 feet, respectively. <br>
+          The angle formed by these 2 sides measures 60°. <br>
+          Which of the following is closest to the length, in feet, of the 3rd side of the garden?
+          <br><br>
+          (Note: The law of cosines states that for any triangle with vertices <i>A, B,</i> and <i>C</i>, where the
+          sides opposite
+          those vertices have lengths <i>a, b,</i> and <i>c</i>, respectively, <br>
+          $c^2 = a^2 + b^2 - 2ab \cos C; \hspace{1em} \cos 60^\circ = 0.5.)$
+          <br><br>
+          $
+          A.\;\; 60 \\[3ex]
+          B.\;\; 90 \\[3ex]
+          C.\;\; 92 \\[3ex]
+          D.\;\; 120 \\[3ex]
+          E.\;\; 156 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionT30">
+            <br>
+            $
+            c^2 = a^2 + b^2 - 2ab \cos \angle C \\[4ex]
+            a = 100\;feet \\[3ex]
+            b = 80\;feet \\[3ex]
+            \angle C = 60^\circ \\[4ex]
+            \implies \\[3ex]
+            c^2 = 100^2 + 80^2 - 2(100)(80) \cdot \cos 60^\circ \\[4ex]
+            c^2 = 10000 + 6400 - 16000(0.5) \\[4ex]
+            c^2 = 16400 - 8000 \\[4ex]
+            c^2 = 8400 \\[4ex]
+            c = \sqrt{8400} \\[4ex]
+            c = 91.6515139 \\[3ex]
+            c \approx 92\;feet ...\text{to the nearest whole number} \\[3ex]
+            $
+            The closest to the length of the 3rd side of the garden is Option <b>C.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.) In $\triangle ABC$, $\angle A$ and $\angle C$ are congruent, and the measure of $\angle B$ is 93.5&deg;.
+          <br>
+          What is the measure of $\angle A$?
+          <br><br>
+          $
+          A.\;\; 43.25^\circ \\[4ex]
+          B.\;\; 46.75^\circ \\[4ex]
+          C.\;\; 60^\circ \\[4ex]
+          D.\;\; 86.5^\circ \\[4ex]
+          E.\;\; 93.5^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionT32">
+            <br>
+            Let us represent the information diagrammatically
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number32.png" alt="Number 32">
+            <br><br>
+            $
+            Let\;\;\angle A = \angle C = p^\circ ...congruent\;\;\angle s \\[4ex]
+            p + p + 93.5 = 180^\circ ...sum\;\;of\;\;\angle s\;\;of\;\;a\;\;\triangle \\[4ex]
+            2p = 180 - 93.5 \\[3ex]
+            2p = 86.5 \\[3ex]
+            p = \dfrac{86.5}{2} \\[5ex]
+            p = 43.25^\circ \\[4ex]
+            \angle A = 43.25^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionT33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.) What is the length, in inches, of the hypotenuse of a right triangle with a leg that is 7 inches long
+          and a leg that is 4 inches long?
+          <br><br>
+          $
+          A.\;\; \sqrt{22} \\[3ex]
+          B.\;\; \sqrt{33} \\[3ex]
+          C.\;\; \sqrt{65} \\[3ex]
+          D.\;\; 5.5 \\[3ex]
+          E.\;\; 11 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionT34">
+            <br>
+            $
+            hyp^2 = leg^2 + leg^2 ...\text{Pythagorean Theorem} \\[4ex]
+            hyp^2 = 7^2 + 4^2 \\[4ex]
+            hyp^2 = 49 + 16 \\[4ex]
+            hyp^2 = 65 \\[4ex]
+            hyp = \sqrt{65}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.) In the figure below, the measure of $\angle ABC$ is 87&deg;, the measure of $\angle ABE$ is 68&deg;, and
+          the measure of $\angle DBC$ is 52&deg; <br>
+          What is the measure of $\angle DBE$?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number36.png" alt="Number 36">
+          <br><br>
+          $
+          A.\;\; 19^\circ \\[4ex]
+          B.\;\; 29^\circ \\[4ex]
+          C.\;\; 33^\circ \\[4ex]
+          D.\;\; 35^\circ \\[4ex]
+          E.\;\; 54^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionT36">
+            <br>
+            $
+            \underline{\text{Based on the Diagram}} \\[3ex]
+            \angle ABC = \angle ABE + \angle EBC \\[3ex]
+            87 = 68 + \angle EBC \\[3ex]
+            \angle EBC = 87 - 68 \\[3ex]
+            \angle EBC = 19^\circ \\[5ex]
+            \angle DBC = \angle DBE + \angle EBC \\[3ex]
+            \angle DBE = \angle DBC - \angle EBC \\[3ex]
+            \angle DBE = 52 - 19 \\[3ex]
+            \angle DBE = 33^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionT37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.) Given that $\sin \theta = \dfrac{2}{3}$, which of the following values is a possible value of
+          $\cos\theta$?
+          <br><br>
+          $
+          F.\;\; \dfrac{1}{9} \\[5ex]
+          G.\;\; \dfrac{1}{3} \\[5ex]
+          H.\;\; \dfrac{5}{9} \\[5ex]
+          J.\;\; \dfrac{\sqrt{5}}{9} \\[5ex]
+          K.\;\; \dfrac{\sqrt{5}}{3} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionT38">
+            <br>
+            $
+            \sin\theta = \dfrac{opp}{hyp} = \dfrac{2}{3}...SOHCAHTOA \\[5ex]
+            opp = 2 \\[3ex]
+            hyp = 3 \\[3ex]
+            opp^2 + adj^2 = hyp^2 ...\text{Pythagorean Theorem} \\[4ex]
+            adj^2 = hyp^2 - opp^2 \\[4ex]
+            = 3^2 - 2^2 \\[4ex]
+            = 9 - 4 \\[3ex]
+            = 5 \\[5ex]
+            adj = \sqrt{5} \\[5ex]
+            \cos\theta = \dfrac{adj}{hyp}...SOHCAHTOA \\[5ex]
+            = \dfrac{\sqrt{5}}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.) The lengths of corresponding sides of 2 similar right triangles are in the ratio 2:7. <br>
+          The hypotenuse of the smaller triangle is 8 inches long. <br>
+          How many inches long is the hypotenuse of the larger triangle?
+          <br><br>
+          $
+          F.\;\; 3.5 \\[3ex]
+          G.\;\; 9 \\[3ex]
+          H.\;\; 13 \\[3ex]
+          J.\;\; 14 \\[3ex]
+          K.\;\; 28 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionT40">
+            <br>
+            Ratio of the lengths of corresponding sides is 2 : 7 <br>
+            This implies that: <br>
+            Ratio of the lengths of corresponding sides of smaller triangle to larger triangle = 2 : 7 <br>
+            Let the ratio of the hypotenuse of smaller triangle to larger triangle = 8 : what
+            <br>
+            This implies that:
+            <br><br>
+            $
+            \dfrac{what}{8} = \dfrac{7}{2} \\[5ex]
+            what = \dfrac{7 \cdot 8}{2} \\[5ex]
+            what = 28\;inches
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/Trigonometry.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT41')">Show/Hide Answer</button>
+          <div class="result" id="solutionT41">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.) For angle with measure &alpha; in a right triangle, $\sin\alpha = \dfrac{4}{5}$ and $\tan\alpha =
+          \dfrac{4}{3}$. <br>
+          What is the value of $\cos\alpha$?
+          <br><br>
+          $
+          A.\;\; \dfrac{3}{\sqrt{41}} \\[5ex]
+          B.\;\; \dfrac{3}{5} \\[5ex]
+          C.\;\; \dfrac{3}{4} \\[5ex]
+          D.\;\; \dfrac{3}{\sqrt{7}} \\[5ex]
+          E.\;\; \dfrac{5}{3} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT42')">Show/Hide Answer</button>
+          <div class="result" id="solutionT42">
+            <br>
+            $
+            \tan\alpha = \dfrac{\sin\alpha}{\cos\alpha}...\text{Quotient Identity} \\[5ex]
+            \implies \\[3ex]
+            \tan\alpha \cdot \cos\alpha = \sin\alpha \\[3ex]
+            \cos\alpha = \dfrac{\sin\alpha}{\tan\alpha} \\[5ex]
+            = \sin\alpha \div \tan\alpha \\[3ex]
+            = \dfrac{4}{5} \div \dfrac{4}{3} \\[5ex]
+            = \dfrac{4}{5} \cdot \dfrac{3}{4} \\[5ex]
+            = \dfrac{3}{5}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT43')">Show/Hide Answer</button>
+          <div class="result" id="solutionT43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.) In right triangle $\triangle ABC$ shown below, <i>AB</i> = 9 units and <i>BC</i> = 12 units. <br>
+          What is sin <i>A</i>?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number44.png" alt="Number 44">
+          <br><br>
+          $
+          A.\;\; \dfrac{3}{5} \\[5ex]
+          B.\;\; \dfrac{3}{4} \\[5ex]
+          C.\;\; \dfrac{4}{5} \\[5ex]
+          D.\;\; \dfrac{5}{4} \\[5ex]
+          E.\;\; \dfrac{4}{3} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT44')">Show/Hide Answer</button>
+          <div class="result" id="solutionT44">
+            <br>
+            $
+            \underline{\text{Pythagorean Theorem}} \\[3ex]
+            leg = 9 \\[3ex]
+            leg = 12 \\[3ex]
+            hyp = ? \\[3ex]
+            hyp^2 = leg^2 + leg^2 \\[3ex]
+            hyp^2 = 9^2 + 12^2 \\[3ex]
+            = 81 + 144 \\[3ex]
+            = 225 \\[3ex]
+            hyp = \sqrt{225} \\[3ex]
+            = 15 \\[5ex]
+
+            \underline{\text{SOHCAHTOA}} \\[3ex]
+            \text{Relative to A} \\[3ex]
+            opp = 12 \\[3ex]
+            hyp = 15 \\[3ex]
+            \sin A = \dfrac{opp}{hyp} \\[5ex]
+            = \dfrac{12}{15} \\[5ex]
+            = \dfrac{4}{5}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT45')">Show/Hide Answer</button>
+          <div class="result" id="solutionT45">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.) A ramp has a horizontal length of 12 feet and a vertical height of 1 foot. <br>
+          Which of the following expressions gives the measure of the acute angle the ramp makes with the horizontal?
+          <br><br>
+          $
+          F.\;\; \tan\left(\dfrac{1}{12}\right) \\[5ex]
+          G.\;\; \tan(12) \\[3ex]
+          H.\;\; \tan^{-1}\left(\dfrac{1}{12}\right) \\[5ex]
+          J.\;\; \tan^{-1}(12) \\[3ex]
+          K.\;\; \sqrt{1^2 + 12^2} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT46')">Show/Hide Answer</button>
+          <div class="result" id="solutionT46">
+            <br>
+            Let the measure of the acute angle the ramp makes with the horizontal = &beta; <br>
+            Let us represent the information diagrammatically
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number46.png" alt="Number 46">
+            <br><br>
+            $
+            \underline{SOHCAHTOA} \\[3ex]
+            \tan \beta = \dfrac{opp}{adj} = \dfrac{1}{12} \\[5ex]
+            \beta = \tan^{-1}\left(\dfrac{1}{12}\right)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT47')">Show/Hide Answer</button>
+          <div class="result" id="solutionT47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.) For all angle measures A° greater than 0°, which of the following expressions is equal to cos A° ?
+          <br><br>
+          $
+          F.\;\; \cos(90 + A)^\circ \\[3ex]
+          G.\;\; \cos(180 - A)^\circ \\[3ex]
+          H.\;\; \cos(180 + A)^\circ \\[3ex]
+          J.\;\; \cos(270 + A)^\circ \\[3ex]
+          K.\;\; \cos(360 - A)^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT48')">Show/Hide Answer</button>
+          <div class="result" id="solutionT48">
+            <br>
+            $
+            \cos A = \cos(360 - A)^\circ ...\text{4th Quadrant Identity}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT49')">Show/Hide Answer</button>
+          <div class="result" id="solutionT49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.) In $\triangle ABC$, the measure of $\angle B$ is 90&deg;, and the measure of $\angle A$ is 4 times the
+          measure of $\angle C$. <br>
+          What is the measure of $\angle C$?
+          <br><br>
+          $
+          A.\;\; 18^\circ \\[3ex]
+          B.\;\; 22.5^\circ \\[3ex]
+          C.\;\; 36^\circ \\[3ex]
+          D.\;\; 45^\circ \\[3ex]
+          E.\;\; 72^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT50')">Show/Hide Answer</button>
+          <div class="result" id="solutionT50">
+            <br>
+            $
+            \angle B = 90^\circ \\[3ex]
+            \angle A = 4 \cdot \angle C \\[5ex]
+            \angle A + \angle B + \angle C = 180^\circ ...\text{sum of angles in a triangle} \\[3ex]
+            4\angle C + 90 + \angle C = 180 \\[3ex]
+            5\angle C = 180 - 90 \\[3ex]
+            5\angle C = 90 \\[3ex]
+            \angle C = \dfrac{90}{5} \\[5ex]
+            \angle C = 18^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT51')">Show/Hide Answer</button>
+          <div class="result" id="solutionT51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.) A 5-foot awning extends 2 feet horizontally over the entrance to the vertical building shown below.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number52.png" alt="Number 52">
+          <br><br>
+          Which of the following expressions has a value equal to the measure of the angle &theta; between the building
+          and the awning?
+          <br><br>
+          $
+          A.\;\; \sin^{-1}\left(\dfrac{2}{5}\right) \\[5ex]
+          B.\;\; \cos^{-1}\left(\dfrac{2}{\sqrt{21}}\right) \\[5ex]
+          C.\;\; \cos^{-1}\left(\dfrac{2}{5}\right) \\[5ex]
+          D.\;\; \tan^{-1}\left(\dfrac{\sqrt{21}}{2}\right) \\[5ex]
+          E.\;\; \tan^{-1}\left(\dfrac{2}{5}\right) \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT52')">Show/Hide Answer</button>
+          <div class="result" id="solutionT52">
+            <br>
+            This is a right triangle
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number52.png" alt="Number 52">
+            <br><br>
+            $
+            \sin\theta = \dfrac{opp}{hyp} ...SOHCAHTOA \\[5ex]
+            \sin\theta = \dfrac{2}{5} \\[5ex]
+            \theta = \sin^{-1}\left(\dfrac{2}{5}\right)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (53.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT53')">Show/Hide Answer</button>
+          <div class="result" id="solutionT53">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (54.) Given $\sin 30^\circ = \dfrac{1}{2}$, what is the area, in square meters, of the triangle shown below?
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number54.png" alt="Number 54">
+          <br><br>
+          $
+          A.\;\; 6 \\[3ex]
+          B.\;\; 8 \\[3ex]
+          C.\;\; 10 \\[3ex]
+          D.\;\; 12 \\[3ex]
+          E.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT54')">Show/Hide Answer</button>
+          <div class="result" id="solutionT54">
+            <br>
+            $
+            Area = \dfrac{1}{2}ab\sin C...\text{one of the formulas} \\[5ex]
+            Area = \dfrac{1}{2} \cdot 4 \cdot 6 \cdot \sin 30^\circ \\[5ex]
+            = 12 \cdot \dfrac{1}{2} \\[5ex]
+            = 6\;m^2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (55.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT55')">Show/Hide Answer</button>
+          <div class="result" id="solutionT55">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (56.) If $\sin\theta = \dfrac{1}{2}$ and $\tan\theta = -\dfrac{\sqrt{3}}{3}$, then $\cos\theta$ = ?
+          <br><br>
+          $
+          A.\;\; -\dfrac{2\sqrt{3}}{3} \\[5ex]
+          B.\;\; -\dfrac{\sqrt{3}}{2} \\[5ex]
+          C.\;\; -\dfrac{\sqrt{3}}{6} \\[5ex]
+          D.\;\; \dfrac{1}{2} \\[5ex]
+          E.\;\; \dfrac{\sqrt{3}}{2} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionT56')">Show/Hide Answer</button>
+          <div class="result" id="solutionT56">
+            <br>
+            $
+            \tan\theta = \dfrac{\sin\theta}{\cos\theta} ...\text{SOHCAHTOA} \\[5ex]
+            \cos\theta = \dfrac{\sin\theta}{\tan\theta} \\[5ex]
+            = \dfrac{1}{2} \div -\dfrac{\sqrt{3}}{3} \\[5ex]
+            = \dfrac{1}{2} \cdot -\dfrac{3}{\sqrt{3}} \\[5ex]
+            = -\dfrac{3}{2\sqrt{3}} \\[5ex]
+            \text{Rationalize the denominator} \\[3ex]
+            = -\dfrac{3}{2\sqrt{3}} \cdot \dfrac{\sqrt{3}}{\sqrt{3}} \\[5ex]
+            = -\dfrac{3\sqrt{3}}{2 \cdot 3} \\[5ex]
+            = -\dfrac{\sqrt{3}}{2}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (57.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT57')">Show/Hide Answer</button>
+          <div class="result" id="solutionT57">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (58.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT58')">Show/Hide Answer</button>
+          <div class="result" id="solutionT58">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (59.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT59')">Show/Hide Answer</button>
+          <div class="result" id="solutionT59">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (60.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT60')">Show/Hide Answer</button>
+          <div class="result" id="solutionT60">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 41 through 60 -->
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

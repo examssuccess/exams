@@ -1,0 +1,1026 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Mathematical Logic</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to Mathematics questions on topics in mathematical logic.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, 
+  algebra, logic, logical science, mathematical logic, logical statement, logical proposition, propositional logic, 
+  symbolic logic, predicate logic, truth tables, logical equivalence, tautology, contradiction, 
+              contingency, argument, premise, hypothesis, antecedent, conclusion, precedent, sound logic, reasoning, 
+              flawed reasoning, laws of logic, negation, quantifier, disjunction, conjunction, exclusive disjunction, 
+              conditional statement, proposition, biconditional statement, double negation, valid argument, 
+              invalid argument, fallacy, inductive reasoning, deductive reasoning, induction, deduction, propositional function,
+              predicate, domain of discourse, free variable, bound variable, universal quantifier, counterexample, bound variable, 
+              existential quantifier, symbolic argument, syllogistic argument, syllogism, Euler diagram, logic circuits,
+              sound argument, critical thinking, quantitative reasoning, problem solving">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulasNotes" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas/Notes</a>
+
+      <a href="#lawsLogicalEquivalence" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Laws of
+        Logical Equivalence</a>
+
+      <a href="#validFormsSymbolicArguments" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Valid
+        Forms of Symbolic Argument</a>
+
+      <a href="#invalidFormsSymbolicArguments" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Invalid
+        Forms of Symbolic Argument</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Mathematical Logic</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        These are the solutions to Mathematics questions on Mathematical Logic. <br>
+        The TI-84 Plus CE shall be used for applicable questions. <br>
+        If you find these resources valuable/helpful, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas/Notes -->
+    <div class="w3-container w3-padding-32" id="formulasNotes">
+      <h2>Formulas and Notes</h2>
+      <p>
+        <b>Validity and Invality of Symbolic Arguments</b> <br>
+        <u>To determine whether an argument is valid or invalid:</u> <br>
+        (1.) Identify and write the different statements. <br><br>
+        (2.) Write the premises and the conclusion in symbolic logic. <br>
+        The statements must be written in the <b>positive</b> sense only. <br><br>
+        (3.) Use any or a combination of these 4 methods to determine the validity or invalidity of the
+        argument.
+        <br><br>
+
+        (I.) <b>Valid Forms of Arguments and Invalid Forms of Arguments.</b> <br>
+        Compare with the Valid Forms of Arguments and Invalid Forms of Arguments. See the two tables below. <br>
+        If the argument is not similar to any of the forms, try any of the remaining 2 methods.
+        <br><br>
+
+        (II.) <b>Definition</b> <br>
+        This applies to one or more premises and a conclusion. <br>
+        (a.) Draw the truth table of the premises and the conclusion. <br>
+        (b.) Check all the cases where "all" the premises are true. <br>
+        (i.) If there is no case where "all" the premises are true, the argument is valid. <br>
+        (ii.) If there is any case where "all" the premises are true AND the conclusion is true in "all" those
+        cases, the argument is valid. <br>
+        (iii.) If there is any case where "all" the premises are true AND the conclusion is false, the argument
+        is invalid.
+        <br><br>
+
+        (III.) <b>Formula</b> <br>
+        For one premise: <br>
+        Draw a truth table for the formula: $premise\: 1 \rightarrow conclusion$ <br><br>
+        For two premises: <br>
+        Draw a truth table for the formula: $[(premise\: 1) \land (premise\: 2)] \rightarrow conclusion$
+        <br><br>
+        For three premises: <br>
+        Draw a truth table for the formula: $[(premise\: 1) \land (premise\: 2) \land (premise\: 3)] \rightarrow
+        conclusion$ <br><br>
+        For four premises: <br>
+        Draw a truth table for the formula: $[(premise\: 1) \land (premise\: 2) \land (premise\: 3) \land
+        (premise\: 4)] \rightarrow conclusion$ <br><br>
+        (i) If the formula is a tautology, the argument is valid <br>
+        (ii) If the formula is not a tautology, the argument is invalid. <br>
+        In other words; if the formula is a contingency or a contradiction, the argument is invalid.
+        <br><br>
+        (IV.) <b>Deduction</b> <br>
+
+      </p>
+
+    </div>
+    <!-- End Formulas/Notes -->
+
+    <!-- Laws of Logical Equivalence -->
+    <div class="w3-container w3-padding-32" id="lawsLogicalEquivalence">
+      <h2>Laws of Logical Equivalence</h2>
+      <p>
+        <i>p, q, r,...</i> are logical statements <br>
+        True = truth value of <i>T</i> <br>
+        False = truth value of <i>F</i>
+        <br><br>
+        $
+        (1.) \text{ Identity Laws} \\[3ex]
+        p \land T \equiv p \\[3ex]
+        p \lor F \equiv p \\[5ex]
+        (2.) \text{ Domination Laws} \\[3ex]
+        p \lor T \equiv T \\[3ex]
+        p \land F \equiv F \\[5ex]
+        (3.) \text{ Idempotent Laws} \\[3ex]
+        p \lor p \equiv p \\[3ex]
+        p \land p \equiv p \\[5ex]
+        (4.) \text{ Negation Laws (Complement Laws or Laws of Complementation)} \\[3ex]
+        p \lor \neg p \equiv T \\[3ex]
+        p \land \neg p \equiv F \\[5ex]
+        (5.) \text{ Double Negation Laws} \\[3ex]
+        \neg(\neg p) \equiv p \\[5ex]
+        (6.) \text{ Commutative Laws} \\[3ex]
+        p \lor q \equiv q \lor p \\[3ex]
+        p \land q \equiv q \land p \\[5ex]
+        (7.) \text{ Associative Laws} \\[3ex]
+        (p \lor q) \lor r \equiv p \lor (q \lor r) \\[3ex]
+        (p \land q) \land r \equiv p \land (q \land r) \\[5ex]
+        (8.) \text{ Distributive Laws} \\[3ex]
+        p \land (q \lor r) \equiv (p \land q) \lor (p \land r) \\[3ex]
+        p \lor (q \land r) \equiv (p \lor q) \land (p \lor r) \\[5ex]
+        (9.) \text{ De Morgan's Laws} \\[3ex]
+        \neg(p \land q) \equiv \neg p \lor \neg q \\[3ex]
+        \neg(p \lor q) \equiv \neg p \land \neg q \\[5ex]
+        (10.) \text{ Absorption Laws} \\[3ex]
+        p \lor (p \land q) \equiv p \\[3ex]
+        p \land (p \lor q) \equiv p \\[5ex]
+        (11.) \text{ Conditional (Implication) Equivalence} \\[3ex]
+        p \rightarrow q \equiv \neg p \lor q \\[3ex]
+        p \rightarrow q \equiv \neg q \rightarrow \neg p...\text{contrapositive statement} \\[5ex]
+        (12.) \text{Biconditional Equivalence} \\[3ex]
+        p \leftrightarrow q \equiv (p \rightarrow q) \land (q \rightarrow p) \\[3ex]
+        p \leftrightarrow q \equiv (p \land q) \lor (\neg p \land \neg q)
+        $
+      </p>
+
+    </div>
+    <!-- End Laws of Logical Equivalence -->
+
+    <!-- Valid Forms of Symbolic Arguments -->
+    <div class="w3-container w3-padding-32" id="validFormsSymbolicArguments">
+      <table>
+        <caption>Valid Forms of Symbolic Arguments</caption>
+        <tr>
+          <th class="green" width="50%">Valid Argument</th>
+          <th class="green" width="50%">Name</th>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \rightarrow q \\[2ex]
+            p \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore q
+            $
+          </td>
+          <td class="w3-center">
+            Modus Ponens <i>or</i> <br>
+            Law of Detachment <i>or</i> <br>
+            Direct Reasoning <i>or</i> <br>
+            Affirming the Hypothesis
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            {p \rightarrow q \\[2ex]
+            \hspace{1.5em} \neg q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore \neg p}
+            \hspace{-1mm}
+
+            {p \rightarrow \neg q \\[2ex]
+            \hspace{2.3em} q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore \neg p}
+            $
+          </td>
+          <td class="w3-center">
+            Modus Tollens <i>or</i> <br>
+            Law of Contraposition <i>or</i> <br>
+            Contrapositive Reasoning <i>or</i> <br>
+            Denying the Conclusion
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \rightarrow q \\[2ex]
+            q \rightarrow r \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore p \rightarrow r
+            $
+          </td>
+          <td class="w3-center">
+            Law of Hypothetical Syllogism <i>or</i> <br>
+            Transitive Reasoning
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            {p \lor q \\[2ex]
+            \hspace{1.3em} \neg q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore p}
+            \hspace{-1mm}
+
+            {p \lor q \\[2ex]
+            \neg p \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore q}
+            $
+          </td>
+          <td class="w3-center">
+            Law of Disjunctive Syllogism <i>or</i> <br>
+            Disjunctive Reasoning
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \lor q \\[2ex]
+            \neg p \lor r \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore q \lor r
+            $
+          </td>
+          <td class="w3-center">Resolution</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \\
+            \rule{1in}{0.5pt} \\
+            \therefore p \lor q
+            $
+          </td>
+          <td class="w3-center">Addition</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            {p \land q \\
+            \rule{1in}{0.5pt} \\
+            \therefore p}
+            \hspace{-1mm}
+
+            {p \land q \\
+            \rule{1in}{0.5pt} \\
+            \therefore q}
+            $
+          </td>
+          <td class="w3-center">Simplification</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \\[2ex]
+            q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore p \land q
+            $
+            <br>
+          </td>
+          <td class="w3-center">Conjunction</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            (p \rightarrow q) \land (r \rightarrow s) \\
+            \rule{2.5in}{0.5pt} \\
+            \therefore (p \lor r) \rightarrow (q \lor s) \\[5ex]
+
+            (p \rightarrow q) \land (r \rightarrow s) \\
+            \rule{2.5in}{0.5pt} \\
+            \therefore (p \land r) \rightarrow (q \land s) \\[5ex]
+
+            (p \rightarrow q) \land (r \rightarrow s) \\[2ex]
+            p \lor r \\
+            \rule{2.5in}{0.5pt} \\
+            \therefore q \land s
+            $
+          </td>
+          <td class="w3-center">Constructive Dilemmas</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            (p \rightarrow q) \land (r \rightarrow s) \\[2ex]
+            \neg q \lor \neg s \\
+            \rule{2.5in}{0.5pt} \\
+            \therefore \neg p \lor \neg r
+            $
+          </td>
+          <td class="w3-center">Destructive Dilemmas</td>
+        </tr>
+      </table>
+    </div>
+    <!-- End Valid Forms of Symbolic Arguments -->
+
+    <!-- Invalid Forms of Symbolic Arguments -->
+    <div class="w3-container w3-padding-32" id="invalidFormsSymbolicArguments">
+      <table>
+        <caption>Invalid Forms of Symbolic Arguments</caption>
+        <tr>
+          <th class="green" width="50%">Invalid Argument</th>
+          <th class="green" width="50%">Name</th>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \rightarrow q \\[2ex]
+            \hspace{1.6em} q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore p
+            $
+          </td>
+          <td class="w3-center">
+            Fallacy of the Converse <i>or</i> <br>
+            Affirming the Conclusion
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \rightarrow q \\[2ex]
+            \neg p \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore \neg q
+            $
+          </td>
+          <td class="w3-center">
+            Fallacy of the Inverse <i>or</i> <br>
+            Denying the Hypothesis
+          </td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            p \rightarrow q \\[2ex]
+            q \rightarrow r \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore r \rightarrow p
+            $
+          </td>
+          <td class="w3-center">Misuse of Transitive Reasoning</td>
+        </tr>
+        <tr>
+          <td class="w3-padding">
+            $
+            {p \lor q \\[2ex]
+            p \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore \neg q}
+            \hspace{-10mm}
+
+            {p \lor q \\[2ex]
+            \hspace{1.5em} q \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore \neg p}
+            \hspace{-14mm}
+
+            {p \lor \neg q \\[2ex]
+            p \\
+            \rule{0.9in}{0.3pt} \\
+            \therefore q}
+            \hspace{-3mm}
+            $
+          </td>
+          <td class="w3-center">Misuse of Disjunctive Reasoning</td>
+        </tr>
+      </table>
+    </div>
+    <!-- End Invalid Forms of Symbolic Arguments -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Determine the validity or invalidity of the symbolic argument. <br>
+          Support your work with applicable reasons. <br>
+          If it is valid, prove it. <br>
+          If it is invalid, use a counterexample to show that the argument is invalid by assigning truth values.
+          <br><br>
+          $
+          p \\[2ex]
+          p \rightarrow r \\[2ex]
+          p \rightarrow (\neg q \lor \neg r) \\[2ex]
+          q \lor \neg s \\
+          \rule{2.1in}{0.3pt} \\
+          \therefore s \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionML1')">Show/Hide Answer</button>
+          <div class="result" id="solutionML1">
+            <br>
+            $
+            \underline{\text{Deduction Method}} \\[3ex]
+            p...\text{Premise 1} \\[2ex]
+            p \rightarrow r...\text{Premise 2} \\[2ex]
+            p \rightarrow (\neg q \lor \neg r)...\text{Premise 3} \\[2ex]
+            q \lor \neg s ...\text{Premise 4} \\
+            \rule{2.1in}{0.3pt} \\
+            \therefore s...\text{Conclusion} \\[5ex]
+
+            \underline{\text{Premise 2 and Premise 1: Modus Ponens}} \\[3ex]
+            p \rightarrow r \\[2ex]
+            p \\
+            \rule{0.9in}{0.3pt} \\
+            r ...\text{output 1} \\[5ex]
+
+            \underline{\text{Premise 3 and Premise 1: Modus Ponens}} \\[3ex]
+            p \rightarrow (\neg q \lor \neg r) \\[2ex]
+            p \\
+            \rule{1.7in}{0.3pt} \\
+            \neg q \lor \neg r ...\text{output 2} \\[5ex]
+
+            \underline{\text{output 2 and output 1: Disjunctive Syllogism}} \\[3ex]
+            \neg q \lor \neg r \\[2ex]
+            \hspace{2.5em} r \\
+            \rule{1.2in}{0.3pt} \\
+            \neg q ...\text{output 3} \\[5ex]
+
+            \underline{\text{Premise 4 and output 3: Disjunctive Syllogism}} \\[3ex]
+            q \lor \neg s \\[2ex]
+            \neg q \\
+            \rule{1.2in}{0.3pt} \\
+            \neg s ...\text{output 4} \\[5ex]
+
+            \neg s \ne s \\[3ex]
+            \text{output 4} \ne \text{conclusion} \\[3ex]
+            \text{Argument is invalid by Deduction} \\[3ex]
+            $
+            Definition Method/Approach: <br>
+            Valid Argument: the conclusion must be true in all cases in which all the premises are true. <br>
+            Invalid Argument: if there is any case in which the conclusion is false when all the premises all true. <br>
+            In that regard, let us assign truth values to the statements such that the premises are true.
+            <br><br>
+            $
+            p...\text{Premise 1} \\[3ex]
+            \text{Assign } p = T \\[5ex]
+            p \rightarrow r...\text{Premise 2} \\[2ex]
+            \text{Assign } r = T \text{ for Premise 2 to be true} \\[5ex]
+            p \rightarrow (\neg q \lor \neg r)...\text{Premise 3} \\[3ex]
+            \underline{\text{For Premise 3 to be true:}} \\[3ex]
+            \neg r = F \\[3ex]
+            \neg q \lor \neg r \\[3ex]
+            \equiv \neg q \lor F \\[3ex]
+            \text{Assign }\neg q = T \implies q = F \\[3ex]
+            \neg q \lor \neg r \\[3ex]
+            \equiv T \lor F \\[3ex]
+            \equiv T \\[3ex]
+            p \rightarrow T \\[3ex]
+            = T \rightarrow T \\[3ex]
+            \equiv T \\[5ex]
+            q \lor \neg s ...\text{Premise 4} \\[3ex]
+            \underline{\text{For Premise 4 to be true:}} \\[3ex]
+            q \lor \neg s \\[3ex]
+            F \lor \neg s \\[3ex]
+            \text{Assign }\neg s = T \implies s = F \\[3ex]
+            F \lor T \equiv T \\[5ex]
+            \underline{\text{Assignments}} \\[3ex]
+            p = T \\[3ex]
+            r = T \\[3ex]
+            q = F \\[3ex]
+            s = F \\[3ex]
+            $
+            All premises are true <br>
+            The conclusion, $s$ should be true; however $s = F$ <br>
+            Argument is invalid by Definition.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container w3-padding-32">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML2')">Show/Hide Answer</button>
+          <div class="result" id="solutionML2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML3')">Show/Hide Answer</button>
+          <div class="result" id="solutionML3">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML4')">Show/Hide Answer</button>
+          <div class="result" id="solutionML4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML5')">Show/Hide Answer</button>
+          <div class="result" id="solutionML5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML6')">Show/Hide Answer</button>
+          <div class="result" id="solutionML6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML7')">Show/Hide Answer</button>
+          <div class="result" id="solutionML7">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML8')">Show/Hide Answer</button>
+          <div class="result" id="solutionML8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML9')">Show/Hide Answer</button>
+          <div class="result" id="solutionML9">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML10')">Show/Hide Answer</button>
+          <div class="result" id="solutionML10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML11')">Show/Hide Answer</button>
+          <div class="result" id="solutionML11">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML12')">Show/Hide Answer</button>
+          <div class="result" id="solutionML12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML13')">Show/Hide Answer</button>
+          <div class="result" id="solutionML13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML14')">Show/Hide Answer</button>
+          <div class="result" id="solutionML14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML15')">Show/Hide Answer</button>
+          <div class="result" id="solutionML15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML16')">Show/Hide Answer</button>
+          <div class="result" id="solutionML16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML17')">Show/Hide Answer</button>
+          <div class="result" id="solutionML17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML18')">Show/Hide Answer</button>
+          <div class="result" id="solutionML18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML19')">Show/Hide Answer</button>
+          <div class="result" id="solutionML19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML20')">Show/Hide Answer</button>
+          <div class="result" id="solutionML20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/MATHEMATICS/MathematicalLogic.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML21')">Show/Hide Answer</button>
+          <div class="result" id="solutionML21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML22')">Show/Hide Answer</button>
+          <div class="result" id="solutionML22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML23')">Show/Hide Answer</button>
+          <div class="result" id="solutionML23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML24')">Show/Hide Answer</button>
+          <div class="result" id="solutionML24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML25')">Show/Hide Answer</button>
+          <div class="result" id="solutionML25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML26')">Show/Hide Answer</button>
+          <div class="result" id="solutionML26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML27')">Show/Hide Answer</button>
+          <div class="result" id="solutionML27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML28')">Show/Hide Answer</button>
+          <div class="result" id="solutionML28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML29')">Show/Hide Answer</button>
+          <div class="result" id="solutionML29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionML30')">Show/Hide Answer</button>
+          <div class="result" id="solutionML30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

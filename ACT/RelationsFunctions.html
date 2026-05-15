@@ -1,0 +1,2106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Relations and Functions</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the ACT exam questions on relations and functions.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, 
+  Arithmetic, Algebra, relation, function, one-to-one function, injective function, onto function, surjective function, bijective function, set, 
+  table, mapping, rule, correspondence, equation, graph, domain, codomain, image, range, set notation, input, output,
+  x-coordinate, y-coordinate, independent variable, dependent variable, predictor variable, explanatory variable, response variable, cause, effect, 
+  action, consequence, vertical line test, interval notation, evaluate, symmetry, arithmetic operations, difference quotient, slope,
+  intercept, x-intercept, y-intercept, slope-intercept form, point-slope form, two-points form, difference quotient, derivative, function composition, 
+  function decomposition, linear functions, quadratic functions, parabolas, vertical parabola, vertex, axis, line of symmetry, function transformations,
+  even functions, odd functions, order relations, total order, partial order, pseudo order, quasi order, reflexivity, symmetric, antisymmetric, 
+  transitivity, poset, maximal element, minimal element, Hasse diagrams, upper bound, lower bound, least upper bound, greatest lower bound, 
+  lattices, lexicographic order, topological sorting, linear model, quadratic model">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Relations and Functions</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Relations and Functions. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas for Linear Functions</h2>
+      $
+      (1.)\;\; \text{Slope,}\;\; m = \dfrac{\Delta y}{\Delta x} = \dfrac{y_2 - y_1}{x_2 - x_1} = \dfrac{rise}{run}
+      \\[5ex]
+      (2.)\;\; \text{Slope-Intercept Form:}\;\; y = mx + b \\[5ex]
+      (3.)\;\; \text{Point-Slope Form:}\;\; y - y_1 = m(x - x_1) \\[5ex]
+      (4.)\;\; \text{Two-Points Form:}\;\; \dfrac{y - y_1}{x - x_1} = \dfrac{y_2 - y_1}{x_2 - x_1} \\[5ex]
+      $
+
+      <h2>Formulas for Quadratic Functions</h2>
+      $
+      (1.)\;\; \text{Discriminant}\;\; = b^2 - 4ac \\[5ex]
+      (2.)\;\; \text{Standard Form:}\;\; f(x) = ax^2 + bx + c \\[5ex]
+      (3.)\;\; \text{Vertex from Standard Form:}\;\; \left[-\dfrac{b}{2a}, f\left(-\dfrac{b}{2a}\right)\right] \\[7ex]
+      (4.)\;\; \text{Vertex Form:}\;\; f(x) = a(x - h)^2 + k \\[5ex]
+      (5.)\;\; \text{Vertex from Vertex Form:}\;\; Vertex = (h, k) \\[5ex]
+      (6.)\;\; \text{Extended Vertex Form:}\;\; f(x) = a\left(x + \dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a} \\[7ex]
+      (7.)\;\; \text{Vertex from Extended Vertex Form:}\;\; Vertex = \left(-\dfrac{b}{2a}, \dfrac{4ac - b^2}{4a}\right)
+      \\[7ex]
+      $
+
+      <h2>Factoring Formulas</h2>
+      $
+      \underline{Difference\;\;of\;\;Two\;\;Squares} \\[3ex]
+      (1.)\;\;x^2 - y^2 = (x + y)(x - y) \\[5ex]
+      \underline{Difference\;\;of\;\;Two\;\;Cubes} \\[3ex]
+      (2.)\;\; x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\[5ex]
+      \underline{Sum\;\;of\;\;Two\;\;Cubes} \\[3ex]
+      (3.)\;\; x^3 + y^3 = (x + y)(x^2 - xy + y^2)
+      $
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Given functions $f(x) = 3x + 4$ and $g(x) = x^2 - 2$, what is the value of $f(g(-3))$?
+          <br><br>
+          $
+          F.\;\; -29 \\[3ex]
+          G.\;\; -27 \\[3ex]
+          H.\;\; -20 \\[3ex]
+          J.\;\; 23 \\[3ex]
+          K.\;\; 25 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF1')">Calculator Solution</button>
+          <div class="result" id="solutionRF1">
+            <br>
+            $
+            g(x) = x^2 - 2 \\[3ex]
+            g(-3) = (-3)^2 - 2 \\[3ex]
+            = 9 - 2 \\[3ex]
+            = 7 \\[5ex]
+            f(x) = 3x + 4 \\[3ex]
+            f(g(-3)) = f(7) \\[3ex]
+            = 3(7) + 4 \\[3ex]
+            = 21 + 4 \\[3ex]
+            = 25
+            $
+          </div>
+          <div class="result" id="solutionCRF1">
+            <br>
+            <img src="images/RelationsFunctions/Answers/Calculator1-1st.png" alt="Calculator 1-1st"> <br>
+            <img src="images/RelationsFunctions/Answers/Calculator1-2nd.png" alt="Calculator 1-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Which of the following equations gives a function <i>f(x)</i> that satisfies <i>f</i>(4) = 9?
+          <br><br>
+          $
+          A.\;\; f(x) = x^2 - 7 \\[3ex]
+          B.\;\; f(x) = x^2 + 7 \\[3ex]
+          C.\;\; f(x) = x - 5 \\[3ex]
+          D.\;\; f(x) = 4x + 9 \\[3ex]
+          E.\;\; f(x) = 9x + 4 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF2')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF2">
+            <br>
+            $
+            y = f(x) \\[3ex]
+            f(x) = y \\[3ex]
+            f(4) = 9 \\[3ex]
+            \implies \\[3ex]
+            x = 4 \\[3ex]
+            y = 9 \\[3ex]
+            \underline{Test\;\;each\;\;option} \\[3ex]
+            Option\;A \\[3ex]
+            f(x) = x^2 - 7 \\[3ex]
+            f(4) = 4^2 - 7 \\[3ex]
+            = 16 - 7 \\[3ex]
+            = 9
+            $
+            Option A is the correct answer.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) The following linear functions are defined either with an equation, a graph, or a table of values. <br>
+          Which of the following functions has the greatest slope?
+          <br><br>
+          $
+          A.\;\; f(x) = 15 \\[3ex]
+          B.\;\; g(x) = 8x + 7 \\[3ex]
+          $
+          <b>C.</b>
+          <table class="w3-center" style="width: 40%;">
+            <tr>
+              <th style="width: 50%;"><i>x</i></th>
+              <th style="width: 50%;"><i>h(x)</i></th>
+            </tr>
+            <tr>
+              <td>
+                0 <br>
+                3 <br>
+                11
+              </td>
+              <td>
+                6 <br>
+                0 <br>
+                &minus;16
+              </td>
+            </tr>
+          </table>
+          <br>
+          <b>D.</b>
+          <table class="w3-center" style="width: 40%;">
+            <tr>
+              <th style="width: 50%;"><i>x</i></th>
+              <th style="width: 50%;"><i>j(x)</i></th>
+            </tr>
+            <tr>
+              <td>
+                &minus;6 <br>
+                4 <br>
+                14
+              </td>
+              <td>
+                0 <br>
+                5 <br>
+                10
+              </td>
+            </tr>
+          </table>
+          <br><br>
+          <b>E.</b>
+          <img src="images/RelationsFunctions/Questions/Number3E.png" alt="Number 3E">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF3')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF3">
+            <br>
+            Using the process of elimination to save time: <br>
+            Option A. is out because it has a zero slope <br>
+            Option C. is out because it has a negative slope: the <i>y</i>-values decrease as the <i>x</i>-values
+            increase.
+            <br><br>
+            Option B. is the most likely answer because the slope is 8 <br>
+            Options D. and E. has positive slopes, however, the values are less than 8
+            <br><br>
+            <i>
+              <b>Student:</b> May you please explain each option? <br>
+              <b>Teacher:</b> Sure, let's do it.
+            </i>
+            <br><br>
+            $
+            \text{Slope,}\;\; m = \dfrac{y_2 - y_1}{x_2 - x_1} \\[5ex]
+            \text{Slope-Intercept Form:}\;\; y = mx + b \\[5ex]
+            \underline{Option\;\;A.} \\[3ex]
+            f(x) = 15 \\[3ex]
+            f(x) = 0x + 15 \\[3ex]
+            m = 0 \\[5ex]
+            \underline{Option\;\;B.} \\[3ex]
+            g(x) = 8x + 7 \\[3ex]
+            m = 8 \\[5ex]
+            \underline{Option\;\;C.} \\[3ex]
+            (0, 6) \;\;\;and\;\;\; (11, -16) \\[3ex]
+            x_1 = 0 ~~~~~~~~~~~~~~ x_2 = 11 \\[4ex]
+            y_1 = 6 ~~~~~~~~~~~~~~ y_2 = -16 \\[4ex]
+            m = \dfrac{-16 - 6}{11 - 0} \\[5ex]
+            = -\dfrac{22}{11} \\[5ex]
+            = -2 \\[5ex]
+            \underline{Option\;\;D.} \\[3ex]
+            (-6, 0) \;\;\;and\;\;\; (14, 10) \\[3ex]
+            x_1 = -6 ~~~~~~~~~~~~~~ x_2 = 14 \\[4ex]
+            y_1 = 0 ~~~~~~~~~~~~~~ y_2 = 10 \\[4ex]
+            m = \dfrac{10 - 0}{14 - (-6)} \\[5ex]
+            = \dfrac{10}{14 + 6} \\[5ex]
+            = \dfrac{10}{20} \\[5ex]
+            = \dfrac{1}{2} \\[5ex]
+            \underline{Option\;\;E.} \\[3ex]
+            (-1, 1) \;\;\;and\;\;\; (0, 5) \\[3ex]
+            x_1 = -1 ~~~~~~~~~~~~~~ x_2 = 0 \\[4ex]
+            y_1 = 1 ~~~~~~~~~~~~~~ y_2 = 5 \\[4ex]
+            m = \dfrac{5 - 1}{0 - (-1)} \\[5ex]
+            = \dfrac{5}{0 + 1} \\[5ex]
+            = \dfrac{5}{1} \\[5ex]
+            = 5 \\[3ex]
+            $
+            Option B. is the correct answer.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) A <i>relation</i> pairs elements in the domain with elements in the range. <br>
+          The table below defines a relation where the domain is represented by the <i>x</i>-values and the range is
+          represented by the <i>y</i>-values.
+          <br><br>
+          <div class="w3-center">
+            <table style="width: 50%;">
+              <tr>
+                <th style="width: 50%;"><i>x</i></th>
+                <th style="width: 50%;"><i>y</i></th>
+              </tr>
+              <tr>
+                <td>
+                  3 <br>
+                  7 <br>
+                  1 <br>
+                  3 <br>
+                  4 <br>
+                  2
+                </td>
+                <td>
+                  6 <br>
+                  9 <br>
+                  5 <br>
+                  4 <br>
+                  5 <br>
+                  8
+                </td>
+              </tr>
+            </table>
+          </div>
+          <br>
+          Which of the following statements indicates whether this relation is a function of <i>x</i> and provides a
+          valid reason?
+          <br><br>
+          <b>F.</b> It is, because the <i>y</i>-value is always greater than the <i>x</i>-value. <br>
+          <b>G.</b> It is, because there are 5 distinct values in both the domain and the range. <br>
+          <b>H.</b> It is not, because there are 2 different <i>y</i>-values paired with the <i>x</i>-value 3. <br>
+          <b>J.</b> It is not, because there are 2 different <i>x</i>-values paired with the y-value 5. <br>
+          <b>K.</b> It is not, because no equation can be written to model the relationship between <i>x</i> and
+          <i>y</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF4')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF4">
+            <br>
+            Two students can make two different grades on the same test... a Function <br>
+            Two students can make the same grade on the same test... a Function <br>
+            However, a student cannot make two different grades on the same test... Not a function <br>
+            An input may not have more than one output in a function. In other words, a function is a relation in which
+            each input has a unique output. <br>
+            The input, <i>x</i>-value of 3 may not have output images of <i>y</i>-values of 6 and 4 <br>
+            Hence, the correct answer is Option <b>H.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) The scales on both axes of the standard (<i>x, y</i>) coordinate plane below are the same. <br>
+          Of the following values, which one is the best estimate for the slope of the line graphed in the plane?
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          $
+          F.\;\; -5 \\[3ex]
+          G.\;\; -\dfrac{1}{5} \\[5ex]
+          H.\;\;\dfrac{1}{5} \\[5ex]
+          J.\;\; \dfrac{3}{5} \\[5ex]
+          K.\;\; 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF5')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF5">
+            <br>
+            The graph has a negative slope. <br>
+            Hence, Options <b>H., J.</b> and <b>K.</b> are out. <br>
+            Options <b>F.</b> and <b>G.</b> are in. <br>
+            Let us now check the distance of the rise and run.
+            <br><br>
+            <img src="images/RelationsFunctions/Answers/Number5.png" alt="Number 5">
+            <br><br>
+            $
+            Slope = \dfrac{rise}{run} \\[5ex]
+            \text{As seen in the graph, the run has a greater length than the rise} \\[5ex]
+            \text{Hence, the slope is estimated as } -\dfrac{1}{5}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The function $f(c) = \dfrac{9}{5}c + 32$ gives the temperature, <i>f(c)</i> degrees Fahrenheit, that
+          corresponds to <i>c</i> degrees Celsius. <br>
+          To the nearest 0.1&deg;F, what Fahrenheit temperature corresponds to 13.0&deg;C?
+          <br><br>
+          $
+          A.\;\; 33.8^\circ F \\[4ex]
+          B.\;\; 45.0^\circ F \\[4ex]
+          C.\;\; 46.8^\circ F \\[4ex]
+          D.\;\; 55.4^\circ F \\[4ex]
+          E.\;\; 81.0^\circ F \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF6')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF6">
+            <br>
+            $
+            f(c) = \dfrac{9}{5}c + 32 \\[5ex]
+            c = 13^\circ C \\[4ex]
+            f(13) = \dfrac{9}{5}\cdot 13 + 32 \\[5ex]
+            = \dfrac{277}{5} \\[5ex]
+            = 55.4^\circ F
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 7 &ndash; 9.
+        <br><br>
+        Consider the function $f(t) = -10t^2 + 20t + 80$, graphed in the coordinate plane below.
+        <br><br>
+        <img src="images/RelationsFunctions/Questions/Numbers7-9.png" alt="Numbers 7 - 9">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) What is the value of $f(-10)$ ?
+          <br><br>
+          $
+          F.\;\; -1,280 \\[3ex]
+          G.\;\; -1,120 \\[3ex]
+          H.\;\; -720 \\[3ex]
+          J.\;\; -10 \\[3ex]
+          K.\;\; 80 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF7')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF7')">Calculator Solution</button>
+          <div class="result" id="solutionRF7">
+            <br>
+            $
+            f(t) = -10t^2 + 20t + 80 \\[4ex]
+            f(-10) = -10(-10)^2 + 20(-10) + 80 \\[4ex]
+            = -10(100) - 200 + 80 \\[3ex]
+            = -1000 - 200 + 80 \\[3ex]
+            = -1120
+            $
+          </div>
+          <div class="result" id="solutionCRF7">
+            <br>
+            <img src="images/RelationsFunctions/Answers/Calculator7-1st.png" alt="Calculator 7-1st"> <br>
+            <img src="images/RelationsFunctions/Answers/Calculator7-2nd.png" alt="Calculator 7-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) Which of the following is the set of all possible values of <i>t</i> for which <i>f</i>(<i>t</i>) is
+          defined?
+          <br><br>
+          $
+          A.\;\; \{t:\;t \ge 4\} \\[3ex]
+          B.\;\; \{t:\;t \ge -2\} \\[3ex]
+          C.\;\; \{t:\;t \le 90\} \\[3ex]
+          D.\;\; \{t:\;-2 \le t \le 4\} \\[3ex]
+          E.\;\; \{t:\;t\;\;is\;\;any\;\;real\;\;number\} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF8')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF8">
+            <br>
+            The domain of a quadratic function is any real number <br>
+            The set of all possible values of <i>t</i> for which <i>f</i>(<i>t</i>) is defined any real number.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) For $7y = 2x - 5$, which of the following expressions gives <i>x</i> in terms of <i>y</i>?
+          <br><br>
+          $
+          F.\;\; \dfrac{7y - 5}{2} \\[5ex]
+          G.\;\; \dfrac{7y + 5}{2} \\[5ex]
+          H.\;\; \dfrac{7}{2}y - 5 \\[5ex]
+          J.\;\; \dfrac{7}{2}y + 5 \\[5ex]
+          K.\;\; 5y + 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF9')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF9">
+            <br>
+            $
+            7y = 2x - 5 \\[3ex]
+            2x - 5 = 7y \\[3ex]
+            2x = 7y + 5 \\[3ex]
+            x = \dfrac{7y + 5}{2}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Mary throws a stone from the edge of a cliff. <br>
+          While the stone is in flight, the equation $h = 300 - 30t - 16t^2$ gives the height above the ground, <i>h</i>
+          feet, of the stone at any given time <i>t</i> seconds after being thrown. <br>
+          What is the height, in feet, of the stone exactly 3 seconds after Mary throws the stone?
+          <br><br>
+          $
+          F.\;\; 66 \\[3ex]
+          G.\;\; 114 \\[3ex]
+          H.\;\; 162 \\[3ex]
+          J.\;\; 246 \\[3ex]
+          K.\;\; 354 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF10')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF10">
+            <br>
+            $
+            h = 300 - 30t - 16t^2 \\[4ex]
+            h(t) = 300 - 30t - 16t^2 \\[4ex]
+            t = 3\;seconds \\[3ex]
+            h(3) = 300 - 30(3) - 16(3)^2 \\[4ex]
+            = 66\;feet
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) Given functions $f(x) = 4x + 3$ and $g(x) = x^2 - 2$, what is the value of $f(g(-3))$?
+          <br><br>
+          $
+          A.\;\; -83 \\[3ex]
+          B.\;\; -41 \\[3ex]
+          C.\;\; -29 \\[3ex]
+          D.\;\; 31 \\[3ex]
+          E.\;\; 79 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF11')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF11')">Calculator Solution</button>
+          <div class="result" id="solutionRF11">
+            <br>
+            $
+            g(x) = x^2 - 2 \\[4ex]
+            g(-3) = (-3)^2 - 2 \\[4ex]
+            g(-3) = 7 \\[5ex]
+            f(x) = 4x + 3 \\[3ex]
+            f(7) = 4(7) + 3 \\[3ex]
+            f(7) = 31
+            $
+          </div>
+          <div class="result" id="solutionCRF11">
+            <br>
+            <img src="images/RelationsFunctions/Answers/Calculator11-1st.png" alt="Calculator 11-1st"> <br>
+            <img src="images/RelationsFunctions/Answers/Calculator11-2nd.png" alt="Calculator 11-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) The graph of the function $f(x) = -9(x + 1)^2 + 81$ has its vertex at point (&minus;1, 81) and
+          intersects the <i>x</i>-axis at points (&minus;4, 0) and (<i>a</i>, 0). <br>
+          What is the value of <i>a</i>?
+          <br><br>
+          $
+          F.\;\; -\dfrac{81}{5} \\[5ex]
+          G.\;\; \dfrac{5}{81} \\[5ex]
+          H.\;\; 2 \\[3ex]
+          J.\;\; 3 \\[3ex]
+          K.\;\; 81 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF12')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF12">
+            <br>
+            The axis of a vertical parabola is the vertical line through the vertex of the parabola. <br>
+            It is the <i>x</i>-coordinate of the vertex. <br>
+            It is the line of symmetry that shows two <i>same halves</i> of the parabola when the parabola is folded
+            across that axis. <br>
+            This implies that the axis passes through the midpoint of the <i>x</i>-intercepts <br>
+            This implies that the axis is the midpoint of the <i>x</i>-intercepts because the midpoint of the
+            <i>x</i>-intercepts and the <i>x</i>-coordinate of the vertex both have the same <i>x</i>-value <br>
+            In that regard:
+            <br><br>
+            $
+            Vertex = (-1, 81) \\[3ex]
+            x-coordinate\;\;of\;\;vertex = -1 \\[3ex]
+            x-intercepts = (-4, 0)\;\;and\;\;(a, 0) \\[5ex]
+            Midpoint\;\;of\;\;x-intercept = \left(\dfrac{-4 + a}{2}, \dfrac{0 + 0}{2}\right) \\[5ex]
+            = \left(\dfrac{-4 + a}{2}, 0\right) \\[5ex]
+            x-value\;\;of\;\;Midpoint = \dfrac{-4 + a}{2} \\[5ex]
+            \implies \\[3ex]
+            \dfrac{-4 + a}{2} = -1 \\[5ex]
+            -4 + a = -1(2) \\[3ex]
+            -4 + a = -2 \\[3ex]
+            a = -2 + 4 \\[3ex]
+            a = 2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) Two functions, <i>f</i> and <i>g</i>, are defined over all real numbers by $f(x) = 2x - 1$ and $g(x) =
+          3x^2 - 7$. <br>
+          What is $g(f(5x))$?
+          <br><br>
+          $
+          A.\;\; 150x^2 - 15 \\[4ex]
+          B.\;\; 300x^2 - 60x - 4 \\[4ex]
+          C.\;\; 60x^3 - 60x^2 - 20x \\[4ex]
+          D.\;\; 750x^3 - 75x^2 - 70x + 7 \\[4ex]
+          E.\;\; 30x^4 - 15x^3 - 70x^2 + 35x \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF13')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF13">
+            <br>
+            $
+            f(x) = 2x - 1 \\[4ex]
+            f(5x) = 2(5x) - 1 \\[3ex]
+            f(5x) = 10x - 1 \\[5ex]
+            g(x) = 3x^2 - 7 \\[4ex]
+            g(f(5x)) = g(10x - 1) \\[3ex]
+            = 3(10x - 1)^2 - 7 \\[4ex]
+            3[(10x - 1)(10x - 1)] - 7 \\[3ex]
+            3(10x)(10x) = 300x^2...\text{The correct answer is Option B} \\[4ex]
+            $
+            <i>
+              <b>Student:</b> But, you did not complete it. <br>
+              <b>Teacher:</b> I know...remember that our target should be 1 minute for each question. <br>
+              Option B is the only option that has $300x^2$ <br>
+              <b>Student:</b> May you complete it? <br>
+              <b>Teacher:</b> Sure, let's do it.
+            </i>
+            <br><br>
+            $
+            3[(10x - 1)(10x - 1)] - 7 \\[3ex]
+            3[100x^2 - 10x - 10x + 1] - 7 \\[4ex]
+            3(100x^2 - 20x + 1) - 7 \\[4ex]
+            300x^2 - 60x + 3 - 7 \\[4ex]
+            300x^2 - 60x - 4
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) The function $y = f(x) = \dfrac{5}{x}$ is graphed in the standard (<i>x, y</i>) coordinate plane below.
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number14.png" alt="Number 14">
+          <br><br>
+          One of the following statements is FALSE. <br>
+          Which one?
+          <br><br>
+          <b>A.</b> f(x) decreases for all <i>x</i> &gt; 0. <br>
+          <b>B.</b> f(x) decreases for all <i>x</i> &lt; 0. <br>
+          <b>C.</b> The graph of f(x) has a horizontal asymptote at <i>y</i> = 0. <br>
+          <b>D.</b> The graph of f(x) has a vertical asymptote at <i>x</i> = 0. <br>
+          <b>E.</b> The graph of f(x) has an intercept at (0,0).
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF14')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF14">
+            <br>
+            The graph has a vertical asymptote at <i>x</i> = 0 <br>
+            This implies that it never touches or crosses the <i>x</i>-axis at <i>x</i> = 0 <br>
+            This implies that there is no <i>x</i>-intercept at (0, 0) <br>
+            Also, we can see from the diagram that the graph did not cross the <i>y</i>-axis at <i>y</i> = 0 <br>
+            This implies that this is false: The graph of f(x) has an intercept at (0,0). <br>
+            Option E. is the correct answer.
+            <br><br>
+            The other options are true.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 15 &ndash; 17.
+        <br><br>
+        A pump is used to move water in and out of a tank. <br>
+        The pump is turned on at t = 0 seconds when there are 20 gallons in the tank. <br>
+        The function <i>V(t)</i> represents the volume, in gallons, of water in the tank <i>t</i> seconds after the pump
+        is turned on. <br>
+        Shown below is the graph of <i>V(t)</i>, which is a periodic function with a period of 9 seconds. <br>
+        The 1st period of <i>V(t)</i> is shown as a solid line, and the rest is shown as dashed. <br>
+        The pump remains on for 1 hour.
+        <br><br>
+        <img src="images/RelationsFunctions/Questions/Numbers15-17.png" alt="Numbers 15 - 17">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) How many periods does the pump complete in 1 hour?
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 54 \\[3ex]
+          H.\;\; 360 \\[3ex]
+          J.\;\; 400 \\[3ex]
+          K.\;\; 540 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF15')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF15">
+            <br>
+            <i>V(t)</i> is a periodic function with a period of 9 seconds. <br>
+            This implies: 9 seconds in 1 period <br>
+            So, how many periods is 1 hour?
+            <br><br>
+            $
+            \underline{Unity\;\;Fraction\;\;Method} \\[3ex]
+            1\;hour * \dfrac{...minutes}{...hour} * \dfrac{...seconds}{...minutes} * \dfrac{...periods}{...seconds}
+            \\[5ex]
+            1\;hour * \dfrac{60\;minutes}{1\;hour} * \dfrac{60\;seconds}{1\;minutes} * \dfrac{1\;periods}{9\;seconds}
+            \\[5ex]
+            400\;periods
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) One of the following values is the volume, in gallons, of water in the tank after 51 seconds. <br>
+          Which one?
+          <br><br>
+          $
+          A.\;\; 20 \\[3ex]
+          B.\;\; 30 \\[3ex]
+          C.\;\; 40 \\[3ex]
+          D.\;\; 50 \\[3ex]
+          E.\;\; 60 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF16')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF16">
+            <br>
+            From our observations of the graph: <br>
+            The graph follows a periodic function...the same cycle repeats each period <br>
+            The same cycle repeats every 9 seconds <br>
+            So, in 51 seconds:
+            <br><br>
+            $
+            51 = 9(5) + 6 \\[3ex]
+            $
+            At the 6th second, the volume is 50 gallons. <br>
+            This implies that after 51 seconds, the volume is 50 gallons.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) A 2nd tank has 30 gallons in it when its pump is turned on at <i>t</i> = 0 seconds. <br>
+          In terms of gallons of water moved over time, this pump behaves the same as the other pump. <br>
+          One of the following functions represents the volume, in gallons, of water in the 2nd tank <i>t</i> seconds
+          after the pump is turned on. <br>
+          Which one?
+          <br><br>
+          $
+          F.\;\; V(t) + 10 \\[3ex]
+          G.\;\; V(t) + 30 \\[3ex]
+          H.\;\; V(t + 10) \\[3ex]
+          J.\;\; 10 \cdot V(t) \\[3ex]
+          K.\;\; 30 \cdot V(t) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF17')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF17">
+            <br>
+            The pump is turned on at t = 0 seconds when there are 20 gallons in the tank. <br>
+            The function <i>V(t)</i> represents the volume, in gallons, of water in the tank <i>t</i> seconds after the
+            pump
+            is turned on. <br>
+            This implies that: $V(t) = 20$
+            <br><br>
+            A 2nd tank has 30 gallons in it when its pump is turned on at <i>t</i> = 0 seconds.
+            <br><br>
+            $
+            30 = 20 + 10 \\[3ex]
+            30 = V(t) + 10 \\[3ex]
+            $
+            This represents the volume, in gallons, of water in the 2nd tank <i>t</i> seconds after the pump is turned
+            on.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) What is the slope of the line passing through the points (&minus;1, 4) and (2, &minus;1) in the standard
+          (<i>x, y</i>) coordinate plane?
+          <br><br>
+          $
+          A.\;\; -\dfrac{5}{3} \\[5ex]
+          B.\;\; -\dfrac{3}{5} \\[5ex]
+          C.\;\; -\dfrac{1}{3} \\[5ex]
+          D.\;\; \dfrac{3}{5} \\[5ex]
+          E.\;\; 3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF18')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF18">
+            <br>
+            $
+            \underline{\text{Point 1}}: (-1, 4) \\[3ex]
+            x_1 = -1 \hspace{4em} y_1 = 4 \\[4ex]
+            \underline{\text{Point 2}}: (2, -1) \\[3ex]
+            x_2 = 2 \hspace{5em} y_2 = -1 \\[4ex]
+            Slope = \dfrac{y_2 - y_1}{x_2 - x_1} \\[6ex]
+            = \dfrac{-1 - 4}{2 - (-1)} \\[5ex]
+            = \dfrac{-5}{2 + 1} \\[5ex]
+            = -\dfrac{5}{3}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) The graphs of $y^2 = x + 8$ and $y = 3x - 3$ are shown in the standard (<i>x, y</i>) coordinate plane
+          below. <br>
+          The 2 graphs intersect at points <i>A</i> and <i>B</i>. <br>
+          The solution of which of the following equations gives the <i>x</i>-coordinate of point <i>A</i>?
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number19.png" alt="Number 19">
+          <br><br>
+          $
+          F.\;\; \sqrt{3x - 3} = -\sqrt{x + 8} \\[3ex]
+          G.\;\; \sqrt{3x - 3} = \sqrt{x + 8} \\[3ex]
+          H.\;\; 9x^2 - 9 = x + 8 \\[4ex]
+          J.\;\; 3x - 3 = -\sqrt{x + 8} \\[3ex]
+          K.\;\; 3x - 3 = \sqrt{x + 8} \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF19')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF19">
+            <br>
+            $
+            \underline{1st\;\;Graph} \\[3ex]
+            y^2 = x + 8 \\[4ex]
+            y = \pm\sqrt{x + 8} \\[3ex]
+            \text{For Point A:}\; y = \sqrt{x + 8} ...\text{because it is a positive}\;y-value \\[5ex]
+            \underline{2nd\;\;Graph} \\[3ex]
+            y = 3x - 3 \\[5ex]
+            \underline{\text{Intersection of 1st Graph and 2nd Graph}} \\[3ex]
+            y = y \\[3ex]
+            \implies \\[3ex]
+            3x - 3 = \sqrt{x + 8}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) The cost of a hotel room, <i>y</i> dollars, based on the rating, <i>x</i>, provided by a travel agency
+          is modeled by the linear equation <i>y</i> = 2.34<i>x</i> + 67.75 <br>
+          Which of the following statements describes the rate of change of this model?
+          <br><br>
+          <b>F.</b> For every increase of 1.00 in the rating, the cost increases by <span>$</span>2.34. <br>
+          <b>G.</b> For every increase of 1.00 in the rating, the cost increases by <span>$</span>67.75. <br>
+          <b>H.</b> For every increase of 2.34 in the rating, the cost increases by <span>$</span>1.00. <br>
+          <b>J.</b> For every increase of 2.34 in the rating, the cost increases by <span>$</span>67.75. <br>
+          <b>K.</b> For every increase of <span>$</span>1.00 in the cost, the rating increases by 2.34.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF20')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF20">
+            <br>
+            <i>y</i> = <i>mx</i> + <i>b</i> <br>
+            where <br>
+            <i>m</i> = slope <br>
+            <i>b</i> = <i>y</i>-intercept
+            <br><br>
+            <i>y</i> = 2.34<i>x</i> + 67.75 <br>
+            <i>x</i> = independent variable = input = rating <br>
+            <i>y</i> = dependent variable = output = cost <br>
+            <i>m</i> = slope = <span>$</span>2.34. <br>
+            This is a positive slope. <br>
+            A positive slope implies that as the input increases, the output also increases. <br>
+            The interpretation of the slope indicates that: <br>
+            For every unit change of the input, the output changes by the value of the slope. <br>
+            Hence, For every increase of 1.00 in the rating, the cost increases by <span>$</span>2.34.
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/RelationsFunctions.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) The function <i>f</i>(<i>x</i>) when graphed in the standard (<i>x, y</i>) coordinate plane has the
+          features below: <br>
+          I. One of its intercepts is located at (&minus;3,0) <br>
+          II. <i>f</i>(<i>x</i>) increases for all <i>x</i> &gt; 3 <br>
+          III. <i>f</i>(<i>x</i>) is not defined for <i>x</i> = &minus;2. <br>
+          One of the following is the graph of <i>f</i>(<i>x</i>). Which one?
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number21.png" alt="Number 21">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF21')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF21">
+            <br>
+            (I.) One of its intercepts is located at (&minus;3,0) <br>
+            Options <b>B.</b> and <b>E.</b> are out because they do have any intercept at (&minus;3,0) <br>
+            The graph does not touch or cross the <i>x</i>-axis at (&minus;3,0) <br>
+            Options <b>A., D.,</b> and <b>C.</b> stays
+            <br><br>
+            (II.) <i>f</i>(<i>x</i>) increases for all <i>x</i> &gt; 3 <br>
+            Option <b>D.</b> is out because the graph shows a decreasing trend from <i>x</i> &ge; 1 <br>
+            Most likely, it follows that pattern and keeps decreasing for <i>x</i> &gt; 3 <br>
+            Options <b>A.</b> and <b>C.</b> stays
+            <br><br>
+            (III.) <i>f</i>(<i>x</i>) is not defined for <i>x</i> = &minus;2. <br>
+            Option <b>A.</b> is out because <i>f</i>(&minus;2) = 4 ...this is defined
+            <br><br>
+            Option <b>C.</b> is the correct answer because it satisfies the features.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.) The graph below shows the average daily consumption, in thousands of barrels, of oil for Uzbekistan for
+          the years 2003 through 2013.
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number22.png" alt="Number 22">
+          <br><br>
+          From what year to the following year did the average daily consumption decrease the most?
+          <br><br>
+          <b>F.</b> 2003 to 2004 <br>
+          <b>G.</b> 2004 to 2005 <br>
+          <b>H.</b> 2006 to 2007 <br>
+          <b>J.</b> 2009 to 2010 <br>
+          <b>K.</b> 2012 to 2013
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF22')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF22">
+            <br>
+            As seen from the diagram:
+            <br><br>
+            <img src="images/RelationsFunctions/Answers/Number22.png" alt="Number 22">
+            <br><br>
+            The steepest decline is indiated in red color. <br>
+            It is the time during which the average daily consumption decreased the most. <br>
+            It is the most negative slope. <br>
+            It is from 2004 to 2005
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) One of the following graphs in the standard (<i>x, y</i>) coordinate plane is the graph of the equation
+          3<i>y</i> &minus; 2<i>x</i> = 6. <br>
+          Which graph?
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF23')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF23')">Calculator Solution</button>
+          <div class="result" id="solutionRF23">
+            <br>
+            Let us find the intercepts, then we shall find the correct answer choice.
+            <br><br>
+            <table class="w3-center">
+              <caption>$3y - 2x = 6$</caption>
+              <tr>
+                <td style="width: 10%;"><i>x</i></td>
+                <td style="width: 30%;">0</td>
+                <td style="width: 30%;">
+                  $
+                  3y - 2(0) = 6 \\[3ex]
+                  3y = 6 \\[3ex]
+                  y = \dfrac{6}{3} \\[5ex]
+                  y = 2
+                  $
+                </td>
+                <td style="width: 30%;">
+                  <i>y</i>-intercept <br>
+                  (0, 2)
+                </td>
+              </tr>
+              <tr>
+                <td><i>y</i></td>
+                <td>
+                  $
+                  3(0) - 2x = 6 \\[3ex]
+                  -2x = 6 \\[3ex]
+                  x = \dfrac{6}{-2} \\[5ex]
+                  x = -3
+                  $
+                </td>
+                <td>0</td>
+                <td>
+                  <i>x</i>-intercept <br>
+                  (&minus;3, 0)
+                </td>
+              </tr>
+            </table>
+            <br>
+            The correct answer is Option <b>G.</b>
+          </div>
+          <div class="result" id="solutionCRF23">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.) Two nonvertical parallel lines in the standard (<i>x, y</i>) coordinate plane have the equations $y =
+          m_1x + b_1$ and $y = m_2x + b_2$. <br>
+          The 2 lines are not coincident. <br>
+          Which of the following assertions must be true?
+          <br><br>
+          $
+          I.\;\; b_1 = b_2 \\[4ex]
+          II.\;\; b_1 \ne b_2 \\[4ex]
+          III.\;\; m_1 = m_2 \\[4ex]
+          IV.\;\; m_1 \ne m_2 \\[4ex]
+          $
+          <b>F.</b> I only <br>
+          <b>G.</b> III only <br>
+          <b>H.</b> I and III only <br>
+          <b>J.</b> I and IV only <br>
+          <b>K.</b> II and III only
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF24')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF24">
+            <br>
+            Parallel lines have the same slope. <br>
+            So, $m_1 = m_2$ <br>
+            Based on the question, the 2 lines are not coincident. <br>
+            This means that one line does not lie on top of the other line (as if they looked like a single line). <br>
+            This implies that the two lines are visually distinct from each other. <br>
+            Hence, they do not have the same <i>y</i>-intercept. <br>
+            So, $b_1 \ne b_2$ <br>
+            The correct answer is Option <b>K.</b>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) If $f(x) = (4x + 3)^2$, then $f(1) = ?$
+          <br><br>
+          <b>F.</b> 7 <br>
+          <b>G.</b> 14 <br>
+          <b>H.</b> 19 <br>
+          <b>J.</b> 25 <br>
+          <b>K.</b> 49
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF25')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF25')">Calculator Solution</button>
+          <div class="result" id="solutionRF25">
+            <br>
+            $
+            f(x) = (4x + 3)^2 \\[3ex]
+            f(1) = [4(1) + 3]^2 \\[3ex]
+            = (4 + 3)^2 \\[3ex]
+            = 7^2 \\[3ex]
+            = 49
+            $
+          </div>
+          <div class="result" id="solutionCRF25">
+            <br>
+            <img src="images/RelationsFunctions/Answers/Calculator25-1st.png" alt="Calculator25-1st">
+            <br><br>
+            <img src="images/RelationsFunctions/Answers/Calculator25-2nd.png" alt="Calculator25-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.) In the standard (<i>x, y</i>) coordinate plane, what is the slope of the line 7<i>x</i> + 4<i>y</i> = 8?
+          <br><br>
+          $
+          A.\;\; -7 \\[3ex]
+          B.\;\; -\dfrac{7}{4} \\[5ex]
+          C.\;\; \dfrac{7}{8} \\[5ex]
+          D.\;\; 7 \\[3ex]
+          E.\;\; 8 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF26')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF26">
+            <br>
+            $
+            y = mx + b ...\text{Slope-Intercept Form} \\[3ex]
+            where\;\; m = slope \\[5ex]
+            7x + 4y = 8 \\[3ex]
+            4y = -7x + 8 \\[3ex]
+            y = \dfrac{-7x + 8}{4} \\[5ex]
+            y = -\dfrac{7}{4}x + \dfrac{8}{4} \\[5ex]
+            y = -\dfrac{7}{4}x + 2 \\[5ex]
+            m = -\dfrac{7}{4}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) Given functions $f(x) = 5x + 1$ and $g(x) = x^2 - 2$, what is the value of $f(g(-3))$ ?
+          <br><br>
+          $
+          A.\;\; -198 \\[3ex]
+          B.\;\; -54 \\[3ex]
+          C.\;\; -39 \\[3ex]
+          D.\;\; 36 \\[3ex]
+          E.\;\; 194 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF27')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF27')">Calculator Solution</button>
+          <div class="result" id="solutionRF27">
+            <br>
+            $
+            f(x) = 5x + 1 \\[3ex]
+            g(x) = x^2 - 2 \\[3ex]
+            f(g(-3)) = ? \\[5ex]
+            g(3) = 3^2 - 2 \\[3ex]
+            = 9 - 2 \\[3ex]
+            = 7 \\[5ex]
+            f(7) = 5(7) + 1 \\[3ex]
+            = 35 + 1 \\[3ex]
+            = 36
+            $
+          </div>
+          <div class="result" id="solutionCRF27">
+            <br>
+            $
+            Let: \\[3ex]
+            Y_1 = f(x) \\[3ex]
+            Y_2 = g(x) \\[3ex]
+            $
+            <img src="images/RelationsFunctions/Answers/Calculator27-1st.png" alt="Calculator27-1st">
+            <br><br>
+            <img src="images/RelationsFunctions/Answers/Calculator27-2nd.png" alt="Calculator27-2nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) When Jeff starts a math assignment, he spends $5$ minutes getting out his book and a
+          sheet of paper, sharpening his pencil, looking up the assignment in his assignment notebook, and turning
+          to the correct page in his book. <br>
+          The equation <i>t</i> = 10<i>p</i> + 5 models the time, <i>t</i> minutes, Jeff budgets for a math assignment
+          with <i>p</i> problems. <br>
+          Which of the following statements is necessarily true according to Jeff's model?
+          <br><br>
+          <b>F.</b>&nbsp;&nbsp; He budgets 15 minutes per problem <br>
+          <b>G.</b>&nbsp;&nbsp; He budgets 10 minutes per problem <br>
+          <b>H.</b>&nbsp;&nbsp; He budgets 5 minutes per problem <br>
+          <b>J.</b>&nbsp;&nbsp; He budgets 10 minutes per problem for the hard problems and 5 minutes per problem for
+          the easy
+          problems. <br>
+          <b>K.</b>&nbsp;&nbsp; He budgets a 5-minute break after each problem.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF28')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF28">
+            <br>
+            Let us analyze this question. <br>
+            Look at the function: $t = 10p + 5$ <br>
+            Compare to <i>y</i> = <i>mx</i> + <i>b</i>
+            <br><br>
+            Dependent variable = <i>y</i> = <i>t</i> = time (in minutes) <br>
+            Independent variable = <i>x</i> = <i>p</i> problems.
+            <br><br>
+            The slope, <i>m</i> = 10 minutes per problem <br>
+            The <i>y</i>-intercept, b = 5 minutes
+            <br><br>
+            (1.) Jeff takes 5 minutes to get prepared prior to solving his math assignment problems. <br>
+            That 5 minutes is the $y-intercept$
+            <br><br>
+            (2.) But, he actually spends 10 minutes on EACH problem. <br>
+            That 10 minutes is the slope. <br>
+            So, he budgets 10 minutes per problem....Correct answer
+            <br><br>
+            However, he budgets $t = 10(1) + 5 = 10 + 5 = 15$ minutes to get started and solve a problem <br><br>
+            He budgets $t = 10(2) + 5 = 20 + 5 = 25$ minutes to get started and solve two problems....and so on and so
+            forth
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.) The rational function graphed in the standard (<i>x, y</i>) coordinate plane below is undefined for 2
+          real values
+          of <i>x</i>.
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number29.png" alt="Number 29">
+          <br><br>
+          One of the following functions is the graphed function. <br>
+          Which one?
+          <br><br>
+          $
+          F.\;\; y = \dfrac{x + 2}{x(x + 2)} \\[5ex]
+          G.\;\; y = \dfrac{x - 2}{x(x - 2)^2} \\[5ex]
+          H.\;\; y = \dfrac{(x - 2)^2}{x^2(x - 2)} \\[5ex]
+          J.\;\; y = \dfrac{x + 2}{x^2(x + 2)} \\[5ex]
+          K.\;\; y = \dfrac{x + 2}{x^2(x + 2)^2} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF29')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF29">
+            <br>
+            Analyzing the graph based on the 2 undefined values: <br>
+            1st: We notice a vertical asymptote at <i>x</i> = 0 (both ways: to the left and to the right) <br>
+            This implies that $x = \pm 0$ <br>
+            This aligns with the statement that $x^2 = 0$ for that possibility to occur <br>
+            So, $x^2 = 0$ should be at the denominator.
+            <br><br>
+            2nd: There is a removable discontinuity (hole) at <i>x</i> = &minus;2 <br>
+            This implies that at <i>x</i> = &minus;2, the numerator is zero and the denominator is zero. <br>
+            For <i>x</i> = &minus;2; <br>
+            <i>x</i> + 2 = 0 <br>
+            Hence, <i>x</i> + 2 should be at the numerator and also at the denominator.
+            <br><br>
+            Looking at the options: <br>
+            Vertical asymptotes occur when the denominator equals zero and the numerator does not also become zero at
+            the same point. <br>
+            The option that correctly defines the graph is: Option <b>J.</b>: $y = \dfrac{x + 2}{x^2(x + 2)}$
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.) Data for each of 10 students is represented by a corresponding data point plotted in the standard (<i>x,
+            y</i>) coordinate plane below. <br>
+          Each point has 2 integer coordinates. <br>
+          The <i>x</i>-coordinate is the number of hours the student spent studying for a retake test, and the
+          <i>y</i>-coordinate is the change in score from the original test to the retake test. <br>
+          Noel drew the line shown through 2 data points to help predict future changes in score.
+          <br><br>
+          <img src="images/NumbersFractionsDecimalsPercents/Questions/Number42.png" alt="Number 42">
+          <br><br>
+          An 11th student is currently retaking the test. <br>
+          This student has studied 5 hours for the retake test. <br>
+          According to Noel’s line, what is the predicted change in score for the 11th student?
+          <br><br>
+          $
+          F.\;\; 2 \\[3ex]
+          G.\;\; 3 \\[3ex]
+          H.\;\; 4 \\[3ex]
+          J.\;\; 5 \\[3ex]
+          K.\;\; 7 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF30')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF30">
+            <br>
+            Let us find the equation of Noel's line. <br>
+            Then, we can find the predicted change in score the the 11th student.
+            <br><br>
+            $
+            x = \text{hours spent studying} \\[3ex]
+            y = \text{change in score} \\[5ex]
+            Point\;1\; (x_1, y_1) = (0, -1) \\[3ex]
+            x_1 = 0 \\[3ex]
+            y_1 = -1 \\[5ex]
+            Point\;2\; (x_2, y_2) = (7, 6) \\[3ex]
+            x_2 = 7 \\[3ex]
+            y_2 = 6 \\[5ex]
+            slope, m = \dfrac{y_2 - y_1}{x_2 - x_1} \\[5ex]
+            m = \dfrac{6 - (-1)}{7 - 0} \\[5ex]
+            m = \dfrac{7}{7} \\[5ex]
+            m = 1 \\[5ex]
+            \text{To find the y-intercept, b}: \\[3ex]
+            \text{Let us use Point 1} \\[3ex]
+            y = mx + b \\[3ex]
+            x = 0 \\[3ex]
+            y = -1 \\[3ex]
+            m = 1 \\[3ex]
+            \implies \\[3ex]
+            -1 = 1(0) + b \\[3ex]
+            -1 = 0 + b \\[3ex]
+            b = -1 \\[3ex]
+            \implies \\[3ex]
+            y = 1(x) - 1 \\[3ex]
+            y = x - 1 \\[5ex]
+            \text{For the 11th student who studied 5 hours}: \\[3ex]
+            x = 5 \\[3ex]
+            y = 5 - 1 \\[3ex]
+            y = 4 \\[3ex]
+            $
+            The predicted change in score for the 11th student is 4
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.) Given that $f(x) = x^2 - 5x + 6$ and $g(x) = x^2 - 7x - 10$, what is $g(f(-1))$ ?
+          <br><br>
+          $
+          F.\;\; -55 \\[3ex]
+          G.\;\; -24 \\[3ex]
+          H.\;\; 20 \\[3ex]
+          J.\;\; 21 \\[3ex]
+          K.\;\; 50 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF31')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCRF31')">Calculator Solution</button>
+          <div class="result" id="solutionRF31">
+            <br>
+            $
+            f(x) = x^3 - 5x + 6 \\[4ex]
+            g(x) = x^3 - 7x - 10 \\[4ex]
+            g(f(-1))? \\[5ex]
+            f(-1) = (-1)^3 - 5(-1) + 6 \\[4ex]
+            = 1 + 5 + 6 \\[3ex]
+            = 13 \\[5ex]
+            g(13) = 13^3 - 7(13) - 10 \\[3ex]
+            = 144 - 84 - 10 \\[3ex]
+            = 50
+            $
+          </div>
+          <div class="result" id="solutionCRF31">
+            <br>
+            <img src="images/RelationsFunctions/Answers/Calculator31-1st.png" alt="Calculator 31-1st"> <br>
+            <img src="images/RelationsFunctions/Answers/Calculator31-3nd.png" alt="Calculator 31-3nd">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.) For what value of <i>x</i> is the function below undefined?
+          <br><br>
+          $
+          f(x) = \dfrac{2(x + 3)}{(x + 3)} \\[5ex]
+          F.\;\; -3 \\[3ex]
+          G.\;\; 0 \\[3ex]
+          H.\;\; 1 \\[3ex]
+          J.\;\; 2 \\[3ex]
+          K.\;\; 3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF32')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF32">
+            <br>
+            A function is undefined when the denominator is zero. <br>
+            This is because division by zero is undefined.
+            <br><br>
+            $
+            x + 3 = 0 \\[3ex]
+            x = -3
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.) A line in the standard (<i>x, y</i>) coordinate plane passes through the point (3, 4). <br>
+          The slope of the line:
+          <br><br>
+          <b>A.</b> is positive. <br>
+          <b>B.</b> is zero. <br>
+          <b>C.</b> is negative. <br>
+          <b>D.</b> is undefined. <br>
+          <b>E.</b> cannot be determined from the given information.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF33')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF33">
+            <br>
+            Because the line passes through one point (3, 4), the slope cannot be determined from the given information
+            because it could be any of these:
+            <br><br>
+            <img src="images/RelationsFunctions/Answers/Number33.png" alt="Number 33">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.) The graph of the function $y = -2(x - 3)^2 + 1$ in the standard (<i>x, y</i>) coordinate plane is
+          translated 2 units to the left and 4 units down to create a new function. <br>
+          Which of the following equations defines the new function?
+          <br><br>
+          $
+          F.\;\; y = -2(x - 5)^2 - 3 \\[3ex]
+          G.\;\; y = -2(x - 5)^2 + 5 \\[3ex]
+          H.\;\; y = -2(x - 3)^2 + 5 \\[3ex]
+          J.\;\; y = -2(x - 1)^2 - 3 \\[3ex]
+          K.\;\; y = -2(x - 1)^2 + 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF34')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF34">
+            <br>
+            $
+            y = -2(x - 3)^2 + 1 \\[3ex]
+            \text{HOSH 2 units left} \rightarrow \\[3ex]
+            y = -2(x - 3 + 2)^2 + 1 \\[3ex]
+            y = -2(x - 1)^2 + 1 \\[3ex]
+            \text{VESH 4 units down} \rightarrow \\[3ex]
+            y = -2(x - 1)^2 + 1 - 4 \\[3ex]
+            y = -2(x - 1)^2 - 3
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.) Rate of change is defined to be the vertical change between any 2 points divided by the horizontal
+          change between the same 2 points. <br>
+          A function containing the point (0, 1) has a constant rate of change equal to $\dfrac{3}{2}$ <br>
+          The function is shown in one of the standard (<i>x, y</i>) coordinate plane graphs below. <br>
+          Which one?
+          <br><br>
+          <img src="images/RelationsFunctions/Questions/Number35.png" alt="Number 35">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF35')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF35">
+            <br>
+            The function contains (0, 1)...all the options contain (0, 1) <br>
+            The function has a constant rate of change of $\dfrac{3}{2}$ <br>
+            This means that the function has a slope of $\dfrac{3}{2}$ throughout the graph of the function <br>
+            This implies a straight line graph function. <br>
+            The correct answer is Option <b>G.</b>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.) In the standard (<i>x, y</i>) coordinate plane, what is the <i>y</i>-coordinate of the intersection
+          point of the 2 lines with equations below?
+          <br><br>
+          $
+          y = -2x + 23 \\[3ex]
+          y = 3x - 7 \\[5ex]
+          F.\;\; -55 \\[3ex]
+          G.\;\; -16 \\[3ex]
+          H.\;\; 6 \\[3ex]
+          J.\;\; 11 \\[3ex]
+          K.\;\; 55 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF36')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF36">
+            <br>
+            $
+            y = -2x + 23...eqn.(1) \\[3ex]
+            y = 3x - 7...eqn.(2) \\[5ex]
+            y = y \\[3ex]
+            \implies \\[3ex]
+            3x - 7 = -2x + 23 \\[3ex]
+            3x + 2x = 23 + 7 \\[3ex]
+            5x = 30 \\[3ex]
+            x = \dfrac{30}{5} \\[5ex]
+            x = 6 \\[5ex]
+            \text{Substitute the value of x in eqn.(2) so we can find the y-value} \\[3ex]
+            y = 3(6) - 7 \\[3ex]
+            y = 18 - 7 \\[3ex]
+            y = 11 \\[3ex]
+            For\;\;(x, y) = (6, 11); \;\;y-value = 11.
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionRF37')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.) Which of the following expressions is equivalent to $4x^2 + 8x - 12$?
+          <br><br>
+          $
+          F.\;\; (4x - 3)(x + 4) \\[3ex]
+          G.\;\; (4x + 3)(x - 4) \\[3ex]
+          H.\;\; 4(x - 3)(x - 1) \\[3ex]
+          J.\;\; 4(x - 3)(x + 1) \\[3ex]
+          K.\;\; 4(x + 3)(x - 1) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF38')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF38">
+            <br>
+            $
+            4x^2 + 8x - 12 \\[3ex]
+            4(x^2 + 2x - 3) \\[3ex]
+            4(x + 3)(x - 1)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionRF39')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.) In the standard (<i>x, y</i>) coordinate plane, what is the slope of the line that contains (&minus;2,
+          &minus;2) and has a <i>y</i>-intercept of 1?
+          <br><br>
+          $
+          A.\;\; -1 \\[3ex]
+          B.\;\; \dfrac{2}{3} \\[5ex]
+          C.\;\; 1 \\[3ex]
+          D.\;\; \dfrac{3}{2} \\[5ex]
+          E.\;\; 3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF40')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF40">
+            <br>
+            $
+            y = mx + b ...\text{Slope – Intercept Form} \\[3ex]
+            For\;\;(-2, -2) \\[3ex]
+            x = -2 \\[3ex]
+            y = -2 \\[3ex]
+            b = y-intercept = 1 \\[3ex]
+            m = slope = ? \\[3ex]
+            mx + b = y \\[3ex]
+            mx = y - b \\[3ex]
+            m = \dfrac{y - b}{x} \\[5ex]
+            = \dfrac{-2 - 1}{-2} \\[5ex]
+            = \dfrac{-3}{-2} \\[5ex]
+            = \dfrac{3}{2}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/RelationsFunctions.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 41 through 60 -->
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.)
+          <button class="solutions" onclick="solutions('solutionRF41')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF41">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.) The function <i>f</i> is defined below. <br>
+          $f(x) = |x|$ <br>
+          What is(are) the output value(s) of $f(2)$ ?
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{2} \\[5ex]
+          B.\;\; 2 \\[3ex]
+          C.\;\; |f|(2) \\[3ex]
+          D.\;\; \dfrac{|2|}{f} \\[5ex]
+          E.\;\; \dfrac{|2|}{x} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF42')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF42">
+            <br>
+            $
+            f(x) = |x| \\[3ex]
+            f(2) = |2| \\[3ex]
+            f(2) = 2
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <button class="solutions" onclick="solutions('solutionRF43')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.) A function, <i>f</i>, is defined by $f(x, y) = 3x^2 - 2y$. <br>
+          What is the value of $f(2, 3)$?
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 12 \\[3ex]
+          H.\;\; 23 \\[3ex]
+          J.\;\; 30 \\[3ex]
+          K.\;\; 77 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF44')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF44">
+            <br>
+            $
+            f(x, y) = 3x^2 - 2y \\[3ex]
+            f(2, 3) = 3(2)^2 - 2(3) \\[3ex]
+            = 12 - 6 \\[3ex]
+            = 6
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.)
+          <button class="solutions" onclick="solutions('solutionRF45')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF45">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.) Before opening her lemonade stand, Haley purchased lemonade mix for $2.30 and a package of cups for
+          <span>$</span>1.50. <br>
+          Haley sells each cup of lemonade for <span>$</span>0.50. <br>
+          Which of the following expressions gives Haley’s total profit, in dollars, from selling <i>x</i> cups of
+          lemonade?
+          <br><br>
+          $
+          F.\;\; 0.5x - 3.8 \\[3ex]
+          G.\;\; 0.5x + 0.8 \\[3ex]
+          H.\;\; 0.5x + 3.8 \\[3ex]
+          J.\;\; 0.8x + 0.5 \\[3ex]
+          K.\;\; 3.8x - 0.5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF46')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF46">
+            <br>
+            $
+            \text{Cost Price} = 2.3 + 1.5 = \$3.8 \\[3ex]
+            \text{Selling Price} = x\;\;cups \;@\; \$0.5\;\;per\;\;cup = 0.5x \\[3ex]
+            \text{Profit} = \text{Selling Price} - \text{Cost Price} \\[3ex]
+            = 0.5x - 3.8
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <button class="solutions" onclick="solutions('solutionRF47')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.) Let $(3x - 1)(2x - 5) = ax^2 + bx + c$. <br>
+          What is the value of $a + b + c$?
+          <br><br>
+          $
+          F.\;\; -16 \\[3ex]
+          G.\;\; -7 \\[3ex]
+          H.\;\; -6 \\[3ex]
+          J.\;\; -2 \\[3ex]
+          K.\;\; 24 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF48')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF48">
+            <br>
+            $
+            (3x - 1)(2x - 5) = ax^2 + bx + c \\[3ex]
+            6x^2 - 15x - 2x + 5 = ax^2 + bx + c \\[3ex]
+            6x^2 - 17x + 5 = ax^2 + bx + c \\[3ex]
+            ax^2 + bx + c = 6x^2 - 17x + 5 \\[3ex]
+            a = 6 \\[3ex]
+            b = -17 \\[3ex]
+            c = 5 \\[5ex]
+            a + b + c \\[3ex]
+            = 6 + -17 + 5 \\[3ex]
+            = -6
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <button class="solutions" onclick="solutions('solutionRF49')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.) The domain of the real-valued function $f(x) = \dfrac{2}{\sqrt{x - 3}}$ is the set of all
+          <i>x</i>-values that satisfy:
+          <br><br>
+          $
+          F.\;\; x \gt 0 \\[3ex]
+          G.\;\; x \ge 0 \\[3ex]
+          H.\;\; x \gt 2 \\[3ex]
+          J.\;\; x \gt 3 \\[3ex]
+          K.\;\; x \ne 3 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF50')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF50">
+            <br>
+            The function is a rational radical function.
+            <br><br>
+            Dealing with Rational Function: <br>
+            <b>1st Condition:</b> The denominator should not be zero
+            <br><br>
+            $
+            \sqrt{x - 3} \ne 0 \\[3ex]
+            x - 3 \ne 0^2 \\[3ex]
+            x - 3 \ne 0 \\[3ex]
+            x \ne 0 + 3 \\[3ex]
+            x \ne 3 \\[3ex]
+            $
+            Dealing with Radical Function: <br>
+            <b>2nd Condition:</b> The radicand should must be non-negative (greater than or equal to zero)
+            <br><br>
+            $
+            x - 3 \ge 0 \\[3ex]
+            x \ge 3 \\[3ex]
+            \text{Combining both conditions}: \\[3ex]
+            Domain = \{x: x \gt 3\}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <button class="solutions" onclick="solutions('solutionRF51')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.) For $f(x) = 2x + 3$ and $g(x) = x^2 - 4$, which of the following expressions represents $f(g(x))$?
+          <br><br>
+          $
+          A.\;\; 2x^2 - 1 \\[3ex]
+          B.\;\; 2x^2 - 5 \\[3ex]
+          C.\;\; 2x^2 - 8 \\[3ex]
+          D.\;\; 4x^2 + 5 \\[3ex]
+          E.\;\; 4x^2 + 12x + 5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF52')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF52">
+            <br>
+            $
+            f(x) = 2x + 3 \hspace{3em} g(x) = x^2 - 4 \\[3ex]
+            f(g(x)) \\[3ex]
+            = f(x^2 - 4) \\[3ex]
+            = 2(x^2 - 4) + 3 \\[3ex]
+            = 2x^2 - 8 + 3 \\[3ex]
+            = 2x^2 - 5
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (53.)
+          <button class="solutions" onclick="solutions('solutionRF53')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF53">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (54.) The function $f(x) = x^5$ is defined for all real numbers <i>x</i>. <br>
+          Which of the following expressions represents $f^{-1}(x)$?
+          <br><br>
+          $
+          F.\;\; x^{-5} \\[4ex]
+          G.\;\; x^{-\dfrac{1}{5}} \\[5ex]
+          H.\;\; x^{\dfrac{1}{5}} \\[5ex]
+          J.\;\; \dfrac{x}{5} \\[5ex]
+          K.\;\; -\dfrac{x}{5} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionRF54')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF54">
+            <br>
+            $
+            f(x) = x^5 \\[3ex]
+            y = x^5 \\[3ex]
+            \text{Interchange x and y} \\[3ex]
+            x = y^5 \\[3ex]
+            y^5 = x \\[3ex]
+            y = \sqrt[5]{x} \\[3ex]
+            \text{This new } y \text{ is the inverse} \\[3ex]
+            f^{-1}(x) = \sqrt[5]{x}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (55.)
+          <button class="solutions" onclick="solutions('solutionRF55')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF55">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (56.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF56')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF56">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (57.)
+          <button class="solutions" onclick="solutions('solutionRF57')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF57">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (58.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF58')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF58">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (59.)
+          <button class="solutions" onclick="solutions('solutionRF59')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF59">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (60.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF60')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF60">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 41 through 60 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/RelationsFunctions.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

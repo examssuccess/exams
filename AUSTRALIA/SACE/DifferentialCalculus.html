@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Differential Calculus</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to the SACE exam questions on differential calculus.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Australia,
+  SACE, South Australian Certificate of Education, calculus, differential calculus, differentiation, derivative, explicit differentiation, 
+  implicit differentiation, functions, limit, continuity, power rule, sum rule, difference rule, 
+  product rule, quotient rule, chain rule, function of a function rule, explicit function, implicit function,
+  marginal analysis, exponential functions, logarithmic functions, trigonometric functions, 
+  mathematics of finance, financial mathematics, curves, optimization, extrema, optimum, extremum, maxima, 
+  minima, maximum, minimum, acceleration, concavity, related rates, elasticity, hyperbolic functions, 
+  inverse trigonometric functions, inverse hyperbolic functions, numerical analysis, function, zeros, roots, 
+  Newton's method, initial guess, initial approximation, iteration, absolute difference, Newton-Raphson Method">
+
+  <link rel="stylesheet" href="../styles/Mathematics.css">
+
+  <link rel="shortcut icon" type="image/x-icon" href="../images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#formulaSheets" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formula Sheets</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>DifferentialCalculus</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the SACE past questions on Differential Calculus. <br>
+        The TI-84 Plus CE shall be used for applicable questions. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics papers of the SACE, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <!-- Difference Quotient -->
+      <h2>Difference Quotient and Derivative (Derivatives by Limits)</h2>
+      <p>
+        $
+        \text{Function} = f(x) \\[3ex]
+        \text{Difference Quotient} = DQ \\[3ex]
+        \text{Derivative} = f'(x) = \dfrac{dy}{dx} = y' \\[5ex]
+        (1.)\;\; DQ = \dfrac{f(x + h) - f(x)}{h} \\[5ex]
+        (2.)\;\; \dfrac{dy}{dx} = \displaystyle{\lim_{h \to 0}} \dfrac{f(x + h) - f(x)}{h} \\[5ex]
+        (3.)\;\; f'(x) = \displaystyle{\lim_{h \to 0}} DQ
+        $
+      </p>
+      <!-- End Difference Quotient -->
+
+      <!-- Rules of Derivatives -->
+      <h2>Rules of Derivatives (Derivatives by Rules)</h2>
+      <p>
+        $
+        a, n \:\:are\:\:constants \\[3ex]
+        (1.)\:\: \underline{Power\;\;Rule} \\[3ex]
+        y = ax^n \\[3ex]
+        \dfrac{dy}{dx} = nax^{n - 1} \\[7ex]
+        (2.)\:\: \underline{Sum/Difference\;\;Rule} \\[3ex]
+        y = u \pm v \pm w \\[3ex]
+        u = f(x);\:\: v = f(x);\;\; w = f(x) \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{du}{dx} \pm \dfrac{dv}{dx} \pm \dfrac{dw}{dx} \\[7ex]
+        (3.)\:\: \underline{Chain\;\;Rule} \\[3ex]
+        y = f(u) \\[3ex]
+        u = f(x) \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{dy}{du} * \dfrac{du}{dx} \\[7ex]
+        Also: \\[3ex]
+        y = f(u) \\[3ex]
+        u = f(v) \\[3ex]
+        v = f(x) \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{dy}{du} * \dfrac{du}{dv} * \dfrac{dv}{dx} \\[7ex]
+        Also: \\[3ex]
+        y = f(u) \\[3ex]
+        u = f(v) \\[3ex]
+        v = f(w) \\[3ex]
+        w = f(x) \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{dy}{du} * \dfrac{du}{dv} * \dfrac{dv}{dw} * \dfrac{dw}{dx} \\[7ex]
+        ...and\;\;so\;\;on\;\;and\;\;so\;\;forth \\[5ex]
+        (4.)\:\: \underline{Product\;\;Rule} \\[3ex]
+        y = u * v \\[3ex]
+        u = f(x);\:\: v = f(x) \\[3ex]
+        \dfrac{dy}{dx} = u\dfrac{dv}{dx} + v\dfrac{du}{dx} \\[7ex]
+        (5.)\:\: \underline{Quotient\;\;Rule} \\[3ex]
+        y = \dfrac{u}{v} \\[5ex]
+        u = f(x);\:\: v = f(x) \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{v\dfrac{du}{dx} - u\dfrac{dv}{dx}}{v^2}
+        $
+      </p>
+      <!-- End Rules of Derivatives -->
+
+      <!-- Derivatives of Exponential Functions -->
+      <h2>Standard Derivatives of Exponential Functions</h2>
+      <p>
+        $
+        a\;\; is\:\:a\;\;positive\:\:constant \\[3ex]
+        k \:\:is\:\:a\;\:constant \\[3ex]
+        (1.)\:\: y = e^x \\[3ex]
+        \dfrac{dy}{dx} = e^x \\[7ex]
+        (2.)\;\; y = e^{kx} \\[3ex]
+        \dfrac{dy}{dx} = ke^{kx} \\[7ex]
+        (3.)\;\; y = e^{-kx} \\[3ex]
+        \dfrac{dy}{dx} = -ke^{kx} \\[7ex]
+        (4.)\:\: y = a^x \\[3ex]
+        \dfrac{dy}{dx} = a^x \ln a \\[7ex]
+
+        $
+      </p>
+      <!-- End Derivatives of Exponential Functions -->
+
+      <!-- Standard Derivatives of Logarithmic Functions -->
+      <h2>Standard Derivatives of Logarithmic Functions</h2>
+      <p>
+        $
+        a\;\; is\:\:a\;\;positive\:\:constant \\[3ex]
+        k \:\:is\:\:a\;\:constant \\[3ex]
+        (1.)\:\: y = \ln x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{x} \\[7ex]
+        (2.)\:\: y = \log_a x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{x \ln a} \\[7ex]
+        (3.)\:\: y = \ln |x| \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{x} \\[7ex]
+        (4.)\:\: y = \log_a |x| \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{x \ln a} \\[7ex]
+        $
+      </p>
+      <!-- End Standard Derivatives of Logarithmic Functions -->
+
+      <!-- Standard Derivatives of Trigonometric Functions -->
+      <h2>Standard Derivatives of Trigonometric Functions</h2>
+      <p>
+        $
+        (1.)\:\: y = \sin x \\[3ex]
+        \dfrac{dy}{dx} = \cos x \\[7ex]
+        (2.)\:\: y = \cos x \\[3ex]
+        \dfrac{dy}{dx} = -\sin x \\[7ex]
+        (3.)\:\: y = \tan x \\[3ex]
+        \dfrac{dy}{dx} = \sec^2 x \\[7ex]
+        (4.)\:\: y = \csc x \\[3ex]
+        \dfrac{dy}{dx} = -\csc x \cot x \\[7ex]
+        (5.)\:\: y = \sec x \\[3ex]
+        \dfrac{dy}{dx} = \sec x \tan x \\[7ex]
+        (6.)\:\: y = \cot x \\[3ex]
+        \dfrac{dy}{dx} = -\csc^2 x
+        $
+      </p>
+      <!-- End Standard Derivatives of Trigonometric Functions -->
+
+      <!-- Standard Derivatives of Inverse Trigonometric Functions -->
+      <h2>Standard Derivatives of Inverse Trigonometric Functions</h2>
+      <p>
+        $
+        (1.)\:\: y = \sin^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{\sqrt{1 - x^2}} \\[7ex]
+        (2.)\:\: y = \cos^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{-1}{\sqrt{1 - x^2}} \\[7ex]
+        (3.)\;\; y = \tan^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{1 + x^2} \\[7ex]
+        (4.)\:\: y = \csc^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{-1}{|x|\sqrt{x^2 - 1}} \\[7ex]
+        (5.)\:\: y = \sec^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{|x|\sqrt{x^2 - 1}} \\[7ex]
+        (6.)\;\; y = \cot^{-1} x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{-1}{1 + x^2} \\[7ex]
+        $
+      </p>
+      <!-- End Standard Derivatives of Inverse Trigonometric Functions -->
+
+      <!-- Standard Derivatives of Hyperbolic Functions -->
+      <h2>Standard Derivatives of Hyperbolic Functions</h2>
+      <p>
+        $
+        (1.)\:\: y = \sin hx \\[3ex]
+        \dfrac{dy}{dx} = \cos hx \\[7ex]
+        (2.)\:\: y = \cos hx \\[3ex]
+        \dfrac{dy}{dx} = \sin hx \\[7ex]
+        (3.)\;\; y = \tan x \\[3ex]
+        \dfrac{dy}{dx} = \sec^2 hx \\[7ex]
+        (4.)\;\; y = \csc hx \\[3ex]
+        \dfrac{dy}{dx} = -\csc hx \cot hx \\[7ex]
+        (5.)\;\; y = \sec hx \\[3ex]
+        \dfrac{dy}{dx} = -\sec hx \tan hx \\[7ex]
+        (6.)\;\; y = \cot hx \\[3ex]
+        \dfrac{dy}{dx} = -\csc^2 hx \\[7ex]
+        $
+      </p>
+      <!-- End Standard Derivatives of Hyperbolic Functions -->
+
+      <!-- Standard Derivative of Inverse Hyperbolic Functions -->
+      <h2>Standard Derivatives of Inverse Hyperbolic Functions</h2>
+      <p>
+        $
+        (1.)\:\: y = \sin h^{-1}x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{\sqrt{x^2 + 1}} \\[7ex]
+        (2.)\:\: y = \cos h^{-1}x \;\;\;\;\;\;where:\;\; x\gt 1 \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{\sqrt{x^2 - 1}} \\[7ex]
+        (3.)\;\; y = \tan h^{-1}x \;\;\;\;\;\;where:\;\; |x| \lt 1 \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{1 - x^2} \\[7ex]
+        (4.)\;\; y = \csc h^{-1}x \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{-1}{|x|\sqrt{x^2 + 1}} \\[7ex]
+        (5.)\;\; y = \sec h^{-1}x \;\;\;\;\;\;where:\;\; 0\lt x \lt 1 \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{-1}{x\sqrt{1 - x^2}} \\[7ex]
+        (6.)\;\; y = \cot h^{-1}x \;\;\;\;\;\;where:\;\; |x| \gt 1 \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{1}{1 - x^2} \\[7ex]
+        $
+      </p>
+      <!-- End Standard Derivative of Inverse Hyperbolic Functions -->
+
+      <!-- Standard Derivatives of Absolute Value Functions -->
+      <h2>Standard Derivatives of Absolute Value Functions</h2>
+      <p>
+        $
+        (1.)\:\: y = |x| \\[3ex]
+        \dfrac{dy}{dx} = \dfrac{|x|}{x} \\[7ex]
+        $
+      </p>
+      <!-- End Standard Derivatives of Absolute Value Functions -->
+
+      <!-- Newton's Method -->
+      <h2>Newton's Method</h2>
+      <p>
+        $
+        x_{n + 1} = x_n - \dfrac{f(x)}{f'(x)}
+        $
+      </p>
+      <!-- End Newton's Method -->
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Formula Sheets -->
+    <div class="w3-container w3-padding-32" id="formulaSheets">
+      <b>Mathematical Methods Formula Sheet</b> <br>
+      <object data="FormulaSheets/MathematicalMethodsFormulaSheet.pdf" width="1400" height="700"></object>
+      <br><br>
+      <b>Specialist Mathematics Formula Sheet</b> <br>
+      <object data="FormulaSheets/SpecialistMathematicsFormulaSheet.pdf" width="1400" height="700"></object>
+    </div>
+    <!-- End Formula Sheets -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Consider the function $f(x) = \dfrac{x}{x - 2}$, where <i>x</i> &ne; 2.
+          <br><br>
+          (a.) Use first principles to find $f'(x)$ <br>
+          (b.) Hence, or otherwise, state the slope of the tangent to $f(x)$ when <i>x</i> = 6.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC1')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC1">
+            <br>
+            $
+            (a.) \\[3ex]
+            f(x) = \dfrac{x}{x - 2}\;\;\; x \ne 6 \\[5ex]
+            \text{Difference Quotient, DQ} = \dfrac{f(x + h) - f(x)}{h} \\[5ex]
+            f(x + h) = \dfrac{x + h}{(x + h) - 2} \\[5ex]
+            f(x + h) = \dfrac{x + h}{x + h - 2} \\[5ex]
+            \underline{\text{Numerator of DQ}} \\[3ex]
+            f(x + h) - f(x) \\[3ex]
+            = \dfrac{x + h}{x + h - 2} -\dfrac{x}{x - 2} \\[5ex]
+            = \dfrac{(x + h)(x - 2) - x(x + h - 2)}{(x + h - 2)(x - 2)} \\[5ex]
+            = \dfrac{x^2 - 2x + xh - 2h - x^2 - xh + 2x}{(x + h - 2)(x - 2)} \\[5ex]
+            = \dfrac{-2h}{(x + h - 2)(x - 2)} \\[5ex]
+            \underline{\text{Numerator and Denominator of DQ}} \\[3ex]
+            DQ = [f(x + h) - f(x)] \div h \\[3ex]
+            DQ = \dfrac{-2h}{(x + h - 2)(x - 2)} * \dfrac{1}{h} \\[5ex]
+            DQ = \dfrac{-2}{(x + h - 2)(x - 2)} \\[5ex]
+            \underline{Derivative} \\[3ex]
+            \text{Derivative},\; f'(x) = \displaystyle{\lim_{h \to 0}} DQ \\[3ex]
+            f'(x) = \displaystyle{\lim_{h \to 0}} \dfrac{-2}{(x + h - 2)(x - 2)} \\[5ex]
+            f'(x) = \dfrac{-2}{(x + 0 - 2)(x - 2)} \\[5ex]
+            f'(x) = \dfrac{-2}{(x - 2)(x - 2)} \\[5ex]
+            f'(x) = \dfrac{-2}{(x - 2)^2} \\[5ex]
+            (b.) \\[3ex]
+            \text{slope of the tangent to f(x) when x = 6 is the derivative of f(x) at x = 6} \\[3ex]
+            = \left.\dfrac{dy}{dx}\right|_{x = 6} \\[5ex]
+            = \dfrac{-2}{(6 - 2)^2} \\[5ex]
+            = \dfrac{-2}{4^2} \\[5ex]
+            = \dfrac{-2}{16} \\[5ex]
+            = -\dfrac{1}{8}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC2')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <button class="solutions" onclick="solutions('solutionDC3')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+
+          <button class="solutions" onclick="solutions('solutionDC4')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionDC5')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+
+          <button class="solutions" onclick="solutions('solutionDC6')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC7')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC8')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionDC9')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC10')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionDC11')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC12')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionDC13')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC14')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionDC15')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC16')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionDC17')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC18')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionDC19')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC20')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/AUSTRALIA/SACE/StatisticsProbability.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC21')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC22')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionDC23')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC24')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionDC25')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC26')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionDC27')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC28')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionDC29')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC30')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionDC31')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC32')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionDC33')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC34')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionDC35')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC36')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionDC37')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC38')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionDC39')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionDC40')">Show/Hide Answer</button>
+          <div class="result" id="solutionDC40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="../images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="../scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

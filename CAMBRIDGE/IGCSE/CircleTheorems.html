@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Circle Theorems</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description"
+    content="The webpage contains the solutions to Cambridge IGCSE exam questions on circle theorems.">
+
+  <meta name="keywords"
+    content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, CAMBRIDGE, 
+  Cambridge Assessments, IGCSE, International General Certificate of Secondary Education, A-Level,  Advanced Level, 
+  O-Level, Ordinary Level, Pre-U, Pre-University, Algebra, Geometry, circle, locus, point, equidistant (equal distance), 
+  radius, diameter, chord, secant, tangent, circle theorems, arc, sector, segment, semicircle, length of arc, area of sector, 
+  area of segment, minor sector, major sector, minor arc, major arc, minor segment, major segment, radius, circumference, 
+  area, perimeter, point of contact, center, point of tangency, quadrilateral, cyclic quadrilateral, complementary angles, 
+  supplementary angles, tangent to circle, sectorial angle, pie chart, circle graph, right angle, interior angle, 
+  exterior angle, vertex, vertices, angle at center, central angle, intercepted arc, angle at circumference, inscribed angle">
+
+  <link rel="stylesheet" href="../styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulaSheet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formula Sheet</a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Circle Theorems</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to Cambridge IGCSE (International General Certificate of Secondary Education) past
+        questions
+        on Circle Theorems. <br>
+        The link to the video solutions will be provided for you. Please subscribe to the YouTube channel to be notified
+        of upcoming livestreams.
+        You are welcome to ask questions during the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        any of the Cambridge Assessments on Mathematics, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="../images/calculator-mode-degree.png" alt="Calculator Mode">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formula Sheets -->
+    <div class="w3-container w3-padding-32" id="formulaSheet">
+      <div class="w3-row-padding">
+        <h5>Formula Sheet</h5>
+        <object data="../formulas/FormulaList-IGCSE-MathematicsInternational-42.pdf" width="1400" height="700"></object>
+      </div>
+    </div>
+    <!-- End Formula Sheets -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <div class="w3-row-padding">
+        <h5>Length of Arc, Area of Sector, Area of Circle, Circumference of Circle</h5>
+        <p>
+          Except stated otherwise, use:
+          <br><br>
+          $
+          d = diameter \\[3ex]
+          r = radius \\[3ex]
+          L = arc\:\:length \\[3ex]
+          A = area\;\;of\;\;sector \\[3ex]
+          \theta = central\:\:angle \\[3ex]
+          \pi = \dfrac{22}{7} \\[5ex]
+          RAD = radians \\[3ex]
+          ^\circ = DEG = degrees \\[7ex]
+
+          \underline{\theta\;\;in\;\;DEG} \\[3ex]
+          L = \dfrac{2\pi r\theta}{360} \\[5ex]
+          \theta = \dfrac{180L}{\pi r} \\[5ex]
+          r = \dfrac{180L}{\pi \theta} \\[5ex]
+          A = \dfrac{\pi r^2\theta}{360} \\[5ex]
+          \theta = \dfrac{360A}{\pi r^2} \\[5ex]
+          r = \dfrac{360A}{\pi\theta} \\[7ex]
+
+          \underline{\theta\;\;in\;\;RAD} \\[3ex]
+          L = r\theta \\[5ex]
+          \theta = \dfrac{L}{r} \\[5ex]
+          r = \dfrac{L}{\theta} \\[5ex]
+          A = \dfrac{r^2\theta}{2} \\[5ex]
+          \theta = \dfrac{2A}{r^2} \\[5ex]
+          r = \sqrt{\dfrac{2A}{\theta}} \\[7ex]
+
+          Circumference\:\:of\:\:a\:\:circle = 2\pi r = \pi d \\[3ex]
+          L = \dfrac{2A}{r} \\[5ex]
+          r = \dfrac{2A}{L} \\[5ex]
+          A = \dfrac{Lr}{2}
+          $
+        </p>
+      </div>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <div class="w3-row-padding">
+        <h5>Circle Theorems</h5>
+        <p>
+          (1.) The angle in a semicircle is a right angle (an angle of 90&deg;).
+          <br><br>
+          (2.) Angles in the same segment of a circle are equal. <br>
+          OR <br>
+          Angles subtended by a chord of a circle in the same segment of the circle are equal.
+          <br><br>
+          (3.) The angle which an arc of a circle subtends at the center is twice the angle which the same
+          arc of the circle subtends at the circumference. <br>
+          OR <br>
+          The measure of any angle inscribed in a circle is half the measure of the intercepted arc.
+          <br><br>
+          (4.) The sum of the interior opposite angles of a cyclic quadrilateral is 180&deg; <br>
+          OR <br>
+          The interior opposite angles of a cyclic quadrilateral are supplementary
+          <br><br>
+          (5.) The exterior angle of a cyclic quadrilateral is equal to the interior opposite angle.
+          <br><br>
+          (6.) The radius of a circle is perpendicular to the tangent of the circle at the point of contact. <br>
+          This implies that the angle between the radius of a circle and the tangent to the circle at the point of
+          contact is 90&deg;
+          <br><br>
+          (7.) <b>Intersecting Tangents Theorem</b> or <b>Intersecting Tangent-Tangent Theorem</b> <u>and</u>
+          <b>Angle of Intersecting Tangents Theorem</b> <br>
+          If two tangents are drawn from the same external point: <br>
+          (a.) the two tangents are equal in length <br>
+          (b.) the line joining the external point and the centre of the circle bisects the angle formed by the two
+          tangents. <br>
+          (c.) the line joining the external point and the centre of the circle bisects the angle formed by the two
+          radii.
+          <br><br>
+          (8.) <b>Alternate Segment Theorem</b> <br>
+          The angle between a tangent to a circle and a chord drawn from the point of contact, is equal to the angle in
+          the alternate segment.
+          <br><br>
+          (9.) If a line drawn from the center of the circle bisects a chord, then: <br>
+          (a.) it bisects its arc (the angle opposite the chord) <u>and</u> <br>
+          (b.) it is perpendicular to the chord.
+          <br><br>
+          (10.) If a line drawn from the center of the circle is perpendicular to a chord, then: <br>
+          (a.) it bisects the chord <u>and</u> <br>
+          (b.) it bisects its arc (the angle opposite the chord).
+          <br><br>
+          (11.) <b>Intersecting Chords Theorem</b> <br>
+          When two chords intersect, the product of the lengths of the segments of one chord is equal to the product of
+          the lengths of the segments of the other chord.
+          <br><br>
+          (12.) <b>Angle of Intersecting Chords Theorem</b> <br>
+          The angle formed when two chords intersect is equal to half the sum of the intercepted arcs.
+          <br><br>
+          (13.) <b>Intersecting Secants Theorem</b> or <b>Intersecting Secant-Secant Theorem</b> <br>
+          In the intersection of two secants from the same exterior point: <br>
+          the product: of the distance between the first point and the external point <u>and</u> the distance between
+          the second point and the external point <b>for the first secant</b> is equal to
+          the product of the distance between the first point and the external point <u>and</u> the distance between the
+          second point and the external point <b>for the second secant</b>.
+          <br>
+          Alternatively, we can state it as: If two secant segments are drawn to a circle from an exterior point, then
+          the product of the measures of one secant segment and its external segment is equal to the product of the
+          measures of the other secant segment and its external segment.
+          <br><br>
+          (14.) <b>Angle of Intersecting Secants (Inside the Circle) Theorem</b> <br>
+          The angle formed when two secants intersect inside a circle is equal to half the sum of the intercepted arcs.
+          <br><br>
+          (15.) <b>Angle of Intersecting Secants (Outside the Circle) Theorem</b> <br>
+          The angle formed when two secants intersect outside a circle is equal to half the difference of the
+          intercepted arcs.
+          <br><br>
+          (16.) <b>Intersecting Secant-Tangent Theorem</b> or <b>Intersecting Tangent-Secant Theorem</b> <br>
+          In the intersection of a secant and a tangent from the same external point: <br>
+          the product of the distance between the first point and the external point <u>and</u> the distance between the
+          second point and the external point <b>for the secant</b> is equal to
+          the square of the distance between the point of contant and the external point <b>for the tangent.</b>
+          <br><br>
+          (17.) <b>Angle of Intersecting Secant-Tangent Theorem</b> <br>
+          The angle formed when a secant and a tangent intersect outside a circle is equal to half the difference of the
+          intercepted arcs.
+        </p>
+      </div>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) <img src="images/CircleTheorems/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          <i>A, B, C</i> and <i>D</i> are points on the circle. <br>
+          <i>AC</i> and <i>BD</i> meet at <i>X</i>.
+          <br><br>
+          (i.) Show that triangles <i>AXB</i> and <i>DXC</i> are similar. <br>
+          Give a reason for each statement you make.
+          <br><br>
+          (ii.) <i>AX</i> = 5 cm, <i>XC</i> = 2 cm and <i>XD</i> = 4 cm. <br>
+          Find the length of <i>BD</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT1">
+            <br>
+            $
+            (i.) \\[3ex]
+            \angle ABX = \angle DCX ...\text{angles in the same segment are congruent} \\[3ex]
+            \angle BAX = \angle CDX ...\text{angles in the same segment are congruent} \\[3ex]
+            \angle AXB = \angle DXC ...\text{vertical angles are congruent} \\[3ex]
+            \triangle AXB \sim \triangle DXC ...\text{Angle – Angle – Angle Similarity} \\[5ex]
+
+            (ii.) \\[3ex]
+            AX \times XC = BX \times XD ...\text{Intersecting Chords Theorem} \\[3ex]
+            5 \times 2 = BX \times 4 \\[3ex]
+            BX = \dfrac{5 \times 2}{4} \\[5ex]
+            BX = 2.5\;cm \\[3ex]
+            BD = BX + XD ...\text{diagram} \\[3ex]
+            BD = 2.5 + 4 \\[3ex]
+            BD = 6.5\;cm
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.)
+          <button class="solutions" onclick="solutions('solutionCT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT2">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <button class="solutions" onclick="solutions('solutionCT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <button class="solutions" onclick="solutions('solutionCT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <button class="solutions" onclick="solutions('solutionCT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <button class="solutions" onclick="solutions('solutionCT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionCT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionCT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionCT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionCT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionCT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionCT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/CAMBRIDGE/IGCSE/CircleTheorems.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <!-- Numbers 21 through 40 -->
+    <div class="w3-row w3-container" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionCT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionCT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionCT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionCT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <button class="solutions" onclick="solutions('solutionCT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <button class="solutions" onclick="solutions('solutionCT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT33">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <button class="solutions" onclick="solutions('solutionCT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <button class="solutions" onclick="solutions('solutionCT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT37">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <button class="solutions" onclick="solutions('solutionCT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionCT40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="../images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="../images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="../scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

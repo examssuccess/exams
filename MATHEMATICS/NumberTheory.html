@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Number Theory</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="These are the solutions to Mathematics questions on Number Theory.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, 
+  Mathematics, Arithmetic, Algebra, numbers, natural number, counting number, whole number, fraction, numerator, denominator, 
+  proper fraction, improper fraction, rational number, integer, mixed number, decimal, terminating decimal, 
+  exact decimal, repeating decimal, recurring decimal, irrational number, real number, complex number,
+  arithmetic operators, sum, difference, product, quotient, augend, addend, minuend, subtrahend, 
+  multiplier, multiplicand, factor, dividend, divisor, positive, negative, nonpositive, nonnegative, constant, 
+  number, variable, term, add, subtract, multiply, divide, expression, equation, equal, equality, inequality, 
+  left hand side (LHS), right hand side (RHS), end points, set notation, interval notation, braces, brackets, 
+  parenthesis, even number, odd number, prime number, perfect squares, perfect cubes, perfect number, 
+  abundant number, excessive number, percent, percentages, ratio, equal, equality, algebra, ratios, absolute change, relative change, 
+  absolute difference, relative difference, significant digits, significant figures, discrete mathematics, computer science, modulo, 
+  modular arithmetic, modular algorithm, gcd, greatest common divisor, Euclidean algorithm, Fermat's little theorem, exponent, 
+  base, extended Euclidean algorithm, modular inverse, Chinese remainder theorem, linear congruence, congruence, equivalence, 
+  equivalence classes, binary, decimal, octal, hexadecimal, base two, base ten, base six, base eight, base sixteen, 
+  modular exponentiation, Bezout's coefficients, ternary, quaternary, exponents, quinary, senary, septenary, nonary, decimal, 
+  undecimal, duodecimal, tridecimal, tetradecimal, pentadecimal, greatest common measure, highest common factor, 
+  gcm, hcf, least common multiple, lcm, least common denominator, lcd, coprimes, relatively prime, mutually prime, division, 
+  algorithm, division algorithm, dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, 
+  difference, product, multiplier, multiplicand, positive, nonnegative, negative, nonpositive, numbers, bit, digit, binary digit, 
+  integers, whole numbers, fast multiplication, algorithm, repeated squaring, division algorithm, linear congruences, 
+  congruence class, number theory, binary operations, modulo tables, number theory, Pell's equation, 
+  Diophantine equation">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Number Theory</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to Mathematics questions on Number Theory. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        If you find these resources valuable/helpful, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h4>Formulas and Statements</h4>
+      <p>
+        (1.) The sum of the first <i>n</i> natural numbers:
+        $\sum\limits_{k = 0}^{n} 1 + 2 + 3 + 4 + 5 + ... + n = \dfrac{n(n + 1)}{2}$
+        <br><br>
+        (2.) The sum of the first <i>n</i> squares
+        $\sum\limits_{k = 0}^{n} 1^2 + 2^2 + 3^2 + ... + n^2 = \dfrac{n(n + 1)(2n + 1)}{6}$
+        <br><br>
+
+
+
+
+
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Show that the sum of the first <i>n</i> squares
+          $\sum\limits_{k = 0}^{n} 1^2 + 2^2 + 3^2 + ... + n^2 = \dfrac{n(n + 1)(2n + 1)}{6} \\[5ex]$
+          Use at least three different approaches/methods.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT1">
+            <br>
+            <u>1st Approach:</u> <b>Method of Undetermined Coefficients.</b> <br>
+            This is based on these statements: <br>
+            (1.) If the terms of a sequence is of degree <i>n</i>, then the sum of the series
+            is of degree <i>n</i> + 1 <br>
+            Hence, the sum of the series of squares results in a cubic polynomial.
+            <br><br>
+            (2.) The difference between the sum of the terms of a series and the sum of the terms of the series less one
+            term is the square of the terms of the series. <br>
+            For example, the difference between the sum of <i>n</i> terms, say $S_n$ and the sum of $n - 1$ terms, say
+            $S_{n - 1}$ is $n^2$
+            <br><br>
+            $
+            \underline{\text{Method of Undetermined Coefficients}} \\[3ex]
+            \text{For } 1^2 + 2^2 + 3^2 + ... + n^2 \\[3ex]
+            S_n = An^3 + Bn^2 + Cn + D...eqn.(1) \\[3ex]
+            \text{where }A, B, C, D \text{ are coefficients} \\[3ex]
+            S_{n - 1} = A(n - 1)^3 + B(n - 1)^2 + C(n - 1) + D \\[3ex]
+            $
+            I want to use Pascal's Triangle for the expansion. <br>
+            Use whatever approach you prefer.
+            $$
+            \begin{array}{c}
+            1 \\[2ex]
+            1 \quad 1 \\[2ex]
+            1 \quad 2 \quad 1 \\[2ex]
+            1 \quad 3 \quad 3 \quad 1 \\[2ex]
+            \end{array}
+            $$
+            $
+            (n - 1)^3 \\[3ex]
+            = n^3 + 3n^2(-1) + 3n(-1)^2 + (-1)^3 \\[3ex]
+            = n^3 - 3n^2 + 3n - 1 \\[5ex]
+            A(n - 1)^3 \\[3ex]
+            = A(n^3 - 3n^2 + 3n - 1) \\[3ex]
+            = An^3 - 3An^2 + 3An - A \\[5ex]
+            (n - 1)^2 \\[3ex]
+            = n^2 - 2n + 1 \\[5ex]
+            B(n - 1)^2 \\[3ex]
+            = B(n^2 - 2n + 1) \\[3ex]
+            = Bn^2 - 2Bn + B \\[5ex]
+            \implies \\[3ex]
+            S_{n - 1} = An^3 - 3An^2 + 3An - A + Bn^2 - 2Bn + B + Cn - C + D \\[2ex]
+            S_{n - 1} = An^3 + n^2(-3A + B) + n(3A - 2B + C) - A + B - C + D ...eqn.(2) \\[5ex]
+            S_n - S_{n - 1} = n^2 \\[3ex]
+            \underline{\text{LHS}} \\[3ex]
+            eqn.(1) - eqn.(1) \implies S_n - S_{n - 1} \implies \\[3ex]
+            An^3 - An^3 + n^2[B - (-3A + B)] + n[C - (3A - 2B + C)] + D - (-A + B - C + D) \\[3ex]
+            n^2(B + 3A - B) + n(C - 3A + 2B - C) + D + A - B + C - D \\[3ex]
+            n^2(3A) + n(-3A + 2B) + A - B + C \\[3ex]
+            \underline{\text{RHS}} \\[3ex]
+            n^2 \\[3ex]
+            n^2 + 0n + 0 \\[3ex]
+            \underline{\text{LHS = RHS}} \\[3ex]
+            \text{Equate coefficients; find the unknown coefficients} \\[3ex]
+            3A = 1 \\[3ex]
+            A = \dfrac{1}{3} \\[5ex]
+            -3A + 2B = 0 \\[3ex]
+            2B = 3A \\[3ex]
+            2B = 3 * \dfrac{1}{3} \\[5ex]
+            2B = 1 \\[3ex]
+            B = \dfrac{1}{2} \\[5ex]
+            A - B + C = 0 \\[3ex]
+            C = B - A \\[3ex]
+            C = \dfrac{1}{2} - \dfrac{1}{3} \\[5ex]
+            C = \dfrac{3 - 2}{6} \\[5ex]
+            C = \dfrac{1}{6} \\[5ex]
+            \text{We need to find } D \\[3ex]
+            S_n = 1^2 + 2^2 + 3^2 + ... + n^2...\text{Given} \\[3ex]
+            \text{From } eqn.(1) \\[3ex]
+            S_n = An^3 + Bn^2 + Cn + D \\[3ex]
+            \text{when } n = 1 \\[3ex]
+            S_1 = 1^2 = 1 \\[3ex]
+            \text{Also}: \\[3ex]
+            S_1 = \dfrac{1}{3} * 1^3 + \dfrac{1}{2} * 1^2 + \dfrac{1}{6} * 1 + D \\[5ex]
+            \implies \\[3ex]
+            \dfrac{1}{3} + \dfrac{1}{2} + \dfrac{1}{6} + D = 1 \\[5ex]
+            D = 1 - \dfrac{1}{3} - \dfrac{1}{2} - \dfrac{1}{6} \\[5ex]
+            D = \dfrac{6 - 2 - 3 - 1}{6} \\[5ex]
+            D = \dfrac{0}{6} \\[5ex]
+            D = 0 \\[3ex]
+            \implies \\[3ex]
+            S_n = \dfrac{1}{3}n^3 + \dfrac{1}{2}n^2 + \dfrac{1}{6}n \\[5ex]
+            S_n = \dfrac{n^3}{3} + \dfrac{n^2}{2} + \dfrac{n}{6} \\[5ex]
+            = \dfrac{2n^3 + 3n^2 + n}{6} \\[5ex]
+            = \dfrac{n(2n^2 + 3n + 1)}{6} \\[5ex]
+            ................................................. \\[3ex]
+            2n^2 + 3n + 1 \\[3ex]
+            2n^2 + 2n + n + 1 \\[3ex]
+            2n(n + 1) + 1(n + 1) \\[3ex]
+            (n + 1)(2n + 1) \\[3ex]
+            ................................................. \\[3ex]
+            \therefore S_n = \dfrac{n(n + 1)(2n + 1)}{6} \\[5ex]
+            $
+            <u>2nd Approach:</u> <b>Proof by Mathematical Induction.</b> <br>
+            <table>
+              <tr>
+                <th>Steps</th>
+                <th>LHS</th>
+                <th>RHS</th>
+              </tr>
+              <tr>
+                <td></td>
+                <td>$1^2 + 2^2 + 3^2 + ... + n^2$</td>
+                <td>$\dfrac{n(n + 1)(2n + 1)}{6}$</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Initial Step</b> <br>
+                  Test for $n = 1$
+                </td>
+                <td>
+                  First term: <br>
+                  $1^2 = 1$
+                </td>
+                <td>
+                  $
+                  \dfrac{1(1 + 1)[2(1) + 1]}{6} \\[5ex]
+                  \dfrac{1(2)(3)}{6} \\[5ex]
+                  1
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="w3-center">The initial step works</td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Optional Testing</b> <br>
+                  Test for $n = 2$
+                </td>
+                <td>
+                  First term + Second term: <br>
+                  $
+                  1^2 + 2^2 \\[3ex]
+                  1 + 4 \\[3ex]
+                  5
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2(2 + 1)[2(2) + 1]}{6} \\[5ex]
+                  \dfrac{2(3)(5)}{6} \\[5ex]
+                  5
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Optional Testing</b> <br>
+                  Test for $n = 3$
+                </td>
+                <td>
+                  First term + Second term + Third term: <br>
+                  $
+                  1^2 + 2^2 + 3^2 \\[3ex]
+                  1 + 4 + 9 \\[3ex]
+                  14
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{2(3 + 1)[2(3) + 1]}{6} \\[5ex]
+                  \dfrac{3(4)(7)}{6} \\[5ex]
+                  14
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="w3-center">The optional testing works</td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <b>Induction Hypothesis</b> <br>
+                  Assume $n = k$ <br>
+                  This is the $kth$ term <br>
+                  $1^2 + 2^2 + 3^2 + ... + k^2 = \dfrac{k(k + 1)(2k + 1)}{6}...eqn.(1)$
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  <b>Induction Step</b> <br>
+                  Assume $n = k + 1$ <br>
+                  This is the $(k + 1)st$ term <br>
+                  $
+                  1^2 + 2^2 + 3^2 + ... + k^2 + (k + 1)^2 = \dfrac{(k + 1)[(k + 1) + 1][2(k + 1) + 1]}{6} \\[5ex]
+                  1^2 + 2^2 + 3^2 + ... + k^2 + (k + 1)^2 = \dfrac{(k + 1)(k + 1 + 1)(2k + 2 + 1)}{6} \\[5ex]
+                  1^2 + 2^2 + 3^2 + ... + k^2 + (k + 1)^2 = \dfrac{(k + 1)(k + 2)(2k + 3)}{6}...eqn.(2)
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <b>Induction Step</b>
+                </td>
+                <td>
+                  $
+                  \color{black}{1^2 + 2^2 + 3^2 + ... + k^2} + (k + 1)^2 \\[3ex]
+                  \text{From } \color{black}{eqn. (1)}, \text{substitute} \\[3ex]
+                  \color{black}{\dfrac{k(k + 1)(2k + 1)}{6}} + (k + 1)(k + 1) \\[5ex]
+                  \dfrac{(k^2 + k)(2k + 1)}{6} + k^2 + k + k + 1 \\[5ex]
+                  \dfrac{2k^3 + k^2 + 2k^2 + k}{6} + k^2 + 2k + 1 \\[5ex]
+                  \dfrac{2k^3 + 3k^2 + k}{6} + \dfrac{k^2 + 2k + 1}{1} \\[5ex]
+                  \dfrac{1(2k^3 + 3k^2 + k) + 6(k^2 + 2k + 1)}{6} \\[5ex]
+                  \dfrac{2k^3 + 3k^2 + k + 6k^2 + 12k + 6}{6} \\[5ex]
+                  \dfrac{2k^3 + 9k^2 + 13k + 6}{6} \\[5ex]
+                  ............................................... \\[3ex]
+                  \underline{\text{Numerator}} \\[3ex]
+                  f(k) = 2k^3 + 9k^2 + 13k + 6 \\[3ex]
+                  \text{Try } k = -1 \\[3ex]
+                  f(-1) = 2(-1)^3 + 9(-1)^2 + 13(-1) + 6 \\[3ex]
+                  = 2(-1) + 9(1) - 13 + 6 \\[3ex]
+                  = -2 + 9 - 13 + 6 \\[3ex]
+                  = 0 \\[3ex]
+                  \implies \\[3ex]
+                  k = -1 \text{ is a zero} \\[3ex]
+                  (k + 1) \text{ is a factor} \\[3ex]
+                  \text{To find the remaining factors, let us use Synthetic Division} \\[3ex]
+                  \underline{\text{Synthetic Division}} \\[3ex]
+                  \begin{array}{r|rrrr}
+                  -1 & 2 & 9 & 13 & 6 \\
+                  + & & -2 & -7 & -6 \\
+                  \hline
+                  & 2 & 7 & 6 & 0 \\
+                  \end{array} \\[7ex]
+                  \text{Quotient} = 2k^2 + 7k + 6 \\[3ex]
+                  \implies \\[3ex]
+                  2k^3 + 9k^2 + 13k + 6 = (k + 1)(k + 2)(2k + 3) \\[3ex]
+                  ............................................... \\[3ex]
+                  \dfrac{(k + 1)(k + 2)(2k + 3)}{6}
+                  $
+                </td>
+                <td>
+                  $
+                  \dfrac{(k + 1)(k + 2)(2k + 3)}{6}
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3" class="w3-center">
+                  $LHS = RHS$ <br>
+                  The formula is proved.
+                </td>
+              </tr>
+            </table>
+            <br>
+            <u>3rd Approach:</u> <b>Difference of Cubes</b> leading to <b>Telescoping Sum.</b> <br>
+            Assume the term: $(p + 1)^3$ <br>
+            Let us use the Pascal's Triangle to expand it. You may expand it using your preferred approach.
+            $$
+            \begin{array}{c}
+            1 \\[2ex]
+            1 \quad 1 \\[2ex]
+            1 \quad 2 \quad 1 \\[2ex]
+            1 \quad 3 \quad 3 \quad 1 \\[2ex]
+            \end{array}
+            $$
+            $
+            (p + 1)^3 \\[3ex]
+            = p^3 + 3p^2(1) + 3p(1)^2 + 1^3 \\[3ex]
+            = p^3 + 3p^2 + 3p + 1 \\[5ex]
+            (p + 1)^3 - p^3 = 3p^2 + 3p + 1 \\[3ex]
+            $
+            <table>
+              <caption>$(p + 1)^3 - p^3 = 3p^2 + 3p + 1$</caption>
+              <tr>
+                <th style="width: 10%;">For</th>
+                <th style="width: 45%;">LHS</th>
+                <th style="width: 45%;">RHS</th>
+              </tr>
+              <tr>
+                <td>$p = 1$</td>
+                <td>
+                  $
+                  (1 + 1)^3 - 1^3 \\[3ex]
+                  2^3 - 1^3
+                  $
+                </td>
+                <td>
+                  $
+                  3(1)^2 + 3(1) + 1
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>$p = 2$</td>
+                <td>
+                  $
+                  (2 + 1)^3 - 2^3 \\[3ex]
+                  3^3 - 2^3
+                  $
+                </td>
+                <td>
+                  $
+                  3(2)^2 + 3(2) + 1
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>$p = 3$</td>
+                <td>
+                  $
+                  (3 + 1)^3 - 3^3 \\[3ex]
+                  4^3 - 3^3
+                  $
+                </td>
+                <td>
+                  $
+                  3(3)^2 + 3(3) + 1
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+                <td class="threeVerticalDots"></td>
+              </tr>
+              <tr>
+                <td>$p = n$</td>
+                <td>
+                  $
+                  (n + 1)^3 - n^3
+                  $
+                </td>
+                <td>
+                  $
+                  3(n)^2 + 3(n) + 1
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>Sum, <i>S</i></td>
+                <td>
+                  $
+                  (2^3 - 1^3) + (3^3 - 2^3) + (4^3 - 3^3) + ... + [(n + 1)^3 - n^3] \\[3ex]
+                  \text{This is now a telescoping sum.} \\[3ex]
+                  2^3 - 1^3 + 3^3 - 2^3 + 4^3 - 3^3 + ... + (n + 1)^3 - n^3 \\[3ex]
+                  (n + 1)^3 - 1^3 \\[3ex]
+                  n^3 + 3n^2 + 3n + 1 - 1 \\[3ex]
+                  n^3 + 3n^2 + 3n
+                  $
+                </td>
+                <td>
+                  $
+                  [3(1)^2 + 3(1) + 1] \\[3ex]
+                  + [3(2)^2 + 3(2) + 1] \\[3ex]
+                  + [3(3)^2 + 3(3) + 1] \\[3ex]
+                  + ... + [3(n)^2 + 3(n) + 1] \\[5ex]
+                  3[1^2 + 2^2 + 3^2 + ... + n^2] \\[3ex]
+                  + 3[1 + 2 + 3 + ... + n] \\[3ex]
+                  + 1 + 1 + 1 + ... + 1 \\[5ex]
+                  ................................. \\[3ex]
+                  1^2 + 2^2 + 3^2 + ... + n^2 = S_{n^2} \\[3ex]
+                  1 + 2 + 3 + ... + n = S_n \\[3ex]
+                  S_n = \dfrac{n(n + 1)}{2} ...\text{Sum of the first n natural numbers} \\[5ex]
+                  1 + 1 + 1 + ... + 1 = n ...\text{The sum of 1 repeated n times is n} \\[3ex]
+                  ................................. \\[3ex]
+                  3S_{n^2} + 3S_n + n \\[3ex]
+                  3S_{n^2} + 3\left[\dfrac{n(n + 1)}{2}\right] + n \\[5ex]
+                  3S_{n^2} + \dfrac{3n(n + 1)}{2} + n
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td colspan="3">
+                  $
+                  \text{LHS = RHS} \\[3ex]
+                  n^3 + 3n^2 + 3n = 3S_{n^2} + \dfrac{3n(n + 1)}{2} + n \\[5ex]
+                  3S_{n^2} = n^3 + 3n^2 + 3n - \dfrac{3n(n + 1)}{2} - n \\[5ex]
+                  3S_{n^2} = n^3 + 3n^2 + 2n - \dfrac{3n(n + 1)}{2} \\[5ex]
+                  LCD = 2 \\[3ex]
+                  6S_{n^2} = 2n^3 + 6n^2 + 4n - 3n(n + 1) \\[3ex]
+                  6S_{n^2} = 2n^3 + 6n^2 + 4n - 3n^2 - 3n \\[3ex]
+                  6S_{n^2} = 2n^3 + 3n^2 + n \\[3ex]
+                  6S_{n^2} = n(2n^2 + 3n + 1) \\[3ex]
+                  ........................................ \\[3ex]
+                  2n^2 + 3n + 1 \\[3ex]
+                  2n^2 + 2n + n + 1 \\[3ex]
+                  2n(n + 1) + 1(n + 1) \\[3ex]
+                  (n + 1)(2n + 1) \\[3ex]
+                  ........................................ \\[3ex]
+                  6S_{n^2} = n(n + 1)(2n + 1) \\[3ex]
+                  S_{n^2} = \dfrac{n(n + 1)(2n + 1)}{6}
+                  $
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Find the smallest integer $n \gt 1$ so that $\sqrt{\dfrac{1^2 + 2^2 + 3^2 + ... + n^2}{n}}$ is an
+          integer.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT2">
+            <br>
+            $
+            \dfrac{1^2 + 2^2 + 3^2 + ... + n^2}{n} \\[5ex]
+            = (1^2 + 2^2 + 3^2 + ... + n^2) \div n \\[3ex]
+            ................................................. \\[3ex]
+            \text{Sum of the first n squares} \\[3ex]
+            1^2 + 2^2 + 3^2 + ... + n^2 = \dfrac{n(n + 1)(2n + 1)}{6} \\[5ex]
+            ................................................. \\[3ex]
+            = \dfrac{n(n + 1)(2n + 1)}{6} * \dfrac{1}{n} \\[5ex]
+            = \dfrac{(n + 1)(2n + 1)}{6} \\[5ex]
+            \implies \\[3ex]
+            \sqrt{\dfrac{(n + 1)(2n + 1)}{6}} \\[5ex]
+            \underline{\text{Testing: Trial and Error Approach}} \\[3ex]
+            n \gt 1 \\[3ex]
+            \text{Test } n = 2 \hspace{3em} \sqrt{\dfrac{(2 + 1)[2(2) + 1]}{6}} = \sqrt{\dfrac{3(5)}{6}}
+            = \sqrt{\dfrac{15}{6}} \text{ is not an integer} \\[5ex]
+            \text{Test } n = 3 \hspace{3em} \sqrt{\dfrac{(3 + 1)[2(3) + 1]}{6}} = \sqrt{\dfrac{4(7)}{6}}
+            = \sqrt{\dfrac{28}{6}} \text{ is not an integer} \\[5ex]
+            \text{Test } n = 4 \hspace{3em} \sqrt{\dfrac{(4 + 1)[2(4) + 1]}{6}} = \sqrt{\dfrac{5(9)}{6}}
+            = \sqrt{\dfrac{45}{6}} \text{ is not an integer} \\[5ex]
+            \text{Test } n = 5 \hspace{3em} \sqrt{\dfrac{(5 + 1)[2(5) + 1]}{6}} = \sqrt{\dfrac{6(11)}{6}}
+            = \sqrt{11} \text{ is not an integer} \\[5ex]
+            $
+            This is a long task... to keep testing until we find an integer. <br>
+            We have to find a better approach.
+            <br><br>
+            $
+            \sqrt{\dfrac{(n + 1)(2n + 1)}{6}} = \text{some integer, } p \\[5ex]
+            \dfrac{(n + 1)(2n + 1)}{6} = p^2 \\[5ex]
+            (n + 1)(2n + 1) = 6p^2 \\[3ex]
+            2n^2 + n + 2n + 1 = 6p^2 \\[3ex]
+            2n^2 + 3n + 1 - 6p^2 = 0 \\[3ex]
+            2n^2 + 3n + (1 - 6p^2) = 0 \\[3ex]
+            \text{Compare to the standard form: } an^2 + bn + c = 0 \\[3ex]
+            a = 2 \\[3ex]
+            b = 3 \\[3ex]
+            c = 1 - 6p^2 \\[3ex]
+            \underline{\text{Quadratic Formula}} \\[3ex]
+            n = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \\[5ex]
+            \text{Because } n \gt 1 \text{ and } \sqrt{b^2 - 4ac} \text{ must be a positive integer}; \\[3ex]
+            n = \dfrac{-b + \sqrt{b^2 - 4ac}}{2a} \\[5ex]
+            ................................................. \\[3ex]
+            \text{Discriminant} = b^2 - 4ac \\[3ex]
+            = 3^2 - 4(2)(1 - 6p^2) \\[3ex]
+            = 9 - 8(1 - 6p^2) \\[3ex]
+            = 9 - 8 + 48p^2 \\[3ex]
+            = 1 + 48p^2 \\[3ex]
+            ................................................. \\[3ex]
+            $
+            The discriminant must be a perfect square. <br>
+            This is because the square root of a perfect square is a positive integer. <br>
+            In other words, the square root of the discriminant must be a positive integer.
+            <br><br>
+            $
+            \sqrt{1 + 48p^2} = \text{some integer, } k \\[3ex]
+            ................................................. \\[3ex]
+            \implies \\[3ex]
+            n = \dfrac{-3 + \sqrt{1 + 48p^2}}{2(2)} \\[5ex]
+            n = \dfrac{-3 + k}{4} \\[5ex]
+            ................................................. \\[3ex]
+            1 + 48p^2 = k^2 \\[3ex]
+            k^2 = 1 + 48p^2 \\[3ex]
+            k^2 - 48p^2 = 1 \\[3ex]
+            k^2 - 3 * 16 * p^2 = 1 \\[3ex]
+            k^2 - 3 * 4^2 * p^2 = 1 \\[3ex]
+            k^2 - 3(4p)^2 = 1 \\[3ex]
+            $
+            This is now a Pell equation (Diophantine equation of the form: $x^2 - dy^2 = 1$ where <i>d</i> is a natural
+            number <u>and</u> <i>d</i> is not a perfect square). <br>
+            Solving it using this approach is the preferred approach if solving it manually (without using a
+            Computational software).
+            <br><br>
+            $
+            \underline{\text{Pell Equation}} \\[3ex]
+            x^2 - dy^2 = 1 \\[3ex]
+            \text{A pair of positive integers, } (x, y) \text{ solves the Pell equation if} \\[3ex]
+            \text{1st: } \exists d \in \mathbb{N}, \hspace{2em} d \text{ is not a perfect square} \\[3ex]
+            \text{2nd: } \exists e \in \mathbb{N} \hspace{1em}:\hspace{1em} x + y\sqrt{d} = (a + b\sqrt{d})^e \\[3ex]
+            \text{where } (a, b) \text{ is the fundamental solution: solution when }x, y \gt 0 \text{ and are minimal}
+            \\[3ex]
+            \text{So, for } k^2 - 3(4p)^2 = 1 \\[3ex]
+            \text{Let us find the fundamental solution} \\[3ex]
+            \underline{\text{Fundamental Solution}} \\[3ex]
+            \text{When } p = 1 \\[3ex]
+            k^2 = 1 + 3[4(1)]^2 \\[3ex]
+            k = \sqrt{1 + 3(16)} \\[3ex]
+            k = \sqrt{1 + 48} \\[3ex]
+            k = \sqrt{49} \\[3ex]
+            k = 7 \\[3ex]
+            \text{Fundamental solution} = (k. p) = (7, 1) \\[5ex]
+            \underline{\text{General Solutions}} \\[3ex]
+            k + 4p\sqrt{d} = (7 + 4(1)\sqrt{3})^e \\[3ex]
+            k + 4p\sqrt{d} = (7 + 4\sqrt{3})^e \\[3ex]
+            d = 3 ...\text{is already an integer constant} \\[3ex]
+            \text{We shall now focus on finding } n \text{ in cases where } k, p \text{ are integers} \\[3ex]
+            n \text{ must also be an integer} \\[3ex]
+            \text{The first instance of integer, } n \gt 1 \text { will be the answer} \\[3ex]
+            \text{Recall that: } n = \dfrac{-3 + k}{4} \\[5ex]
+
+            \text{When } e = 1 \\[3ex]
+            (7 + 4\sqrt{3})^1 \\[3ex]
+            = 7 + 4\sqrt{3} \\[3ex]
+            k = 7 \\[3ex]
+            4p = 4 \\[3ex]
+            p = \dfrac{4}{4} \\[5ex]
+            p = 1 \\[3ex]
+            n = \dfrac{-3 + 7}{4} \\[5ex]
+            n = \dfrac{4}{4} \\[5ex]
+            n = 1 \\[3ex]
+            \text{But } 1 \ngtr 1 \\[5ex]
+            \text{Next} \\[3ex]
+            \text{When } e = 2 \\[3ex]
+            (7 + 4\sqrt{3})^2 \\[3ex]
+            = (7 + 4\sqrt{3})(7 + 4\sqrt{3}) \\[3ex]
+            = 49 + 28\sqrt{3} + 28\sqrt{3} + 48 \\[3ex]
+            = 97 + 56\sqrt{3} \\[3ex]
+            k = 97 \\[3ex]
+            4p = 56 \\[3ex]
+            p = \dfrac{56}{4} \\[5ex]
+            p = 14 \\[3ex]
+            n = \dfrac{-3 + 97}{4} \\[5ex]
+            n = \dfrac{94}{4} ...\text{not an integer} \\[5ex]
+            \text{Next} \\[3ex]
+            \text{When } e = 3 \\[3ex]
+            (7 + 4\sqrt{3})^3 \\[3ex]
+            = (97 + 56\sqrt{3})(7 + 4\sqrt{3}) \\[3ex]
+            = 679 + 388\sqrt{3} + 392\sqrt{3} + 672 \\[3ex]
+            = 1351 + 780\sqrt{3} \\[3ex]
+            k = 1351 \\[3ex]
+            4p = 780 \\[3ex]
+            p = \dfrac{780}{4} \\[5ex]
+            p = 195 \\[3ex]
+            n = \dfrac{-3 + 1351}{4} \\[5ex]
+            n = \dfrac{1348}{4} \\[5ex]
+            n = 337 \\[3ex]
+            337 \gt 1 \\[3ex]
+            \therefore n = 337
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT3">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT4">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT5">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+
+
+          <button class="solutions" onclick="solutions('solutionNT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT6">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT8">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionNT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) Suppose that X and Y are angles with $\tan X = \dfrac{1}{m}$ and $\tan Y =
+          \dfrac{a}{n}$ for some positive integers <i>a, m</i>, and <i>n</i>. <br>
+          Determine the number of positive integers $a \le 50$ for which there are <b>exactly</b> 6 pairs of positive
+          integers (<i>m, n</i>) with $X + Y = 45^\circ$.
+          <br><br>
+          $
+          \underline{\text{Hint:}} \tan (\alpha \pm \beta) = \dfrac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan
+          \beta}...\text{Sum and Difference Formulas} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionNT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionNT10">
+            <br>
+            $
+            \text{Let us solve for }a \\[3ex]
+            \tan (X + Y) = \dfrac{\tan X + \tan Y}{1 - \tan X \tan Y}...\text{Sum Formulas} \\[5ex]
+            X + Y = 45^\circ \\[3ex]
+            \tan X = \dfrac{1}{m} \\[5ex]
+            \tan Y = \dfrac{a}{n} \\[5ex]
+            \tan 45^\circ = \left(\dfrac{1}{m} + \dfrac{a}{n}\right) \div \left[1 - \left(\dfrac{1}{m}\right) *
+            \left(\dfrac{a}{n}\right)\right] \\[5ex]
+            1 = \left(\dfrac{n + am}{mn}\right) \div \left(1 - \dfrac{a}{mn}\right) \\[5ex]
+            1 = \left(\dfrac{n + am}{mn}\right) \div \left(\dfrac{mn - a}{mn}\right) \\[5ex]
+            1 = \left(\dfrac{n + am}{mn}\right) * \left(\dfrac{mn}{mn - a}\right) \\[5ex]
+            1 = \dfrac{n + am}{mn - a} \\[5ex]
+            n + am = mn - a \\[3ex]
+            am + a = mn - n \\[3ex]
+            a(m + 1) = n(m - 1) \\[3ex]
+            a = \dfrac{n(m - 1)}{m + 1} ...eqn.(1) \\[5ex]
+            \implies \\[3ex]
+            \dfrac{n(m - 1)}{m + 1} \le 50 \\[5ex]
+            $
+            Solving this inequality: two variables in one inequality is time-consuming...we do not know the value of
+            either
+            <i>m</i> or <i>n</i> <br>
+            Even though we know that <i>a, m</i>, and <i>n</i> are positive integers, the guesses will take time. <br>
+            So, let's see whether we can find a theorem that works in Number Theory to help us solve the question.
+            <br><br>
+            $
+            \text{From:} \\[3ex]
+            n + am = mn - a \\[3ex]
+            a = mn - am - n \\[3ex]
+            a = m(n - a) - n \\[3ex]
+            \text{To enable us to get a product of factors: add a to both sides} \\[3ex]
+            a + a = m(n - a) - n + a \\[3ex]
+            2a = m(n - a) - 1(n - a) \\[3ex]
+            2a = (n - a)(m - 1) \\[3ex]
+
+
+
+
+
+
+
+            $
+            <i>To be continued.</i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <br><br>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (12.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT12')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT12">
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container">
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (13.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT13')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT13">
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (14.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT14')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT14">
+          <br>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container">
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (15.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT15')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT15">
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (16.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT16')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT16">
+          <br>
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container">
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (17.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT17')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT17">
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (18.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT18')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT18">
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-row w3-container">
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (19.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT19')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT19">
+          <br>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (20.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT20')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT20">
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Numbers 1 through 20 -->
+
+  <br><br><br><br>
+  <!-- Top of the Page -->
+  <div class="w3-container" style="position:relative">
+    <a href="https://successexams.appspot.com/MATHEMATICS/NumberTheory.html"
+      class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+  </div>
+  <br><br><br><br>
+
+  <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (21.)
+
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT21')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT21">
+          <br>
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-half w3-container">
+      <div class="w3-topbar w3-padding">
+        (22.)
+        <br><br>
+        <button class="solutions" onclick="solutions('solutionNT22')">Show/Hide Answer</button>
+        <div class="result" id="solutionNT22">
+          <br>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

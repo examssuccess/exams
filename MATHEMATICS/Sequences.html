@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-7L6QBL3WQP"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-7L6QBL3WQP');
+  </script>
+
+  <title>Sequences</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to questions on sequences.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics,
+    Algebra, sequences, series, arithmetic progression, geometric progression, 
+    arithmetic sequence, linear sequence, exponential sequence, geometric sequence, first term, 
+    common difference, common ratio, number of terms, general term, nth term, sum of terms, last term, 
+    sum to infinity, quadratic sequence, triangular sequence, Fibonacci sequence, recursive sequence, 
+    general sequence, arithmetic mean, geometric mean, convergent series, divergent series, first difference, 
+    second difference, linear expression, quadratic expression, linear function, quadratic function, 
+    linear equation, quadratic equation, summation, sigma notation, recurrence sequence, recurrence relation, 
+    recurrence equation, square sequence, initial conditions, first-order linear recurrence relation, second-order linear 
+    recurrence relation, recursion, recurrence, triangular number, triangular number sequence, square number, 
+    square number sequence, cube sequence, cube number, cube number sequence, degree, characteristic equation, characteristic root,
+    explicit formula, closed form, golden ratio">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://successexams.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Sequences</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to questions on Sequences. <br>
+        If you find these resources valuable/helpful, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Arithmetic Sequence</h2>
+        </li>
+        <li>$AS_n$ = $nth$ term of an Arithmetic Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$d$ = common difference</li>
+        <li>$n$ = number of terms</li>
+        <li>$SAS_n$ = sum of the first $n$ terms of an Arithmetic Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: AS_n = a + d(n - 1) \\[5ex]
+        (2.)\:\: AS_n = vn + w \:\:where\:\: v = d \:\:and\:\: w = a - d \\[5ex]
+        (3.)\:\: p = a + d(n - 1) \\[5ex]
+        (4.)\:\: SAS_n = \dfrac{n}{2}(a + AS_n) \\[7ex]
+        (5.)\:\: SAS_n = \dfrac{n}{2}(a + p) \\[7ex]
+        (6.)\:\: SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[7ex]
+        (7.)\:\: n = \dfrac{2 * SAS_n}{a + p} \\[7ex]
+        (8.)\:\: n = \dfrac{p - a + d}{d} \\[7ex]
+        (9.)\:\: n = \dfrac{-(2a - d) \pm \sqrt{(2a - d)^2 + 8d*SAS_n}}{2d} \\[7ex]
+        (10.)\;\; d = \dfrac{(p - a)(p + a)}{2 * SAS_n - p - a}
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Geometric Sequence</h2>
+        </li>
+        <li>$GS_n$ = $nth$ term of a Geometric Sequence</li>
+        <li>$a$ = first term</li>
+        <li>$p$ = last term</li>
+        <li>$r$ = common ratio</li>
+        <li>$n$ = number of terms</li>
+        <li>$SGS_n$ = sum of the first $n$ terms of a Geometric Sequence</li>
+        <li>$S_{\infty}$ = sum to infinity of a Geometric Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        (1.)\:\: GS_n = ar^{n - 1} \\[5ex]
+        (2.)\:\: SGS_n = \dfrac{a(r^{n} - 1)}{r - 1} \:\:for\:\: r \gt 1 \\[7ex]
+        (3.)\:\: SGS_n = \dfrac{a(1 - r^{n})}{1 - r} \:\:for\:\: r \lt 1 \\[7ex]
+        (4.)\:\: n = \dfrac{\log{\left[\dfrac{SGS_n(r - 1)}{a} + 1\right]}}{\log r} \\[7ex]
+        (5.)\:\: If\:\:r \lt 1,\:\:the\:\:series\:\:converges\:\:and\:\: S_{\infty} = \dfrac{a}{1 - r} \\[7ex]
+        (6.)\:\: If\:\:r \gt 1,\:\:the\:\:series\:\:diverges \\[5ex]
+        (7.)\:\: If\:\:r = 1,\:\:S_{\infty}\:\:DNE \\[5ex]
+        (8.)\:\: r = \dfrac{S_{\infty} - a}{S_{\infty}} \\[7ex]
+        (9.)\:\: a = S_{\infty}(1 - r)
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Quadratic Sequence</h2>
+        </li>
+        <li>$QS_n$ = $n$th term of a Quadratic Sequence = $an^2 + bn + c$</li>
+        <li>$1st$ = first term</li>
+        <li>$2nd$ = second term</li>
+        <li>$3rd$ = third term</li>
+        <li>$4th$ = fourth term</li>
+        <li>$n$ = number of terms</li>
+        <li>$a$ = coefficient of $n^2$</li>
+        <li>$b$ = coefficient of $n$</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        QS = 1st,\:\:\:\:2nd,\:\:\:3rd,\:\:\:4th,... \\[5ex]
+        QS_n = an^2 + bn + c \\[5ex]
+        (1.)\:\: a = \dfrac{1st + 3rd - 2(2nd)}{2} \\[7ex]
+        (2.)\:\: b = \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} \\[7ex]
+        (3.)\:\: c = 3(1st) - 3(2nd) + 3rd \\[5ex]
+        (4.)\:\: \therefore QS_n = \dfrac{1st + 3rd - 2(2nd)}{2} * n^2 + \dfrac{8(2nd) - 5(1st) - 3(3rd)}{2} * n +
+        3(1st) - 3(2nd) + 3rd \\[7ex]
+        The\:\:Left\:\:Hand\:\:Side\:\:must\;\;be\:\:equal\:\:to\;\;the\:\:Right\:\:Hand\:\:Side \\[5ex]
+        (5.)\:\: a + b + c = 1st \\[5ex]
+        (6.)\:\: 4a + 2b + c = 2nd \\[5ex]
+        (7.)\:\: 9a + 3b + c = 3rd \\[5ex]
+        (8.)\:\: 3a + b = 2nd - 1st \\[5ex]
+        (9.)\:\: 8a + 2b = 3rd - 1st
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Other Sequences</h2>
+        </li>
+        <li>$TS_n$ = $nth$ term of a Triangular Number Sequence</li>
+        <li>$SS_{n}$ = $nth$ term of a Square Number Sequence</li>
+        <li>$CS_{n}$ = $nth$ term of a Cube Number Sequence</li>
+        <li>$n$ = number of terms</li>
+        <li>$STS_n$ = sum of the first $n$ terms of a Triangular Number Sequence</li>
+        <li>$SSS_n$ = sum of the first $n$ terms of a Square Number Sequence</li>
+        <li>$SCS_n$ = sum of the first $n$ terms of a Cube Number Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{Triangular\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: TS_n = \dfrac{n(n + 1)}{2} \\[7ex]
+        (2.)\;\; n = \dfrac{\sqrt{8 * TS_n + 1} - 1}{2} \\[7ex]
+        (3.)\:\: TS_n = C(n + 1, 2)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[5ex]
+        (4.)\;\; STS_n = \dfrac{n(n + 1)(n + 2)}{6} \\[7ex]
+        (5.)\:\: STS_n = C(n + 2, 3)...Combinatorics\;\;symbol\;\;for\;\;Combinations \\[7ex]
+
+        \underline{Square\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: SS_n = n^2 \\[5ex]
+        (2.)\;\; n = \sqrt{SS_n} \\[5ex]
+        (3.)\;\; SSS_n = \dfrac{n(n + 1)(2n + 1)}{6} \\[7ex]
+
+        \underline{Cube\;\;Number\;\;Sequence} \\[3ex]
+        (1.)\:\: CS_n = n^3 \\[5ex]
+        (2.)\;\; n = \sqrt[3]{CS_n} \\[5ex]
+        (3.)\;\; SCS_n = \left[\dfrac{n(n + 1)}{2}\right]^2 \\[7ex]
+        (4.)\;\; n = \dfrac{\sqrt{8\sqrt{SCS_n} + 1} - 1}{2} \\[7ex]
+        $
+      </p>
+      <br>
+      <ul class="w3-ul white">
+        <li class="yellow w3-hover-black w3-xlarge w3-padding-32">
+          <h2>Symbols and Formulas: Recursive Sequence</h2>
+        </li>
+        <li>$RS_n$ = $nth$ term of a Recursive Sequence</li>
+        <li>$RS_{n + 1}$ = next term of a Recursive Sequence</li>
+        <li>$a$ = first term (constant)</li>
+        <li>$r$ = common ratio (coefficient of the $nth$ term)</li>
+        <li>$RS_1$ = initial term</li>
+        <li>$n$ = number of terms</li>
+        <li>$SRS_n$ = sum of the first $n$ terms of a Recursive Sequence</li>
+        <li>$\phi$ = Golden Ratio</li>
+        <li>$FS_n$ = $nth$ term of a Fibonacci Sequence</li>
+        <li>$SFS_n$ = sum of the first $n$ terms of a Fibonacci Sequence</li>
+        <li></li>
+      </ul>
+      <p>
+        $
+        \underline{First-Order\;\;Linear\;\;Recurrence\;\;Relation} \\[3ex]
+        (1.)\:\: RS_{n + 1} = r * RS_{n} + a \\[5ex]
+        (2.)\:\: RS_{n + 1} = \dfrac{RS_1 * r^n(r - 1) + a(r^n - 1)}{r - 1} \;\;\;for\;\;r \gt 1 \\[7ex]
+        (3.)\;\; RS_{n + 1} = \dfrac{RS_1 * r^n(1 - r) + a(1 - r^n)}{1 - r} \;\;\;for\;\;r \lt 1 \\[7ex]
+
+        \underline{Fibonacci\;\;Sequence} \\[3ex]
+        (1.)\;\; \phi = \dfrac{1 + \sqrt{5}}{2} \\[7ex]
+        (2.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\left(\dfrac{1 + \sqrt{5}}{2}\right)^n - \left(\dfrac{1 -
+        \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (3.)\;\; FS_n = \dfrac{\sqrt{5}}{5}\left[\phi^n - \left(\dfrac{1 - \sqrt{5}}{2}\right)^n\right] \\[7ex]
+        (4.)\;\; SFS_n = \dfrac{\sqrt{5}}{5}\left[\dfrac{\phi^3(\phi^{n - 1} - 1) + [(\phi - 1)(1 - \phi^2)][(1 -
+        \phi)^{n - 1} - 1]}{\phi(\phi - 1)}\right] + 1
+        $
+      </p>
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) How many numbers between 1 and 100 are divisible by 7?
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS1')">Show/Hide Answer</button>
+          <div class="result" id="solutionS1">
+            <br>
+            Between 1 and 100 <br>
+            The closest number after 1 which is divisble by 7 is 7 <br>
+            The closest number before 100 which is divisible by 7 is 98 <br>
+            We get the sequence by adding 7 to subsequent terms after 7 until we get to 98 <br>
+            This implies that: <br>
+            The sequence is an arithmetic sequence <br>
+            The first term, <i>a</i> = 7 <br>
+            The common difference, <i>d</i> = 7 <br>
+            The last term, <i>p</i> = $AS_n$ = 98 <br>
+            So, the sequence looks like this: <br>
+            7, 7 + 7 = 14, 14 + 7 = 21, ..., 98 <br>
+            7, 14, 21, ..., 98 <br>
+            Let us find the number of terms, <i>n</i>
+            <br><br>
+            $
+            AS_n = a + d(n - 1) \\[3ex]
+            98 = 7 + 7(n - 1) \\[3ex]
+            7 + 7(n - 1) = 98 \\[3ex]
+            7(n - 1) = 98 - 7 \\[3ex]
+            7(n - 1) = 91 \\[3ex]
+            n - 1 = \dfrac{91}{7} \\[5ex]
+            n - 1 = 13 \\[3ex]
+            n = 13 + 1 \\[3ex]
+            n = 14
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) The terms $\dfrac{1}{64}, \dfrac{1}{32}, \dfrac{1}{16}, ...$ from a geometric progression (G.P).
+          <br><br>
+          If the sum of the G.P is $2^{36} - 2^{-6}$, find the number of terms.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS2')">Show/Hide Answer</button>
+          <div class="result" id="solutionS2">
+            <br>
+            $
+            \text{first term} = a \\[3ex]
+            \text{common ratio} = r \\[3ex]
+            \text{number of terms} = n \\[3ex]
+            \text{sum of G.P} = SGP_n \\[5ex]
+
+            \dfrac{1}{64}, \dfrac{1}{32}, \dfrac{1}{16}, ... \\[5ex]
+            a = \dfrac{1}{64} \\[5ex]
+            r = \dfrac{1}{32} \div \dfrac{1}{64} \\[5ex]
+            r = \dfrac{1}{32} * \dfrac{64}{1} \\[5ex]
+            r = 2 \\[3ex]
+            SGP_n = 2^{36} - 2^{-6} ...\text{Given} \\[3ex]
+            SGP_n = \dfrac{a(r^{n} - 1)}{r - 1} \:\:for\:\: r \gt 1 ...\text{Formula} \\[5ex]
+            = a(r^{n} - 1) \div (r - 1) \\[3ex]
+            = \dfrac{1}{64}(2^n - 1) \div (2 - 1) \\[5ex]
+            = \dfrac{2^n - 1}{64} \div 1 \\[5ex]
+            = \dfrac{2^n - 1}{2^6} \\[5ex]
+            \text{Equate both terms: Formula = Given} \\[3ex]
+            \dfrac{2^n - 1}{2^6} = 2^{36} - 2^{-6} \\[5ex]
+            2^n - 1 = 2^6(2^{36} - 2^{-6}) \\[3ex]
+            2^n - 1 = 2^{6 + 36} - 2^{6 + - 6} \\[3ex]
+            2^n - 1 = 2^{42} - 2^0 \\[3ex]
+            2^n - 1 = 2^{42} - 1 \\[3ex]
+            2^n = 2^{42} \\[3ex]
+            \text{same base; equate exponents} \\[3ex]
+            n = 42
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) Can you explain why $\sum\limits_{i = 0}^{n} (n - i) = \dfrac{n(n + 1)}{2}$
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS3')">Show/Hide Answer</button>
+          <div class="result" id="solutionS3">
+            <br>
+            $
+            \sum\limits_{i = 0}^{n} (n - i) \\[5ex]
+            \text{when }: \hspace{3em} \text{term }: \\[3ex]
+            i = 0 \hspace{4em} n - 0 = n \\[3ex]
+            i = 1 \hspace{4em} n - 1 \\[3ex]
+            i = 2 \hspace{4em} n - 2 \\[3ex]
+            i = 3 \hspace{4em} n - 3 \\[3ex]
+            ...\text{and the series continues}. \\[3ex]
+            \text{The series is:} \\[3ex]
+            n, n - 1, n - 2, n - 3, etc. \\[3ex]
+            \text{This is an Arithmetic Sequence} \\[3ex]
+            SAS_n = \dfrac{n}{2}[2a + d(n - 1)] \\[5ex]
+            \text{where} \\[3ex]
+            SAS_n = \text{sum of the n terms of an arithmetic sequence} \\[3ex]
+            n = \text{number of terms} = n \\[3ex]
+            a = \text{first term} = n \\[3ex]
+            d = \text{common difference} \\[3ex]
+            = (n - 1) - n \\[3ex]
+            = n - 1 - n \\[3ex]
+            = -1 \\[3ex]
+            \implies \\[3ex]
+            SAS_n = \dfrac{n}{2}[2n + -1(n - 1)] \\[5ex]
+            = \dfrac{n}{2}(2n - n + 1) \\[5ex]
+            = \dfrac{n}{2}(n + 1) \\[5ex]
+            = \dfrac{n(n + 1)}{2}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS4')">Show/Hide Answer</button>
+          <div class="result" id="solutionS4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS5')">Show/Hide Answer</button>
+          <div class="result" id="solutionS5">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS6')">Show/Hide Answer</button>
+          <div class="result" id="solutionS6">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS7')">Show/Hide Answer</button>
+          <div class="result" id="solutionS7">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS8')">Show/Hide Answer</button>
+          <div class="result" id="solutionS8">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionS9')">Show/Hide Answer</button>
+          <div class="result" id="solutionS9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS10')">Show/Hide Answer</button>
+          <div class="result" id="solutionS10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionS11')">Show/Hide Answer</button>
+          <div class="result" id="solutionS11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS12')">Show/Hide Answer</button>
+          <div class="result" id="solutionS12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionS13')">Show/Hide Answer</button>
+          <div class="result" id="solutionS13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS14')">Show/Hide Answer</button>
+          <div class="result" id="solutionS14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionS15')">Show/Hide Answer</button>
+          <div class="result" id="solutionS15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS16')">Show/Hide Answer</button>
+          <div class="result" id="solutionS16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionS17')">Show/Hide Answer</button>
+          <div class="result" id="solutionS17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <button class="solutions" onclick="solutions('solutionS18')">Show/Hide Answer</button>
+          <div class="result" id="solutionS18">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionS19')">Show/Hide Answer</button>
+          <div class="result" id="solutionS19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <button class="solutions" onclick="solutions('solutionS20')">Show/Hide Answer</button>
+          <div class="result" id="solutionS20">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://successexams.appspot.com/MATHEMATICS/Sequences.html"
+        class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionS21')">Show/Hide Answer</button>
+          <div class="result" id="solutionS21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS22')">Show/Hide Answer</button>
+          <div class="result" id="solutionS22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionS23')">Show/Hide Answer</button>
+          <div class="result" id="solutionS23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS24')">Show/Hide Answer</button>
+          <div class="result" id="solutionS24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionS25')">Show/Hide Answer</button>
+          <div class="result" id="solutionS25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS26')">Show/Hide Answer</button>
+          <div class="result" id="solutionS26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionS27')">Show/Hide Answer</button>
+          <div class="result" id="solutionS27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS28')">Show/Hide Answer</button>
+          <div class="result" id="solutionS28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionS29')">Show/Hide Answer</button>
+          <div class="result" id="solutionS29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionS30')">Show/Hide Answer</button>
+          <div class="result" id="solutionS30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://successexams.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+
+</body>
+
+</html>

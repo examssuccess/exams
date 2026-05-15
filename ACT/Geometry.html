@@ -1,0 +1,2153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Geometry</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on geometry.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, ACT, 
+  American College Testing, trigonometry, analytic trigonometry, trigonometric functions, angles, triangles, geometry, trigonometric identities, 
+  inverse trigonometric functions, sine function, inverse sine function, cosine function, inverse cosine function, tangent function, 
+  inverse tangent function, composite functions, trigonometric equations, trigonometric proofs, trigonometric formulas, trigonometric graphs, 
+  trigonometric inequalities, right triangles, sine law, cosine law, initial side, terminal side, coordinate plane, angular measures,
+    side lengths, vertex, standard position, coterminal angles, quadrantal angles, reference angles, unit circle, planar figures, 
+    three-dimensional figures, cofunction, quadrants, inverse cosecant function, inverse secant function, inverse cotangent function, 
+    trigonometric expressions, right triangles, area of triangle, bearings, distances, elevation, depression, angle of elevation, 
+    angle of depression, arc, length of arc, sector, segment, linear speed, angular speed, circular functions, 
+    area of sector, area of segment, base angle, apex angle, vertex angle, compass bearing, congruent triangles, similar triangles, 
+    congruency, similarity, measurement, geometry, trigonometry, mathematical literacy, quantitative literacy, length, width, volume, area, perimeter, 
+    surface area, slant height, frustrum, base area, perpendicular height, triangle, square, rectangle, parallelogram, rhombus, diamond, kite, rhombi, 
+    circle, cube, cuboid, cone, two-dimensional figure, shape, prism, trapezium, trapezoid, pyramid, cylinder, total surface area, curved surface area,
+    square-based pyramid, composite shape, triangular-based pyramid, Hero's formula, Heron's formula, pentagons, hexagons, heptagons, octagons, 
+    nonagons, decagons, hendecagons, dodecagons">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+      <a href="#statements" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Statements</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Geometry</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics in Geometry. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if any of these resources were helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="images/calculator-mode-degree.png" alt="Calculator Mode">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas</h2>
+
+      (1.) $\overleftrightarrow{AB}$ <br>
+      Line AB
+      <br><br>
+      (2.) $\overline{AB}$ <br>
+      Line Segment AB
+      <br><br>
+      (3.) $\overrightarrow{AB}$ <br>
+      Ray AB
+      <br><br>
+      (4.) Given: <i>n</i> collinear points: <br>
+      the number of different rays that can be named is: 2(<i>n</i> &minus; 1) rays.
+      <br><br>
+      (5.) Given: <i>n</i> collinear points: <br>
+      the number of different lines that can be named if order is important is found from the Permutation formula.
+      <br>
+      Two points are used to name a line. <br>
+      Permutation: order is important: <i>perm 2 from n</i> <br>
+      $P(n, 2) = \dfrac{n!}{(n - 2)!}$
+      <br><br>
+      (6.) Given: <i>n</i> collinear points: <br>
+      the number of different lines that can be named if order is <u>not</u> important is found from the Combination
+      formula. <br>
+      Two points are used to name a line. <br>
+      Combination: order is not important: <i>comb 2 from n</i> <br>
+      $C(n, 2) = \dfrac{n!}{(n - 2)! * 2!}$
+      <br><br>
+      (7.) Given: <i>n</i> coplanar points: <br>
+      the number of different ways to name the plane if order is important is found from the Permutation formula. <br>
+      Three points are used to name a plane. <br>
+      Permutation: order is important: <i>perm 3 from n</i> <br>
+      $P(n, 3) = \dfrac{n!}{(n - 3)!}$
+      <br><br>
+      (8.) Given: <i>n</i> coplanar points: <br>
+      the number of different ways to name the plane if order is <u>not</u> important is found from the Combination
+      formula. <br>
+      Three points are used to name a plane. <br>
+      Combination: order is not important: <i>comb 3 from n</i> <br>
+      $C(n, 3) = \dfrac{n!}{(n - 3)! * 3!}$
+      <br><br>
+      (9.) <b>Regular Polygons</b> <br>
+      Where: the <b>number of sides is greater than 4</b> <br>
+      Let: <br>
+      number of sides = <i>n</i> <br>
+      side length = <i>s</i> <br>
+      radius (the distance from the center to a vertex) = <i>r</i> <br>
+      apothem (shortest distance from the center to one of the sides) = <i>a</i> <br>
+      each interior angle = &theta; <br>
+      perimeter = P <br>
+      area = A
+      <br><br>
+      $
+      \Sigma \theta = 180^\circ(n - 2) \\[3ex]
+      \theta = \dfrac{180^\circ(n - 2)}{n} \\[5ex]
+      a = r\cos\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      a = \dfrac{s}{2\tan \left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      s = 2r\sin\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      s = 2a\tan\left(\dfrac{180^\circ}{n}\right) \\[7ex]
+      r = \dfrac{a}{\cos\left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      r = \dfrac{s}{2\sin\left(\dfrac{180^\circ}{n}\right)} \\[8ex]
+      P = ns \\[3ex]
+      P = 2rn\sin\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      P = 2an\tan\left(\dfrac{180^\circ}{n}\right) \\[6ex]
+      A = \dfrac{\pi r^2}{2}\sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+      A = \dfrac{aP}{2} \\[5ex]
+      A = \dfrac{ans}{2} \\[5ex]
+      A = \dfrac{\pi a^2}{\cos^2\left(\dfrac{180^\circ}{n}\right)} \sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+
+      \text{Sum of interior angles} = 180(n - 2) \\[4ex]
+      \text{Each interior angle} = \dfrac{180(n - 2)}{n} \\[6ex]
+      \text{Sum of exterior angles} = 360^\circ \\[4ex]
+      \text{Each interior angle} = \dfrac{360}{n} \\[6ex]
+      $
+
+      (10.) <b>Section Formula</b> <br>
+      Given two points say <i>A</i>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) and <i>B</i>(<i>x</i><sub>2</sub>,
+      <i>y</i><sub>2</sub>): if a point say <i>C</i>(<i>x</i>, <i>y</i>) divides the line segment |AB| in the ratio:
+      <i>m</i>:<i>n</i>, then the coordinates of <i>C</i> is given by:
+      <br><br>
+      $
+      C = \dfrac{mB + nA}{m + n} \\[5ex]
+      C(x, y) = \left(\dfrac{mx_2 + nx_1}{m + n}, \dfrac{my_2 + ny_1}{m + n}\right)
+      $
+
+      <br><br>
+
+      <ul class="w3-ul cornsilk">
+        <li class="w3-yellow w3-hover-black w3-center"><b>Symbols and Meanings for Circles</b></li>
+        <li>(<i>h</i>, <i>k</i>) = coordinates of the center of a circle</li>
+        <li><i>r</i> = radius of a circle</li>
+        <li><i>d</i> = diameter of a circle</li>
+        <li><i>C</i> = circumference of a circle (also known as the perimeter)</li>
+        <li><i>A</i> = area of a circle</li>
+        <li>&pi; = pi = $\dfrac{22}{7}$</li>
+        <li>&theta; = central angle</li>
+        <li>&deg; = DEG = degrees</li>
+        <li>RAD = radians</li>
+        <li><i>L</i> = length of arc</li>
+        <li><i>A</i><sub>sec</sub> = area of sector</li>
+        <li><i>P</i><sub>sec</sub> = perimeter of sector</li>
+        <li><i>A</i><sub>seg</sub> = area of segment</li>
+        <li><i>P</i><sub>seg</sub> = perimeter of segment</li>
+        <li>(<i>x</i><sub>1</sub>, <i>y</i><sub>1</sub>) = first endpoint of the diameter of a circle</li>
+        <li>(<i>x</i><sub>2</sub>, <i>y</i><sub>2</sub>) = second endpoint of the diameter of a circle</li>
+      </ul>
+
+      <br><br>
+
+      <b>Radius, Diameter, Circumference, Area</b>
+      <br><br>
+      $
+      \underline{Circle} \\[3ex]
+      d = 2r \\[3ex]
+      r = \dfrac{d}{2} \\[5ex]
+      C = \pi d \\[3ex]
+      d = \dfrac{C}{\pi} \\[5ex]
+      C = 2\pi r \\[3ex]
+      r = \dfrac{C}{2\pi} \\[5ex]
+      A = \pi r^2 \\[3ex]
+      r = \sqrt{\dfrac{A}{\pi}} \\[5ex]
+      A = \dfrac{\pi d^2}{4} \\[5ex]
+      d = \sqrt{\dfrac{4A}{\pi}} \\[5ex]
+      A = \dfrac{C^2}{4\pi} \\[5ex]
+      C = 2\sqrt{A\pi} \\[5ex]
+
+      \underline{Semicircle} \\[3ex]
+      d = 2r \\[3ex]
+      r = \dfrac{d}{2} \\[5ex]
+      C = \pi r \\[3ex]
+      C = \dfrac{\pi d}{2} \\[5ex]
+      r = \dfrac{C}{\pi} \\[5ex]
+      d = \dfrac{2C}{\pi} \\[5ex]
+      A = \dfrac{\pi r^2}{2} \\[5ex]
+      r = \sqrt{\dfrac{2A}{\pi}} \\[5ex]
+      A = \dfrac{\pi d^2}{8} \\[5ex]
+      d = \sqrt{\dfrac{8A}{\pi}} \\[7ex]
+
+      \underline{\theta\;\;in\;\;DEG} \\[3ex]
+      L = \dfrac{2\pi r\theta}{360} \\[5ex]
+      \theta = \dfrac{180L}{\pi r} \\[5ex]
+      r = \dfrac{180L}{\pi \theta} \\[5ex]
+      A_{sec} = \dfrac{\pi r^2\theta}{360} \\[5ex]
+      P_{sec} = \dfrac{r(\pi\theta + 360)}{180} \\[5ex]
+      \theta = \dfrac{360A_{sec}}{\pi r^2} \\[5ex]
+      r = \dfrac{360A_{sec}}{\pi\theta} \\[5ex]
+      A_{sec} = \dfrac{Lr}{2} \\[5ex]
+      A_{sec} = \dfrac{Lr}{2} \\[5ex]
+      r = \dfrac{2A_{sec}}{L} \\[5ex]
+      L = \dfrac{2A_{sec}}{r} \\[5ex]
+
+      \underline{\theta\;\;in\;\;RAD} \\[3ex]
+      L = r\theta \\[5ex]
+      \theta = \dfrac{L}{r} \\[5ex]
+      r = \dfrac{L}{\theta} \\[5ex]
+      A_{sec} = \dfrac{r^2\theta}{2} \\[5ex]
+      \theta = \dfrac{2A_{sec}}{r^2} \\[5ex]
+      r = \sqrt{\dfrac{2A_{sec}}{\theta}} \\[5ex]
+      $
+      (1.) <b>Standard Form of the Equation of a Circle</b> <br>
+      $(x - h)^2 + (y - k)^2 = r^2$ <br>
+      where: <br>
+      $x, y$ are the variables <br>
+      $(h, k)$ are the coordinates of the center of the circle <br>
+      $r$ is the radius of the circle
+      <br><br>
+
+      (2.) <b>General Form of the Equation of a Circle</b> <br>
+      $x^2 + y^2 + 2gx + 2fy + c = 0$ <br>
+      where: <br>
+      $x, y$ are the variables <br>
+      $c$ is the coefficient of $x$ <br>
+      $d$ is the coefficient of $y$ <br>
+      $c, d, e$ are values/constants
+      <br><br>
+      (3.) <u>Given:</u> <b>The Center Coordinates of a Circle and an Endpoint on the Circumference of the Circle</b>
+      <br>
+      The coordinates of the center of the circle = $(h, k)$ <br>
+      The endpoint on the circumference of the circle = $(x_1, y_1)$ <br>
+      The radius of the circle can be found by the <b>Distance Formula</b> <br>
+      The radius of the circle = $r$ <br>
+      r = $\sqrt{(x_1 - h)^2 + (y_1 - k)^2}$ <br>
+      The diameter of the circle = $d$ <br>
+      The diameter of the circle is twice the radius. <br>
+      $d = 2 * r$ <br>
+      The second endpoint of the diameter of the circle can also be found <br>
+      The second endpoint of the diameter of the circle = $(x_2, y_2)$ <br><br>
+      $
+      x_2 = x_1 + r \\[3ex]
+      y_2 = y_1 + r \\[3ex]
+      (x_2, y_2) = (x_1 + r, y_1 + r) \\[3ex]
+      $
+
+      (4.) <u>Given:</u> <b>The Endpoints of the Diameter of the Circle</b> <br>
+      $(x_1, y_1)$ = first endpoint of the diameter of a circle <br>
+      $(x_2, y_2)$ = second endpoint of the diameter of a circle <br>
+      The center of the circle is found using the <b>Midpoint Formula</b> <br>
+      $(h, k)$ are the coordinates of the center of the circle <br><br>
+      $
+      h = \dfrac{x_1 + x_2}{2} \\[5ex]
+      k = \dfrac{y_1 + y_2}{2} \\[5ex]
+      $
+
+      <b>Euler's Theorem:</b> The number of faces (F ), vertices (V ), and edges (E ) of a polyhedron are
+      related by the formula: F + V = E + 2 <br>
+      &Implies; F + V &minus; E = 2
+
+      <br><br>
+
+      In naming a line, two points are used. <br>
+      In naming a plane, three points are used.
+      <br><br>
+      We can measure angles in: <br>
+      Degrees (DEG, $^\circ$) <br>
+      Radians (RAD) <br>
+      Gradians (GRAD) <br>
+      Degrees, Minutes, and Seconds ($^\circ \:'\:''$) <br><br>
+      $DRG$ means $Degree-Radian-Gradian$ in some calculators <br>
+      $180^\circ = \pi \:\:RAD = 200 \:\:GRAD$ <br><br>
+      <u>To convert from:</u> <br>
+      radians to degrees, multiply by $\dfrac{180}{\pi}$ <br><br>
+      degrees to radians, multiply by $\dfrac{\pi}{180}$
+      <br><br>
+      $DMS$ means $Degree-Minute-Second$ in some calculators
+      <br><br>
+      $
+      1^\circ = 60' \\[3ex]
+      1^\circ = 3600'' \\[3ex]
+      1^\circ = 60' = 3600'' \\[3ex]
+      1' = 60'' \\[3ex]
+      $
+      <u>To convert from:</u> <br>
+      degrees to minutes, multiply by $60$ <br>
+      minutes to degrees, divide by $60$ <br>
+      degrees to seconds, multiply by $3600$ <br>
+      seconds to degrees, divide by $3600$ <br>
+      minutes to seconds, multiply by $60$ <br>
+      seconds to minutes, divide by $60$
+
+      <br><br>
+      <i>
+        Show students these angular measures in their scientific calculators. <br>
+        Show them how to convert from one angular measure to another.
+      </i>
+      <br><br>
+
+      <b>Ellipses</b>
+      <br><br>
+      <ul class="w3-ul cornsilk">
+        <li class="w3-yellow w3-hover-black w3-center"><b>Symbols and Meanings for Ellipses</b></li>
+        <li>(<i>h, k</i>) = coordinates of the center of an ellipse</li>
+        <li><b>Ellipse:</b> <i>a</i> = horizontal distance from the center to the boundary</li>
+        <li><b>Ellipse:</b> <i>b</i> = vertical distance from the center to the boundary</li>
+        <li><b>Horizontal Ellipse:</b> <i>a</i> = half the length of the major axis <u>OR</u> the
+          length of the semi-major axis</li>
+        <li><b>Horizontal Ellipse:</b> <i>b</i> = half the length of the minor axis <u>OR</u> the
+          length of the semi-minor axis</li>
+        <li><b>Vertical Ellipse:</b> <i>a</i> = half the length of the minor axis <u>OR</u> the
+          length of the semi-minor axis</li>
+        <li><b>Vertical Ellipse:</b> <i>b</i> = half the length of the major axis <u>OR</u> the
+          length of the semi-major axis</li>
+        <li><i>c</i> = linear eccentricity = distance from the center of the ellipse to the foci
+        </li>
+        <li>$f_1,f_2$ = foci points</li>
+        <li>$f$ = distance between the foci</li>
+        <li><i>e</i> = eccentricity</li>
+        <li><i>A</i> = area</li>
+        <li><i>P</i> = perimeter</li>
+        <li><i>L</i> = length of the latus rectum</li>
+        <li>$L_1,\;L_2,\;L_3,\;L_4$ = endpoints of the latus rectum</li>
+        <li><i>D</i> = distance between the two directrixes</li>
+        <li><i>C</i> = fractional factorials binomial coefficient</li>
+        <li>&lambda; = square of the ratio of the difference of the semi-axis to the sum of the
+          semi-axis</li>
+        <li><i>n</i> = number of terms</li>
+      </ul>
+      <br><br>
+
+
+      (1.) <b>Standard Form of the Equation of an Ellipse</b>
+      <br><br>
+      $
+      \dfrac{(x - h)^2}{a^2} + \dfrac{(y - k)^2}{b^2} = 1 \\[5ex]
+      $
+      If $a \gt b$, the ellipse is a horizontal ellipse. <br>
+      If $a \lt b$, the ellipse is a vertical ellipse.
+      <br><br>
+      $
+      \underline{\text{Assume a Horizontal Ellipse}} \\[3ex]
+      \text{Length of Major Axis} = 2a \\[3ex]
+      \text{Length of Minor Axis} = 2b \\[3ex]
+      \text{Distance between two Foci} = 2\sqrt{a^2 - b^2} \\[5ex]
+      $
+
+
+      (2.) <b>Eccentricity</b>
+      <br><br>
+      $
+      e = \dfrac{\sqrt{semiMajor\;\;axis\;\;length^2 - semiMinor\;\;axis\;\;length^2}}{semiMajor\;\;axis\;\;length}
+      \\[3ex]
+      $
+      In other words: <br>
+      <b>Eccentricity: Horizontal Ellipse:</b> <br>
+      Major axis is the horizontal axis <br>
+      Semi-major axis length = <i>a</i> <br><br>
+      $
+      e = \dfrac{\sqrt{a^2 - b^2}}{a} \\[3ex]
+      $
+
+      <b>Eccentricity: Vertical Ellipse:</b> <br>
+      Major axis is the vertical axis <br>
+      Semi-major axis length = <i>b</i>
+      <br><br>
+      $
+      e = \dfrac{\sqrt{b^2 - a^2}}{b} \\[5ex]
+      $
+
+      <br><br>
+      (1.) <b>Standard Form of a Horizontal Hyperbola</b>
+      <br><br>
+      $
+      \dfrac{(x - h)^2}{a^2} - \dfrac{(y - k)^2}{b^2} = 1 \\[5ex]
+      $
+      where: <br>
+      (<i>h, k</i>) is the coordinates of the center of the hyperbola <br>
+      the transverse axis is along the <i>x</i>-axis (horizontal transverse axis)
+      <br><br>
+      (2.) <b>Standard Form of a Vertical Hyperbola</b>
+      <br><br>
+      $
+      \dfrac{(y - h)^2}{b^2} - \dfrac{(x - k)^2}{a^2} = 1 \\[5ex]
+      $
+      where: <br>
+      (<i>h, k</i>) is the coordinates of the center of the hyperbola <br>
+      the transverse axis is along the <i>y</i>-axis (vertical transverse axis)
+      <br><br>
+      (3.) <b>Asymptotes of a Hyperbola</b>
+      <br><br>
+      $
+      \pm \dfrac{b}{a}x
+      $
+
+
+    </div>
+    <!-- End Formulas -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) The sum of the interior angles of a triangle is 180&deg;
+        <br><br>
+        (2.) The exterior angle of a triangle is the sum of the two interior opposite angles.
+        <br><br>
+        (3.) The sum of angles on a straight line is 180&deg;
+        <br><br>
+        (4.) The sum of the angles at a point is 360&deg;
+        <br><br>
+        (5.) <b>Interior Angle Sum Theorem:</b> The sum of the interior angles of a polygon (regular and irregular
+        polygons) is $180(n - 2)$ where <i>n</i> is the number of sides. <br>
+        This is because any polygon of <i>n</i> sides can be split into <i>n</i> &minus; 2 triangles.
+        <br><br>
+        (6.) <b>Exterior Angle Sum Theorem:</b> The sum of the exterior angles of a polygon (regular and irregular
+        polygons) is 360&deg;
+        <br><br>
+        (7.) <b>Angle Bisector Theorem:</b> Any point on the bisector of an angle is equidistant from the two sides of
+        the angle.
+        <br><br>
+        (8.) For any point on an ellipse, the sum of the distances from the foci to that point is equal to the length of
+        the major axis.
+        <br><br>
+
+
+
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Statements -->
+    <div class="w3-container w3-padding-32" id="statements">
+      <h2>Statements</h2>
+      <p>
+        (1.) <b>Regular Polygon Symmetry</b>: A regular polygon has equal side lengths and congruent interior angle
+        vertices. <br>
+        This symmetry leads to this statement: <br>
+        Any line drawn from the center of the center (radius) to a vertex of a regular polygon <b>bisects</b> the
+        interior angle of the polygon.
+
+      </p>
+    </div>
+    <!-- End Statements -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Numbered below are the 14 angles formed by parallel lines <i>l</i> and <i>m</i> and transversals <i>p</i>
+          and <i>q</i>. <br>
+          Lines <i>l, p,</i> and <i>q</i> intersect at a single point. <br>
+          Which of the following congruence statements <i>must</i> be true?
+          <br><br>
+          <img src="images/Geometry/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          $
+          A.\;\; \angle 1 \cong \angle 5 \\[3ex]
+          B.\;\; \angle 2 \cong \angle 1 \\[3ex]
+          C.\;\; \angle 3 \cong \angle 10 \\[3ex]
+          D.\;\; \angle 4 \cong \angle 2 \\[3ex]
+          E.\;\; \angle 5 \cong \angle 8 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG1')">Show/Hide Answer</button>
+          <div class="result" id="solutionG1">
+            <br>
+            $
+            \angle 5 \cong \angle 8 ... alternate\;\;exterior\;\angle s\;\;are\;\;congruent \\[3ex]
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) A section of highway is represented by a line segment with endpoints (30, 50) and (90, 100) in the
+          standard (<i>x, y</i>) coordinate plane. <br>
+          Exactly halfway along this highway section is a road sign. <br>
+          What are the coordinates of the road sign?
+          <br><br>
+          $
+          F.\;\; (30, 25) \\[3ex]
+          G.\;\; (60, 50) \\[3ex]
+          H.\;\; (60, 75) \\[3ex]
+          J.\;\; (70, 65) \\[3ex]
+          K.\;\; (75, 60) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG2')">Show/Hide Answer</button>
+          <div class="result" id="solutionG2">
+            <br>
+            The coordinates of the road sign is found by the Midpoint Formula.
+            <br><br>
+            $
+            Endpoint\;1 = (30, 50) \\[3ex]
+            x_1 = 30 \\[3ex]
+            y_1 = 50 \\[3ex]
+            Endpoint\;2 = (90, 100) \\[3ex]
+            x_2 = 90 \\[3ex]
+            y_2 = 100 \\[3ex]
+            Midpoint = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right) \\[5ex]
+            = \left(\dfrac{30 + 90}{2}, \dfrac{50 + 100}{2}\right) \\[5ex]
+            = \left(\dfrac{120}{2}, \dfrac{150}{2}\right) \\[5ex]
+            = (60, 75)
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) A circle with the equation $x^2 + y^2 = 16$ is graphed in the standard (<i>x, y</i>) coordinate plane.
+          <br>
+          At what points does the circle intersect the <i>x</i>-axis?
+          <br><br>
+          $
+          F.\;\; (-2, 0) \;\;and\;\; (2, 0) \\[3ex]
+          G.\;\; (-4, 0) \;\;and\;\; (4, 0) \\[3ex]
+          H.\;\; (-8, 0) \;\;and\;\; (8, 0) \\[3ex]
+          J.\;\; (-16, 0) \;\;and\;\; (16, 0) \\[3ex]
+          K.\;\; (-32, 0) \;\;and\;\; (32, 0) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG3')">Show/Hide Answer</button>
+          <div class="result" id="solutionG3">
+            <br>
+            Based on the Standard Form of the Equation of a Circle, compare:
+            $(x - h)^2 + (y - k)^2 = r^2$ with $x^2 + y^2 = 16$ <br>
+            This implies that:
+            <br><br>
+            $
+            x^2 + y^2 = 16 \\[4ex]
+            (x - 0)^ + (y - 0)^2 = 16 \\[4ex]
+            \implies \\[3ex]
+            center = (h, k) = (0, 0) \\[3ex]
+            r^2 = 16 \\[4ex]
+            r = \pm \sqrt{16} \\[3ex]
+            r = \pm 4 \\[3ex]
+            $
+            The radius cannot be a negative number. <br>
+            However, we shall consider the two values in finding the intersection on the <i>x</i>-axis.
+            <br><br>
+            <img src="images/Geometry/Answers/Number3.png" alt="Number 3">
+            This implies that: <br>
+            Intersecion on the <i>x</i>-axis = (-4, 0) and (4, 0)
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) For $\overleftrightarrow{RT}$ shown below, point <i>S</i> is on $\overline{RT}$, the length of
+          $\overline{RS}$ is 6 cm, and the length of $\overline{ST}$ is 20 cm. <br>
+          What is the distance, in centimeters, between <i>T</i> and the midpoint of $\overline{RS}$?
+          <br><br>
+          <img src="images/Geometry/Questions/Number4.png" alt="Number 4">
+          <br><br>
+          $
+          A.\;\; 13 \\[3ex]
+          B.\;\; 16 \\[3ex]
+          C.\;\; 20 \\[3ex]
+          D.\;\; 23 \\[3ex]
+          E.\;\; 26 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG4')">Show/Hide Answer</button>
+          <div class="result" id="solutionG4">
+            <br>
+            $
+            \text{Midpoint of}\; \overline{RS} = \dfrac{1}{2} \cdot 6 = 3 \\[5ex]
+            \text{Distance between T and the midpoint of}\; \overline{RS} \\[3ex]
+            = \text{Distance between the midpoint of}\; \overline{RS} + \text{length of}\; \overline{ST} \\[3ex]
+            = 3 + 20 \\[3ex]
+            = 23
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) The ellipse in the standard (<i>x, y</i>) coordinate plane below is centered at the origin. <br>
+          The endpoints of the major and minor axes of the ellipse are labeled. <br>
+          Which of the following equations determines this ellipse?
+          <br><br>
+          <img src="images/Geometry/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          $
+          A.\;\; (x - 8)^2 + (y - 5)^2 = 1 \\[4ex]
+          B.\;\; (x + 8)^2 + (y + 5)^2 = 1 \\[4ex]
+          C.\;\; \dfrac{x^2}{8} + \dfrac{y^2}{5} = 1 \\[6ex]
+          D.\;\; \dfrac{x^2}{16} + \dfrac{y^2}{10} = 1 \\[6ex]
+          E.\;\; \dfrac{x^2}{64} + \dfrac{y^2}{25} = 1 \\[6ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG5')">Show/Hide Answer</button>
+          <div class="result" id="solutionG5">
+            <br>
+            This is a Horizontal Ellipse
+            <br><br>
+            The easiest approach to solve these kinds of questions on ellipses because ACT is a timed test.
+            <br><br>
+            $
+            a = 8 \\[3ex]
+            b = 5 \\[3ex]
+            (h, k) = (0, 0) \\[3ex]
+            \dfrac{(x - h)^2}{a^2} + \dfrac{(y - k)^2}{b^2} = 1 \\[6ex]
+            \dfrac{(x - 0)^2}{8^2} + \dfrac{(y - 0)^2}{5^2} = 1 \\[6ex]
+            \dfrac{x^2}{64} + \dfrac{y^2}{25} = 1 \\[5ex]
+            $
+            <i>
+              <b>Student:</b> I would like to learn to solve it without considering the 1-minute per question time of
+              the ACT. <br>
+              May you please explain the solution? <br>
+              Show all work. <br>
+              <b>Teacher:</b> Sure, let's do it.
+            </i>
+            <br><br>
+            $
+            \underline{Center} \\[3ex]
+            Center = (h, k) = origin = (0, 0) \\[3ex]
+            $
+            We can calculate the length of both axis using at least two approaches: the major axis and the minor axis
+            <br>
+            Use any approach you prefer.
+            <br><br>
+            $
+            \underline{First\;\;Approach:\;\;Distance\;\;Formula} \\[3ex]
+            distance = \sqrt{(x_2 - x_1)^2 + (y_2 - y_1)^2} \\[5ex]
+
+            \text{Major Axis = x-axis} \\[3ex]
+            Endpoints = (-8, 0)\;\;and\;\;(8, 0) \\[3ex]
+            Point\;1 = (-8, 0) \\[3ex]
+            x_1 = -8 \\[4ex]
+            y_1 = 0 \\[4ex]
+            Point\;2 = (8, 0) \\[3ex]
+            x_2 = 8 \\[4ex]
+            y_2 = 0 \\[4ex]
+            distance = \sqrt{(8 - -8)^2 + (0 - 0)^2} \\[4ex]
+            = \sqrt{(8 + 8)^2 + (0)^2} \\[4ex]
+            = \sqrt{16^2 + 0^2} \\[4ex]
+            = \sqrt{256 + 0} \\[4ex]
+            = \sqrt{256} \\[3ex]
+            = 16 \\[3ex]
+            a = \dfrac{16}{2} \\[5ex]
+            a = 8 \\[5ex]
+
+            \text{Minor Axis = y-axis} \\[3ex]
+            Endpoints = (0, 5)\;\;and\;\;(0, -5) \\[3ex]
+            Point\;1 = (0, 5) \\[3ex]
+            x_1 = 0 \\[4ex]
+            y_1 = 5 \\[4ex]
+            Point\;2 = (0, -5) \\[3ex]
+            x_2 = 0 \\[4ex]
+            y_2 = -5 \\[4ex]
+            distance = \sqrt{(0 - 0)^2 + (-5 - 5)^2} \\[4ex]
+            = \sqrt{0^2 + (-10)^2} \\[4ex]
+            = \sqrt{0 + 100} \\[4ex]
+            = \sqrt{100} \\[3ex]
+            = 10 \\[3ex]
+            b = \dfrac{10}{2} \\[5ex]
+            b = 5 \\[5ex]
+
+            \underline{Second\;\;Approach:\;\;Coordinates} \\[3ex]
+            \text{Major Axis = x-axis} \\[3ex]
+            Half-length = a \\[3ex]
+            Endpoints = (-8, 0)\;\;and\;\;(8, 0) \\[3ex]
+            x-coordinates\;\;of\;\;Endpoints = -8\;\;and\;\;8 \\[3ex]
+            x-coordinate\;\;of\;\;Center = 0 \\[3ex]
+            \implies \\[3ex]
+            -8 + a = 0 \;\;\;OR\;\;\; 8 - a = 0 \\[3ex]
+            a = 0 + 8 \;\;\;OR\;\;\; 8 - 0 = a \\[3ex]
+            a = 8 \\[5ex]
+            \text{Minor Axis = y-axis} \\[3ex]
+            Half-length = b \\[3ex]
+            Endpoints = (0, 5)\;\;and\;\;(0, -5) \\[3ex]
+            y-coordinates\;\;of\;\;Endpoints = 5\;\;and\;\;-5 \\[3ex]
+            y-coordinate\;\;of\;\;Center = 0 \\[3ex]
+            \implies \\[3ex]
+            5 - b = 0 \;\;\;OR\;\;\; -5 + b = 0 \\[3ex]
+            5 + 0 = b \;\;\;OR\;\;\; b = 0 + 5 \\[3ex]
+            b = 5 \\[5ex]
+            \underline{Standard\;\;Form} \\[3ex]
+            \dfrac{(x - h)^2}{a^2} + \dfrac{(y - k)^2}{b^2} = 1 \\[5ex]
+            \dfrac{(x - 0)^2}{8^2} + \dfrac{(y - 0)^2}{5^2} = 1 \\[5ex]
+            \dfrac{x^2}{64} + \dfrac{y^2}{25} = 1 \\[5ex]
+            LCD = 64 \cdot 25 = 1600 \\[3ex]
+            1600 \cdot \dfrac{x^2}{64} + 1600 \cdot \dfrac{y^2}{25} = 1600(1) \\[5ex]
+            25x^2 + 64y^2 = 1600
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The graph in the standard (<i>x, y</i>) coordinate plane below has 5 lines of symmetry that all intersect
+          at the origin. <br>
+          What is the smallest positive clockwise rotation about the origin that can be applied to this graph with the
+          result being this graph?
+          <br><br>
+          <img src="images/Geometry/Questions/Number6.png" alt="Number 6">
+          <br><br>
+          $
+          F.\;\; 72^\circ \\[4ex]
+          G.\;\; 90^\circ \\[4ex]
+          H.\;\; 120^\circ \\[4ex]
+          J.\;\; 144^\circ \\[4ex]
+          K.\;\; 216^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG6')">Show/Hide Answer</button>
+          <div class="result" id="solutionG6">
+            <br>
+            5 lines of symmetry intersecting at the origin implies that the graph is symmetrical at regular intervals of
+            each rotation.
+            <br>
+            A full rotation = 360&deg; <br>
+            This is equivalent to 5 rotations corresponding to the 5 lines of symmetry
+            <br><br>
+            $
+            5\;rotations \rightarrow 360^\circ \\[4ex]
+            1\;rotation \rightarrow \dfrac{360}{5} = 72^\circ \\[3ex]
+            $
+            The smallest positive clockwise rotation about the origin = 72&deg;
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.) The points <i>K, L, M,</i> and <i>N</i> are on a number line in that order such that <i>KM</i> = 15
+          units, <i>LN</i> = 26 units, and <i>KN</i> = 32 units. <br>
+          The coordinate of <i>L</i> is 0, and the coordinate of <i>K</i> is negative. <br>
+          What is the coordinate of <i>M</i>?
+          <br><br>
+          $
+          F.\;\; 6 \\[3ex]
+          G.\;\; 9 \\[3ex]
+          H.\;\; 11 \\[3ex]
+          J.\;\; 15 \\[3ex]
+          K.\;\; 17 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG7')">Show/Hide Answer</button>
+          <div class="result" id="solutionG7">
+            <br>
+            Let the coordinate of <i>K</i> = &minus;<i>n</i> <br>
+            Let the coordinate of <i>M</i> = <i>p</i>
+            <br><br>
+            Let us represent the information diagrammatically: <br>
+            <img src="images/Geometry/Answers/Number7.png" alt="Number 7">
+            <br><br>
+            Let us use a table to solve the question for easier comprehension.
+            <br><br>
+            <table class="w3-center">
+              <tr>
+                <td style="width: 25%; color: darkblue;">$|KL|$</td>
+                <td style="width: 25%; color: darkblue;">$|KL|$</td>
+                <td style="width: 25%; color: black;">$|KM|$</td>
+                <td style="width: 25%; color: black;">$|KM|$</td>
+              </tr>
+              <tr>
+                <td>
+                  $
+                  0 - (-n) \\[3ex]
+                  0 + n \\[3ex]
+                  n
+                  $
+                </td>
+                <td>
+                  $
+                  32 - 26 \\[3ex]
+                  6
+                  $
+                </td>
+                <td>
+                  $
+                  p - (-n) \\[3ex]
+                  p + n \\[3ex]
+                  $
+                </td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  $n = 6$
+                </td>
+                <td colspan="2">
+                  $
+                  p + n = 15 \\[3ex]
+                  p + 6 = 15 \\[3ex]
+                  p = 15 - 6 \\[3ex]
+                  p = 9
+                  $
+                </td>
+              </tr>
+            </table>
+            <br>
+            The coordinate of <i>M</i> is 9.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) Which of the following points is NOT on the graph of the function $y = |2x| - 4$ in the standard (<i>x,
+            y</i>) coordinate plane?
+          <br><br>
+          $
+          F.\;\; (-2, 0) \\[3ex]
+          G.\;\; (-1, 2) \\[3ex]
+          H.\;\; (1, -2) \\[3ex]
+          J.\;\; (2, 0) \\[3ex]
+          K.\;\; (4, 4) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG8')">Show/Hide Answer</button>
+          <div class="result" id="solutionG8">
+            <br>
+            Let us test each coordinate until we get an output that does not correspond to the input
+            <br><br>
+            <table class="w3-center">
+              <caption>$y = |2x| - 4$</caption>
+              <tr>
+                <td>$(-2, 0)$</td>
+                <td>
+                  $
+                  x = -2 \\[3ex]
+                  y = 0 \\[3ex]
+                  |2(-2)| - 4 \\[3ex]
+                  |-4| - 4 \\[3ex]
+                  4 - 4 \\[3ex]
+                  0 ...\checkmark
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>$(-1, 2)$</td>
+                <td>
+                  $
+                  x = -1 \\[3ex]
+                  y = 2 \\[3ex]
+                  |2(-1)| - 4 \\[3ex]
+                  |-2| - 4 \\[3ex]
+                  2 - 4 \\[3ex]
+                  -2...STOP \\[3ex]
+                  -2 \ne 2 ...\text{Option G. is the answer}
+                  $
+                </td>
+              </tr>
+            </table>
+            <br>
+            <i>
+              <b>Student:</b> Is it not recommended to test each option just to be sure? <br>
+              <b>Teacher:</b> Because of the time limit for each question on the ACT, we need not test each option. <br>
+              <b>Student:</b> Can we just complete it just to be sure that all the options checks well? <br>
+              <b>Teacher:</b> Sure, let's do it.
+            </i>
+            <br><br>
+            <table class="w3-center">
+              <caption>$y = |2x| - 4$</caption>
+              <tr>
+                <td>$(1, -2)$</td>
+                <td>
+                  $
+                  x = 1 \\[3ex]
+                  y = -2 \\[3ex]
+                  |2(1)| - 4 \\[3ex]
+                  |2| - 4 \\[3ex]
+                  2 - 4 \\[3ex]
+                  -2 ...\checkmark
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>$(2, 0)$</td>
+                <td>
+                  $
+                  x = 2 \\[3ex]
+                  y = 0 \\[3ex]
+                  |2(2)| - 4 \\[3ex]
+                  |4| - 4 \\[3ex]
+                  4 - 4 \\[3ex]
+                  0 ...\checkmark
+                  $
+                </td>
+              </tr>
+              <tr>
+                <td>$(4, 4)$</td>
+                <td>
+                  $
+                  x = 4 \\[3ex]
+                  y = 4 \\[3ex]
+                  |2(4)| - 4 \\[3ex]
+                  |8| - 4 \\[3ex]
+                  8 - 4 \\[3ex]
+                  4 ...\checkmark
+                  $
+                </td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) A circle is tangent to the <i>x</i>-axis and to the <i>y</i>-axis. <br>
+          The coordinates of its center are both positive. <br>
+          The area of the circle is 64&pi;. <br>
+          What are the coordinates of the point of tangency on the <i>y</i>-axis?
+          <br><br>
+          $
+          F.\;\; (0, 4) \\[3ex]
+          G.\;\; (0, 8) \\[3ex]
+          H.\;\; (0, 16) \\[3ex]
+          J.\;\; (0, 32) \\[3ex]
+          K.\;\; (0, 64) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG9')">Show/Hide Answer</button>
+          <div class="result" id="solutionG9">
+            <br>
+            The coordinates of its center are both positive: this implies that the center is in the <b>First
+              Quadrant</b> <br>
+            It is better to represent this information diagramaatically:
+            <br><br>
+            <img src="images/Geometry/Answers/Number9.png" alt="Number 9">
+            <br><br>
+            To get the coordinates of the point of tangency on the <i>y</i>-axis, we need to find the radius <br>
+            The radius is the <i>y</i>-coordinate of the point of tangency on the <i>y</i>-axis
+            <br><br>
+            $
+            Area = \pi \cdot radius^2 \\[4ex]
+            64\pi = \pi \cdot radius^2 \\[4ex]
+            radius^2 = 64 \\[4ex]
+            radius = +\sqrt{64}...\text{The length of the radius must be positive} \\[3ex]
+            radius = 8 \\[3ex]
+            \therefore \text{The coordinates of the point} = (0, 8) ...\text{First Quadrant}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.) If an obtuse angle is bisected, the resulting angles <i>must:</i>
+          <br><br>
+          <b>A.</b> both be acute. <br>
+          <b>B.</b> be complementary. <br>
+          <b>C.</b> both be obtuse. <br>
+          <b>D.</b> both be right. <br>
+          <b>E.</b> be supplementary.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG10')">Show/Hide Answer</button>
+          <div class="result" id="solutionG10">
+            <br>
+            <i>
+              <b>Teacher:</b> Dear Student <br>
+              <b>Student:</b> Yes Mr. C <br>
+              <b>Teacher:</b> What is the greatest value of an obtuse angle that is a whole number? <br>
+              <b>Student:</b> 179&deg; <br>
+              <b>Teacher:</b> Bisecting ...note the term: "bi"...this means "two" <br>
+              Bisecting an angle means dividing the angle in two equal measures <br>
+              Bisecting angle 179&deg; gives... <br>
+              <b>Student:</b> 89.5&deg;...this is an acute angle <br>
+              <b>Teacher:</b> Thank you. <br>
+              What is the smallest whole number obtuse angle? <br>
+              <b>Student:</b> 91&deg; <br>
+              Bisecting it gives 45.5&deg;...this is also an acute angle
+            </i>
+            <br><br>
+            Therefore, if an obtuse angle is bisected, the resulting angles <i>must:</i> both be acute.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) The following shapes are a circle and some regular polygons that have their centers marked. <br>
+          All units are given in feet. <br>
+          Which of these shapes has the greatest area?
+          <br><br>
+          <img src="images/Geometry/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG11')">Show/Hide Answer</button>
+          <div class="result" id="solutionG11">
+            <br>
+            F. is a circle with radius, 1 unit <br>
+            G. is a square with apothem, 1 unit <br>
+            H. is a square with radius, 1 unit <br>
+            J. is an octagon with radius, 1 unit <br>
+            K. is an octagon with apothem, 1 unit
+            <br><br>
+            As the number of sides of the polygon increases, the shape becomes more circular, making the area approach
+            that of a circle. <br>
+            This typically implies that the area of the circle is greater than the area of the octagon. <br>
+            So, options J. and K. are out.
+            <br><br>
+            For the same radius of 1 unit, a circle has a greater area than a square because a circle encloses the
+            maximum area possible for a given perimeter due to its continuous curvature, while a square has corners that
+            do not use the radius as efficiently. <br>
+            So, option H, is out.
+            <br><br>
+            We are now left with the two options of F. and G. <br>
+            <u>For the Square:</u> The apothem is a shorter distance within the square (from center to midpoint of a
+            side) which allows for a longer side length. <br>
+            <u>For the Circle:</u> The radius of the circle defines the circle's circumference, leading to a smaller
+            enclosed area when compared to the larger side length of the square. <br>
+            Hence, a square with an apothem of 1 unit has a greater area than a circle with a radius of 1 unit. <br>
+            Option F. is out.
+            <br><br>
+            This implies that the correct option is G.
+            <br><br>
+            <i>
+              <b>Student:</b> Mr. C, I want to see these areas worked out so I know the correct option. <br>
+              <b>Teacher:</b> No problem. We shall work it out. <br>
+              However, please note that each question on the ACT is limited to 1 minute. <br>
+              Working it out will take more than a minute. <br>
+              So, keep that in mind when taking your ACT.
+            </i>
+            <br><br>
+            $
+            \underline{Option\;F:\;\;Circle} \\[3ex]
+            r = 1\;unit \\[3ex]
+            A = \pi r^2 \\[3ex]
+            A = \pi \cdot (1)^2 \\[4ex]
+            A = 3.141592654\;square\;\;units \\[5ex]
+            \underline{Option\;G:\;\;Square} \\[3ex]
+            a = 1\;unit \\[3ex]
+            L = 2a = 2(1) = 2 \\[3ex]
+            A = L^2 = 2^2 \\[3ex]
+            A = 4\;square\;\;units \\[5ex]
+            \underline{Option\;H:\;\;Square} \\[3ex]
+            r = 1\;unit \\[3ex]
+            \implies\;\;4\;\;Right\;\;\triangle s \\[3ex]
+            Area\;\;of\;\;1\;\;Right\;\;\triangle \\[3ex]
+            b = r = 1\;cm \\[3ex]
+            h = 1\;cm \\[3ex]
+            A = \dfrac{1}{2} \cdot b \cdot h \\[5ex]
+            A = \dfrac{1}{2} \cdot 1 \cdot 1 \\[5ex]
+            A = \dfrac{1}{2}\;units \\[5ex]
+            Area\;\;of\;\;4\;\;Right\;\;\triangle s \\[3ex]
+            A = \dfrac{1}{2} \cdot 4 \\[5ex]
+            A = 2\;square\;\;units \\[5ex]
+            \underline{Option\;J:\;\;Octagon} \\[3ex]
+            r = 1\;unit \\[3ex]
+            n = 8 \\[3ex]
+            A = \dfrac{\pi r^2}{2}\sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+            A = \dfrac{\pi \cdot (1)^2}{2}\sin\left(\dfrac{360^\circ}{8}\right) \\[7ex]
+            A = \dfrac{\pi}{2}\sin 45^\circ \\[5ex]
+            A = 1.110720735\;square\;\;units \\[5ex]
+            \underline{Option\;K:\;\;Octagon} \\[3ex]
+            a = 1\;unit \\[3ex]
+            A = \dfrac{\pi a^2}{\cos^2\left(\dfrac{180^\circ}{n}\right)} \sin\left(\dfrac{360^\circ}{n}\right) \\[7ex]
+            A = \dfrac{\pi \cdot (1)^2}{\cos^2\left(\dfrac{180^\circ}{8}\right)} \sin\left(\dfrac{360^\circ}{8}\right)
+            \\[7ex]
+            A = \dfrac{\pi\sin(45^\circ)}{\cos^2(22.5^\circ)} \\[7ex]
+            A = 2.602580569\;square\;\;units \\[3ex]
+            $
+            The results further confirm that Option G. is the correct answer.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.) As shown in the figure below, points <i>A, B,</i> and <i>D</i> lie on a line. <br>
+          The measure of angle <i>ABC</i> ($m\angle ABC$) is <i>x</i>&deg;, and ($m\angle CBD$) is (5<i>x</i> + 4)&deg;.
+          <br><br>
+          <img src="images/Geometry/Questions/Number12.png" alt="Number 12">
+          <br><br>
+          $
+          A.\;\; (5x + 4) = x \\[3ex]
+          B.\;\; x - (5x + 4) = 90 \\[3ex]
+          C.\;\; x + (5x + 4) = 90 \\[3ex]
+          D.\;\; x + (5x + 4) = 180 \\[3ex]
+          E.\;\; x + (5x + 4) = 360 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG12')">Show/Hide Answer</button>
+          <div class="result" id="solutionG12">
+            <br>
+            $
+            x + (5x + 4) = 180 ...\text{sum of angles on a straight line}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) In the figure below, $\overleftrightarrow{DE} \;||\; \overleftrightarrow{GF}$, point <i>A</i> lies on
+          $\overline{DE}$, points <i>C</i> and <i>B</i> lie on $\overline{GF}$, $m\angle GCA = 120^\circ$, and $m\angle
+          GBA = 50^\circ$. <br>
+          What is $m\angle CAB$? <br>
+          (Note: The figure is NOT drawn to scale. <br>
+          The degree measure of $\angle STU$ is denoted $m\angle STU$.)
+          <br><br>
+          <img src="images/Geometry/Questions/Number13.png" alt="Number 13">
+          <br><br>
+          $
+          F.\;\; 10^\circ \\[4ex]
+          G.\;\; 20^\circ \\[4ex]
+          H.\;\; 50^\circ \\[4ex]
+          J.\;\; 60^\circ \\[4ex]
+          K.\;\; 70^\circ \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG13')">Show/Hide Answer</button>
+          <div class="result" id="solutionG13">
+            <br>
+            Let us update the information on the diagram
+            <br><br>
+            <img src="images/Geometry/Answers/Number13.png" alt="Number 13">
+            <br><br>
+            $
+            m\angle GCA = m\angle CAB + m\angle GBA
+            ...\text{exterior angle of a triangle = sum of two interior opposite angles} \\[3ex]
+            120^\circ = m\angle CAB + 50^\circ \\[4ex]
+            m\angle CAB = 120 - 50 \\[3ex]
+            m\angle CAB = 70^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.) In the figure below, <i>C</i> is the intersection of $\overline{AD}$ and $\overline{BE}$ <br>
+          What is the measure of $\angle BAC$?
+          <br><br>
+          <img src="images/Geometry/Questions/Number14.png" alt="Number 14">
+          <br><br>
+          $
+          F.\;\; 85^\circ \\[3ex]
+          G.\;\; 95^\circ \\[3ex]
+          H.\;\; 115^\circ \\[3ex]
+          J.\;\; 120^\circ \\[3ex]
+          K.\;\; 140^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG14')">Show/Hide Answer</button>
+          <div class="result" id="solutionG14">
+            <br>
+            $
+            \angle BCA = 55^\circ ...\text{vertical angles are congruent} \\[3ex]
+            \angle BAC + \angle ABC + \angle BCA = 180^\circ ...\text{sum of angles in triangle BAC} \\[3ex]
+            \angle BAC + 30^\circ + 55^\circ = 180^\circ \\[3ex]
+            \angle BAC = 180 - 30 - 55 \\[3ex]
+            \angle BAC = 95^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.) Points <i>A</i>(8,5) and <i>C</i>(&minus;4,11) lie in the standard (<i>x, y</i>) coordinate plane. <br>
+          Point <i>B</i> lies on $\overline{AC}$ such that <i>AB</i>:<i>BC</i> = 1:2 <br>
+          What are the coordinates of <i>B</i>?
+          <br><br>
+          $
+          F.\;\; (-8, 13) \\[3ex]
+          G.\;\; (0, 9) \\[3ex]
+          H.\;\; (2, 8) \\[3ex]
+          J.\;\; (3, 6) \\[3ex]
+          K.\;\; (4, 7) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG15')">Show/Hide Answer</button>
+          <div class="result" id="solutionG15">
+            <br>
+            We can solve this question using at least two approaches. <br>
+            Use any approach you prefer.
+            <br><br>
+            $
+            \underline{\text{1st Approach: Section Formula}} \\[3ex]
+            A(8, 5) \hspace{5em} C(-4, 11) \\[3ex]
+            x_1 = 8 \hspace{5em} x_2 = -4 \\[4ex]
+            y_1 = 5 \hspace{5em} y_2 = 11 \\[4ex]
+            \text{Point B divides |AC| in the ratio of 1:2} \\[5ex]
+            \text{Coordinates of B} = \left[\dfrac{1 \cdot x_2 + 2 \cdot x_1}{1 + 2}, \dfrac{1 \cdot y_2 + 2 \cdot
+            y_1}{1 + 2}\right] \\[5ex]
+            \text{Coordinates of B} = \left[\dfrac{1(-4) + 2(8)}{1 + 2}, \dfrac{1(11) + 2(5)}{1 + 2}\right] \\[5ex]
+            = \left(\dfrac{-4 + 16}{3}, \dfrac{11 + 10}{3}\right) \\[5ex]
+            = \left(\dfrac{12}{3}, \dfrac{21}{3}\right) \\[5ex]
+            = (4, 7) \\[5ex]
+            \underline{\text{2nd Approach: Vector Algebra}} \\[3ex]
+            \overrightarrow{A} = (8, 5) \\[4ex]
+            \overrightarrow{C} = (-4, 11) \\[4ex]
+            \overrightarrow{AC} = \overrightarrow{C} - \overrightarrow{A} \\[4ex]
+            = (-4, 11) - (8, 5) \\[3ex]
+            = (-4 - 8, 11 - 5) \\[3ex]
+            = (-12, 6) \\[5ex]
+            \overrightarrow{AB} : \overrightarrow{BC} = 1 : 2 \\[4ex]
+            \text{Sum of ratios} = 1 + 2 = 3 \\[3ex]
+            \overrightarrow{AB} = \dfrac{1}{3} \cdot \overrightarrow{AC} \\[6ex]
+            = \dfrac{1}{3} \cdot (-12, 6) \\[5ex]
+            = \left(-\dfrac{12}{3}, \dfrac{6}{3}\right) \\[5ex]
+            = (-4, 2) \\[5ex]
+            \text{Coordinates of B} = \overrightarrow{A} + \overrightarrow{AB} \\[5ex]
+            = (8, 5) + (-4, 2) \\[3ex]
+            = (8 + -4, 5 + 2) \\[3ex]
+            = (4, 7)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.) For $\overleftrightarrow{RT}$ shown below, point <i>S</i> is on $\overline{RT}$, the length of
+          $\overline{RS}$ is 10 cm, and the length of $\overline{ST}$ is 22 cm. <br>
+          What is the distance, in centimeters, between <i>T</i> and the midpoint of $\overline{RS}$?
+          <br><br>
+          <img src="images/Geometry/Questions/Number16.png" alt="Number 16">
+          <br><br>
+          $
+          A.\;\; 16 \\[3ex]
+          B.\;\; 21 \\[3ex]
+          C.\;\; 22 \\[3ex]
+          D.\;\; 27 \\[3ex]
+          E.\;\; 32 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG16')">Show/Hide Answer</button>
+          <div class="result" id="solutionG16">
+            <br>
+            $
+            \text{Midpoint of}\; \overline{RS} = \dfrac{1}{2} \cdot 10 = 5 \\[5ex]
+            \text{Distance between T and the midpoint of}\; \overline{RS} \\[3ex]
+            = \text{Distance between the midpoint of}\; \overline{RS} + \text{length of}\; \overline{ST} \\[3ex]
+            = 5 + 22 \\[3ex]
+            = 27
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) A certain rectangle in the standard (<i>x, y</i>) coordinate plane has a length of 7 coordinate units
+          and
+          a width of 5 coordinate units. <br>
+          The point (0,0) is in the interior of this rectangle. <br>
+          Two vertices of this rectangle are at (3, 2) and (3, &minus;3). <br>
+          What is the <i>x</i>-coordinate of the other 2 vertices?
+          <br><br>
+          $
+          A.\;\; -4 \\[3ex]
+          B.\;\; -3 \\[3ex]
+          C.\;\; -2 \\[3ex]
+          D.\;\; 8 \\[3ex]
+          E.\;\; 10 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG17')">Show/Hide Answer</button>
+          <div class="result" id="solutionG17">
+            <br>
+            Let us represent this information using a diagram. <br>
+            Indicate the points given already. <br>
+            Then, count 7 units to the left
+            <br><br>
+            <img src="images/Geometry/Answers/Number17.png" alt="Number 17">
+            <br><br>
+            Notice that (0, 0) must be inside the rectangle, hence we have to count to the left from <i>x</i> = 3 <br>
+            <i>But, what if you do not want to draw on a graph paper (or sketch a graph paper)?</i>
+            <br><br>
+            $
+            Length = 7\;units \\[3ex]
+            |x - 3| = 7 \\[3ex]
+            x - 3 = 7 \\[3ex]
+            x = 10 \\[5ex]
+            OR \\[3ex]
+            -(x - 3) = 7 \\[3ex]
+            -1 \cdot -(x - 3) = -1 \cdot 7 \\[3ex]
+            x - 3 = -7
+            x = -7 + 3 \\[3ex]
+            x = -4 \\[3ex]
+            $
+            But (0,0) should be included in the interior of the rectangle <br>
+            Discard the <i>x</i>-coordinate of 10 because it does not include (0,0) <br>
+            This implies that the <i>x</i>-coordinate of the other two vertices = &minus;4
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.) Li is walking from one point on a large model of the standard (<i>x, y</i>) coordinate plane to another
+          point. <br>
+          She walks only along lines parallel or perpendicular to the <i>x</i>-axis. <br>
+          The expression $|6 - 1| + |2 - (-5)|$ gives the minimum distance, in coordinate units, Li
+          walks between which of the following pairs of points?
+          <br><br>
+          $
+          F.\;\; (2, 6) \;\;and\;\; (-5, 1) \\[3ex]
+          G.\;\; (2, 6) \;\;and\;\; (-1, -5) \\[3ex]
+          H.\;\; (6, -5) \;\;and\;\; (-1, 2) \\[3ex]
+          J.\;\; (6, -1) \;\;and\;\; (2, 5) \\[3ex]
+          K.\;\; (6, 1) \;\;and\;\; (2, -5) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG18')">Show/Hide Answer</button>
+          <div class="result" id="solutionG18">
+            <br>
+            $
+            \text{Minimum Distance} \\[3ex]
+            |6 - 1| + |2 - (-5)| \\[3ex]
+            |x_2 - x_1| + |y_2 - y_1| \\[3ex]
+            OR \\[3ex]
+            |y_2 - y_1| + |x_2 - x_1| \\[5ex]
+
+            |6 - 1| + |2 - (-5)| \\[3ex]
+            |x_2 - x_1| + |y_2 - y_1| \\[3ex]
+            x_2 = 6 \\[3ex]
+            x_1 = 1 \\[3ex]
+            y_2 = 2 \\[3ex]
+            y_1 = -5 \\[3ex]
+            (x_1, y_1) = (1, -5) \\[3ex]
+            (x_2, y_2) = (6, 2) \\[3ex]
+            \text{Not in the option} \\[5ex]
+            OR \\[3ex]
+            |6 - 1| + |2 - (-5)| \\[3ex]
+            |y_2 - y_1| + |x_2 - x_1| \\[3ex]
+            y_2 = 6 \\[3ex]
+            y_1 = 1 \\[3ex]
+            x_2 = 2 \\[3ex]
+            x_1 = -5 \\[3ex]
+            (x_1, y_1) = (-5, 1) \\[3ex]
+            (x_2, y_2) = (2, 6) \\[3ex]
+            \text{Option F}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.) One of the following equations is an equation of the circle graphed in the standard (<i>x, y</i>)
+          coordinate plane below. <br>
+          Which one is it?
+          <br><br>
+          <img src="images/Geometry/Questions/Number19.png" alt="Number 19">
+          <br><br>
+          $
+          F.\;\; x^2 + y^2 = 1 \\[4ex]
+          G.\;\; x^2 + y^2 - 2x = 1 \\[4ex]
+          H.\;\; x^2 + y^2 - 2y = 1 \\[4ex]
+          J.\;\; x^2 + y^2 + 2x = 1 \\[4ex]
+          K.\;\; x^2 + y^2 + 2y = 1 \\[4ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG19')">Show/Hide Answer</button>
+          <div class="result" id="solutionG19">
+            <br>
+            We are not given the center of the circle. <br>
+            Neither are we given the coordinates. <br>
+            We can assume the coordinates of the points on the circumference <i>visually</i> <br>
+            However, let us analyze the graphs of each option.
+            <br><br>
+            $F.\;\; x^2 + y^2 = 1$ <br>
+            <img src="images/Geometry/Answers/Number19-F.png" alt="Number 19-F">
+            <br><br>
+            $G.\;\; x^2 + y^2 - 2x = 1$ <br>
+            <img src="images/Geometry/Answers/Number19-G.png" alt="Number 19-G">
+            <br><br>
+            $H.\;\; x^2 + y^2 - 2y = 1$ <br>
+            <img src="images/Geometry/Answers/Number19-H.png" alt="Number 19-H">
+            <br><br>
+            $J.\;\; x^2 + y^2 + 2x = 1$ <br>
+            <img src="images/Geometry/Answers/Number19-J.png" alt="Number 19-J">
+            <br><br>
+            $K.\;\; x^2 + y^2 + 2y = 1$ <br>
+            <img src="images/Geometry/Answers/Number19-K.png" alt="Number 19-K">
+            <br><br>
+            As you can see, Option <b>J.</b> is the correct option. <br>
+            For this kind of question, I recommend that you select the answer based on your knowledge of graphs. <br>
+            Carefully observe the coefficients of <i>x</i> or <i>y</i> in these graphs: <br>
+            &minus;2<i>x</i> in Option G. <br>
+            &minus;2<i>y</i> in Option H. <br>
+            2<i>x</i> in Option J. <br>
+            2<i>y</i> in Option K.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.) The graph of which of the equations below is a hyperbola with the same asymptotes as the graph of
+          $\dfrac{x^2}{9} - \dfrac{y^2}{4} = 1$?
+          <br><br>
+          $
+          F.\;\; \dfrac{x^2}{9} + \dfrac{y^2}{4} = 1 \\[5ex]
+          G.\;\; \dfrac{x^2}{4} - \dfrac{y^2}{9} = 1 \\[5ex]
+          H.\;\; \dfrac{y^2}{9} + \dfrac{x^2}{4} = 1 \\[5ex]
+          J.\;\; \dfrac{y^2}{9} - \dfrac{x^2}{4} = 1 \\[5ex]
+          K.\;\; \dfrac{y^2}{4} - \dfrac{x^2}{9} = 1 \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG20')">Show/Hide Answer</button>
+          <div class="result" id="solutionG20">
+            <br>
+            1st: Let us determine the asymptotes of the hyperbola
+            <br><br>
+            $
+            Hyperbola:\;\; \dfrac{x^2}{9} - \dfrac{y^2}{4} = 1 \\[5ex]
+            \text{This is a horizontal hyperbola} \\[3ex]
+            \text{Standard Form: center at the origin}: \dfrac{x^2}{a^2} - \dfrac{y^2}{b^2} = 1 \\[5ex]
+            a^2 = 9 \hspace{3em} b^2 = 4 \\[3ex]
+            a = \sqrt{9} \hspace{3em} b = \sqrt{4} \\[3ex]
+            a = 3 \hspace{3em} b = 2 \\[3ex]
+            Asymptotes:\;\; y = \pm \dfrac{b}{a}x \\[5ex]
+            y = \pm \dfrac{2}{3}x \\[5ex]
+            $
+            Let us analyze each option.
+            <br><br>
+            $
+            F.\;\; \dfrac{x^2}{9} + \dfrac{y^2}{4} = 1 \\[5ex]
+            \text{This is a horizontal ellipse} \\[3ex]
+            \text{Incorrect option} \\[5ex]
+            G.\;\; \dfrac{x^2}{4} - \dfrac{y^2}{9} = 1 \\[5ex]
+            \text{This is a horizontal hyperbola} \\[3ex]
+            a^2 = 4 \hspace{3em} b^2 = 9 \\[3ex]
+            a = \sqrt{4} \hspace{3em} b = \sqrt{9} \\[3ex]
+            a = 2 \hspace{3em} b = 3 \\[3ex]
+            Asymptotes:\;\; y = \pm \dfrac{b}{a}x \\[5ex]
+            y = \pm \dfrac{3}{2}x \\[5ex]
+            \pm \dfrac{3}{2}x \ne \pm \dfrac{2}{3}x \\[5ex]
+            \text{Incorrect option} \\[5ex]
+            H.\;\; \dfrac{y^2}{9} + \dfrac{x^2}{4} = 1 \\[5ex]
+            \text{This is a vertical ellipse} \\[3ex]
+            \text{Incorrect option} \\[5ex]
+            J.\;\; \dfrac{y^2}{9} - \dfrac{x^2}{4} = 1 \\[5ex]
+            \text{This is a vertical hyperbola} \\[3ex]
+            b^2 = 9 \hspace{3em} a^2 = 4 \\[3ex]
+            b = \sqrt{9} \hspace{3em} a = \sqrt{4} \\[3ex]
+            b = 3 \hspace{3em} a = 2 \\[3ex]
+            Asymptotes:\;\; y = \pm \dfrac{b}{a}x \\[5ex]
+            y = \pm \dfrac{3}{2}x \\[5ex]
+            \text{Incorrect option} \\[5ex]
+            K.\;\; \dfrac{y^2}{4} - \dfrac{x^2}{9} = 1 \\[5ex]
+            \text{This is a vertical hyperbola} \\[3ex]
+            b^2 = 4 \hspace{3em} a^2 = 9 \\[3ex]
+            b = \sqrt{4} \hspace{3em} a = \sqrt{9} \\[3ex]
+            b = 2 \hspace{3em} a = 3 \\[3ex]
+            Asymptotes:\;\; y = \pm \dfrac{b}{a}x \\[5ex]
+            y = \pm \dfrac{2}{3}x \\[5ex]
+            \text{This is the correct option}
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/Geometry.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) In the standard (<i>x, y</i>) coordinate plane below, point <i>C</i> has coordinates (7, 5), and the
+          midpoint of $\overline{AC}$ is point <i>B</i>, which has coordinates $\left(-\dfrac{3}{2}, 1\right)$. <br>
+          What are the coordinates of point <i>A</i>?
+          <br><br>
+          <img src="images/Geometry/Questions/Number21.png" alt="Number 21">
+          <br><br>
+          $
+          A.\;\; (-10, -3) \\[3ex]
+          B.\;\; (4, 7) \\[3ex]
+          C.\;\; \left(-\dfrac{17}{2}, 4\right) \\[5ex]
+          D.\;\; \left(\dfrac{11}{2}, 6\right) \\[5ex]
+          E.\;\; \left(\dfrac{11}{4}, 3\right) \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG21')">Show/Hide Answer</button>
+          <div class="result" id="solutionG21">
+            <br>
+            $
+            Point\;A(x_1, y_1) = (?, ?) \hspace{3em} Point\;C(x_2, y_2) = (7, 5) \\[5ex]
+            \text{Midpoint of } \overline{AC}\;(x, y) = \left(\dfrac{x_1 + x_2}{2}, \dfrac{y_1 + y_2}{2}\right) =
+            \left(-\dfrac{3}{2}, 1\right) \\[5ex]
+            \implies \\[3ex]
+            \dfrac{y_1 + 5}{2} = 1 \\[5ex]
+            y_1 + 5 = 2(1) \\[3ex]
+            y_1 + 5 = 2 \\[3ex]
+            y_1 = 2 - 5 \\[3ex]
+            y_1 = -3 \\[3ex]
+            \text{Correct answer is Option A} \\[3ex]
+            $
+            <i>
+              <b>Student:</b> But, we are yet to find x<sub>1</sub> <br>
+              Also, could you explain why you found y<sub>1</sub> first rather than x<sub>1</sub>? <br>
+              <b>Teacher:</b> Remember we have to solve this question in about a minute. <br>
+              So, we use the process of elimination to get our answer. <br>
+              Option A. is the only option that has &minus;3 as the y-coordinate <br>
+              I found y<sub>1</sub> first because dealing with a positive integer: 1 is faster than dealing with a
+              negative fraction: $-\dfrac{3}{2}$ <br>
+              <b>Student:</b> But can we complete it if you do not mind? <br>
+              <b>Teacher:</b> Sure, let's do it.
+            </i>
+            <br><br>
+            $
+            \dfrac{x_1 + 7}{2} = -\dfrac{3}{2} \\[5ex]
+            x_1 + 7 = -3 \\[3ex]
+            x_1 = -3 - 7 \\[3ex]
+            x_1 = -10 \\[3ex]
+            \therefore \text{the coordinates of } A = (-10, -3)
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG22')">Show/Hide Answer</button>
+          <div class="result" id="solutionG22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.) Regular octagon <i>ABCDEFGH</i> is inscribed in a circle, as shown below. <br>
+          The sector of the circle bounded by radii $\overline{AJ}$ and $\overline{DJ}$ and by
+          $\overset{\huge\frown}{AD}$ is shaded. <br>
+          The area of the shaded sector is what fraction of the area of the circle?
+          <br><br>
+          <img src="images/Geometry/Questions/Number23.png" alt="Number 23">
+          <br><br>
+          $
+          A.\;\; \dfrac{1}{8} \\[5ex]
+          B.\;\; \dfrac{1}{4} \\[5ex]
+          C.\;\; \dfrac{3}{10} \\[5ex]
+          D.\;\; \dfrac{3}{8} \\[5ex]
+          E.\;\; \dfrac{1}{2} \\[5ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG23')">Show/Hide Answer</button>
+          <div class="result" id="solutionG23">
+            <br>
+            <b>Regular Polygon Symmetry</b>: A regular polygon has equal side lengths and congruent interior angle
+            vertices. <br>
+            This symmetry leads to this statement: <br>
+            Any line drawn from the center of the center (radius) to a vertex of a regular polygon <b>bisects</b> the
+            interior angle of the polygon. <br>
+            So, isosceles triangles are formed as seen below.
+            <br><br>
+            <u>Construction:</u> Draw radii from <i>J</i> to vertices <i>B</i> and <i>C</i> <br>
+            This creates isosceles triangles: <i>AJB, BJC, CJD</i>
+            <br><br>
+            <img src="images/Geometry/Answers/Number23.png" alt="Number 23">
+            <br><br>
+            $
+            \underline{\text{Regular Octogan: ABCDEFGH}} \\[3ex]
+            \text{number of sides, }n = 8 \\[3ex]
+            \text{Sum of interior angles}, Sum \\[3ex]
+            = 180(n - 2) \\[3ex]
+            = 180(8 - 2) \\[3ex]
+            = 180(6) \\[3ex]
+            = 1080^\circ \\[5ex]
+            \text{Each interior angle} = \dfrac{Sum}{n} \\[5ex]
+            = \dfrac{1080}{8} \\[5ex]
+            = 135^\circ \\[5ex]
+            \implies \\[3ex]
+            2\alpha = 135^\circ \\[3ex]
+            \underline{\triangle BJC} \\[3ex]
+            \beta + \alpha + \alpha = 180^\circ ...\text{sum of angles in a triangle} \\[3ex]
+            \beta + 2\alpha = 180 \\[3ex]
+            \beta + 135 = 180 \\[3ex]
+            \beta = 180 - 135 \\[3ex]
+            \beta = 45^\circ \\[5ex]
+            \underline{\text{Shaded Sector JAD}} \\[3ex]
+            \text{central angle} = \beta + \beta + \beta \\[3ex]
+            = 3\beta \\[3ex]
+            = 3(45) \\[3ex]
+            = 135^\circ \\[3ex]
+            radius = r \\[3ex]
+            Area, A_S = \dfrac{\pi r^2\theta}{360} \\[5ex]
+            = \dfrac{3\pi r^2}{8} \\[5ex]
+
+            \text{Circle} \\[3ex]
+            radius = r ...\text{same radius as the radius of the sector} \\[3ex]
+            Area, A_C = \pi r^2 \\[5ex]
+            \text{Area of the shaded sector is what fraction of the Area of the circle?} \\[3ex]
+            A_S = what * A_C \\[3ex]
+            \dfrac{3\pi r^2}{8} = what * \pi r^2 \\[5ex]
+            \text{Divide both sides by } \pi r^2 \\[3ex]
+            \dfrac{3}{8} = what \\[5ex]
+            what = \dfrac{3}{8} \\[5ex]
+            $
+            The area of the shaded sector is $\dfrac{3}{8}$ of the area of the circle.
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG24')">Show/Hide Answer</button>
+          <div class="result" id="solutionG24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) In the figure below, $\overline{AB}$ is congruent to $\overline{BC}$, and $\overline{AE}$ intersects
+          $\overline{BF}$ at <i>C</i>. <br>
+          What is the measure of $\angle B$?
+          <br><br>
+          <img src="images/Geometry/Questions/Number25.png" alt="Number 25">
+          <br><br>
+          $
+          A.\;\; 26^\circ \\[3ex]
+          B.\;\; 38^\circ \\[3ex]
+          C.\;\; 52^\circ \\[3ex]
+          D.\;\; 128^\circ \\[3ex]
+          E.\;\; 154^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG25')">Show/Hide Answer</button>
+          <div class="result" id="solutionG25">
+            <br>
+            $
+            \angle BCA = \angle ECF = 26^\circ ...\text{vertical angles are congruent} \\[3ex]
+            \angle BAC = \angle BCA = 26^\circ ...\overline{AB} = \overline{BC}
+            ...\text{base angles of isosceles triangle} \\[3ex]
+            \angle ABC + \angle BAC + \angle BCA = 180^\circ ... \text{sum of angles of a triangle} \\[3ex]
+            \angle ABC + 26 + 26 = 180 \\[3ex]
+            \angle ABC = 180 - 26 - 26 \\[3ex]
+            \angle ABC = 128 \\[3ex]
+            \angle B = \angle ABC = 128^\circ ...diagram
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG26')">Show/Hide Answer</button>
+          <div class="result" id="solutionG26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br><br>
+    <div class="w3-row w3-container">
+      <div class="w3-topbar w3-padding">
+        Use the following information to answer questions 27 and 28.
+        <br><br>
+        Parallelogram <i>WXYZ</i> is shown in the standard <i>(x, y)</i> coordinate plane below. <br>
+        The coordinates for 3 of its vertices are <i>W</i>(0, 0), <i>X</i>(<i>a, b</i>), and <i>Z</i>(<i>c</i>, 0).
+        <br><br>
+        <img src="images/Geometry/Questions/Numbers27-28.png" alt="Numbers 27 - 28">
+      </div>
+    </div>
+    <br><br>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) What are the coordinates of <i>Y</i>?
+          <br><br>
+          $
+          F.\;\; (a, c) \\[3ex]
+          G.\;\; (b, c) \\[3ex]
+          H.\;\; (c, b) \\[3ex]
+          J.\;\; (a + b, c) \\[3ex]
+          K.\;\; (a + c, b) \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG27')">Show/Hide Answer</button>
+          <div class="result" id="solutionG27">
+            <br>
+            The horizontal distance from $W(0, 0)$ to $X(a, b)$ is $a - 0 = a$ <br>
+            This should be the same horizontal distance from $Z(c, 0)$ to $Y(?, ?)$ <br>
+            However, to get the x-coordinate of $Y$, we should add that horizontal distance to the x-coordinate of $Z$
+            <br>
+            This means that the x-coordinate of $Y = a + c$ <br>
+            The y-coordinate of $Y$ is the same as that of the y-coordinate of $X$ because they are on the same
+            horizontal plane <br>
+            So, the y-coordinate of $Y = b$ <br>
+            This implies that the coordinate of $Y$ is $a + c, b$
+            <br><br>
+            <img src="images/Geometry/Answers/Number27.png" alt="Number 27">
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.) The measure of &angle;<i>Y</i> is 50&deg; <br>
+          What is the measure of the angle between $\overline{WX}$ and the <i>y-</i>axis? '
+          <br><br>
+          $
+          A.\;\; 35^\circ \\[3ex]
+          B.\;\; 40^\circ \\[3ex]
+          C.\;\; 45^\circ \\[3ex]
+          D.\;\; 50^\circ \\[3ex]
+          E.\;\; 55^\circ \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG28')">Show/Hide Answer</button>
+          <div class="result" id="solutionG28">
+            <br>
+            <img src="images/Geometry/Answers/Number28.png" alt="Number 28">
+            <br><br>
+            $
+            \triangle WXK \\[3ex]
+            \angle XWK = \angle W = \angle Y = 50^\circ \\[3ex]
+            ... opposite\;\;\angle s\;\;of\;\;a\;\;parallelogram\;\;are\;\;congruent \\[3ex]
+            \angle XKW = 90^\circ ... y-axis \\[3ex]
+            \angle WXK + \angle XWK + \angle XKW = 180^\circ \\[3ex]
+            ...sum\;\;of\;\;\angle s\;\;in\;\;a\;\;\triangle \\[3ex]
+            \angle WXK + 50 + 90 = 180 \\[3ex]
+            \angle WXK + 140 = 180 \\[3ex]
+            \angle WXK = 180 - 140 \\[3ex]
+            \angle WXK = 40^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.) The ellipse $\dfrac{x^2}{25} + \dfrac{y^2}{16} = 1$ is shown in the standard (<i>x, y</i>) coordinate
+          plane below. <br>
+          The major axis is $\overline{AD}$. <br>
+          The minor axis is $\overline{BF}$. <br>
+          The foci are <i>G</i> and <i>H</i>. <br>
+          Points <i>C</i> and <i>E</i> are on the ellipse. <br>
+          Which of the following relationships is true?
+          <br><br>
+          <img src="images/Geometry/Questions/Number29.png" alt="Number 29">
+          <br><br>
+          $
+          A.\;\; AD = BF \\[3ex]
+          B.\;\; CG + CH = BF \\[3ex]
+          C.\;\; EG + EH = GH \\[3ex]
+          D.\;\; CG + CH = 2 \cdot GH \\[3ex]
+          E.\;\; CG + CH = EG + EH \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionG29')">Show/Hide Answer</button>
+          <div class="result" id="solutionG29">
+            <br>
+            Let us analyze the ellipse and the options. <br>
+            Denominators: 25 and 16 <br>
+            25 &gt; 16 <br>
+            25 is under the <i>x</i>², hence this is a horizontal ellipse <br>
+            The major axis lies along the <i>x</i>-axis (horizontal axis)
+            <br><br>
+            16 is under the <i>y</i>² <br>
+            The minor axis lies along the <i>y</i>-axis (vertical axis)
+            <br><br>
+            $
+            (A.)\;\; AD = BF? \\[3ex]
+            \dfrac{x^2}{25} + \dfrac{y^2}{16} = 1 \\[5ex]
+            \dfrac{x^2}{5^2} + \dfrac{y^2}{4^2} = 1 \\[5ex]
+            Compare: \;\; \dfrac{x^2}{a^2} + \dfrac{y^2}{b^2} = 1 \\[5ex]
+            a = 5 \\[3ex]
+            b = 4 \\[3ex]
+            where \\[3ex]
+            \overline{AD} = \text{Length of the Major Axis} = 2a = 2(5) = 10 \\[3ex]
+            \overline{BF} = \text{Length of the Minor Axis} = 2b = 2(4) = 8 \\[3ex]
+            10 \ne 8 \\[3ex]
+            \overline{AD} \ne \overline{BF} \\[3ex]
+            \text{Option A. is incorrect} \\[5ex]
+            (B.)\;\; CG + CH = BF \\[3ex]
+            $
+            The foci are <i>G</i> and <i>H</i>. <br>
+            For the point <i>C</i> on the ellipse, the sum of the distances from the foci to point <i>C</i> is equal to
+            the length of the major axis. <br>
+            This implies that:
+            <br><br>
+            $
+            \overline{CG} + \overline{CH} = \overline{AD} = 10 \\[3ex]
+            \overline{BF} = 6 \\[3ex]
+            10 \ne 6 \\[3ex]
+            \overline{CG} + \overline{CH} \ne \overline{BF} \\[3ex]
+            \text{Option B. is incorrect} \\[5ex]
+            (C.)\;\; EG + EH = GH \\[3ex]
+            $
+            The foci are <i>G</i> and <i>H</i>. <br>
+            For the point <i>E</i> on the ellipse, the sum of the distances from the foci to point <i>E</i> is equal to
+            the length of the major axis. <br>
+            This implies that:
+            <br><br>
+            $
+            \overline{EG} + \overline{EH} = \overline{AD} = 10 \\[3ex]
+            \text{But what about } \overline{GH} ? \\[3ex]
+            \overline{GH} = \text{distance between the two foci} \\[3ex]
+            \overline{GH} = 2\sqrt{a^2 - b^2} \\[3ex]
+            = 2\sqrt{5^2 - 4^2} \\[3ex]
+            = 2\sqrt{25 - 16} \\[3ex]
+            = 2\sqrt{9} \\[3ex]
+            = 2 \cdot 3 \\[3ex]
+            = 6 \\[3ex]
+            10 \ne 6 \\[3ex]
+            \overline{EG} + \overline{EH} \ne \overline{GH} \\[3ex]
+            \text{Option C. is incorrect} \\[5ex]
+            (D.)\;\; CG + CH = 2 \cdot GH \\[3ex]
+            \overline{CG} + \overline{CH} = \overline{AD} = 10 \\[3ex]
+            2 \cdot \overline{GH} = 2 \cdot 6 = 12 \\[3ex]
+            10 \ne 12 \\[3ex]
+            \overline{CG} + \overline{CH} \ne 2 \cdot \overline{GH} \\[3ex]
+            \text{Option D. is incorrect} \\[5ex]
+            (E.)\;\; CG + CH = EG + EH \\[3ex]
+            \overline{CG} + \overline{CH} = \overline{AD} = 10 \\[3ex]
+            \overline{EG} + \overline{EH} = \overline{AD} = 10 \\[3ex]
+            \therefore \overline{CG} + \overline{CH} = \overline{EG} + \overline{EH} \\[3ex]
+            \text{Option E. is correct}
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG30')">Show/Hide Answer</button>
+          <div class="result" id="solutionG30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG31')">Show/Hide Answer</button>
+          <div class="result" id="solutionG31">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG32')">Show/Hide Answer</button>
+          <div class="result" id="solutionG32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG33')">Show/Hide Answer</button>
+          <div class="result" id="solutionG33">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG34')">Show/Hide Answer</button>
+          <div class="result" id="solutionG34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG35')">Show/Hide Answer</button>
+          <div class="result" id="solutionG35">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG36')">Show/Hide Answer</button>
+          <div class="result" id="solutionG36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG37')">Show/Hide Answer</button>
+          <div class="result" id="solutionG37">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG38')">Show/Hide Answer</button>
+          <div class="result" id="solutionG38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG39')">Show/Hide Answer</button>
+          <div class="result" id="solutionG39">
+            <br>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionG40')">Show/Hide Answer</button>
+          <div class="result" id="solutionG40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 21 through 40 -->
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+  <!-- Required for hCaptcha. -->
+  <script src="https://web3forms.com/client/script.js" async defer></script>
+
+</body>
+
+</html>

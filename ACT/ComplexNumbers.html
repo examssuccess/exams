@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Complex Numbers</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the ACT exam questions on complex numbers.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, ACT, American College Testing, 
+  Arithmetic, Algebra, complex analysis, real analysis, complex variables, numbers, complex numbers, real part, imaginary part, 
+  pure imaginary number, imaginary unit, standard form, polar form, power, exponent, exponential form, sum, difference, product, quotient, add, subtract,
+  multiply, divide, rationalize, radical, radicand">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Complex Numbers</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br><br>
+        For the Classic ACT exam: <br>
+        The ACT Mathematics test is a timed exam...60 questions in 60 minutes <br>
+        This implies that you have to solve each question in one minute. <br>
+        Each of the first 20 questions (less challenging) will typically take less than a minute a solve. <br>
+        Each of the next 20 questions (medium challenging) may take about a minute to solve. <br>
+        Each of the last 20 questions (more challenging) may take more than a minute to solve. <br>
+        The goal is to maximize your time. <br>
+        You use the time saved on the questions you solve in less than a minute to solve questions that will take more
+        than a minute. <br>
+        So, you should try to solve each question <u>correctly</u> and <u>timely</u>. <br>
+        So, it is not just solving a question correctly, but solving it <u>correctly on time</u>. <br>
+        Please ensure you attempt <u>all ACT questions</u>. <br>
+        There is no <i>negative</i> penalty for a wrong answer. <br>
+        Also: please note that unless specified otherwise, geometric figures are drawn to scale. So, you can figure out
+        the correct answer by eliminating the incorrect options. <br>
+        Other suggestions are listed in the solutions/explanations as applicable.
+        <br><br>
+        These are the solutions to the ACT past questions on the topics: Complex Numbers. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions, if you intend to use the TI-84 Family: <br>
+        Please make sure you set the MODE to $\boldsymbol{a + bi}$ (Complex Number mode). <br>
+        It is REAL by default. So, it needs to be set to $\boldsymbol{a + bi}$.
+        <br><br>
+        <img src="images/calculator-mode-complexNumbers.png" alt="Calculator-Mode-ComplexNumbers">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) Let $z = 4 + 5i$ and $w = 3 + 7i$, where <i>i</i> is the imaginary unit. <br>
+          What is the value of $2z + w$?
+          <br><br>
+          $
+          F.\;\; -28 \\[3ex]
+          G.\;\; 28i \\[3ex]
+          H.\;\; 11 + 12i \\[3ex]
+          J.\;\; 11 + 17i \\[3ex]
+          K.\;\; 14 + 24i \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN1')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN1')">Calculator Solution</button>
+          <div class="result" id="solutionCN1">
+            <br>
+            $
+            z = 4 + 5i \\[3ex]
+            w = 3 + 7i \\[3ex]
+            2z + w \\[3ex]
+            = 2(4 + 5i) + (3 + 7i) \\[3ex]
+            = 8 + 10i + 3 + 7i \\[3ex]
+            = 11 + 17i
+            $
+          </div>
+          <div class="result" id="solutionCCN1">
+            <br>
+            Let: <i>z</i> = <i>A</i> and <i>w</i> = <i>B</i> <br>
+            <img src="images/ComplexNumbers/Answers/Calculator1a.png" alt="Calculator 1a">
+            <br><br>
+            OR
+            <br><br>
+            <img src="images/ComplexNumbers/Answers/Calculator1b.png" alt="Calculator 1b">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) Which of the following is the complex conjugate of 2 &plus; 7<i>i</i>?
+          <br><br>
+          $
+          A.\;\; -5 \\[3ex]
+          B.\;\; 9 \\[3ex]
+          C.\;\; 9i \\[3ex]
+          D.\;\; \sqrt{53} \\[3ex]
+          E.\;\; 2 - 7i \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN2')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN2')">Calculator Solution</button>
+          <div class="result" id="solutionCN2">
+            <br>
+            The complex conjugate of 2 &plus; 7<i>i</i> is 2 &minus; 7<i>i</i>
+          </div>
+          <div class="result" id="solutionCCN2">
+            <br>
+            <img src="images/ComplexNumbers/Answers/Calculator2.png" alt="Calculator 2">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) Which of the following is a possible sum of the complex numbers $\sqrt{-9}$ and $\sqrt{-16}$
+          <br><br>
+          $
+          A.\;\; 7i \\[3ex]
+          B.\;\; 5i \\[3ex]
+          C.\;\; 7 \\[3ex]
+          D.\;\; 5 \\[3ex]
+          E.\;\; -5 \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN3')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN3')">Calculator Solution</button>
+          <div class="result" id="solutionCN3">
+            <br>
+            Sum is the result of an addition operation
+            <br><br>
+            $
+            \sqrt{-9} + \sqrt{-16} \\[3ex]
+            3i + 4i \\[3ex]
+            7i
+            $
+          </div>
+          <div class="result" id="solutionCCN3">
+            <br>
+            <img src="images/ComplexNumbers/Answers/Calculator3.png" alt="Calculator 3">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.) For $i = \sqrt{-1}$, $(2 + 2i)^2 = ?$
+          <br><br>
+          $
+          A.\;\; -16 \\[3ex]
+          B.\;\; 0 \\[3ex]
+          C.\;\; 8i \\[3ex]
+          D.\;\; 4 + 2i \\[3ex]
+          E.\;\; 4 + 4i \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN4')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN4')">Calculator Solution</button>
+          <div class="result" id="solutionCN4">
+            <br>
+            $
+            i = \sqrt{-1} \\[3ex]
+            i^2 = (\sqrt{-1})^2 = -1 \\[5ex]
+
+            (2 + 2i)^2 \\[3ex]
+            = (2 + 2i)(2 + 2i) \\[3ex]
+            = 4 + 4i + 4i + 4i^2 \\[3ex]
+            = 4 + 8i + 4(-1) \\[3ex]
+            = 4 + 8i - 4 \\[3ex]
+            = 8i
+            $
+          </div>
+          <div class="result" id="solutionCCN4">
+            <br>
+            <img src="images/ComplexNumbers/Answers/Calculator4.png" alt="Calculator 4">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) Given that <i>i</i> is the imaginary unit, which of the following numbers is equal to $(4 + 3i)^2$ ?
+          <br><br>
+          $
+          A.\;\; 7 \\[3ex]
+          B.\;\; 25 \\[3ex]
+          C.\;\; 7 + 24i \\[3ex]
+          D.\;\; 8 + 6i \\[3ex]
+          E.\;\; 25 + 24i \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN5')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN5')">Calculator Solution</button>
+          <div class="result" id="solutionCN5">
+            <br>
+            $
+            i = \sqrt{-1} \\[3ex]
+            i^2 = -1 \\[5ex]
+            (4 + 3i)^2 \\[4ex]
+            (4 + 3i)(4 + 3i) \\[3ex]
+            16 + 12i + 12i + 9i^2 \\[3ex]
+            16 + 24i + 9(-1) \\[3ex]
+            16 + 24i + -9 \\[3ex]
+            16 + 24i - 9 \\[3ex]
+            7 + 24i
+            $
+          </div>
+          <div class="result" id="solutionCCN5">
+            <br>
+            <img src="images/ComplexNumbers/Answers/Calculator5.png" alt="Calculator 5">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) For $i^2 = -1$, $\dfrac{2 + 3i}{i} = ?$
+          <br><br>
+          $
+          A.\;\; 5 \\[3ex]
+          B.\;\; 5i \\[3ex]
+          C.\;\; -3 + 2i \\[3ex]
+          D.\;\; 3 - 2i \\[3ex]
+          E.\;\; 3 + 2i \\[3ex]
+          $
+          <button class="solutions" onclick="solutions('solutionCN6')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN6')">Calculator Solution</button>
+          <div class="result" id="solutionCN6">
+            <br>
+            $
+            \dfrac{2 + 3i}{i} \\[5ex]
+            \text{Rationalize the denominator} \\[3ex]
+            = \dfrac{2 + 3i}{i} \cdot \dfrac{i}{i} \\[5ex]
+            = \dfrac{i(2 + 3i)}{i^2} \\[5ex]
+            = \dfrac{2i + 3i^2}{-1} \\[5ex]
+            = -1(2i + 3(-1)) \\[3ex]
+            = -1(2i - 3) \\[3ex]
+            = -2i + 3 \\[3ex]
+            = 3 - 2i
+            $
+          </div>
+          <div class="result" id="solutionCCN6">
+            <br>
+            <img src="images/ComplexNumbers/Answers/Calculator6.png" alt="Calculator 6">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <button class="solutions" onclick="solutions('solutionCN7')">Show/Hide Answer</button>
+          <button class="solutions" onclick="solutions('solutionCCN7')">Calculator Solution</button>
+          <div class="result" id="solutionCN7">
+            <br>
+
+
+          </div>
+          <div class="result" id="solutionCCN7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.)
+          <button class="solutions" onclick="solutions('solutionCN8')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN8">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.)
+          <button class="solutions" onclick="solutions('solutionCN9')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN9">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN10')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.)
+          <button class="solutions" onclick="solutions('solutionCN11')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN11">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN12')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.)
+          <button class="solutions" onclick="solutions('solutionCN13')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN13">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN14')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionCN15')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN16')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.)
+          <button class="solutions" onclick="solutions('solutionCN17')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN17">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN18')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionCN19')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN20')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/ACT/ComplexNumbers.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.)
+          <button class="solutions" onclick="solutions('solutionCN21')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN21">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN22')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <button class="solutions" onclick="solutions('solutionCN23')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN24')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.)
+          <button class="solutions" onclick="solutions('solutionCN25')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN25">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN26')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.)
+          <button class="solutions" onclick="solutions('solutionCN27')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN27">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN28')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <button class="solutions" onclick="solutions('solutionCN29')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionCN30')">Show/Hide Answer</button>
+          <div class="result" id="solutionCN30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <!-- End Numbers 21 through 40 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>

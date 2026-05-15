@@ -1,0 +1,2391 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-RN9ZRLJ1YR"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-RN9ZRLJ1YR');
+  </script>
+
+  <title>Trigonometry</title>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta name="description" content="The webpage contains the solutions to the CSEC exam questions on trigonometry.">
+
+  <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Mathematics, CSEC, 
+  Caribbean Secondary Education Certificate, trigonometry, analytic trigonometry, trigonometric functions, angles, triangles, geometry, trigonometric identities, 
+  inverse trigonometric functions, sine function, inverse sine function, cosine function, inverse cosine function, tangent function, 
+  inverse tangent function, composite functions, trigonometric equations, trigonometric proofs, trigonometric formulas, trigonometric graphs, 
+  trigonometric inequalities, right triangles, sine law, cosine law, initial side, terminal side, coordinate plane, angular measures,
+    side lengths, vertex, standard position, coterminal angles, quadrantal angles, reference angles, unit circle, planar figures, 
+    three-dimensional figures, cofunction, quadrants, inverse cosecant function, inverse secant function, inverse cotangent function, 
+    trigonometric expressions, right triangles, area of triangle, bearings, distances, elevation, depression, angle of elevation, 
+    angle of depression, arc, length of arc, sector, segment, linear speed, angular speed, circular functions, 
+    area of sector, area of segment, base angle, apex angle, vertex angle, compass bearing, congruent triangles, similar triangles, 
+    congruency, similarity">
+
+  <link rel="stylesheet" href="styles/Mathematics.css">
+  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+
+  <meta name="msvalidate.01" content="A098AEA85816397DFF763FCBF41753F1">
+</head>
+
+<body>
+  <!-- Sidebar/menu -->
+  <nav class="w3-sidebar w3-cornsilk w3-collapse w3-top w3-padding" style="z-index: 3; width: 300px" id="mySidebar">
+    <br>
+
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft"
+      style="width: 100%; font-size: 22px">Close Menu
+    </a>
+
+    <div class="w3-bar-block" style="margin-top: 10px">
+      <a href="#welcome" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Please Read Me.
+      </a>
+
+      <a href="https://examssuccess.appspot.com/" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Exams Success
+      </a>
+
+      <a href="#formulaSheet" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formula Sheet</a>
+
+      <a href="#coterminalAngles" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Coterminal
+        Angles</a>
+
+      <a href="#trigonometricFunctions" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Functions</a>
+
+      <a href="#unitCircle" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Unit Circle</a>
+
+      <a href="#trigonometricIdentities" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Identities</a>
+
+      <a href="#trigonometricFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Trigonometric
+        Formulas</a>
+
+      <a href="#factoringFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Factoring
+        Formulas</a>
+
+      <a href="#triangleLaws" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Triangle Laws</a>
+
+      <a href="#theorems" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Theorems</a>
+
+      <a href="#circleFormulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Circle Formulas</a>
+
+      <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
+      <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
+        40</a>
+
+      <a href="#fortyone-sixty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 41 &mdash;
+        60</a>
+
+      <a href="https://www.youtube.com/@succeedinexaminations" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">Videos</a>
+
+      <a href="https://cash.app/$ExamsSuccess" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">
+        Cash App: <b><span>$</span>ExamsSuccess</b></a>
+
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" onclick="w3_close()"
+        class="w3-bar-item w3-button w3-hover-white">
+        PayPal: <b>@ExamsSuccess</b></a>
+    </div>
+  </nav>
+
+  <!-- Top menu on small screens -->
+  <header class="w3-container w3-top w3-hide-large w3-cornsilk w3-xlarge w3-padding">
+    <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+    <span>Please Read Me.</span>
+  </header>
+
+  <!-- Overlay effect when opening sidebar on small screens -->
+  <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor: pointer" title="close side menu"
+    id="myOverlay"></div>
+
+  <!-- Page Content -->
+  <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
+    <!-- Header -->
+    <div class="w3-container w3-cornsilk w3-padding-24">
+      <h1>Trigonometry</h1>
+    </div>
+
+    <!-- Introduction -->
+    <div class="w3-container" id="welcome" style="margin-top: 50px">
+      <h2>Welcome to Our Site</h2>
+      <p>
+        <span id="greetings"></span> <br>
+        I greet you this day,
+        <script>
+          document.write(Date() + ".");
+        </script>
+        <br>
+        These are the solutions to the CSEC past questions on the topics in Trigonometry. <br>
+        When applicable, the TI-84 Plus CE calculator (also applicable to TI-84 Plus calculator) solutions are provided
+        for some questions. <br>
+        The link to the video solutions will be provided for you. Please
+        subscribe to the YouTube channel to be notified of upcoming livestreams. You are welcome to ask questions during
+        the video livestreams. <br>
+        If you find these resources valuable <u>and</u> if of these resources were helpful in your passing the
+        Mathematics test of the ACT, please consider making a donation:
+        <br><br>
+        Cash App: <b><span>$</span>ExamsSuccess</b> or <br>
+        <a href="https://cash.app/$ExamsSuccess">cash.app/ExamsSuccess </a>
+        <br><br>
+        PayPal: <b>@ExamsSuccess</b> or <br>
+        <a href="https://www.paypal.com/paypalme/ExamsSuccess">PayPal.me/ExamsSuccess
+        </a>
+        <br><br>
+        Google charges me for the hosting of this website and my other
+        educational websites. It does not host any of the websites for free. <br>
+        Besides, I spend a lot of time to type the questions and the solutions well.
+        As you probably know, I provide clear explanations on the solutions. <br>
+        Your donation is appreciated.
+        <br><br>
+        Comments, ideas, areas of improvement, questions, and constructive
+        criticisms are welcome. <br>
+        Feel free to contact me. Please be positive in your message. <br>
+        I wish you the best. <br>
+        Thank you.
+      </p>
+      <br>
+      <p>
+        <u>Please NOTE:</u> For applicable questions (questions that require the angle in degrees), if you intend to
+        use the TI-84 Family: <br>
+        Please make sure you set the MODE to DEGREE. <br>
+        It is RADIAN by default. So, it needs to be set to DEGREE.
+        <br><br>
+        <img src="images/calculator-mode-degree.png" alt="Calculator Mode">
+      </p>
+    </div>
+    <!-- End Introduction -->
+
+    <!-- Formula Sheet -->
+    <div class="w3-container w3-padding-32" id="formulaSheet">
+      <div class="w3-row-padding">
+        <h5>Formula Sheet: List of Formulae</h5>
+        <object data="CSECMathematicsFormulaSheet.pdf" width="1400" height="700"></object>
+      </div>
+    </div>
+    <!-- End Formula Sheet -->
+
+    <!-- Coterminal Angles -->
+    <div class="w3-container w3-padding-32" id="coterminalAngles">
+      <h2>Coterminal Angles</h2>
+      <p>
+        Coterminal angles are angles with the <b>same initial side</b> and the <b>same terminal side</b>. <br>
+        The concept of coterminal angles helps us to find the equivalent positive angle of a negative angle. <br>
+        Because an angle in standard position is measured counterclockwise, adding 360° to it accounts for a full
+        revolution, keeping the direction intact. <br>
+        Hence for any angle say &theta;, the coterminal angles are &theta; + 360<i>k</i> where <i>k</i> is any integer.
+      </p>
+    </div>
+    <!-- End Coterminal Angles -->
+
+    <!-- Trigonometric Functions -->
+    <div class="w3-container w3-padding-32" id="trigonometricFunctions">
+      <h2>Trigonometric Functions</h2>
+      <p>
+        Right Triangle Trigonometry for any angle, say $\theta$ <br>
+        Pneumonic for it is: <b>SOHCAHTOA</b> and <b>cosecHOsecHAcotanAO</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{opp}{hyp} \\[7ex]
+        (2.)\;\; \cos \theta = \dfrac{adj}{hyp} \\[7ex]
+        (3.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[5ex]
+        = \sin \theta \div \cos \theta \\[3ex]
+        = \dfrac{opp}{hyp} \div \dfrac{adj}{hyp} \\[5ex]
+        = \dfrac{opp}{hyp} * \dfrac{hyp}{adj} \\[5ex]
+        \therefore \tan \theta = \dfrac{opp}{adj} \\[7ex]
+        (4.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[5ex]
+        = 1 \div \sin \theta \\[3ex]
+        = 1 \div \dfrac{opp}{hyp} \\[5ex]
+        \therefore \csc \theta = \dfrac{hyp}{opp} \\[7ex]
+        (5.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[5ex]
+        = 1 \div \cos \theta \\[3ex]
+        = 1 \div \dfrac{adj}{hyp} \\[5ex]
+        \therefore \sec \theta = \dfrac{hyp}{adj} \\[7ex]
+        (6.)\;\; \cot \theta = \dfrac{1}{\tan \theta} = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        = \cos \theta \div \sin \theta \\[3ex]
+        = \dfrac{adj}{hyp} \div \dfrac{opp}{hyp} \\[5ex]
+        = \dfrac{adj}{hyp} * \dfrac{hyp}{opp} \\[5ex]
+        \therefore \cot \theta = \dfrac{adj}{opp}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Functions -->
+
+    <!-- Unit Circle -->
+    <div class="w3-container w3-padding-32" id="unitCircle">
+      <h2>Summary: The Unit Circle</h2>
+      <table class="w3-center">
+        <tr>
+          <th class="green">$\theta$ in DEG</th>
+          <th class="green">$\theta$ in RAD</th>
+          <th class="green">$\sin \theta$</th>
+          <th class="green">$\cos \theta$</th>
+          <th class="green">$\tan \theta$</th>
+          <th class="green">$\csc \theta$</th>
+          <th class="green">$\sec \theta$</th>
+          <th class="green">$\cot \theta$</th>
+        </tr>
+        <tr>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$30$</td>
+          <td>$\dfrac{\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$45$</td>
+          <td>$\dfrac{\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$60$</td>
+          <td>$\dfrac{\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$90$</td>
+          <td>$\dfrac{\pi}{2}$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$120$</td>
+          <td>$\dfrac{2\pi}{3}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$135$</td>
+          <td>$\dfrac{3\pi}{4}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$150$</td>
+          <td>$\dfrac{5\pi}{6}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$180$</td>
+          <td>$\pi$</td>
+          <td>$0$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+        </tr>
+        <tr>
+          <td>$210$</td>
+          <td>$\dfrac{7\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$225$</td>
+          <td>$\dfrac{5\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$1$</td>
+        </tr>
+        <tr>
+          <td>$240$</td>
+          <td>$\dfrac{4\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$270$</td>
+          <td>$\dfrac{3\pi}{2}$</td>
+          <td>$-1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$-1$</td>
+          <td>$undefined$</td>
+          <td>$0$</td>
+        </tr>
+        <tr>
+          <td>$315$</td>
+          <td>$\dfrac{7\pi}{4}$</td>
+          <td>$-\dfrac{\sqrt{2}}{2}$</td>
+          <td>$\dfrac{\sqrt{2}}{2}$</td>
+          <td>$-1$</td>
+          <td>$-\sqrt{2}$</td>
+          <td>$\sqrt{2}$</td>
+          <td>$-1$</td>
+        </tr>
+        <tr>
+          <td>$300$</td>
+          <td>$\dfrac{5\pi}{3}$</td>
+          <td>$-\dfrac{\sqrt{3}}{2}$</td>
+          <td>$\dfrac{1}{2}$</td>
+          <td>$-\sqrt{3}$</td>
+          <td>$-\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$2$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+        </tr>
+        <tr>
+          <td>$330$</td>
+          <td>$\dfrac{11\pi}{6}$</td>
+          <td>$-\dfrac{1}{2}$</td>
+          <td>$\dfrac{\sqrt{3}}{2}$</td>
+          <td>$-\dfrac{\sqrt{3}}{3}$</td>
+          <td>$-2$</td>
+          <td>$\dfrac{2\sqrt{3}}{3}$</td>
+          <td>$-\sqrt{3}$</td>
+        </tr>
+        <tr>
+          <td>$360$</td>
+          <td>$2\pi$</td>
+          <td>$0$</td>
+          <td>$1$</td>
+          <td>$0$</td>
+          <td>$undefined$</td>
+          <td>$1$</td>
+          <td>$undefined$</td>
+        </tr>
+      </table>
+    </div>
+    <!-- End Unit Circle -->
+
+    <!-- Trigonometric Identities -->
+    <div class="w3-container w3-padding-32" id="trigonometricIdentities">
+      <h2>Trigonometric Identities</h2>
+      <p>
+        \begin{array}{c | c}
+        II & I \\
+        \hline
+        III & IV
+        \end{array} =
+        \begin{array}{c | c}
+        S & A \\
+        \hline
+        T & C
+        \end{array} =
+        \begin{array}{c | c}
+        Sine\:\: is\:\: positive & All\:\: are\:\: positive \\
+        \hline
+        Tangent\:\: is\:\: positive & Cosine\:\: is\:\: positive
+        \end{array}
+      </p>
+      <br><br>
+      <p>
+        <b>The pneumonic to remember it:</b> <br>
+        First Quadrant to Fourth Quadrant (clockwise direction): A-C-T-S (ACTS of the Apostles) <br><br>
+        First Quadrant to Fourth Quadrant (counter-clockwise direction): A-S-T-C: ADD - SUGAR - TO - COFFEE <br><br>
+        Fourth Quadrant to Third Quadrant (counter-clockwise direction): C-A-S-T (Simon Peter, CAST your net into the
+        sea.) <br><br>
+        Second Quadrant to Third Quadrant (clockwise direction): S-A-C-T <br><br>
+
+        <b>Cofunction Identities (Identities of Complements)</b> <br>
+        <b>First Quadrant Identities</b> <br>
+        <u>First Quadrant:</u> <b>All (sine, cosine, tangent) are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent</b> are also positive. <br><br>
+        <u>Given:</u> two angles say: $\alpha$ and $\beta$; <br>
+        If $\alpha$ and $\beta$ are complementary, then the: <br>
+        <b>Sine</b> function and the <b>Cosine</b> functions are cofunctions <br><br>
+        $
+        \sin \alpha = \cos \beta \\[3ex]
+        \cos \alpha = \sin \beta \\[3ex]
+        $
+        <b>Tangent</b> function and the <b>Cotangent</b> functions are cofunctions <br><br>
+        $
+        \tan \alpha = \cot \beta \\[3ex]
+        \cot \alpha = \tan \beta \\[3ex]
+        $
+        <b>Secant</b> function and the <b>Cosecant</b> functions are cofunctions <br><br>
+        $
+        \sec \alpha = \csc \beta \\[3ex]
+        \csc \alpha = \sec \beta \\[3ex]
+        $
+
+        <u>Given:</u> one angle say: $\theta$; <br>
+        <b>First Quadrant Identities or Cofunction Identities or Identities of Complements</b>
+        <br><br>
+        $0 \lt \theta \lt 90 ...Angle\:\: in\:\: Degrees \\[3ex]$
+        Reference Angle = $\theta$ ... Angle in Degrees <br><br>
+        $0 \lt \theta \lt \dfrac{\pi}{2} ...Angle\:\: in\:\: Radians \\[5ex]$
+        Reference Angle = $\theta$ ... Angle in Radians <br><br>
+        <u>First Quadrant:</u> <b>sine, cosine, tangent are positive</b> <br>
+        This implies that <b>cosecant, secant, and cotangent are also positive</b>
+        <br><br>
+        Complement of $\theta$ = $90 - \theta$ where $\theta$ is in degrees:
+        <br><br>
+        Complement of $\theta$ = $\dfrac{\pi}{2} - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\:\: \sin \theta = \cos (90 - \theta) \\[3ex]
+        (2.)\:\: \sin \theta = \cos \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (3.)\:\: \cos \theta = \sin (90 - \theta) \\[3ex]
+        (4.)\:\: \cos \theta = \sin \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (5.)\:\: \tan \theta = \cot (90 - \theta) \\[3ex]
+        (6.)\:\: \tan \theta = \cot \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (7.)\:\: \cot \theta = \tan (90 - \theta) \\[3ex]
+        (8.)\:\: \cot \theta = \tan \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (9.)\:\: \sec \theta = \csc (90 - \theta) \\[3ex]
+        (10.)\:\: \sec \theta = \csc \left(\dfrac{\pi}{2} - \theta \right) \\[5ex]
+        (11.)\:\: \csc \theta = \sec (90 - \theta) \\[3ex]
+        (12.)\:\: \csc \theta = \sec \left(\dfrac{\pi}{2} - \theta \right) \\[7ex]
+        $
+
+        <b>Second Quadrant Identities or Identities of Supplements</b>
+        <br><br>
+        $90 \lt \theta \lt 180$ ... Angle in Degrees <br>
+        Reference Angle = $180 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{\pi}{2} \lt \theta \lt \pi$ ... Angle in Radians <br>
+        Reference Angle = $\pi - \theta$ ... Angle in Radians <br>
+        <u>Second Quadrant:</u> <b>sine is positive</b> <br>
+        This implies that <b>cosecant is also positive</b> <br>
+        Symmetric across the y-axis
+        <br><br>
+        <u>Given:</u> one angle say: $\theta$; <br>
+        Supplement of $\theta$ = $180 - \theta$ where $\theta$ is in degrees: <br>
+        Supplement of $\theta$ = $\pi - \theta$ where $\theta$ is in radians:
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \sin (180 - \theta) \\[3ex]
+        (2.)\;\; \sin (180 - \theta) = \sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = \sin (\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (\pi - \theta) = \sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (180 - \theta) \\[3ex]
+        (6.)\;\; \cos (180 - \theta) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (\pi - \theta) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (180 - \theta) \\[3ex]
+        (10.)\;\; \tan (180 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (\pi - \theta) = -\tan \theta \\[5ex]
+        $
+
+        <b>Third Quadrant Identities</b> <br>
+        $180 \lt \theta \lt 270$ ... Angle in Degrees <br>
+        Reference Angle = $\theta - 180$ ... Angle in Degrees <br>
+        $\pi \lt \theta \lt \dfrac{3\pi}{2}$ ... Angle in Radians <br>
+        Reference Angle = $\theta - \pi$ ... Angle in Radians <br>
+        <u>Third Quadrant:</u> <b>tangent is positive</b> <br>
+        This implies that <b>cotangent is also positive</b> <br>
+        Symmetric across the origin <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (\theta - 180) \\[3ex]
+        (2.)\;\; \sin (\theta - 180) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (\theta - \pi) \\[3ex]
+        (4.)\;\; \sin (\theta - \pi) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = -\cos (\theta - 180) \\[3ex]
+        (6.)\;\; \cos (\theta - 180) = -\cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = -\cos (\theta - \pi) \\[3ex]
+        (8.)\;\; \cos (\theta - \pi) = -\cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = \tan (\theta - 180) \\[3ex]
+        (10.)\;\; \tan (\theta - 180) = \tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = \tan (\theta - \pi) \\[3ex]
+        (12.)\;\; \tan (\theta - \pi) = \tan \theta \\[5ex]
+        $
+        But if $\theta \lt 180$, use $\theta + 180$
+        <br><br>
+
+        <b>Fourth Quadrant Identities</b> <br>
+        $270 \lt \theta \lt 360$ ... Angle in Degrees <br>
+        Reference Angle = $360 - \theta$ ... Angle in Degrees <br>
+        $\dfrac{3\pi}{2} \lt \theta \lt 2\pi$ ... Angle in Radians <br>
+        Reference Angle = $2\pi - \theta$ ... Angle in Radians <br>
+        <u>Fourth Quadrant:</u> <b>cosine is positive</b> <br>
+        This implies that <b>secant is also positive</b> <br>
+        Symmetric across the x-axis <br><br>
+        <u>Given:</u> one angle say: $\theta$;
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = -\sin (360 - \theta) \\[3ex]
+        (2.)\;\; \sin (360 - \theta) = -\sin \theta \\[3ex]
+        (3.)\;\; \sin \theta = -\sin (2\pi - \theta) \\[3ex]
+        (4.)\;\; \sin (2\pi - \theta) = -\sin \theta \\[3ex]
+        (5.)\;\; \cos \theta = \cos (360 - \theta) \\[3ex]
+        (6.)\;\; \cos (360 - \theta) = \cos \theta \\[3ex]
+        (7.)\;\; \cos \theta = \cos (2\pi - \theta) \\[3ex]
+        (8.)\;\; \cos (2\pi - \theta) = \cos \theta \\[3ex]
+        (9.)\;\; \tan \theta = -\tan (360 - \theta) \\[3ex]
+        (10.)\;\; \tan (360 - \theta) = -\tan \theta \\[3ex]
+        (11.)\;\; \tan \theta = -\tan (2\pi - \theta) \\[3ex]
+        (12.)\;\; \tan (2\pi - \theta) = -\tan \theta \\[3ex]
+        $
+
+        <b>Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \csc \theta = \dfrac{1}{\sin \theta} \\[3ex]
+        (2.)\;\; \sec \theta = \dfrac{1}{\cos \theta} \\[3ex]
+        (3.)\;\; \cot \theta = \dfrac{1}{\tan \theta} \\[3ex]
+        $
+
+        <b>From Reciprocal Identities</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \theta = \dfrac{1}{\csc \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \dfrac{1}{\sec \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \dfrac{1}{\cot \theta} \\[5ex]
+        $
+
+        <b>Quotient Identities</b> <br>
+        $
+        (1.)\;\; \tan \theta = \dfrac{\sin \theta}{\cos \theta} \\[3ex]
+        (2.)\;\; \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[3ex]
+        $
+
+        As you can see, $\cot \theta$ has two formulas <br><br>
+        $
+        \cot \theta = \dfrac{1}{\tan \theta} \\[5ex]
+        \cot \theta = \dfrac{\cos \theta}{\sin \theta} \\[5ex]
+        $
+        Sometimes, we shall use the first one. Sometimes, we shall use the second one. <br>
+        We have to use the formula that will not give us an undefined value (where the denominator is zero) <br><br>
+
+        <b>Even Identities</b> <br>
+        Recall: a function, say $f(x)$ is even if $f(-x) = f(x)$ <br>
+        In Trigonometry, the <b>cosine function</b> and the <b>secant function</b> are <b>even functions.</b> <br><br>
+        $
+        (1.)\;\; \cos (-\theta) = \cos \theta \\[3ex]
+        (2.)\;\; \sec (-\theta) = \sec \theta \\[5ex]
+        $
+
+        <b>Odd Identities</b> <br>
+        Recall: a function, say $f(x)$ is odd if $f(-x) = -f(x)$ <br>
+        In Trigonometry, the <b>sine function</b>, the <b>cosecant function</b>,
+        the <b>tangent function</b>, and the <b>cotangent function</b> are <b>odd functions.</b> <br><br>
+        $
+        (1.)\;\; \sin (-\theta) = -\sin \theta \\[3ex]
+        (2.)\;\; \csc (-\theta) = -\csc \theta \\[3ex]
+        (3.)\;\; \tan (-\theta) = -\tan \theta \\[3ex]
+        (4.)\;\; \cot (-\theta) = -\cot \theta \\[5ex]
+        $
+
+        <b>Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \theta + \cos^2 \theta = 1 \\[3ex]
+        (2.)\;\; \tan^2 \theta + 1 = \sec^2 \theta \\[3ex]
+        (3.)\;\; \cot^2 \theta + 1 = \csc^2 \theta \\[3ex]
+        $
+
+        <b>From Pythagorean Identities</b> <br><br>
+        $
+        (1.)\;\; \sin \theta = \pm \sqrt{1 - \cos^2 \theta} \\[3ex]
+        (2.)\;\; \cos \theta = \pm \sqrt{1 - \sin^2 \theta} \\[3ex]
+        (3.)\;\; \tan \theta = \pm \sqrt{\sec^2 \theta - 1} \\[3ex]
+        (4.)\;\; \sec \theta = \pm \sqrt{\tan^2 \theta + 1} \\[3ex]
+        (5.)\;\; \cot \theta = \pm \sqrt{\csc^2 \theta - 1} \\[3ex]
+        (6.)\;\; \csc \theta = \pm \sqrt{\cot^2 \theta + 1}
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Identities -->
+
+    <!-- Trigonometric Formulas -->
+    <div class="w3-container w3-padding-32" id="trigonometricFormulas">
+      <h2>Trigonometric Formulas</h2>
+      <p>
+        <b>Sum and Difference Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (\alpha \pm \beta) = \sin \alpha \cos \beta \pm \cos \alpha \sin \beta \\[3ex]
+        (2.)\;\; \cos (\alpha \pm \beta) = \cos \alpha \cos \beta \mp \sin \alpha \sin \beta \\[3ex]
+        (3.)\;\; \tan (\alpha \pm \beta) = \dfrac{\tan \alpha \pm \tan \beta}{1 \mp \tan \alpha \tan \beta} \\[5ex]
+        $
+        <b>Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin \dfrac{\theta}{2} = \pm \sqrt{\dfrac{1 - \cos \theta}{2}} \\[5ex]
+        (2.)\;\; \cos {\theta \over 2} = \pm \sqrt{\dfrac{1 + \cos \theta}{2}} \\[5ex]
+        (3.)\;\; \tan {\theta \over 2} = \pm \sqrt{\dfrac{1 - \cos \theta}{1 + \cos \theta}} \\[5ex]
+        (4.)\;\; \tan {\theta \over 2} = \dfrac{\sin \theta}{1 + \cos \theta} \\[5ex]
+        (5.)\;\; \tan {\theta \over 2} = \dfrac{1 - \cos \theta}{\sin \theta} \\[5ex]
+        $
+
+        <b>Formulas from Half-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{2} \\[5ex]
+        (2.)\;\; \cos^2 \dfrac{\theta}{2} = \dfrac{1 + \cos \theta}{2} \\[5ex]
+        (3.)\;\; \tan^2 \dfrac{\theta}{2} = \dfrac{1 - \cos \theta}{1 + \cos \theta} \\[7ex]
+        $
+
+        <b>Double-Angle Formulas</b> <br><br>
+        $
+        (1.)\;\; \sin (2\theta) = 2 \sin \theta \cos \theta \\[3ex]
+        (2.)\;\; \cos (2\theta) = \cos^2 \theta - \sin^2 \theta \\[3ex]
+        (3.)\;\; \cos (2\theta) = 1 - 2\sin^2 \theta \\[3ex]
+        (4.)\;\; \cos (2\theta) = 2\cos^2 \theta - 1 \\[3ex]
+        (5.)\;\; \tan (2\theta) = \dfrac{2\tan \theta}{1 - \tan^2 \theta} \\[5ex]
+        $
+
+        <b>Formulas from Double-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin^2 \theta = \dfrac{1 - \cos(2\theta)}{2} \\[5ex]
+        (2.)\;\; \cos^2 \theta = \dfrac{1 + \cos(2\theta)}{2} \\[5ex]
+        (3.)\;\; \tan^2 \theta = \dfrac{1 - \cos(2\theta)}{1 + \cos(2\theta)} \\[7ex]
+        $
+
+        <b>Triple-Angle Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin (3\theta) = 3 \sin \theta - 4\sin^3 \theta \\[3ex]
+        (2.)\;\; \cos (3\theta) = 4 \cos^3 \theta - 3 \cos \theta \\[3ex]
+        (3.)\;\; \tan (3\theta) = \dfrac{3\tan \theta - \tan^3 \theta}{1 - 3\tan^2 \theta} \\[7ex]
+        $
+
+        <b>Sum-to-Product Formulas</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha + \sin \beta = 2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (2.)\;\; \sin \alpha - \sin \beta = 2 \sin \left(\dfrac{\alpha - \beta}{2}\right) \cos \left(\dfrac{\alpha +
+        \beta}{2}\right) \\[5ex]
+        (3.)\;\; \cos \alpha + \cos \beta = 2 \cos \left(\dfrac{\alpha + \beta}{2}\right) \cos \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        (4.)\;\; \cos \alpha - \cos \beta = -2 \sin \left(\dfrac{\alpha + \beta}{2}\right) \sin \left(\dfrac{\alpha -
+        \beta}{2}\right) \\[5ex]
+        $
+        <i>
+          Ask students to write the compact form / shortened form of the first two Sum-to-Product Formulas.
+        </i>
+        <br><br>
+
+        <b>Sum-to-Product Formulas (Compact Form of the First Two Formulas)</b>
+        <br><br>
+        $
+        (1.)\;\; \sin \alpha \pm \sin \beta = 2 \sin \dfrac{\alpha \pm \beta}{2} \cos \dfrac{\alpha \mp \beta}{2}
+        \\[7ex]
+        $
+
+        <b>Product-to-Sum Formulas</b>
+        <br><br>
+        $
+        (1.) \sin \alpha * \sin \beta = \dfrac{1}{2} [\cos(\alpha - \beta) - \cos(\alpha + \beta)] \\[5ex]
+        (2.) \cos \alpha * \cos \beta = \dfrac{1}{2} [\cos(\alpha - \beta) + \cos(\alpha + \beta)] \\[5ex]
+        (3.) \sin \alpha * \cos \beta = \dfrac{1}{2} [\sin(\alpha + \beta) + \sin(\alpha + \beta)] \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Trigonometric Formulas -->
+
+    <!-- Factoring Formulas -->
+    <div class="w3-container w3-padding-32" id="factoringFormulas">
+      <h2>Factoring Formulas</h2>
+      <p>
+        <i>x</i> is any trigonometric ratio <br>
+        <i>y</i> is any trigonometric ratio
+        <br><br>
+        $
+        \underline{Difference\;\;of\;\;Two\;\;Squares} \\[3ex]
+        (1.)\;\;x^2 - y^2 = (x + y)(x - y) \\[5ex]
+        \underline{Difference\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (2.)\;\; x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\[5ex]
+        \underline{Sum\;\;of\;\;Two\;\;Cubes} \\[3ex]
+        (3.)\;\; x^3 + y^3 = (x + y)(x^2 - xy + y^2) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Factoring Formulas -->
+
+    <!-- Triangle Laws -->
+    <div class="w3-container w3-padding-32" id="triangleLaws">
+      <h2>Triangle Laws</h2>
+      <p>
+        <b>Sine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the ratio of the side length of any triangle to the sine of the angle measure opposite that side
+        is the same for the three sides of the triangle.
+        <br><br>
+        $
+        \dfrac{a}{\sin A} = \dfrac{b}{\sin B} = \dfrac{c}{\sin C} \\[5ex]
+        $
+        OR <br><br>
+        The ratio of the angle measure of any triangle to the side length opposite that angle is the same for the three
+        angles of the triangle.
+        <br><br>
+        $
+        \dfrac{\sin A}{a} = \dfrac{\sin B}{b} = \dfrac{\sin C}{c} \\[5ex]
+        $
+
+        <b>Cosine Law:</b> <br>
+        Applies to all triangles. <br>
+        It states that the square of a side of a triangle is the difference between the sum of the squares of the other
+        two sides and twice the product of the two sides and the included angle.
+        <br><br>
+        $
+        a^2 = b^2 + c^2 - 2bc \cos A \\[3ex]
+        \cos A = \dfrac{b^2 + c^2 - a^2}{2bc} \\[5ex]
+        \rightarrow A = \cos^{-1} \left(\dfrac{b^2 + c^2 - a^2}{2bc}\right) \\[5ex]
+        b^2 = a^2 + c^2 - 2ac \cos B \\[3ex]
+        \cos B = \dfrac{a^2 + c^2 - b^2}{2ac} \\[5ex]
+        \rightarrow B = \cos^{-1} \left(\dfrac{a^2 + c^2 - b^2}{2ac}\right) \\[5ex]
+        c^2 = a^2 + b^2 - 2ab \cos C \\[3ex]
+        \cos C = \dfrac{a^2 + b^2 - c^2}{2ab} \\[5ex]
+        \rightarrow C = \cos^{-1} \left(\dfrac{a^2 + b^2 - c^2}{2ab}\right) \\[5ex]
+        $
+      </p>
+    </div>
+    <!-- End Triangle Laws -->
+
+    <!-- Theorems -->
+    <div class="w3-container w3-padding-32" id="theorems">
+      <h2>Theorems</h2>
+      <p>
+        (1.) <b>Sum of Angles of a Triangle Theorem:</b> <br>
+        The sum of the interior angles of a triangle is 180&deg;
+        <br><br>
+        (2.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the hypotenuse
+        is twice the length of the short side.
+        <br><br>
+        (3.) In a <b>30&deg; &ndash; 60&deg; &ndash; 90&deg; right triangle</b>; the length of the middle side
+        is the square root of 3 times the length of short side.
+        <br><br>
+        (4.) In a <b>45&deg; &ndash; 45&deg; &ndash; 90&deg; right triangle theorem</b> (Right Isosceles Triangle
+        Theorem); the length of the hypotenuse is the square root of 2 times the length of either side.
+        <br><br>
+        (5.) <b>Pythagorean Theorem:</b> Applies only to right triangles. <br>
+        In a <b>right triangle</b>, the square of the length of the hypotenuse is the
+        sum of the squares of the short side and the middle side.
+        <br><br>
+        $hyp^2 = leg^2 + leg^2$
+        <br><br>
+        (6.) <b>Converse of the Pythagorean Theorem (Right Triangle Theorem):</b> <br>
+        If the square of the long side(hypotenuse) is the
+        sum of the squares of the other two sides, then the triangle is a right triangle.
+        <br><br>
+        (7.) <b>Acute Triangle Theorem:</b> If the square of the long side is less than the sum of the squares of the
+        other two sides, then the triangle is an acute triangle.
+        <br><br>
+        (8.) <b>Obtuse Triangle Theorem:</b> If the square of the long side is greater than the sum of the squares of
+        the other two sides, then the triangle is an obtuse triangle.
+        <br><br>
+        (9.) <b>Triangle Inequality Theorem:</b> This is the theorem that determines if you can form a triangle using
+        any three lengths. <br>
+        The sum of the lengths of any two sides of a triangle is greater than the length of the third side.
+        <br><br>
+        (10.) <b>Side Length &ndash; Angle Measure Theorem:</b> If any two side lengths of a triangle are unequal; the
+        angles of the triangle are also unequal, and the measure of an angle is opposite the length of the side facing
+        that angle as regards size. <br>
+        The measure of the smallest angle is opposite the shortest side length. <br>
+        The measure of the greatest angle is opposite the longest side length. <br>
+        The measure of the middle angle is opposite the middle side length. <br>
+        In other words; regarding size, the measure of an angle is opposite the length of the side facing the
+        angle; or the side length facing an angle is opposite the angle measure as regards size. <br>
+        Small side faces small angle, middle side faces middle angle, big side faces big angle
+        <br><br>
+        (11.) <b>Exterior Angle of a Triangle Theorem:</b> The exterior angle of a triangle is the sum of the two
+        interior opposite angles.
+        <br><br>
+        (12.) <b>Isosceles Base Angles Theorem:</b> The base angles of an isosceles triangle are equal.
+        <br><br>
+        (13.) <b>Converse of the Isosceles Base Angles Theorem:</b> If the base angles of a triangle are equal, then the
+        triangle is an isosceles triangle.
+        <br><br>
+        (14.) <b>Perpendicular Bisector of the Base of an Isosceles Triangle Theorem:</b> It states that if a line
+        bisects the vertex angle of an isosceles triangle, then the line is also the perpendicular
+        bisector of the base (the line also bisects the base of that isosceles triangle at right angles).
+        <br><br>
+        (15.) <b>Perpendicular Height to Base of Isosceles Triangle Theorem</b> It states that the perpendicular height
+        drawn from the apex of an isosceles triangle to the base: <br>
+        (a.) bisects the base <br>
+        (b.) bisects the apex angle.
+        <br><br>
+        (16.) <b>Side-Splitter Theorem</b> Applies to all triangles with <i>inserted</i> parallel lines as applicable.
+        <br>
+        It states that if a line segment is parallel to one side of a triangle and intersects the other two sides of
+        the triangle, then it divides those two sides proportionally.
+        <br><br>
+        (17.) <b>Midpoint Theorem</b> Applies to all triangles in which a line segment
+        <i>joins the midpoints of any two sides</i> of the triangle. <br>
+        It states that if a line segment joins any two sides of a triangle, then the line segment: <br>
+        (a.) is parallel to the third side. <br>
+        (b.) bisects the third side.
+        <br><br>
+        (18.) <b>Converse of the Midpoint Theorem</b> A line segment drawn through the midpoint of one side of a
+        triangle and parallel to another side, bisects the third side.
+        <br><br>
+        (19.) <b>Scale Factor, Perimeter Ratio, and Area Ratio of Similar Figures Theorem</b> Applies to all similar
+        figures including similar triangles. <br>
+        It states that for two similar figures, the ratio of the perimeters is the same as the scale factor; and the
+        ratio of the areas is the ratio of the square of the scale factor.
+      </p>
+    </div>
+    <!-- End Theorems -->
+
+    <!-- Circle Formulas -->
+    <div class="w3-container w3-padding-32" id="circleFormulas">
+      <h2>Circle Formulas</h2>
+      <p>
+        Except stated otherwise, use:
+        <br><br>
+        $
+        d = diameter \\[3ex]
+        r = radius \\[3ex]
+        L = arc\:\:length \\[3ex]
+        A = area\;\;of\;\;sector \\[3ex]
+        P = perimeter\;\;of\;\;sector \\[3ex]
+        \theta = central\:\:angle \\[3ex]
+        \pi = \dfrac{22}{7} \\[5ex]
+        RAD = radians \\[3ex]
+        ^\circ = DEG = degrees \\[7ex]
+
+        \underline{\theta\;\;in\;\;DEG} \\[3ex]
+        L = \dfrac{2\pi r\theta}{360} \\[5ex]
+        \theta = \dfrac{180L}{\pi r} \\[5ex]
+        r = \dfrac{180L}{\pi \theta} \\[5ex]
+        A = \dfrac{\pi r^2\theta}{360} \\[5ex]
+        \theta = \dfrac{360A}{\pi r^2} \\[5ex]
+        r = \dfrac{360A}{\pi\theta} \\[5ex]
+        P = \dfrac{r(\pi\theta + 360)}{180} \\[7ex]
+
+        \underline{\theta\;\;in\;\;RAD} \\[3ex]
+        L = r\theta \\[5ex]
+        \theta = \dfrac{L}{r} \\[5ex]
+        r = \dfrac{L}{\theta} \\[5ex]
+        A = \dfrac{r^2\theta}{2} \\[5ex]
+        \theta = \dfrac{2A}{r^2} \\[5ex]
+        r = \sqrt{\dfrac{2A}{\theta}} \\[5ex]
+        P = r(\theta + 2) \\[7ex]
+
+        Circumference\:\:of\:\:a\:\:circle = 2\pi r = \pi d \\[3ex]
+        L = \dfrac{2A}{r} \\[5ex]
+        r = \dfrac{2A}{L} \\[5ex]
+        A = \dfrac{Lr}{2}
+        $
+      </p>
+    </div>
+    <!-- End Circle Formulas -->
+
+    <!-- Questions and Answers -->
+    <!-- Numbers 1 through 20 -->
+    <div class="w3-row w3-container w3-padding-32" id="one-twenty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (1.) The diagram below shows a quadrilateral <i>PQRS</i> formed by joining two triangles, <i>PQS</i> and
+          <i>QRS</i>
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number1.png" alt="Number 1">
+          <br><br>
+          (i.) Calculate the length of <i>QR</i>.
+          <br><br>
+          (ii.) The bearing of <i>P</i> from <i>S</i> is 205&deg; <br>
+          Determine the bearing of <br>
+          (a.) <i>R</i> from <i>S</i> <br>
+          (b.) <i>S</i> from <i>P</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT1')">Show/Hide Answer</button>
+          <div class="result" id="solutionT1">
+            <br>
+            $
+            (i.) \\[3ex]
+            \underline{\triangle QRS} \\[3ex]
+            |QR|^2 = |QS|^2 + |RS|^2 - 2 \cdot |QS| \cdot |RS| \cos \angle QSR...\text{Cosine Law} \\[4ex]
+            = 18^2 + 16^2 - 2(18)(16) \cdot \cos 25^\circ \\[4ex]
+            = 324 + 256 - 576(0906307787) \\[3ex]
+            = 57.96671467\;m \\[3ex]
+            $
+            (ii.) Let us update the information on the diagram <br>
+            Please observe the colors.
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number1.png" alt="Number 1">
+            <br><br>
+            $
+            \text{Bearing of P from S} = 205^\circ ...\text{red color} \\[4ex]
+            (a.) \\[3ex]
+            \text{Bearing of R from S} = \phi^\circ ...\text{dark blue color} \\[4ex]
+            \phi + 25^\circ + 72^\circ = 205^\circ...diagram \\[4ex]
+            \phi = 205 - 25 - 72 \\[3ex]
+            \phi = 108^\circ \\[5ex]
+            (b.) \\[3ex]
+            \text{Bearing of S from P} = \beta^\circ ...\text{green color} \\[4ex]
+            \alpha = 180^\circ ...\text{angle on a straight line}...\text{brown color} \\[4ex]
+            \beta = \beta ...\text{alternate interior angles are congruent} \\[4ex]
+            \beta + \alpha = 205^\circ ...diagram \\[3ex]
+            \beta + 180 = 205 \\[3ex]
+            \beta = 205 - 180 \\[3ex]
+            \beta = 25^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (2.) The diagram below shows a triangular field, <i>LMP</i>, on horizontal ground.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number2.png" alt="Number 2">
+          <br><br>
+          (i.) Calculate the value of Angle <i>MLP</i>.
+          <br><br>
+          (ii.) The bearing of <i>P</i> from <i>L</i> is 210&deg;. <br>
+          (a.) Find the bearing of <i>M</i> from <i>L</i>. <br>
+          (b.) Calculate the value of Angle <i>NLP</i> and hence, find the bearing of <i>L</i> from <i>P</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT2')">Show/Hide Answer</button>
+          <div class="result" id="solutionT2">
+            <br>
+            Let: <br>
+            |LP| = <i>m</i> <br>
+            |LM| = <i>p</i> <br>
+            |PM| = <i>l</i> <br>
+            $\angle MLP = \hat{L}$
+            <br><br>
+            $
+            (i.) \\[3ex]
+            \underline{\text{Cosine Law}} \\[3ex]
+            \triangle PLM \\[3ex]
+            l^2 = p^2 + m^2 - 2pm \cos \hat{L} \\[3ex]
+            180^2 = 120^2 + 150^2 - 2(120)(150) \cos \hat{L} \\[3ex]
+            32400 = 14400 + 22500 - 36000 \cos \hat{L} \\[3ex]
+            36000\cos \hat{L} = 14400 + 22500 - 32400 \\[3ex]
+            \cos \hat{L} = \dfrac{4500}{36000} \\[5ex]
+            \cos \hat{L} = 0.125 \\[3ex]
+            \hat{L} = \cos^{-1}(0.125) \\[3ex]
+            \hat{L} = 82.81924422^\circ \\[3ex]
+            $
+            Let us represent the information on the diagram <br>
+            <i>Please see the colors for the angles</i>
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number2.png" alt="Number 2">
+            <br><br>
+            The bearing of <i>M</i> from <i>L</i> = &alpha; <br>
+            Angle <i>NLP</i> = &beta; <br>
+            Bearing of <i>L</i> from <i>P</i> = &tau;
+            <br><br>
+            $
+            (ii.)(a.) \\[3ex]
+            \alpha + \hat{L} = 210^\circ ...diagram \\[3ex]
+            \alpha + 82.81924422 = 210 \\[3ex]
+            \alpha = 210 - 82.81924422 \\[3ex]
+            \alpha = 127.1807558^\circ \\[5ex]
+            (b.) \\[3ex]
+            \beta + 210^\circ = 360^\circ ...\text{angles at a point} \\[3ex]
+            \beta = 360 - 210 \\[3ex]
+            \beta = 150^\circ \\[5ex]
+            \tau = \tau ...\text{interior alternate angles are congruent} \\[3ex]
+            \beta + \tau = 180^\circ ...\text{angles on a straight line} \\[3ex]
+            \tau = 180 - \beta \\[3ex]
+            \tau = 180 - 150 \\[3ex]
+            \tau = 30^\circ
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (3.) A ship travels from Akron (A) on a bearing of 030&deg; to Bellville (B), 90 km away. <br>
+          It then travels to Comptin (C) which is 310 km due east of Akron (A), as shown in the diagram below.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number3.png" alt="Number 3">
+          <br><br>
+          (i.) Indicate on the diagram the bearing 030&deg; and the distances 90 km and 310 km <br>
+          (ii.) Calculate, to the nearest km, the distance between Bellville (B) and Comptin (C) <br>
+          (iii.) Calculate, to the nearest degree, the measure of $A\hat{B}C$ <br>
+          (iv.) Determine the bearing of Comptin (C) from Bellville (B)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT3')">Show/Hide Answer</button>
+          <div class="result" id="solutionT3">
+            <br>
+            (i.) <br>
+            <img src="images/Trigonometry/Answers/Number3i.png" alt="Number 3i">
+            <br><br>
+            $
+            (ii.) \\[3ex]
+            \underline{\triangle ABC} \\[3ex]
+            B\hat{A}C + 30 = 90 ...perpendicular\;\;angle \\[3ex]
+            B\hat{A}C = 90 - 30 = 60^\circ \\[3ex]
+            |BC|^2 = |AB|^2 + |AC|^2 - 2(|AB|)(|AC|) \cos B\hat{A}C \\[3ex]
+            |BC|^2 = 90^2 + 310^2 - 2(90)(310) * \cos 60 \\[3ex]
+            |BC|^2 = 8100 + 96100 - 55800 * 0.5 \\[3ex]
+            |BC|^2 = 104200 - 27900 \\[3ex]
+            |BC|^2 = 76300 \\[3ex]
+            |BC| = \sqrt{76300} \\[3ex]
+            |BC| = 276.2245463 \\[3ex]
+            |BC| \approx 276\;km \\[5ex]
+            (iii.) \\[3ex]
+            \underline{\triangle ABC} \\[3ex]
+            \dfrac{\sin A\hat{B}C}{310} = \dfrac{\sin B\hat{A}C}{|BC|}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin A\hat{B}C}{310} = \dfrac{\sin 60}{276.2245463} \\[5ex]
+            \sin A\hat{B}C = \dfrac{310 * \sin 60}{276.2245463} \\[5ex]
+            \sin A\hat{B}C = \dfrac{310 * 0.8660254038}{276.2245463} \\[5ex]
+            \sin A\hat{B}C = \dfrac{268.4678752}{276.2245463} \\[5ex]
+            \sin A\hat{B}C = 0.9719189651 \\[3ex]
+            A\hat{B}C = \sin^{-1}(0.9719189651) \\[3ex]
+            A\hat{B}C = 76.38976123 \\[3ex]
+            A\hat{B}C \approx 76^\circ \\[5ex]
+            (iv.) \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number3iv.png" alt="Number 3iv">
+            <br><br>
+            $
+            Bearing\;\;of\;\;Comptin\;\;from\;\;Bellville = \theta \\[3ex]
+            \phi = 30^\circ...alternate\;\; \angle s\;\;are\;\;equal \\[3ex]
+            \phi + \tau = A\hat{B}C ...diagram \\[3ex]
+            30 + \tau = 76.38976123 \\[3ex]
+            \tau = 76.38976123 - 30 \\[3ex]
+            \tau = 46.38976123 \\[3ex]
+            \theta + \tau = 180...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            \theta = 180 - \tau \\[3ex]
+            \theta = 180 - 46.38976123 \\[3ex]
+            \theta = 133.6102388 \\[3ex]
+            \theta \approx 133^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (4.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT4')">Show/Hide Answer</button>
+          <div class="result" id="solutionT4">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (5.) <i>E, F, G</i> and <i>H</i> are 4 points on level ground. <br>
+          The diagram below gives information on the distances and angles between the points.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number5.png" alt="Number 5">
+          <br><br>
+          (i.) Show that the value of <i>x</i> is 29.5&deg;, correct to 1 decimal place.
+          <br><br>
+          (ii.) A vertical tower, <i>GT,</i> is constructed at the point <i>G</i> and is pivoted to the ground at the
+          points <i>E, F</i> and <i>H</i> using pieces of wire. <br>
+          The angle of elevation of the top of the tower, <i>T,</i> from the point <i>F</i> is 31&deg; <br>
+          What length of wire was used to secure Point <i>T</i> to Point <i>F</i>?
+          <br><br>
+          (iii.) The bearing of <i>E</i> from <i>H</i> is 228&deg;. <br>
+          Find the bearing of: <br>
+          (a.) <i>H</i> from <i>E</i> <br>
+          (b.) <i>G</i> from <i>H</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT5')">Show/Hide Answer</button>
+          <div class="result" id="solutionT5">
+            <br>
+            $
+            (i.) \\[3ex]
+            \underline{\text{Cosine Law}} \\[3ex]
+            |GF|^2 = |GH|^2 + |HF|^2 - 2\cdot |GH|\cdot |HF|\cos\angle GHF \\[4ex]
+            6.9^2 = 5.3^2 + 11^2 - 2(5.3)(11)\cos x^\circ \\[4ex]
+            2(5.3)(11)\cos x = 5.3^2 + 11^2 - 6.9^2 \\[4ex]
+            116.6\cos x = 101.48 \\[3ex]
+            \cos x = \dfrac{101.48}{116.6} \\[5ex]
+            \cos x = 0.8703259005 \\[3ex]
+            x = \cos^{-1}(0.8703259005) \\[4ex]
+            x = 29.5034665 \\[3ex]
+            x \approx 29.5^\circ...\text{to 1 decimal place} \\[3ex]
+            $
+            (ii.) Indicate the information on the diagram. <br>
+            Draw the vertical line: |<i>GT</i>| perpendicular at <i>G</i> <br>
+            Show the angle of elevation of <i>T</i> from <i>F</i>
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number5-1st.png" alt="Number 5-1st">
+            <br><br>
+            The length of wire was used to secure Point <i>T</i> to Point <i>F</i> = |FT|
+            <br><br>
+            $
+            \underline{\triangle TGF} \\[3ex]
+            \cos 31^\circ = \dfrac{|FG|}{|FT|}...SOHCAHTOA \\[5ex]
+            \cos 31 = \dfrac{6.9}{|FT|} \\[5ex]
+            |FT| = \dfrac{6.9}{\cos 31} \\[5ex]
+            = \dfrac{6.9}{0.8571673007} \\[5ex]
+            = 8.049770441\;m \\[3ex]
+            $
+            (iii.) Let us indicate these bearings on the diagram
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number5-2nd.png" alt="Number 5-2nd">
+            <br><br>
+            Let the bearing of <i>H</i> from <i>E</i> = &alpha; <br>
+            Angle on a straight line = 180&deg; <br>
+            Let the bearing of <i>G</i> from <i>H</i> = &beta;
+            <br><br>
+            $
+            (a.) \\[3ex]
+            \alpha = \alpha ...\text{alternate interior angles are congruent} \\[3ex]
+            \alpha = 228^\circ - 180^\circ ...diagram \\[4ex]
+            \alpha = 48^\circ \\[5ex]
+            (b.) \\[3ex]
+            \beta = 228^\circ - 54^\circ ...diagram \\[4ex]
+            \beta = 174^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (6.) The diagram below, <b>not drawn to scale</b>, shows the route of a ship cruising from Palmcity (<i>P</i>)
+          to
+          Quayton (<i>Q</i>) and then to Rivertown (<i>R</i>). <br>
+          The bearing of <i>Q</i> from <i>P</i> is 133&deg; and the angle <i>PQR</i> is 56&deg;
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number6.png" alt="Number 6">
+          <br><br>
+          (i) Calculate the value of angle <i>w</i> <br>
+          (ii) Determine the bearing of <i>P</i> from <i>Q</i> <br>
+          (iii) Calculate the distance <i>RP</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT6')">Show/Hide Answer</button>
+          <div class="result" id="solutionT6">
+            <br>
+            $
+            (i) \\[3ex]
+            56 + w = 133 ...\text{alternate interior angles are equal} \\[3ex]
+            w = 133 - 56 \\[3ex]
+            w = 77^\circ \\[5ex]
+            (ii) \\[3ex]
+            Bearing\;\;of\;\;P\;\;from\;\;Q \\[3ex]
+            = 180 + w + 56 \\[3ex]
+            = 180 + 133 \\[3ex]
+            = 313^\circ \\[5ex]
+            (iii) \\[3ex]
+            \underline{\text{Cosine Law}} \\[3ex]
+            |RP|^2 = 210^2 + 290^2 - 2(210)(290) \cos 56^\circ \\[4ex]
+            |RP|^2 = 44100 + 84100 - 121800 * 0.5591929035 \\[3ex]
+            |RP|^2 = 128200 - 68109.69564 \\[3ex]
+            |RP|^2 = 60090.30436 \\[3ex]
+            |RP| = \sqrt{60090.30436} \\[3ex]
+            |RP| = 245.133238 \\[3ex]
+            |RP| \approx 245\;km
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (7.)
+          <button class="solutions" onclick="solutions('solutionT7')">Show/Hide Answer</button>
+          <div class="result" id="solutionT7">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (8.) The diagram below, <b>not drawn to scale</b>, shows two ships, <i>R</i> and <i>S</i> at anchor on a
+          lake of calm water. <br>
+          <i>FT</i> is a vertical tower. <br>
+          <i>FSR</i> is a straight line and <i>RS</i> &equals; 150 m. <br>
+          The angles of elevation of <i>T</i>, the top of a tower, from <i>R</i> and <i>S</i>, are 22&deg; and 40&deg;
+          respectively. <br>
+          <i>F</i> is the foot of the tower.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number8.png" alt="Number 8">
+          <br><br>
+          Calculate, giving your answer to 1 decimal place where appropriate <br>
+          (i) the measure of &angle;<i>RTS</i> <br>
+          (ii) the length of <i>ST</i> <br>
+          (iii) the height of the tower, <i>FT</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT8')">Show/Hide Answer</button>
+          <div class="result" id="solutionT8">
+            <br>
+            $
+            \angle RST + \angle FST = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            \angle RST + 40 = 180 \\[3ex]
+            \angle RST = 180 - 40 \\[3ex]
+            \angle RST = 140^\circ \\[5ex]
+            (i) \\[3ex]
+            \underline{\triangle TRS} \\[3ex]
+            \angle RTS + \angle RST + \angle TRS = 180^\circ ...sum\;\;of\;\;\angle s\;\;in\;\;a\;\;\triangle \\[3ex]
+            \angle RTS + 140 + 22 = 180 \\[3ex]
+            \angle RTS + 162 = 180 \\[3ex]
+            \angle RTS = 180 - 162 \\[3ex]
+            \angle RTS = 18^\circ \\[5ex]
+            (ii) \\[3ex]
+            \dfrac{|ST|}{\sin \angle TRS} = \dfrac{|RS|}{\sin \angle RTS}...Sine\;\;Law \\[5ex]
+            \dfrac{|ST|}{\sin 22^\circ} = \dfrac{150}{\sin 18^\circ} \\[5ex]
+            |ST| = \dfrac{150\sin 22^\circ}{\sin 18^\circ} \\[5ex]
+            |ST| = \dfrac{150(0.3746065934)}{0.3090169944} \\[5ex]
+            |ST| = 181.8378602 \\[3ex]
+            |ST| \approx 181.8\;m \\[5ex]
+            (iii) \\[3ex]
+            \underline{\triangle TSF} \\[3ex]
+            \sin \angle TSF = \dfrac{|FT|}{ST|}...SOHCAHTOA \\[5ex]
+            \sin 40^\circ = \dfrac{|FT|}{181.8378602} \\[5ex]
+            |FT| = 181.8378602 \sin 40 \\[3ex]
+            |FT| = 181.8378602(0.6427876097) \\[3ex]
+            |FT| = 116.8831235 \\[3ex]
+            |FT| \approx 116.9\;m
+            $
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (9.) Two ports, <i>E</i> and <i>G</i>, are on level ground, 245 km apart. <br>
+          The bearing of <i>E</i> is 302&deg;. <br>
+          A ship is anchored at <i>F</i>, some distance away from <i>G</i>, on a bearing of 228&deg;. <br>
+          Angle <i>EFG</i> = 52&deg; <br>
+          This information is shown on the diagram below.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number9.png" alt="Number 9">
+          <br><br>
+          (a.) On the diagram above, insert the angle 228&deg;, the bearing of <i>F</i> from <i>G</i> <br>
+          (b.) Determine the value of Angle <i>FEG</i>. <br>
+          (c.) Calculate <i>GF</i>, the distance the ship is from Port <i>G</i>. <br>
+          (d.) Indicate the point <i>H</i> on the line <i>EF</i>, such that <i>GH</i> is the SHORTEST distance from
+          <i>G</i> to <i>EF</i>. <br>
+          (e.) Determine the distance <i>GH</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT9')">Show/Hide Answer</button>
+          <div class="result" id="solutionT9">
+            <br>
+            (a.) <img src="images/Trigonometry/Answers/Number9a.png" alt="Number 9a">
+            <br><br>
+            The red color in the diagram indicates 228&deg; <br>
+            Angle on a straight line = 180&deg; <br>
+            180&deg; + 48&deg; = 228&deg;
+            <br><br>
+            (b.) Let us determine the value of Angle FGE first <br>
+            Check out the blue color in the diagram <br>
+            The bearing of <i>E</i> is 302&deg;.
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number9b-1st.png" alt="Number 9b-1st">
+            <br><br>
+            Now, we can determine the value of Angle FEG <br>
+            <img src="images/Trigonometry/Answers/Number9b-2nd.png" alt="Number 9b-2nd">
+            <br><br>
+            $
+            \underline{\triangle EFG} \\[3ex]
+            \angle FEG + \angle FGE + \angle EFG = 180^\circ ...\text{sum of angles of a triangle} \\[4ex]
+            \angle FEG + 74 + 52 = 180 \\[3ex]
+            \angle FEG = 180 - 74 - 52 \\[3ex]
+            \angle FEG = 54^\circ \\[4ex]
+            (c.) \\[3ex]
+            \dfrac{|GF|}{\sin \angle FEG} = \dfrac{|EG|}{\sin \angle EFG} ...\text{Sine Law} \\[5ex]
+            \dfrac{|GF|}{\sin 54^\circ} = \dfrac{245}{\sin 52^\circ} \\[6ex]
+            |GF| = \dfrac{245\sin 54^\circ}{\sin 52^\circ} \\[6ex]
+            = \dfrac{245(0.8090169944)}{0.7880107536} \\[5ex]
+            = 251.531039\;km \\[3ex]
+            $
+            (d.) The shortest distance between a point and a line is always along the line perpendicular to it. <br>
+            Therefore, the point <i>H</i> on the line <i>EF</i>, such that <i>GH</i> is the SHORTEST distance from
+            <i>G</i> to <i>EF</i> is the perpendicular distance from the point <i>G</i> to the line <i>EF</i> at
+            <i>H</i>
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number9d.png" alt="Number 9d">
+            <br><br>
+            $
+            (e.) \\[3ex]
+            \dfrac{|GH|}{\sin \angle HFG} = \dfrac{|GF|}{\sin \angle GHF} ...\text{Sine Law} \\[5ex]
+            \dfrac{|GH|}{\sin 52^\circ} = \dfrac{251.531039}{\sin 90^\circ} \\[6ex]
+            |GF| = \dfrac{251.531039\sin 52^\circ}{\sin 90^\circ} \\[6ex]
+            = \dfrac{251.531039(0.7880107536)}{1} \\[5ex]
+            = 198.2091636\;km
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (10.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT10')">Show/Hide Answer</button>
+          <div class="result" id="solutionT10">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (11.) From a harbour, <i>H</i>, the bearing of two buoys, <i>S</i> and <i>Q</i>, are 185&deg; and 311&deg;
+          respectively. <br>
+          <i>Q</i> is 5.4 km from <i>H</i> while <i>S</i> is 3.5 km from <i>H</i> <br>
+          (i) On the diagram below, which shows the sketch of this information, insert the value of the marked angle,
+          <i>QHS</i> <br>
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number11.png" alt="Number 11">
+          <br><br>
+          (ii) Calculate <i>QS</i>, the distance between the two buoys. <br>
+          (iii) Calculate the bearing of <i>S</i> from <i>Q</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT11')">Show/Hide Answer</button>
+          <div class="result" id="solutionT11">
+            <br>
+            $
+            (i) \\[3ex]
+            \angle QHS = 311 - 185 = 216^\circ \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number11i.png" alt="Number 11i">
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number11ii.png" alt="Number 11ii">
+            <br><br>
+            $
+            (ii) \\[3ex]
+            Let\;\; QS = h \\[3ex]
+            h^2 = 5.4^2 + 3.5^2 - 2(5.4)(3.5) \cos 126^\circ...Cosine\;\;Law \\[3ex]
+            h^2 = 29.16 + 12.25 - 37.8 * -0.5877852523 \\[3ex]
+            h^2 = 41.41 + 22.21828254 \\[3ex]
+            h^2 = 63.62828254 \\[3ex]
+            h = \sqrt{63.62828254} \\[3ex]
+            h = 7.976733826 \\[3ex]
+            QS \approx 8.0\;km \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number11iii.png" alt="Number 11iii">
+            <br><br>
+            $
+            k + 126 + 185 = 360...\angle s\;\;at\;\;a\;\;point \\[3ex]
+            k + 311 = 360 \\[3ex]
+            k = 360 - 311 \\[3ex]
+            k = 49^\circ \\[3ex]
+            p = p ...alternate\;\; \angle s \\[3ex]
+            p + k = 90 ...right\;\; \angle \\[3ex]
+            p = 90 - k \\[3ex]
+            p = 90 - 49 \\[3ex]
+            p = 41^\circ \\[3ex]
+            Considering\;\; \triangle QHS \\[3ex]
+            \dfrac{\sin \angle SQH}{3.5} = \dfrac{\sin 126}{h}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \angle SQH}{3.5} = \dfrac{0.8090169944}{7.976733826} \\[5ex]
+            \sin \angle SQH = \dfrac{3.5 * 0.8090169944}{7.976733826} \\[5ex]
+            \sin \angle SQH = \dfrac{2.83155948}{7.976733826} \\[5ex]
+            \sin \angle SQH = 0.3549773055 \\[3ex]
+            \angle SQH = \sin^{-1}(0.3549773055) \\[3ex]
+            \angle SQH = 20.79205349^\circ \\[5ex]
+            (iii) \\[3ex]
+            Bearing\;\;of\;\; S\;\;from\;\;Q \\[3ex]
+            = 90 + p + \angle SQH \\[3ex]
+            = 90 + 41 + 20.79205349 \\[3ex]
+            = 151.7920535 \\[3ex]
+            \approx 152^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (12.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT12')">Show/Hide Answer</button>
+          <div class="result" id="solutionT12">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (13.) A person at the top of a lighthouse, <i>TB</i>, sees two ships, <i>S</i><sub>1</sub> and
+          <i>S</i><sub>2</sub>, approaching the coast as illustrated in the diagram below. <br>
+          The angles of depression are 20° and 12° respectively. <br>
+          The ships are 110 m apart. <br>
+          (i) Complete the diagram below by inserting the angles of depression and the distance between the ships.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number13.png" alt="Number 13">
+          <br><br>
+          (ii) Determine, to the nearest metre, <br>
+          (a) the distance, <i>TS</i><sub>2</sub>, between the top of the lighthouse and Ship 2 <br>
+          (b) the height of the lighthouse, <i>TB</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT13')">Show/Hide Answer</button>
+          <div class="result" id="solutionT13">
+            <br>
+            (i) <br>
+            The angles of depression and the distance between the ships are shown in the diagram below:
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number13.png" alt="Number 13">
+            <br><br>
+            $
+            (ii) \\[3ex]
+            \angle TS_1B = 20^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            \angle TS_1S_2 + \angle TS_1B = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            \angle TS_1S_2 + 20 = 180 \\[3ex]
+            \angle TS_1S_2 = 180 - 20 \\[3ex]
+            \angle TS_1S_2 = 160^\circ \\[3ex]
+            \underline{\triangle TS_2S_1} \\[5ex]
+            (a) \\[3ex]
+            \dfrac{|TS_2|}{\sin\angle TS_1S_2} = \dfrac{|S_1S_2|}{\sin\angle S_1TS_2}...Sine\;\;Law \\[5ex]
+            \dfrac{|TS_2|}{\sin 160^\circ} = \dfrac{110}{\sin 8^\circ} \\[5ex]
+            |TS_2| = \dfrac{110\sin 160^\circ}{\sin 8^\circ} \\[5ex]
+            |TS_2| = \dfrac{110(0.3420201433)}{0.139173101} \\[5ex]
+            |TS_2| = 270.3267766\;m \\[3ex]
+            |TS_2| \approx 270\;m \\[5ex]
+            (b) \\[3ex]
+            \angle TS_2B = 12^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            \underline{\triangle TS_2B} \\[3ex]
+            \sin \angle TS_2B = \dfrac{|TB|}{|TS_2|}...SOHCAHTOA \\[5ex]
+            \sin 12^\circ = \dfrac{|TB|}{270.3267766} \\[5ex]
+            |TB| = 270.3267766\sin 12 \\[3ex]
+            |TB| = 270.3267766(0.2079116908) \\[3ex]
+            |TB| = 56.2040972 \\[3ex]
+            |TB| \approx 56\;m
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (14.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT14')">Show/Hide Answer</button>
+          <div class="result" id="solutionT14">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (15.)
+          <button class="solutions" onclick="solutions('solutionT15')">Show/Hide Answer</button>
+          <div class="result" id="solutionT15">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (16.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT16')">Show/Hide Answer</button>
+          <div class="result" id="solutionT16">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (17.) A boat leaves a dock at point <i>A</i> and travels for a distance of 15 km to point <i>B</i> on a
+          bearing of 135&deg; <br>
+          The boat then changes course and travels for a distance of 8 km to point <i>C</i> on a bearing of 060&deg;
+          <br><br>
+          (a.) Illustrate the above diagram in a clearly labelled diagram <br>
+          The diagram should show the <br>
+          (i.) north direction <br>
+          (ii.) bearings 135&deg; and 060&deg; <br>
+          (iii) distances 8 km and 15 km
+          <br><br>
+          (b.) Calculate <br>
+          (i.) the distance <i>AC</i> <br>
+          (ii.) $\angle BCA$ <br>
+          (iii.) the bearing of <i>A</i> from <i>C</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT17')">Show/Hide Answer</button>
+          <div class="result" id="solutionT17">
+            <br>
+            (a.) <br>
+            <img src="images/Trigonometry/Answers/Number17a.png" alt="Number 17a">
+            <br><br>
+            $
+            (b.) \\[3ex]
+            \theta = 45^\circ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            \theta + \phi = 90...complementary\;\;\angle s \\[3ex]
+            \phi = 90 - \theta \\[3ex]
+            \phi = 90 - 45 \\[3ex]
+            \phi = 45^\circ \\[3ex]
+            \angle ABC = B = \phi + 60...diagram \\[3ex]
+            B = 45 + 60 \\[3ex]
+            B = 105^\circ \\[5ex]
+            (i.) \\[3ex]
+            Distance\;\; AC = b \\[3ex]
+            b^2 = a^2 + c^2 - 2ac \cos B...Cosine\;\;Law \\[3ex]
+            b^2 = 8^2 + 15^2 - 2(8)(15) * \cos 105 \\[3ex]
+            b^2 = 64 + 225 - 240 * - 0.2588190451 \\[3ex]
+            b^2 = 289 + 62.11657082 \\[3ex]
+            b^2 = 351.1165708 \\[3ex]
+            b = \sqrt{351.1165708} \\[3ex]
+            b = 18.73810478 \\[3ex]
+            b \approx 19\;km \\[5ex]
+            (ii.) \\[3ex]
+            \angle BCA = \angle C \\[3ex]
+            \dfrac{\sin C}{c} = \dfrac{\sin B}{b} \\[5ex]
+            \dfrac{\sin C}{15} = \dfrac{\sin 105}{18.73810478} \\[5ex]
+            \sin C = \dfrac{15\sin 105}{18.73810478} \\[5ex]
+            \sin C = \dfrac{15(0.9659258263)}{18.73810478} \\[5ex]
+            \sin C = \dfrac{14.48888739}{18.73810478} \\[5ex]
+            \sin C = 0.773231208 \\[3ex]
+            C = \sin^{-1}(0.773231208) \\[3ex]
+            C = 50.64494187 \\[3ex]
+            C \approx 51^\circ \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number17b.png" alt="Number 17b">
+            <br><br>
+            $
+            (iii) \\[3ex]
+            \tau = 60^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            Bearing\;\;of\;\;A\;\;from\;\;C \\[3ex]
+            = 180 + \tau + \angle BCA \\[3ex]
+            = 180 + 60 + 50.64494187 \\[3ex]
+            = 290.6449419 \\[3ex]
+            \approx 291^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (18.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT18')">Show/Hide Answer</button>
+          <div class="result" id="solutionT18">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (19.)
+          <button class="solutions" onclick="solutions('solutionT19')">Show/Hide Answer</button>
+          <div class="result" id="solutionT19">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (20.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT20')">Show/Hide Answer</button>
+          <div class="result" id="solutionT20">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Numbers 1 through 20 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/CSEC/Trigonometry.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="twentyone-forty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (21.) (i.) Draw a diagram to represent the information given below. <br>
+          <b>Show clearly the north line in your diagram</b> <br>
+          Town <i>F</i> is 50 km east of town <i>G</i> <br>
+          Town <i>H</i> is on a bearing of 040&deg; from town <i>F</i> <br>
+          The distance from <i>F</i> to <i>H</i> is 65 km <br><br>
+          (ii) Calculate, <b>to the nearest kilometre</b>, the actual distance <i>GH</i> <br>
+          (iii) Calculate, <b>to the nearest degree</b>, the bearing of <i>H</i> from <i>G</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT21')">Show/Hide Answer</button>
+          <div class="result" id="solutionT21">
+            <br>
+            (i) <br>
+            <img src="images/Trigonometry/Answers/Number21.png" alt="Number 21">
+            <br><br>
+            $
+            (ii) \\[3ex]
+            \angle GFH = 90 + 40 = 130^\circ \\[3ex]
+            |GH|^2 = |GF|^2 + |FH|^2 - 2 * |GF| * |FH| * \cos \angle GFH...Cosine\;\;Law \\[3ex]
+            |GH|^2 = 50^2 + 65^2 - 2(50)(65) * \cos 130 \\[3ex]
+            |GH|^2 = 2500 + 4225 - 6500 * -0.6427876097 \\[3ex]
+            |GH|^2 = 6725 + 4178.119463 \\[3ex]
+            |GH|^2 = 10903.11946 \\[3ex]
+            |GH| = \sqrt{10903.11946} \\[3ex]
+            |GH| = 104.4180035 \\[3ex]
+            |GH| \approx 104\;km \\[5ex]
+            (iii) \\[3ex]
+            \dfrac{\sin \angle HGF}{|FH|} = \dfrac{\sin \angle GFH}{|GH|}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \phi}{65} = \dfrac{\sin 130}{104.4180035} \\[5ex]
+            \sin \phi = \dfrac{65 \sin 130}{104.4180035} \\[5ex]
+            \sin \phi = \dfrac{65 * 0.7660444431}{104.4180035} \\[5ex]
+            \sin \phi = \dfrac{49.7928888}{104.4180035} \\[5ex]
+            \sin \phi = 0.4768611459 \\[3ex]
+            \phi = \sin^{-1}(0.4768611459) \\[3ex]
+            \phi = 28.48059838 \\[3ex]
+            \theta + \phi = 90 ...right\;\;\angle \\[3ex]
+            \theta = 90 - \phi \\[3ex]
+            \theta = 90 - 28.48059838 \\[3ex]
+            \theta = 61.51940162 \\[3ex]
+            Bearing\;\;of\;\;H\;\;from\;\;G = \theta \approx 62^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (22.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT22')">Show/Hide Answer</button>
+          <div class="result" id="solutionT22">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (23.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT23')">Show/Hide Answer</button>
+          <div class="result" id="solutionT23">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (24.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT24')">Show/Hide Answer</button>
+          <div class="result" id="solutionT24">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (25.) From a harbour, <i>H</i>, the bearing of two ships, <i>Q</i> and <i>R</i>, are 069&deg; and 151&deg;
+          respectively. <br>
+          <i>Q</i> is 175 km from <i>H</i> while <i>R</i> is 242 km from <i>H</i>
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number25.png" alt="Number 25">
+          <br><br>
+          (i) Complete the diagram above to show the information given. <br>
+          (ii) Calculate <i>QR</i>, the distance between the two ships, to the nearest km. <br>
+          (iii) Calculate how far due south is Ship <i>R</i> of the harbour, <i>H</i>
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT25')">Show/Hide Answer</button>
+          <div class="result" id="solutionT25">
+            <br>
+            (i) <br>
+            <img src="images/Trigonometry/Answers/Number25i.png" alt="Number 25i">
+            <br><br>
+            $
+            (ii) \\[3ex]
+            |QR|^2 = |QH|^2 + |RH|^2 - 2 * |QH| * |RH| * \cos \angle QHR...Cosine\;\;Law \\[3ex]
+            |QR|^2 = 175^2 + 242^2 - 2(175)(242) * \cos 82 \\[3ex]
+            |QR|^2 = 30625 + 58564 - 84700 * 0.139173101 \\[3ex]
+            |QR|^2 = 89189 - 11787.96165 \\[3ex]
+            |QR|^2 = 77401.03835 \\[3ex]
+            |QR| = \sqrt{77401.03835} \\[3ex]
+            |QR| = 278.210421 \\[3ex]
+            |QR| \approx 278\;km \\[5ex]
+            $
+            <img src="images/Trigonometry/Answers/Number25iii.png" alt="Number 25iii">
+            <br><br>
+            How far due south is Ship <i>R</i> of the harbour, <i>H</i> = |PH|
+            <br><br>
+            $
+            69 + 82 + \theta = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            151 + \theta = 180 \\[3ex]
+            \theta = 180 - 151 \\[3ex]
+            \theta = 29^\circ \\[3ex]
+            \underline{\triangle HPR} \\[3ex]
+            \cos \theta = \dfrac{|PH|}{|RH|}...SOHCAHTOA \\[3ex]
+            \cos 29 = \dfrac{|PH|}{242} \\[5ex]
+            242 \cos 29 = |PH| \\[3ex]
+            |PH| = 242 * \cos 29 \\[3ex]
+            |PH| = 242(0.8746197071) \\[3ex]
+            |PH| = 211.6579691 \\[3ex]
+            |PH| \approx 212\;km
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (26.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT26')">Show/Hide Answer</button>
+          <div class="result" id="solutionT26">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (27.) From a port, <i>L</i>, ship <i>R</i> is 250 kilometres on a bearing of 065&deg; <br>
+          Ship <i>T</i> is 180 kilometres from <i>L</i> on a bearing of 148&deg; <br>
+          This information is illustrated in the diagram below.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number27.png" alt="Number 27">
+          <br><br>
+          (i) Complete the diagram above by inserting the value of angle <i>RLT</i> <br>
+          (ii) Calculate <i>RT</i>, the distance between the two ships. <br>
+          (iii) Determine the bearing of <i>T</i> from <i>R</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT27')">Show/Hide Answer</button>
+          <div class="result" id="solutionT27">
+            <br>
+            The information is represented on the diagram:
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number27i.png" alt="Number 27i">
+            <br><br>
+            $
+            (i) \\[3ex]
+            \angle RLT + 65^\circ = 148^\circ...bearing\;\;of\;\;T\;\;from\;\;L \\[3ex]
+            \angle RLT = 148 - 65 \\[3ex]
+            \angle RLT = 83^\circ \\[5ex]
+            (ii) \\[3ex]
+            |RT|^2 = |LT|^2 + |LR|^2 - 2 * |LT| * |LR| * \cos \angle RLT...Cosine\;\;Law \\[3ex]
+            |RT|^2 = 180^2 + 250^2 - 2(180)(250) * \cos 83^\circ \\[3ex]
+            |RT|^2 = 32400 + 62500 - (90000 * 0.1218693434) \\[3ex]
+            |RT|^2 = 94900 - 10968.24091 \\[3ex]
+            |RT|^2 = 83931.75909 \\[3ex]
+            |RT| = \sqrt{83931.75909} \\[3ex]
+            |RT| = 289.7097843 \\[3ex]
+            |RT| \approx 290\;km \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number27iii.png" alt="Number 27iii">
+            <br><br>
+            $
+            \dfrac{\sin \angle LRT}{|LT|} = \dfrac{\sin \angle RLT}{|RT|} ...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \theta}{180} = \dfrac{\sin 83}{289.7097843} \\[5ex]
+            \sin \theta = \dfrac{180 * \sin 83}{289.7097843} \\[5ex]
+            \sin \theta = \dfrac{178.6583073}{289.7097843} \\[5ex]
+            \sin \theta = 0.6166802676 \\[3ex]
+            \theta = \sin^{-1}(0.6166802676) \\[3ex]
+            \theta = 38.07411323^\circ \\[3ex]
+            \psi + \theta = 65^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            \psi = 65 - \theta \\[3ex]
+            \psi = 65 - 38.07411323^\circ \\[3ex]
+            \psi = 26.92588677^\circ \\[5ex]
+            (iii) \\[3ex]
+            Bearing\;\;of\;\;T\;\;from\;\;R \\[3ex]
+            = 180 + \psi \\[3ex]
+            = 180 + 26.92588677^\circ \\[3ex]
+            = 206.9258868^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (28.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT28')">Show/Hide Answer</button>
+          <div class="result" id="solutionT28">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (29.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT29')">Show/Hide Answer</button>
+          <div class="result" id="solutionT29">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (30.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT30')">Show/Hide Answer</button>
+          <div class="result" id="solutionT30">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (31.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT31')">Show/Hide Answer</button>
+          <div class="result" id="solutionT31">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (32.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT32')">Show/Hide Answer</button>
+          <div class="result" id="solutionT32">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (33.) The diagram below, <b>not drawn to scale</b>, shows the relative positions of three reservoirs <i>B,
+            F</i> and <i>G</i>, all on level ground. <br>
+          The distance <i>BF</i> &equals; 32 km, <i>FG</i> &equals; 55 km, &angle;<i>BFG</i> is 103&deg; and <i>F</i> is
+          on a bearing of 042&deg; from <i>B</i>.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number33.png" alt="Number 33">
+          <br><br>
+          (i) Determine the bearing of <i>B</i> from <i>F</i>. <br>
+          (ii) Calculate the distance <i>BG</i>, giving your answer to one decimal place. <br>
+          (iii) Calculate, to the nearest degree, the bearing of <i>G</i> from <i>B</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT33')">Show/Hide Answer</button>
+          <div class="result" id="solutionT33">
+            <br>
+            (i) <br><br>
+            <img src="images/Trigonometry/Answers/Number33i.png" alt="Number 33i">
+            <br><br>
+            $
+            \phi = 42^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            Bearing\;\;of\;\;B\;\;from\;\;F\;\;(blue\;\;color) \\[3ex]
+            = 180 + \phi \\[3ex]
+            = 180 + 42 \\[3ex]
+            = 222^\circ \\[3ex]
+            (ii) \\[3ex]
+            |BG|^2 = |BF|^2 + |FG|^2 - 2 * |BF| * |FG| * \cos \angle BFG ...Cosine\;\;Law \\[3ex]
+            |BG|^2 = 32^2 + 55^2 - 2(32)(55) * \cos 103^\circ \\[3ex]
+            |BG|^2 = 1024 + 3025 - 3520(-0.2249510543) \\[3ex]
+            |BG|^2 = 4049 + 791.8277113 \\[3ex]
+            |BG|^2 = 4840.827711 \\[3ex]
+            |BG| = \sqrt{4840.827711} \\[3ex]
+            |BG| = 69.57605703 \\[3ex]
+            |BG| \approx 70\;km \\[3ex]
+            $
+            <img src="images/Trigonometry/Answers/Number33iii.png" alt="Number 33iii">
+            <br><br>
+            $
+            \dfrac{\sin \angle FBG}{|FG|} = \dfrac{\sin \angle BFG}{|BG|} ...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \angle FBG}{55} = \dfrac{\sin 103^\circ}{69.57605703} \\[5ex]
+            \sin \angle FBG = \dfrac{55\sin 103^\circ}{69.57605703} \\[5ex]
+            \sin \angle FBG = \dfrac{55(0.9743700648)}{69.57605703} \\[5ex]
+            \sin \angle FBG = 0.7702413136 \\[3ex]
+            \angle FBG = \sin^{-1}(0.7702413136) \\[3ex]
+            \angle FBG = 50.37556355^\circ \\[3ex]
+            Bearing\;\;of\;\;G\;\;from\;\;B\;\;(red\;\;color) \\[3ex]
+            = 42 + \angle FBG \\[3ex]
+            = 42 + 50.37556355 \\[3ex]
+            = 92.37556355 \\[3ex]
+            \approx 92^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (34.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT34')">Show/Hide Answer</button>
+          <div class="result" id="solutionT34">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (35.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT35')">Show/Hide Answer</button>
+          <div class="result" id="solutionT35">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (36.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT36')">Show/Hide Answer</button>
+          <div class="result" id="solutionT36">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (37.) A ship leaves Port A and sails 52 km on a bearing of 044&deg; to Port B. <br>
+          The ship then changes course to sail to Port C, 72 km away, on a bearing of 105&deg;. <br>
+          (i) On the diagram below, <b>not drawn to scale</b>, label the known distances travelled and the known angles.
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number37.png" alt="Number 37">
+          <br><br>
+          (ii) Determine the measure of &angle;<i>ABC</i>. <br>
+          (iii) Calculate, to the nearest km, the distance <i>AC</i>. <br>
+          (iv) Show that the bearing of <i>A</i> from <i>C</i>, to the nearest degree, is 260&deg;.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT37')">Show/Hide Answer</button>
+          <div class="result" id="solutionT37">
+            <br>
+            (i) The labelled diagram is:
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number37i.png" alt="Number 37i">
+            <br><br>
+            (ii) <br>
+            Let us indicate more labels to help us with the calculations.
+            <br><br>
+            <img src="images/Trigonometry/Answers/Number37ii.png" alt="Number 37ii">
+            <br><br>
+            $
+            \phi = 44^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            105 + \theta = 180^\circ ...\angle s\;\;on\;\;a\;\;straight\;\;line \\[3ex]
+            \theta = 180 - 105 \\[3ex]
+            \theta = 75^\circ \\[5ex]
+            (ii) \\[3ex]
+            \angle ABC = \phi + \theta ...diagram \\[3ex]
+            \angle ABC = 44 + 75 \\[3ex]
+            \angle ABC = 119^\circ \\[5ex]
+            (iii) \\[3ex]
+            |AC|^2 = |AB|^2 + |BC|^2 - 2 * |AB| * |BC| * \cos \angle ABC...Cosine\;\;Law \\[3ex]
+            |AC|^2 = 52^2 + 72^2 - 2(52)(72)(\cos 119^\circ) \\[3ex]
+            |AC|^2 = 2704 + 5184 - 7488(-0.4848096202) \\[3ex]
+            |AC|^2 = 7888 + 3630.254436 \\[3ex]
+            |AC|^2 = 11518.25444 \\[3ex]
+            |AC| = \sqrt{11518.25444} \\[3ex]
+            |AC| = 107.3231309 \\[3ex]
+            |AC| \approx 107\;km \\[5ex]
+            (iv) \\[3ex]
+            \dfrac{\sin \angle ACB}{|AB|} = \dfrac{\sin \angle ABC}{|AC|}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \angle ACB}{52} = \dfrac{\sin 119^\circ}{107.3231309} \\[5ex]
+            \sin \angle ACB = \dfrac{52\sin 119^\circ}{107.3231309} \\[5ex]
+            \sin \angle ACB = \dfrac{52(0.8746197071)}{107.3231309} \\[5ex]
+            \sin \angle ACB = 0.423769083 \\[3ex]
+            \angle ACB = \sin^{-1}(0.423769083) \\[3ex]
+            \angle ACB = 25.07277523^\circ \\[3ex]
+            \beta = \theta = 75^\circ ...alternate\;\;\angle s\;\;are\;\;equal \\[3ex]
+            Bearing\;\;of\;\;A\;\;from\;\;C...indicated\;\;by\;\;\color{purple}{purple\;\;color} \\[3ex]
+            = 360 - (\beta + \angle ACB) ...\angle s\;\;at\;\;a\;\;point \\[3ex]
+            = 360 - (75 + 25.07277523) \\[3ex]
+            = 360 - 100.0727752 \\[3ex]
+            = 259.9272248 \\[3ex]
+            \approx 260^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (38.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT38')">Show/Hide Answer</button>
+          <div class="result" id="solutionT38">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (39.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT39')">Show/Hide Answer</button>
+          <div class="result" id="solutionT39">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (40.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT40')">Show/Hide Answer</button>
+          <div class="result" id="solutionT40">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Numbers 21 through 40 -->
+
+    <br><br><br><br>
+    <!-- Top of the Page -->
+    <div class="w3-container" style="position:relative">
+      <a href="https://examssuccess.appspot.com/CSEC/Trigonometry.html" class="w3-button w3-xlarge w3-square w3-green"
+        style="position:absolute;top:-70px;right:24px">Top</a>
+    </div>
+    <br><br><br><br>
+
+    <div class="w3-row w3-container w3-padding-32" id="fortyone-sixty">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (41.) The diagram below shows straight roads connecting the towns <i>L, M, N</i> and <i>R</i>. <br>
+          <i>LR</i> &equals; 18 km, <i>LN</i> &equals; 12 km and <i>MN</i> &equals; 10 km. <br>
+          Angle <i>RLN</i> &equals; 25&deg; and angle <i>LMN</i> &equals; 88&deg;
+          <br><br>
+          <img src="images/Trigonometry/Questions/Number41.png" alt="Number 41">
+          <br><br>
+          (i) Calculate angle <i>MLN</i>. <br>
+          (ii) Calculate the distance <i>NR</i>. <br>
+          (iii) Determine the bearing of Town <i>R</i> from Town <i>L</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT41')">Show/Hide Answer</button>
+          <div class="result" id="solutionT41">
+            <br>
+            $
+            (i) \\[3ex]
+            \underline{\triangle LMN} \\[3ex]
+            \dfrac{\sin \angle MLN}{|MN|} = \dfrac{\sin \angle LMN}{|LN|}...Sine\;\;Law \\[5ex]
+            \dfrac{\sin \angle MLN}{10} = \dfrac{\sin 88^\circ}{12} \\[5ex]
+            \sin \angle MLN = \dfrac{10 * \sin 88^\circ}{12} \\[5ex]
+            \sin \angle MLN = \dfrac{10(0.999390827)}{12} \\[5ex]
+            \sin \angle MLN = 0.8328256892 \\[3ex]
+            \angle MLN = \sin^{-1}(0.8328256892) \\[3ex]
+            \angle MLN = 56.39010829 \\[3ex]
+            \angle MLN \approx 56^\circ \\[5ex]
+            (ii) \\[3ex]
+            \underline{\triangle LNR} \\[3ex]
+            |NR|^2 = |LN|^2 + |LR|^2 - 2 * |LN| * |LR| * \cos \angle RLN...Cosine\;\;Law \\[3ex]
+            |NR|^2 = 12^2 + 18^2 - 2(12)(18) * \cos 25^\circ \\[3ex]
+            |NR|^2 = 144 + 324 - 432 * 0.906307787 \\[3ex]
+            |NR|^2 = 468 - 391.524964 \\[3ex]
+            |NR|^2 = 76.475036 \\[3ex]
+            |NR| = \sqrt{76.475036} \\[3ex]
+            |NR| = 8.745000629 \\[3ex]
+            |NR| \approx 9\;km \\[5ex]
+            (iii) \\[3ex]
+            Bearing\;\;of\;\;R\;\;from\;\;L \\[3ex]
+            = 50 + \angle MLN + 25...diagram \\[3ex]
+            = 50 + 56.39010829 + 25 \\[3ex]
+            = 131.3901083 \\[3ex]
+            \approx 131^\circ
+            $
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (42.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT42')">Show/Hide Answer</button>
+          <div class="result" id="solutionT42">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (43.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT43')">Show/Hide Answer</button>
+          <div class="result" id="solutionT43">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (44.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT44')">Show/Hide Answer</button>
+          <div class="result" id="solutionT44">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (45.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT45')">Show/Hide Answer</button>
+          <div class="result" id="solutionT45">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (46.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT46')">Show/Hide Answer</button>
+          <div class="result" id="solutionT46">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (47.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT47')">Show/Hide Answer</button>
+          <div class="result" id="solutionT47">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (48.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT48')">Show/Hide Answer</button>
+          <div class="result" id="solutionT48">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (49.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT49')">Show/Hide Answer</button>
+          <div class="result" id="solutionT49">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (50.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT50')">Show/Hide Answer</button>
+          <div class="result" id="solutionT50">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row w3-container">
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (51.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT51')">Show/Hide Answer</button>
+          <div class="result" id="solutionT51">
+            <br>
+
+
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half w3-container">
+        <div class="w3-topbar w3-padding">
+          (52.)
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionT52')">Show/Hide Answer</button>
+          <div class="result" id="solutionT52">
+            <br>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- End Numbers 41 through 60 -->
+
+
+
+    <!-- End Questions and Answers -->
+
+
+
+
+  </div>
+  <!-- End page content -->
+
+  <!-- Footer -->
+  <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
+    <p class="w3-right">
+      <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
+      </a>
+      <a href="https://www.paypal.com/paypalme/ExamsSuccess" target="_blank" title="Your donation is appreciated.">
+        <img src="images/PayPal.jpg" alt="PayPal: Your donation is appreciated.">
+      </a>
+      <a href="https://www.youtube.com/@succeedinexaminations" target="_blank"
+        title="Subscribe, Share, and Like my Channel">
+        <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
+      </a>
+      <br>
+      &copy; 2025 Exams Success Group:
+      <a href="https://examssuccess.appspot.com/" title="Exams Success" target="_blank" class="w3-hover-opacity">Your
+        Success in Exams is Our Priority</a>
+      <br>
+      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
+      <b>Students.</b>
+    </p>
+  </div>
+  <!-- End Footer -->
+
+  <script src="scripts/Mathematics.js"></script>
+  <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+    </script>
+  <script async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/latest.js?config=TeX-MML-AM_CHTML"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/4.0.0/math.min.js"></script>
+
+</body>
+
+</html>
