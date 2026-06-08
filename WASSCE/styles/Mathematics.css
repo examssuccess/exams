@@ -33,6 +33,39 @@ section {
   display: block;
 }
 
+/* Icons */
+.icon-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  /* space between icons and button */
+  padding: 16px 0;
+  /* space above and below the row */
+  padding-left: 12px;
+  /* space before the row */
+  margin-bottom: 24px;
+  /* spacing after the row */
+}
+
+.icon-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* optional: slightly rounded corners */
+}
+
+.icon-row img:hover {
+  transform: scale(1.12);
+  opacity: 0.85;
+}
+
+.top-button {
+  text-decoration: none;
+  /* keeps it looking like a button */
+}
+
+/* End Icons */
+
 summary {
   display: list-item;
 }
