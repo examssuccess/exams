@@ -151,13 +151,6 @@ button::-moz-focus-inner,
 }
 /* End Checkbox for the Answer Options */
 
-/* Footer Icons */
-.icon-row img:hover {
-  transform: scale(1.12);
-  opacity: 0.85;
-}
-/* End Footer Icons */
-
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -1768,3 +1761,10 @@ div.examsList a:hover {
 .hidden {
   display: none;
 }
+
+/* Social Icons */
+.icon-row img:hover {
+  transform: scale(1.12);
+  opacity: 0.85;
+}
+/* End Social Icons */

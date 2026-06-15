@@ -2150,3 +2150,10 @@ table.coin td:nth-child(1) {
 .hidden {
   display: none;
 }
+
+/* Social Icons */
+.icon-row img:hover {
+  transform: scale(1.12);
+  opacity: 0.85;
+}
+/* End Social Icons */
