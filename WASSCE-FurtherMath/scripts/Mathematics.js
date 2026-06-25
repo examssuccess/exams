@@ -49,3 +49,16 @@ function onClick(element) {
   var captionText = document.getElementById("caption");
   captionText.innerHTML = element.alt;
 }
+
+// Select all sidebar links
+  const sidebarLinks = document.querySelectorAll('#mySidebar .w3-bar-item');
+
+  sidebarLinks.forEach(link => {
+    link.addEventListener('click', function () {
+      // Remove 'active' class from all links
+      sidebarLinks.forEach(el => el.classList.remove('w3-active'));
+
+      // Add 'active' class to clicked link
+      this.classList.add('w3-active');
+    });
+  });
