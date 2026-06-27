@@ -64,6 +64,14 @@ a:hover {
   outline-width: 0;
 }
 
+.w3-active {
+  background-color: white !important;
+  /* pure white */
+  font-weight: bold;
+  box-shadow: inset 0 0 0 2px green;
+  /* subtle highlight to distinguish */
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -2124,3 +2132,19 @@ table.coin td:nth-child(1) {
   opacity: 0.85;
 }
 /* End Social Icons */
+
+/* Container to align tables side-by-side with spacing */
+.table-wrapper {
+  display: flex;
+  gap: 40px;
+  /* Adjusts the spacing between the tables */
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+/* Target tables specifically using the "twoTables" class */
+table.twoTables {
+  border-collapse: collapse;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}

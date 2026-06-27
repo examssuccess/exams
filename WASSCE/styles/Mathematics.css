@@ -2165,3 +2165,19 @@ table.coin td:nth-child(1) {
   opacity: 0.85;
 }
 /* End Social Icons */
+
+/* Container to align tables side-by-side with spacing */
+.table-wrapper {
+  display: flex;
+  gap: 40px;
+  /* Adjusts the spacing between the tables */
+  justify-content: flex-start;
+  margin: 20px;
+}
+
+/* Target tables specifically using the "twoTables" class */
+table.twoTables {
+  border-collapse: collapse;
+  min-width: 150px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
