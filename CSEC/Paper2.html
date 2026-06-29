@@ -998,7 +998,8 @@
           </div>
           <br>
           I do not have the answer booklet. <br>
-          Be it as it may, the graph of $f(x)$ and $g(x)$ where $x \ge 0$ is shown:
+          Be it as it may, the graph of $f(x)$ and $g(x)$ where $x \ge 0$ is shown: <br>
+          Scale: 1 cm to 1 unit on both axis.
           <br><br>
           <img src="images/Paper2/January2026/Answers/Number7b.png" alt="Number 7b">
         </div>
@@ -1019,11 +1020,7 @@
         <i>N</i>. <br>
         (iii.) On the diagram <b>on page 24</b>, draw the image of Quadrilateral <i>O</i> after it undergoes the
         following transformations. <br>
-        (a.) Translation by the vector
-        $\begin{bmatrix}
-        -5 \\[2ex]
-        2
-        \end{bmatrix}$. Label this image <i>L</i>. <br>
+        (a.) Translation by the vector $\begin{pmatrix} -5 \\ 2 \end{pmatrix}$. Label this image <i>L</i>. <br>
         (b.) Reflection in the line $y = -1$. Label this image <i>P</i>.
         <br><br>
         (b.) A buoy (<i>B</i>) and a lighthouse (<i>L</i>) are 95 km apart. <br>
@@ -1037,36 +1034,303 @@
         <button class="solutions" onclick="solutions('solutionCSEC-January-2026-9')">Show/Hide Answer</button>
         <div class="result" id="solutionCSEC-January-2026-9">
           <br>
+          Assume that Quadrilateral <i>O</i> has vertices <i>A, B, C, D</i>
+          <br><br>
+          (a.) A visual observation of Quadrilateral <i>O</i> onto Quadrilateral <i>M</i> suggests an enlargement. <br>
+          Let us verify this by examining the coordinate mapping.
+          <br><br>
           $
-          \text{Quadrilateral } O onto \text{Quadrilateral } M \\[3ex]
-          (1, 1) \rightarrow (1, 3) \\[3ex]
-          (2, 3) \rightarrow (3, 7) \\[3ex]
-          (4, 1) \rightarrow (7, 3) \\[3ex]
-          (3, 0) \rightarrow (5, 1) \\[5ex]
+          \text{Quadrilateral } O \text{ onto Quadrilateral } M \\[3ex]
+          A(1, 1) \rightarrow A'(1, 3) \\[3ex]
+          B(2, 3) \rightarrow B'(3, 7) \\[3ex]
+          C(4, 1) \rightarrow C'(7, 3) \\[3ex]
+          D(3, 0) \rightarrow D'(5, 1) \\[5ex]
 
+          (i.) \\[3ex]
+          \overrightarrow{AB} = \vec{B} - \vec{A} \\[3ex]
+          = \begin{pmatrix} 2 \\ 3 \end{pmatrix} - \begin{pmatrix} 1 \\ 1 \end{pmatrix}
+          = \begin{pmatrix} 1 \\ 2 \end{pmatrix} \\[5ex]
 
+          \overrightarrow{A'B'} = \vec{B'} - \vec{A'} \\[3ex]
+          = \begin{pmatrix} 3 \\ 7 \end{pmatrix} - \begin{pmatrix} 1 \\ 3 \end{pmatrix}
+          = \begin{pmatrix} 2 \\ 4 \end{pmatrix} \\[5ex]
 
+          \overrightarrow{A'B'} = 2 * \overrightarrow{AB} \quad\dots\text{enlargement suspected} \\[5ex]
 
+          \overrightarrow{CD} = \vec{D} - \vec{C} \\[3ex]
+          = \begin{pmatrix} 3 \\ 0 \end{pmatrix} - \begin{pmatrix} 4 \\ 1 \end{pmatrix}
+          = \begin{pmatrix} -1 \\ -1 \end{pmatrix} \\[5ex]
 
+          \overrightarrow{C'D'} = \vec{D'} - \vec{C'} \\[3ex]
+          = \begin{pmatrix} 5 \\ 1 \end{pmatrix} - \begin{pmatrix} 7 \\ 3 \end{pmatrix}
+          = \begin{pmatrix} -2 \\ -2 \end{pmatrix} \\[5ex]
+
+          \overrightarrow{C'D'} = 2 * \overrightarrow{CD} \quad\dots\text{enlargement confirmed} \\[3ex]
+          \text{scale factor} = 2 \\[3ex]
           $
+          Let the coordinates of the center be $P(m, n)$, with its position vector represented as $\vec{P} =
+          \begin{pmatrix} m \\ n \end{pmatrix}$. <br>
+          center to image = scale factor * center to initial <br>
+          $(m, n)$ to $A'(1, 3)$ = 2 * $(m, n)$ to $A(1, 1)$ <br>
+          This implies that:
+          <br><br>
+          $
+          \overrightarrow{PA'} = 2 * \overrightarrow{PA} \\[3ex]
+          \vec{A'} - \vec{P} = 2(\vec{A} - \vec{P}) \\[3ex]
+          \vec{A'} - \vec{P} = 2\vec{A} - 2\vec{P} \\[3ex]
+          -\vec{P} + 2\vec{P} = 2\vec{A} - \vec{A'} \\[3ex]
+
+          \vec{P} = 2\begin{pmatrix} 1 \\ 1 \end{pmatrix} - \begin{pmatrix} 1 \\ 3 \end{pmatrix} \\[5ex]
+          \begin{pmatrix} m \\ n \end{pmatrix} = \begin{pmatrix} 2 \\ 2 \end{pmatrix} - \begin{pmatrix} 1 \\ 3
+          \end{pmatrix}
+          = \begin{pmatrix} 1 \\ -1 \end{pmatrix} \\[5ex]
+          $
+          The single transformation that maps Quadrilateral $O$ onto Quadrilateral $M$ is an enlargement with a scale
+          factor of $2$, centered at the point $(1, -1)$.
+          <br><br>
+          Also: <br>
+          A visual observation of Quadrilateral $O$ mapping onto Quadrilateral $N$ suggests a rotation. <br>
+          Let us verify this by examining the coordinate mapping.
+          <br><br>
+          $
+          \text{Quadrilateral } O \text{ onto Quadrilateral } N \\[3ex]
+          A(1, 1) \rightarrow A'(-1, -1) \\[3ex]
+          B(2, 3) \rightarrow B'(-2, -3) \\[3ex]
+          C(4, 1) \rightarrow C'(-4, -1) \\[3ex]
+          D(3, 0) \rightarrow D'(-3, 0) \\[3ex]
+          $
+          (ii.) For every point, the transformation follows the coordinate rule $(x, y) \rightarrow (-x, -y)$, where
+          both coordinates are negated. <br>
+          This implies a rotation of $180^\circ$ about the origin. <br>
+          Therefore, the single transformation that maps Quadrilateral $O$ onto Quadrilateral $N$ is a rotation of
+          $180^\circ$ about the origin $(0, 0)$.
+          <br><br>
+          (iii.) I do not have the diagram on page 24. <br>
+          Be it as it may, these are the results of the transformations.
+          <br><br>
+          $
+          (a.) \\[3ex]
+          \text{Quadrilateral } O \text{ onto Quadrilateral } L \\[3ex]
+          \text{Rule: Translation by the vector } \begin{pmatrix} -5 \\ 2 \end{pmatrix} \\[5ex]
+
+          \underline{\text{Point } A} \\[3ex]
+          \begin{pmatrix} 1 \\ 1 \end{pmatrix} + \begin{pmatrix} -5 \\ 2 \end{pmatrix}
+          = \begin{pmatrix} -4 \\ 3 \end{pmatrix} \\[5ex]
+          A(1, 1) \rightarrow A'(-4, 3) \\[5ex]
+
+          \underline{\text{Point } B} \\[3ex]
+          \begin{pmatrix} 2 \\ 3 \end{pmatrix} + \begin{pmatrix} -5 \\ 2 \end{pmatrix}
+          = \begin{pmatrix} -3 \\ 5 \end{pmatrix} \\[5ex]
+          B(2, 3) \rightarrow B'(-3, 5) \\[5ex]
+
+          \underline{\text{Point } C} \\[3ex]
+          \begin{pmatrix} 4 \\ 1 \end{pmatrix} + \begin{pmatrix} -5 \\ 2 \end{pmatrix}
+          = \begin{pmatrix} -1 \\ 3 \end{pmatrix} \\[5ex]
+          C(4, 1) \rightarrow C'(-1, 3) \\[5ex]
+
+          \underline{\text{Point } D} \\[3ex]
+          \begin{pmatrix} 3 \\ 0 \end{pmatrix} + \begin{pmatrix} -5 \\ 2 \end{pmatrix}
+          = \begin{pmatrix} -2 \\ 2 \end{pmatrix} \\[5ex]
+          D(3, 0) \rightarrow D'(-2, 2) \\[3ex]
+          $
+          Scale: 1 cm to 1 unit <br>
+          <img src="images/Paper2/January2026/Answers/Number9iii-1st.png" alt="Number 9iii-1st" style="width: 100%;">
+          <br><br>
+          (b.) Reflection in the line $y = -1$ implies that: <br>
+          The distance from the <i>y</i>-coordinate of the initial point to the line $y = -1$ is equal to the distance
+          from the line $y = -1$ to the <i>y</i>-coordinate of the image. <br>
+          For an initial point $(x, y)$, reflection in the line $y = -1$ maps to the image $(x', y')$ where:
+          <br><br>
+          $
+          x' = x \\[3ex]
+          y - (-1) = -1 - y' \quad\dots\text{equal distance to the reflection line} \\[3ex]
+          y + 1 = -1 - y' \\[3ex]
+          y' = -1 - y - 1 \\[3ex]
+          y' = -2 - y \\[5ex]
+
+          \text{Quadrilateral } O \text{ onto Quadrilateral } P \\[3ex]
+          \text{Rule: Reflection in the line } y = -1 \\[5ex]
+
+          \underline{\text{Point } A} \\[3ex]
+          \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 1 \\ -2 - 1 \end{pmatrix}
+          = \begin{pmatrix} 1 \\ -3 \end{pmatrix} \\[5ex]
+          A(1, 1) \rightarrow A'(1, -3) \\[5ex]
+
+          \underline{\text{Point } B} \\[3ex]
+          \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 2 \\ -2 - 3 \end{pmatrix}
+          = \begin{pmatrix} 2 \\ -5 \end{pmatrix} \\[5ex]
+          B(2, 3) \rightarrow B'(2, -5) \\[5ex]
+
+          \underline{\text{Point } C} \\[3ex]
+          \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 4 \\ -2 - 1 \end{pmatrix}
+          = \begin{pmatrix} 4 \\ -3 \end{pmatrix} \\[5ex]
+          C(4, 1) \rightarrow C'(4, -3) \\[5ex]
+
+          \underline{\text{Point } D} \\[3ex]
+          \begin{pmatrix} x' \\ y' \end{pmatrix} = \begin{pmatrix} 3 \\ -2 - 0 \end{pmatrix}
+          = \begin{pmatrix} 3 \\ -2 \end{pmatrix} \\[5ex]
+          D(3, 0) \rightarrow D'(3, -2) \\[3ex]
+          $
+          Scale: 1 cm to 1 unit <br>
+          <img src="images/Paper2/January2026/Answers/Number9iii-2nd.png" alt="Number 9iii-2nd" style="width: 100%;">
+          <br><br>
+          $
+          \text{Distance between B and L} = 95\;km \\[3ex]
+          1\;cm : 10\;km \\[3ex]
+          1\;cm = 10\;km \\[3ex]
+          \text{what } cm = 95\;km \\[3ex]
+          \dfrac{\text{what}}{1} = \dfrac{95}{10} \\[5ex]
+          \text{what} = 9.5\;cm \\[5ex]
+
+          \text{Bearing of B from L} = 230^\circ \\[3ex]
+          230^\circ - 180^\circ = 50^\circ \\[3ex]
+          $
+          The diagram that shows the buoy (<i>B</i>) relative to the lighthouse (<i>L</i>) is: <br>
+          <img src="images/Paper2/January2026/Answers/Number9b.png" alt="Number 9b">
         </div>
       </div>
     </div>
 
     <div class="w3-row w3-container">
       <div class="w3-topbar w3-padding">
-        (10.)
-
+        (10.) (a.) The diagram below shows Triangle <i>OPR</i>. <br>
+        The point <i>M</i> is the midpoint of <i>OP</i> and the point <i>N</i> is the midpoint of <i>OR</i>. <br>
+        In the diagram, $\overrightarrow{OM}$ = <b>u</b> and $\overrightarrow{ON}$ = <b>v</b>.
+        <br><br>
+        <img src="images/Paper2/January2026/Questions/Number10a.png" alt="Number 10a">
+        <br><br>
+        (i.) Find in terms of <b>u</b> and <b>v</b>, simplified expressions for:
+        <br><br>
+        $
+        (a.)\;\; \overrightarrow{MN} \\[3ex]
+        (b.)\;\; \overrightarrow{NP} \\[3ex]
+        $
+        (ii.) Show that <i>MN</i> is parallel to <i>PR</i>.
+        <br><br>
+        (b.) The matrix <i>P</i>, written in terms of <i>a</i> where <i>a</i> is a real constant, is as follows.
+        <br><br>
+        $P = \begin{bmatrix} 3a & 4 \\ 6 & 2a \end{bmatrix}$
+        <br><br>
+        (i.) Calculate the determinant of <i>P</i>, in terms of <i>a</i>. <br>
+        (ii.) Determine the values of <i>a</i> for which Matrix <i>P</i> is singular. <br>
+        (iii.) Determine $P^{-1}$, the inverse of <i>P</i>, for which <i>P</i> is non-singular.
+        <br><br>
+        (c.) Write down the 2 &times; 2 matrix that represents a: <br>
+        (i.) counterclockwise rotation of 90&deg; about the origin. Label this matrix <i>X</i>. <br>
+        (ii.) counterclockwise rotation of 90&deg; about the origin followed by a reflection in the <i>y</i>-axis, given
+        that $Q = \begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix}$ represents a reflection in the
+        <i>y</i>-axis. Label this matrix <i>T</i>.
         <br><br>
         <button class="solutions" onclick="solutions('solutionCSEC-January-2026-10')">Show/Hide Answer</button>
         <div class="result" id="solutionCSEC-January-2026-10">
           <br>
+          <img src="images/Paper2/January2026/Answers/Number10a.png" alt="Number 10a">
+          <br><br>
+          $
+          (i.) (a.) \\[3ex]
+          \overrightarrow{OM} + \overrightarrow{MN} = \overrightarrow{ON} \\[3ex]
+          \mathbf{u} + \overrightarrow{MN} = \mathbf{v} \\[3ex]
+          \overrightarrow{MN} = \mathbf{(v - u)} \\[5ex]
 
+          (b.) \\[3ex]
+          \overrightarrow{MN} + \overrightarrow{NP} = \overrightarrow{MP} \\[3ex]
+          .................................................................. \\[3ex]
+          \overrightarrow{MP} = \overrightarrow{OM} = \mathbf{u}
+          \quad\dots\text{M is the midpoint of } \overrightarrow{OP} \\[3ex]
+          .................................................................. \\[3ex]
+          \mathbf{v} - \mathbf{u} + \overrightarrow{NP} = \mathbf{u} \\[3ex]
+          \overrightarrow{NP} = \mathbf{u - v + u} \\[3ex]
+          \overrightarrow{NP} = \mathbf{2u - v} \\[5ex]
 
+          (ii.) \\[3ex]
+          \overrightarrow{OP} = \overrightarrow{OM} + \overrightarrow{MP} \\[3ex]
+          = \mathbf{u + u} \\[3ex]
+          = 2\mathbf{u} \\[5ex]
+
+          \overrightarrow{NR} = \overrightarrow{ON} = \mathbf{v}
+          \quad\dots\text{N is the midpoint of } \overrightarrow{OR} \\[3ex]
+          \overrightarrow{OR} = \overrightarrow{ON} + \overrightarrow{NR} \\[3ex]
+          = \mathbf{v + v} \\[3ex]
+          = 2\mathbf{v} \\[5ex]
+
+          \overrightarrow{OP} + \overrightarrow{PR} = \overrightarrow{OR} \\[3ex]
+          2\mathbf{u} + \overrightarrow{PR} = 2\mathbf{v} \\[3ex]
+          \overrightarrow{PR} = 2\mathbf{v} - 2\mathbf{u} \\[3ex]
+          \overrightarrow{PR} = 2(\mathbf{v} - \mathbf{u}) \\[3ex]
+          \overrightarrow{PR} = 2 * \overrightarrow{MN} \\[3ex]
+          $
+          Because $\overrightarrow{PR}$ is a scalar multiple of $\overrightarrow{MN}$, <i>MN</i> is parallel to
+          <i>PR</i>.
+          <br><br>
+          $
+          (b.) \\[3ex]
+          P = \begin{bmatrix} 3a & 4 \\ 6 & 2a \end{bmatrix} \\[5ex]
+
+          (i.) \\[3ex]
+          \text{det } P = \begin{vmatrix} 3a & 4 \\ 6 & 2a \end{vmatrix} \\[5ex]
+          = 3a(2a) - 6(4) \\[3ex]
+          = 6a^2 - 24 \\[3ex]
+          = 6(a^2 - 4) \\[3ex]
+          = 6(a + 2)(a - 2) \quad\dots\text{Difference of Two Squares} \\[3ex]
+          $
+          A matrix is singular if its determinant is zero. <br>
+          So, we set the determinant to zero and solve for <i>a</i>
+          <br><br>
+          $
+          (ii.) \\[3ex]
+          6(a + 2)(a - 2) = 0 \\[3ex]
+          (a + 2)(a - 2) = 0 \\[3ex]
+          a + 2 = 0 \hspace{1em}{\text{ or }}\hspace{1em} a - 2 = 0 \\[3ex]
+          a = -2 \hspace{1em}{\text{ or }}\hspace{1em} a = 2 \\[5ex]
+
+          (iii.) \\[3ex]
+          \underline{\text{Matrix of Cofactors, } C} \\[3ex]
+          C_{11} = 2a \\[3ex]
+          C_{12} = -6 \\[3ex]
+          C_{21} = -4 \\[3ex]
+          C_{22} = 3a \\[3ex]
+          C = \begin{bmatrix} 2a & -6 \\ -4 & 3a \end{bmatrix} \\[5ex]
+
+          \text{adj } P = C^T = \begin{bmatrix} 2a & -4 \\ -6 & 3a \end{bmatrix} \\[5ex]
+
+          P^{-1} = \dfrac{\text{adj } P}{\text{det } P} \\[5ex]
+          = \dfrac{\begin{bmatrix} 2a & -4 \\ -6 & 3a \end{bmatrix}}{6(a + 2)(a - 2)}
+          \quad a \ne -2, 2 \\[7ex]
+
+          (c.) \\[3ex]
+          x-\text{axis vector} = \begin{bmatrix} 1 \\ 0 \end{bmatrix} \\[5ex]
+          y-\text{axis vector} = \begin{bmatrix} 0 \\ 1 \end{bmatrix} \\[5ex]
+
+          (i.) \\[3ex]
+          (1, 0) \text{ counterclockwise rotation of } 90^\circ \text{ about the origin} \\[3ex]
+          \rightarrow (\cos 90^\circ, \sin 90^\circ) \\[3ex]
+          = (0, 1) \\[5ex]
+
+          (0, 1) \text{ counterclockwise rotation of } 90^\circ \text{ about the origin} \\[3ex]
+          \rightarrow (-\sin 90^\circ, \cos 90^\circ) \\[3ex]
+          = (-1, 0) \\[5ex]
+
+          \therefore \text{The } 2 \times 2 \text{ matrix, }
+          X = \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} \\[5ex]
+          $
+          (ii.) There are two transformations: <br>
+          1st transformation: A counterclockwise rotation of 90&deg; about the origin, represented by matrix <i>X</i>.
+          <br>
+          2nd transformation: Reflection in the <i>y</i>-axis, represented by matrix <i>Q</i>. <br>
+          When applying multiple transformations to a coordinate vector, we multiply the matrices in the reverse order
+          of their application.<br>
+          This implies that we will find the composite matrix, $QX$.
+          <br><br>
+          $
+          T = QX \\[3ex]
+          = \begin{bmatrix} -1 & 0 \\ 0 & 1 \end{bmatrix} \begin{bmatrix} 0 & -1 \\ 1 & 0 \end{bmatrix} \\[5ex]
+          = \begin{bmatrix} -1(0) + 0(1) & -1(-1) + 0(0) \\ 0(0) + 1(1) & 0(-1) + 1(0) \end{bmatrix} \\[5ex]
+          = \begin{bmatrix} 0 + 0 & 1 + 0 \\ 0 + 1 & 0 + 0 \end{bmatrix} \\[5ex]
+          = \begin{bmatrix} 0 & 1 \\ 1 & 0 \end{bmatrix}
+          $
         </div>
       </div>
     </div>
-
     <!-- End January 2026 -->
 
     <div class="icon-row w3-container w3-padding-32">
