@@ -1804,3 +1804,12 @@ table.twoTables {
   min-width: 150px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
+/* Remove all borders from a table */ 
+/* Target the table with the class, and any header or data cells inside it */
+.no-border,
+.no-border th,
+.no-border td {
+  border: none !important;
+  border-collapse: collapse;
+}

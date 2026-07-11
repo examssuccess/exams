@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/css" href="https://www.xml-sitemaps.com/css/sitemap.css"?>
 <urlset
       xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:fo="http://www.w3.org/1999/XSL/Format"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml"
       xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
@@ -9,14 +13,633 @@
 
 <url>
   <loc>https://examssuccess.github.io/exams/</loc>
-  <lastmod>2025-05-05T04:41:12+00:00</lastmod>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
-  <loc>https://examssuccess.github.io/exams/MATHEMATICS/LinearAlgebra.html</loc>
-  <lastmod>2025-05-05T04:41:12+00:00</lastmod>
+  <loc>https://examssuccess.github.io/exams/EnhancedACT/MathematicsTests2025.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
   <priority>0.80</priority>
 </url>
-
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/MathematicsTests2025.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/NumbersFractionsDecimalsPercents.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/LCMandGCF.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/BinaryOperations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Inequalities.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Mensuration.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/MeasurementsUnits.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/RelationsFunctions.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Transformations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Sets.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Combinatorics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/LinearAlgebra.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/VectorsScalars.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/ACT/ComplexNumbers.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Paper2.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/NumbersFractionsDecimalsPercents.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Variations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Inequalities.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/VectorsScalars.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC/LinearAlgebra.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC-AdditionalMath/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC-AdditionalMath/RelationsFunctions.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC-AdditionalMath/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC-AdditionalMath/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CSEC-AdditionalMath/DifferentialCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/Mensuration.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/Vectors.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/GCSE/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/Track1Year11.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/Track2Year11.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MALTA/Track3Year11.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/ObjectiveTests.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Theory.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/NumbersFractionsDecimalsPercents.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/BinaryOperations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/ModularArithmetic.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Sets.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Mensuration.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/ObjectiveTests.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/TheoryP.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/PartialFractions.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/Combinatorics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/LinearAlgebra.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/VectorsScalars.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/Mechanics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/DifferentialCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/WASSCE-FurtherMath/IntegralCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NZQA/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NZQA/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NZQA/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CBSE/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/AUSTRALIA/SACE/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/AUSTRALIA/SACE/DifferentialCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/NumbersFractionsDecimalsPercents.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/MeasurementsUnits.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/Inequalities.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/RelationsFunctions.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/NAMIBIA/NSSCO/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/BISE/10thGrade/ObjectiveTests.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/BinaryOperations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/ModularArithmetic.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Inequalities.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/RelationsFunctions.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/FinancialMathematics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/ExponentsLogarithms.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Mensuration.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/MathematicalLogic.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Vectors.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/LinearAlgebra.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Combinatorics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/ComplexNumbers.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/DifferentialCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/IntegralCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/DifferentialEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/Mechanics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/MATHEMATICS/NumberTheory.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/IGCSE/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/IGCSE/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/IGCSE/CircleTheorems.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/IGCSE/Trigonometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/ExpressionsEquations.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/Sequences.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/FinancialMathematics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/StatisticsProbability.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/Combinatorics.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/Geometry.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/CAMBRIDGE/O-LEVEL/IntegralCalculus.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/COMPETITIONS/JLSS.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://examssuccess.github.io/exams/STAAR/Algebra.html</loc>
+  <lastmod>2026-07-02T05:59:01+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
 
 </urlset>
