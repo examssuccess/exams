@@ -59,21 +59,18 @@ a:hover {
   outline-width: 0;
 }
 
+.w3-active {
+  background-color: white !important; /* pure white */
+    font-weight: bold;
+    box-shadow: inset 0 0 0 2px green;
+    /* subtle highlight to distinguish */
+}
+
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
   text-decoration: underline dotted;
 }
-
-
-.w3-active {
-  background-color: white !important;
-  /* pure white */
-  font-weight: bold;
-  box-shadow: inset 0 0 0 2px green;
-  /* subtle highlight to distinguish */
-}
-
 b,
 strong {
   font-weight: bolder;
@@ -154,11 +151,29 @@ button.solutions {
   border: 2px solid gold;
 }
 
+/* Checkbox for the Answer Options */
+.answer-checkboxes input[type="checkbox"] {
+  width: 24px;
+  height: 24px;
+  appearance: none;
+  border: 2px solid black;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.answer-checkboxes input[type="checkbox"]:checked {
+  background-color: green;
+  border-color: darkblue;
+}
+/* End Checkbox for the Answer Options */
+
+
 /* Answer Buttons */
 .result {
   color: red;
   display: none;
 }
+/* End Answer Buttons */
 
 fieldset {
   border: 1px solid #c0c0c0;
@@ -224,17 +239,16 @@ h2 {
 }
 
 h3 {
-  font-size: 35px;
+  font-size: 40px;
   text-align: center;
 }
 
 h4 {
-  font-size: 40px;
+  font-size: 35px;
 }
 
 h5 {
   font-size: 30px;
-  text-align: center;
 }
 
 h6 {
@@ -262,7 +276,7 @@ h6 {
 
 hr {
   border: 0;
-  border-top: 2px solid cornsilk;
+  border-top: 2px solid green;
   margin: 20px 0;
 }
 
@@ -1782,13 +1796,6 @@ table.coin td:nth-child(1){
   display: none;
 }
 
-/* Social Icons */
-.icon-row img:hover {
-  transform: scale(1.12);
-  opacity: 0.85;
-}
-/* End Social Icons */
-
 /* Container to align tables side-by-side with spacing */
 .table-wrapper {
   display: flex;
@@ -1812,4 +1819,40 @@ table.twoTables {
 .no-border td {
   border: none !important;
   border-collapse: collapse;
+}
+
+/* Icons */
+.icon-row {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  /* space between icons and button */
+  padding: 16px 0;
+  /* space above and below the row */
+  padding-left: 12px;
+  /* space before the row */
+  margin-bottom: 24px;
+  /* spacing after the row */
+}
+
+.icon-row img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* optional: slightly rounded corners */
+}
+
+.icon-row img:hover {
+  transform: scale(1.12);
+  opacity: 0.85;
+}
+
+.top-button {
+  text-decoration: none;
+  /* keeps it looking like a button */
+}
+/* End Icons */
+
+.footer-text-center {
+  text-align: center;
 }

@@ -3,6 +3,15 @@
 
 <head>
 
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-S1777YQYC9"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-S1777YQYC9');
+  </script>
 
 
   <title>Transformations</title>
@@ -259,13 +268,14 @@
         Reflecting across the line: y = x: <br>
         both the x-coordinate and the y-coordinate changes.
         <br><br>
-        For any point, (x, y); <br>
-        Reflection across the x-axis gives (x, &minus;y) <br>
-        Reflection across the y-axis gives (&minus;x, y) <br>
-        Reflection across the origin gives (&minus;x, &minus;y) <br>
-        Reflection across the line: y = x gives (y, x) <br>
-        Reflection across the line: y = k (k is a constant) gives (x, 2k &minus; y) <br>
-        Reflection across the line: x = k (k is a constant) gives (2k &minus; x, y)
+        For any point, (<i>x, y</i>); <br>
+        Reflection across the x-axis gives (<i>x</i>, &minus;<i>y</i>) <br>
+        Reflection across the y-axis gives (&minus;<i>x</i>, <i>y</i>) <br>
+        Reflection across the origin gives (&minus;<i>x</i>, &minus;<i>y</i>) <br>
+        Reflection across the line: $y = x$ gives $(y, x)$ <br>
+        Reflection across the line: $y = -x$ gives $(-y, -x)$ <br>
+        Reflection across the line: $y = k$ (k is a constant) gives $(x, 2k - y)$ <br>
+        Reflection across the line: $x = k$ (k is a constant) gives $(2k - x, y)$
         <br><br>
         <b>Rotation (Turning)</b> <br>
         A preimage is rotated about the <i>center of rotation</i> through an <i>angle of rotation</i>. <br>
@@ -297,7 +307,19 @@
         <br><br>
         $
         x_1' = [\cos\theta(x_1 - x) - \sin\theta(y_1 - y)] + x \\[3ex]
-        y_1' = [\cos\theta(y_1 - y) + \sin\theta(x_1 - x)] + y
+        y_1' = [\cos\theta(y_1 - y) + \sin\theta(x_1 - x)] + y \\[3ex]
+        $
+
+        <b>Enlargement (Dilation)</b> <br>
+        distance from center to image = scale factor * distance from center to object
+        <br><br>
+        For an enlargement of an object (<i>x, y</i>) with: <br>
+        scale factor, <i>k</i> <br>
+        about a centre (<i>c, d</i>) <br>
+        the image $(x', y')$
+        <br><br>
+        $
+        (x', y') = [c + k(x - c), d + k(y - d)]
         $
       </p>
     </div>
@@ -1582,7 +1604,8 @@
 
   <!-- Footer -->
   <div class="w3-cornsilk w3-container w3-padding-24" style="margin: 75px 40px 0px 340px; padding-right: 58px">
-    <div class="w3-right">
+    <div class="w3-content">
+
       <div class="icon-row">
         <a href="https://cash.app/$ExamsSuccess" target="_blank" title="Your donation is appreciated.">
           <img src="images/CashApp.jpg" alt="Cash App: Your donation is appreciated.">
@@ -1598,13 +1621,14 @@
           <img src="images/YouTube.jpg" alt="YouTube: Please Subscribe, Share, and Like my Channel">
         </a>
       </div>
-      &copy; 2025 Exams Success Group:
-      <a href="https://examssuccess.github.io/exams/" title="Exams Success" target="_blank"
-        class="w3-hover-opacity">Your
-        Success in Exams is Our Priority</a>
-      <br>
-      The <b>Joy</b> of a <b>Teacher</b> is the <b>Success</b> of his
-      <b>Students.</b>
+
+      <div class="footer-text-center">
+        &copy; 2025
+        <a href="https://examssuccess.github.io/" title="Exams Success" class="w3-hover-opacity">
+          Exams Success
+        </a>
+      </div>
+
     </div>
   </div>
   <!-- End Footer -->

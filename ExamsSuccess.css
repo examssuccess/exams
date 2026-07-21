@@ -1762,12 +1762,7 @@ div.examsList a:hover {
   display: none;
 }
 
-/* Social Icons */
-.icon-row img:hover {
-  transform: scale(1.12);
-  opacity: 0.85;
-}
-/* End Social Icons */
+
 
 /* Container to align tables side-by-side with spacing */
 .table-wrapper {
