@@ -15,22 +15,26 @@
 
   <meta name="msvalidate.01" content="53BB84784B5D75B5310ED94DF892DC7B">
 
-  <title>Inequalities</title>
+  <title>Relations and Functions</title>
 
   <meta charset="UTF-8">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta name="description" content="The webpage contains the solutions to the NSSCO exam questions on inequalities.">
+  <meta name="description"
+    content="The webpage contains the solutions to the NSSCO exam questions on relations and functions.">
 
   <meta name="keywords" content="Samuel Chukwuemeka, Samuel Dominic Chukwuemeka, SamDom For Peace, SamDom4Peace, Namibia,
-  NSSCO, Namibia Senior Secondary Certificate Mathematics Ordinary Level, Arithmetic, Algebra, numbers, expressions, equations, linear, 
-  quadratic, cubic, quartic, pentic, hexic, heptic, octic, nonic, equal, word problems, applications, even, odd, consecutive even, 
-  consecutive odd, integers, numbers, gcf, gcd, greatest common factor, greatest common divisor, solution, substitution method, division, 
-  algorithm, division algorithm, dividend, divisor, quotient, remainder, augend, addend, minuend, subtrahend, sum, difference, product, 
-  multiplier, multiplicand, positive, nonnegative, negative, nonpositive, numbers, absolute value, rational, fractional, prime trinomial, 
-  quadratic trinomial, trinomial, solution, inequalities, inequality, polynomial inequalities, rational inequalities, interval notation, 
-  graph, number line">
+  NSSCO, Namibia Senior Secondary Certificate Mathematics Ordinary Level, Arithmetic, Algebra, relation, function, one-to-one function, 
+  injective function, onto function, surjective function, bijective function, set, table, mapping, rule, correspondence, equation, graph, domain, 
+  codomain, image, range, set notation, input, output, x-coordinate, y-coordinate, independent variable, dependent variable, predictor variable, 
+  explanatory variable, response variable, cause, effect, action, consequence, vertical line test, interval notation, evaluate, symmetry, 
+  arithmetic operations, difference quotient, slope, intercept, x-intercept, y-intercept, slope-intercept form, point-slope form, two-points form, 
+  difference quotient, derivative, function composition, function decomposition, linear functions, quadratic functions, parabolas, 
+  vertical parabola, vertex, axis, line of symmetry, function transformations, even functions, odd functions, order relations, total order, 
+  partial order, pseudo order, quasi order, reflexivity, symmetric, antisymmetric, transitivity, poset, maximal element, minimal element, 
+  Hasse diagrams, upper bound, lower bound, least upper bound, greatest lower bound, lattices, lexicographic order, topological sorting, 
+  linear model, quadratic model">
 
   <link rel="stylesheet" href="../styles/Mathematics.css">
 
@@ -56,7 +60,7 @@
         class="w3-bar-item w3-button w3-hover-white">Exams Success
       </a>
 
-      <a href="#rules" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Notes and Rules</a>
+      <a href="#formulas" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Formulas</a>
 
       <a href="#one-twenty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 1 &mdash; 20</a>
       <a href="#twentyone-forty" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Numbers 21 &mdash;
@@ -97,7 +101,7 @@
   <div class="w3-main" style="margin-left: 340px; margin-right: 40px">
     <!-- Header -->
     <div class="w3-container w3-cornsilk w3-padding-24">
-      <h1>Inequalities</h1>
+      <h1>Relations and Functions</h1>
       <h6></h6>
     </div>
 
@@ -111,7 +115,7 @@
           document.write(Date() + ".");
         </script>
         <br>
-        These are the solutions to the NSSCO past questions on Inequalities. <br>
+        These are the solutions to the NSSCO past questions on Relations and Functions. <br>
         The TI-84 Plus CE shall be used for applicable questions. <br>
         If time permits and there is sufficient interest, video solutions may be provided. Please subscribe to the
         YouTube channel to be notified
@@ -141,59 +145,40 @@
     </div>
     <!-- End Introduction -->
 
-    <!-- Rules -->
-    <div class="w3-container w3-padding-32" id="rules">
-      <h4>Notes and Rules</h4>
-      <p>
-        (1.) <b>At least</b> 5 means &ge; 5 <br>
-        It means that the <b>minimum should be 5</b>
-        <br><br>
-        (2.) <b>At most</b> 5 means &le; 5 <br>
-        It means that the <b>maximum should be 5</b>
-        <br><br>
-        (3.) <b>Just</b> 5 means = 5 <br>
-        It means <b>exactly 5</b> or <b>equal to 5</b>
-        <br><br>
-        (4.) <b>More than</b> 5 means &gt; 5
-        <br><br>
-        (5.) <b>Less than</b> 5 means &lt; 5
-        <br><br>
-        (6.) <b>No more than</b> 5 means &le; 5 <br>
-        It should not be more than 5 <br>
-        It means 5 or less
-        <br><br>
-        (7.) <b>No less than</b> 5 means &ge; 5 <br>
-        It should not be less than 5 <br>
-        It means 5 or more
-        <br><br>
-        <b>Rules of Inequalities</b> <br>
-        <i>c, d, e</i> are real numbers
-        <br><br>
-        $
-        (1.)\text{ If } c \lt d \text{ and } d \lt e, \text{ then } c \lt e \quad\dots\text{Transitive Rule} \\[3ex]
-        (2.)\text{ If } c \gt d \text{ and } d \gt e, \text{ then } c \gt e \quad\dots\text{Transitive Rule} \\[3ex]
-        (3.)\text{ If } c \lt d, \text{ then } d \gt c \\[3ex]
-        (4.)\text{ If } c \gt d, \text{ then } d \lt c \\[3ex]
-        (5.)\text{ If } c \lt d, \text{ then } -c \gt -d \\[3ex]
-        (6.)\text{ If } c \gt d, \text{ then } -c \lt -d \\[3ex]
-        (7.)\text{ If } c \lt d, \text{ then } \dfrac{1}{c} \gt \dfrac{1}{d} \\[5ex]
-        (8.)\text{ If } c \gt d, \text{ then } \dfrac{1}{c} \lt \dfrac{1}{d} \\[5ex]
-        (9.)\text{ If } c \lt d, \text{ then } (c + e) \lt (d + e) \\[3ex]
-        (10.)\text{ If } c \gt d, \text{ then } (c + e) \gt (d + e) \\[3ex]
-        (11.)\text{ If } c \lt d, \text{ then } (c - e) \lt (d - e) \\[3ex]
-        (12.)\text{ If } c \gt d, \text{ then } (c - e) \gt (d - e) \\[3ex]
-        (13.)\text{ If } c \lt d, \text{ and } e \gt 0; \text{ then } ce \lt de \\[3ex]
-        (14.)\text{ If } c \lt d, \text{ and } e \lt 0; \text{ then } ce \gt de \\[3ex]
-        (15.)\text{ If } c \gt d, \text{ and } e \gt 0; \text{ then } ce \gt de \\[3ex]
-        (16.)\text{ If } c \gt d, \text{ and } e \lt 0; \text{ then } ce \lt de \\[3ex]
-        (17.)\text{ If } c \lt d, \text{ and } e \gt 0; \text{ then } \dfrac{c}{e} \lt \dfrac{d}{e} \\[5ex]
-        (18.)\text{ If } c \gt d, \text{ and } e \gt 0; \text{ then } \dfrac{c}{e} \gt \dfrac{d}{e} \\[5ex]
-        (19.)\text{ If } c \lt d, \text{ and } e \lt 0; \text{ then } \dfrac{c}{e} \gt \dfrac{d}{e} \\[5ex]
-        (20.)\text{ If } c \gt d, \text{ and } e \lt 0; \text{ then } \dfrac{c}{e} \lt \dfrac{d}{e}
-        $
-      </p>
+    <!-- Formulas -->
+    <div class="w3-container w3-padding-32" id="formulas">
+      <h2>Formulas for Linear Functions</h2>
+      $
+      (1.)\;\; \text{Slope,}\;\; m = \dfrac{\Delta y}{\Delta x} = \dfrac{y_2 - y_1}{x_2 - x_1} = \dfrac{rise}{run}
+      \\[5ex]
+      (2.)\;\; \text{Slope-Intercept Form:}\;\; y = mx + b \\[5ex]
+      (3.)\;\; \text{Point-Slope Form:}\;\; y - y_1 = m(x - x_1) \\[5ex]
+      (4.)\;\; \text{Two-Points Form:}\;\; \dfrac{y - y_1}{x - x_1} = \dfrac{y_2 - y_1}{x_2 - x_1} \\[5ex]
+      $
+
+      <h2>Formulas for Quadratic Functions</h2>
+      $
+      (1.)\;\; \text{Discriminant}\;\; = b^2 - 4ac \\[5ex]
+      (2.)\;\; \text{Standard Form:}\;\; f(x) = ax^2 + bx + c \\[5ex]
+      (3.)\;\; \text{Vertex from Standard Form:}\;\; \left[-\dfrac{b}{2a}, f\left(-\dfrac{b}{2a}\right)\right] \\[7ex]
+      (4.)\;\; \text{Vertex Form:}\;\; f(x) = a(x - h)^2 + k \\[5ex]
+      (5.)\;\; \text{Vertex from Vertex Form:}\;\; Vertex = (h, k) \\[5ex]
+      (6.)\;\; \text{Extended Vertex Form:}\;\; f(x) = a\left(x + \dfrac{b}{2a}\right)^2 + \dfrac{4ac - b^2}{4a} \\[7ex]
+      (7.)\;\; \text{Vertex from Extended Vertex Form:}\;\; Vertex = \left(-\dfrac{b}{2a}, \dfrac{4ac - b^2}{4a}\right)
+      \\[7ex]
+      $
+
+      <h2>Factoring Formulas</h2>
+      $
+      \underline{Difference\;\;of\;\;Two\;\;Squares} \\[3ex]
+      (1.)\;\;x^2 - y^2 = (x + y)(x - y) \\[5ex]
+      \underline{Difference\;\;of\;\;Two\;\;Cubes} \\[3ex]
+      (2.)\;\; x^3 - y^3 = (x - y)(x^2 + xy + y^2) \\[5ex]
+      \underline{Sum\;\;of\;\;Two\;\;Cubes} \\[3ex]
+      (3.)\;\; x^3 + y^3 = (x + y)(x^2 - xy + y^2)
+      $
     </div>
-    <!-- End Rules -->
+    <!-- End Formulas -->
 
     <!-- Questions and Answers -->
     <!-- Numbers 1 through 20 -->
@@ -202,8 +187,8 @@
         <div class="w3-topbar w3-padding">
           (1.)
 
-          <button class="solutions" onclick="solutions('solutionI1')">Show/Hide Answer</button>
-          <div class="result" id="solutionI1">
+          <button class="solutions" onclick="solutions('solutionRF1')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF1">
             <br>
 
 
@@ -213,20 +198,41 @@
 
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
-          (2.) Solve the inequality $8(2 - 3x) - 4(1 - 2x) \le 0$
+          (2.) Line <i>B</i> passes through point (&minus;2, 5) and is perpendicular to line <i>y</i> = 2<i>x</i>
+          &minus; 3 as shown in the diagram.
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI2')">Show/Hide Answer</button>
-          <div class="result" id="solutionI2">
+          <img src="images/RelationsFunctions/Questions/Number2.png" alt="Number 2">
+          <br><br>
+          Work out the equation of line <i>B</i>, giving your answer in the form <i>y</i> = <i>mx</i> + <i>c</i>.
+          <br><br>
+          <button class="solutions" onclick="solutions('solutionRF2')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF2">
             <br>
+            Two lines are perpendicular to each other if the slope of one line is the negative reciprocal of the slope
+            of the other line. <br>
+            Let the other line = Line A
+            <br><br>
             $
-            8(2 - 3x) - 4(1 - 2x) \le 0 \\[3ex]
-            16 - 24x - 4 + 8x \le 0 \\[3ex]
-            -16x + 12 \le 0 \\[3ex]
-            -16x \le 0 - 12 \\[3ex]
-            -16x \le -12 \\[3ex]
-            x \ge \dfrac{-12}{-16} \\[5ex]
-            \quad\dots\text{inequality is reversed...division by a negative value} \\[5ex]
-            x \ge \dfrac{3}{4}
+            \underline{\text{For Line A}} \\[3ex]
+            y = 2x - 3 \\[3ex]
+            \text{Compare to: } y = mx + c \\[3ex]
+            m = slope = 2 \\[5ex]
+            \underline{\text{For Line B}} \\[3ex]
+            Line\;B \perp Line\;A \\[3ex]
+            \implies \\[3ex]
+            slope = m = -\dfrac{1}{\text{slope of Line A}} \\[5ex]
+            m = -\dfrac{1}{2} \\[5ex]
+            Passes\;\;through\;\;(-2, 5) \\[3ex]
+            x = -2 \\[3ex]
+            y = 5 \\[3ex]
+            y = mx + c \\[3ex]
+            c = y - mx \\[3ex]
+            c = 5 - \left(-\dfrac{1}{2} * -2\right) \\[5ex]
+            c = 5 - 1 \\[3ex]
+            c = 4 \\[3ex]
+            \implies \\[3ex]
+            y = mx + c \\[3ex]
+            y = -\dfrac{1}{2}x + 4
             $
           </div>
         </div>
@@ -239,8 +245,8 @@
           (3.)
 
 
-          <button class="solutions" onclick="solutions('solutionI3')">Show/Hide Answer</button>
-          <div class="result" id="solutionI3">
+          <button class="solutions" onclick="solutions('solutionRF3')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF3">
             <br>
 
 
@@ -253,8 +259,8 @@
         <div class="w3-topbar w3-padding">
           (4.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI4')">Show/Hide Answer</button>
-          <div class="result" id="solutionI4">
+          <button class="solutions" onclick="solutions('solutionRF4')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF4">
             <br>
 
           </div>
@@ -268,8 +274,8 @@
           (5.)
 
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI5')">Show/Hide Answer</button>
-          <div class="result" id="solutionI5">
+          <button class="solutions" onclick="solutions('solutionRF5')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF5">
             <br>
 
 
@@ -281,8 +287,8 @@
         <div class="w3-topbar w3-padding">
           (6.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI6')">Show/Hide Answer</button>
-          <div class="result" id="solutionI6">
+          <button class="solutions" onclick="solutions('solutionRF6')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF6">
             <br>
 
           </div>
@@ -294,8 +300,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (7.)
-          <button class="solutions" onclick="solutions('solutionI7')">Show/Hide Answer</button>
-          <div class="result" id="solutionI7">
+          <button class="solutions" onclick="solutions('solutionRF7')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF7">
             <br>
 
 
@@ -307,8 +313,8 @@
         <div class="w3-topbar w3-padding">
           (8.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI8')">Show/Hide Answer</button>
-          <div class="result" id="solutionI8">
+          <button class="solutions" onclick="solutions('solutionRF8')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF8">
             <br>
 
           </div>
@@ -320,8 +326,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (9.)
-          <button class="solutions" onclick="solutions('solutionI9')">Show/Hide Answer</button>
-          <div class="result" id="solutionI9">
+          <button class="solutions" onclick="solutions('solutionRF9')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF9">
             <br>
 
 
@@ -333,8 +339,8 @@
         <div class="w3-topbar w3-padding">
           (10.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI10')">Show/Hide Answer</button>
-          <div class="result" id="solutionI10">
+          <button class="solutions" onclick="solutions('solutionRF10')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF10">
             <br>
 
           </div>
@@ -346,8 +352,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (11.)
-          <button class="solutions" onclick="solutions('solutionI11')">Show/Hide Answer</button>
-          <div class="result" id="solutionI11">
+          <button class="solutions" onclick="solutions('solutionRF11')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF11">
             <br>
 
 
@@ -359,8 +365,8 @@
         <div class="w3-topbar w3-padding">
           (12.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI12')">Show/Hide Answer</button>
-          <div class="result" id="solutionI12">
+          <button class="solutions" onclick="solutions('solutionRF12')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF12">
             <br>
 
           </div>
@@ -372,8 +378,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (13.)
-          <button class="solutions" onclick="solutions('solutionI13')">Show/Hide Answer</button>
-          <div class="result" id="solutionI13">
+          <button class="solutions" onclick="solutions('solutionRF13')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF13">
             <br>
 
 
@@ -385,8 +391,8 @@
         <div class="w3-topbar w3-padding">
           (14.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI14')">Show/Hide Answer</button>
-          <div class="result" id="solutionI14">
+          <button class="solutions" onclick="solutions('solutionRF14')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF14">
             <br>
 
           </div>
@@ -398,8 +404,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (15.)
-          <button class="solutions" onclick="solutions('solutionI15')">Show/Hide Answer</button>
-          <div class="result" id="solutionI15">
+          <button class="solutions" onclick="solutions('solutionRF15')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF15">
             <br>
 
 
@@ -411,8 +417,8 @@
         <div class="w3-topbar w3-padding">
           (16.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI16')">Show/Hide Answer</button>
-          <div class="result" id="solutionI16">
+          <button class="solutions" onclick="solutions('solutionRF16')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF16">
             <br>
 
           </div>
@@ -424,8 +430,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (17.)
-          <button class="solutions" onclick="solutions('solutionI17')">Show/Hide Answer</button>
-          <div class="result" id="solutionI17">
+          <button class="solutions" onclick="solutions('solutionRF17')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF17">
             <br>
 
 
@@ -437,8 +443,8 @@
         <div class="w3-topbar w3-padding">
           (18.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI18')">Show/Hide Answer</button>
-          <div class="result" id="solutionI18">
+          <button class="solutions" onclick="solutions('solutionRF18')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF18">
             <br>
 
           </div>
@@ -450,8 +456,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (19.)
-          <button class="solutions" onclick="solutions('solutionI19')">Show/Hide Answer</button>
-          <div class="result" id="solutionI19">
+          <button class="solutions" onclick="solutions('solutionRF19')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF19">
             <br>
 
 
@@ -463,8 +469,8 @@
         <div class="w3-topbar w3-padding">
           (20.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI20')">Show/Hide Answer</button>
-          <div class="result" id="solutionI20">
+          <button class="solutions" onclick="solutions('solutionRF20')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF20">
             <br>
 
           </div>
@@ -476,7 +482,7 @@
     <br><br><br><br>
     <!-- Top of the Page -->
     <div class="w3-container" style="position:relative">
-      <a href="https://examssuccess.github.io/exams/NAMIBIA/NSSCO/Inequalities.html"
+      <a href="https://examssuccess.github.io/exams/NSSC/NSSCO/RelationsFunctions.html"
         class="w3-button w3-xlarge w3-square w3-green" style="position:absolute;top:-70px;right:24px">Top</a>
     </div>
     <br><br><br><br>
@@ -486,8 +492,8 @@
         <div class="w3-topbar w3-padding">
           (21.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI21')">Show/Hide Answer</button>
-          <div class="result" id="solutionI21">
+          <button class="solutions" onclick="solutions('solutionRF21')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF21">
             <br>
 
 
@@ -499,8 +505,8 @@
         <div class="w3-topbar w3-padding">
           (22.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI22')">Show/Hide Answer</button>
-          <div class="result" id="solutionI22">
+          <button class="solutions" onclick="solutions('solutionRF22')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF22">
             <br>
 
           </div>
@@ -512,8 +518,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (23.)
-          <button class="solutions" onclick="solutions('solutionI23')">Show/Hide Answer</button>
-          <div class="result" id="solutionI23">
+          <button class="solutions" onclick="solutions('solutionRF23')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF23">
             <br>
 
 
@@ -525,8 +531,8 @@
         <div class="w3-topbar w3-padding">
           (24.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI24')">Show/Hide Answer</button>
-          <div class="result" id="solutionI24">
+          <button class="solutions" onclick="solutions('solutionRF24')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF24">
             <br>
 
           </div>
@@ -538,8 +544,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (25.)
-          <button class="solutions" onclick="solutions('solutionI25')">Show/Hide Answer</button>
-          <div class="result" id="solutionI25">
+          <button class="solutions" onclick="solutions('solutionRF25')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF25">
             <br>
 
 
@@ -551,8 +557,8 @@
         <div class="w3-topbar w3-padding">
           (26.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI26')">Show/Hide Answer</button>
-          <div class="result" id="solutionI26">
+          <button class="solutions" onclick="solutions('solutionRF26')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF26">
             <br>
 
           </div>
@@ -564,8 +570,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (27.)
-          <button class="solutions" onclick="solutions('solutionI27')">Show/Hide Answer</button>
-          <div class="result" id="solutionI27">
+          <button class="solutions" onclick="solutions('solutionRF27')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF27">
             <br>
 
 
@@ -577,8 +583,8 @@
         <div class="w3-topbar w3-padding">
           (28.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI28')">Show/Hide Answer</button>
-          <div class="result" id="solutionI28">
+          <button class="solutions" onclick="solutions('solutionRF28')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF28">
             <br>
 
           </div>
@@ -590,8 +596,8 @@
       <div class="w3-half w3-container">
         <div class="w3-topbar w3-padding">
           (29.)
-          <button class="solutions" onclick="solutions('solutionI29')">Show/Hide Answer</button>
-          <div class="result" id="solutionI29">
+          <button class="solutions" onclick="solutions('solutionRF29')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF29">
             <br>
 
 
@@ -603,8 +609,8 @@
         <div class="w3-topbar w3-padding">
           (30.)
           <br><br>
-          <button class="solutions" onclick="solutions('solutionI30')">Show/Hide Answer</button>
-          <div class="result" id="solutionI30">
+          <button class="solutions" onclick="solutions('solutionRF30')">Show/Hide Answer</button>
+          <div class="result" id="solutionRF30">
             <br>
 
           </div>
