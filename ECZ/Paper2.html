@@ -1191,16 +1191,16 @@
         (11.) <b>Statistics:</b> The frequency table shows the distribution of marks obtained by 50 learners in a
         Mathematics test.
         <br><br>
-        <table class="w3-center">
+        <table class="w3-center" style="width: 100%;">
           <tr>
             <td style="width: 16%;">Marks ($x$)</td>
-            <td style="width: 12%;">$10 \le x \20$</td>
-            <td style="width: 12%;">$20 \le x \30$</td>
-            <td style="width: 12%;">$30 \le x \40$</td>
-            <td style="width: 12%;">$40 \le x \50$</td>
-            <td style="width: 12%;">$50 \le x \60$</td>
-            <td style="width: 12%;">$60 \le x \70$</td>
-            <td style="width: 12%;">$70 \le x \80$</td>
+            <td style="width: 12%;">$10 \lt x \le 20$</td>
+            <td style="width: 12%;">$20 \lt x \le 30$</td>
+            <td style="width: 12%;">$30 \lt x \le 40$</td>
+            <td style="width: 12%;">$40 \lt x \le 50$</td>
+            <td style="width: 12%;">$50 \lt x \le 60$</td>
+            <td style="width: 12%;">$60 \lt x \le 70$</td>
+            <td style="width: 12%;">$70 \lt x \le 80$</td>
           </tr>
           <tr>
             <td>Frequency</td>
@@ -1251,6 +1251,65 @@
         <button class="solutions" onclick="solutions('solutionECZ-August-2024-11')">Show/Hide Answer</button>
         <div class="result" id="solutionECZ-August-2024-11">
           <br>
+          <!--
+          <table class="w3-center">
+            <tr>
+              <th style="width: 16%;">Marks, $x$</th>
+              <th style="width: 14%;">Midmark, $x_{mid}$</th>
+              <th style="width: 14%;">Frequency, $f$</th>
+              <th style="width: 14%;">$f \times x_{mid}$</th>
+              <th style="width: 14%;">$x_{mid} - \bar{x}$</th>
+              <th style="width: 14%;">$(x_{mid} - \bar{x})^2$</th>
+              <th style="width: 14%;">$f \times (x_{mid} - \bar{x})^2$</th>
+            </tr>
+            <tr>
+              <td>$10 \lt x \le 20$</td>
+              <td>$15$</td>
+              <td>$3$</td>
+              <td>$45$</td>
+              <td>$-27$</td>
+              <td>$729$</td>
+              <td>$2187$</td>
+            </tr>
+            <tr>
+              <td>$20 \lt x \le 30$</td>
+              <td>$25$</td>
+              <td>$7$</td>
+              <td>$175$</td>
+              <td>$-17$</td>
+              <td>$289$</td>
+              <td>$2023$</td>
+            </tr>
+            <tr>
+              <td>$30 \lt x \le 40$</td>
+              <td>$35$</td>
+              <td>$12$</td>
+              <td>$420$</td>
+              <td>$-7$</td>
+              <td>$49$</td>
+              <td>$588$</td>
+            </tr>
+            <tr>
+              <td>$40 \lt x \le 50$</td>
+              <td>$45$</td>
+              <td>$15$</td>
+              <td>$675$</td>
+              <td>$3$</td>
+              <td>$9$</td>
+              <td>$135$</td>
+            </tr>
+            <tr>
+              <td>$50 \lt x \le 60$</td>
+              <td>$55$</td>
+              <td>$8$</td>
+              <td>$440$</td>
+              <td>$13$</td>
+              <td>$169$</td>
+              <td>$1352$</td>
+            </tr>
+          </table>
+          <br>
+        -->
 
 
         </div>
@@ -1280,10 +1339,43 @@
         <button class="solutions" onclick="solutions('solutionECZ-August-2024-12')">Show/Hide Answer</button>
         <div class="result" id="solutionECZ-August-2024-12">
           <br>
+          (a.) I shall provide two diagrams: a sketch and a 3-D (3-dimensional) diagram. <br>
+          Use whichever you prefer.
+          <br><br>
+          (i.) The sketch of the information is: <br>
+          <img src="images/Paper2/August2024/Answers/Number12a-first.png" alt="Number 12a-first">
+          <br><br>
+          The 3-D diagram of the information is: <br>
+          <img src="images/Paper2/August2024/Answers/Number12a-second.png" alt="Number 12a-second">
+          <br><br>
+          $
+          \text{Distance along the same longitude} = \dfrac{\theta}{360} \times 2 \pi R \\[5ex]
+          \text{Distance along the same latitude} = \dfrac{\theta}{360} \times 2 \pi R \cos \beta \\[5ex]
+          \text{where} \\[3ex]
+          \theta = \text{angular distance} \\[3ex]
+          \pi = \text{mathematical constant} \approx 3.142 \\[3ex]
+          R = \text{radius of the Earth} \approx 6370\;km \\[3ex]
+          \beta = \text{same angular latitude} \\[5ex]
 
+          (a.) \\[3ex]
+          Q(80^\circ N, 80^\circ E) \\[3ex]
+          R(50^\circ N, 80^\circ E) \\[3ex]
+          \text{angular distance} = 80^\circ - 50^\circ = 30^\circ \quad\text{different latitudes} \\[3ex]
+          \text{Distance QR along the same longitude} = \dfrac{30}{360} \times 2 \times 3.142 \times 6370 \\[5ex]
+          = 3335.756667 \\[3ex]
+          \approx 3340\;km \quad\text{to 3 significant figures} \\[5ex]
 
-
-          Let us draw the complete cone as shown: <br>
+          (b.) \\[3ex]
+          T(50^\circ N, 50^\circ W) \\[3ex]
+          R(50^\circ N, 80^\circ E) \\[3ex]
+          \text{angular distance} = 50^\circ + 80^\circ = 130^\circ \quad\text{opposite sides of the longitudes} \\[3ex]
+          \beta = 50^\circ \\[3ex]
+          \text{Distance TR along the same latitude} = \dfrac{130}{360} \times 2 \times 3.142 \times 6370 \cos 50
+          \\[5ex]
+          = 9291.459925 \\[3ex]
+          \approx 9290\;km \quad\text{to 3 significant figures} \\[3ex]
+          $
+          (b.) Let us draw the complete cone as shown: <br>
           <img src="images/Paper2/August2024/Answers/Number12b.png" alt="Number 12b">
           <br><br>
           $
