@@ -216,7 +216,6 @@ h2 {
 
 h3 {
   font-size: 35px;
-  text-align: center;
 }
 
 h4 {
@@ -1834,3 +1833,33 @@ table.twoTables {
   margin-bottom: 1em;
   word-wrap: break-word; /* Prevents long URLs from breaking the container layout */
 }
+
+/* Additional CSS style for lists */ 
+.courseLinks-ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+li.course-title {
+  background-color: cornsilk;
+  color: black;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 8px;
+}
+
+.courseLinks-ul li a {
+  display: block;
+  padding: 10px;
+  color: darkblue;
+}
+
+.courseLinks-ul li a:hover {
+  background-color: white;
+  color: red;
+}
+/* End Additional CSS style for lists */
