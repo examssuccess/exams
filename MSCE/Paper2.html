@@ -750,39 +750,158 @@
 
     <div class="w3-row w3-container">
       <div class="w3-topbar w3-padding">
-        (7.)
+        (7.) <b>Trigonometry: Triangles:</b> The hypotenuse of a right-angled triangle is 10 cm. <br>
+        The other two sides are <i>x</i> cm and <i>y</i> cm. <br>
+        If the perimeter of the triangle is 24 cm, calculate the possible values of <i>x</i> and
+        <i>y</i>.
         <br><br>
         <button class="solutions" onclick="solutions('solutionMSCE-2026-7')">Show/Hide Answer</button>
         <div class="result" id="solutionMSCE-2026-7">
           <br>
+          Let us represent the information diagramatically as shown: <br>
+          <img src="images/2026/Answers/Number7.png" alt="Number 7">
+          <br><br>
+          $
+          x + y + 10 = 24 \quad[\text{Perimeter of the right triangle}] \\[3ex]
+          x + y = 24 - 10 \\[3ex]
+          x + y = 14 \quad...eqn.(1) \\[5ex]
 
+          x^2 + y^2 = 10^2 \quad[\text{Pythagorean Theorem}] \\[3ex]
+          x^2 + y^2 = 100 quad...eqn.(2) \\[5ex]
 
+          \underline{\text{Substitution Method}} \\[3ex]
+          \text{From } eqn.(1) \\[3ex]
+          x = 14 - y \quad...eqn.(3) \[5ex]
+
+          \text{Substitute for $x$ in } eqn.(2) \\[3ex]
+          (14 - y)^2 + y^2 = 100 \\[3ex]
+          (14 - y)(14 - y) + y^2 = 100 \\[3ex]
+          196 - 14y - 14y + y^2 + y^2 - 100 = 0 \\[3ex]
+          2y^2 - 28y + 96 = 0 \\[3ex]
+          \text{Simplify by dividing each term by } 2: \\[3ex]
+          y^2 - 14y + 48 = 0 \\[3ex]
+          (y - 8)(y - 6) = 0 \\[3ex]
+          y - 8 = 0 \text{ or } y - 6 = 0 \\[3ex]
+          y = 8\;cm \text{ or } y = 6\;cm \\[5ex]
+
+          \text{Substitute for $y$ in } eqn.(2) \\[3ex]
+          x = 14 - 8 \text{ or } x = 14 - 6 \\[3ex]
+          x = 6\;cm \text{ or } x = 8\;cm
+          $
         </div>
       </div>
     </div>
 
     <div class="w3-row w3-container">
       <div class="w3-topbar w3-padding">
-        (8.)
-
+        (8.) <b>Variations:</b> <b>B</b> is the difference of two parts. <br>
+        The first part varies as the square of <b>C</b> and the second part varies as <b>C</b>. <br>
+        <b>B</b> = 315 when <b>C</b> = 5 and <b>B</b> = 651 when <b>C</b> = 7. <br>
+        Calculate the value of <b>B</b> when <b>C</b> = 8.
+        <br><br>
         <button class="solutions" onclick="solutions('solutionMSCE-2026-8')">Show/Hide Answer</button>
         <div class="result" id="solutionMSCE-2026-8">
           <br>
+          Let the: <br>
+          first part of <b>B</b> = <b>B</b><sub>1</sub> <br>
+          second part of <b>B</b> = <b>B</b><sub>2</sub>
+          <br><br>
+          $
+          B = B_1 - B_2 \\[5ex]
 
+          B_1 \propto C^2 \quad[\text{direct variation}] \\[3ex]
+          B_1 = k_1 C^2 \quad[\text{$k_1$ is the constant of proportion}] \\[5ex]
 
+          B_2 \propto C \quad[\text{direct variation}] \\[3ex]
+          B_2 = k_2 C \quad[\text{$k_2$ is the constant of proportion}] \\[5ex]
+
+          \implies \\[3ex]
+          B = k_1C^2 - k_2C \quad\text{main eqn.} \\[5ex]
+
+          \text{B = 315 when C = 5} \\[3ex]
+          315 = k_1(5)^2 - k_2(5) \\[3ex]
+          25k_1 - 5k_2 = 315 \\[3ex]
+          5(5k_1 - k_2) = 5(63) \\[3ex]
+          5k_1 - k_2 = 63 \quad...eqn.(1) \\[5ex]
+
+          \text{B = 651 when C = 7} \\[3ex]
+          651 = k_1(7)^2 - k_2(7) \\[3ex]
+          49k_1 - 7k_2 = 651 \\[3ex]
+          7(7k_1 - k_2) = 7(93) \\[3ex]
+          7k_1 - k_2 = 93 \quad...eqn.(2) \\[5ex]
+
+          eqn.(2) - eqn.(1) \implies \\[3ex]
+          2k_1 = 30 \\[3ex]
+          k_1 = \dfrac{30}{2} \\[5ex]
+          k_1 = 15 \\[5ex]
+
+          \text{Substitute for $k_1$ in } eqn.(2) \\[3ex]
+          7(15) - k_2 = 93 \\[3ex]
+          105 - k_2 = 93 \\[3ex]
+          k_2 = 105 - 93 \\[3ex]
+          k_2 = 12 \\[5ex]
+
+          \text{Substitute for $k_1$ and $k_2$ in the main eqn.} \\[3ex]
+          B = 15C^2 - 12C \\[5ex]
+
+          \text{When } C = 8 \\[3ex]
+          B = 15(8)^2 - 12(8) \\[3ex]
+          B = 960 - 96 \\[3ex]
+          B = 864
+          $
         </div>
       </div>
     </div>
 
     <div class="w3-row w3-container">
       <div class="w3-topbar w3-padding">
-        (9.)
+        (9.) <b>Quadratic Functions:</b> Figure 3 shows a sketch of a curve of $y = x^2 - x - 6$, cutting the
+        <i>x</i>-axis at <b>P</b>
+        and <b>Q</b> with a turning point at <b>R</b>.
+        <br><br>
+        <img src="images/2026/Questions/Number9.png" alt="Number 9">
+        <br><br>
+        Find the: <br>
+        (a.) coordinates of point <b>P</b> <br>
+        (b.) equation of the line of symmetry <br>
+        (c.) minimum value of <i>y</i> at point <b>R</b>
         <br><br>
         <button class="solutions" onclick="solutions('solutionMSCE-2026-9')">Show/Hide Answer</button>
         <div class="result" id="solutionMSCE-2026-9">
           <br>
+          $
+          y = x^2 - x - 6 \\[3ex]
+          y = (x + 2)(x - 3) \\[3ex]
+          \text{When } y = 0: \text{ on the $x$-axis} \\[3ex]
+          0 = (x + 2)(x - 3) \\[3ex]
+          x + 2 = 0 \text{ or } x - 3 = 0 \\[3ex]
+          x = -2 \text{ or } x = 3 \\[3ex]
+          (a.) \\[3ex]
+          \text{coordinates of } P = (-2, 0) \\[5ex]
 
+          \text{Compare: } y = x^2 - x - 6 \text{ to the standard form: } y = ax^2 + bx + c \\[3ex]
+          a = 1 \\[3ex]
+          b = -1 \\[3ex]
+          c = -6 \\[5ex]
 
+          \text{$x$-coordinate of the vertex} \\[3ex]
+          = -\dfrac{b}{2a} \\[5ex]
+          = -\dfrac{-1}{2(1)} \\[5ex]
+          = \dfrac{1}{2} \\[5ex]
+
+          (b.) \\[3ex]
+          \text{equation of the line of symmetry: } x = \dfrac{1}{2} \\[5ex]
+
+          (c.) \\[3ex]
+          \text{Point $R$ is the vertex} \\[3ex]
+          \text{minimum value of $y$ at point $R$} \\[3ex]
+          = \text{$y$-coordinate of the vertex} \\[3ex]
+          = \text{value of $y$ when } x = \dfrac{1}{2} \\[5ex]
+          = \left(\dfrac{1}{2}\right)^2 - \dfrac{1}{2} - 6 \\[5ex]
+          = \dfrac{1}{4} - \dfrac{2}{4} - \dfrac{24}{4} \\[5ex]
+          = \dfrac{1 - 2 - 24}{4} \\[5ex]
+          = -\dfrac{25}{4}
+          $
         </div>
       </div>
     </div>
